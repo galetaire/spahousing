@@ -20,6 +20,10 @@ export default function Nextra({ Component, pageProps }) {
           type="font/woff2"
           crossOrigin="anonymous"
         />
+		<link 
+		  rel="shortcut icon" 
+		  href="/favicon.ico" 
+		/>
       </Head>
       <Component {...pageProps} />
     </>

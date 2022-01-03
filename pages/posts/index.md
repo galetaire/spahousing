@@ -1,7 +1,7 @@
 ---
 type: posts
-title: Posts
-date: 2021-03-18
+title: Statistical indicators 📉
+date: 2021-07-10
 ---
 
-# Posts
+# Statistical indicators 📉
