@@ -8,8 +8,8 @@ class MyDocument extends Document {
 
   render() {
     const meta = {
-      title: "Catalan housing observatory",
-      description: 'Catalan housing observatory.',
+      title: "Spanish housing observatory",
+      description: 'Spanish housing observatory.',
       image:
         'https://pbs.twimg.com/profile_banners/1376458457872805888/1623272298/1500x500'
     }
