@@ -17,10 +17,11 @@ import Image from 'next/image'
 
 # Interpretation and observations
 
-The chart from above shows the number of home sales per quarter. The color indicates whether the number of sales is lower than the previous quarter (red) or higher (green). The black line represents the notarial price. Thus, we can see if the number of sales is going up or down, in combination with price movement. Some observations:
+The chart from above shows the number of home sales per quarter. The color indicates whether the number of sales is lower than the previous quarter (red) or higher (green). The black line represents the HPI price. Thus, we can see if the number of sales is going up or down, in combination with price movement. Some observations:
 
 - **Observation A**: Between 2007 and 2013 the number of sales follows a downward trend, chaining 5 red bars in a row.
-- **Observation B**: Between 2014 and 2019 the trend changes and the number of sales rises, chaining 3 consecutive green bars twice.
+- **Observation B**: In 2020 sales plummet as a result of the Covid-19 lockdowns.
+- **Observation C**: Between 2014 and 2021 the trend changes and the number of sales rises, chaining 3 consecutive green bars twice, and 5 once.
 
 # Data sources
 

@@ -22,8 +22,8 @@ The chart from above shows the nominal annual appreciation of housing, i.e. whet
 - 1986 - 1990: Strong revaluation.
 - 1991 - 1993: Stagnation.
 - 1994 - 2007: Steady revaluation.
-- 2008 - 2014: Strong devaluation.
-- 2015 - 2021: Slight revaluation.
+- 2008 - 2013: Strong devaluation.
+- 2014 - 2021: Moderate revaluation.
 
 # Data sources
 

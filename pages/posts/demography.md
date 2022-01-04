@@ -22,8 +22,8 @@ import Image from 'next/image'
 
 The _PAP housing index_ is an indicator to analyze the housing market condition. It draws two ceilings based on demographics. The higher one assumes that everyone at some point will buy a house individually, and the lower one assumes that everyone at some point will buy a house as a couple.
 
-- If the number of sales exceeds the upper limit, it implies that the situation corresponds to a **bubble**, e.g. 2003 - 2006.
-- If the number of sales is below the lower limit, it implies that there is a **depression**, e.g. 2009 - 2014.
+- If the number of sales exceeds the upper limit, it implies that the situation corresponds to a **bubble**, e.g. 2005 - 2007.
+- If the number of sales is below the lower limit, it implies that there is a **depression**, e.g. 2011 - 2014.
 - If the number of sales is in between the two ceilings, it implies that the market is in an **optimal zone**. Being possible to denote a **bull trend** (if the bars are above the optimal line), or a **bear trend** (if the bars are below the optimal line).
 
 # Data sources

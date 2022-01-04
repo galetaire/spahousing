@@ -21,10 +21,10 @@ import Image from 'next/image'
 
 # Interpretation and observations
 
-The charts from above show the number of annual building licenses (and the type of permit), as well as the price of land in Catalonia per square meter. Thus, we can see if the number of licenses and the price of land is decreasing or increasing. Some observations:
+The charts from above show the number of annual building licenses (and the type of permit), as well as the price of land in Spain per square meter. Thus, we can see if the number of licenses and the price of land is decreasing or increasing. Some observations:
 
-- **Observation A**: The price of land in Catalonia is in decline since 2007.
-- **Observation B**: The number of building licenses crashed deeply between 2007 and 2009, going from 45 thousand licenses to 10 thousand licenses.
+- **Observation A**: The price of land in Spain is in stagnation since 2013.
+- **Observation B**: The number of building licenses crashed deeply between 2007 and 2009, going from 180 thousand licenses to 80 thousand licenses.
 - **Observation C**: Since 2009, the number of licenses for renovations is higher than the number of licenses for new constructions.
 
 # Data sources

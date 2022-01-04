@@ -12,11 +12,11 @@ import Image from 'next/image'
 
 ![Reload chart](/images/preuhistoric.png)
 
-- **House prices in Catalonia since 1985**: in euros per square meter, inflation-adjusted (real value), unadjusted (nominal value), and accumulated inflation.
+- **House prices in Spain since 1985**: in euros per square meter, inflation-adjusted (real value), unadjusted (nominal value), and accumulated inflation.
 
 # Interpretation and observations
 
-The chart from above shows the average annual house price in Catalonia. Some brief observations:
+The chart from above shows the average annual house price in Spain. Some brief observations:
 
 - **Observation A**: The price of housing is constantly rising due to inflation, a consequence of current monetary policy.
 - **Observation B**: The uptrend in house prices is however cyclical, with moments of expansion and recession, linked to debt cycles.
