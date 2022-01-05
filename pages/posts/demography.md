@@ -16,7 +16,7 @@ import Image from 'next/image'
 
 ![Reload chart](/images/demografia2.png)
 
-- **PAP disaggregated**: Home sales (bars); population of 35, 40 and 45 years old (colored dotted lines); and housing inheritances (purple line).
+- **PAP disaggregated**: Home sales (bars); population of 35, 40 and 45 years old (colored dotted lines); and housing inheritances (purple bars).
 
 # Interpretation and observations
 
