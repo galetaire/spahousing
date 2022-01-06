@@ -8,17 +8,12 @@ author: Galetaire
 
 import Image from 'next/image'
 
-# Holistic housing market model: the six-variable chart, Spain
+# Holistic housing model: the six-variable chart, Spain
 
 ![Reload chart](/images/model.png)
 
-- **Inflation**: average inflation rate for any given year, e.g. 4% in 2007.
-- **Unemployment**: average unemployment rate for any given year, e.g. 18.6% in 1998.
-- **Population**: annual percentage change of the total population, e.g. -1.3% in 2017 (compared to 2016).
-- **Price (-i), minus inflation**: annual percentage change in the inflation-adjusted price, e.g. +8.2% in 1990 (relative to 1989).
-- **Price (+i), plus inflation**: annual percentage change in the nominal price, e.g. +13.9% in 1990 (relative to 1989).
-- **Credit**: annual percentage change in the number of mortgages approved, e.g. +20.7% in 2015 (compared with 2014).
-- **Home sales**: annual percentage change in the number of home sales, e.g. -18.1% in 2011 (compared with 2010).
+- **Inflation, Unemployment**: average rate for any given year.
+- **Population, Credit, Home sales, Price minus (-i) and plus (+i) inflation**: annual percentage change compared to the previous one.
 
 # Interpretation and observations
 
