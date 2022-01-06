@@ -13,7 +13,7 @@ import Image from 'next/image'
 ![Reload chart](/images/model.png)
 
 - **Inflation, Unemployment**: average rate for any given year.
-- **Population, Mortgages, Home sales, Real price (-i) and Nominal price (+i)**: annual percentage change compared to the previous one.
+- **Population, Mortgages, Home sales, Real price and Nominal price**: annual percentage change compared to the previous one.
 
 # Interpretation and observations
 
