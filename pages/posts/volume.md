@@ -13,7 +13,7 @@ import Image from 'next/image'
 ![Reload chart](/images/compravenda.png)
 
 - **Left axis (bars)**: total number of home sales in each quarter.
-- **Right axis (line)**: housing prices in euros per square meter.
+- **Right axis (line)**: housing price index.
 
 # Interpretation and observations
 
@@ -25,5 +25,5 @@ The chart from above shows the number of home sales per quarter. The color indic
 
 # Data sources
 
-- Housing prices according to the notaries (Grupo 5, Acto 501): [Link](http://www.notariado.org/liferay/web/cien/estadisticas-al-completo)
+- Housing Price Index: [Link](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736152838&menu=resultados&idp=1254735976607#!tabs-1254736152561)
 - Home sales: [Link](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736171438&menu=resultados&idp=1254735576757#!tabs-1254736158217)
