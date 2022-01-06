@@ -8,7 +8,7 @@ author: Galetaire
 
 import Image from 'next/image'
 
-# Holistic housing model: the six-variable chart, Spain
+# Holistic housing model, Spain
 
 ![Reload chart](/images/model.png)
 
