@@ -1,6 +1,6 @@
 ---
 title: Annual evolution of housing prices
-date: 2021-06-01
+date: 2021-07-01
 description: Data on the evolution of housing prices. With the price in euros per m2 adjusted for inflation, unadjusted, and with the sum in euros of accumulated inflation.
 tag: Price
 author: Galetaire

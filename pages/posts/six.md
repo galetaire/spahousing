@@ -1,6 +1,6 @@
 ---
 title: Holistic housing market model
-date: 2021-10-01
+date: 2021-11-01
 description: Data on the evolution of the housing market. The model consists of six main variables (price, inflation, home sales, credit, demographics and employment).
 tag: Price, Volume, Credit, Labor, Demography
 author: Galetaire
@@ -12,8 +12,8 @@ import Image from 'next/image'
 
 ![Reload chart](/images/model.png)
 
-- **Inflation, Unemployment**: average rate for any given year.
-- **Population, Mortgages, Home sales, Real price and Nominal price**: annual percentage change compared to the previous one.
+- **Inflation, Unemployment**: average rate for the given year.
+- **Population, Mortgages, Home sales, Real price and Nominal price**: percentage of annual change compared to the previous year.
 
 # Interpretation and observations
 

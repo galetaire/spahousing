@@ -1,6 +1,6 @@
 ---
 title: Cement consumption and price
-date: 2021-10-01
+date: 2021-11-01
 description: Data on the evolution of cement consumption, and its comparison with the evolution of housing prices — inflation adjusted —. Both historically highly correlated variables.
 tag: Price
 author: Galetaire
