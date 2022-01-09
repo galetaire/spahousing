@@ -1,5 +1,5 @@
 ---
-title: Housing return on investment
+title: Housing yearly appreciation
 date: 2021-07-01
 description: Data on the evolution of the profitability of home purchases (gross, net and including rental returns), using an annual basis.
 tag: Price
