@@ -18,10 +18,6 @@ import Image from 'next/image'
 
 - **Price-to-rent ratio (%, net and gross)**: annual percentage of housing rental return in Spain.
 
-![Reload chart](/images/housingroi.png)
-
-- **Housing ROI (%, red line = inflation)**: final return on investment, considering both net rental return and net asset appreciation.
-
 # Interpretation and observations
 
 The charts from above show the ratio between the purchase price and the rental price (both in time, years; and in %). In essence, it's an indicator similar to the price-to-earnings ratio (P/E) used in the stock market analysis. It can be interpreted on the following way:
