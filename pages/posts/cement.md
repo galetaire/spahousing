@@ -17,9 +17,9 @@ import Image from 'next/image'
 
 # Interpretation and observations
 
-The chart from above shows the evolution of cement consumption, and its comparison with the evolution of housing prices, inflation adjusted. Some brief observations:
+The chart from above shows the evolution of cement consumption, and its comparison with the evolution of housing prices (inflation adjusted). Some brief observations:
 
-- **Observation A**: Both are historically highly correlated variables.
+- **Observation A**: Both are positively correlated variables (+0.63).
 - **Observation B**: Real-estate cycles are readily apparent, with moments of expansion and recession, linked to debt cycles.
 - **Observation C**: Cement consumption is linked to housing construction. The fact that housing construction has come to a screeching halt is an important event to consider going forward.
 

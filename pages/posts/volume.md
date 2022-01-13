@@ -21,7 +21,7 @@ The chart from above shows the number of home sales per quarter. The color indic
 
 - **Observation A**: Between 2007 and 2013 the number of sales follows a downward trend, chaining 5 red bars in a row.
 - **Observation B**: In 2020 sales plummet as a result of the Covid-19 lockdowns.
-- **Observation C**: Between 2014 and 2021 the trend changes and the number of sales rises, chaining 3 consecutive green bars twice, and 5 once.
+- **Observation C**: Between 2014 and 2021 the trend changes and the number of sales rises, chaining 3 consecutive green bars in 2018, and 5 in 2020/2021.
 
 # Data sources
 

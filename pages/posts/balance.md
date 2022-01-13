@@ -19,7 +19,7 @@ import Image from 'next/image'
 The chart from above shows the pace of housing construction, depending on whether it has been a year of surplus (new builds grow faster than the population), or deficit (the population is growing faster than the pace of construction). Some observations:
 
 - **Observation A**: Between 1972 and 2018 the situation is of surplus.
-- **Observation B**: Since 2019 the dominant situation is of a deficit.
+- **Observation B**: Since 2019 the situation is of a deficit.
 
 # Data sources
 
