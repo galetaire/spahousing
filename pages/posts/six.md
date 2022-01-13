@@ -19,11 +19,11 @@ import Image from 'next/image'
 
 The model groups together the six variables that I consider essential in order to understand the housing market: price, volume, inflation, credit, demographics and employment. All the variables are represented in percentages. A couple of interpretations from the chart:
 
-- **Observation A**: We can see how inflation has been decreasing. In 1989 it was above 5%, and in 2020 it was negative (the red area is below 0%).
-- **Observation B**: We can see how the population has been decreasing on a yearly basis since 2010. On the other hand, between 2002 and 2006, the population increased a lot, due to an immigration wave.
-- **Observation C**: We can observe that when unemployment increases, the evolution of the price of housing tends to be negative, both taking into account inflation (+i) and not (-i).
-- **Observation D**: It is interesting to note how between 1986 and 1990 the rise in house prices was dominated by high inflation. We know this because the price bar is completely black, price (+i) is overlapping completely the price (-i).
-- **Observation E**: The orange bar, price (-i), informs us of the de/revaluation of housing. For example, in 2013, there was a strong devaluation, and in 2017 a strong revaluation.
+- **Observation A**: We can see how inflation has been on a decreasing trend.
+- **Observation B**: We can see how between 2001 and 2008, the population increased a lot, due to an immigration wave.
+- **Observation C**: We can observe that when unemployment increases, the evolution of the price of housing tends to be negative.
+- **Observation D**: Between 1986 and 1990 the rise in house prices was dominated by high inflation. We know this because the price bar is completely black, this means nominal price is overlapping completely the real price.
+- **Observation E**: The orange bar, real price, informs us of the de/revaluation of housing. For example, in 2012, there was a strong devaluation, and in 2017 a strong revaluation.
 
 # Data sources
 
