@@ -4,4 +4,4 @@ The market monitored on this website is the Spanish real estate market, but on m
 
 # Portfolio Kit and building sources
 
-This portfolio is built with **Next.js** and a library called [Nextra](https://nextra.vercel.app/). Powered by [Vercel](https://vercel.com). The page is also hosted on the [Handshake](https://handshake.org/) DNS.
+This portfolio is built with **Next.js** and a library called [Nextra](https://nextra.vercel.app/). Powered by [Vercel](https://vercel.com). The page is hosted on the [Handshake](https://handshake.org/) DNS.
