@@ -1,6 +1,6 @@
 ---
 title: Price of land and building permits
-date: 2021-02-01
+date: 2022-01-01
 description: Data on the evolution of land prices and the number of building permits, depending on whether they are for new construction, renovations or demolitions.
 tag: Price, Volume
 author: Galetaire

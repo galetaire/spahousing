@@ -1,6 +1,6 @@
 ---
 title: Average rental return
-date: 2021-12-01
+date: 2022-01-01
 description: Data on the average time (in years) that it is required to recover a house purchase through rental. An indicator similar to the price-to-earnings ratio (P/E).
 tag: Price
 author: Galetaire

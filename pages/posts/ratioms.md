@@ -1,6 +1,6 @@
 ---
 title: Ratio between mortgages and home sales
-date: 2021-11-01
+date: 2022-01-01
 description: Data on the relationship between the number of mortgages and the number of home sales. These data allow us to determine whether there are credit bubbles.
 tag: Credit, Volume
 author: Galetaire

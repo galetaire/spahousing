@@ -1,6 +1,6 @@
 ---
 title: Relationship between salary and mortgages
-date: 2021-03-01
+date: 2022-01-01
 description: Data on median wages and their relationship to the average mortgage amount. This comparison shows whether there is a wage disconnect.
 tag: Labor, Credit
 author: Galetaire

@@ -1,6 +1,6 @@
 ---
 title: Relationship between unemployment and prices
-date: 2021-09-01
+date: 2022-01-01
 description: Data on the number of unemployed and its relation to the housing price index. Rising unemployment has always led to stagnation or falling prices.
 tag: Labor, Price
 author: Galetaire

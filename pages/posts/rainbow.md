@@ -1,6 +1,6 @@
 ---
 title: Housing market cycle indicator
-date: 2021-07-01
+date: 2022-01-01
 description: Model to predict real-estate cycles. Showing data on the evolution of housing prices (inflation-adjusted), crossed with the demographic curve (rainbow).
 tag: Price, Demography
 author: Galetaire

@@ -1,6 +1,6 @@
 ---
 title: Housing by type of tenure
-date: 2021-01-01
+date: 2022-01-01
 description: Data on the distribution of housing tenure according to whether the house is fully owned, owned but mortgaged, rented or freely loaned.
 tag: Demography
 author: Galetaire

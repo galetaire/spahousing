@@ -1,6 +1,6 @@
 ---
 title: Quarterly evolution of housing prices
-date: 2021-11-01
+date: 2022-01-01
 description: Data on the evolution of housing prices. Comparing the data published by the association of notaries and the data published by Idealista.
 tag: Price
 author: Galetaire
