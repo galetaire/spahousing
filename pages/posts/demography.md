@@ -8,7 +8,7 @@ author: Galetaire
 
 import Image from 'next/image'
 
-# Demographic pace and home sales: the PAP housing index
+# Demographic pace and home sales
 
 ![Reload chart](/images/demografia.png)
 

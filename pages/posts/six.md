@@ -8,7 +8,7 @@ author: Galetaire
 
 import Image from 'next/image'
 
-# Holistic housing model, Spain
+# Holistic housing market model
 
 ![Reload chart](/images/model.png)
 

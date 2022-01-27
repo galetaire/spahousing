@@ -1,6 +1,6 @@
 ---
 title: Housing surplus or deficit
-date: 2021-01-01
+date: 2022-01-01
 description: Data on the rate of housing builds, depending on whether it has been a year of surplus (rate of construction increases faster than population growth) or deficit (the population is growing faster than the rate of construction).
 tag: Volume
 author: Galetaire
