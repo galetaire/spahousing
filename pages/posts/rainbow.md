@@ -12,7 +12,7 @@ import Image from 'next/image'
 
 ![Reload chart](/images/rainbow.png)
 
-- **When the price (white dots) is in... ➞ **Red** = strong overprice; **Orange** = slightly overprice; **Yellow** = neutral; **Green** = slightly underprice; **Blue** = strong underprice.
+- **When the price (white dots) is in...** ➞ **Red** = strong overprice; **Orange** = slightly overprice; **Yellow** = neutral; **Green** = slightly underprice; **Blue** = strong underprice.
 
 # Interpretation and observations
 
