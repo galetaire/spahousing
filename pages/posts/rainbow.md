@@ -24,7 +24,7 @@ It is not a scientifically tested measure.
 The rainbow curve describes a demographic channel, which, overlapped with the real price, evaluates the stage of the price cycle. A few notes and considerations:
 
 - The real price data is unaltered.
-- Instead is the demographic curve that has been price-adjusted (into the rainbow curve).
+- The demographic curve has been price-adjusted, generating the rainbow curve.
 - The equation from the rainbow curve is derived from the demographic curve (quadratic function).
 - The yellow line is the reference line, adding two levels up and two levels down.
 
