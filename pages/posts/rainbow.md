@@ -16,7 +16,9 @@ import Image from 'next/image'
 
 # Interpretation and observations
 
-> This is an experimental indicator, open to improvements and corrections. It is not a scientifically tested measure.
+```
+This is an experimental indicator, open to improvements and corrections. It is not a scientifically tested measure.
+```
 
 The rainbow curve describes a demographic channel, which, overlapped with the real price, evaluates the stage of the price cycle. A few notes and considerations:
 
