@@ -12,13 +12,13 @@ import Image from 'next/image'
 
 ![Reload chart](/images/rainbow.png)
 
-- **When the price (white dots)** ➞ **Red** = strong overprice; **Orange** = slightly overprice; **Yellow** = neutral; **Green** = slightly underprice; **Blue** = strong underprice.
+- **Color range interpretaion** ➞ **Red** = strong overprice; **Orange** = slightly overprice; **Yellow** = neutral; **Green** = slightly underprice; **Blue** = strong underprice.
 
 # Interpretation and observations
 
 ```
 This is an experimental indicator, open to improvements and corrections.
-It is not a scientifically tested measure.
+Must be read as an informative indicator, not a scientific measure.
 ```
 
 The rainbow curve describes a demographic channel, which, overlapped with the real price, evaluates the stage of the price cycle. A few notes and considerations:
