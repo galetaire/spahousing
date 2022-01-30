@@ -12,7 +12,7 @@ import Image from 'next/image'
 
 ![Reload chart](/images/rainbow.png)
 
-- **Color range interpretaion** ➞ **Red** = strong overprice; **Orange** = slightly overprice; **Yellow** = neutral; **Green** = slightly underprice; **Blue** = strong underprice.
+- **Color range interpretation** ➞ **Red** = strong overprice; **Orange** = slightly overprice; **Yellow** = neutral; **Green** = slightly underprice; **Blue** = strong underprice.
 
 # Interpretation and observations
 
