@@ -24,6 +24,7 @@ export default function Nextra({ Component, pageProps }) {
 		  rel="shortcut icon" 
 		  href="/favicon.ico" 
 		/>
+	 <meta name="google-site-verification" content="qJPOBhuLxYG31aBQHGtqNlySOVTNp20pDOJhZVXJE9w" />
       </Head>
       <Component {...pageProps} />
     </>
