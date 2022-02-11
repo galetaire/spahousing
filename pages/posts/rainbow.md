@@ -8,7 +8,7 @@ author: Galetaire
 
 import Image from 'next/image'
 
-# Cycle indicator: The rainbow model
+# The rainbow model, cycle indicator
 
 ![Reload chart](/images/rainbow.png)
 
