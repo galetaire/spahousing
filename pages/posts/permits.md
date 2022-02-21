@@ -25,7 +25,7 @@ The charts from above show the number of annual building licenses (and the type 
 
 - **Observation A**: The price of land in Spain is in stagnation since 2013.
 - **Observation B**: The number of building licenses crashed deeply between 2006 and 2013, going from 180 thousand licenses to 60 thousand licenses.
-- **Observation C**: Since 2012, the number of licenses for renovations is slightly higher than the number of licenses for new constructions.
+- **Observation C**: Since 2009, the number of licenses for renovations is higher than the number of licenses for new constructions.
 
 # Data sources
 
