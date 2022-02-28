@@ -31,7 +31,7 @@ Credit correlates very well with the evolution of house prices. As an example, w
 - **Observation B**: The average mortgage amount follows an uptrend. This is an inflation consequence.
 - **Observation C**: Although the average mortgage amount tends upwards, corrections can occur. The most important happened in the year 2007-2013.
 - **Observation D**: The real credit movement (second chart) allow us to see the credit/debt cycles.
-- **Observation E**: About the ratio (third chart). If it is greater than 1, there are more mortgages than home sales, indicating the danger of a credit bubble. If it is less than 1, there are more home sales than mortgages, indicating that cash purchases are gaining strength.
+- **Observation E**: About the ratio (third chart). If it is greater than 1, there are more mortgages than home sales, indicating the danger of a credit bubble. If it is less than 1, there are more home sales than mortgages, meaning cash gains strength.
 
 # Data sources
 
