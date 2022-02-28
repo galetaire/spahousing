@@ -17,7 +17,7 @@ import Image from 'next/image'
 
 ![Reload chart](/images/credit2.png)
 
-- **Stacked bars (100%)**: Blue = average annual mortgage amount; Orange = average annual housing price.
+- **Real credit movement, in percentage**: Blue = real credit expansion; Orange = real credit contraction.
 
 # Interpretation and observations
 
@@ -27,7 +27,7 @@ Credit correlates very well with the evolution of house prices. As an example, w
 - **Observation B**: Currently, mortgage approvals is within the demographic line, inside of the lower limit zone. In other words, there is no credit bubble.
 - **Observation C**: The average mortgage amount follows an uptrend. This is a consequence of inflation, being the reason why within the general collective there is the thinking of _"housing always goes up"_, which has it's part of truth.
 - **Observation D**: Although the average mortgage amount tends upwards, there are corrections. The most important happened in the year 2007-2013.
-- **Observation E**: The stacked bars (second chart) allow us to see which of the two variables dominate, price or credit. It also tells us when the variables show different trends, which usually means a change of cycle.
+- **Observation E**: The real credit movement (second chart) allow us to see the credit/debt cycles.
 
 # Data sources
 
