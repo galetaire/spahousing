@@ -1,7 +1,7 @@
 ---
 title: Evolution of the number of dwellings
 date: 2022-02-01
-description: Data on the number of dwellings created annually, as well as the ratio of dwellings per 1,000 inhabitants.
+description: Data on the number of dwellings created annually, the housing stock balance, as well as the ratio of dwellings per 1,000 inhabitants.
 tag: Volume
 author: Galetaire
 ---
@@ -19,14 +19,20 @@ import Image from 'next/image'
 
 - **Construction period**: number of today existing dwellings per year/period of construction. The **red bar** is a final estimate based on the current pace of construction.
 
+![Reload chart](/images/difhabitatges.png)
+
+- **Housing surplus or deficit**: Difference between housing growth and population growth. Green color implies housing surplus; red color implies housing deficit.
+
 # Interpretation and observations
 
-The first chart from above shows the number of new homes built annually since 1971. The ratio of dwellings per thousand inhabitants can also be seen. Some observations:
+The **first chart** from above shows the number of new homes built annually since 1971. The ratio of dwellings per thousand inhabitants can also be seen. Some observations:
 
 - **Observation A**: The number of new dwellings remained almost always above 200 thousand dwellings, until the year 2009, when it dropped drastically.
 - **Observation B**: The number of dwellings per 1000 inhabitants increased rapidly from 1971 to 2000. Currently is on decline, since 2018.
 
-The second chart shows the today existing homes by period of construction. Most of the existing houses in Spain today were built between the 1961 and 1980. If the pace of new construction continues at the rate shown between 2010 and 2020. Between 2021 and 2040, the number of houses to be built will be of ≈1.240.000.
+The **second chart** shows the today existing homes by period of construction. Most of the existing houses in Spain today were built between the 1961 and 1980. If the pace of new construction continues at the rate shown between 2010 and 2020. Between 2021 and 2040, the number of houses to be built will be of ≈1.240.000.
+
+The **third chart** shows the pace of housing construction, depending on whether it has been a year of surplus (new builds grow faster than the population), or deficit (the population is growing faster than the pace of construction).
 
 # Data sources
 
