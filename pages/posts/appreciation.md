@@ -1,5 +1,5 @@
 ---
-title: Housing yearly appreciation
+title: Housing return on investment
 date: 2022-02-01
 description: Data on the evolution of the profitability of home purchases (gross, net and including rental returns), using an annual basis.
 tag: Price
@@ -8,7 +8,7 @@ author: Galetaire
 
 import Image from 'next/image'
 
-# Housing yearly appreciation and ROI
+# Housing return on investment
 
 ![Reload chart](/images/rendibilitat.png)
 
