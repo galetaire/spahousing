@@ -10,7 +10,7 @@ import Image from 'next/image'
 
 # Relationship between wages and mortgages
 
-![Reload chart](/images/sou.png)
+![Salarios y precio de la vivienda](/images/sou.png)
 
 - **Left axis (bars)**: wages, the standard wage represents the median of the salaries distribution in Spain, in euros. Data for 2020 and 2021 are still pending official confirmation.
 - **Right axis (line)**: mortgages average amount in Spain, in euros.

@@ -10,16 +10,16 @@ import Image from 'next/image'
 
 # Evolution of the number of dwellings
 
-![Reload chart](/images/nombrehabitatges.png)
+![Número de viviendas](/images/nombrehabitatges.png)
 
 - **Left axis (bars)**: total number of new dwellings per year.
 - **Right axis (line)**: existing dwellings per 1000 inhabitants.
 
-![Reload chart](/images/anyhabitatges.png)
+![Antiguedad de las viviendas](/images/anyhabitatges.png)
 
 - **Construction period**: number of today existing dwellings per year/period of construction. The **red bar** is a final estimate based on the current pace of construction.
 
-![Reload chart](/images/difhabitatges.png)
+![Estoc y balance de viviendas](/images/difhabitatges.png)
 
 - **Housing surplus or deficit**: Difference between housing growth and population growth. Blue color implies housing surplus; orange color implies housing deficit.
 

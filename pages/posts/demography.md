@@ -10,11 +10,11 @@ import Image from 'next/image'
 
 # Demographic pace and home sales
 
-![Reload chart](/images/demografia.png)
+![Compraventa de vivienda](/images/demografia.png)
 
 - **Purchasing-age population (PAP)**: Home sales (bars); population between 25 and 50 years old (dotted lines); and housing inheritances (purple line).
 
-![Reload chart](/images/demografia2.png)
+![Compraventa y edad de compra](/images/demografia2.png)
 
 - **PAP disaggregated**: Home sales (bars); population of 35, 40 and 45 years old (colored dotted lines); and housing inheritances (purple bars).
 

@@ -8,8 +8,8 @@ class MyDocument extends Document {
 
   render() {
     const meta = {
-      title: "Spanish housing observatory",
-      description: 'Spanish housing observatory.',
+      title: "Mercado de la vivienda en España",
+      description: 'Precio de la vivienda en España y análisis del mercado inmobiliario.',
       image:
         'https://pbs.twimg.com/profile_banners/1376458457872805888/1623272298/1500x500'
     }

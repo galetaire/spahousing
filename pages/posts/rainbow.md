@@ -10,7 +10,7 @@ import Image from 'next/image'
 
 # The rainbow model, cycle indicator
 
-![Reload chart](/images/rainbow.png)
+![Ciclos inmobiliarios](/images/rainbow.png)
 
 - **Color range interpretation** ➞ **Red** = strong overprice; **Orange** = slightly overprice; **Yellow** = neutral; **Green** = slightly underprice; **Blue** = strong underprice.
 

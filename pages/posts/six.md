@@ -10,7 +10,7 @@ import Image from 'next/image'
 
 # Holistic housing market model
 
-![Reload chart](/images/model.png)
+![Datos del mercado inmobiliario](/images/model.png)
 
 - **Inflation, Unemployment**: average rate for the given year.
 - **Population, Mortgages, Home sales, Real price and Nominal price**: percentage of annual change compared to the previous year.

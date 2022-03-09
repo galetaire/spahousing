@@ -10,12 +10,12 @@ import Image from 'next/image'
 
 # Price of land and building permits
 
-![Reload chart](/images/llicenciesobra.png)
+![Precio del suelo](/images/llicenciesobra.png)
 
 - **Left axis**: total number of building licenses.
 - **Right axis**: price of land in euros per square meter.
 
-![Reload chart](/images/tipusobra.png)
+![Visados de obra](/images/tipusobra.png)
 
 - **Building licenses according to type of permit**: build (new construction), reform or demolition.
 

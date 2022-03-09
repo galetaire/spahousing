@@ -10,7 +10,7 @@ import Image from 'next/image'
 
 # Annual evolution of housing prices
 
-![Reload chart](/images/preuhistoric.png)
+![Evolución precio de la vivienda](/images/preuhistoric.png)
 
 - **House prices in Spain since 1985**: in euros per square meter, inflation-adjusted (real price), unadjusted (nominal price), and accumulated inflation.
 
