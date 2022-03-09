@@ -1,6 +1,6 @@
 ---
 title: Evolution of the number of dwellings
-date: 2022-02-01
+date: 2022-03-09
 description: Data on the number of dwellings created annually, the housing stock balance, as well as the ratio of dwellings per 1,000 inhabitants.
 tag: Volume
 author: Galetaire
