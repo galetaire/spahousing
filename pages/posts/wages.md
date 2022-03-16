@@ -12,8 +12,12 @@ import Image from 'next/image'
 
 ![Salarios y precio de la vivienda](/images/sou.png)
 
-- **Left axis (bars)**: wages, the standard wage represents the median of the salaries distribution in Spain, in euros. Data for 2020 and 2021 are still pending official confirmation.
+- **Left axis (bars)**: wages, the standard wage represents the median of the salaries distribution in Spain, in euros. Data for 2020 and 2021 are still pending official confirmation, in this sense, Household disposable income has been used for the projection instead.
 - **Right axis (line)**: mortgages average amount in Spain, in euros.
+
+![Salario ideal](/images/souideal.png)
+
+- **Ideal wage disconnection (in percentage)**: the ideal wage is defined as the wage that allows you to completely pay off your mortgage with 5 years of full wage. E.g., if the value equals 30, it means that wages must increase by 30% to match the ideal wage.
 
 # Interpretation and observations
 
@@ -26,4 +30,5 @@ The chart from above shows the housing cycles according to the median wages and 
 # Data sources
 
 - Wage distribution (median): [Link](https://www.ine.es/jaxiT3/Tabla.htm?t=28191)
+- Household disposable income: [Link](https://www.ine.es/jaxiT3/Tabla.htm?t=30906)
 - Mortgages: [Link](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736170236&menu=resultados&idp=1254735576757#!tabs-1254736158259)
