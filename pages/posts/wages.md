@@ -19,6 +19,10 @@ import Image from 'next/image'
 
 - **Ideal wage disconnection (in percentage)**: the ideal wage is defined as the wage that allows you to completely pay off your mortgage with 5 years of full wage. E.g., if the value equals 30, it means that wages must increase by 30% to match the ideal wage.
 
+![Poder adquisitivo](/images/purchasing.png)
+
+- **Households purchasing power (in percentage)**: Spain households net disposable income plus households savings, minus inflation.
+
 # Interpretation and observations
 
 The chart from above shows the housing cycles according to the median wages and the amounts requested in the mortgages. In this sense, it is common to found convergence and divergence cycles. Divergence implies that housing prices grow faster than wages, and convergence the reverse.
@@ -31,4 +35,5 @@ The chart from above shows the housing cycles according to the median wages and 
 
 - Wage distribution (median): [Link](https://www.ine.es/jaxiT3/Tabla.htm?t=28191)
 - Household disposable income: [Link](https://www.ine.es/jaxiT3/Tabla.htm?t=30906)
+- Household savings: [Link](https://www.ine.es/jaxiT3/Tabla.htm?t=30906)
 - Mortgages: [Link](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736170236&menu=resultados&idp=1254735576757#!tabs-1254736158259)
