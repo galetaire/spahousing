@@ -23,9 +23,9 @@ import Image from 'next/image'
 
 The charts from above show the number of annual building licenses (and the type of permit), as well as the price of land in Spain per square meter. Thus, we can see if the number of licenses and the price of land is decreasing or increasing. Some observations:
 
-- **Observation A**: The price of land in Spain is in stagnation since 2013.
-- **Observation B**: The number of building licenses crashed deeply between 2006 and 2013, going from 180 thousand licenses to 60 thousand licenses.
-- **Observation C**: Since 2009, the number of licenses for renovations is higher than the number of licenses for new constructions.
+- **Observation A**: The price of land in Spain stagnated from 2013 to 2021.
+- **Observation B**: The number of building licenses crashed deeply between 2006 and 2013, going from 180,000 licenses to 60,000 licenses.
+- **Observation C**: Since 2008, the number of licenses for renovations is higher than the number of licenses for new constructions.
 
 # Data sources
 

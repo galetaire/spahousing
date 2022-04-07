@@ -22,13 +22,13 @@ import Image from 'next/image'
 
 # Interpretation and observations
 
-The relationship between the unemployment rate and housing prices is negative, i.e., when the unemployment rate rises, housing prices fall, and vice versa. And it is also statistically relevant, i.e., this behavior is repetitive over time. If we look at the chart above we can distinguish several outstanding periods:
+The relationship between unemployment and price is negative. When the unemployment rate rises, housing prices fall, and vice versa. This behaviour repeats clearly over time. If we look at the chart above we can distinguish several outstanding periods:
 
-- 1986 - 1990: Unemployment falls, house prices rise.
-- 1991 - 1996: Unemployment rises, house prices fall.
-- 1997 - 2006: Unemployment decreases, house prices increase.
-- 2007 - 2013: Unemployment rises, house prices fall.
-- 2014 - 2020: Unemployment decreases, house prices increase.
+- 1986 - 1990: Unemployment falls, housing prices rise.
+- 1991 - 1996: Unemployment rises, housing prices fall.
+- 1997 - 2006: Unemployment falls, housing prices rise.
+- 2007 - 2013: Unemployment rises, housing prices fall.
+- 2014 - 2020: Unemployment falls, housing prices rise.
 
 # Data sources
 

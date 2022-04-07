@@ -25,11 +25,11 @@ import Image from 'next/image'
 
 # Interpretation and observations
 
-Credit correlates very well with the evolution of house prices. As an example, we will make a couple of interpretations:
+Credit correlates positively with the evolution of housing prices. Some brief observations:
 
-- **Observation A**: We can observe how mortgage approvals were huge in the early 2000s. Far above the demographic upper limit, indicating the creation of a bubble. Currently, mortgage approvals are within the lower limit zone.
-- **Observation B**: The average mortgage amount follows an uptrend. This is an inflation consequence.
-- **Observation C**: Although the average mortgage amount tends upwards, corrections can occur. The most important happened in the year 2007-2013.
+- **Observation A**: Mortgage approvals were huge in the early 2000s. Far above the demographic upper limit, indicating the creation of a bubble. Currently, mortgage approvals are within the lower limit zone.
+- **Observation B**: The average mortgage amount follows an uptrend, consequence of the inflationary monetary policy.
+- **Observation C**: Although the average mortgage amount moves upward, corrections can occur following credit bubbles.
 - **Observation D**: The real credit movement (second chart) allow us to see the credit/debt cycles.
 - **Observation E**: About the ratio (third chart). If it is greater than 1, there are more mortgages than home sales, indicating the danger of a credit bubble. If it is less than 1, there are more home sales than mortgages, meaning cash gains strength.
 

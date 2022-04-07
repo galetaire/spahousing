@@ -12,12 +12,12 @@ import Image from 'next/image'
 
 ![Salarios y precio de la vivienda](/images/sou.png)
 
-- **Left axis (bars)**: wages, the standard wage represents the median of the salaries distribution in Spain, in euros. Data for 2020 and 2021 are still pending official confirmation, in this sense, Household disposable income has been used for the projection instead.
-- **Right axis (line)**: mortgages average amount in Spain, in euros.
+- **Left axis (bars)**: wages. The standard wage represents the median of the salaries distribution in Spain, in euros. Data for 2020 and 2021 are still pending official confirmation, instead, household disposable income has been used for the projection.
+- **Right axis (line)**: average mortgage amount, Spain, in euros.
 
 ![Salario ideal](/images/souideal.png)
 
-- **Ideal wage disconnection (in percentage)**: the ideal wage is defined as the wage that allows you to completely pay off your mortgage with 5 years of full wage. E.g., if the value equals 30, it means that wages must increase by 30% to match the ideal wage.
+- **Ideal wage disconnection (in percentage)**: the ideal wage is defined as "the wage that allows you to completely pay off your mortgage with 5 years of full wage". E.g., if the value equals 30, it means that wages must increase by 30% to match the ideal wage.
 
 ![Poder adquisitivo](/images/purchasing.png)
 
@@ -25,9 +25,9 @@ import Image from 'next/image'
 
 # Interpretation and observations
 
-The chart from above shows the housing cycles according to the median wages and the amounts requested in the mortgages. In this sense, it is common to found convergence and divergence cycles. Divergence implies that housing prices grow faster than wages, and convergence the reverse.
+The first chart from above shows the housing cycles by looking at wages. In this sense, it is common to found convergence and divergence cycles. Divergence implies that housing prices grow faster than wages, and convergence the opposite.
 
-- 1997 (?) - 2007: Wage/price divergence.
+- 2003 - 2007: Wage/price divergence.
 - 2008 - 2013: Wage/price convergence.
 - 2014 - 2021: Wage/price divergence.
 
