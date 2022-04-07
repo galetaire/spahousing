@@ -1,6 +1,6 @@
 ---
 title: Housing return on investment
-date: 2022-03-09
+date: 2022-04-09
 description: Data on the evolution of the profitability of home purchases (gross, net and including rental returns), using an annual basis.
 tag: Price
 author: Galetaire

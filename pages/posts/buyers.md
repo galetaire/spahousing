@@ -1,6 +1,6 @@
 ---
 title: Home sales by type of buyer
-date: 2022-03-09
+date: 2022-04-09
 description: Data on the distribution of home sales according to whether the buyer is an individual (national or foreign) or a legal entity.
 tag: Volume
 author: Galetaire
