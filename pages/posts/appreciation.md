@@ -17,7 +17,7 @@ import Image from 'next/image'
 
 ![Housing ROI](/images/housingroi.png)
 
-- **Housing ROI (%, black line = inflation)**: final return on investment, considering both net rental return and net asset appreciation.
+- **Housing ROI (%)**: final return on investment, considering both net rental return and net asset appreciation.
 
 # Interpretation and observations
 
