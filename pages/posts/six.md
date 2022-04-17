@@ -1,5 +1,5 @@
 ---
-title: Holistic housing model
+title: Holistic model
 date: 2022-03-09
 description: Data on the evolution of the housing market. The model consists of six main variables (price, inflation, home sales, credit, demographics and employment).
 tag: Price, Volume, Credit, Labor, Demography
