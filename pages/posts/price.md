@@ -1,5 +1,5 @@
 ---
-title: Annual evolution of housing prices
+title: Price (annual)
 date: 2022-03-09
 description: Data on the evolution of housing prices. With the price in euros per m2 adjusted for inflation, unadjusted, and with the sum in euros of accumulated inflation.
 tag: Price
