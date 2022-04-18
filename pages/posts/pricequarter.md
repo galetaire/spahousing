@@ -1,6 +1,6 @@
 ---
 title: Price (quarterly)
-date: 2022-03-09
+date: 2022-04-19
 description: Data on the evolution of housing prices. Comparing the data published by the association of notaries and the data published by Idealista.
 tag: Price
 author: Galetaire
