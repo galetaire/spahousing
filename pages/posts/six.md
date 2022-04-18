@@ -1,5 +1,5 @@
 ---
-title: Holistic model
+title: Multivariate model
 date: 2022-04-19
 description: Data on the evolution of the housing market. The model consists of six main variables (price, inflation, home sales, credit, demographics and employment).
 tag: Price, Volume, Credit, Labor, Demography
@@ -8,7 +8,7 @@ author: Galetaire
 
 import Image from 'next/image'
 
-# Multivariate housing chart
+# Multivariate housing model
 
 ![Datos del mercado inmobiliario](/images/model.png)
 
