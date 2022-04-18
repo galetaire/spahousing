@@ -8,7 +8,7 @@ author: Galetaire
 
 import Image from 'next/image'
 
-# Holistic housing market model
+# Multivariate housing chart
 
 ![Datos del mercado inmobiliario](/images/model.png)
 
@@ -17,7 +17,7 @@ import Image from 'next/image'
 
 # Interpretation and observations
 
-The model groups together the six variables that I consider essential in order to understand the housing market: price, volume, inflation, credit, demographics and employment. All the variables are represented in percentages. A couple of interpretations from the chart:
+The model groups together seven variables that I consider essential in order to understand the housing market: price (real and nominal), volume, inflation, credit, demographics and employment. All the variables are represented in percentages. A couple of interpretations from the chart:
 
 - **Observation A**: Inflation has been on a decreasing trend from 1986 to 2020.
 - **Observation B**: Between 2001 and 2008, the population increased a lot due to an immigration wave.
