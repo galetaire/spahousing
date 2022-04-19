@@ -12,8 +12,7 @@ import Image from 'next/image'
 
 ![Datos del mercado inmobiliario](/images/model.png)
 
-- **Inflation, Unemployment**: average rate for the given year.
-- **Population, Mortgages, Home sales, Real price and Nominal price**: percentage of annual change compared to the previous year.
+- **Inflation, Population, Mortgages, Home sales, Real price and Nominal price**: percentage of annual change compared to the previous year. **Unemployment**: average rate for the given year.
 
 # Interpretation and observations
 
