@@ -15,7 +15,7 @@ import Image from 'next/image'
 - **Bars**: green bars denote positive percentage appreciation, and red bars denote negative percentage appreciation.
 - **Red line**: annual inflation rate, represented in percentage.
 
-[![Housing ROI](/images/housingroi.png)](/images/housingroi.png)
+[![Housing ROI](/images/housingroi.png)](/images/housingroi.png?param1=value1&target=_blank)
 
 - **Housing ROI (%)**: final return on investment, considering both net rental return and net asset appreciation.
 
