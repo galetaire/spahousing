@@ -10,7 +10,7 @@ import Image from 'next/image'
 
 # Housing by type of tenure
 
-![Régimen de tenencia de la vivienda](/images/tenure.png)
+[![Régimen de tenencia de la vivienda](/images/tenure.png)](/images/tenure.png)
 
 # Interpretation and observations
 

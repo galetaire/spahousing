@@ -10,7 +10,7 @@ import Image from 'next/image'
 
 # Cement consumption and price
 
-![Consumo de cemento](/images/cement.png)
+[![Consumo de cemento](/images/cement.png)](/images/cement.png)
 
 - **Left axis (bars)**: cement consumption per year, in metric tons.
 - **Right axis (line)**: housing prices in euros per square meter.

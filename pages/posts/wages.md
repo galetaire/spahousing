@@ -10,16 +10,16 @@ import Image from 'next/image'
 
 # Relationship between wages and mortgages
 
-![Salarios y precio de la vivienda](/images/sou.png)
+[![Salarios y precio de la vivienda](/images/sou.png)](/images/sou.png)
 
 - **Left axis (bars)**: wages. The standard wage represents the median of the salaries distribution in Spain, in euros. Data for 2020 and 2021 are still pending official confirmation, instead, household disposable income has been used for the projection.
 - **Right axis (line)**: average mortgage amount, Spain, in euros.
 
-![Salario ideal](/images/souideal.png)
+[![Salario ideal](/images/souideal.png)](/images/souideal.png)
 
 - **Ideal wage disconnection (in percentage)**: the ideal wage is defined as "the wage that allows you to completely pay off your mortgage with 5 years of full wage". E.g., if the value equals 30, it means that wages must increase by 30% to match the ideal wage.
 
-![Poder adquisitivo](/images/purchasing.png)
+[![Poder adquisitivo](/images/purchasing.png)](/images/purchasing.png)
 
 - **Households purchasing power (in percentage)**: Spain households net disposable income plus households savings, minus inflation.
 

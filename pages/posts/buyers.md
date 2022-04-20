@@ -10,7 +10,7 @@ import Image from 'next/image'
 
 # Home sales by type of buyer
 
-![Nacionalidad de los compradores de vivienda](/images/tipuspersona.png)
+[![Nacionalidad de los compradores de vivienda](/images/tipuspersona.png)](/images/tipuspersona.png)
 
 # Interpretation and observations
 

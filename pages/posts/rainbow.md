@@ -10,7 +10,7 @@ import Image from 'next/image'
 
 # Rainbow model: housing cycles
 
-![Ciclos inmobiliarios](/images/rainbow.png)
+[![Ciclos inmobiliarios](/images/rainbow.png)](/images/rainbow.png)
 
 - **Color range interpretation** ➞ **Red** = strong overprice; **Orange** = slightly overprice; **Yellow** = neutral; **Green** = slightly underprice; **Blue** = strong underprice.
 
@@ -30,11 +30,11 @@ The rainbow curve describes a demographic channel, which, overlapped with the re
 
 Equations chart:
 
-![Reload chart](/images/rainbowsource.png)
+[![Reload chart](/images/rainbowsource.png)](/images/rainbowsource.png)
 
 Full dataset chart, from 1964 to 2070:
 
-![Reload chart](/images/rainbowmax.png)
+[![Reload chart](/images/rainbowmax.png)](/images/rainbowmax.png)
 
 # Data sources
 

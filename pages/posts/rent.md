@@ -10,11 +10,11 @@ import Image from 'next/image'
 
 # Average rental return
 
-![Rentabilidad alquiler](/images/rent2.png)
+[![Rentabilidad alquiler](/images/rent2.png)](/images/rent2.png)
 
 - **Price-to-rent ratio (%, net and gross)**: annual percentage of housing rental return in Spain.
 
-![Rentabilidad alquiler](/images/rent.png)
+[![Rentabilidad alquiler](/images/rent.png)](/images/rent.png)
 
 - **Price-to-rent ratio (time, net and gross)**: number of years to fully recover a home purchase in Spain.
 

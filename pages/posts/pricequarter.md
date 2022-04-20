@@ -10,7 +10,7 @@ import Image from 'next/image'
 
 # Quarterly evolution of housing prices
 
-![Evolución precio de la vivienda](/images/preu.png)
+ [![Evolución precio de la vivienda](/images/preu.png)](/images/preu.png)
 
 - **Left axis (line)**: house price in euros per square meter, according to Idealista and to the notaries.
 - **Right axis (area)**: Percentage of difference (in absolute value) between the two compared price sources.

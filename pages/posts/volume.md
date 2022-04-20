@@ -10,7 +10,7 @@ import Image from 'next/image'
 
 # Evolution of home sales
 
-![Compraventas de vivienda](/images/compravenda.png)
+[![Compraventas de vivienda](/images/compravenda.png)](/images/compravenda.png)
 
 - **Left axis (bars)**: total number of home sales in each quarter.
 - **Right axis (line)**: housing price index.
