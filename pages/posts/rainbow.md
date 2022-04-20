@@ -8,7 +8,7 @@ author: Galetaire
 
 import Image from 'next/image'
 
-# The rainbow model, cycle indicator
+# Rainbow model: housing cycles
 
 ![Ciclos inmobiliarios](/images/rainbow.png)
 

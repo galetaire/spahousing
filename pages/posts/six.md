@@ -8,7 +8,7 @@ author: Galetaire
 
 import Image from 'next/image'
 
-# Multivariate housing model
+# Multivariate model: housing overview
 
 ![Datos del mercado inmobiliario](/images/model.png)
 
