@@ -10,12 +10,12 @@ import Image from 'next/image'
 
 # Housing return on investment
 
-[![Rentabilidad de la vivienda](/images/rendibilitat.png)](/images/rendibilitat.png?param1=value1?target=_blank)
+[![Rentabilidad de la vivienda](/images/rendibilitat.png)](/images/rendibilitat.png){:target="\_blank"}
 
 - **Bars**: green bars denote positive percentage appreciation, and red bars denote negative percentage appreciation.
 - **Red line**: annual inflation rate, represented in percentage.
 
-[![Housing ROI](/images/housingroi.png)](/images/housingroi.png?param1=value1&target=_blank)
+[![Housing ROI](/images/housingroi.png)](/images/housingroi.png)
 
 - **Housing ROI (%)**: final return on investment, considering both net rental return and net asset appreciation.
 
