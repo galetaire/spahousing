@@ -1,6 +1,6 @@
 ---
 title: Home sales (quarterly)
-date: 2022-04-19
+date: 2022-05-19
 description: Data on the evolution of the number of home sales. The higher the volume of transactions, the higher the price of housing tends to be.
 tag: Volume
 author: Galetaire

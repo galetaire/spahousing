@@ -1,6 +1,6 @@
 ---
 title: Mortgages and credit
-date: 2022-04-19
+date: 2022-05-19
 description: Data on the evolution of the number of mortgages and their average amount. Credit correlates very well with the evolution of house prices.
 tag: Credit
 author: Galetaire

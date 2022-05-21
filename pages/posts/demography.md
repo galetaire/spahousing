@@ -1,6 +1,6 @@
 ---
 title: Home sales (annual)
-date: 2022-04-19
+date: 2022-05-19
 description: Data on the evolution of the number of home sales in relation to the purchasing-age-population, which is between 25 and 50 years old.
 tag: Demography, Volume
 author: Galetaire
