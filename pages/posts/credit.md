@@ -12,7 +12,7 @@ import Image from 'next/image'
 
 [![Hipotecas en España](/images/credit.png)](/images/credit.png)
 
-- **Left axis (bars)**: annual number of mortgages approved and released.
+- **Left axis (bars)**: annual number of mortgages approved (signed) and released (cancelled).
 - **Right axis (line)**: average annual mortgage amount, in euros.
 
 [![Crédito en España](/images/credit2.png)](/images/credit2.png)
