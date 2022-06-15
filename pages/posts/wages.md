@@ -1,6 +1,6 @@
 ---
 title: Wages
-date: 2022-05-19
+date: 2022-06-15
 description: Data on median wages and their relationship to the average mortgage amount. This comparison shows whether there is a wage disconnect.
 tag: Labor, Credit
 author: Galetaire

@@ -1,6 +1,6 @@
 ---
 title: Rental return on investment
-date: 2022-05-19
+date: 2022-06-15
 description: Data on the average time (in years) that it is required to recover a house purchase through rental. An indicator similar to the price-to-earnings ratio (P/E).
 tag: Price
 author: Galetaire
