@@ -19,9 +19,9 @@ import Image from 'next/image'
 
 - **Ideal wage disconnection (in percentage)**: the ideal wage is defined as "the wage that allows you to completely pay off your mortgage with 5 years of full wage". E.g., if the value equals 30, it means that wages must increase by 30% to match the ideal wage.
 
-[![Poder adquisitivo](/images/purchasing.png)](/images/purchasing.png)
+[![Acceso a la vivienda](/images/accesovivienda.png)](/images/accesovivienda.png)
 
-- **Households purchasing power (in percentage)**: Spain households net disposable income plus households savings, minus inflation.
+- **Housing affordability (Base 100=1999)**: Spain households affordability index. It considers income growth against housing and inflation growth.
 
 # Interpretation and observations
 
