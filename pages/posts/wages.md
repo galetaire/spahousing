@@ -21,7 +21,7 @@ import Image from 'next/image'
 
 [![Acceso a la vivienda](/images/accesovivienda.png)](/images/accesovivienda.png)
 
-- **Housing affordability (Base 100=1999)**: Spain households affordability index. It considers income growth against housing and inflation growth.
+- **Housing affordability (Base 100=1999)**: Spain housing affordability index. It considers income growth against housing and inflation growth.
 
 # Interpretation and observations
 
