@@ -1,7 +1,7 @@
 ---
 title: Housing return on investment
 date: 2022-06-15
-description: Data on the profitability of home purchases (gross and net; including rental returns). Rental ROI is also presented in the average time (in years) that it is required to recover a house purchase through rental, an indicator similar to the price-to-earnings ratio (P/E).
+description: Data on the profitability of home purchases (gross and net; including rental returns). Rental ROI is also presented in the average time (in years) that it is required to recover a house purchase through rental.
 tag: Price
 author: Galetaire
 ---
