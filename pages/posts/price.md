@@ -1,7 +1,7 @@
 ---
 title: Price
 date: 2022-06-15
-description: Data on the evolution of housing prices. With the price in euros per m2 adjusted for inflation, unadjusted, and with the sum in euros of accumulated inflation. Comparing the data published by the association of notaries and the data published by Idealista.
+description: Data on the evolution of housing prices. Considering both real (adjusted for inflation) and nominal prices (unadjusted). Also tracking the spread between the data published by the association of notaries and the data published by Idealista.
 tag: Price
 author: Galetaire
 ---
