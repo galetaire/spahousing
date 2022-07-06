@@ -1,14 +1,14 @@
 ---
 title: Wages
 date: 2022-06-15
-description: Data on median wages and their relationship to the average mortgage amount. This comparison shows whether there is a wage disconnect.
+description: Data on median wages and their relationship to the average mortgage amount. As well as wages in contrast to the growth of inflation and housing prices.
 tag: Labor, Credit
 author: Galetaire
 ---
 
 import Image from 'next/image'
 
-# Relationship between wages and mortgages
+# Wages and housing affordability
 
 [![Salarios y precio de la vivienda](/images/sou.png)](/images/sou.png)
 
