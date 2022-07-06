@@ -8,7 +8,7 @@ author: Galetaire
 
 import Image from 'next/image'
 
-# (a) Evolution of the number of dwellings
+# (a) Number of dwellings
 
 [![Número de viviendas](/images/nombrehabitatges.png)](/images/nombrehabitatges.png)
 
@@ -34,7 +34,7 @@ The **second chart** shows the today existing homes by period of construction. M
 
 The **third chart** shows the pace of housing construction, depending on whether it has been a year of surplus (new builds grow faster than the population), or deficit (the population is growing faster than the pace of construction).
 
-# (b) Cement consumption and price
+# (b) Cement consumption
 
 [![Consumo de cemento](/images/cement.png)](/images/cement.png)
 
