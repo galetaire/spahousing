@@ -1,6 +1,6 @@
 ---
 title: Home sales
-date: 2022-06-15
+date: 2022-07-15
 description: Data on the evolution of the number of home sales, annual and quarterly. The annual data are crossed with the purchasing-age-population, which is between 25 and 50 years old, to identify the market conditions.
 tag: Demography, Volume
 author: Galetaire

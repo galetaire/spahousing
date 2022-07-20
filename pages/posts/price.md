@@ -1,6 +1,6 @@
 ---
 title: Price
-date: 2022-06-15
+date: 2022-07-15
 description: Data on the evolution of housing prices. Considering both real (adjusted for inflation) and nominal prices (unadjusted). Also tracking the spread between the data published by the association of notaries and the data published by Idealista.
 tag: Price
 author: Galetaire

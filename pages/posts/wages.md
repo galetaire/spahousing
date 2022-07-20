@@ -1,6 +1,6 @@
 ---
 title: Wages
-date: 2022-06-15
+date: 2022-07-15
 description: Data on median wages and their relationship to the average mortgage amount. As well as wages in contrast to the growth of inflation and housing prices.
 tag: Labor, Credit
 author: Galetaire
