@@ -12,8 +12,8 @@ import Image from 'next/image'
 
 [![Paro y precio de la vivienda](/images/ocupacio.png)](/images/ocupacio.png)
 
-- **Left axis**: HPI (Housing Price Index) inflation adjusted (base 100 = 2000).
-- **Right axis**: average unemployment rate for each year.
+- **Left axis**: average unemployment rate for each year.
+- **Right axis**: average price growth of housing prices.
 
 [![Paro y precio de la viviendas](/images/ocupacio2.png)](/images/ocupacio2.png)
 
