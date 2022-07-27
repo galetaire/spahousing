@@ -13,7 +13,7 @@ import Image from 'next/image'
 [![Paro y precio de la vivienda](/images/ocupacio.png)](/images/ocupacio.png)
 
 - **Left axis**: average unemployment rate for each year.
-- **Right axis**: average price growth of housing prices.
+- **Right axis**: average price growth rate for each year.
 
 [![Paro y precio de la viviendas](/images/ocupacio2.png)](/images/ocupacio2.png)
 
