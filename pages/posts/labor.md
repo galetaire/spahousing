@@ -8,7 +8,7 @@ author: Galetaire
 
 import Image from 'next/image'
 
-# Relationship between unemployment and prices
+# Unemployment and housing prices
 
 [![Paro y precio de la vivienda](/images/ocupacio.png)](/images/ocupacio.png)
 
