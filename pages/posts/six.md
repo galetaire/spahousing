@@ -21,7 +21,7 @@ The model groups together seven variables that I consider essential in order to 
 - **Observation A**: Inflation has been on a decreasing trend from 1986 to 2020.
 - **Observation B**: Between 2001 and 2008, the population increased a lot due to an immigration wave.
 - **Observation C**: When unemployment increases, the price of housing tends to be negative.
-- **Observation D**: The black bar, nominal price, informs us of the price movement in nominal terms. For example, between 1986 and 1990 the rise in house prices was vey high, due to high inflation.
+- **Observation D**: The black bar, nominal price, informs us of the price movement in nominal terms. For example, between 1986 and 1990 the rise in house prices was very high, due to high inflation.
 - **Observation E**: The orange bar, real price, informs us of the de/revaluation of housing. For example, in 2012, there was a strong devaluation, and in 2017 a strong revaluation.
 
 # Data sources
