@@ -12,7 +12,7 @@ import Image from 'next/image'
 
 [![Salarios y precio de la vivienda](/images/sou.png)](/images/sou.png)
 
-- **Left axis (bars)**: wages. The standard wage represents the median of the salaries distribution in Spain, in euros. Data for 2020 and 2021 are still pending official confirmation, instead, household disposable income has been used for the projection.
+- **Left axis (bars)**: wages. The standard wage represents the net disposable income averaged for those over 18 years of age in Spain, in euros.
 - **Right axis (line)**: average mortgage amount, Spain, in euros.
 
 [![Salario ideal](/images/souideal.png)](/images/souideal.png)
@@ -33,7 +33,6 @@ The first chart from above shows the housing cycles by looking at wages. In this
 
 # Data sources
 
-- Wage distribution (median): [Link](https://www.ine.es/jaxiT3/Tabla.htm?t=28191)
 - Household disposable income: [Link](https://www.ine.es/jaxiT3/Tabla.htm?t=30906)
 - Household savings: [Link](https://www.ine.es/jaxiT3/Tabla.htm?t=30906)
 - Mortgages: [Link](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736170236&menu=resultados&idp=1254735576757#!tabs-1254736158259)
