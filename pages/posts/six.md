@@ -1,7 +1,7 @@
 ---
 title: Multivariate model
 date: 2022-07-15
-description: Data on the evolution of the housing market. The model consists of six main variables (price, inflation, home sales, credit, demographics and employment).
+description:
 tag: Price, Volume, Credit, Labor, Demography
 author: Galetaire
 ---

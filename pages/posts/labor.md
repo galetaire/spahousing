@@ -1,7 +1,7 @@
 ---
 title: Unemployment
 date: 2022-07-15
-description: Data on the number of unemployed and its relation to the housing price index. Rising unemployment has always led to stagnation or falling prices.
+description:
 tag: Labor, Price
 author: Galetaire
 ---

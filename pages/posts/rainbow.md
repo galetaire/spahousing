@@ -1,7 +1,7 @@
 ---
 title: Housing cycles
 date: 2022-07-15
-description: Model to predict real-estate cycles. Showing data on the evolution of housing prices (inflation-adjusted), crossed with the demographic curve (rainbow).
+description:
 tag: Price, Demography
 author: Galetaire
 ---

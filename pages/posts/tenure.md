@@ -1,7 +1,7 @@
 ---
 title: Type of tenure
 date: 2022-07-15
-description: Data on the distribution of housing tenure according to whether the house is fully owned, owned but mortgaged, rented or freely loaned.
+description:
 tag: Demography
 author: Galetaire
 ---
@@ -14,7 +14,7 @@ import Image from 'next/image'
 
 # Interpretation and observations
 
-The chart from above shows the distribution (%) of homes according to whether the house is owned (fully paid), owned but mortgaged, rented or freely loaned (usually by a relative). Thus, we can see the structure of ownership in Spain. Some observations:
+The chart from above shows the distribution (%) of homes according to whether the house is owned (fully paid), owned but mortgaged, rented or freely loaned. Thus, we can see the structure of ownership in Spain. Some observations:
 
 - **Observation A**: Fully owned houses is the prime tenure in Spain.
 - **Observation B**: Since 2013 the number of mortgaged houses has been decreasing, hence we should expect an uptrend in full ownership in the future.

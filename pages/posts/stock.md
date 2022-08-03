@@ -1,7 +1,7 @@
 ---
 title: Stock development
 date: 2022-07-15
-description: Data on the number of dwellings created annually, the housing stock balance, the ratio of dwellings per 1,000 inhabitants, as well as the evolution of cement consumption.
+description:
 tag: Volume
 author: Galetaire
 ---

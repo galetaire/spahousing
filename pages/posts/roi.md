@@ -1,7 +1,7 @@
 ---
 title: Housing return on investment
 date: 2022-07-15
-description: Data on the profitability of home purchases (gross and net; including rental returns). Rental ROI is also presented in the average time (in years) that it is required to recover a house purchase through rental.
+description:
 tag: Price
 author: Galetaire
 ---
@@ -23,7 +23,7 @@ import Image from 'next/image'
 
 The first chart shows the final net return on investment, considering both net rental return and net asset appreciation.
 
-The second chart from above shows the gross nominal annual appreciation of housing, i.e. whether if houses increases or decreases in value year over year (it does not consider rental returns). We can distinguish several outstanding periods:
+The second chart from above shows the gross nominal annual appreciation of housing, i.e. whether if houses increase or decrease in value year over year (it does not consider rental returns). We can distinguish several outstanding periods:
 
 - 1986 - 1990: Strong revaluation.
 - 1991 - 1993: Stagnation.
