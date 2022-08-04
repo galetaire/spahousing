@@ -4,14 +4,14 @@ date: 2022-07-15
 description:
 tag: Volume
 author: Galetaire
-<div class="meta-line">
-<a class="meta-back" href="/">Back</a></div>
+<a class="meta-back" href="/">Back</a>
 ---
 
+<div class="meta-line">
+<a class="meta-back" href="/">Return to menu</a></div>
 import Image from 'next/image'
 
 # Home sales by type of buyer
-[Return to menu](/)
 
 [![Nacionalidad de los compradores de vivienda](/images/tipuspersona.png)](/images/tipuspersona.png)
 
