@@ -4,7 +4,7 @@ date: 2022-07-15
 description:
 tag: Volume
 author: Galetaire
-<a class="meta-back" href="/posts">Back</a>
+meta-back: <a class="meta-back" href="/posts">Back</a>
 ---
 <div class="meta-line"><a class="meta-back" href="/">← Back</a></div>
 import Image from 'next/image'
