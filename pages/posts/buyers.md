@@ -7,9 +7,9 @@ author: Galetaire
 ---
 
 import Image from 'next/image'
-[Return to menu](/)
 
 # Home sales by type of buyer
+[Return to menu](/)
 
 [![Nacionalidad de los compradores de vivienda](/images/tipuspersona.png)](/images/tipuspersona.png)
 
