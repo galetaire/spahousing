@@ -6,6 +6,9 @@ tag: Volume
 author: Galetaire
 ---
 
+<div class="meta-line">
+<a class="meta-back" href="/posts">Back</a></div>
+
 import Image from 'next/image'
 
 # Home sales by type of buyer
