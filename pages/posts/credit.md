@@ -6,7 +6,7 @@ tag: Credit
 author: Galetaire
 ---
 <div class="meta-line">
-<a class="meta-back" href="/">Return to menu</a></div>
+<a class="meta-back" href="/">← Back</a></div>
 import Image from 'next/image'
 
 # Evolution of mortgages
