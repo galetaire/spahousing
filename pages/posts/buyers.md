@@ -10,7 +10,7 @@ import Image from 'next/image'
 
 # Home sales by type of buyer
 
-_[Return to menu](https://www.spainhousing.xyz/)_
+[Return to menu](/)
 
 [![Nacionalidad de los compradores de vivienda](/images/tipuspersona.png)](/images/tipuspersona.png)
 
