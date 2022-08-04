@@ -3,7 +3,7 @@ title: Type of buyer
 date: 2022-07-15
 description:
 tag: Volume
-author: Galetaire
+author: [Return to menu](/)
 ---
 
 import Image from 'next/image'
