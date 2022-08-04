@@ -9,6 +9,7 @@ author: Galetaire
 import Image from 'next/image'
 
 # Housing by type of tenure
+[Return to menu](/)
 
 [![Régimen de tenencia de la vivienda](/images/tenure.png)](/images/tenure.png)
 

@@ -9,6 +9,7 @@ author: Galetaire
 import Image from 'next/image'
 
 # (a) Housing return on investment
+[Return to menu](/)
 
 [![Housing ROI](/images/housingroi.png)](/images/housingroi.png)
 

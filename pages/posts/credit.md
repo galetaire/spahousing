@@ -9,6 +9,7 @@ author: Galetaire
 import Image from 'next/image'
 
 # Evolution of mortgages
+[Return to menu](/)
 
 [![Hipotecas en España](/images/credit.png)](/images/credit.png)
 

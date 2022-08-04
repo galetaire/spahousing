@@ -9,6 +9,7 @@ author: Galetaire
 import Image from 'next/image'
 
 # (a) Number of dwellings
+[Return to menu](/)
 
 [![Número de viviendas](/images/nombrehabitatges.png)](/images/nombrehabitatges.png)
 

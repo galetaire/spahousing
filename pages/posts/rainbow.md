@@ -9,6 +9,7 @@ author: Galetaire
 import Image from 'next/image'
 
 # Rainbow model: housing cycles
+[Return to menu](/)
 
 [![Ciclos inmobiliarios](/images/rainbow.png)](/images/rainbow.png)
 

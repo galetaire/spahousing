@@ -9,6 +9,7 @@ author: Galetaire
 import Image from 'next/image'
 
 # Wages and housing affordability
+[Return to menu](/)
 
 [![Salarios y precio de la vivienda](/images/sou.png)](/images/sou.png)
 

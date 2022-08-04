@@ -9,6 +9,7 @@ author: Galetaire
 import Image from 'next/image'
 
 # Annual evolution of home sales
+[Return to menu](/)
 
 [![Compraventa de vivienda](/images/demografia.png)](/images/demografia.png)
 

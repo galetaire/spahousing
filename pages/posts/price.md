@@ -9,6 +9,7 @@ author: Galetaire
 import Image from 'next/image'
 
 # Annual evolution of housing prices
+[Return to menu](/)
 
 [![Evolución precio de la vivienda](/images/preuhistoric.png)](/images/preuhistoric.png)
 

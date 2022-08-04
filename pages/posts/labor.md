@@ -9,6 +9,7 @@ author: Galetaire
 import Image from 'next/image'
 
 # Unemployment and housing prices
+[Return to menu](/)
 
 [![Paro y precio de la vivienda](/images/ocupacio.png)](/images/ocupacio.png)
 

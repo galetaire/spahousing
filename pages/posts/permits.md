@@ -9,6 +9,7 @@ author: Galetaire
 import Image from 'next/image'
 
 # Price of land and building permits
+[Return to menu](/)
 
 [![Precio del suelo](/images/llicenciesobra.png)](/images/llicenciesobra.png)
 
