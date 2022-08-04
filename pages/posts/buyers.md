@@ -3,13 +3,14 @@ title: Type of buyer
 date: 2022-07-15
 description:
 tag: Volume
-author: [Return to menu](/)
+author: Galetaire
 ---
 
 import Image from 'next/image'
+[Return to menu](/)
 
 # Home sales by type of buyer
-[Return to menu](/)
+
 [![Nacionalidad de los compradores de vivienda](/images/tipuspersona.png)](/images/tipuspersona.png)
 
 # Interpretation and observations
