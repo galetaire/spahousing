@@ -5,8 +5,7 @@ description:
 tag: Price, Volume
 author: Galetaire
 ---
-<div class="meta-line">
-<a class="meta-back" href="/">← Back</a></div>
+<div class="meta-line"><a class="meta-back" href="/">← Back</a></div>
 import Image from 'next/image'
 
 # Price of land and building permits

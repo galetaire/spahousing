@@ -5,8 +5,7 @@ description:
 tag: Price
 author: Galetaire
 ---
-<div class="meta-line">
-<a class="meta-back" href="/">← Back</a></div>
+<div class="meta-line"><a class="meta-back" href="/">← Back</a></div>
 import Image from 'next/image'
 
 # Annual evolution of housing prices

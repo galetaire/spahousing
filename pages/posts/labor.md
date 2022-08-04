@@ -5,8 +5,7 @@ description:
 tag: Labor, Price
 author: Galetaire
 ---
-<div class="meta-line">
-<a class="meta-back" href="/">← Back</a></div>
+<div class="meta-line"><a class="meta-back" href="/">← Back</a></div>
 import Image from 'next/image'
 
 # Unemployment and housing prices
