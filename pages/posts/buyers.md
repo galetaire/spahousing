@@ -4,7 +4,6 @@ date: 2022-07-15
 description:
 tag: Volume
 author: Galetaire
-<a class="meta-back" href="/">Back</a>
 ---
 
 <div class="meta-line">
