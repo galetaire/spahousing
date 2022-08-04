@@ -5,7 +5,7 @@ description:
 tag: Labor, Credit
 author: Galetaire
 ---
-<div class="meta-line"><a class="meta-back" href="/">← Back</a></div>
+
 import Image from 'next/image'
 
 # Wages and housing affordability
@@ -36,3 +36,5 @@ The first chart from above shows the housing cycles by looking at wages. In this
 - Household disposable income (_Saldos contables > Hogares e Instituciones > Renta disponible neta_): [Link](https://www.ine.es/jaxiT3/Tabla.htm?t=30906)
 - Household savings: [Link](https://www.ine.es/jaxiT3/Tabla.htm?t=30906)
 - Mortgages: [Link](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736170236&menu=resultados&idp=1254735576757#!tabs-1254736158259)
+
+<div class="meta-line"><a class="meta-back" href="/">← Back to Home Page</a></div>

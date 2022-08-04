@@ -5,7 +5,7 @@ description:
 tag: Price, Demography
 author: Galetaire
 ---
-<div class="meta-line"><a class="meta-back" href="/">← Back</a></div>
+
 import Image from 'next/image'
 
 # Rainbow model: housing cycles
@@ -43,3 +43,5 @@ Full dataset chart, from 1964 to 2070:
 - Inflation data: [Link](https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx)
 - Apparent cement consumption: [Link](https://tematicas.org/sintesis-economica/indicadores-de-produccion-y-demanda-nacional/consumo-aparente-de-cemento/)
 - Population and projections according to _INE_: [Link](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176953&menu=resultados&idp=1254735572981)
+
+<div class="meta-line"><a class="meta-back" href="/">← Back to Home Page</a></div>

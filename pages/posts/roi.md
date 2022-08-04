@@ -5,7 +5,7 @@ description:
 tag: Price
 author: Galetaire
 ---
-<div class="meta-line"><a class="meta-back" href="/">← Back</a></div>
+
 import Image from 'next/image'
 
 # (a) Housing return on investment
@@ -54,4 +54,6 @@ The charts from above show the ratio between the purchase price and the rental p
 - Housing prices according to _Sociedad de Tasación_: [Link](https://www.st-tasacion.es/informe-de-tendencias-digital/)
 - Inflation data: [Link](https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx)
 - Rental prices according to _Idealista_: [Link](https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/alquiler/)
-- Housing prices according to _Idealista_: [Link](https://www.idealista.com/sala-de-prensa/informes-precio-vivienda)
+- Housing prices according to _Idealista_: [Link](https://www.idealista.com/sala
+
+<div class="meta-line"><a class="meta-back" href="/">← Back to Home Page</a></div>

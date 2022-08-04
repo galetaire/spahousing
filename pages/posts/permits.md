@@ -5,7 +5,7 @@ description:
 tag: Price, Volume
 author: Galetaire
 ---
-<div class="meta-line"><a class="meta-back" href="/">← Back</a></div>
+
 import Image from 'next/image'
 
 # Price of land and building permits
@@ -32,3 +32,5 @@ The charts from above show the number of annual building licenses (and the type 
 - Construction and Building Permits (I, "_Visados de dirección de obra. Nº visados según tipo de obra_): [Link](https://www.fomento.gob.es/BE/?nivel=2&orden=09000000)
 - Construction and Building Permits (II): [Link](https://apps.fomento.gob.es/BoletinOnline/?nivel=2&orden=10000000)
 - Price of land: [Link](https://www.mitma.gob.es/el-ministerio/informacion-estadistica/vivienda-y-actuaciones-urbanas/estadisticas/suelo/estadisticas-de-precios-de-suelo-urbano)
+
+<div class="meta-line"><a class="meta-back" href="/">← Back to Home Page</a></div>

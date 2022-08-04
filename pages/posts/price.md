@@ -5,7 +5,7 @@ description:
 tag: Price
 author: Galetaire
 ---
-<div class="meta-line"><a class="meta-back" href="/">← Back</a></div>
+
 import Image from 'next/image'
 
 # Annual evolution of housing prices
@@ -45,3 +45,5 @@ The _"Spread"_ and the _"Sharp change"_ are intended to serve as signals to capt
 - Housing prices according to _Sociedad de Tasación_: [Link](https://www.st-tasacion.es/informe-de-tendencias-digital/)
 - Inflation data: [Link](https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx)
 - Housing prices according to _Idealista_: [Link](https://www.idealista.com/sala-de-prensa/informes-precio-vivienda)
+
+<div class="meta-line"><a class="meta-back" href="/">← Back to Home Page</a></div>

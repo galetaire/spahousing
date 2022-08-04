@@ -5,7 +5,7 @@ description:
 tag: Demography
 author: Galetaire
 ---
-<div class="meta-line"><a class="meta-back" href="/">← Back</a></div>
+
 import Image from 'next/image'
 
 # Housing by type of tenure
@@ -24,3 +24,5 @@ The chart from above shows the distribution (%) of homes according to whether th
 # Data sources
 
 - Continuous Household Survey: [Link](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176952&menu=resultados&idp=1254735572981)
+
+<div class="meta-line"><a class="meta-back" href="/">← Back to Home Page</a></div>
