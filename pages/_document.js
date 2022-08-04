@@ -32,7 +32,6 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <a class="meta-back" href="/">Back</a>
         </body>
       </Html>
     )
