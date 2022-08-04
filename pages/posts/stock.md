@@ -5,11 +5,11 @@ description:
 tag: Volume
 author: Galetaire
 ---
-
+<div class="meta-line">
+<a class="meta-back" href="/">Return to menu</a></div>
 import Image from 'next/image'
 
 # (a) Number of dwellings
-[Return to menu](/)
 
 [![Número de viviendas](/images/nombrehabitatges.png)](/images/nombrehabitatges.png)
 

@@ -5,11 +5,11 @@ description:
 tag: Price
 author: Galetaire
 ---
-
+<div class="meta-line">
+<a class="meta-back" href="/">Return to menu</a></div>
 import Image from 'next/image'
 
 # Annual evolution of housing prices
-[Return to menu](/)
 
 [![Evolución precio de la vivienda](/images/preuhistoric.png)](/images/preuhistoric.png)
 

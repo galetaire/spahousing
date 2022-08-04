@@ -5,11 +5,11 @@ description:
 tag: Credit
 author: Galetaire
 ---
-
+<div class="meta-line">
+<a class="meta-back" href="/">Return to menu</a></div>
 import Image from 'next/image'
 
 # Evolution of mortgages
-[Return to menu](/)
 
 [![Hipotecas en España](/images/credit.png)](/images/credit.png)
 

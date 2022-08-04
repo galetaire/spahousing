@@ -5,11 +5,11 @@ description:
 tag: Price, Volume, Credit, Labor, Demography
 author: Galetaire
 ---
-
+<div class="meta-line">
+<a class="meta-back" href="/">Return to menu</a></div>
 import Image from 'next/image'
 
 # Multivariate model: housing overview
-[Return to menu](/)
 
 [![Datos del mercado inmobiliario](/images/model.png)](/images/model.png)
 

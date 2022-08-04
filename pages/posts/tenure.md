@@ -5,11 +5,11 @@ description:
 tag: Demography
 author: Galetaire
 ---
-
+<div class="meta-line">
+<a class="meta-back" href="/">Return to menu</a></div>
 import Image from 'next/image'
 
 # Housing by type of tenure
-[Return to menu](/)
 
 [![Régimen de tenencia de la vivienda](/images/tenure.png)](/images/tenure.png)
 

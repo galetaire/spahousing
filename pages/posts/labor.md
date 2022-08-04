@@ -5,11 +5,11 @@ description:
 tag: Labor, Price
 author: Galetaire
 ---
-
+<div class="meta-line">
+<a class="meta-back" href="/">Return to menu</a></div>
 import Image from 'next/image'
 
 # Unemployment and housing prices
-[Return to menu](/)
 
 [![Paro y precio de la vivienda](/images/ocupacio.png)](/images/ocupacio.png)
 

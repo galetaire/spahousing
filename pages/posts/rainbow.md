@@ -5,11 +5,11 @@ description:
 tag: Price, Demography
 author: Galetaire
 ---
-
+<div class="meta-line">
+<a class="meta-back" href="/">Return to menu</a></div>
 import Image from 'next/image'
 
 # Rainbow model: housing cycles
-[Return to menu](/)
 
 [![Ciclos inmobiliarios](/images/rainbow.png)](/images/rainbow.png)
 

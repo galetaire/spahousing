@@ -5,11 +5,11 @@ description:
 tag: Labor, Credit
 author: Galetaire
 ---
-
+<div class="meta-line">
+<a class="meta-back" href="/">Return to menu</a></div>
 import Image from 'next/image'
 
 # Wages and housing affordability
-[Return to menu](/)
 
 [![Salarios y precio de la vivienda](/images/sou.png)](/images/sou.png)
 
