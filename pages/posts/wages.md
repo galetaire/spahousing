@@ -1,6 +1,6 @@
 ---
 title: Wages
-date: 2022-07-15
+date: 2022-08-05
 description:
 tag: Labor, Credit
 author: Galetaire
@@ -12,7 +12,7 @@ import Image from 'next/image'
 
 [![Salarios y precio de la vivienda](/images/sou.png)](/images/sou.png)
 
-- **Left axis (bars)**: wages. The standard wage represents the net disposable income averaged for those over 18 years of age, Spain, in euros.
+- **Left axis (bars)**: the standard wage represents the net disposable income averaged for those over 18 years of age, Spain, in euros.
 - **Right axis (line)**: average mortgage amount, Spain, in euros.
 
 [![Salario ideal](/images/souideal.png)](/images/souideal.png)

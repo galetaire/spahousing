@@ -1,6 +1,6 @@
 ---
 title: Price
-date: 2022-07-15
+date: 2022-08-05
 description:
 tag: Price
 author: Galetaire
@@ -37,7 +37,7 @@ The _"Spread"_ and the _"Sharp change"_ are intended to serve as signals to capt
 
 - **Differential or Spread**: The grey bars (right axis) simply show the difference between the two prices in %. The two lines should not be too far apart, as they represent the same information. Therefore, when the difference is too large, probably one of the two sources is getting the trend wrong.
 
-- **Sharp change**: The green line (with the error bars) show the variation of the notarial price compared to the Idealista trend. The line can move away from the Idealista price both upwards and downwards. For example, in 2010-2012 there are a couple of very visible moments when it moves clearly downwards, suggesting that the downward pressure is strong.
+- **Sharp change**: The green line shows the variation of the notarial price compared to the Idealista trend. The line can move away from the Idealista price both upwards and downwards. For example, in 2010-2012 there are a couple of very visible moments when it moves clearly downwards, suggesting that the downward pressure is strong.
 
 # Data sources
 

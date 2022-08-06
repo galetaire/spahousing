@@ -1,6 +1,6 @@
 ---
 title: Multivariate model
-date: 2022-07-15
+date: 2022-08-05
 description:
 tag: Price, Volume, Credit, Labor, Demography
 author: Galetaire
@@ -16,12 +16,12 @@ import Image from 'next/image'
 
 # Interpretation and observations
 
-The model groups together seven variables that I consider essential in order to understand the housing market: price (real and nominal), volume, inflation, credit, demographics and employment. All the variables are represented in percentages. A couple of interpretations from the chart:
+The model groups together seven essential variables in order to understand the housing market: price (real and nominal), volume, inflation, credit, demographics and employment. All the variables are represented in percentages. A couple of interpretations from the chart:
 
 - **Observation A**: Inflation has been on a decreasing trend from 1986 to 2020.
-- **Observation B**: Between 2001 and 2008, the population increased a lot due to an immigration wave.
-- **Observation C**: When unemployment increases, the price of housing tends to be negative.
-- **Observation D**: The black bar, nominal price, informs us of the price movement in nominal terms. For example, between 1986 and 1990 the rise in house prices was very high, due to high inflation.
+- **Observation B**: Between 2001 and 2008, the population increased due to an immigration wave.
+- **Observation C**: When unemployment increases, the price of housing tends to decrease.
+- **Observation D**: The black bar informs us of the price movement in nominal terms. For example, between 1986 and 1990 the rise in house prices was very high, due to inflation.
 - **Observation E**: The orange bar, real price, informs us of the de/revaluation of housing. For example, in 2012, there was a strong devaluation, and in 2017 a strong revaluation.
 
 # Data sources

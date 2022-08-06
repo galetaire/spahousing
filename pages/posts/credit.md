@@ -1,6 +1,6 @@
 ---
 title: Mortgages and credit
-date: 2022-07-15
+date: 2022-08-05
 description:
 tag: Credit
 author: Galetaire
@@ -12,7 +12,7 @@ import Image from 'next/image'
 
 [![Hipotecas en España](/images/credit.png)](/images/credit.png)
 
-- **Left axis (bars)**: annual number of mortgages approved (signed) and released (cancelled).
+- **Left axis (bars)**: annual number of mortgages approved and released.
 - **Right axis (line)**: average annual mortgage amount, in euros.
 
 [![Crédito en España](/images/credit2.png)](/images/credit2.png)
@@ -27,11 +27,10 @@ import Image from 'next/image'
 
 Credit correlates positively with the evolution of housing prices. Some brief observations:
 
-- **Observation A**: Mortgage approvals were huge in the early 2000s. Far above the demographic upper limit, indicating the creation of a bubble. Currently, mortgage approvals are within the lower limit zone.
-- **Observation B**: The average mortgage amount follows an uptrend, consequence of the inflationary monetary policy.
-- **Observation C**: Although the average mortgage amount moves upward, corrections can occur following credit bubbles.
-- **Observation D**: The real credit movement (second chart) allow us to see the credit/debt cycles.
-- **Observation E**: About the ratio (third chart). If it is greater than 1, there are more mortgages than home sales, indicating the danger of a credit bubble. If it is less than 1, there are more home sales than mortgages, meaning cash gains strength.
+- **Observation A**: Mortgage approvals were huge in the early 2000s. Far above the demographic upper limit, indicating the creation of a bubble.
+- **Observation B**: The average mortgage amount follows an uptrend, consequence of the inflationary monetary policy. Although corrections can occur when a credit bubble burst.
+- **Observation C**: The real credit movement (second chart) allow us to see the credit/debt cycles.
+- **Observation D**: About the ratio (third chart). If it is greater than 1, there are more mortgages than home sales, indicating the danger of a credit bubble. If it is less than 1, there are more home sales (cash purchases) than mortgages.
 
 # Data sources
 

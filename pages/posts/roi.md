@@ -1,6 +1,6 @@
 ---
 title: Housing return on investment
-date: 2022-07-15
+date: 2022-08-05
 description:
 tag: Price
 author: Galetaire
@@ -12,7 +12,8 @@ import Image from 'next/image'
 
 [![Housing ROI](/images/housingroi.png)](/images/housingroi.png)
 
-- **Housing ROI (%)**: final return on investment, considering both net rental return and net asset appreciation.
+- **Housing ROI (bars, %)**: final return on investment, considering both net rental return and net asset appreciation.
+- **Red line**: annual inflation rate, represented in percentage.
 
 [![Rentabilidad de la vivienda](/images/rendibilitat.png)](/images/rendibilitat.png)
 
@@ -21,9 +22,9 @@ import Image from 'next/image'
 
 # Interpretation and observations
 
-The first chart shows the final net return on investment, considering both net rental return and net asset appreciation.
+The **first chart** shows the final net return on investment, considering both net rental return and net asset appreciation.
 
-The second chart from above shows the gross nominal annual appreciation of housing, i.e. whether if houses increase or decrease in value year over year (it does not consider rental returns). We can distinguish several outstanding periods:
+The **second chart** from above shows the gross nominal annual appreciation of housing, i.e. whether if houses increase or decrease in value year over year (it does not consider rental returns). We can distinguish several outstanding periods:
 
 - 1986 - 1990: Strong revaluation.
 - 1991 - 1993: Stagnation.

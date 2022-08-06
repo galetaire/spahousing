@@ -1,6 +1,6 @@
 ---
 title: Type of buyer
-date: 2022-07-15
+date: 2022-08-05
 description:
 tag: Volume
 author: Galetaire
