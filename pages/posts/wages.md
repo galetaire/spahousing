@@ -1,6 +1,6 @@
 ---
 title: Wages
-date: 2022-08-05
+date: 2022-09-01
 description:
 tag: Labor, Credit
 author: Galetaire

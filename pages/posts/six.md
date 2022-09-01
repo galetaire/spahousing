@@ -1,6 +1,6 @@
 ---
 title: Multivariate model
-date: 2022-08-05
+date: 2022-09-01
 description:
 tag: Price, Volume, Credit, Labor, Demography
 author: Galetaire

@@ -1,6 +1,6 @@
 ---
 title: Type of tenure
-date: 2022-08-05
+date: 2022-09-01
 description:
 tag: Demography
 author: Galetaire
