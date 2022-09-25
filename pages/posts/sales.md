@@ -10,11 +10,11 @@ import Image from 'next/image'
 
 # Annual evolution of home sales
 
-[![Compraventa de vivienda](/images/demografia.png)](/images/demografia.png)
+[![Compraventa de vivienda](/images/sales1.png)](/images/sales1.png)
 
 - **Purchasing-age population (PAP)**: Home sales (bars); population between 25 and 50 years old (dotted lines); and housing inheritances (purple line).
 
-[![Compraventa y edad de compra](/images/demografia2.png)](/images/demografia2.png)
+[![Compraventa y edad de compra](/images/sales2.png)](/images/sales2.png)
 
 - **PAP disaggregated**: Home sales (bars); population of 30, 40 and 50 years old (colored dotted lines); and housing inheritances (purple bars).
 
@@ -28,7 +28,7 @@ The _PAP housing index_ is an indicator to analyze the housing market condition.
 
 # Quarterly evolution of home sales
 
-[![Compraventas de vivienda](/images/compravenda.png)](/images/compravenda.png)
+[![Compraventas de vivienda](/images/sales3.png)](/images/sales3.png)
 
 - **Left axis (bars)**: total number of home sales in each quarter.
 - **Right axis (line)**: housing price index.

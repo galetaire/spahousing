@@ -10,12 +10,12 @@ import Image from 'next/image'
 
 # (a) Housing return on investment
 
-[![Housing ROI](/images/housingroi.png)](/images/housingroi.png)
+[![Housing ROI](/images/housingroi1.png)](/images/housingroi1.png)
 
 - **Housing ROI (bars, %)**: final return on investment, considering both net rental return and net asset appreciation.
 - **Red line**: annual inflation rate, represented in percentage.
 
-[![Rentabilidad de la vivienda](/images/rendibilitat.png)](/images/rendibilitat.png)
+[![Rentabilidad de la vivienda](/images/housingroi2.png)](/images/housingroi2.png)
 
 - **Bars**: green bars denote positive percentage appreciation, and red bars denote negative percentage appreciation.
 - **Red line**: annual inflation rate, represented in percentage.
@@ -38,7 +38,7 @@ The **second chart** from above shows the gross nominal annual appreciation of h
 
 - **Price-to-rent ratio (%, net and gross)**: annual percentage of housing rental return in Spain.
 
-[![Rentabilidad alquiler](/images/rent.png)](/images/rent.png)
+[![Rentabilidad alquiler](/images/rent1.png)](/images/rent1.png)
 
 - **Price-to-rent ratio (time, net and gross)**: number of years to fully recover a home purchase in Spain.
 
