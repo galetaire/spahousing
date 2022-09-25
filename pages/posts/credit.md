@@ -10,16 +10,16 @@ import Image from 'next/image'
 
 # Evolution of mortgages
 
-[![Hipotecas en España](/images/credit1.png)](/images/credit1.png)
+[![Hipotecas en España](/images/credityearly.png)](/images/credityearly.png)
 
 - **Left axis (bars)**: annual number of mortgages approved and released.
 - **Right axis (line)**: average annual mortgage amount, in euros.
 
-[![Crédito en España](/images/credit2.png)](/images/credit2.png)
+[![Crédito en España](/images/creditmovement.png)](/images/creditmovement.png)
 
 - **Real credit movement, in percentage**: Blue = real credit expansion; Orange = real credit contraction.
 
-[![Burbuja inmobiliaria](/images/ratiomortgages.png)](/images/ratiomortgages.png)
+[![Burbuja inmobiliaria](/images/creditratio.png)](/images/creditratio.png)
 
 - **Ratio between mortgages and home sales**: if the ratio is (x), it means there a (x) mortgages per each (1) home sale.
 

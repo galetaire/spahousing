@@ -10,7 +10,7 @@ import Image from 'next/image'
 
 # Multivariate model: housing overview
 
-[![Datos del mercado inmobiliario](/images/model.png)](/images/model.png)
+[![Datos del mercado inmobiliario](/images/multivariate.png)](/images/multivariate.png)
 
 - **Unemployment**: average rate for the given year. **Inflation, Population, Mortgages, Home sales, Real price and Nominal price**: percentage of annual change compared to the previous year.
 

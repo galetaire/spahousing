@@ -10,16 +10,16 @@ import Image from 'next/image'
 
 # Wages and housing affordability
 
-[![Salarios y precio de la vivienda](/images/wage1.png)](/images/wage1.png)
+[![Salarios y precio de la vivienda](/images/wageyearly.png)](/images/wageyearly.png)
 
 - **Left axis (bars)**: the standard wage represents the net disposable income averaged for those over 18 years of age, Spain, in euros.
 - **Right axis (line)**: average mortgage amount, Spain, in euros.
 
-[![Salario ideal](/images/wage2.png)](/images/wage2.png)
+[![Salario ideal](/images/wageratio.png)](/images/wageratio.png)
 
 - **Ideal wage disconnection (in percentage)**: the ideal wage is defined as "the wage that allows you to completely pay off your mortgage with 5 years of full wage". E.g., if the value equals 30, it means that wages must increase by 30% to match the ideal wage.
 
-[![Acceso a la vivienda](/images/wage3.png)](/images/wage3.png)
+[![Acceso a la vivienda](/images/wageaffordability.png)](/images/wageaffordability.png)
 
 - **Housing affordability (Base 100=1999)**: Spain housing affordability index. It considers income growth against housing and inflation growth.
 
