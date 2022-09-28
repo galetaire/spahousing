@@ -24,7 +24,7 @@ The _PAP housing index_ is an indicator to analyze the housing market condition.
 
 - If the number of sales exceeds the upper limit, it implies that the situation corresponds to a **bubble**, e.g. 2004 - 2007.
 - If the number of sales is below the lower limit, it implies that there is a **depression**, e.g. 2011 - 2014.
-- If the number of sales is in between the two ceilings, it implies that the market is in an **optimal zone**. Being possible to denote a **bull trend** (if the bars are above the optimal line), or a **bear trend** (if the bars are below the optimal line).
+- If the number of sales is in between the two ceilings, it implies that the market is in an **optimal zone**. Being possible to denote a **higher** (if the bars are above the optimal line), or a **lower** demand (if the bars are below the optimal line).
 
 # Quarterly evolution of home sales
 
