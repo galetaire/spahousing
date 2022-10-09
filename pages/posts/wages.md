@@ -1,9 +1,9 @@
 ---
 title: Wages
-date: 2022-09-01
+date: 2022-10-01
 description:
 tag: Labor, Credit
-author: Last review on 
+author: Last update on
 ---
 
 import Image from 'next/image'

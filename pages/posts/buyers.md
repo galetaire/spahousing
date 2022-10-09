@@ -1,9 +1,9 @@
 ---
 title: Type of buyer
-date: 2022-09-01
+date: 2022-10-01
 description:
 tag: Volume
-author: 
+author: Last update on
 ---
 
 import Image from 'next/image'

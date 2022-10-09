@@ -1,9 +1,9 @@
 ---
 title: Unemployment
-date: 2022-09-01
+date: 2022-10-01
 description:
 tag: Labor, Price
-author:
+author: Last update on
 ---
 
 import Image from 'next/image'

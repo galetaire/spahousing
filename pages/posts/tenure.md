@@ -1,9 +1,9 @@
 ---
 title: Type of tenure
-date: 2022-09-01
+date: 2022-10-01
 description:
 tag: Demography
-author:
+author: Last update on
 ---
 
 import Image from 'next/image'
