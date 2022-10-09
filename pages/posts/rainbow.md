@@ -3,7 +3,7 @@ title: Housing cycles
 date: 2022-09-01
 description:
 tag: Price, Demography
-author: Galetaire
+author:
 ---
 
 import Image from 'next/image'

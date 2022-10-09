@@ -3,7 +3,7 @@ title: Mortgages and credit
 date: 2022-09-01
 description:
 tag: Credit
-author: Galetaire
+author:
 ---
 
 import Image from 'next/image'

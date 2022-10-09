@@ -3,7 +3,7 @@ title: Land and building permits
 date: 2022-09-01
 description:
 tag: Price, Volume
-author: Galetaire
+author:
 ---
 
 import Image from 'next/image'
