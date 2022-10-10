@@ -8,7 +8,7 @@ author: Last update on
 
 import Image from 'next/image'
 
-# Evolution of mortgages
+# Annual evolution of mortgages
 
 [![Hipotecas en España](/images/credityearly.png)](/images/credityearly.png)
 

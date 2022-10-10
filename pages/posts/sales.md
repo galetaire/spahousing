@@ -8,7 +8,7 @@ author: Last update on
 
 import Image from 'next/image'
 
-# Annual evolution of home sales
+# (a) Annual evolution of home sales
 
 [![Compraventa de vivienda](/images/salesyearly1.png)](/images/salesyearly1.png)
 
@@ -26,7 +26,7 @@ The _PAP housing index_ is an indicator to analyze the housing market condition.
 - If the number of sales is below the lower limit, it implies that there is a **depression**, e.g. 2011 - 2014.
 - If the number of sales is in between the two ceilings, it implies that the market is in an **optimal zone**. Being possible to denote a **higher** (if the bars are above the optimal line), or a **lower** demand (if the bars are below the optimal line).
 
-# Quarterly evolution of home sales
+# (b) Quarterly evolution of home sales
 
 [![Compraventas de vivienda](/images/salesquarterly.png)](/images/salesquarterly.png)
 

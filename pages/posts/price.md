@@ -8,7 +8,7 @@ author: Last update on
 
 import Image from 'next/image'
 
-# Annual evolution of housing prices
+# (a) Annual evolution of housing prices
 
 [![Evolución precio de la vivienda](/images/priceyearly.png)](/images/priceyearly.png)
 
@@ -22,7 +22,7 @@ The chart from above shows the average annual house price in Spain. Some brief o
 - **Observation B**: The uptrend in house prices is however cyclical, with moments of expansion and recession, linked to debt cycles.
 - **Observation C**: The cycles are easily visible if we look at the line representing the real price (inflation-adjusted). It allows us to see, for example, the magnitude of the real-estate bubble from the early 2000s.
 
-# Quarterly evolution of housing prices
+# (b) Quarterly evolution of housing prices
 
  [![Evolución precio de la vivienda](/images/pricequarterly.png)](/images/pricequarterly.png)
 
