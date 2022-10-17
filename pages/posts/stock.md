@@ -17,7 +17,7 @@ import Image from 'next/image'
 
 [![Antiguedad de las viviendas](/images/stockperiods.png)](/images/stockperiods.png)
 
-- **Construction period**: number of today existing dwellings per year/period of construction. The **red bar** is a final estimate based on the current pace of construction.
+- **Construction period**: number of today existing dwellings per period of construction. The **red bar** is a final estimate based on the pace of construction of the last 10 years.
 
 [![Estoc y balance de viviendas](/images/stockbalance.png)](/images/stockbalance.png)
 
