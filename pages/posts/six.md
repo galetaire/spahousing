@@ -16,7 +16,7 @@ import Image from 'next/image'
 
 # Interpretation and observations
 
-The model groups together seven essential variables: price (real and nominal), volume, inflation, credit, demographics and employment. All the variables are represented in percentages. A couple of interpretations from the chart:
+The model groups together seven essential variables: price (real and nominal), volume, inflation, credit, demographics and employment. All the variables are represented in percentages. A couple of observations from the chart:
 
 - **Observation A**: Inflation followed a decreasing trend from 1986 to 2020.
 - **Observation B**: Between 2001 and 2008, the population increased due to an immigration wave.
