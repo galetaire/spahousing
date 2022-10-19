@@ -22,7 +22,7 @@ import Image from 'next/image'
 
 # Interpretation and observations
 
-The relationship between unemployment and price is negative. When the unemployment rate rises, housing prices fall, and vice versa. This behaviour repeats clearly over time. If we look at the chart above we can distinguish several outstanding periods:
+The relationship between unemployment and price is negative. When the unemployment rate rises, housing prices fall, and vice versa. We can distinguish several outstanding periods:
 
 - 1986 - 1990: Unemployment falls, housing prices rise.
 - 1991 - 1996: Unemployment rises, housing prices fall.
@@ -32,8 +32,10 @@ The relationship between unemployment and price is negative. When the unemployme
 
 # Data sources
 
-- Housing Price Index: [Link](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736152838&menu=resultados&idp=1254735976607#!tabs-1254736152561)
-- Labor Force Survey: [Link](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176918&menu=ultiDatos&idp=1254735976595)
-- Inflation data: [Link](https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx)
+- Unemployment (_Results > Annual or Quarterly > Unemployed persons > Unemployment rates by sex and age group_): [Link](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176918&menu=resultados&idp=1254735976595#!tabs-1254736195128)
+- Housing prices, from 1986 to 2006, according to Sociedad de Tasación (_Access to data is under request, but can be seen in the linked publication_): [Publication](https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf), [Link](https://www.st-tasacion.es/informe-de-tendencias-digital/)
+- Housing prices, from 2007 onwards, according to the notaries (_Grupo 5 > Acto 501 - Compraventa inmuebles > Inmuebles en fincas urbanas, viviendas_): [Link](http://www.notariado.org/liferay/web/cien/estadisticas-al-completo)
+- Housing Price Index: [Link](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736152838&menu=resultados&idp=1254735976607)
+- Inflation data (_Table: average inflation Spain (CPI) - by year_): [Link](https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx)
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to Home Page</a></div>
