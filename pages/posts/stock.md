@@ -47,15 +47,15 @@ The chart from above shows the evolution of cement consumption, compared to the 
 
 - **Observation A**: Both are positively correlated variables (+0.63).
 - **Observation B**: Real-estate cycles are readily apparent, with moments of expansion and recession.
-- **Observation C**: Cement consumption is linked to home construction. The fact that home construction has come to a screeching halt is an important event to consider going forward.
 
 # Data sources
 
-- Estimated housing stock: [Link](https://apps.fomento.gob.es/BoletinOnline2/?nivel=2&orden=33000000)
-- New housing stock: [Link](https://www.mitma.gob.es/informacion-para-el-ciudadano/informacion-estadistica/vivienda-y-actuaciones-urbanas/estadisticas/stock-de-vivienda-nueva/estadisticas-sobre-stock-de-vivienda-nueva)
-- Continuous Household Survey: [Link](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176952&menu=resultados&idp=1254735572981)
-- Housing prices according to the notaries (Grupo 5, Acto 501): [Link](http://www.notariado.org/liferay/web/cien/estadisticas-al-completo)
-- Housing prices according to _Sociedad de Tasación_: [Link](https://www.st-tasacion.es/informe-de-tendencias-digital/)
-- Apparent cement consumption: [Link](https://tematicas.org/sintesis-economica/indicadores-de-produccion-y-demanda-nacional/consumo-aparente-de-cemento/)
+- Housing stock, from 1971 to 2000, according to Atlas Digital de las Áreas Urbanas (_Parque de Viviendas > Viviendas según tipo > Viviendas familiares > Select from available years 1970, 1981, 1991, 2001, 2011 > Tabla and Sintesis_): [Link](https://apps.fomento.gob.es/BoletinOnline2/?nivel=2&orden=33000000). Based on the data from 1970, 1981 and 1991, the remaining years have been estimated, adjusting an already estimation done by the Banco de España (_Observatorio de Vivienda y Suelo > Boletines periódicos > Boletín Anual 2021 > Tabla 8.1_): [Link](https://apps.fomento.gob.es/BoletinOnline2/?nivel=2&orden=33000000)
+- Housing stock, from 2001 onwards (_Total de viviendas por comunidades autónomas y provincias_): [Link](https://apps.fomento.gob.es/BoletinOnline2/?nivel=2&orden=33000000)
+- Buildings per period of construction (_Nacional> Viviendas > Número de viviendas principales según tipo de edificación y año de construcción_): [Link](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176952&menu=resultados&idp=1254735572981)
+- Apparent cement consumption (_Housing prices from 1964 to 1985 have been extrapolated based in this variable_): [Link](https://tematicas.org/sintesis-economica/indicadores-de-produccion-y-demanda-nacional/consumo-aparente-de-cemento/)
+- Housing prices, from 1986 to 2006, according to Sociedad de Tasación (_Access to data is under request, but can be seen in the linked publication_): [Publication](https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf), [Link](https://www.st-tasacion.es/informe-de-tendencias-digital/)
+- Housing prices, from 2007 onwards, according to the notaries (_Grupo 5 > Acto 501 - Compraventa inmuebles > Inmuebles en fincas urbanas, viviendas_): [Link](http://www.notariado.org/liferay/web/cien/estadisticas-al-completo)
+- Inflation data (_Table: average inflation Spain (CPI) - by year_): [Link](https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx)
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to Home Page</a></div>
