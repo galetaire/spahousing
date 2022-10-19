@@ -20,11 +20,11 @@ import Image from 'next/image'
 
 # Interpretation and observations
 
-The _PAP housing index_ is an indicator to analyze the housing market condition. It draws two ceilings based on demographics. The higher one assumes that everyone at some point will buy a house individually, and the lower one assumes that everyone at some point will buy a house as a couple.
+The _PAP housing index_ draws two ceilings based on demographics. The higher one assumes that everyone at some point will buy a house individually, and the lower one assumes that everyone at some point will buy a house as a couple.
 
 - If the number of sales exceeds the upper limit, it implies that the situation corresponds to a **bubble**, e.g. 2004 - 2007.
 - If the number of sales is below the lower limit, it implies that there is a **depression**, e.g. 2011 - 2014.
-- If the number of sales is in between the two ceilings, it implies that the market is in an **optimal zone**. Being possible to denote a **higher** (if the bars are above the optimal line), or a **lower** demand (if the bars are below the optimal line).
+- If the number of sales is in between the two ceilings, it implies that the market is in an **optimal zone**.
 
 # (b) Quarterly evolution of home sales
 
@@ -43,8 +43,8 @@ The chart from above shows the number of home sales per quarter. The color indic
 
 # Data sources
 
-- Population and projections according to _INE_: [Link](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176953&menu=resultados&idp=1254735572981)
-- Home sales: [Link](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736171438&menu=resultados&idp=1254735576757#!tabs-1254736158217)
-- Housing Price Index: [Link](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736152838&menu=resultados&idp=1254735976607#!tabs-1254736152561)
+- Population and projections according to INE (_range of used population was that between 25 and 50 years old_): [Population consolidated](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176951&menu=resultados&idp=1254735572981), [Population projection](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176953&menu=resultados&idp=1254735572981)
+- Home sales (_Results > Annual > Dwellings transferred by type of acquisition  > Sales_): [Link](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736171438&menu=resultados&idp=1254735576757)
+- Housing Price Index: [Link](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736152838&menu=resultados&idp=1254735976607)
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to Home Page</a></div>

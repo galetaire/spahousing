@@ -34,9 +34,12 @@ Credit correlates positively with the evolution of housing prices. Some brief ob
 
 # Data sources
 
-- Housing prices according to the notaries (Grupo 5, Acto 501): [Link](http://www.notariado.org/liferay/web/cien/estadisticas-al-completo)
-- Housing prices according to _Sociedad de Tasación_: [Link](https://www.st-tasacion.es/informe-de-tendencias-digital/)
-- Mortgages: [Link](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736170236&menu=resultados&idp=1254735576757#!tabs-1254736158259)
-- Home sales: [Link](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736171438&menu=resultados&idp=1254735576757#!tabs-1254736158217)
+- Housing prices, from 1986 to 2006, according to Sociedad de Tasación (_Access to data is under request, but can be seen in the linked publication_): [Publication](https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf), [Link](https://www.st-tasacion.es/informe-de-tendencias-digital/)
+- Housing prices, from 2007 onwards, according to the notaries (_Grupo 5 > Acto 501 - Compraventa inmuebles > Inmuebles en fincas urbanas, viviendas_): [Link](http://www.notariado.org/liferay/web/cien/estadisticas-al-completo)
+- Home sales, from 2003 to 2006, have been extrapolated using the approved mortgages (_Results > Annual > Dwellings transferred by type of acquisition  > Sales_): [Link](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736170236&menu=resultados&idp=1254735576757#!tabs-1254736169948)
+- Home sales, from 2007 onwards (_Results > Annual > Dwellings transferred by type of acquisition  > Sales_): [Link](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736171438&menu=resultados&idp=1254735576757)
+- Mortgages, from 1995 to 2002, according to "El mercado de la vivienda en España: una década prodigiosa (1995-2005)", by Isabel Nóvoa Arechaga and Pedro López Suárez, tabla 13 (_mortgage releases from this period have been extrapolated_): [Link](https://dialnet.unirioja.es/descarga/articulo/2499407.pdf)
+- Mortgages, from 2003 onwards  (_Results > Annual > National results and by Autonomous Community > Mortgages constituted, over the total properties, by nature of the property > Dwellings_): [Link](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736170236&menu=resultados&idp=1254735576757#!tabs-1254736169948)
+- Inflation data (_Table: average inflation Spain (CPI) - by year_): [Link](https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx)
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to Home Page</a></div>
