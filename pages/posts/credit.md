@@ -29,7 +29,7 @@ Credit correlates positively with the evolution of housing prices. Some brief ob
 
 - **Observation A**: Mortgage approvals were huge in the early 2000s. Far above the demographic upper limit, indicating the creation of a bubble.
 - **Observation B**: The average mortgage amount follows an uptrend, a consequence of the monetary policy. Although corrections can occur.
-- **Observation C**: The real credit movement allow us to see the credit/debt cycles (second chart).
+- **Observation C**: The real credit movement allow us to see the credit/debt cycles.
 - **Observation D**: About the ratio, third chart, if it is greater than 1, there are more mortgages than home sales, indicating the danger of a credit bubble.
 
 # Data sources
