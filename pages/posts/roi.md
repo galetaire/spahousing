@@ -12,7 +12,7 @@ import Image from 'next/image'
 
 [![Housing ROI](/images/roinet.png)](/images/roinet.png)
 
-- **Housing ROI (bars, %)**: final return on investment, considering both net rental return and net asset appreciation.
+- **Housing ROI (bars, %)**: final return on investment, considering both net rental return plus asset appreciation.
 - **Red line**: annual inflation rate, represented in percentage.
 
 [![Rentabilidad de la vivienda](/images/roigross.png)](/images/roigross.png)
@@ -22,9 +22,9 @@ import Image from 'next/image'
 
 # Interpretation and observations
 
-The **first chart** shows the final net return on investment, considering both net rental return and net asset appreciation.
+The **first chart** shows the final net return on investment, considering both net rental return plus asset appreciation.
 
-The **second chart** from above shows the gross nominal annual appreciation of housing, i.e. whether if houses increase or decrease in value year over year (it does not consider rental returns). We can distinguish several outstanding periods:
+The **second chart** shows the gross nominal annual appreciation of housing, i.e. whether if houses increase or decrease in value year over year (it does not consider rental returns). We can distinguish several outstanding periods:
 
 - 1986 - 1990: Strong revaluation.
 - 1991 - 1993: Stagnation.
@@ -44,7 +44,7 @@ The **second chart** from above shows the gross nominal annual appreciation of h
 
 # Interpretation and observations
 
-The charts from above show the ratio between the purchase price and the rental price (both in %; and in time, years). In essence, it's an indicator similar to the price-to-earnings ratio (P/E) used in the stock market analysis. It can be interpreted on the following way:
+The charts from above show the ratio between the purchase price and the rental price (both in %; and in time, years). In essence, it's an indicator similar to the price-to-earnings ratio (P/E) used in the stock market analysis. It can be interpreted as follows:
 
 - At 2010 prices, it took 26.1 years to fully recover a house purchase through rental returns, at a 3.8% annual rental return.
 - At 2020 prices, it took 16.4 years to fully recover a house purchase through rental returns, at a 6.1% annual rental return.
