@@ -45,12 +45,12 @@ The **third chart** shows the pace of housing construction, depending on whether
 
 The chart from above shows the evolution of cement consumption, compared to the evolution of housing prices (inflation adjusted). Some brief observations:
 
-- **Observation A**: Both are positively correlated variables (+0.63).
+- **Observation A**: Cement consumption is positively correlated (+0.63) with real price.
 - **Observation B**: Real-estate cycles are readily apparent, with moments of expansion and recession.
 
 # Data sources
 
-- Housing stock, from 1971 to 2000, according to Atlas Digital de las Áreas Urbanas (_Parque de Viviendas > Viviendas según tipo > Viviendas familiares > Select from available years 1970, 1981, 1991, 2001, 2011 > Tabla and Sintesis_): [Link](https://apps.fomento.gob.es/BoletinOnline2/?nivel=2&orden=33000000). Based on the data from 1970, 1981 and 1991, the remaining years have been estimated, adjusting an already estimation done by the Banco de España (_Observatorio de Vivienda y Suelo > Boletines periódicos > Boletín Anual 2021 > Tabla 8.1_): [Link](https://apps.fomento.gob.es/BoletinOnline2/?nivel=2&orden=33000000)
+- Housing stock, from 1971 to 2000, according to Atlas Digital de las Áreas Urbanas (_Parque de Viviendas > Viviendas según tipo > Viviendas familiares > Select from available years 1970, 1981, 1991, 2001, 2011 > Tabla and Sintesis_): [Link](https://apps.fomento.gob.es/BoletinOnline2/?nivel=2&orden=33000000). Based on the data from 1970, 1981 and 1991, the remaining years gaps have been estimated, in a similar way as done by Banco de España (_Observatorio de Vivienda y Suelo > Boletines periódicos > Boletín Anual 2021 > Tabla 8.1_): [Link](https://apps.fomento.gob.es/BoletinOnline2/?nivel=2&orden=33000000)
 - Housing stock, from 2001 onwards (_Total de viviendas por comunidades autónomas y provincias_): [Link](https://apps.fomento.gob.es/BoletinOnline2/?nivel=2&orden=33000000)
 - Buildings per period of construction (_Nacional> Viviendas > Número de viviendas principales según tipo de edificación y año de construcción_): [Link](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176952&menu=resultados&idp=1254735572981)
 - Apparent cement consumption (_Housing prices from 1964 to 1985 have been extrapolated based in this variable_): [Link](https://tematicas.org/sintesis-economica/indicadores-de-produccion-y-demanda-nacional/consumo-aparente-de-cemento/)
