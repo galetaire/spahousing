@@ -68,3 +68,7 @@ img.next-image {
     margin-bottom: 2rem;
     text-align: left;
 }
+
+.signature {
+  word-break: break-all;
+}
