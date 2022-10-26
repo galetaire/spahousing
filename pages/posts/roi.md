@@ -34,6 +34,8 @@ The **second chart** shows a net ROI approximation, considering both net rental 
 
 # (b) Average rental return
 
+_Rental source: [**Idealista**](https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/alquiler/)_
+
 [![Rentabilidad alquiler](/images/rentratio.png)](/images/rentratio.png)
 
 - **Price-to-rent ratio (%, net and gross)**: annual percentage of housing rental return in Spain.
@@ -44,7 +46,7 @@ The **second chart** shows a net ROI approximation, considering both net rental 
 
 # Interpretation and observations
 
-The charts from above (_rental source:[**Idealista**](https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/alquiler/)_) show the ratio between the purchase price and the rental price (both in %; and in time, years). In essence, it's an indicator similar to the price-to-earnings ratio (P/E) used in the stock market analysis. It can be interpreted as follows:
+The charts from above show the ratio between the purchase price and the rental price (both in %; and in time, years). In essence, it's an indicator similar to the price-to-earnings ratio (P/E) used in the stock market analysis. It can be interpreted as follows:
 
 - At 2010 prices, it took 27.8 years to fully recover a house purchase through rental returns, at a 3.6% annual rental return.
 - At 2020 prices, it took 17.5 years to fully recover a house purchase through rental returns, at a 5.7% annual rental return.
