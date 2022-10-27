@@ -17,7 +17,7 @@ import Image from 'next/image'
 
 [![Housing ROI](/images/roinet.png)](/images/roinet.png)
 
-- **Housing ROI (bars, %)**: return on investment, considering both gross asset appreciation and net rental return.
+- **Housing ROI (bars, %)**: considers both gross asset appreciation and net rental return.
 - **Red line**: annual inflation rate, represented in percentage.
 
 # Interpretation and observations
