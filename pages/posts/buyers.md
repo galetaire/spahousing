@@ -21,6 +21,6 @@ The chart from above shows the distribution (%) of home sales according to wheth
 
 # Data sources
 
-- Property Registrars' Reports (_Anuarios Disponibles_): [Link](https://www.registradores.org/actualidad/portal-estadistico-registral/estadisticas-de-propiedad)
+- Property Registrars' Reports (_Anuarios Disponibles > Year desired > section "Distribución de compraventas de vivienda por tipo de adquirente" and "Nacionalidad en las compras de vivienda"_): [Link](https://www.registradores.org/actualidad/portal-estadistico-registral/estadisticas-de-propiedad)
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to Home Page</a></div>

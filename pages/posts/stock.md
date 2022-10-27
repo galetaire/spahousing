@@ -46,7 +46,7 @@ The **third chart** shows the pace of housing construction, depending on whether
 The chart from above shows the evolution of cement consumption, compared to the evolution of housing prices (inflation adjusted). Some brief observations:
 
 - **Observation A**: Cement consumption is positively correlated (+0.63) with real price.
-- **Observation B**: Real-estate cycles are readily apparent, with moments of expansion and recession.
+- **Observation B**: Cycles are apparent, with moments of expansion and recession.
 
 # Data sources
 

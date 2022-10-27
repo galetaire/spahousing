@@ -17,7 +17,7 @@ import Image from 'next/image'
 
 [![Salario ideal](/images/wageratio.png)](/images/wageratio.png)
 
-- **Ideal wage disconnection (in percentage)**: the ideal wage is defined as "the wage that allows you to completely pay off your mortgage with 5 years of full wage". E.g., if the value equals 30, it means that wages must increase by 30% to match the ideal wage.
+- **Wage disconnection (in percentage)**: the ideal wage is defined as "the wage that allows you to completely pay off your mortgage with 5 years of full wage". E.g., if the value equals 30, it means that wages must increase by 30% to match the ideal wage.
 
 [![Acceso a la vivienda](/images/wageaffordability.png)](/images/wageaffordability.png)
 
@@ -34,7 +34,7 @@ The first chart from above shows the housing cycles by looking at wages. In this
 # Data sources
 
 - Household disposable income (_Saldos contables > Hogares e Instituciones > Renta disponible neta_): [Link](https://www.ine.es/jaxiT3/Tabla.htm?t=30906)
-- Household savings (_Saldos contables > Hogares e Instituciones > Ahorro neto_):: [Link](https://www.ine.es/jaxiT3/Tabla.htm?t=30906)
+- Household savings (_Saldos contables > Hogares e Instituciones > Ahorro neto_): [Link](https://www.ine.es/jaxiT3/Tabla.htm?t=30906)
 - Mortgages (_Results > Annual > National results and by Autonomous Community > Mortgages constituted, over the total properties, by nature of the property > Dwellings_): [Link](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736170236&menu=resultados&idp=1254735576757#!tabs-1254736169948)
 - Population according to INE (_range of used population was that over 18 years old_): [Population consolidated](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176951&menu=resultados&idp=1254735572981)
 - Housing prices, from 1986 to 2006, according to Sociedad de Tasación (_Access to data is under request, but can be seen in the linked publication_): [Publication](https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf), [Link](https://www.st-tasacion.es/informe-de-tendencias-digital/)

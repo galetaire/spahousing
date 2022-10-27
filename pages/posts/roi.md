@@ -12,7 +12,7 @@ import Image from 'next/image'
 
 [![Rentabilidad de la vivienda](/images/roigross.png)](/images/roigross.png)
 
-- **Bars**: green bars denote positive percentage appreciation; red bars denote negative percentage appreciation.
+- **Bars**: green bars denote positive appreciation; red bars denote negative appreciation.
 - **Red line**: annual inflation rate, represented in percentage.
 
 [![Housing ROI](/images/roinet.png)](/images/roinet.png)
