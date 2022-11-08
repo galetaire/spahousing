@@ -17,7 +17,7 @@ import Image from 'next/image'
 
 [![Crédito en España](/images/creditmovement.png)](/images/creditmovement.png)
 
-- **Real credit movement, in percentage**: Blue = real credit expansion; Orange = real credit contraction.
+- **Real credit movement (mortgages), in percentage**: Blue = real credit expansion; Orange = real credit contraction.
 
 [![Burbuja inmobiliaria](/images/creditratio.png)](/images/creditratio.png)
 
