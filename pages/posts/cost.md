@@ -26,6 +26,10 @@ import Image from 'next/image'
 
 The **first chart** shows the ratio between the housing price and the construction cost. A higher ratio means the construction sector has higher profit margins (note that a big part of these profit margins are in fact tax payments). In this regard, the year 2006 had the highest margins and 1997 the lowest ones.
 
+The **second chart** shows the year over year evolution of construction costs, in percentage.
+
+The **third chard** shows the distribution for new homes built, whether if they are Single Family houses or Condominiums. 
+
 # Data sources
 
 - Number of units per type and m², Single Family (_unifamiliar_) and Condominiums (_en bloque_) (_6.Visados de dirección de obra: Obra nueva, ampliación y/o reforma. Nº de viviendas y superficie media según tipo de obra y destino principal._): [Link](https://www.fomento.gob.es/BE/?nivel=2&orden=09000000)
