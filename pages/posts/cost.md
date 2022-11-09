@@ -1,8 +1,8 @@
 ---
-title: Type of tenure
+title: Production cost
 date: 2022-10-01
 description:
-tag: Demography
+tag: Price, Volume
 author: Last update on
 ---
 
@@ -12,15 +12,15 @@ import Image from 'next/image'
 
 [![Coste de construcción](/images/costratio.png)](/images/costratio.png)
 
-- **Ratio between the average housing price and the average construction cost:**: if the ratio is (x), it means houses are being sold (x) times the price of production/construction.
+- **Ratio between the average housing price and the average construction cost:** if the ratio is (x), it means houses are being sold (x) times the price of production.
 
 [![Coste de materiales](/images/costchange.png)](/images/costchange.png)
 
-- **Cost of production, in percentage**: Percentage of change to build a new house year-over-year.
+- **Cost of production**: Percentage of annual change in construction costs.
 
 [![Tipo de vivienda](/images/typehouse.png)](/images/typehouse.png)
 
-- **Distribution of new houses build per type, in percentage**.
+- **Distribution of new houses build per type (in percentage)**: Single Family or Condominiums.
 
 # Interpretation and observations
 
