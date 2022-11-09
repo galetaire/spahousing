@@ -28,7 +28,7 @@ The **first chart** shows the ratio between the housing price and the constructi
 
 The **second chart** shows the year over year evolution of construction costs, in percentage.
 
-The **third chard** shows the distribution for new developments depending on the type of home. Historically, the distribution has been around 30% single-family and 70% condominiums.
+The **third chart** shows the distribution for new developments depending on the type of home. Historically, the distribution has been around 30% single-family and 70% condominiums.
 
 # Data sources
 
