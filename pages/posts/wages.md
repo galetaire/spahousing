@@ -1,6 +1,6 @@
 ---
 title: Wages
-date: 2022-10-01
+date: 2022-11-01
 description:
 tag: Labor, Credit
 author: Last update on

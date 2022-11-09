@@ -1,6 +1,6 @@
 ---
 title: Mortgages and credit
-date: 2022-10-01
+date: 2022-11-01
 description:
 tag: Credit
 author: Last update on

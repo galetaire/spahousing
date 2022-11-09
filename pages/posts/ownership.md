@@ -1,6 +1,6 @@
 ---
 title: Ownership structure
-date: 2022-10-01
+date: 2022-11-01
 description:
 tag: Volume, Demography
 author: Last update on

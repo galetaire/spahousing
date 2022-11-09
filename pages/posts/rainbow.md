@@ -1,6 +1,6 @@
 ---
 title: Housing cycles
-date: 2022-10-01
+date: 2022-11-01
 description:
 tag: Price, Demography
 author: Last update on
