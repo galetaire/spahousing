@@ -20,7 +20,7 @@ import Image from 'next/image'
 
 [![Tipo de vivienda](/images/typehouse.png)](/images/typehouse.png)
 
-- **Distribution of new houses build per type (in %)**: Single Family or Condominiums.
+- **Distribution of new houses build per type (in %)**: Single-Family or Condominiums.
 
 # Interpretation and observations
 
@@ -28,7 +28,7 @@ The **first chart** shows the ratio between the housing price and the constructi
 
 The **second chart** shows the year over year evolution of construction costs, in percentage.
 
-The **third chard** shows the distribution for new homes built, whether if they are Single Family houses or Condominiums. 
+The **third chard** shows the distribution for new developments depending on the type of home. Historically, the distribution has been around 30% single-family and 70% condominiums.
 
 # Data sources
 
