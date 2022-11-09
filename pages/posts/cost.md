@@ -24,7 +24,9 @@ import Image from 'next/image'
 
 # Interpretation and observations
 
-...
+The **first chart** shows the ratio between the average housing price and the average construction cost, a higher ratio means that the construction sector has higher profit margins (note that a big part of these potential profit margins are taxes payments). The year 2006 had the highest margins and 1997 the lowest ones.
+
+The **second chart** shows how the cost of construction increases or decreases year over year.
 
 # Data sources
 
