@@ -20,7 +20,7 @@ import Image from 'next/image'
 
 [![Tipo de vivienda](/images/typehouse.png)](/images/typehouse.png)
 
-- **Distribution of new houses build per type (in percentage)**: Single Family or Condominiums.
+- **Distribution of new houses build per type (in %)**: Single Family or Condominiums.
 
 # Interpretation and observations
 
