@@ -46,4 +46,4 @@ The _"Spread"_ and the _"Sharp change"_ are intended to serve as signals to capt
 - Inflation data (_Table: average inflation Spain (CPI) - by year_): [Link](https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx)
 - Housing prices according to _Idealista_: [Link](https://www.idealista.com/sala-de-prensa/informes-precio-vivienda)
 
-<div class="meta-line"><a class="meta-back" href="/">← Back to Home Page</a></div>
+<div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>

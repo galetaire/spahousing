@@ -38,4 +38,4 @@ The relationship between unemployment and price is negative. When the unemployme
 - Housing Price Index: [Link](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736152838&menu=resultados&idp=1254735976607)
 - Inflation data (_Table: average inflation Spain (CPI) - by year_): [Link](https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx)
 
-<div class="meta-line"><a class="meta-back" href="/">← Back to Home Page</a></div>
+<div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>

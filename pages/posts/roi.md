@@ -59,4 +59,4 @@ The charts from above show the ratio between the purchase price and the rental p
 - Rental prices according to Idealista (_for modelling net returns, a 25% has been subtracted from the gross return_): [Link](https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/alquiler/)
 - Housing prices according to Idealista (_for coherence purposes, rental returns have been calculated using Idealista housing prices_): [Link](https://www.idealista.com/sala)
 
-<div class="meta-line"><a class="meta-back" href="/">← Back to Home Page</a></div>
+<div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>

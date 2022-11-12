@@ -34,4 +34,4 @@ The model groups together seven essential variables: price (real and nominal), v
 - Inflation data (_Table: average inflation Spain (CPI) - by year_): [Link](https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx)
 - Population according to INE (_Results > Main series since 1971 > National results, Resident population by date, sex and age > Data used is from January 1st of the current year_): [Link](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176951&menu=resultados&idp=1254735572981)
 
-<div class="meta-line"><a class="meta-back" href="/">← Back to Home Page</a></div>
+<div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>

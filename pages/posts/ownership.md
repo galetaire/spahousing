@@ -37,4 +37,4 @@ The chart from above shows the distribution (%) of homes according to whether th
 - Property Registrars' Reports (_Anuarios Disponibles > Year desired > section "Distribución de compraventas de vivienda por tipo de adquirente" and "Nacionalidad en las compras de vivienda"_): [Link](https://www.registradores.org/actualidad/portal-estadistico-registral/estadisticas-de-propiedad)
 - Continuous Household Survey (_Nacional> Viviendas > Número de viviendas principales según tipo de edificación y régimen de tenencia_): [Link](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176952&menu=resultados&idp=1254735572981)
 
-<div class="meta-line"><a class="meta-back" href="/">← Back to Home Page</a></div>
+<div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
