@@ -36,7 +36,7 @@ Credit correlates positively with the evolution of housing prices. Some brief ob
 
 [![Euribor y interes hipotecas](/images/euribor.png)](/images/euribor.png)
 
-- **Left axis (%)**: Euribor 1-year rate and average mortgage rate in Spain .
+- **Left axis (%)**: Euribor 1-year rate and average mortgage rate.
 - **Right axis (e/m2)**: house price in euros per square meter.
 
 # Interpretation and observations
@@ -53,6 +53,6 @@ _Soon..._
 - Mortgages, from 2003 onwards  (_Results > Annual > National results and by Autonomous Community > Mortgages constituted, over the total properties, by nature of the property > Dwellings_): [Link](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736170236&menu=resultados&idp=1254735576757#!tabs-1254736169948)
 - Inflation data (_Table: average inflation Spain (CPI) - by year_): [Link](https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx)
 - Euribor 1-year rate averaged  (_Euribor 1-year - Historical close, average of observations through period _): [Link](https://sdw.ecb.europa.eu/quickview.do?SERIES_KEY=143.FM.M.U2.EUR.RT.MM.EURIBOR1YD_.HSTA)
-- Average mortgage rate (_Results > Annual > National indicators > Average interest rate of mortgages constituted > Viviendas + Total_): [Link](https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx)
+- Average mortgage rate (_Results > Annual > National indicators > Average interest rate of mortgages constituted > Viviendas + Total_): [Link](https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&cid=1254736170236&menu=resultados&idp=1254735576606#!tabs-1254736169948)
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
