@@ -36,12 +36,12 @@ Credit correlates positively with the evolution of housing prices. Some brief ob
 
 [![Euribor y interes hipotecas](/images/euribor.png)](/images/euribor.png)
 
-- **Left axis (%)**: Euribor 1-year rate and average mortgage rate.
+- **Left axis (%)**: Euribor 1-year average rate and average mortgage rate.
 - **Right axis (e/m2)**: house price in euros per square meter.
 
 # Interpretation and observations
 
-_Soon..._
+The _Euro Interbank Offered Rate_ (Euribor) plays a key role in the mortgage market. An increase of the Euribor implies an increase in mortgage rates, which if sustained for longer periods (years), constraints the debt capacity for borrowers, resulting in general price stagnation due to lack of new money flowing into the system, or even regression of prices if there is an excessive amount of credit accumulated (credit bubble).
 
 # Data sources
 
