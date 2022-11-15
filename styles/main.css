@@ -50,6 +50,7 @@ h2 {
 
 details > summary {
   display: block;
+  cursor: pointer;
 }
 
 img.next-image {
