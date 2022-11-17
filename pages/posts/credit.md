@@ -41,7 +41,7 @@ Credit correlates positively with the evolution of housing prices. Some brief ob
 
 [![Tipo de hipotecas firmadas](/images/typemortgage.png)](/images/typemortgage.png)
 
-- **Distribution of the type of mortgages signed per year (%)**: fixed or variables rates.
+- **Mortgages constituted according to interest rate per year (%)**: fixed or variables rates.
 
 # Interpretation and observations
 
@@ -58,5 +58,6 @@ The _Euro Interbank Offered Rate_ (Euribor) plays a key role in the mortgage mar
 - Inflation data (_Table: average inflation Spain (CPI) - by year_): [Link](https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx)
 - Euribor 1-year rate averaged  (_Euribor 1-year - Historical close, average of observations through period _): [Link](https://sdw.ecb.europa.eu/quickview.do?SERIES_KEY=143.FM.M.U2.EUR.RT.MM.EURIBOR1YD_.HSTA)
 - Average mortgage rate (_Results > Annual > National indicators > Average interest rate of mortgages constituted > Viviendas + Total_): [Link](https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&cid=1254736170236&menu=resultados&idp=1254735576606#!tabs-1254736169948)
+- Mortgages constituted according to interest rate (_Results > Annual > National indicators > Mortgages constituted according to interest rate > Viviendas + Fijo & Variable_): [Link](https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&cid=1254736170236&menu=resultados&idp=1254735576606#!tabs-1254736169948)
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
