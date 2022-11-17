@@ -41,7 +41,7 @@ Credit correlates positively with the evolution of housing prices. Some brief ob
 
 [![Tipo de hipotecas firmadas](/images/typemortgage.png)](/images/typemortgage.png)
 
-- **Mortgages constituted according to interest rate per year (%)**: fixed or variables rates.
+- **Mortgages constituted according to interest rate per year (%)**: fixed or variable.
 
 # Interpretation and observations
 
