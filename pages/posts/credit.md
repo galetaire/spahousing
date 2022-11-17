@@ -41,7 +41,7 @@ Credit correlates positively with the evolution of housing prices. Some brief ob
 
 [![Tipo de hipotecas firmadas](/images/typemortgage.png)](/images/typemortgage.png)
 
-- **Mortgage types, fixed or variable (%)**: distribution of the type of mortgage rates signed per year.
+- **Distribution of the type of mortgages signed per year (%)**: fixed or variables rates.
 
 # Interpretation and observations
 
