@@ -18,7 +18,7 @@ import Image from 'next/image'
 [![Paro y precio de la viviendas](/images/labor2.png)](/images/labor2.png)
 
 - **Left axis**: HPI (Housing Price Index) not inflation adjusted (base 100 = 2015).
-- **Right axis**: average unemployment rate for each quarter.
+- **Right axis**: average unemployment rate (inverted) for each quarter.
 
 # Interpretation and observations
 
