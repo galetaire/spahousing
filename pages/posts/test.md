@@ -8,4 +8,4 @@ author: Last update on
 
 import Image from 'next/image'
 
-![Equation](https://math.vercel.app/?bgcolor=auto&from=%5Ctext%7BEdit%20this%7D%5C%20%5CLaTeX.svg)
+![Equation]( https://math.vercel.app?from=\frac{1}{\Gamma(s)}\int_{0}^{\infty}\frac{u^{s-1}}{e^{u}-1}\mathrm{d}u )
