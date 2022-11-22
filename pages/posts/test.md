@@ -8,4 +8,4 @@ author: Last update on
 
 import Image from 'next/image'
 
-This sentence uses `$` delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$
+![Equation](https://math.vercel.app/?bgcolor=auto&from=%5Ctext%7BEdit%20this%7D%5C%20%5CLaTeX.svg)
