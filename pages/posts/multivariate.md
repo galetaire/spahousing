@@ -20,7 +20,7 @@ The model groups together seven variables: price (real and nominal), sales, infl
 
 - **Observation A**: When unemployment increases, the price of housing tends to decrease.
 - **Observation B**: Inflation has been following a decreasing trend, at least until 2020.
-- **Observation B**: Between 2000 and 2008 the population increased rapidly, due to immigration.
+- **Observation C**: Between 2000 and 2008 the population increased rapidly, due to immigration.
 - **Observation D**: Between 1986 and 1990 the rise in prices was very high, both in nominal and real terms, due to inflation.
 
 # Data sources

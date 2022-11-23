@@ -16,11 +16,7 @@ import Image from 'next/image'
 
 # Interpretation and observations
 
-The chart from above shows the average annual house price in Spain. A couple of observations:
-
-- **Observation A**: The price of housing is constantly rising due to inflation, a consequence of current monetary policy.
-- **Observation B**: The uptrend in prices is however cyclical, with moments of expansion and recession.
-- **Observation C**: The cycles are visible if we look at the real price (inflation-adjusted). It allows us to see clearly, for example, the real-estate bubble from the early 2000s.
+The prices are constantly rising due to inflation, a consequence of the current monetary policy. The uptrend is however cyclical, with major expansions and minor regressions. The cycles are visible if we look at the real price (inflation-adjusted). It allows us to see, for example, the real-estate bubble from the early 2000s.
 
 # (b) Quarterly evolution of housing prices
 
