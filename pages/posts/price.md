@@ -12,15 +12,15 @@ import Image from 'next/image'
 
 [![Evolución precio de la vivienda](/images/priceyearly.png)](/images/priceyearly.png)
 
-- **House price in Spain since 1986**: in euros per square meter, inflation-adjusted (real price), unadjusted (nominal price), and accumulated inflation.
+- **House price in Spain since 1986, in euros per square meter**: real price (inflation-adjusted, CPI Base 100 = 1986), unadjusted (nominal price), and accumulated inflation.
 
 # Interpretation and observations
 
 The chart from above shows the average annual house price in Spain. A couple of observations:
 
 - **Observation A**: The price of housing is constantly rising due to inflation, a consequence of current monetary policy.
-- **Observation B**: The uptrend in prices is however cyclical, with moments of expansion and recession, linked to debt cycles.
-- **Observation C**: The cycles are easily visible if we look at the line representing the real price (inflation-adjusted). It allows us to see, for example, the magnitude of the real-estate bubble from the early 2000s.
+- **Observation B**: The uptrend in prices is however cyclical, with moments of expansion and recession.
+- **Observation C**: The cycles are visible if we look at the real price (inflation-adjusted). It allows us to see clearly, for example, the real-estate bubble from the early 2000s.
 
 # (b) Quarterly evolution of housing prices
 

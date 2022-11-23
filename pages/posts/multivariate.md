@@ -12,17 +12,16 @@ import Image from 'next/image'
 
 [![Datos del mercado inmobiliario](/images/multivariate.png)](/images/multivariate.png)
 
-- **Unemployment and Inflation**: average rate for the given year. **Population, Mortgages, Home sales, Real price and Nominal price**: percentage of annual change compared to the previous year.
+- **Unemployment, Inflation and Real price**: average rate for the given year. **Population, Mortgages, Home sales and Nominal price**: percentage of annual change compared to the previous year.
 
 # Interpretation and observations
 
 The model groups together seven variables: price (real and nominal), sales, inflation, credit, demographics and employment. A couple of observations:
 
-- **Observation A**: Inflation followed a decreasing trend from 1986 to 2020.
-- **Observation B**: Between 2001 and 2008, the population increased due to an immigration wave.
-- **Observation C**: When unemployment increases, the price of housing tends to decrease.
-- **Observation D**: The black bar informs us of the price movement in nominal terms. For example, between 1986 and 1990 the rise in house prices was very high, due to inflation.
-- **Observation E**: The orange bar, real price, informs us of the de/revaluation of housing. For example, in 2012, there was a strong devaluation, and in 2017 a strong revaluation.
+- **Observation A**: When unemployment increases, the price of housing tends to decrease.
+- **Observation B**: Inflation has been following a decreasing trend, at least until 2020.
+- **Observation B**: Between 2000 and 2008 the population increased rapidly, due to immigration.
+- **Observation D**: Between 1986 and 1990 the rise in prices was very high, both in nominal and real terms, due to inflation.
 
 # Data sources
 
