@@ -12,7 +12,7 @@ import Image from 'next/image'
 
 [![Evolución precio de la vivienda](/images/priceyearly.png)](/images/priceyearly.png)
 
-- **House price in Spain since 1986, in euros per square meter**: real price (inflation-adjusted, CPI Base 100 = 1986), unadjusted (nominal price), and accumulated inflation.
+- **House price in Spain since 1985, in euros per square meter**: real price (inflation-adjusted, CPI Base 100 = 1985), unadjusted (nominal price), and accumulated inflation.
 
 # Interpretation and observations
 
@@ -37,7 +37,7 @@ The _"Spread"_ and the _"Sharp change"_ are intended to serve as signals to capt
 
 # Data sources
 
-- Housing prices, from 1986 to 2006, according to Sociedad de Tasación (_Access to data is under request, but can be seen in the linked publication_): [Publication](https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf), [Link](https://www.st-tasacion.es/informe-de-tendencias-digital/)
+- Housing prices, from 1985 to 2006, according to Sociedad de Tasación (_Access to data is under request, but can be seen in the linked publication_): [Publication](https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf), [Link](https://www.st-tasacion.es/informe-de-tendencias-digital/)
 - Housing prices, from 2007 onwards, according to the notaries (_Grupo 5 > Acto 501 - Compraventa inmuebles > Inmuebles en fincas urbanas, viviendas_): [Link](http://www.notariado.org/liferay/web/cien/estadisticas-al-completo)
 - Inflation data (_Table: average inflation Spain (CPI) - by year_): [Link](https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx)
 - Housing prices according to _Idealista_: [Link](https://www.idealista.com/sala-de-prensa/informes-precio-vivienda)
