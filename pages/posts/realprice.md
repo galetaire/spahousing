@@ -8,12 +8,15 @@ author: Last update on
 
 import Image from 'next/image'
 
-![Equation](https://math.vercel.app?from=Real\:change=Nominal\:change-Inflation)
+![Equation](https://math.vercel.app?from=Real\:change\:\%=Nominal\:change \:\%-Inflation\:\%)
 
-![Equation](https://math.vercel.app?from=Real\:price=\frac{Nominal\:value}{Price\:index}\times100)
+![Equation](https://math.vercel.app?from=Real\:value=\frac{Nominal\:value}{Price\:index}\times100)
 
+or
 
-![Equation](https://math.vercel.app?from=\frac{1}{\Gamma(s)}\int_{0}^{\infty}\frac{u^{s-1}}{e^{u}-1}\mathrm{d}u)
+![Equation](https://math.vercel.app?from=Real\:price=\frac{Nominal\:value}{Price\:index\:_{decimal form}})
+
+![Equation](https://math.vercel.app?from=Real\:value\:Overrated=Nominal\:value\:\times\lgroup1-Inflation\:_{decimal form}\rgroup-Accumulated\:inflation)
 
 
 
