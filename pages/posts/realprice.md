@@ -16,7 +16,7 @@ The real value is the measure that takes into account the time period's inflatio
 
 3 different methods have been used for 3 different visualizations:
 
-- _Real change rate_, used in the [Multivariate model](posts/multivariate).
+- _Real change rate_, used in the [Multivariate model](multivariate).
 - _Real value_, used in [Price](/price).
 - _Real value overrated_, used in the [Rainbow model](/rainbow).
 
