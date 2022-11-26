@@ -10,13 +10,15 @@ import Image from 'next/image'
 
 # Notes on the real value calculations
 
+<div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
+
 The real value is the measure that takes into account the time period's inflation rate, being the purpose to remove the price effect from a data series. It is important to clarify how the real value has been calculated in every visualization, since different methods have been used depending on each indicator goal.
 
 3 different methods have been used for 3 different visualizations:
 
-- _Real change rate_, used in the [Multivariate model](posts/multivariate).
-- _Real value_, used in the [Price](posts/price) visualization.
-- _Real value overrated_, used in the [Rainbow model](posts/rainbow).
+- _Real change rate_, used in the [Multivariate model](/multivariate).
+- _Real value_, used in [Price](/price).
+- _Real value overrated_, used in the [Rainbow model](/rainbow).
 
 A real data sample, used for following examples:
 

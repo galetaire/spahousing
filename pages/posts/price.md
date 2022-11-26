@@ -18,6 +18,8 @@ import Image from 'next/image'
 
 The prices are constantly rising due to inflation, a consequence of the current monetary policy. The uptrend is however cyclical, with major expansions and minor regressions. The cycles are visible if we look at the real price (inflation-adjusted). It allows us to see, for example, the real-estate bubble from the early 2000s.
 
+For details about the methodology for real price, please see this [notes](/realprice).
+
 # (b) Quarterly evolution of housing prices
 
  [![Evolución precio de la vivienda](/images/pricequarterly.png)](/images/pricequarterly.png)

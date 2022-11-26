@@ -12,16 +12,13 @@ import Image from 'next/image'
 
 [![Datos del mercado inmobiliario](/images/multivariate.png)](/images/multivariate.png)
 
-- **Unemployment, Inflation and Real price**: average rate for the given year. **Population, Mortgages, Home sales and Nominal price**: percentage of annual change compared to the previous year.
+- The model groups together seven variables: price (real and nominal), sales, inflation, mortgages, demographics and employment.
 
 # Interpretation and observations
 
-The model groups together seven variables: price (real and nominal), sales, inflation, credit, demographics and employment. A couple of observations:
-
-- **Observation A**: When unemployment increases, the price of housing tends to decrease.
-- **Observation B**: Inflation has been following a decreasing trend, at least until 2020.
-- **Observation C**: Between 2000 and 2008 the population increased rapidly, due to immigration.
-- **Observation D**: Between 1986 and 1990 the rise in prices was very high, both in nominal and real terms, due to inflation.
+- **Unemployment, Inflation**: average rate for the given year.
+- **Population, Mortgages, Home sales, Nominal price**: percentage of annual change compared to the previous year.
+- **Real price**: percentage of change as the difference between the nominal change and the inflation rate, [notes](/realprice).
 
 # Data sources
 
