@@ -1,24 +1,22 @@
 ---
 title: Real price notes
-date:
+date: 2022-11-01
 description:
-tag:
-author:
+tag: Price
+author: Last update on
 ---
 
 import Image from 'next/image'
 
 # Notes on the real value calculations
 
-<div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
-
 The real value is the measure that takes into account the time period's inflation rate, being the purpose to remove the price effect from a data series. It is important to clarify how the real value has been calculated in every visualization, since different methods have been used depending on each indicator goal.
 
 3 different methods have been used for 3 different visualizations:
 
-- _Real change rate_, used in the [Multivariate model](multivariate).
-- _Real value_, used in [Price](price).
-- _Real value overrated_, used in the [Rainbow model](rainbow).
+1. _Real change rate_, used in the [Multivariate model](multivariate).
+2. _Real value_, used in [Price](price).
+3. _Real value overrated_, used in the [Rainbow model](rainbow).
 
 A real data sample, used for following examples:
 
@@ -31,7 +29,7 @@ A real data sample, used for following examples:
 | 1989 | 503 | 24,46 | 6,79 | 125,7 | 109,3 |
 | 1990 | 573 | 13,93 | 6,72 | 132,4 | 147,8 |
 
-## Real change rate
+## 1. Real change rate
 
 The _real change rate_ is the difference between the change in nominal price year-on-year minus the inflation rate (CPI) year-on-year. The expression is the following:
 
@@ -41,7 +39,7 @@ Where _t_ means the reference year. Let's see a basic example for the year(_t_) 
 
 ![Equation](https://math.vercel.app/?bgcolor=auto&from=Real\:change\:rate\:_{1989}=24,46\:-6,79\:=17,67)
 
-## Real value
+## 2. Real value
 
 The _real value_ is a simple methodology to deflate any nominal data series to real values, using a base year for the price index. The method is explained in more depth in this entry from the [Federal Reserve - Bank of Dallas](https://www.dallasfed.org/research/basics/nominal.aspx). The expression is the following:
 
@@ -51,7 +49,7 @@ Where _t_ means the reference year, and where we use the year 1985 as the base y
 
 ![Equation](https://math.vercel.app/?bgcolor=auto&from=Real\:value\:_{1988}=\frac{404}{118,90}\times100=339,78)
 
-## Real value overrated
+## 3. Real value overrated
 
 The _real value overrated_ is a formula that discounts the amount of inflation rate on a yearly basis, generating an aggregated discount that distorts the value to the extremes, both for positive and negative rates. It is inaccurate for analysing the real value (the previous _real value_ should be used instead), but convenient for maximizing trends.
 
@@ -69,7 +67,7 @@ Where the _Overrated inflation_ is the sum of the years 1985, 1986, 1987 and 198
 
 ![Equation](https://math.vercel.app?from=Overrated\:Inflation\:_{1988}=\frac{204\:\times\:8,83\:}{100}+\frac{244\:\:\times\:8,80\:}{100}+\frac{308\:\:\times\:5,26\:}{100}+\frac{404\:\:\times\:4,83\:}{100}=75,20)
 
-## Real value vs. Real value overrated
+### Real value vs. Real value overrated
 
 As means of comparison, in the following charts we can see the behaviour of both the _Real value_ and the _Real value overrated_.
 
@@ -79,3 +77,5 @@ As means of comparison, in the following charts we can see the behaviour of both
 ## Notes
 
 For the mathematical notations, the [Latex Math Api](https://math.vercel.app/home) developed by [@uechz](https://twitter.com/uechz) has been used. A latex editor is accessible at [TutorialsPoint.com](https://www.tutorialspoint.com/latex_equation_editor.htm).
+
+<div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
