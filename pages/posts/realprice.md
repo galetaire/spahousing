@@ -20,7 +20,7 @@ or
 
 then
 
-![Equation](https://math.vercel.app/?bgcolor=auto&from=Overrated%5C%3AInflation%5C%3A_%7Bt%7D%3D%5Cfrac%7BNominal%5C%3Avalue%5C%3A_%7Bt%7D%5C%3A%5Ctimes%5C%3AInflation%5C%3A_%7Bt%7D%7D%7B100%7D%2BAccumulated%5C%3Ainflation%5C%3A_%7Bt-1%7D.svg)
+![Equation](https://math.vercel.app/?bgcolor=auto&from=Overrated\:Inflation\:_{t}=\frac{Nominal\:value\:_{t}\:\times\:Inflation\:_{t}}{100}+\displaystyle\sum\limits_{t=1985}^n\:inflation\:_{t-1})
 
 ```Real\:change\:_{t}=Nominal\:change\:_{t}-Inflation\:_{t}```
 
