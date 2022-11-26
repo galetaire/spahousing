@@ -51,7 +51,7 @@ Where _t_ means the reference year, and where we use the year 1985 as the base y
 
 ## Real value overrated
 
-The _real value overrated_ is a formula that discounts the amount of inflation rate on a yearly basis, generating an aggregated discount that distorts the value to the extremes, both for positive and negative rates. It is inaccurate to analyse the real value (the previous _real value_ should be used for this purpose), but it is more convenient to visualize trends.
+The _real value overrated_ is a formula that discounts the amount of inflation rate on a yearly basis, generating an aggregated discount that distorts the value to the extremes, both for positive and negative rates. It is inaccurate to analyze the real value (the previous _real value_ should be used for this purpose), but it is more convenient to visualize trends.
 
 ![Equation](https://math.vercel.app?from=Real\:value\:overrated\:_{t}=Nominal\:value\:_{t}-Overrated\:Inflation\:_{t})
 
@@ -59,7 +59,13 @@ Where _t_ means the reference year, being the _Overrated inflation_ the followin
 
 ![Equation](https://math.vercel.app/?bgcolor=auto&from=Overrated\:Inflation\:_{t}=\displaystyle\sum\limits_{t=1985}^n\:\frac{Nominal\:value\:_{t}\:\times\:Inflation\:_{t}}{100})
 
-Where the sum expression starts at the year 1985(_t_), and end at the last available data _n_. Let's see a basic example ending in the the year(_n_) 1987:
+Where the sum expression starts at the year 1985(_t_), and ends at the last available data year _n_. Let's see a basic example for the year(_n_) 1988:
+
+![Equation](https://math.vercel.app?from=Real\:value\:overrated\:_{1987}=404\:-75,20=328,80)
+
+Where the _Overrated inflation_ is the sum of the years 1985, 1986, 1987 and 1988:
+
+![Equation](https://math.vercel.app?from=Overrated\:Inflation\:_{1988}=\frac{204\:\times\:8,83\:}{100}+\frac{244\:\:\times\:8,80\:}{100}+\frac{308\:\:\times\:5,26n\:}{100}+\frac{404\:\:\times\:4,83\:}{100}=75,20)
 
 ## Notes and sources
 
