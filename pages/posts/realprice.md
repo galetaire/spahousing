@@ -14,14 +14,14 @@ The real value is the measure that takes into account the time period's inflatio
 
 3 different methods have been used for 3 different visualizations:
 
-- Real change rate, used in the [Multivariate model](posts/multivariate).
-- Real value, used in the [Price topic](posts/price).
-- Real value overrated, used in the [Rainbow model](posts/rainbow).
+- _Real change rate_, used in the [Multivariate model](posts/multivariate).
+- _Real value_, used in the [Price](posts/price) visualization.
+- _Real value overrated_, used in the [Rainbow model](posts/rainbow).
 
 A real data sample, for example purposes:
 
 | Year | Nominal value | Nominal change % | CPI | CPI 100 =1985
-| --- | --- | --- | --- |
+| --- | --- | --- | --- | --- |
 | 1985 | 204 | - | 8,83 | 100  |  
 | 1986 | 244 | 19,61 | 8,80 | 108,8 |
 | 1987 | 308 | 26,23 | 5.26 | 114,1 |
@@ -41,9 +41,17 @@ Where _t_ means the reference year. Let's see a basic example for the year(_t_) 
 
 ## Real value
 
+The _real value_ is a simple methodology to deflate any nominal data series to real values, using a base year for the price index. The method is explained in more depth in this entry from the [Federal Reserve - Bank of Dallas](https://www.dallasfed.org/research/basics/nominal.aspx). The expression is the following:
+
 ![Equation](https://math.vercel.app?from=Real\:value\:_{t}=\frac{Nominal\:value\:_{t}}{Price\:index\:_{t}}\times100)
 
+Where _t_ means the reference year, and where we use the year 1985 as the base year (100). Let's see a basic example for the year(_t_) 1988:
+
+![Equation](https://math.vercel.app/?bgcolor=auto&from=Real\:value\:_{1988}=\frac{404}{118,90}\times100=339,78)
+
 ## Real value overrated
+
+The _real value overrated_ is a formula that
 
 ![Equation](https://math.vercel.app?from=Real\:value\:overrated\:_{t}=Nominal\:value\:_{t}-Overrated\:Inflation\:_{t})
 
@@ -51,6 +59,7 @@ then
 
 ![Equation](https://math.vercel.app/?bgcolor=auto&from=Overrated\:Inflation\:_{t}=\displaystyle\sum\limits_{t=1985}^n\:\frac{Nominal\:value\:_{t}\:\times\:Inflation\:_{t}}{100})
 
+## Notes and sources
 
 https://math.vercel.app/home
 https://www.tutorialspoint.com/latex_equation_editor.htm
