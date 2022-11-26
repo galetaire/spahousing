@@ -1,9 +1,9 @@
 ---
 title: Real price notes
-date: 2022-11-01
+date:
 description:
 tag:
-author: Last update on
+author:
 ---
 
 import Image from 'next/image'
@@ -69,9 +69,11 @@ Where the _Overrated inflation_ is the sum of the years 1985, 1986, 1987 and 198
 
 ## Real value vs. Real value overrated
 
-## Notes and sources
+As means of comparison, in the following charts we can see the behaviour of both the _Real value_ and the _Real value overrated_.
 
-https://math.vercel.app/home
-https://www.tutorialspoint.com/latex_equation_editor.htm
+[![Overrated](/images/overrated1.png)](/images/overrated1.png)
+[![Overrated](/images/overrated2.png)](/images/overrated2.png)
 
-https://www.dallasfed.org/research/basics/nominal.aspx
+## Notes
+
+For the mathematical notations, the [Latex Math Api](https://math.vercel.app/home) developed by [@uechz](https://twitter.com/uechz) has been used. A latex editor is accessible at [TutorialsPoint.com](https://www.tutorialspoint.com/latex_equation_editor.htm).
