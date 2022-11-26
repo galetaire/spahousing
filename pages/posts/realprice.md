@@ -10,15 +10,15 @@ import Image from 'next/image'
 
 # Notes on the real value calculations
 
-The real value is the measure that takes into account the time period's inflation rate. The purpose of the real value is to remove the price effect from a data series or change nominal data to real value data. It is important to clarify how the real value has been calculated in every visualization, since different methods have been used depending on each indicator goal.
+The real value is the measure that takes into account the time period's inflation rate, being the purpose to remove the price effect from a data series. It is important to clarify how the real value has been calculated in every visualization, since different methods have been used depending on each indicator goal.
 
-Three different methods have been used for three different visualizations:
+3 different methods have been used for 3 different visualizations:
 
 - Real change rate, used in the [Multivariate model](posts/multivariate).
 - Real value, used in the [Price topic](posts/price).
 - Real value overrated, used in the [Rainbow model](posts/rainbow).
 
-For example purposes, here we have a real data sample:
+A real data sample, for example purposes:
 
 | Year | Nominal value | Nominal change % | CPI | CPI 100 =1985
 | --- | --- | --- | --- |
@@ -34,9 +34,8 @@ For example purposes, here we have a real data sample:
 The _real change rate_ is the difference between the change in nominal price year-on-year minus the inflation rate (CPI) year-on-year. The expression is the following:
 
 ![Equation](https://math.vercel.app/?bgcolor=auto&from=Real\:change\:rate\:_{t}=Nominal\:rate\:_{t}-Inflation\:rate\:_{t})
-<p align="center">_Where "t" means the reference year._</p>
 
-Let's see a basic example:
+Where _t_ means the reference year. Let's see a basic example for the year(_t_) 1989:
 
 ![Equation](https://math.vercel.app/?bgcolor=auto&from=Real\:change\:rate\:_{1989}=24,46\:-6,79\:=17,67)
 
