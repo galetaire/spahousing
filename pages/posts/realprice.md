@@ -20,14 +20,14 @@ The real value is the measure that takes into account the time period's inflatio
 
 A real data sample, for example purposes:
 
-| Year | Nominal value | Nominal change % | CPI | CPI 100 =1985
-| --- | --- | --- | --- | --- |
-| 1985 | 204 | - | 8,83 | 100  |  
-| 1986 | 244 | 19,61 | 8,80 | 108,8 |
-| 1987 | 308 | 26,23 | 5.26 | 114,1 |
-| 1988 | 404 | 31,09 | 4,83 | 118,9 |
-| 1989 | 503 | 24,46 | 6,79 | 125,7 |
-| 1990 | 573 | 13,93 | 6,72 | 132,4 |
+| Year | Nominal value | Nominal change % | CPI | CPI 100 =1985 | Overrated inflation |
+| --- | --- | --- | --- | --- | --- |
+| 1985 | 204 | - | 8,83 | 100  | 18,0 |
+| 1986 | 244 | 19,61 | 8,80 | 108,8 | 39,5 |
+| 1987 | 308 | 26,23 | 5.26 | 114,1 | 55,7 |
+| 1988 | 404 | 31,09 | 4,83 | 118,9 | 75,2 |
+| 1989 | 503 | 24,46 | 6,79 | 125,7 | 109,3 |
+| 1990 | 573 | 13,93 | 6,72 | 132,4 | 147,8 |
 
 ## Real change rate
 
@@ -45,19 +45,21 @@ The _real value_ is a simple methodology to deflate any nominal data series to r
 
 ![Equation](https://math.vercel.app?from=Real\:value\:_{t}=\frac{Nominal\:value\:_{t}}{Price\:index\:_{t}}\times100)
 
-Where _t_ means the reference year, and where we use the year 1985 as the base year (100). Let's see a basic example for the year(_t_) 1988:
+Where _t_ means the reference year, and where we use the year 1985 as the base year (100) for the price index. Let's see a basic example for the year(_t_) 1988:
 
 ![Equation](https://math.vercel.app/?bgcolor=auto&from=Real\:value\:_{1988}=\frac{404}{118,90}\times100=339,78)
 
 ## Real value overrated
 
-The _real value overrated_ is a formula that
+The _real value overrated_ is a formula that discounts the amount of inflation rate on a yearly basis, generating an aggregated discount that distorts the value to the extremes, both for positive and negative rates. It is inaccurate to analyse the real value (the previous _real value_ should be used for this purpose), but it is more convenient to visualize trends.
 
 ![Equation](https://math.vercel.app?from=Real\:value\:overrated\:_{t}=Nominal\:value\:_{t}-Overrated\:Inflation\:_{t})
 
-then
+Where _t_ means the reference year, being the _Overrated inflation_ the following expression:
 
 ![Equation](https://math.vercel.app/?bgcolor=auto&from=Overrated\:Inflation\:_{t}=\displaystyle\sum\limits_{t=1985}^n\:\frac{Nominal\:value\:_{t}\:\times\:Inflation\:_{t}}{100})
+
+Where the sum expression starts at the year 1985(_t_), and end at the last available data _n_. Let's see a basic example ending in the the year(_n_) 1987:
 
 ## Notes and sources
 
