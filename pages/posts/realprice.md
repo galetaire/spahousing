@@ -20,7 +20,7 @@ or
 
 then
 
-![Equation](https://math.vercel.app/?bgcolor=auto&from=Overrated\:Inflation\:_{t}=\displaystyle\sum\limits_{t=1985}^n\:inflation\:_{t-1}+\frac{Nominal\:value\:_{t}\:\times\:Inflation\:_{t}}{100})
+![Equation](https://math.vercel.app/?bgcolor=auto&from=Overrated\:Inflation\:_{t}=\displaystyle\sum\limits_{t=1985}^n\:inflation\:_{t-1}\:+\frac{Nominal\:value\:_{t}\:\times\:Inflation\:_{t}}{100})
 
 ```Real\:change\:_{t}=Nominal\:change\:_{t}-Inflation\:_{t}```
 
