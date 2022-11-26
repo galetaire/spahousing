@@ -18,7 +18,7 @@ The real value is the measure that takes into account the time period's inflatio
 - _Real value_, used in the [Price](posts/price) visualization.
 - _Real value overrated_, used in the [Rainbow model](posts/rainbow).
 
-A real data sample, for example purposes:
+A real data sample, used for following examples:
 
 | Year | Nominal value | Nominal change % | CPI | CPI 100 =1985 | Overrated inflation |
 | --- | --- | --- | --- | --- | --- |
@@ -51,21 +51,23 @@ Where _t_ means the reference year, and where we use the year 1985 as the base y
 
 ## Real value overrated
 
-The _real value overrated_ is a formula that discounts the amount of inflation rate on a yearly basis, generating an aggregated discount that distorts the value to the extremes, both for positive and negative rates. It is inaccurate to analyze the real value (the previous _real value_ should be used for this purpose), but it is more convenient to visualize trends.
+The _real value overrated_ is a formula that discounts the amount of inflation rate on a yearly basis, generating an aggregated discount that distorts the value to the extremes, both for positive and negative rates. It is inaccurate for analysing the real value (the previous _real value_ should be used instead), but convenient for maximizing trends.
 
 ![Equation](https://math.vercel.app?from=Real\:value\:overrated\:_{t}=Nominal\:value\:_{t}-Overrated\:Inflation\:_{t})
 
 Where _t_ means the reference year, being the _Overrated inflation_ the following expression:
 
-![Equation](https://math.vercel.app/?bgcolor=auto&from=Overrated\:Inflation\:_{t}=\displaystyle\sum\limits_{t=1985}^n\:\frac{Nominal\:value\:_{t}\:\times\:Inflation\:_{t}}{100})
+![Equation](https://math.vercel.app/?bgcolor=auto&from=Overrated\:Inflation\:_{t}=\displaystyle\sum\limits_{t=1985}^n\:\frac{Nominal\:value\:_{t}\:\times\:Inflation\:rate\:_{t}}{100})
 
 Where the sum expression starts at the year 1985(_t_), and ends at the last available data year _n_. Let's see a basic example for the year(_n_) 1988:
 
-![Equation](https://math.vercel.app?from=Real\:value\:overrated\:_{1987}=404\:-75,20=328,80)
+![Equation](https://math.vercel.app?from=Real\:value\:overrated\:_{1988}=404\:-75,20=328,80)
 
 Where the _Overrated inflation_ is the sum of the years 1985, 1986, 1987 and 1988:
 
-![Equation](https://math.vercel.app?from=Overrated\:Inflation\:_{1988}=\frac{204\:\times\:8,83\:}{100}+\frac{244\:\:\times\:8,80\:}{100}+\frac{308\:\:\times\:5,26n\:}{100}+\frac{404\:\:\times\:4,83\:}{100}=75,20)
+![Equation](https://math.vercel.app?from=Overrated\:Inflation\:_{1988}=\frac{204\:\times\:8,83\:}{100}+\frac{244\:\:\times\:8,80\:}{100}+\frac{308\:\:\times\:5,26\:}{100}+\frac{404\:\:\times\:4,83\:}{100}=75,20)
+
+## Real value vs. Real value overrated
 
 ## Notes and sources
 
