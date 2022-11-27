@@ -36,7 +36,7 @@ About the dwellings by period of construction, **second chart**, most of the exi
 [![Consumo de cemento](/images/cement.png)](/images/cement.png)
 
 - **Left axis (bars)**: cement consumption per year, in metric tons.
-- **Right axis (line)**: real housing price [^1] in euros per square meter.
+- **Right axis (line)**: real housing price[^1] in euros per square meter.
 
 # Data sources
 
@@ -50,4 +50,4 @@ About the dwellings by period of construction, **second chart**, most of the exi
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
 
-[^1]: The real price represented is the _Real value overrated_ For details about the methodology, please see this [notes](realprice).
+[^1]: The real price represented is the _Real value overrated_. For details about the methodology, please see this [notes](realprice).

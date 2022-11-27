@@ -20,7 +20,7 @@ All variables are represented as a percentage. Some clarifications to facilitate
 
 - **Unemployment, Inflation**: average rate for the given year.
 - **Population, Mortgages, Home sales, Nominal price**: percentage of annual change compared to the previous year.
-- **Real price**: percentage difference between the nominal and the inflation rate [^1].
+- **Real price**[^1]: percentage difference between the nominal and the inflation rate.
 
 # Data sources
 
