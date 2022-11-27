@@ -12,11 +12,11 @@ import Image from 'next/image'
 
 [![Evolución precio de la vivienda](/images/priceyearly.png)](/images/priceyearly.png)
 
-- **House price in Spain since 1985, in euros per square meter**: real price (inflation-adjusted, CPI Base 100 = 1985), unadjusted (nominal price), and accumulated inflation.
+- **House price in Spain since 1985, in euros per square meter**: nominal price, real price (inflation-adjusted, CPI Base 100 = 1985), and accumulated inflation.
 
 # Interpretation and observations
 
-The prices are constantly rising due to inflation, a consequence of the current monetary policy. The uptrend is however cyclical, with major expansions and minor regressions. The cycles are visible if we look at the real price (inflation-adjusted). It allows us to see, for example, the real-estate bubble from the early 2000s.
+The prices are constantly rising due to inflation, a consequence of the current monetary policy. The uptrend is however cyclical, with major expansions and minor regressions. The cycles are visible if we look at the real price. It allows us to see, for example, the real-estate bubble from the early 2000s.
 
 For details about the methodology for real price, please see this [notes](realprice).
 
@@ -29,7 +29,7 @@ For details about the methodology for real price, please see this [notes](realpr
 
 # Interpretation and observations
 
-The chart from above compares Idealista and notary prices. Both trends are very similar. However, the notary price tends to be always below the Idealista price. This discrepancy could be explained by the fact that the Idealista price shows the price proposed by the seller, while the notary price shows the price paid by the buyer.
+Both trends are similar, however, the price according to the notaries is always below the Idealista price. This discrepancy could be explained by the fact that the Idealista price shows the price proposed by the seller, while the notary price shows the price paid by the buyer.
 
 The _"Spread"_ and the _"Sharp change"_ are intended to serve as signals to capture trend changes.
 

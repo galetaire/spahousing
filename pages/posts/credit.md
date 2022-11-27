@@ -17,20 +17,20 @@ import Image from 'next/image'
 
 [![Crédito en España](/images/creditmovement.png)](/images/creditmovement.png)
 
-- **Real credit movement (mortgages), in percentage**: Blue = real credit expansion; Orange = real credit contraction.
+- **(2nd) Real credit movement (mortgages), in percentage**: Blue = real credit expansion; Orange = real credit contraction.
 
 [![Burbuja inmobiliaria](/images/creditratio.png)](/images/creditratio.png)
 
-- **Ratio between mortgages and home sales**: if the ratio is (x), it means there a (x) mortgages per each (1) home sale.
+- **(3rd) Ratio between mortgages and home sales**: if the ratio is (x), it means there a (x) mortgages per each (1) home sale.
 
 # Interpretation and observations
 
-Credit correlates positively with the evolution of housing prices. Some brief observations:
+Credit correlates positively with the evolution of housing prices. Some observations:
 
-- **Observation A**: Mortgage approvals were huge in the early 2000s. Far above the demographic upper limit, indicating the creation of a bubble.
-- **Observation B**: The average mortgage amount follows an uptrend, a consequence of the monetary policy. Although corrections can occur.
-- **Observation C**: The real credit movement allow us to see the credit/debt cycles.
-- **Observation D**: About the ratio, third chart, if it is greater than 1, there are more mortgages than home sales, indicating the danger of a credit bubble.
+- **Observation A**: Mortgage approvals were far above the demographic upper limit in the 2000s.
+- **Observation B**: The average mortgage amount follows an uptrend, although corrections can occur.
+- **Observation C**: The real credit movement allow us to see the debt cycles.
+- **Observation D**: If the ratio _Mortgages/Sales_ is greater than 1, there are more mortgages than home sales.
 
 # (b) Euribor and interest rates
 
@@ -41,7 +41,7 @@ Credit correlates positively with the evolution of housing prices. Some brief ob
 
 [![Tipo de hipotecas firmadas](/images/typemortgage.png)](/images/typemortgage.png)
 
-- **Mortgages constituted according to interest rate per year (%)**: fixed or variable.
+- **(2nd) Mortgages constituted according to type of interest rate (%)**: fixed or variable.
 
 # Interpretation and observations
 

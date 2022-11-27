@@ -12,11 +12,11 @@ import Image from 'next/image'
 
 [![Compraventa de vivienda](/images/salesyearly1.png)](/images/salesyearly1.png)
 
-- **Purchasing-age population (PAP)**: Home sales (bars); population between 25 and 50 years old (dotted lines); and housing inheritances (purple line).
+- **(1st) Purchasing-age population (PAP)**: Home sales (bars); population between 25 and 50 years old (dotted lines); and housing inheritances (purple line).
 
 [![Compraventa y edad de compra](/images/salesyearly2.png)](/images/salesyearly2.png)
 
-- **PAP disaggregated**: Home sales (bars); population of 30, 40 and 50 years old (colored dotted lines); and housing inheritances (purple bars).
+- **(2nd) PAP disaggregated**: Home sales (bars); population of 30, 40 and 50 years old (colored dotted lines); and housing inheritances (purple bars).
 
 # Interpretation and observations
 
@@ -35,7 +35,7 @@ The _PAP housing index_ draws two ceilings based on demographics. The higher one
 
 # Interpretation and observations
 
-The chart from above shows the number of home sales per quarter. The color indicates whether the number of sales is lower than the previous quarter (red) or higher (green). The black line represents the HPI price. Thus, we can see if the number of sales is going up or down, in combination with price movement. Some observations:
+The color indicates whether the number of sales is lower than the previous quarter (red) or higher (green). The black line represents the HPI price. Some observations:
 
 - **Observation A**: Between 2007 and 2013 the number of sales followed a downward trend, chaining 5 red bars in a row.
 - **Observation B**: In 2020 sales plummet as a result of the Covid-19 lockdowns.

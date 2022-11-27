@@ -12,15 +12,15 @@ import Image from 'next/image'
 
 [![Datos del mercado inmobiliario](/images/multivariate.png)](/images/multivariate.png)
 
-- The model groups together seven variables: price (real and nominal), sales, inflation, mortgages, demographics and employment.
+- The model groups together seven variables: nominal price, real price, sales, inflation, mortgages, population and employment.
 
 # Interpretation and observations
 
-All variables are represented as a percentage. Some clarifications on its reading:
+All variables are represented as a percentage. Some clarifications to facilitate its reading:
 
 - **Unemployment, Inflation**: average rate for the given year.
 - **Population, Mortgages, Home sales, Nominal price**: percentage of annual change compared to the previous year.
-- **Real price**: percentage of change as the difference between the nominal change and the inflation rate, [notes](realprice).
+- **Real price**: percentage difference between the nominal change and the inflation rate, [real price notes](realprice).
 
 # Data sources
 

@@ -49,7 +49,7 @@ Where _t_ means the reference year, and where we use the year 1985 as the base y
 
 ![Equation](https://math.vercel.app/?bgcolor=auto&from=Real\:value\:_{1987}=\frac{308}{114,10}\times100=269,93)
 
-Therefore, the real house value (at 1985 euros) for the year 1987 was 269,93€.
+Therefore, the real house value (at 1985 euros) for the year 1987 equals to 269,93€.
 
 ## 3. Real value overrated
 
@@ -61,13 +61,15 @@ Where _t_ means the reference year, being the _Overrated inflation_ the followin
 
 ![Equation](https://math.vercel.app/?bgcolor=auto&from=Overrated\:Inflation\:_{t}=\displaystyle\sum\limits_{t=1985}^n\:\frac{Nominal\:value\:_{t}\:\times\:Inflation\:rate\:_{t}}{100})
 
-Where the sum expression starts at the year 1985(_t_), and ends at the last available data year _n_. Let's see a basic example for the year(_n_) 1987:
+Where the sum expression starts at the year 1985(_t_), and ends at the year _(n)_. Let's see a basic example for the year 1987(_n_). As for the _Overrated inflation_, it is the sum of the years 1985, 1986 and 1987:
+
+![Equation](https://math.vercel.app?from=Overrated\:Inflation\:_{1987}=\frac{204\:\times\:8,83\:}{100}\:+\:\frac{244\:\:\times\:8,80\:}{100}+\frac{308\:\:\times\:5,26\:}{100}=55,70)
+
+Then:
 
 ![Equation](https://math.vercel.app?from=Real\:value\:overrated\:_{1987}=308\:-55,70=252,30)
 
-Where the _Overrated inflation_ is the sum of the years 1985, 1986 and 1987:
-
-![Equation](https://math.vercel.app?from=Overrated\:Inflation\:_{1987}=\frac{204\:\times\:8,83\:}{100}\:+\:\frac{244\:\:\times\:8,80\:}{100}+\frac{308\:\:\times\:5,26\:}{100}=55,70)
+Therefore, the real _overrated_ house value (at 1985 euros) for the year 1987 equals to 252,30€.
 
 ### Real value vs. Real value overrated
 
