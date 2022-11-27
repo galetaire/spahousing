@@ -20,7 +20,7 @@ All variables are represented as a percentage. Some clarifications to facilitate
 
 - **Unemployment, Inflation**: average rate for the given year.
 - **Population, Mortgages, Home sales, Nominal price**: percentage of annual change compared to the previous year.
-- **Real price**: percentage difference between the nominal change and the inflation rate, [real price notes](realprice).
+- **Real price**: percentage difference between the nominal and the inflation rate [^1].
 
 # Data sources
 
@@ -33,3 +33,5 @@ All variables are represented as a percentage. Some clarifications to facilitate
 - Population according to INE (_Results > Main series since 1971 > National results, Resident population by date, sex and age > Data used is from January 1st of the current year_): [Link](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176951&menu=resultados&idp=1254735572981)
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
+
+[^1]: For details about the methodology for real price, please see this [notes](realprice).

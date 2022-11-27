@@ -12,8 +12,7 @@ import Image from 'next/image'
 
 [![Número de viviendas](/images/stockyearly.png)](/images/stockyearly.png)
 
-- **Left axis (bars)**: total number of new dwellings per year.
-- **Right axis (line)**: existing dwellings per 1000 inhabitants.
+- **(1st) Number of dwellings**. **Left axis (bars)**: total number of new dwellings per year. **Right axis (line)**: existing dwellings per 1000 inhabitants.
 
 [![Antiguedad de las viviendas](/images/stockperiods.png)](/images/stockperiods.png)
 
@@ -37,7 +36,7 @@ About the dwellings by period of construction, **second chart**, most of the exi
 [![Consumo de cemento](/images/cement.png)](/images/cement.png)
 
 - **Left axis (bars)**: cement consumption per year, in metric tons.
-- **Right axis (line)**: real housing price in euros per square meter.
+- **Right axis (line)**: real housing price [^1] in euros per square meter.
 
 # Data sources
 
@@ -50,3 +49,5 @@ About the dwellings by period of construction, **second chart**, most of the exi
 - Inflation data (_Table: average inflation Spain (CPI) - by year_): [Link](https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx)
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
+
+[^1]: The real price represented is the _Real value overrated_ For details about the methodology, please see this [notes](realprice).

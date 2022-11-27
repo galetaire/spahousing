@@ -17,11 +17,11 @@ import Image from 'next/image'
 
 [![Crédito en España](/images/creditmovement.png)](/images/creditmovement.png)
 
-- **(2nd) Real credit movement (mortgages), in percentage**: Blue = real credit expansion; Orange = real credit contraction.
+- **Real credit movement (mortgages), in percentage**: Blue = real credit expansion; Orange = real credit contraction.
 
 [![Burbuja inmobiliaria](/images/creditratio.png)](/images/creditratio.png)
 
-- **(3rd) Ratio between mortgages and home sales**: if the ratio is (x), it means there a (x) mortgages per each (1) home sale.
+- **Ratio between mortgages and home sales**: if the ratio is (x), it means there a (x) mortgages per each (1) home sale.
 
 # Interpretation and observations
 
@@ -41,7 +41,7 @@ Credit correlates positively with the evolution of housing prices. Some observat
 
 [![Tipo de hipotecas firmadas](/images/typemortgage.png)](/images/typemortgage.png)
 
-- **(2nd) Mortgages constituted according to type of interest rate (%)**: fixed or variable.
+- **Mortgages constituted according to type of interest rate (%)**: fixed or variable.
 
 # Interpretation and observations
 

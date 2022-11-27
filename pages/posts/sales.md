@@ -12,11 +12,11 @@ import Image from 'next/image'
 
 [![Compraventa de vivienda](/images/salesyearly1.png)](/images/salesyearly1.png)
 
-- **(1st) Purchasing-age population (PAP)**: Home sales (bars); population between 25 and 50 years old (dotted lines); and housing inheritances (purple line).
+- **Purchasing-age population (PAP)**: Home sales (bars); population between 25 and 50 years old (dotted lines); and housing inheritances (purple line).
 
 [![Compraventa y edad de compra](/images/salesyearly2.png)](/images/salesyearly2.png)
 
-- **(2nd) PAP disaggregated**: Home sales (bars); population of 30, 40 and 50 years old (colored dotted lines); and housing inheritances (purple bars).
+- **PAP disaggregated**: Home sales (bars); population of 30, 40 and 50 years old (colored dotted lines); and housing inheritances (purple bars).
 
 # Interpretation and observations
 
