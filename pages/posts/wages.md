@@ -21,11 +21,11 @@ import Image from 'next/image'
 
 [![Acceso a la vivienda](/images/wageaffordability.png)](/images/wageaffordability.png)
 
-- **Housing affordability (Base 100=1999)**: Spain housing affordability index. It considers income growth against housing and inflation growth.
+- **Housing affordability index (Base 100=1999), Spain**: it considers income growth against housing and inflation growth.
 
 # Interpretation and observations
 
-The first chart from above shows the housing cycles by looking at wages. In this sense, it is common to found convergence and divergence cycles. Divergence implies that housing prices grow faster than wages, and convergence the opposite.
+By looking at wages, it is common to found convergence and divergence cycles. Divergence implies that housing prices grow faster than wages, and convergence the opposite.
 
 - 2003 - 2007: Wage/price divergence.
 - 2008 - 2013: Wage/price convergence.

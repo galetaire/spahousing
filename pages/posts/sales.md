@@ -12,11 +12,11 @@ import Image from 'next/image'
 
 [![Compraventa de vivienda](/images/salesyearly1.png)](/images/salesyearly1.png)
 
-- **Purchasing-age population (PAP)**: Home sales (bars); population between 25 and 50 years old (dotted lines); and housing inheritances (purple line).
+- **Purchasing-age population (PAP)**: home sales (bars); population between 25 and 50 years old (dotted lines); and housing inheritances (purple line).
 
 [![Compraventa y edad de compra](/images/salesyearly2.png)](/images/salesyearly2.png)
 
-- **PAP disaggregated**: Home sales (bars); population of 30, 40 and 50 years old (colored dotted lines); and housing inheritances (purple bars).
+- **PAP disaggregated**: home sales (bars); population of 30, 40 and 50 years old (colored dotted lines); and housing inheritances (purple bars).
 
 # Interpretation and observations
 
@@ -24,7 +24,7 @@ The _PAP housing index_ draws two ceilings based on demographics. The higher one
 
 - If the number of sales exceeds the upper limit, it implies that the situation corresponds to a **bubble**, e.g. 2004 - 2007.
 - If the number of sales is below the lower limit, it implies that there is a **depression**, e.g. 2011 - 2014.
-- If the number of sales is in between the two ceilings, it implies that the market is in an **optimal zone**.
+- If the number of sales is in between the two ceilings, it implies that the market is near an **optimal zone**.
 
 # (b) Quarterly evolution of home sales
 

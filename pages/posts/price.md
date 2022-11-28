@@ -25,7 +25,7 @@ For details about the methodology for real price, please see this [notes](realpr
  [![Evolución precio de la vivienda](/images/pricequarterly.png)](/images/pricequarterly.png)
 
 - **Left axis (line)**: house price in euros per square meter, according to Idealista and to the notaries.
-- **Right axis (area)**: Percentage of difference (in absolute value) between the two compared price sources.
+- **Right axis (area)**: percentage of difference (in absolute value) between the two compared price sources.
 
 # Interpretation and observations
 
@@ -33,9 +33,9 @@ Both trends are similar, however, the price according to the notaries is always 
 
 The _"Spread"_ and the _"Sharp change"_ are intended to serve as signals to capture trend changes.
 
-- **Differential or Spread**: The grey bars (right axis) simply show the difference between the two prices in %. The two lines should not be too far apart, as they represent the same information.
+- **Differential or Spread**: the grey bars (right axis) simply show the difference between the two prices in %. The two lines should not be too far apart, as they represent the same information.
 
-- **Sharp change**: The green line shows the variation of the notarial price compared to the Idealista trend. The line can move away from the Idealista price both upwards and downwards. For example, in 2010-2012 there are a couple of visible moments when it moves clearly downwards, suggesting that the downward pressure is strong.
+- **Sharp change**: the green line shows the variation of the notarial price compared to the Idealista trend. The line can move away from the Idealista price both upwards and downwards. For example, in 2010-2012 there are a couple of visible moments when it moves clearly downwards, suggesting that the downward pressure is strong.
 
 # Data sources
 

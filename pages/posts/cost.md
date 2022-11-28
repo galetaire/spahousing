@@ -8,23 +8,23 @@ author: Last update on
 
 import Image from 'next/image'
 
-# Production Cost
+# Production cost
 
 [![Coste de construcción](/images/costratio.png)](/images/costratio.png)
 
-- **(1st) Ratio between the average housing price and the average construction cost:** if the ratio is (x), it means houses are being sold (x) times the price of production.
+- **Ratio between the average housing price and the average construction cost:** if the ratio is (x), it means houses are being sold (x) times the price of production.
 
 [![Coste de materiales](/images/costchange.png)](/images/costchange.png)
 
-- **(2nd) Cost of production (in %)**: year over year evolution of construction costs.
+- **Cost of production (in %)**: year over year evolution of construction costs.
 
 [![Tipo de vivienda](/images/typehouse.png)](/images/typehouse.png)
 
-- **(3rd) Distribution of new houses build per type (in %)**: Single-Family or Condominiums.
+- **Distribution of new houses build per type (in %)**: Single-Family or Condominiums.
 
 # Interpretation and observations
 
-The **first chart** shows the ratio between the housing price and the construction cost. A higher ratio means the construction sector has higher profit margins (note that a big part of these profit margins are in fact tax payments). In this regard, the year 2006 had the highest margins and 1997 the lowest ones.
+About the ratio between the housing price and the construction cost. A higher ratio means the construction sector has higher profit margins (note that a big part of these profit margins are in fact tax payments). In this regard, the year 2006 had the highest margins and 1997 the lowest ones.
 
 # Data sources
 

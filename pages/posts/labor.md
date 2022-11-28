@@ -22,7 +22,7 @@ import Image from 'next/image'
 
 # Interpretation and observations
 
-The relationship between unemployment and price is negative. When the unemployment rate rises, housing prices fall, and vice versa. We can distinguish several outstanding periods:
+Unemployment and housing prices have an inverse relationship. We can distinguish several outstanding periods:
 
 - 1986 - 1990: Unemployment falls, housing prices rise.
 - 1991 - 1996: Unemployment rises, housing prices fall.

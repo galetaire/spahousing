@@ -22,15 +22,14 @@ import Image from 'next/image'
 
 # Interpretation and observations
 
-The **first chart** shows the gross nominal annual appreciation of housing, i.e. whether if houses increase or decrease in value year over year. We can distinguish several outstanding periods:
+By looking at the housing appreciation, i.e. whether if houses increase or decrease in value year over year. We can distinguish several outstanding periods:
 
 - 1986 - 1990: Strong revaluation.
 - 1991 - 1993: Stagnation.
 - 1994 - 2007: Steady revaluation.
 - 2008 - 2013: Strong devaluation.
-- 2014 - 2021: Moderate revaluation.
-
-The **second chart** shows a net ROI approximation, considering both net rental return plus gross asset appreciation.
+- 2014 - 2019: Moderate revaluation.
+- 2020 - 2022: Covid-19, impact and rebound.
 
 # (b) Average rental return
 

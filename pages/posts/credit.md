@@ -17,7 +17,7 @@ import Image from 'next/image'
 
 [![Crédito en España](/images/creditmovement.png)](/images/creditmovement.png)
 
-- **Real credit movement (mortgages), in percentage**: Blue = real credit expansion; Orange = real credit contraction.
+- **Real credit movement (mortgages), in percentage**: blue = real credit expansion; orange = real credit contraction.
 
 [![Burbuja inmobiliaria](/images/creditratio.png)](/images/creditratio.png)
 
@@ -30,7 +30,7 @@ Credit correlates positively with the evolution of housing prices. Some observat
 - **Observation A**: Mortgage approvals were far above the demographic upper limit in the 2000s.
 - **Observation B**: The average mortgage amount follows an uptrend, although corrections can occur.
 - **Observation C**: The real credit movement allow us to see the debt cycles.
-- **Observation D**: If the ratio _Mortgages/Sales_ is greater than 1, there are more mortgages than home sales.
+- **Observation D**: the ratio _Mortgages/Sales_ hints the formation of real estate bubbles.
 
 # (b) Euribor and interest rates
 
@@ -45,7 +45,7 @@ Credit correlates positively with the evolution of housing prices. Some observat
 
 # Interpretation and observations
 
-The _Euro Interbank Offered Rate_ (Euribor) plays a key role in the mortgage market. An increase of the Euribor implies an increase in mortgage rates, which if sustained for longer periods (years), constraints the debt capacity for borrowers, resulting in general price stagnation due to lack of new money flowing into the system, or even regression of prices if there is an excessive amount of credit accumulated (credit bubble).
+The _Euro Interbank Offered Rate_ (Euribor) plays a key role in the mortgage market. An increase of the Euribor implies an increase in mortgage rates, which if sustained for longer periods, constraints the debt capacity for borrowers, resulting in general price stagnation due to the lack of new money flowing into the system, or even price regression if there is an excessive amount of credit accumulated (credit bubble).
 
 # Data sources
 

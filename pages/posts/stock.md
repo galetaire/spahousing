@@ -8,35 +8,37 @@ author: Last update on
 
 import Image from 'next/image'
 
-# (a) Number of dwellings
+# Stock development
 
 [![Número de viviendas](/images/stockyearly.png)](/images/stockyearly.png)
 
-- **(1st) Number of dwellings**. **Left axis (bars)**: total number of new dwellings per year. **Right axis (line)**: existing dwellings per 1000 inhabitants.
+- **Number of dwellings**: new homes built annually since 1971.
+  - **Left axis (bars)**: total number of new dwellings per year.
+  - **Right axis (line)**: existing dwellings per 1000 inhabitants.
 
 [![Antiguedad de las viviendas](/images/stockperiods.png)](/images/stockperiods.png)
 
-- **(2nd) Construction period**: number of today existing dwellings per period of construction. The **red bar** is a final estimate based on the current pace of construction.
+- **Construction period**: number of today existing dwellings per period of construction. The **red bar** is a final estimate based on the current pace of construction (2021 = 95.000 per year). If the pace remains as 2021, the number of houses built between 2021 and 2040 will be of ≈1.800.000.
 
 [![Estoc y balance de viviendas](/images/stockbalance.png)](/images/stockbalance.png)
 
-- **(3rd) Housing surplus or deficit**: Difference between housing growth and population growth. Blue color implies housing surplus; yellow color implies housing deficit.
-
-# Interpretation and observations
-
-The **first chart** shows the number of new homes built annually since 1971, as well as the ratio of dwellings per thousand inhabitants. Some observations:
-
-- **Observation A**: The number of new dwellings remained almost always above 200 thousand dwellings, until the year 2009, when it dropped drastically.
-- **Observation B**: The number of dwellings per 1000 inhabitants increased rapidly from 1971 to 2000.
-
-About the dwellings by period of construction, **second chart**, most of the existing houses in Spain today were built between 1961 and 1980. If moving forward the pace remains at the rate shown in 2021 (95.000 per year), the number of houses built between 2021 and 2040 will be of ≈1.800.000.
-
-# (b) Cement consumption
+- **Housing surplus or deficit**: difference between housing growth and population growth. Blue color implies housing surplus; yellow color implies housing deficit.
 
 [![Consumo de cemento](/images/cement.png)](/images/cement.png)
 
-- **Left axis (bars)**: cement consumption per year, in metric tons.
-- **Right axis (line)**: real housing price[^1] in euros per square meter.
+- **Cement consumption, Spain**.
+  - **Left axis (bars)**: cement consumption per year, in metric tons.
+  - **Right axis (line)**: real housing price[^1] in euros per square meter.
+
+# Interpretation and observations
+
+The evolution of the housing stock is a key factor in the supply balance. A couple of observations from the previous charts:
+
+- **Observation A**: the number of houses built per year dropped drastically in 2009.
+- **Observation B**: the number of houses per 1000 inhabitants increased from 1971 to 2000.
+- **Observation C**: most of the existing houses in Spain today were built between 1961 and 1980.
+- **Observation D**: the housing stock has experienced a couple of deficit years since 2017.
+- **Observation E**: the cement consumption and the real housing price correlate positively.
 
 # Data sources
 
