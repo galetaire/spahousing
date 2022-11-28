@@ -27,9 +27,9 @@ import Image from 'next/image'
 
 Credit correlates positively with the evolution of housing prices. Some observations:
 
-- **Observation A**: Mortgage approvals were far above the demographic upper limit in the 2000s.
-- **Observation B**: The average mortgage amount follows an uptrend, although corrections can occur.
-- **Observation C**: The real credit movement allow us to see the debt cycles.
+- **Observation A**: mortgage approvals were far above the upper limit in the 2000s.
+- **Observation B**: the average mortgage amount follows an uptrend.
+- **Observation C**: the real credit movement allow us to see the debt cycles.
 - **Observation D**: the ratio _Mortgages/Sales_ hints the formation of real estate bubbles.
 
 # (b) Euribor and interest rates

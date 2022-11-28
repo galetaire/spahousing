@@ -57,17 +57,19 @@ Therefore, the real house value (at 1985 euros) for the year 1987 equals to 269,
 
 ## 3. Real value overrated
 
-The _real value overrated_ is a formula that discounts the amount of inflation rate on a yearly basis, generating an aggregated compound that overcounts inflation and exacerbates the values, both positively and negatively. It is inaccurate for analyzing the real value (the previous _real value_ should be used instead), but convenient for maximizing trends. The expression is the following:
+The _real value overrated_ is a formula that discounts the amount of inflation rate on a yearly basis, generating a compound that overrates inflation. It is inaccurate for analyzing the real value (the previous _real value_ should be used instead), but convenient for maximizing trends. The expression is the following:
 
 ![Equation](https://math.vercel.app?from=Real\:value\:overrated\:_{t}=Nominal\:value\:_{t}-Overrated\:Inflation\:_{t})
 
-Where _t_ means the reference year, and _Overrated inflation_ is the following expression:
+Where _t_ means the reference year, and the _Overrated inflation_ is expressed as follows:
 
 ![Equation](https://math.vercel.app/?bgcolor=auto&from=Overrated\:Inflation\:_{t}=\displaystyle\sum\limits_{t=1985}^n\:\frac{Nominal\:value\:_{t}\:\times\:Inflation\:rate\:_{t}}{100})
 
 Where the sum expression starts at the year 1985(_t_), and ends at the year _(n)_.
 
-Let's see a basic example for the year 1987(_n_). As for the _Overrated inflation_, it is the sum of the years 1985, 1986 and 1987:
+Let's see a basic example for the year 1987(_n_).
+
+As for the _Overrated inflation_, it is the sum of the years 1985, 1986 and 1987:
 
 ![Equation](https://math.vercel.app?from=Overrated\:Inflation\:_{1987}=\frac{204\:\times\:8,83\:}{100}\:+\:\frac{244\:\:\times\:8,80\:}{100}+\frac{308\:\:\times\:5,26\:}{100}=55,70)
 
@@ -90,4 +92,4 @@ For the mathematical notations, the [Latex Math Api](https://math.vercel.app/hom
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
 
-[^1]: If the price index is in decimal form, the expression would simply be: _Nominal value / Price index_. 
+[^1]: If the price index is in decimal form, the expression would simply be: _Nominal value / Price index_.

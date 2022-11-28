@@ -12,12 +12,13 @@ import Image from 'next/image'
 
 [![Salarios y precio de la vivienda](/images/wageyearly.png)](/images/wageyearly.png)
 
-- **Left axis (bars)**: the standard wage represents the net disposable income averaged for those over 18 years of age, Spain, in euros.
-- **Right axis (line)**: average mortgage amount, Spain, in euros.
+- **Evolution of wages**: the _ideal wage_ is defined as "the wage that allows you to completely pay off your mortgage with 5 years of full wage".
+  - **Left axis (bars)**: the standard wage represents the net disposable income averaged for those over 18 years of age, Spain, in euros.
+  - **Right axis (line)**: average mortgage amount, Spain, in euros.
 
 [![Salario ideal](/images/wageratio.png)](/images/wageratio.png)
 
-- **Wage disconnection (in percentage)**: the ideal wage is defined as "the wage that allows you to completely pay off your mortgage with 5 years of full wage". E.g., if the value equals 30, it means that wages must increase by 30% to match the ideal wage.
+- **Wage disconnection (in percentage)**: if the value equals 30, it means that wages must increase by 30% to match the ideal wage.
 
 [![Acceso a la vivienda](/images/wageaffordability.png)](/images/wageaffordability.png)
 
@@ -25,7 +26,7 @@ import Image from 'next/image'
 
 # Interpretation and observations
 
-By looking at wages, it is common to found convergence and divergence cycles. Divergence implies that housing prices grow faster than wages, and convergence the opposite.
+By looking at wages, convergence and divergence cycles are found. Divergence implies that housing prices grow faster than wages, and convergence the opposite.
 
 - 2003 - 2007: Wage/price divergence.
 - 2008 - 2013: Wage/price convergence.

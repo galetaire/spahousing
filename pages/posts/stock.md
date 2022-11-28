@@ -26,7 +26,7 @@ import Image from 'next/image'
 
 [![Consumo de cemento](/images/cement.png)](/images/cement.png)
 
-- **Cement consumption, Spain**.
+- **Cement consumption**, Spain.
   - **Left axis (bars)**: cement consumption per year, in metric tons.
   - **Right axis (line)**: real housing price[^1] in euros per square meter.
 
@@ -35,10 +35,10 @@ import Image from 'next/image'
 The evolution of the housing stock is a key factor in the supply balance. A couple of observations from the previous charts:
 
 - **Observation A**: the number of houses built per year dropped drastically in 2009.
-- **Observation B**: the number of houses per 1000 inhabitants increased from 1971 to 2000.
-- **Observation C**: most of the existing houses in Spain today were built between 1961 and 1980.
-- **Observation D**: the housing stock has experienced a couple of deficit years since 2017.
-- **Observation E**: the cement consumption and the real housing price correlate positively.
+- **Observation B**: the houses per 1000 inhabitants increased from 1971 to 2000.
+- **Observation C**: most of the current Spain houses were built between 1961 and 1980.
+- **Observation D**: the stock has experienced a couple of deficit years since 2017.
+- **Observation E**: the cement consumption and the real price correlate positively.
 
 # Data sources
 
