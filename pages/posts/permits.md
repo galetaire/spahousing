@@ -23,9 +23,9 @@ import Image from 'next/image'
 
 The charts from above show the number of annual building licenses (and the type of permit), as well as the price of land in Spain per square meter. Some observations:
 
-- **Observation A**: The price of land in Spain stagnated from 2013 to 2021.
-- **Observation B**: Since 2008 renovation permits have overcome new build permits.
-- **Observation C**: The building permits expanded greatly in the 1990s, for then crashing in the 2010s.
+- **Observation A**: the building permits expanded greatly in the 1990s, for then crashing in the 2010s.
+- **Observation B**: since 2008 renovation permits have overcome new build permits.
+- **Observation C**: the price of land in Spain stagnated from 2013 to 2021.
 
 # Data sources
 

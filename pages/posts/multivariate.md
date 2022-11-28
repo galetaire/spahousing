@@ -19,8 +19,8 @@ import Image from 'next/image'
 All variables are represented as a percentage. Some clarifications to facilitate its reading:
 
 - **Unemployment, Inflation**: average rate for the given year.
-- **Population, Mortgages, Home sales, Nominal price**: percentage of annual change compared to the previous year.
 - **Real price**[^1]: percentage difference between the nominal and the inflation rate.
+- **Population, Mortgages, Home sales, Nominal price**: percentage of annual change compared to the previous year.
 
 # Data sources
 
