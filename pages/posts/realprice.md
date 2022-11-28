@@ -90,4 +90,4 @@ For the mathematical notations, the [Latex Math Api](https://math.vercel.app/hom
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
 
-[^1]: If the price index is in decimal form, the expression would be the following: [Equation](https://math.vercel.app?from=Real\:value\:_{t}=\frac{Nominal\:value\:_{t}}{Price\:index\:(decimal form)\:_{t}})
+[^1]: If the price index is in decimal form, the expression would simply be: _Nominal value / Price index_. 
