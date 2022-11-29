@@ -12,13 +12,15 @@ import Image from 'next/image'
 
 [![Paro y precio de la vivienda](/images/labor1.png)](/images/labor1.png)
 
-- **Left axis**: average unemployment rate for each year.
-- **Right axis**: average price growth rate for each year.
+- **Annual evolution of unemployment and housing prices**, Spain.
+  - **Left axis**: average unemployment rate for each year.
+  - **Right axis**: average price growth rate (inverted) for each year.
 
 [![Paro y precio de la viviendas](/images/labor2.png)](/images/labor2.png)
 
-- **Left axis**: HPI (Housing Price Index) not inflation adjusted (base 100 = 2015).
-- **Right axis**: average unemployment rate (inverted) for each quarter.
+- **Quarterly evolution of unemployment and housing prices**, Spain.
+  - **Left axis**: HPI (Housing Price Index) not inflation adjusted (base 100 = 2015).
+  - **Right axis**: average unemployment rate (inverted) for each quarter.
 
 # Interpretation and observations
 

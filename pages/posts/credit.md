@@ -37,8 +37,9 @@ Credit correlates positively with the evolution of housing prices. Some observat
 
 [![Euribor y interes hipotecas](/images/euribor.png)](/images/euribor.png)
 
-- **Left axis (%)**: Euribor 1-year average rate and average mortgage rate.
-- **Right axis (e/m2)**: house price in euros per square meter.
+- **Euribor, mortgage rates and housing prices**, Spain.
+  - **Left axis (%)**: Euribor 1-year average rate and average mortgage rate.
+  - **Right axis (e/m2)**: house price in euros per square meter.
 
 [![Tipo de hipotecas firmadas](/images/typemortgage.png)](/images/typemortgage.png)
 

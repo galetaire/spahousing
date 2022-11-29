@@ -12,13 +12,15 @@ import Image from 'next/image'
 
 [![Rentabilidad de la vivienda](/images/roigross.png)](/images/roigross.png)
 
-- **Bars**: green bars denote positive appreciation; red bars denote negative appreciation.
-- **Red line**: annual inflation rate, represented in percentage.
+- **Housing gross appreciation (%)**, Spain.
+  - **Bars**: green bars denote positive appreciation; red bars denote negative appreciation.
+  - **Red line**: annual inflation rate, represented in percentage.
 
 [![Housing ROI](/images/roinet.png)](/images/roinet.png)
 
-- **Housing ROI (bars, %)**: considers both gross asset appreciation and net rental return.
-- **Red line**: annual inflation rate, represented in percentage.
+- **Housing return on investment (%)**: considers both gross asset appreciation and net rental return.
+  - **Bars**: green bars denote positive appreciation; red bars denote negative appreciation.
+  - **Red line**: annual inflation rate, represented in percentage.
 
 # Interpretation and observations
 
