@@ -12,8 +12,9 @@ import Image from 'next/image'
 
 [![Precio del suelo](/images/permitsland.png)](/images/permitsland.png)
 
-- **Left axis**: total number of building licenses.
-- **Right axis**: price of land in euros per square meter.
+- **Price of urban land and building licenses**, Spain.
+  - **Left axis**: total number of building licenses.
+  - **Right axis**: price of land in euros per square meter.
 
 [![Visados de obra](/images/permitstype.png)](/images/permitstype.png)
 
@@ -23,7 +24,7 @@ import Image from 'next/image'
 
 The charts from above show the number of annual building licenses (and the type of permit), as well as the price of land in Spain per square meter. Some observations:
 
-- **Observation A**: the building permits expanded greatly in the 1990s, for then crashing in the 2010s.
+- **Observation A**: permits expanded greatly in the 1990s, for then crashing in the 2010s.
 - **Observation B**: since 2008 renovation permits have overcome new build permits.
 - **Observation C**: the price of land in Spain stagnated from 2013 to 2021.
 

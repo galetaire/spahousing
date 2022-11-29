@@ -8,12 +8,13 @@ author: Last update on
 
 import Image from 'next/image'
 
-# (a) Annual evolution of mortgages
+# (a) Evolution of mortgages
 
 [![Hipotecas en España](/images/credityearly.png)](/images/credityearly.png)
 
-- **Left axis (bars)**: annual number of mortgages approved and released.
-- **Right axis (line)**: average annual mortgage amount, in euros.
+- **Annual evolution of mortgages**, Spain.
+  - **Left axis (bars)**: annual number of mortgages approved and released.
+  - **Right axis (line)**: average annual mortgage amount, in euros.
 
 [![Crédito en España](/images/creditmovement.png)](/images/creditmovement.png)
 
