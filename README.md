@@ -1,6 +1,6 @@
 # Description and contact
 
-The market monitored on this website is the Spanish real estate market. Twitter name: [@Galetaire](https://twitter.com/HousingSpanish).
+The market monitored on this website is the Spanish real estate market. Twitter name: [@HousingSpanish](https://twitter.com/HousingSpanish).
 
 # Portfolio Kit and building sources
 
