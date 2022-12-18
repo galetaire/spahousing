@@ -30,7 +30,7 @@ author: Collection of all the 32 charts published in the site
   * (14) [Quarterly evolution of unemployment and housing prices](/images/labor2.png)
 + _Wages_
   * (15) [Evolution of wages](/images/wageyearly.png)
-  * (16) [Ratio between wages and mortgages](/images/wageratio.png)
+  * (16) [Disconnection between wages and mortgages](/images/wageratio.png)
   * (17) [Housing affordability](/images/wageaffordability.png)
 + _Land and building licenses_
   * (18) [Price of urban land and building licenses](/images/permitsland.png)
