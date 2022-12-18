@@ -2,7 +2,7 @@
 title: Map Chart
 date:
 description:
-author: Collection of all the charts published on the site
+author: Collection of all the charts published in the site
 ---
 
 import Image from 'next/image'
