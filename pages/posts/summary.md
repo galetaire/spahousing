@@ -9,10 +9,10 @@ import Image from 'next/image'
 
 # Map chart of the site
 
-1. General models
++ General models
   1. [Multivariate model, housing overview](/images/multivariate.png)
   1. [Rainbow model: housing cycles](/images/rainbow.png)
-1. Price
++ Price
   1. [Annual evolution of housing prices](/images/priceyearly.png)
   1. [Quarterly evolution of housing prices](/images/pricequarterly.png)
 1. [Annual evolution of home sales](/images/salesyearly1.png)
