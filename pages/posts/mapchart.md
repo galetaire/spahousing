@@ -12,13 +12,16 @@ import Image from 'next/image'
 * General models
   1. [Multivariate model, housing overview](/images/multivariate.png)
   2. [Rainbow model: housing cycles](/images/rainbow.png)
+
 * Price
   3. [Annual evolution of housing prices](/images/priceyearly.png)
   4. [Quarterly evolution of housing prices](/images/pricequarterly.png)
+
 * Sales
   5. [Annual evolution of home sales](/images/salesyearly1.png)
   6. [Annual evolution of home sales, disaggregated](/images/salesyearly2.png)
   7. [Quarterly evolution of home sales](/images/salesquarterly.png)
+  
 * Mortgages
   8. [Annual evolution of mortgages](/images/credityearly.png)
   1. [Real credit movement (mortgages)](/images/creditmovement.png)
