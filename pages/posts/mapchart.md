@@ -9,17 +9,13 @@ import Image from 'next/image'
 
 # Map chart of the site
 
-    ```
-    General models
-    ```
+    ``General models``
   1. [Multivariate model, housing overview](/images/multivariate.png)
   1. [Rainbow model: housing cycles](/images/rainbow.png)
-    ```
-    Price
-    ```
+    ``Price``
   1. [Annual evolution of housing prices](/images/priceyearly.png)
   1. [Quarterly evolution of housing prices](/images/pricequarterly.png)
-    Sales
+    ``Sales``
   1. [Annual evolution of home sales](/images/salesyearly1.png)
   1. [Annual evolution of home sales, disaggregated](/images/salesyearly2.png)
   1. [Quarterly evolution of home sales](/images/salesquarterly.png)
