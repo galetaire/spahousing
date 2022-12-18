@@ -5,7 +5,7 @@ description:
 author: Collection of all the 32 charts published in the site
 ---
 
-<div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
+<div class="meta-line"><a class="meta-back" href="/methodology#data-base-access">← Back to methodology</a></div>
 
 # Map chart
 
