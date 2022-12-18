@@ -2,12 +2,12 @@
 title: Map Chart
 date:
 description:
-author: Collection of all the charts published in the site
+author: Collection of all the 32 charts published in the site
 ---
 
-import Image from 'next/image'
+<div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
 
-# Map chart of the site
+# Map chart
 
 + _General models_
   * (1) [Multivariate model, housing overview](/images/multivariate.png)
@@ -52,5 +52,3 @@ import Image from 'next/image'
   * (30) [Housing gross appreciation](/images/roigross.png)
   * (31) [Price-to-rent ratio (%)](/images/rentratio.png)
   * (32) [Price-to-rent ratio (time)](/images/renttime.png)
-
-<div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
