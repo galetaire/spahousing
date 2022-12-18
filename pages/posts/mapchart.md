@@ -9,48 +9,48 @@ import Image from 'next/image'
 
 # Map chart of the site
 
-* General models
+* _General models_
   * (1) [Multivariate model, housing overview](/images/multivariate.png)
   * (2) [Rainbow model: housing cycles](/images/rainbow.png)
-* Price
+* _Price_
   * (3) [Annual evolution of housing prices](/images/priceyearly.png)
   * (4) [Quarterly evolution of housing prices](/images/pricequarterly.png)
-* Sales
+* _Sales_
   * (5) [Annual evolution of home sales](/images/salesyearly1.png)
   * (6) [Annual evolution of home sales, disaggregated](/images/salesyearly2.png)
   * (7) [Quarterly evolution of home sales](/images/salesquarterly.png)
-* Mortgages
-  1. [Annual evolution of mortgages](/images/credityearly.png)
-  1. [Real credit movement (mortgages)](/images/creditmovement.png)
-  1. [Ratio between mortgages and home sales](/images/creditratio.png)
-  1. [Mortgages constituted according to type of interest rate](/images/typemortgage.png)
-  1. [Euribor, mortgage rates and housing prices](/images/euribor.png)
-* Unemployment
-  1. [Annual evolution of unemployment and housing prices](/images/labor1.png)
-  1. [Quarterly evolution of unemployment and housing prices](/images/labor2.png)
-* Wages
-  1. [Evolution of wages](/images/wageyearly.png)
-  1. [Wage disconnection](/images/wageratio.png)
-  1. [Housing affordability index (Base 100=1999), Spain](/images/wageaffordability.png)
-* Land and building licenses
-  1. [Price of urban land and building licenses](/images/permitsland.png)
-  1. [Building licenses according to type of permit](/images/permitstype.png)
-* Stock development
-  1. [Number of dwellings](/images/stockyearly.png)
-  1. [Dwellings per period of construction](/images/stockperiods.png)
-  1. [Housing surplus or deficit](/images/stockbalance.png)
-  1. [Cement consumption](/images/cement.png)
-  1. [Distribution of new houses build per type](/images/typehouse.png)
-* Production cost
-  1. [Ratio between housing price and construction cost](/images/costratio.png)
-  1. [Cost of production ](/images/costchange.png)
-* Ownership structure
-  1. [Home sales by type of buyer](/images/buyer.png)
-  1. [Housing by type of tenure](/images/tenure.png)
-* Return on investment
-  1. [Housing return on investment](/images/roinet.png)
-  1. [Housing gross appreciation](/images/roigross.png)
-  1. [Price-to-rent ratio (%)](/images/rentratio.png)
-  1. [Price-to-rent ratio (time)](/images/renttime.png)
+* _Mortgages_
+  * (8) [Annual evolution of mortgages](/images/credityearly.png)
+  * (9) [Real credit movement (mortgages)](/images/creditmovement.png)
+  * (10) [Ratio between mortgages and home sales](/images/creditratio.png)
+  * (11) [Mortgages constituted according to type of interest rate](/images/typemortgage.png)
+  * (12) [Euribor, mortgage rates and housing prices](/images/euribor.png)
+* _Unemployment_
+  * (13) [Annual evolution of unemployment and housing prices](/images/labor1.png)
+  * (14) [Quarterly evolution of unemployment and housing prices](/images/labor2.png)
+* _Wages_
+  * (15) [Evolution of wages](/images/wageyearly.png)
+  * (16) [Wage disconnection](/images/wageratio.png)
+  * (17) [Housing affordability index (Base 100=1999), Spain](/images/wageaffordability.png)
+* _Land and building licenses_
+  * (18) [Price of urban land and building licenses](/images/permitsland.png)
+  * (19) [Building licenses according to type of permit](/images/permitstype.png)
+* _Stock development_
+  * (20) [Number of dwellings](/images/stockyearly.png)
+  * (21) [Dwellings per period of construction](/images/stockperiods.png)
+  * (22) [Housing surplus or deficit](/images/stockbalance.png)
+  * (23) [Cement consumption](/images/cement.png)
+  * (24) [Distribution of new houses build per type](/images/typehouse.png)
+* _Production cost_
+  * (25) [Ratio between housing price and construction cost](/images/costratio.png)
+  * (26) [Cost of production ](/images/costchange.png)
+* _Ownership structure_
+  * (27) [Home sales by type of buyer](/images/buyer.png)
+  * (28) [Housing by type of tenure](/images/tenure.png)
+* _Return on investment_
+  * (29) [Housing return on investment](/images/roinet.png)
+  * (30) [Housing gross appreciation](/images/roigross.png)
+  * (31) [Price-to-rent ratio (%)](/images/rentratio.png)
+  * (32) [Price-to-rent ratio (time)](/images/renttime.png)
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
