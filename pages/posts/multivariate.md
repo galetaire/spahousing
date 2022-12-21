@@ -12,7 +12,7 @@ import Image from 'next/image'
 
 [![Datos del mercado inmobiliario](/images/multivariate.png)](/images/multivariate.png)
 
-- The model groups together seven variables: nominal price, real price, sales, inflation, mortgages, population and employment.
+- The model groups together seven variables: nominal price, real price, sales, inflation, mortgages, euribor and employment.
 
 # Interpretation and observations
 
@@ -20,7 +20,7 @@ All variables are represented as a percentage. Some clarifications to facilitate
 
 - **Unemployment, Inflation**: average rate for the given year.
 - **Real price**[^1]: percentage difference between the nominal and the inflation rate.
-- **Population, Mortgages, Home sales, Nominal price**: percentage of annual change compared to the previous year.
+- **Mortgages, Euribor, Home sales, Nominal price**: percentage of annual change compared to the previous year. For the _Euribor_ data, the value has been multiplied by a factor of 10 for easier visualization (green = tight monetary policy; red = loose monetary policy).
 
 # Data sources
 
