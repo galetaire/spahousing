@@ -31,5 +31,7 @@ About the ratio between the housing price and the construction cost. A higher ra
 - Number of units per type and m², Single Family (_unifamiliar_) and Condominiums (_en bloque_) (_6.Visados de dirección de obra: Obra nueva, ampliación y/o reforma. Nº de viviendas y superficie media según tipo de obra y destino principal._): [Link](https://www.fomento.gob.es/BE/?nivel=2&orden=09000000)
 - Material execution budget (_3. Visados de dirección de obra: Obra nueva. Presupuesto de ejecución material según destino principal._): [Link](https://www.fomento.gob.es/BE/?nivel=2&orden=09000000)
 - Cost of materials (_This data has not been used in the charts displayed_): [Link](https://apps.fomento.gob.es/BoletinOnline/?nivel=2&orden=08000000)
+- Housing prices, from 1985 to 2006, according to Sociedad de Tasación (_Access to data is under request, but can be seen in the linked publication_): [Publication](https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf), [Link](https://www.st-tasacion.es/informe-de-tendencias-digital/)
+- Housing prices, from 2007 onwards, according to the notaries (_Grupo 5 > Acto 501 - Compraventa inmuebles > Inmuebles en fincas urbanas, viviendas_): [Link](http://www.notariado.org/liferay/web/cien/estadisticas-al-completo)
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>

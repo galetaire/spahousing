@@ -12,7 +12,7 @@ import Image from 'next/image'
 
 [![Datos del mercado inmobiliario](/images/multivariate.png)](/images/multivariate.png)
 
-- The model groups together seven variables: nominal price, real price, sales, inflation, mortgages, euribor and employment.
+- The model groups together seven variables: nominal price, real price, sales, inflation, mortgages, interest rate and employment.
 
 # Interpretation and observations
 
@@ -20,7 +20,10 @@ All variables are represented as a percentage. Some clarifications to facilitate
 
 - **Unemployment, Inflation**: average rate for the given year.
 - **Real price**[^1]: percentage difference between the nominal and the inflation rate.
-- **Mortgages, Euribor, Home sales, Nominal price**: percentage of annual change compared to the previous year. For the _Euribor_ data, the value has been multiplied by a factor of 10 for easier visualization (green = tight monetary policy; red = loose monetary policy).
+- **Mortgages, Home sales, Nominal price**: percentage of annual change compared to the previous year.
+- **Interest rate (_Mibor/Euribor_)**: percentage of annual change compared to the previous year. Two observations:
+    - The value has been multiplied by a factor of 10 for easier visualization (green = tight monetary policy; red = loose monetary policy).
+    - Until 2001, the reference interest rate is the _Mibor_, and from 2002 onwards is the _Euribor_.
 
 # Data sources
 
@@ -31,6 +34,8 @@ All variables are represented as a percentage. Some clarifications to facilitate
 - Unemployment (_Results > Annual > Unemployed persons > Unemployment rates by sex and age group_): [Link](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176918&menu=resultados&idp=1254735976595#!tabs-1254736195128)
 - Inflation data (_Table: average inflation Spain (CPI) - by year_): [Link](https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx)
 - Population according to INE (_Results > Main series since 1971 > National results, Resident population by date, sex and age > Data used is from January 1st of the current year_): [Link](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176951&menu=resultados&idp=1254735572981)
+- Euribor 1-year rate averaged, from 2002 onwards (_Euribor 1-year - Historical close, average of observations through period _): [Link](https://sdw.ecb.europa.eu/quickview.do?SERIES_KEY=143.FM.M.U2.EUR.RT.MM.EURIBOR1YD_.HSTA)
+- Mibor 1-year rate averaged, from 1979 to 2001 (_Cuadro 19.1 del BE - Tipo de interés. De referencia. Oficiales. Mercado hipotecario. Interbancario. Mibor a 1 año_): [Link](https://www.bde.es/webbde/es/estadis/infoest/temas/sb_tiintref.html)
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
 
