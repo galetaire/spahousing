@@ -20,10 +20,8 @@ All variables are represented as a percentage. Some clarifications to facilitate
 
 - **Unemployment, Inflation**: average rate for the given year.
 - **Real price**[^1]: percentage difference between the nominal and the inflation rate.
-- **Mortgages, Home sales, Nominal price**: percentage of annual change compared to the previous year.
-- **Interest rate (_Mibor/Euribor_)**: percentage of annual change compared to the previous year. Two observations:
-    - The value has been multiplied by a factor of 10 for easier visualization (green = tight monetary policy; red = loose monetary policy).
-    - Until 2001, the reference interest rate is the _Mibor_, and from 2002 onwards is the _Euribor_.
+- **Mortgages, Home sales, Nominal price, Interest rate**: percentage of annual change compared to the previous year.
+  - _About the interest rate_: until 2001, the reference interest rate is the _Mibor_, and from 2002 onwards is the _Euribor_.
 
 # Data sources
 

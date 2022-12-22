@@ -42,7 +42,8 @@ Credit correlates positively with the evolution of housing prices. Some observat
 [![Politica monetaria y precio vivienda](/images/pricemoneypolicy.png)](/images/pricemoneypolicy.png)
 
 - **Nominal price and Interest rate**: percentage of annual change compared to the previous year.
-  - _About the interest rate_: until 2001, the reference interest rate is the _Mibor_, and from 2002 onwards is the _Euribor_. The interest rate value has been multiplied by a factor of 10 for easier visualization. Blue = tight monetary policy; orange = loose monetary policy.
+  - **Left axis (bars)**: interest rate. Until 2001, the reference rate is the _Mibor_, from 2002 onwards is the _Euribor_.
+  - **Right axis (line)**: nominal price.
 
 [![Tipo de hipotecas firmadas](/images/typemortgage.png)](/images/typemortgage.png)
 
