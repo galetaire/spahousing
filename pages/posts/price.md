@@ -16,7 +16,9 @@ import Image from 'next/image'
 
 # Interpretation and observations
 
-The prices are constantly rising due to inflation, a consequence of the current monetary policy. The uptrend is however cyclical, with major expansions and minor regressions. The cycles are visible if we look at the real price. It allows us to see, for example, the real-estate bubble from the early 2000s.
+The prices are constantly rising due to inflation, a consequence of the current monetary policy. The uptrend is however cyclical, with major expansions and minor regressions.
+
+For an overview on how housing value behaves in different currencies, please see this [entry](posts/credit).
 
 For details about the methodology for real price, please see this [notes](realprice).
 
