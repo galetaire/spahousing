@@ -14,13 +14,13 @@ import Image from 'next/image'
 
 - **Housing return on investment (%)**: considers both gross asset appreciation and net rental return.
   - **Bars**: green denotes positive appreciation; red denotes negative.
-  - **Red line**: annual inflation rate, represented in percentage.
+  - **Black dotted line**: annual inflation rate, represented in percentage.
 
 [![Rentabilidad de la vivienda](/images/roigross.png)](/images/roigross.png)
 
 - **Housing gross appreciation (%)**, Spain.
   - **Bars**: green denotes positive appreciation; red denotes negative.
-  - **Red line**: annual inflation rate, represented in percentage.
+  - **Black dotted line**: annual inflation rate, represented in percentage.
 
 # Interpretation and observations
 
