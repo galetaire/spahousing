@@ -10,7 +10,7 @@ import Image from 'next/image'
 
 <div class="meta-line"><a class="meta-back" href="/posts/price">← Back to price</a></div>
 
-# Housing value in different currencies
+# Housing price in different currencies
 
 [![Precio de la vivienda en euros](/images/houseeuro.png)](/images/houseeuro.png)
 
@@ -18,15 +18,15 @@ import Image from 'next/image'
 
 [![Precio de la vivienda en dolares](/images/housedollar.png)](/images/housedollar.png)
 
-- **Price in dollars, 100m<sup>2</sup> house**: the rate EUR/USD is represented as yearly average.
+- **Price in dollars, 100m<sup>2</sup> house**: the rate EUR/USD used is the yearly average.
 
 [![Precio de la vivienda en oro](/images/housegold.png)](/images/housegold.png)
 
-- **Price in ounces of gold, 100m<sup>2</sup> house**: gold price is represented as yearly average.
+- **Price in ounces of gold, 100m<sup>2</sup> house**: the gold price used is the yearly average.
 
 [![Precio de la vivienda en bitcoin](/images/housebitcoin.png)](/images/housebitcoin.png)
 
-- **Price in bitcoins, 100m<sup>2</sup> house**: bitcoin price is represented as yearly average.
+- **Price in bitcoins, 100m<sup>2</sup> house**: the bitcoin price used is the yearly average.
 
 # Interpretation and observations
 
