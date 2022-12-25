@@ -8,6 +8,8 @@ author: Last update on
 
 import Image from 'next/image'
 
+<div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
+
 # Notes on the real value calculations
 
 The real value is the measure that takes into account the time period's inflation rate, being the purpose to remove the price effect from a data series. It is important to clarify how the real value has been calculated, since 3 different methods have been used for 3 different visualizations:
@@ -89,7 +91,5 @@ As means of comparison, in the following charts we can see the behaviour of both
 ## Notes
 
 For the mathematical notations, the [Latex Math Api](https://math.vercel.app/home) developed by [@uechz](https://twitter.com/uechz) has been used. A latex editor is accessible at [TutorialsPoint.com](https://www.tutorialspoint.com/latex_equation_editor.htm).
-
-<div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
 
 [^1]: If the price index is in decimal form, the expression would simply be: _Nominal value / Price index_.

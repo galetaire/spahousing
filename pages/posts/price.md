@@ -18,7 +18,7 @@ import Image from 'next/image'
 
 The prices are constantly rising due to inflation, a consequence of the current monetary policy. The uptrend is however cyclical, with major expansions and minor regressions.
 
-- For an overview of housing price in different currencies, please see this [entry](money).
+- For an overview of housing prices in various currencies, please see this [entry](money).
 - For details about the methodology for real price, please see this [notes](realprice).
 
 # (b) Quarterly evolution of housing prices

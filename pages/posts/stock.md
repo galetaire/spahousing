@@ -14,11 +14,11 @@ import Image from 'next/image'
 
 - **Number of dwellings**: new homes built annually since 1971.
   - **Left axis (bars)**: total number of new dwellings per year.
-  - **Right axis (line)**: existing dwellings per 1000 inhabitants.
+  - **Right axis (line)**: dwellings per 1000 inhabitants.
 
 [![Antiguedad de las viviendas](/images/stockperiods.png)](/images/stockperiods.png)
 
-- **Construction period**: number of today existing dwellings per period of construction. The **red bar** is a final estimate based on the current pace of construction (2021 = 95.000 per year). If the pace remains as 2021, the number of houses built between 2021 and 2040 will be of ≈1.800.000.
+- **Construction period**: number of today existing dwellings per period of construction. The **red bar** is a final estimate based on the current pace of construction. If the pace remains as 2021 (95.000 per year), the number of houses built between 2021 and 2040 will be of ≈1.800.000.
 
 [![Estoc y balance de viviendas](/images/stockbalance.png)](/images/stockbalance.png)
 
