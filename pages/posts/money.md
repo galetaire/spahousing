@@ -7,6 +7,7 @@ author: Last update on
 ---
 
 import Image from 'next/image'
+<div class="meta-line"><a class="meta-back" href="/posts/price">← Back to price</a></div>
 
 # Housing price in different currencies
 
@@ -41,5 +42,4 @@ Real estate, despite being a non-fungible asset, is the world’s biggest store 
 - Bitcoin price in Euros, 2015 onward (_Yahoo Finance, Bitcoin EUR (BTC-EUR) - CoinMarketCap_): [Link](https://finance.yahoo.com/quote/BTC-EUR/history?period1=1410912000&period2=1671753600&interval=1mo&filter=history&frequency=1mo&includeAdjustedClose=true)
 - Bitcoin price in Euros prior to 2015 -> 2010 (BTC price = 0.11$, exchange rate = 0.70$/€), 2011 (BTC price = 5.28$, exchange rate = 0.68$/€), 2012 (BTC price = 7.76$, exchange rate = 0.71$/€), 2013 (BTC price = 167.32$, exchange rate = 0.70$/€) and 2014 (BTC price = 542.28$, exchange rate = 0.69$/€) (_Bitcoin Price Table, US dollars, 2010-2022 (Monthly)_): [Link](https://www.in2013dollars.com/bitcoin-price)
 
-<div class="meta-line"><a class="meta-back" href="/posts/price">← Back to price</a></div>
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
