@@ -14,19 +14,19 @@ import Image from 'next/image'
 
 [![Precio de la vivienda en euros](/images/houseeuro.png)](/images/houseeuro.png)
 
-- **Price of a 100m2 house in euros**.
+- **Price in euros, 100m<sup>2</sup> house**.
 
 [![Precio de la vivienda en dolares](/images/housedollar.png)](/images/housedollar.png)
 
-- **Price of a 100m2 house in dollars**: the rate EUR/USD is represented as yearly average .
+- **Price in dollars, 100m<sup>2</sup> house**: the rate EUR/USD is represented as yearly average.
 
 [![Precio de la vivienda en oro](/images/housegold.png)](/images/housegold.png)
 
-- **Price of a 100m2 house in ounces of gold**: gold price is represented as yearly average.
+- **Price in ounces of gold, 100m<sup>2</sup> house**: gold price is represented as yearly average.
 
 [![Precio de la vivienda en bitcoin](/images/housebitcoin.png)](/images/housebitcoin.png)
 
-- **Price of a 100m2 house in bitcoins**: bitcoin price is represented as yearly average.
+- **Price in bitcoins, 100m<sup>2</sup> house**: bitcoin price is represented as yearly average.
 
 # Interpretation and observations
 
@@ -34,11 +34,11 @@ Real estate, despite being a non-fungible asset, is the world’s biggest store 
 
 # Data sources
 
-- Gold price in Euros (_Downloads, Gold price in a range of currencies since 1978 - XLSX_): [Link](https://www.gold.org/goldhub/data/gold-prices#registration-type=facebook&just-verified=1)
-- Bitcoin price in Euros, 2015 onward (_Yahoo Finance, Bitcoin EUR (BTC-EUR) - CoinMarketCap_): [Link](https://finance.yahoo.com/quote/BTC-EUR/history?period1=1410912000&period2=1671753600&interval=1mo&filter=history&frequency=1mo&includeAdjustedClose=true)
-- Bitcoin price in Euros prior to 2015 -> 2010 (BTC price = 0.11$, exchange rate = 0.70$/€), 2011 (BTC price = 5.28$, exchange rate = 0.68$/€), 2012 (BTC price = 7.76$, exchange rate = 0.71$/€), 2013 (BTC price = 167.32$, exchange rate = 0.70$/€) and 2014 (BTC price = 542.28$, exchange rate = 0.69$/€) (_Bitcoin Price Table, US dollars, 2010-2022 (Monthly)_): [Link](https://www.in2013dollars.com/bitcoin-price)
 - Housing prices, from 1985 to 2006, according to Sociedad de Tasación (_Access to data is under request, but can be seen in the linked publication_): [Publication](https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf), [Link](https://www.st-tasacion.es/informe-de-tendencias-digital/)
 - Housing prices, from 2007 onwards, according to the notaries (_Grupo 5 > Acto 501 - Compraventa inmuebles > Inmuebles en fincas urbanas, viviendas_): [Link](http://www.notariado.org/liferay/web/cien/estadisticas-al-completo)
 - Yearly average exchange rate EUR/USD, Investing.com (_the euro was launched by 11 EU countries as their new common currency on 1 January 1999, prior exchange rates is the ECU exchange rate_): [Link](https://www.investing.com/currencies/eur-usd-historical-data)
+- Gold price in Euros (_Downloads, Gold price in a range of currencies since 1978 - XLSX_): [Link](https://www.gold.org/goldhub/data/gold-prices#registration-type=facebook&just-verified=1)
+- Bitcoin price in Euros, 2015 onward (_Yahoo Finance, Bitcoin EUR (BTC-EUR) - CoinMarketCap_): [Link](https://finance.yahoo.com/quote/BTC-EUR/history?period1=1410912000&period2=1671753600&interval=1mo&filter=history&frequency=1mo&includeAdjustedClose=true)
+- Bitcoin price in Euros prior to 2015 -> 2010 (BTC price = 0.11$, exchange rate = 0.70$/€), 2011 (BTC price = 5.28$, exchange rate = 0.68$/€), 2012 (BTC price = 7.76$, exchange rate = 0.71$/€), 2013 (BTC price = 167.32$, exchange rate = 0.70$/€) and 2014 (BTC price = 542.28$, exchange rate = 0.69$/€) (_Bitcoin Price Table, US dollars, 2010-2022 (Monthly)_): [Link](https://www.in2013dollars.com/bitcoin-price)
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
