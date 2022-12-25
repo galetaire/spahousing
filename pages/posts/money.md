@@ -8,23 +8,25 @@ author: Last update on
 
 import Image from 'next/image'
 
+<div class="meta-line"><a class="meta-back" href="/posts/price">← Back to price</a></div>
+
 # Housing value in different currencies
 
 [![Precio de la vivienda en euros](/images/houseeuro.png)](/images/houseeuro.png)
 
-- **Price of a house in Spain in euros**.
+- **Price of a 100m2 house in euros**.
 
 [![Precio de la vivienda en dolares](/images/housedollar.png)](/images/housedollar.png)
 
-- **Price of a house in Spain in dollars (yearly average exchange rate EUR/USD)**.
+- **Price of a 100m2 house in dollars**: the rate EUR/USD is represented as yearly average .
 
 [![Precio de la vivienda en oro](/images/housegold.png)](/images/housegold.png)
 
-- **Price of a house in Spain in ounces of gold (yearly average)**.
+- **Price of a 100m2 house in ounces of gold**: gold price is represented as yearly average.
 
 [![Precio de la vivienda en bitcoin](/images/housebitcoin.png)](/images/housebitcoin.png)
 
-- **Price of a house in Spain in bitcoins (yearly average)**.
+- **Price of a 100m2 house in bitcoins**: bitcoin price is represented as yearly average.
 
 # Interpretation and observations
 
