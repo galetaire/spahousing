@@ -2,7 +2,7 @@
 title: Production cost
 date: 2022-11-01
 description:
-tag: Price, Volume
+tag: All, Price, Volume
 author: Last update on
 ---
 

@@ -2,7 +2,7 @@
 title: Real price notes
 date: 2022-11-01
 description:
-tag: Price
+tag: All, Price
 author: Last update on
 ---
 

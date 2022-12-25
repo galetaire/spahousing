@@ -2,7 +2,7 @@
 title: Housing return on investment
 date: 2022-11-01
 description:
-tag: Price
+tag: All, Price
 author: Last update on
 ---
 

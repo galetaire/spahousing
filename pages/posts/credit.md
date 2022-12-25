@@ -2,7 +2,7 @@
 title: Mortgages and credit
 date: 2022-11-01
 description:
-tag: Credit
+tag: All, Credit
 author: Last update on
 ---
 

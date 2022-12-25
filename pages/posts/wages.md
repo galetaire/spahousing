@@ -2,7 +2,7 @@
 title: Wages
 date: 2022-11-01
 description:
-tag: Labor, Credit
+tag: All, Labor, Credit
 author: Last update on
 ---
 
