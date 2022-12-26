@@ -12,19 +12,19 @@ import Image from 'next/image'
 
 [![Precio de la vivienda en euros](/images/houseeuro.png)](/images/houseeuro.png)
 
-- **Price in euros 💶, 100m<sup>2</sup> house**: average price, more information back in [price](price).
+- **Price in euros, 100m<sup>2</sup> house**: average price, more information back in [Price](price).
 
 [![Precio de la vivienda en dolares](/images/housedollar.png)](/images/housedollar.png)
 
-- **Price in dollars 💵, 100m<sup>2</sup> house**: the rate EUR/USD used is the yearly average.
+- **Price in dollars, 100m<sup>2</sup> house**: the rate EUR/USD used is the yearly average.
 
 [![Precio de la vivienda en oro](/images/housegold.png)](/images/housegold.png)
 
-- **Price in ounces of gold 🪙, 100m<sup>2</sup> house**: the gold price used is the yearly average.
+- **Price in ounces of gold, 100m<sup>2</sup> house**: the gold price used is the yearly average.
 
 [![Precio de la vivienda en bitcoin](/images/housebitcoin.png)](/images/housebitcoin.png)
 
-- **Price in bitcoins 🍊, 100m<sup>2</sup> house**: the bitcoin price used is the yearly average.
+- **Price in bitcoins, 100m<sup>2</sup> house**: the bitcoin price used is the yearly average.
 
 # Interpretation and observations
 
