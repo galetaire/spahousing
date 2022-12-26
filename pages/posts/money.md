@@ -1,6 +1,6 @@
 ---
 title: Price in various currencies
-date: 2022-11-01
+date: 2022-12-01
 description:
 tag: All, Price
 author: Last update on
@@ -12,23 +12,23 @@ import Image from 'next/image'
 
 [![Precio de la vivienda en euros](/images/houseeuro.png)](/images/houseeuro.png)
 
-- **Price in euros, 100m<sup>2</sup> house**: average price, more information back in [price](price).
+- **Price in euros 💶, 100m<sup>2</sup> house**: average price, more information back in [price](price).
 
 [![Precio de la vivienda en dolares](/images/housedollar.png)](/images/housedollar.png)
 
-- **Price in dollars, 100m<sup>2</sup> house**: the rate EUR/USD used is the yearly average.
+- **Price in dollars 💵, 100m<sup>2</sup> house**: the rate EUR/USD used is the yearly average.
 
 [![Precio de la vivienda en oro](/images/housegold.png)](/images/housegold.png)
 
-- **Price in ounces of gold, 100m<sup>2</sup> house**: the gold price used is the yearly average.
+- **Price in ounces of gold 🪙, 100m<sup>2</sup> house**: the gold price used is the yearly average.
 
 [![Precio de la vivienda en bitcoin](/images/housebitcoin.png)](/images/housebitcoin.png)
 
-- **Price in bitcoins, 100m<sup>2</sup> house**: the bitcoin price used is the yearly average.
+- **Price in bitcoins 🍊, 100m<sup>2</sup> house**: the bitcoin price used is the yearly average.
 
 # Interpretation and observations
 
-Real estate, despite being a non-fungible asset, is the world’s biggest store of wealth. Currencies, in the other hand, are fungible assets that allow a seamless exchange of value between individuals and collectives across the world, even so they offer unequal performances in terms of value preservation.
+Real estate, despite being a non-fungible asset, is the world’s biggest store of wealth. Currencies, despite offering unequal performance in terms of wealth preservation, are fungible assets that allow efficient exchange of value between individuals and collectives across the world.
 
 # Data sources
 

@@ -1,6 +1,6 @@
 ---
 title: Home sales
-date: 2022-11-01
+date: 2022-12-01
 description:
 tag: All, Demography, Volume
 author: Last update on
