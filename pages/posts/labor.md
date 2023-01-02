@@ -1,6 +1,6 @@
 ---
 title: Unemployment
-date: 2022-12-01
+date: 2023-01-01
 description:
 tag: All, Labor, Price
 author: Last update on

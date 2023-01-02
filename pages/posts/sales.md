@@ -1,6 +1,6 @@
 ---
 title: Home sales
-date: 2022-12-01
+date: 2023-01-01
 description:
 tag: All, Demography, Volume
 author: Last update on
@@ -43,7 +43,7 @@ The color indicates whether the number of sales is lower than the previous quart
 
 # Data sources
 
-- Population and projections according to INE (_range of used population was that between 25 and 50 years old_): [Population consolidated](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176951&menu=resultados&idp=1254735572981), [Population projection](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176953&menu=resultados&idp=1254735572981)
+- Population and projections according to INE (_range of used population was that between 25 and 50 years old > Data used is from January 1st of the current year_): [Population consolidated](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176951&menu=resultados&idp=1254735572981), [Population projection](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176953&menu=resultados&idp=1254735572981)
 - Home sales (_Results > Annual > Dwellings transferred by type of acquisition  > Sales_): [Link](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736171438&menu=resultados&idp=1254735576757)
 - Housing Price Index: [Link](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736152838&menu=resultados&idp=1254735976607)
 

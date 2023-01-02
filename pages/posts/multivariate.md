@@ -1,6 +1,6 @@
 ---
 title: Multivariate model
-date: 2022-12-01
+date: 2023-01-01
 description:
 tag: All, Price, Volume, Credit, Labor, Demography
 author: Last update on
@@ -19,7 +19,7 @@ import Image from 'next/image'
 All variables are represented as a percentage. Some clarifications to facilitate its reading:
 
 - **Unemployment, Inflation**: average rate for the given year.
-- **Real price**[^1]: percentage difference between the nominal and the inflation rate.
+- **Real price**[^1]: percentage of difference between the nominal and the inflation rate.
 - **Mortgages, Home sales, Nominal price, Interest rate (_Mibor/Euribor_)**: percentage of annual change compared to the previous year.
 
 # Data sources
