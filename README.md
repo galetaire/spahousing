@@ -1,3 +1,7 @@
+# Description
+
+The market monitored on this website is the Spanish real estate market.
+
 # About the database 
 
 Even so I try to be cautious and avoid mistakes, errors can occur, so I encourage the review and verification of the database. If encountered any, the creation of ``Issues`` and ``Pull requests`` for the database are welcome, you can also reach me through various channels.
@@ -10,9 +14,9 @@ The database can be found in [spahousing/public/docs/](https://github.com/galeta
 
 Full review and modification is better to be done in ``.ods`` and ``.xlsx``, since some indicators depend on internal formulas, and those can only be seen and edited in the two mentioned file formats.
 
-# Description and contact
+# Contact
 
-The market monitored on this website is the Spanish real estate market. You can reach me alternatively though twitter: [@HousingSpanish](https://twitter.com/HousingSpanish).
+You can reach me alternatively though twitter: [@HousingSpanish](https://twitter.com/HousingSpanish).
 
 # License 
 
