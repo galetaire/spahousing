@@ -12,7 +12,7 @@ The database can be found in [spahousing/public/docs/](https://github.com/galeta
   - [spain_stats_csv.csv](https://github.com/galetaire/spahousing/blob/main/public/docs/spain_stats_csv.csv)
   - [spain_stats_xml.xml](https://github.com/galetaire/spahousing/blob/main/public/docs/spain_stats_xml.xml)
 
-Full review and modification is better to be done in ``.ods`` and ``.xlsx``, since some indicators depend on internal formulas, and those can only be seen and edited in the two mentioned file formats.
+Full review and modification is better to be done in ``.ods`` or ``.xlsx``, since some indicators depend on internal formulas, and those can only be seen and edited in the two mentioned file formats.
 
 # Contact
 
