@@ -7,17 +7,34 @@ import Image from 'next/image'
 
 # Methodology 📓
 
-The statistical information presented on this website refers to Spain.
-The total market cap of the Spanish Real Estate, for year 2022, is ~5.2 billion € (long scale, 10<sup>12</sup>):
+<html lang="en">
+  <head>
+    <title>Chart.js example</title>
+  </head>
+  <body>
+    <div style="width:;"><canvas id="chart"></canvas></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+    <script>
+    d3.csv('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2814973/atp_wta.csv')
+      .then(makeChart);
 
-| **Market Cap (f)** | **(Nul × Rp) + (Ful × Up) + (Hp × Ha × D)** |
-| ---------- | ------------------------------------------ |
-| **Total market cap** | **5.203.322.496.120 euros** |
-| Spain total area | 506.006.730.000 m² |
-| Non urban land (Nul) | 485.443.830.000 m² |
-| Average rustic land price (Rp) | 0,98 eu/m² |
-| Free urban land (Ful) | 4.506.630.000 m² |
-| Average urban land price (Up) | 151 eu/m² |
-| Average housing price (Hp) | 1624 eu/m² |
-| Average housing area (Ha) | 96 m² |
-| Number of dwellings (D) | 25.953.055 |
+      function makeChart(players) {
+        var playerLabels = players.map(function(d) {return d.Name});
+        var weeksData = players.map(function(d) {return d.Weeks});
+
+        var chart = new Chart('chart', {
+          type: 'horizontalBar',
+          data: {
+            labels: playerLabels,
+            datasets: [
+              {
+                data: weeksData
+              }
+            ]
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
