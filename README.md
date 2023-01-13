@@ -2,7 +2,7 @@
 
 The market monitored on this website is the Spanish real estate market.
 
-# About the database 
+# About the database
 
 Even so I try to be cautious and avoid mistakes, errors can occur, so I encourage the review and verification of the database. If encountered any, the creation of ``Issues`` and ``Pull requests`` for the database are welcome, you can also reach me through various channels.
 
@@ -18,10 +18,13 @@ Full review and modification is better to be done in ``.ods`` or ``.xlsx``, sinc
 
 You can reach me alternatively through twitter: [@HousingSpanish](https://twitter.com/HousingSpanish).
 
-# License 
+# License
 
 All the self-made content is released under the terms of the _Creative Commons Attribution-ShareAlike 4.0 International Public License_. Consider that there is a lot of public domain data, and you do not have to comply with the license for elements of the material in the public domain. For more information, see https://creativecommons.org/licenses/by-sa/4.0/legalcode.
 
 # Portfolio Kit and building sources
 
-This portfolio is built with **Next.js** and a library called [Nextra](https://nextra.vercel.app/). Powered by [Vercel](https://vercel.com). A mirror page is available on the [Handshake](https://handshake.org/) DNS root zone: "http://spain.galetaire/".
+This portfolio is built with **Next.js** and a library called [Nextra](https://nextra.vercel.app/). Powered by [Vercel](https://vercel.com).
+
+A mirror site is available on the [Handshake](https://handshake.org/) DNS root zone: "http://spain.galetaire/". Note that for resolving the handshake DNS you will need a resolver since most browsers today do not support it, consider using Fingertip:
+* https://github.com/imperviousinc/fingertip
