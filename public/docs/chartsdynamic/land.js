@@ -26,7 +26,7 @@ var chart = new Chart(ctx, {
         ]},
     options: {
       title: {
-          display: true,
+          display: false,
           fontColor: 'rgba(38, 38, 38, 0.8)',
           text: 'Land and building permirs'
               },
