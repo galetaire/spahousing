@@ -6,9 +6,6 @@ author: Collection of all the 37 charts published in the site
 ---
 
 <div class="meta-line"><a class="meta-back" href="/methodology#data-base-access">← Back to methodology</a></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-<div id="chart-wrapper"><canvas id="land"></canvas></div>
-<script src="docs/chartsdynamic/land.js"></script>
 
 # Charts sitemap
 
