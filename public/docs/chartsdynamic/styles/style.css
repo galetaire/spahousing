@@ -1,0 +1,60 @@
+html {
+  background: white;
+  font-size: 14px;
+  line-height: 20px;
+}
+body {
+  width: 800px;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  background-color: white;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+#title {
+  font-family: 'Inter', sans-serif;
+  text-align: left;
+  padding: 30px;
+  font-size: 28px;
+  letter-spacing: -0.01em;
+  color: #333;
+}
+
+#legend {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 10px 10px;
+  font-size: 12px;
+}
+
+#legend .item {
+  line-height: 12px;
+  padding: 0 10px 0 4px;
+}
+
+#legend .item.male {
+  border-left: 12px solid #19A0AA;
+}
+
+#legend .item.female {
+  border-left: 12px solid #F15F36;
+}
+
+#chart-wrapper {
+  height:;
+  width:;
+}
+
+#footer {
+  text-align: center;
+  font-size: 12px;
+}
+
+#footer a {
+  color: #aaa;
+}
