@@ -1383,6 +1383,9 @@ td
 	mso-pattern:black none;}
 .xl201
 	{mso-style-parent:style0;
+	mso-number-format:0;}
+.xl202
+	{mso-style-parent:style0;
 	font-size:12.0pt;
 	font-family:"Courier New", monospace;
 	mso-font-charset:0;
@@ -1393,7 +1396,7 @@ td
 	border-left:.5pt solid windowtext;
 	background:#BFBFBF;
 	mso-pattern:black none;}
-.xl202
+.xl203
 	{mso-style-parent:style0;
 	font-size:12.0pt;
 	font-family:"Courier New", monospace;
