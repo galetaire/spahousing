@@ -11,7 +11,7 @@ The database can be found in [spahousing/public/docs/](https://github.com/galeta
   - [spain_stats_xlsx.xlsx](https://github.com/galetaire/spahousing/blob/main/public/docs/spain_stats_xlsx.xlsx)
   - [spain_stats_csv.csv](https://github.com/galetaire/spahousing/blob/main/public/docs/spain_stats_csv.csv)
   - [spain_stats_xml.xml](https://github.com/galetaire/spahousing/blob/main/public/docs/spain_stats_xml.xml)
-  - [Metadata.json](https://github.com/galetaire/spahousing/raw/main/public/docs/metadata.json)_ |
+  - [Metadata.json](https://github.com/galetaire/spahousing/raw/main/public/docs/metadata.json)
 
 Full review and modification is better to be done in ``.ods`` or ``.xlsx``, since some indicators are originated from other internal indicators, and the formulas can only be seen and edited in the two mentioned formats. Alternatively, formulas can also be consulted at the ``metadata.json`` file.
 

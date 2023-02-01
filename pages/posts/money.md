@@ -24,7 +24,7 @@ import Image from 'next/image'
 
 # Interpretation and observations
 
-Real estate, despite being a non-fungible asset, is the world’s biggest store of wealth. Currencies, despite offering unequal performance in terms of wealth preservation, are fungible assets that allow efficient exchange of value between individuals and collectives across the world.
+Real estate is the world’s biggest store of wealth. And wealth can be measured in different units of account, commonly currencies or money. However, not all money offers equal performance in terms of wealth preservation.
 
 # Data sources
 
