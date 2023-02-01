@@ -11,11 +11,12 @@ author: Collection of all the 37 charts published in the site
 
 + _General models_
   * (1) [Multivariate model, housing overview](/images/multivariate.png)
-  * (2) [Rainbow model, housing cycles](/images/rainbowmax.png)
+  * (2) [Rainbow model, short-term, housing cycles](/images/rainbow.png)
+  * (3) [Rainbow model, long-term, housing cycles](/images/rainbowmax.png)
+
 + _Price_
-  * (3) [Annual evolution of housing prices](/images/priceyearly.png)
-  * (4) [Quarterly evolution of housing prices](/images/pricequarterly.png)
-  * (5) [Price of a house in euros](/images/houseeuro.png)
+  * (4) [Annual evolution of housing prices](/images/priceyearly.png)
+  * (5) [Quarterly evolution of housing prices](/images/pricequarterly.png)
   * (6) [Price of a house in dollars](/images/housedollar.png)
   * (7) [Price of a house in gold](/images/housegold.png)
   * (8) [Price of a house in bitcoin](/images/housebitcoin.png)
@@ -43,12 +44,12 @@ author: Collection of all the 37 charts published in the site
 + _Stock development_
   * (25) [Number of dwellings](/images/stockyearly.png)
   * (26) [Dwellings per period of construction](/images/stockperiods.png)
-  * (27) [Housing surplus or deficit](/images/stockbalance.png)
+  * (27) [Housing stock balance](/images/stockbalance.png)
   * (28) [Cement consumption](/images/cement.png)
   * (29) [Distribution of new houses per type](/images/typehouse.png)
 + _Production cost_
   * (30) [Ratio between housing price and construction cost](/images/costratio.png)
-  * (31) [Cost of production ](/images/costchange.png)
+  * (31) [Cost of production](/images/costchange.png)
 + _Ownership structure_
   * (32) [Home sales by type of buyer](/images/buyer.png)
   * (33) [Housing by type of tenure](/images/tenure.png)

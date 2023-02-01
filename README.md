@@ -11,16 +11,13 @@ The database can be found in [spahousing/public/docs/](https://github.com/galeta
   - [spain_stats_xlsx.xlsx](https://github.com/galetaire/spahousing/blob/main/public/docs/spain_stats_xlsx.xlsx)
   - [spain_stats_csv.csv](https://github.com/galetaire/spahousing/blob/main/public/docs/spain_stats_csv.csv)
   - [spain_stats_xml.xml](https://github.com/galetaire/spahousing/blob/main/public/docs/spain_stats_xml.xml)
+  - [Metadata.json](https://github.com/galetaire/spahousing/raw/main/public/docs/metadata.json)_ |
 
-Full review and modification is better to be done in ``.ods`` or ``.xlsx``, since some indicators are originated from other internal indicators, and the formulas can only be seen and edited in the two mentioned formats.
+Full review and modification is better to be done in ``.ods`` or ``.xlsx``, since some indicators are originated from other internal indicators, and the formulas can only be seen and edited in the two mentioned formats. Alternatively, formulas can also be consulted at the ``metadata.json`` file.
 
 # Contact
 
 You can reach me alternatively through twitter: [@HousingSpanish](https://twitter.com/HousingSpanish).
-
-# License
-
-All the self-made content is released under the terms of the _Creative Commons Attribution-ShareAlike 4.0 International Public License_. Consider that there is a lot of public domain data, and you do not have to comply with the license for elements of the material in the public domain. For more information, see https://creativecommons.org/licenses/by-sa/4.0/legalcode.
 
 # Portfolio Kit and building sources
 
@@ -28,3 +25,7 @@ This portfolio is built with **Next.js** and a library called [Nextra](https://n
 
 A mirror site is available on the [Handshake](https://handshake.org/) DNS root zone: "http://spain.galetaire/". Note that for resolving the handshake DNS you will need a resolver since most browsers today do not support it, consider using Fingertip:
 * https://github.com/imperviousinc/fingertip
+
+# License
+
+All the self-made content is released under the terms of the _Creative Commons Attribution-ShareAlike 4.0 International Public License_. Consider that there is a lot of public domain data, and you do not have to comply with the license for elements of the material in the public domain. For more information, see https://creativecommons.org/licenses/by-sa/4.0/legalcode.
