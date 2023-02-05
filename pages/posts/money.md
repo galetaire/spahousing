@@ -24,7 +24,7 @@ import Image from 'next/image'
 
 # Interpretation and observations
 
-Real estate is the world’s biggest store of wealth. And wealth can be measured in different units of account, commonly currencies or money. However, not all money offers equal performance in terms of wealth preservation.
+Real estate is one of the world’s biggest store of wealth. Wealth is measured in units of account, commonly currencies or money. However, not all of them offer equal performance in terms of wealth preservation.
 
 # Data sources
 

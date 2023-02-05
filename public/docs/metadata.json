@@ -272,13 +272,13 @@
         {
           "title": "Income_vs_houseandinflation",
           "dc:description": "Income growth against housing and inflation growth",
-          "source": "=((Income_constant_housing+(Income_constant_inflation-Disposable_income_over18))-Disposable_income_over18)+Disposable_income_over18(base year n)",
+          "source": "((Income_constant_housing+(Income_constant_inflation-Disposable_income_over18))-Disposable_income_over18)+Disposable_income_over18(base year n)",
           "@type": "Column"
         },
         {
           "title": "Housing_affordability",
           "dc:description": "Housing affordability index, Base 100 = 1999",
-          "source": "=(Income_vs_houseandinflation*100)/Income_vs_houseandinflation(Base year n)",
+          "source": "(Income_vs_houseandinflation*100)/Income_vs_houseandinflation(Base year n)",
           "@type": "Column"
         },
         {
@@ -440,13 +440,13 @@
         {
           "title": "Per_new_homes",
           "dc:description": "Percentage change of homes year-on-year",
-          "source": "",
+          "source": "(Total_homes(n)*100/Total_homes(n-1))-100",
           "@type": "Column"
         },
         {
           "title": "Population_yoy",
           "dc:description": "Percentage change of population year-on-year",
-          "source": "",
+          "source": "(Total_population(n)*100/Total_population(n-1))-100",
           "@type": "Column"
         },
         {
@@ -512,25 +512,25 @@
         {
           "title": "Owned_per",
           "dc:description": "Percentage of owned houses",
-          "source": "",
+          "source": "((Owned*100)/SUMA(Owned+Mortgaged+Rented+Freely_loaned))",
           "@type": "Column"
         },
         {
           "title": "Mortgaged_per",
           "dc:description": "Percentage of mortgaged houses",
-          "source": "",
+          "source": "((Mortgaged*100)/SUMA(Owned+Mortgaged+Rented+Freely_loaned))",
           "@type": "Column"
         },
         {
           "title": "Rented_per",
           "dc:description": "Percentage of rented houses",
-          "source": "",
+          "source": "((Rented*100)/SUMA(Owned+Mortgaged+Rented+Freely_loaned))",
           "@type": "Column"
         },
         {
           "title": "Freely_loaned_per",
           "dc:description": "Percentage of freely loaned houses",
-          "source": "",
+          "source": "((Freely_loaned*100)/SUMA(Owned+Mortgaged+Rented+Freely_loaned))",
           "@type": "Column"
         },
         {
@@ -542,7 +542,7 @@
         {
           "title": "Price_per",
           "dc:description": "Percentage change of price rent year-on-year",
-          "source": "",
+          "source": "((Rent_price_eum2*100(n))/Rent_price_eum2(n-1))-100",
           "@type": "Column"
         },
         {
@@ -626,7 +626,7 @@
         {
           "title": "Nominal_price_yoy_per",
           "dc:description": "Percentage change of nominal price year-on-year",
-          "source": "",
+          "source": "((Price_eum2*100(n))/Price_eum2(n-1))-100",
           "@type": "Column"
         },
         {
@@ -638,13 +638,13 @@
         {
           "title": "Sales_yoy_per",
           "dc:description": "Percentage change of sales year-on-year",
-          "source": "",
+          "source": "((Home_sales*100(n))/Home_sales(n-1))-100",
           "@type": "Column"
         },
         {
           "title": "Credit_yoy_per",
           "dc:description": "Percentage change of mortgages approvals year-on-year",
-          "source": "",
+          "source": "((Approved*100(n))/Approved(n-1))-100",
           "@type": "Column"
         },
         {
