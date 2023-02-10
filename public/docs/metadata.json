@@ -512,25 +512,25 @@
         {
           "title": "Owned_per",
           "dc:description": "Percentage of owned houses",
-          "source": "((Owned*100)/SUMA(Owned+Mortgaged+Rented+Freely_loaned))",
+          "source": "((Owned*100)/SUM(Owned+Mortgaged+Rented+Freely_loaned))",
           "@type": "Column"
         },
         {
           "title": "Mortgaged_per",
           "dc:description": "Percentage of mortgaged houses",
-          "source": "((Mortgaged*100)/SUMA(Owned+Mortgaged+Rented+Freely_loaned))",
+          "source": "((Mortgaged*100)/SUM(Owned+Mortgaged+Rented+Freely_loaned))",
           "@type": "Column"
         },
         {
           "title": "Rented_per",
           "dc:description": "Percentage of rented houses",
-          "source": "((Rented*100)/SUMA(Owned+Mortgaged+Rented+Freely_loaned))",
+          "source": "((Rented*100)/SUM(Owned+Mortgaged+Rented+Freely_loaned))",
           "@type": "Column"
         },
         {
           "title": "Freely_loaned_per",
           "dc:description": "Percentage of freely loaned houses",
-          "source": "((Freely_loaned*100)/SUMA(Owned+Mortgaged+Rented+Freely_loaned))",
+          "source": "((Freely_loaned*100)/SUM(Owned+Mortgaged+Rented+Freely_loaned))",
           "@type": "Column"
         },
         {
