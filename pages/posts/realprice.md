@@ -1,6 +1,6 @@
 ---
 title: Real price notes
-date: 2023-01-01
+date:
 description:
 tag: All, Price
 author: Last update on

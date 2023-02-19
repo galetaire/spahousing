@@ -1,6 +1,6 @@
 ---
 title: Price in various currencies
-date: 2023-01-01
+date: 2023-02-01
 description:
 tag: All, Price
 author: Last update on
