@@ -10,7 +10,8 @@ import Image from 'next/image'
 
 # Multivariate model: housing overview
 
-[![Datos del mercado inmobiliario](/images/multivariate.png)](/images/multivariate.png)
+<div align="center">_[**Dynamic chart**](/multivariate.html)_ / _[**Static chart**](/images/multivariate.png)_</div>
+<span>[![Datos del mercado inmobiliario](/images/multivariate.png)](/images/multivariate.png)</span>
 
 - The model groups together seven variables: nominal price, real price, sales, inflation, mortgages, interest rate and employment.
 
