@@ -6,13 +6,11 @@ The market monitored on this website is the Spanish real estate market.
 
 Even so I try to be cautious and avoid mistakes, errors can occur, so I encourage the review and verification of the database. If encountered any, the creation of ``Issues`` and ``Pull requests`` for the database are welcome, you can also reach me through various channels.
 
-The database can be found in [spahousing/public/docs/](https://github.com/galetaire/spahousing/tree/main/public/docs), presented in four different file formats.
+The database can be found in [spahousing/public/docs/](https://github.com/galetaire/spahousing/tree/main/public/docs), presented in two different file formats.
   - [spain_stats_ods.ods](https://github.com/galetaire/spahousing/blob/main/public/docs/spain_stats_ods.ods)
-  - [spain_stats_xlsx.xlsx](https://github.com/galetaire/spahousing/blob/main/public/docs/spain_stats_xlsx.xlsx)
   - [spain_stats_csv.csv](https://github.com/galetaire/spahousing/blob/main/public/docs/spain_stats_csv.csv)
-  - [spain_stats_xml.xml](https://github.com/galetaire/spahousing/blob/main/public/docs/spain_stats_xml.xml)
 
-Full review and modification is better to be done in ``.ods`` or ``.xlsx``, since some indicators are originated from other internal indicators, and the formulas can only be seen and edited in the two mentioned formats. Alternatively, formulas can be consulted at the ``metadata.json`` file.
+Full review and modification is better to be done in ``.ods``, since some indicators are originated from other internal indicators, and the formulas can only be seen and edited in the mentioned format. Alternatively, formulas can be consulted at the ``metadata.json`` file.
 
 - [Metadata.json](https://github.com/galetaire/spahousing/raw/main/public/docs/metadata.json)
 
