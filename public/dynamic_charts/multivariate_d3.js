@@ -1,4 +1,4 @@
-//getGradient
+//getGradient, use it in the Euribor label
 let width, height, gradient;
 function getGradient(ctx, chartArea, scales){
   const chartWidth = chartArea.right - chartArea.left;
@@ -16,6 +16,7 @@ function getGradient(ctx, chartArea, scales){
   return gradient;
 };
 
+//Create function calling the data and variables from que .csv file
 function makeChart(multivariate) {
   var rangeStart = 1986 - 1964
   var rangeEnd = new Date().getFullYear() - 1964 + 1
@@ -137,7 +138,6 @@ function makeChart(multivariate) {
   })
 }
 
-// Request data using D3
-// Hosted in dropbox, use 'raw=1' at the end to generate the valid url link.
+// Request data from .csv file using D3js library
 d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
   .then(makeChart);
