@@ -10,9 +10,17 @@ The database can be found in [spahousing/public/docs/](https://github.com/galeta
   - [spain_stats_ods.ods](https://github.com/galetaire/spahousing/blob/main/public/docs/spain_stats_ods.ods)
   - [spain_stats_csv.csv](https://github.com/galetaire/spahousing/blob/main/public/docs/spain_stats_csv.csv)
 
-Full review and modification is better to be done in ``.ods``, since some indicators are originated from other internal indicators, and the formulas can only be seen and edited in the mentioned format. Alternatively, formulas can be consulted at the ``metadata.json`` file.
+Full review and modification is better to be done in ``.ods``, since some indicators are originated from other internal indicators, and the formulas can only be seen and edited in the mentioned format. Alternatively, formulas and variable names can be consulted at the ``metadata.json`` file.
 
 - [Metadata.json](https://github.com/galetaire/spahousing/raw/main/public/docs/metadata.json)
+
+If you are creating data visualizations with ``D3js`` or ``chartjs`` you can import the ``.csv`` file from the repository using the import option from the ``D3js`` library, like this:
+
+```
+d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+  .then(makeChart);
+```
+Check out and example here: [spahousing/main/public/dynamic_charts/multivariate_d3.js](https://github.com/galetaire/spahousing/blob/main/public/dynamic_charts/multivariate_d3.js)
 
 # Contact
 
