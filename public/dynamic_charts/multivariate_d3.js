@@ -1,4 +1,4 @@
-//getGradient, use it in the Euribor label
+//getGradient, used in the Euribor label
 let width, height, gradient;
 function getGradient(ctx, chartArea, scales){
   const chartWidth = chartArea.right - chartArea.left;
@@ -16,7 +16,7 @@ function getGradient(ctx, chartArea, scales){
   return gradient;
 };
 
-//Create function calling the data and variables from que .csv file
+//makeChart, calling the data and variables from the .csv file
 function makeChart(multivariate) {
   var rangeStart = 1986 - 1964
   var rangeEnd = new Date().getFullYear() - 1964 + 1
