@@ -29,6 +29,7 @@ function makeChart(multivariate) {
   var rangeNominal = multivariate.map(function(d) {return +d.Nominal_price_yoy_per}).slice(rangeStart, rangeEnd);
   var rangeReal = multivariate.map(function(d) {return +d.Real_price_yoy_per}).slice(rangeStart, rangeEnd);
 
+  Chart.defaults.font.size = 18;
   var chart = new Chart('multivariate', {
     type: 'bar',
     options: {
