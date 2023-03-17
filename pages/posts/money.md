@@ -1,6 +1,6 @@
 ---
 title: Price in various currencies
-date: 2023-02-01
+date: 2023-03-01
 description:
 tag: All, Price
 author: Last update on
@@ -34,7 +34,7 @@ Real estate is one of the world’s biggest store of wealth. Wealth is measured 
 - Gold price in Euros (_Downloads, Gold price in a range of currencies since 1978 - XLSX_): [Link](https://www.gold.org/goldhub/data/gold-prices#registration-type=facebook&just-verified=1)
 - Gold above-ground stocks (_Gold inflation rate has been around 1.7% since 2010_): [Link](https://www.gold.org/goldhub/data/how-much-gold)
 - Willy Woo site, Bitcoin inflation rate (_The rate gets lower overtime, every 4 years following the "halving" events, current rate is around 1.6%_): [Link](https://charts.woobull.com/bitcoin-inflation/)
-- Bitcoin price in Euros, 2015 onward (_Yahoo Finance, Bitcoin EUR (BTC-EUR) - CoinMarketCap_): [Link](https://finance.yahoo.com/quote/BTC-EUR/history?period1=1410912000&period2=1671753600&interval=1mo&filter=history&frequency=1mo&includeAdjustedClose=true)
+- Bitcoin price in Euros, 2015 onward (_Yahoo Finance, Bitcoin monthly close price EUR (BTC-EUR) - CoinMarketCap_): [Link](https://finance.yahoo.com/quote/BTC-EUR/history?period1=1410912000&period2=1671753600&interval=1mo&filter=history&frequency=1mo&includeAdjustedClose=true)
 - Bitcoin price in Euros prior to 2015 -> 2010 (BTC price = 0.11$, exchange rate = 0.70$/€), 2011 (BTC price = 5.28$, exchange rate = 0.68$/€), 2012 (BTC price = 7.76$, exchange rate = 0.71$/€), 2013 (BTC price = 167.32$, exchange rate = 0.70$/€) and 2014 (BTC price = 542.28$, exchange rate = 0.69$/€) (_Bitcoin Price Table, US dollars, 2010-2022 (Monthly)_): [Link](https://www.in2013dollars.com/bitcoin-price)
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>

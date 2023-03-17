@@ -1,6 +1,6 @@
 ---
 title: Housing return on investment
-date: 2023-02-01
+date: 2023-03-01
 description:
 tag: All, Price
 author: Last update on
@@ -10,15 +10,15 @@ import Image from 'next/image'
 
 # (a) Housing return on investment
 
-[![Housing ROI](/images/roinet.png)](/images/roinet.png)
-
-- **Housing return on investment (%)**: considers both gross asset appreciation and net rental return.
-  - **Bars**: green denotes positive appreciation; red denotes negative.
-  - **Black dotted line**: annual inflation rate, represented in percentage.
-
 [![Rentabilidad de la vivienda](/images/roigross.png)](/images/roigross.png)
 
 - **Housing gross appreciation (%)**, Spain.
+  - **Bars**: green denotes positive appreciation; red denotes negative.
+  - **Black dotted line**: annual inflation rate, represented in percentage.
+
+[![Housing ROI](/images/roinet.png)](/images/roinet.png)
+
+- **Housing return on investment (%)**: considers both gross asset appreciation and net rental return.
   - **Bars**: green denotes positive appreciation; red denotes negative.
   - **Black dotted line**: annual inflation rate, represented in percentage.
 
