@@ -1,5 +1,5 @@
 ---
-title: Price in various currencies
+title: House in various currencies
 date: 2023-03-01
 description:
 tag: All, Price

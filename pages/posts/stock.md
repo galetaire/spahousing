@@ -22,7 +22,7 @@ import Image from 'next/image'
 
 [![Estoc y balance de viviendas](/images/stockbalance.png)](/images/stockbalance.png)
 
-- **Housing surplus or deficit**: difference between housing growth and population growth. Blue color implies housing surplus; yellow color implies housing deficit.
+- **Housing surplus or deficit**: difference between housing growth and population growth. Blue color implies housing surplus; green color implies housing deficit.
 
 [![Consumo de cemento](/images/cement.png)](/images/cement.png)
 

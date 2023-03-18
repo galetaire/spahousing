@@ -2,7 +2,6 @@
 title: Real price notes
 date:
 description:
-tag: All, Price
 author: Last update on
 ---
 

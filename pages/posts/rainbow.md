@@ -1,5 +1,5 @@
 ---
-title: Housing cycles
+title: Rainbow model
 date: 2023-03-01
 description:
 tag: All, Price, Demography
