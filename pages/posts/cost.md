@@ -34,7 +34,7 @@ About the ratio between the housing price and the construction cost. A higher ra
 
 # Interpretation and observations
 
-Housing is directly related to energy, since its construction requires large amounts of it. Oil accounts for ≈29% of all the primary energy consumed worldwide ([1](https://www.iea.org/data-and-statistics/data-tools/energy-statistics-data-browser?country=WORLD&fuel=Energy%20supply&indicator=TESbySource),[2](https://ourworldindata.org/global-energy-200-years)). It is the current key resource for maintaining and improving the human standard of living, and its price also determines the future of the real-estate market.
+Housing is directly related to energy, since its construction requires large amounts of it. Oil accounts for ≈29% of all the primary energy consumed worldwide ([1](https://www.iea.org/data-and-statistics/data-tools/energy-statistics-data-browser?country=WORLD&fuel=Energy%20supply&indicator=TESbySource), [2](https://ourworldindata.org/global-energy-200-years)). It is the current key resource for maintaining and improving the human standard of living, and its price also determines the future of the real-estate market.
 
 # Data sources
 
