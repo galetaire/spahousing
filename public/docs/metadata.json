@@ -694,7 +694,25 @@
           "dc:description": "Alternative formula for the Rainbow Curve, not used",
           "source": "-0.025*((Year-1963)^2)+5.5*(Year-1963)+175",
           "@type": "Column"
-          }],
+        },
+        {
+          "title": "US_gasoline_litre_usd",
+          "dc:description": "U.S. gasoline prices, in US dollars per litre",
+          "source": "https://www.eia.gov/petroleum/gasdiesel/",
+          "@type": "Column"
+        },
+        {
+          "title": "US_gasoline_yoy_per",
+          "dc:description": "Percentage change in gasoline prices year-on-year",
+          "source": "((US_gasoline_litre_usd*100(n))/US_gasoline_litre_usd(n-1))-100",
+          "@type": "Column"
+        },
+        {
+          "title": "Spain_gasoline_litre_usd",
+          "dc:description": "Spain gasoline prices, in US dollars per litre",
+          "source": "https://www.iea.org/data-and-statistics/data-tools/end-use-prices-data-explorer?tab=Yearly+prices",
+          "@type": "Column"
+        }],
       "@type": "Schema"
     },
     "@type": "Table"
