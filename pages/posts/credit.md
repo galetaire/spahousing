@@ -1,6 +1,6 @@
 ---
 title: Mortgages and credit
-date: 2023-03-01
+date: 2023-04-01
 description:
 tag: All, Credit
 author: Last update on
@@ -65,6 +65,6 @@ The _Euro Interbank Offered Rate_ (Euribor) plays a key role in the mortgage mar
 - Euribor 1-year rate averaged, from 2002 onwards (_Euribor 1-year - Historical close, average of observations through period _): [Link](https://sdw.ecb.europa.eu/quickview.do?SERIES_KEY=143.FM.M.U2.EUR.RT.MM.EURIBOR1YD_.HSTA)
 - Mibor 1-year rate averaged, from 1979 to 2001 (_Cuadro 19.1 del BE - Tipo de interés. De referencia. Oficiales. Mercado hipotecario. Interbancario. Mibor a 1 año_): [Link](https://www.bde.es/webbde/es/estadis/infoest/temas/sb_tiintref.html)
 - Average mortgage rate (_Results > Annual > National indicators > Average interest rate of mortgages constituted > Viviendas + Total_): [Link](https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&cid=1254736170236&menu=resultados&idp=1254735576606#!tabs-1254736169948)
-- Mortgages constituted according to interest rate (_Results > Annual > National indicators > Mortgages constituted according to interest rate > Viviendas + Fijo & Variable_): [Link](https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&cid=1254736170236&menu=resultados&idp=1254735576606#!tabs-1254736169948), [Bank of Spain](https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/relacionados/tiposinteres/guia-textual/tiposinteresrefe/tabla_tipos_referencia_oficiales_mercado_hipotecario.html)
+- Mortgages constituted according to interest rate, Bank of Spain (_Tipo medio de los préstamos hipotecarios a más de 3 años para adquisición de vivienda libre > Del conjunto de entidades de crédito_): [Link](https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/relacionados/tiposinteres/guia-textual/tiposinteresrefe/tabla_tipos_referencia_oficiales_mercado_hipotecario.html)
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>

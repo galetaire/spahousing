@@ -1,6 +1,6 @@
 ---
 title: Stock development
-date: 2023-03-01
+date: 2023-04-01
 description:
 tag: All, Volume
 author: Last update on

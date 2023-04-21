@@ -164,7 +164,7 @@
         {
           "title": "Average_mortgage_rate",
           "dc:description": "Average interest rate for the approved mortgages on houses. Considers both fixed and variable mortgages",
-          "source": "https://www.ine.es/jaxiT3/Tabla.htm?t=24460&L=0",
+          "source": "https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/relacionados/tiposinteres/guia-textual/tiposinteresrefe/tabla_tipos_referencia_oficiales_mercado_hipotecario.html?anyo=d293dd0fb7626810VgnVCM10000083f614acRCRD#comboAnios",
           "@type": "Column"
         },
         {
