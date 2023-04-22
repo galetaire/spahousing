@@ -2,7 +2,7 @@
 title: Charts sitemap
 date:
 description:
-author: Collection of all the 37 charts published in the site
+author: Collection of all the 38 charts published in the site
 ---
 
 <div class="meta-line"><a class="meta-back" href="/methodology#data-base-access">← Back to methodology</a></div>
@@ -50,11 +50,13 @@ author: Collection of all the 37 charts published in the site
 + _Production cost_
   * (30) [Ratio between housing price and construction cost](/images/costratio.png)
   * (31) [Cost of production](/images/costchange.png)
+  * (32) [Gasoline price](/images/gasoline.png)
+
 + _Ownership structure_
-  * (32) [Home sales by type of buyer](/images/buyer.png)
-  * (33) [Housing by type of tenure](/images/tenure.png)
+  * (33) [Home sales by type of buyer](/images/buyer.png)
+  * (34) [Housing by type of tenure](/images/tenure.png)
 + _Return on investment_
-  * (34) [Housing return on investment](/images/roinet.png)
-  * (35) [Housing gross appreciation](/images/roigross.png)
-  * (36) [Price-to-rent ratio (%)](/images/rentratio.png)
-  * (37) [Price-to-rent ratio (time)](/images/renttime.png)
+  * (35) [Housing return on investment](/images/roinet.png)
+  * (36) [Housing gross appreciation](/images/roigross.png)
+  * (37) [Price-to-rent ratio (%)](/images/rentratio.png)
+  * (38) [Price-to-rent ratio (time)](/images/renttime.png)
