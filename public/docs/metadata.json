@@ -24,6 +24,12 @@
           "@type": "Column"
         },
         {
+          "title": "Population_25_60",
+          "dc:description": "Total number of inhabitants between 25 and 60 years old",
+          "source": "https://www.ine.es/jaxiT3/Tabla.htm?t=10256",
+          "@type": "Column"
+        },
+        {
           "title": "Population_over18",
           "dc:description": "Total number of inhabitants over 18 years old",
           "source": "https://www.ine.es/jaxiT3/Tabla.htm?t=10256",
