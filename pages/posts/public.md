@@ -10,15 +10,15 @@ import Image from 'next/image'
 
 # Government-funded housing
 
-[![Número de viviendas protegidas](/images/stockyearly.png)](/images/publichousing.png)
+[![Número de viviendas protegidas](/images/publichousing.png)](/images/publichousing.png)
 
 - **Total units of Government-funded housing**, since 1991.
 
-[![Numéro de viviendas libres y protegidas](/images/cement.png)](/images/publicprivate.png)
+[![Numéro de viviendas libres y protegidas](/images/publicprivate.png)](/images/publicprivate.png)
 
 - **Housing builds according to type of funding, total units**: public or private.
 
-[![Porcentaje de viviendas libres y protegidas](/images/stockperiods.png)](/images/publicprivateper.png)
+[![Porcentaje de viviendas libres y protegidas](/images/publicprivateper.png)](/images/publicprivateper.png)
 
 - **Housing builds according to type of funding (%)**: public or private.
 
