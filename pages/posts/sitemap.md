@@ -46,7 +46,6 @@ author: Collection of all the 41 charts published in the site
   * (27) [Housing stock balance](/images/stockbalance.png)
   * (28) [Cement consumption](/images/cement.png)
   * (29) [Distribution of new houses per type](/images/typehouse.png)
-  + _Public funding_
   * (30) [Government-funded housing](/images/publichousing.png)
   * (31) [Homes build according to type of funding](/images/publicprivate.png)
   * (32) [Public or private funding (%)](/images/publicprivateper.png)
