@@ -438,6 +438,30 @@
           "@type": "Column"
         },
         {
+          "title": "Private_housing",
+          "dc:description": "Total number of private homes build per year",
+          "source": "https://apps.fomento.gob.es/BoletinOnline2/?nivel=2&orden=32000000",
+          "@type": "Column"
+        },
+        {
+          "title": "Public_housing",
+          "dc:description": "Total number of public homes build per year",
+          "source": "https://apps.fomento.gob.es/BoletinOnline2/?nivel=2&orden=31000000",
+          "@type": "Column"
+        },
+        {
+          "title": "Private_housing_per",
+          "dc:description": "Percentage of private housing build per year",
+          "source": "=(Private_housing*100)/(Private_housing+Public_housing)",
+          "@type": "Column"
+        },
+        {
+          "title": "Public_housing_per",
+          "dc:description": "Percentage of public housing build per year",
+          "source": "=(Public_housing*100)/(Private_housing+Public_housing)",
+          "@type": "Column"
+        },
+        {
           "title": "Homes_1000",
           "dc:description": "Total homes per 1000 inhabitants",
           "source": "(Total_homes/Total_population)*1000",

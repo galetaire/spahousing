@@ -2,7 +2,7 @@
 title: Charts sitemap
 date:
 description:
-author: Collection of all the 38 charts published in the site
+author: Collection of all the 41 charts published in the site
 ---
 
 <div class="meta-line"><a class="meta-back" href="/methodology#data-base-access">← Back to methodology</a></div>
@@ -13,7 +13,6 @@ author: Collection of all the 38 charts published in the site
   * (1) [Multivariate model, housing overview](/images/multivariate.png)
   * (2) [Rainbow model, short-term, housing cycles](/images/rainbow.png)
   * (3) [Rainbow model, long-term, housing cycles](/images/rainbowmax.png)
-
 + _Price_
   * (4) [Annual evolution of housing prices](/images/priceyearly.png)
   * (5) [Quarterly evolution of housing prices](/images/pricequarterly.png)
@@ -47,16 +46,19 @@ author: Collection of all the 38 charts published in the site
   * (27) [Housing stock balance](/images/stockbalance.png)
   * (28) [Cement consumption](/images/cement.png)
   * (29) [Distribution of new houses per type](/images/typehouse.png)
+  + _Public funding_
+  * (30) [Government-funded housing](/images/publichousing.png)
+  * (31) [Homes build according to type of funding](/images/publicprivate.png)
+  * (32) [Public or private funding (%)](/images/publicprivateper.png)
 + _Production cost_
-  * (30) [Ratio between housing price and construction cost](/images/costratio.png)
-  * (31) [Cost of production](/images/costchange.png)
-  * (32) [Gasoline price](/images/gasoline.png)
-
+  * (33) [Ratio between housing price and construction cost](/images/costratio.png)
+  * (34) [Cost of production](/images/costchange.png)
+  * (35) [Gasoline price](/images/gasoline.png)
 + _Ownership structure_
-  * (33) [Home sales by type of buyer](/images/buyer.png)
-  * (34) [Housing by type of tenure](/images/tenure.png)
+  * (36) [Home sales by type of buyer](/images/buyer.png)
+  * (37) [Housing by type of tenure](/images/tenure.png)
 + _Return on investment_
-  * (35) [Housing return on investment](/images/roinet.png)
-  * (36) [Housing gross appreciation](/images/roigross.png)
-  * (37) [Price-to-rent ratio (%)](/images/rentratio.png)
-  * (38) [Price-to-rent ratio (time)](/images/renttime.png)
+  * (38) [Housing return on investment](/images/roinet.png)
+  * (39) [Housing gross appreciation](/images/roigross.png)
+  * (40) [Price-to-rent ratio (%)](/images/rentratio.png)
+  * (41) [Price-to-rent ratio (time)](/images/renttime.png)
