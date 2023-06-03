@@ -14,7 +14,7 @@ import Image from 'next/image'
 
 - **Number of dwellings**: new homes built annually since 1971.
   - **Left axis (bars)**: total number of new dwellings per year.
-  - **Right axis (line)**: dwellings per 1000 inhabitants.
+  - **Right axis (line)**: number of dwellings per each 2 inhabitants.
 
 [![Antiguedad de las viviendas](/images/stockperiods.png)](/images/stockperiods.png)
 
