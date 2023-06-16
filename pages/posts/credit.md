@@ -12,7 +12,7 @@ import Image from 'next/image'
 
 [![Hipotecas en España](/images/credityearly.png)](/images/credityearly.png)
 
-- **Annual evolution of mortgages**, total number of mortgages approved and released[^1].
+- **Annual evolution of mortgages**, total number of mortgages approved and released [^1].
 
 [![Crédito en España](/images/creditmovement.png)](/images/creditmovement.png)
 
