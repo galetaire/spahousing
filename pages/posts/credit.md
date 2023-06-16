@@ -12,13 +12,13 @@ import Image from 'next/image'
 
 [![Hipotecas en España](/images/credityearly.png)](/images/credityearly.png)
 
-- **Annual evolution of mortgages**, Spain.
-  - **Left axis (bars)**: annual number of mortgages approved and released.
-  - **Right axis (line)**: average annual mortgage amount, in euros.
+- **Annual evolution of mortgages**, total number of mortgages approved and released. _Note: Mortgage approvals are required by law to be registered at the Land Registry, however, releases are not required to be registered. This skews the numbers, about 40% of mortgages settled are not registered as released._
 
 [![Crédito en España](/images/creditmovement.png)](/images/creditmovement.png)
 
-- **Real credit movement (mortgages), in percentage**: blue = real credit expansion; orange = real credit contraction.
+- **Real credit movement and mortgages amount**, Spain.
+ - **Left axis (bars)**: Real credit movement (blue = expansion; orange = contraction), in percentage.
+ - **Right axis (line)**: average annual mortgage amount, in euros.
 
 [![Burbuja inmobiliaria](/images/creditratio.png)](/images/creditratio.png)
 
