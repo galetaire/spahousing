@@ -12,13 +12,13 @@ import Image from 'next/image'
 
 [![Hipotecas en España](/images/credityearly.png)](/images/credityearly.png)
 
-- **Annual evolution of mortgages**, total number of mortgages approved and released. _Note: Mortgage approvals are required by law to be registered at the Land Registry, however, releases are not required to be registered. This skews the numbers, about 40% of mortgages settled are not registered as released._
+- **Annual evolution of mortgages**, total number of mortgages approved and released[^1].
 
 [![Crédito en España](/images/creditmovement.png)](/images/creditmovement.png)
 
 - **Real credit movement and mortgages amount**, Spain.
- - **Left axis (bars)**: Real credit movement (blue = expansion; orange = contraction), in percentage.
- - **Right axis (line)**: average annual mortgage amount, in euros.
+  - **Left axis (bars)**: Real credit movement (blue = expansion; orange = contraction), in percentage.
+  - **Right axis (line)**: average annual mortgage amount, in euros.
 
 [![Burbuja inmobiliaria](/images/creditratio.png)](/images/creditratio.png)
 
@@ -68,3 +68,5 @@ The _Euro Interbank Offered Rate_ (Euribor) plays a key role in the mortgage mar
 - Mortgages constituted according to interest rate, Bank of Spain (_Tipo medio de los préstamos hipotecarios a más de 3 años para adquisición de vivienda libre > Del conjunto de entidades de crédito_): [Link](https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/relacionados/tiposinteres/guia-textual/tiposinteresrefe/tabla_tipos_referencia_oficiales_mercado_hipotecario.html)
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
+
+[^1]: Mortgage approvals are required by law to be registered at the Land Registry, however, releases are not required to be registered. This skews the numbers, we approximate that about 40% of mortgages settled are not registered as released._
