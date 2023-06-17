@@ -168,6 +168,12 @@
           "@type": "Column"
         },
         {
+          "title": "Loan_to_value",
+          "dc:description": "Ratio between the average mortgage amount and the average value of an average size house",
+          "source": "(Average_amount*100)/(Price_eum2*((Condos_m2*(Condominiums/(Single_family+Condominiums)))+(Single_family_m2*(Single_family/(Single_family+Condominiums)))))",
+          "@type": "Column"
+        },
+        {
           "title": "Real_credit_movement",
           "dc:description": "Percentage change in the total amount of borrowed money year-on-year, minus inflation year-on-year",
           "source": "[[Total_amount(year n)*100/Total_amount(year n-1)]-100]-Inflation_CPI",
