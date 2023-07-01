@@ -474,9 +474,9 @@
           "@type": "Column"
         },
         {
-          "title": "Homes_2_inhabitants",
-          "dc:description": "Total homes per 2 inhabitants",
-          "source": "(Total_homes/Total_population)*2",
+          "title": "Homes_per_inhabitant",
+          "dc:description": "Total homes per inhabitants",
+          "source": "(Total_homes/Total_population)",
           "@type": "Column"
         },
         {

@@ -69,4 +69,4 @@ The _Euro Interbank Offered Rate_ (Euribor) plays a key role in the mortgage mar
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
 
-[^1]: Mortgage approvals are required by law to be registered at the Land Registry, however, releases are not required to be registered. We approximate that about 30% of mortgage releases are not registered._
+[^1]: Mortgage approvals are required by law to be registered at the Land Registry, however, releases are not required to be registered. We approximate that about 35% of mortgage releases are not registered._
