@@ -2,7 +2,7 @@
 title: Urban land scarcity index
 date:
 description:
-author: Please, see the notes at the end of the post for clarifications
+author: See the notes at the end for clarifications
 ---
 
 import Image from 'next/image'
@@ -11,26 +11,24 @@ import Image from 'next/image'
 
 # Measuring urban land scarcity
 
-## Urban land scarcity map
-
 [![Land scarcity](/images/landscarcity.png)](/images/landscarcity.png)
 
-**Note**: The data used is the official data from the MITMA, which groups urban land price by the size of municipalities. This causes some municipalities, such as Málaga (Andalusia), Barcelona (Catalonia) or Valldemossa (Mallorca), to have a lower value than expected, since its value is diluted by being part of a heterogenous group.
+**Note**: The data used is the official data from the MITMA, which groups urban land price by the size of municipalities. This causes some municipalities, such as Málaga (Andalusia), Barcelona (Catalonia) or Valldemossa (Mallorca), to have a lower value than expected.
 
 ## Methodology
 
 For measuring urban land scarcity, we have used a weighted value based on the urban land price of municipalities provided by the [MITMA](https://www.mitma.gob.es/el-ministerio/informacion-estadistica/vivienda-y-actuaciones-urbanas/estadisticas/suelo/estadisticas-de-precios-de-suelo-urbano).
 
-The final value is the outcome of using the _average price value of the last 15 years_ and the _average price value of the last 5 years_, in order to have an score that captures both its current value and its price tendency. Being the formula as follows:
+The final value is the outcome of using the _average price of the last 15 years_ and the _average price of the last 5 years_, in order to have a value that captures both its current price and its price tendency. Being the formula as follows:
 
 ![Equation](https://math.vercel.app/?bgcolor=auto&from=Land\:weighted\:value\:=[Average\:5\:years\times2]\:-Average\:15\:years)
 
 Data sample for an example:
 
-| Region | Municipalities | Average price last 15 years | Average price last 5 years | Weighted price value |
+| Spanish region | Municipalities by inhabitants | Average price last 15 years | Average price last 5 years | Weighted price value |
 | --- | --- | --- | --- | --- |
-| Andalusia | From 1000 to 5000  inhabitants | 110.3 | 116.4 | 122.1  |
-| Andalusia | From 5000 to 10000  inhabitants | 128.3 | 116.5 | 104.8 |
+| Andalusia | From 1000 to 5000 | 110.3 | 116.4 | 122.1  |
+| Andalusia | From 5000 to 10000 | 128.3 | 116.5 | 104.8 |
 
 Even if both current prices are similar (of around 116 euros per square meter). The weighted value of municipalities from 1000 to 5000 inhabitants is higher because the price pressure has been going up over the last 15 years. In contrast, in municipalities from 5000 to 10000 is lower because the pressure has been going down in the same period.
 

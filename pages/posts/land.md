@@ -32,5 +32,6 @@ The charts from above show the number of annual building licenses (and the type 
 
 - Construction and Building Permits (_11.Visados de dirección de obra. Nº visados según tipo de obra_): [Link](https://apps.fomento.gob.es/BoletinOnline/?nivel=2&orden=09000000)
 - Price of land (_Series estadísticas > Precios del suelo > 4.Precio medio del metro cuadrado de suelo urbano por comunidades autónomas y provincias_): [Link](https://www.mitma.gob.es/el-ministerio/informacion-estadistica/vivienda-y-actuaciones-urbanas/estadisticas/suelo/estadisticas-de-precios-de-suelo-urbano)
+- For an approach to land scarcity, please see this [entry](landscarcity).
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
