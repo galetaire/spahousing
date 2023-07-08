@@ -32,7 +32,7 @@ Data sample for an example:
 
 Even if both current prices are similar (of around 116 euros per square meter). The weighted value of municipalities from 1000 to 5000 inhabitants is higher because the price pressure has been going up over the last 15 years. In contrast, in municipalities from 5000 to 10000 is lower because the pressure has been going down in the same period.
 
-* Full database here: [Land value](https://github.com/galetaire/spahousing/raw/main/public/docs/landvalue.xls)
+* Full dataset here: [Land value](https://github.com/galetaire/spahousing/raw/main/public/docs/landvalue.XLS)
 
 ## Notes on the approach to measure urban land scarcity
 
