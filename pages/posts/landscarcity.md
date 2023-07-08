@@ -32,6 +32,8 @@ Data sample for an example:
 
 Even if both current prices are similar (of around 116 euros per square meter). The weighted value of municipalities from 1000 to 5000 inhabitants is higher because the price pressure has been going up over the last 15 years. In contrast, in municipalities from 5000 to 10000 is lower because the pressure has been going down in the same period.
 
+* Full database here: [Land value](https://github.com/galetaire/spahousing/raw/main/public/docs/landvalue.xls)
+
 ## Notes on the approach to measure urban land scarcity
 
 In a market where supply and demand interact freely, **prices tend to reflect the relative scarcity of goods**. When a good is scarce and in high demand, its price is likely to increase. Conversely, if a good is abundant or there is low demand for it, the price may decrease. Based on this principle, we will use **the price as a measure to approximate urban land scarcity**.
