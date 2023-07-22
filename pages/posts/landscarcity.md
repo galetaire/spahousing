@@ -8,7 +8,7 @@ author: See the notes at the end for clarifications
 
 import Image from 'next/image'
 
-<div class="meta-line"><a class="meta-back" href="/land">← Back to Land and building permits</a></div>
+<div class="meta-line"><a class="meta-back" href="posts/land">← Back to Land and building permits</a></div>
 
 # Measuring urban land scarcity
 
