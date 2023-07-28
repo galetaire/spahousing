@@ -10,9 +10,9 @@ import Image from 'next/image'
 
 <div class="meta-line"><a class="meta-back" href="/posts/sales">← Back to Sales</a></div>
 
-# What is it?
+# Purchasing-age population index
 
-The PAP is an index that draws two ceilings based on demographics. The idea is to model rational demand based on population (85% of sales and purchases come from individuals, and 15% from legal entities).
+The PAP is an index that draws two ceilings based on demographics. The idea is to model rational demand based on population (85% of purchases come from individuals, and 15% from legal entities).
 
 - Assuming that every 1 person needs 1 house, that would be the demographic upper limit of purchases.
 - Assuming that humans mate, then each couple (2 people) would need 1 house, that would be the lower limit.
@@ -31,7 +31,7 @@ The demographic limits are created by considering the number of people between 2
 
 ## Why the range between 25 and 50 years of age?
 
-The logic comes from a decision to avoid "noise" in the data. Around 70% of purchases are concentrated in this age group (_example source_: [Statista](https://es.statista.com/estadisticas/937303/porcentaje-de-compradores-de-viviendas-por-grupo-de-edad-espana/)). General overview of purchases per age group:
+The logic comes from a decision to avoid "noise" in the data. Around 70% of purchases are concentrated in this age group (_example source_: [Statista](https://es.statista.com/estadisticas/937303/porcentaje-de-compradores-de-viviendas-por-grupo-de-edad-espana/)). The approximate landscape is the following:
 
 - Age group between 0 - 24, represents 24% of the population and 5% of purchases.
 - Age group between 25 - 50, represents 35% of the population and 70% of purchases.
@@ -39,7 +39,7 @@ The logic comes from a decision to avoid "noise" in the data. Around 70% of purc
 
 The bands could move especially upwards, towards 60 years of age. Actually, the values for the limits using the age group between 25 - 60 has been reviewed and is available in the public database. But the values do not vary significantly from those shown by the 25 - 50 group, and only serve to flatten the curve, which we interpret as noise.
 
-Overall, the 25 - 50 age bracket occupies the majority of sales providing the least noise.
+Overall, the 25 - 50 age bracket occupies the majority of purchases providing the least noise.
 
 ## Other notes
 
