@@ -20,7 +20,7 @@ import Image from 'next/image'
 
 # Interpretation and observations
 
-The _PAP housing index_ draws two ceilings based on demographics. The higher one assumes that everyone at some point will buy a house individually, and the lower one assumes that everyone at some point will buy a house as a couple.
+The [PAP housing index](papindex) draws two ceilings based on demographics. The higher one assumes that everyone at some point will buy a house individually, and the lower one assumes that everyone at some point will buy a house as a couple.
 
 - If the number of sales exceeds the upper limit, it implies that the situation corresponds to a **bubble**, e.g. 2004 - 2007.
 - If the number of sales is below the lower limit, it implies that there is a **depression**, e.g. 2011 - 2014.

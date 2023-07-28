@@ -44,5 +44,3 @@ It is important to note that **price should not be seen as a perfect information
 ## Other notes
 
 For the mathematical notations, the [Latex Math Api](https://math.vercel.app/home) developed by [@uechz](https://twitter.com/uechz) has been used. A latex editor is accessible at [TutorialsPoint.com](https://www.tutorialspoint.com/latex_equation_editor.htm).
-
-[^1]: If the price index is in decimal form, the expression would simply be: _Nominal value / Price index_.
