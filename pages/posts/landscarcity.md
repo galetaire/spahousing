@@ -3,12 +3,10 @@ title: Urban land scarcity index
 date:
 description:
 tag: All, Price
-author: See the notes at the end for clarifications
+author: Explanatory notes about the index
 ---
 
 import Image from 'next/image'
-
-<div class="meta-line"><a class="meta-back" href="/posts/land">← Back to Land and building permits</a></div>
 
 # Measuring urban land scarcity
 
@@ -44,3 +42,5 @@ It is important to note that **price should not be seen as a perfect information
 ## Other notes
 
 For the mathematical notations, the [Latex Math Api](https://math.vercel.app/home) developed by [@uechz](https://twitter.com/uechz) has been used. A latex editor is accessible at [TutorialsPoint.com](https://www.tutorialspoint.com/latex_equation_editor.htm).
+
+<div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
