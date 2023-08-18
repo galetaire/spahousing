@@ -1,7 +1,7 @@
 {
     "@context": "https://spainhousing.xyz/methodology",
     "url": "spain_stats_csv.csv",
-    "dc:title": "Spainhousing.xyz data table",
+    "dc:title": "Spainhousing.eu data table",
     "dc:description": "All data refers to Spain if not otherwise specified. This table summarizes and describes each of the columns/indicators of the database",
     "dc:creator": "https://github.com/galetaire",
     "tableSchema": {
@@ -495,6 +495,18 @@
           "title": "Balance",
           "dc:description": "Housing balance",
           "source": "Per_new_homes-Population_yoy",
+          "@type": "Column"
+        },
+        {
+          "title": "Employed_constr",
+          "dc:description": "Total employees in the construction sector",
+          "source": "https://www.ine.es/jaxiT3/Tabla.htm?t=4876&L=0",
+          "@type": "Column"
+        },
+        {
+          "title": "Workers_per_home",
+          "dc:description": "Number of workers per housing unit built",
+          "source": "(Employed_constr/New_homes)",
           "@type": "Column"
         },
         {

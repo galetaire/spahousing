@@ -2,7 +2,7 @@
 title: Purchasing-age population index
 date:
 description:
-tag: All, Price, Sales, Credit
+tag: All, Price, Volume, Credit
 author: Explanatory notes about the index
 ---
 
@@ -10,9 +10,7 @@ import Image from 'next/image'
 
 # Purchasing-age population index
 
-[![Compraventa de vivienda](/images/salesyearly1.png)](/images/salesyearly1.png)
-
-The PAP is an index that draws two ceilings based on demographics. The idea is to model rational demand based on population (85% of purchases come from individuals, and 15% from legal entities).
+The PAP is an index that draws two ceilings based on demographics. The idea is to model rational demand based on population[^1].
 
 - Assuming that every 1 person needs 1 house, that would be the demographic upper limit of purchases.
 - Assuming that humans mate, then each couple (2 people) would need 1 house, that would be the lower limit.
@@ -46,3 +44,5 @@ Overall, the 25 - 50 age bracket occupies the majority of purchases providing th
 For the mathematical notations, the [Latex Math Api](https://math.vercel.app/home) developed by [@uechz](https://twitter.com/uechz) has been used. A latex editor is accessible at [TutorialsPoint.com](https://www.tutorialspoint.com/latex_equation_editor.htm).
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
+
+[^1]: However, this index is far from achieving a perfect demand side. We must consider that 85% of purchases come from individuals, but 15% are from legal entities (not considered in the demographic curve). Also, purchases made by foreign non-residents are not considered either in the demographic limits.
