@@ -2,7 +2,6 @@
 title: Purchasing-age population index
 date:
 description:
-tag: All, Price, Volume, Credit
 author: Explanatory notes about the index
 ---
 

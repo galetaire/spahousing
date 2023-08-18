@@ -2,7 +2,6 @@
 title: Land and building permits
 date: 2023-07-01
 description:
-tag: All, Price, Volume
 author: Last update on
 ---
 

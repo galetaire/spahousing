@@ -2,7 +2,6 @@
 title: Wages
 date: 2023-07-01
 description:
-tag: All, Labor, Credit
 author: Last update on
 ---
 

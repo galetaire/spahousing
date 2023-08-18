@@ -2,7 +2,6 @@
 title: Multivariate model
 date: 2023-07-01
 description:
-tag: All, Price, Volume, Credit, Labor, Demography
 author: Last update on
 ---
 

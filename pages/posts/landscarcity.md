@@ -2,7 +2,6 @@
 title: Urban land scarcity index
 date:
 description:
-tag: All, Price
 author: Explanatory notes about the index
 ---
 
