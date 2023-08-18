@@ -6,12 +6,12 @@ const matter = require('gray-matter')
 async function generate() {
   const feed = new RSS({
     title: "Spanish housing observatory",
-    site_url: 'https://www.spainhousing.xyz/',
-    feed_url: 'https://www.spainhousing.xyz/feed.xml'
+    site_url: 'https://www.spainhousing.eu/',
+    feed_url: 'https://www.spainhousing.eu/feed.xml'
   })
 
   const posts = await fs.readdir(path.join(__dirname, '..', 'pages', 'posts'))
-  const allPosts = []
+
   await Promise.all(
     posts.map(async (name) => {
       if (name.startsWith('index.')) return
@@ -21,7 +21,7 @@ async function generate() {
       )
       const frontmatter = matter(content)
 
-      allPosts.push({
+      feed.item({
         title: frontmatter.data.title,
         url: '/posts/' + name.replace(/\.mdx?/, ''),
         date: frontmatter.data.date,
@@ -32,10 +32,6 @@ async function generate() {
     })
   )
 
-  allPosts.sort((a, b) => new Date(b.date) - new Date(a.date))
-  allPosts.forEach((post) => {
-      feed.item(post)
-  })
   await fs.writeFile('./public/feed.xml', feed.xml({ indent: true }))
 }
 
