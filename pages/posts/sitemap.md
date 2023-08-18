@@ -2,7 +2,7 @@
 title: Charts sitemap
 date: 2023-07-01
 description:
-tag: All
+tag: All, Price
 author: Collection of all the 41 charts published in the site
 ---
 

@@ -48,9 +48,9 @@ h2 {
   }
 }
 
-details > summary {
-  display: block;
+details summary {
   cursor: pointer;
+  display: block;
 }
 
 summary {
@@ -73,8 +73,9 @@ img.next-image {
 }
 
 .nav-line {
-    margin-bottom: 2rem;
-    text-align: left;
+  justify-content: left;
+  margin-bottom: 2rem;
+  text-align: left;
 }
 
 .signature {
