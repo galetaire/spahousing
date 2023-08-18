@@ -1,34 +1,49 @@
-# Portfolio Starter Kit
+# Description
 
-This portfolio is built with **Next.js** and a library called [Nextra](https://nextra.vercel.app/). It allows you to write Markdown and focus on the _content_ of your portfolio. This starter includes:
+The market monitored on this website is the Spanish real estate market.
 
-- Automatically configured to handle Markdown/MDX
-- Generates an RSS feed based on your posts
-- A beautiful theme included out of the box
-- Easily categorize posts with tags
-- Fast, optimized web font loading
+# About the database
 
-## Configuration
+Even so I try to be cautious and avoid mistakes, errors can occur, so I encourage the review and verification of the database. If encountered any, the creation of ``Issues`` and ``Pull requests`` for the database are welcome, you can also reach me through various channels.
 
-1. Update your name in `theme.config.js` or change the footer.
-1. Update your name and site URL for the RSS feed in `scripts/gen-rss.js`.
-1. Update the meta tags in `pages/_document.js`.
-1. Update the posts inside `pages/posts/*.md` with your own content.
+The database can be found in [spahousing/public/docs/](https://github.com/galetaire/spahousing/tree/main/public/docs), presented in two different file formats.
+  - [spain_stats_ods.ods](https://github.com/galetaire/spahousing/blob/main/public/docs/spain_stats_ods.ods)
+  - [spain_stats_csv.csv](https://github.com/galetaire/spahousing/blob/main/public/docs/spain_stats_csv.csv)
 
-## Deploy your own
+Full review and modification is better to be done in ``.ods``, since some indicators are originated from other internal indicators, and the formulas can only be seen and edited in the mentioned format. Alternatively, formulas and variable names can be consulted at the ``metadata.json`` file.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+- [Metadata.json](https://github.com/galetaire/spahousing/raw/main/public/docs/metadata.json)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/nextjs-portfolio-starter&project-name=portfolio&repository-name=portfolio)
+If you are creating data visualizations with ``D3js`` or ``chartjs`` you can import the ``.csv`` file from the repository using the import option from the ``D3js`` library, like this:
 
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example blog my-blog
-# or
-yarn create next-app --example blog my-blog
 ```
+d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+  .then(makeChart);
+```
+Check out and example here: [spahousing/main/public/dynamic_charts/multivariate_d3.js](https://github.com/galetaire/spahousing/blob/main/public/dynamic_charts/multivariate_d3.js)
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+# Contact
+
+You can reach me alternatively through twitter: [@HousingSpanish](https://twitter.com/HousingSpanish).
+
+# Portfolio Kit and building sources
+
+This portfolio is built with **Next.js** and a library called [Nextra](https://nextra.vercel.app/). Powered by [Vercel](https://vercel.com).
+
+A mirror site is available on the [Handshake](https://handshake.org/) DNS root zone: "http://spain.galetaire/". Note that for resolving the handshake DNS you will need a resolver since most browsers today do not support it, consider using Fingertip:
+* https://github.com/imperviousinc/fingertip
+
+# License
+
+All the self-made content is released under the terms of the _Creative Commons Attribution-ShareAlike 4.0 International Public License_. Consider that there is a lot of public domain data, and you do not have to comply with the license for elements of the material in the public domain.
+
+Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+
+This work is licensed under a
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+
+[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
+
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
