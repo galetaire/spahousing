@@ -28,7 +28,7 @@ import Image from 'next/image'
 
 - **Cement consumption**, Spain.
   - **Left axis (bars)**: cement consumption per year, in metric tons.
-  - **Right axis (line)**: real housing price[^1] in euros per square meter.
+  - **Right axis (line)**: real housing price [^1] in euros per square meter.
 
 # Interpretation and observations
 
