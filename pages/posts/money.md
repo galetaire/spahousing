@@ -2,6 +2,7 @@
 title: House in various currencies
 date: 2023-07-01
 description:
+tag: All, Price
 author: Last update on
 ---
 
