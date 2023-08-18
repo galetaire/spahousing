@@ -1,5 +1,9 @@
 const YEAR = new Date().getFullYear()
 
+const Page = () => { ... }
+Page.theme = 'light'
+export default Page
+
 export default {
   footer: (
     <small style={{ display: 'block', marginTop: '8rem' }}>
