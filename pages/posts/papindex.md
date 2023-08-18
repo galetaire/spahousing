@@ -10,7 +10,7 @@ import Image from 'next/image'
 
 # Purchasing-age population index
 
-The PAP is an index that draws two ceilings based on demographics. The idea is to model rational demand based on population [^1].
+The PAP is an index that draws two ceilings based on demographics. The idea is to model rational demand based on population[^1].
 
 - Assuming that every 1 person needs 1 house, that would be the demographic upper limit of purchases.
 - Assuming that humans mate, then each couple (2 people) would need 1 house, that would be the lower limit.
