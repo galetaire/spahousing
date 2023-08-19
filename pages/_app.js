@@ -1,8 +1,15 @@
 import 'nextra-theme-blog/style.css'
 import Head from 'next/head'
 import { ThemeProvider } from 'next-themes';
-
 import '../styles/main.css'
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <ThemeProvider enableSystem={false}>
+      <Component {...pageProps} />
+    </ThemeProvider>
+  );
+}
 
 export default function Nextra({ Component, pageProps }) {
   return (
@@ -33,3 +40,5 @@ export default function Nextra({ Component, pageProps }) {
     </>
   )
 }
+
+export default MyApp;
