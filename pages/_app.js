@@ -27,17 +27,9 @@ export default function Nextra({ Component, pageProps }) {
         />
        <meta name="google-site-verification" content="qJPOBhuLxYG31aBQHGtqNlySOVTNp20pDOJhZVXJE9w" />
       </Head>
+      <ThemeProvider enableSystem={false}>
       <Component {...pageProps} />
+      </ThemeProvider>
     </>
   )
 }
-
-function MyApp({ Component, pageProps }) {
-  return (
-    <ThemeProvider enableSystem={false}>
-      <Component {...pageProps} />
-    </ThemeProvider>
-  );
-}
-
-export default MyApp;
