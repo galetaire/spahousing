@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { ThemeProvider } from 'next-themes';
 import '../styles/main.css'
 
-function MyApp({ Component, pageProps }) {
+export default function Nextra({ Component, pageProps }) {
   return (
     <>
       <Head>
@@ -30,7 +30,5 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
       </ThemeProvider>
     </>
-  );
+  )
 }
-
-export default MyApp;
