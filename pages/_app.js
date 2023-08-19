@@ -5,14 +5,6 @@ import '../styles/main.css'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider enableSystem={false}>
-      <Component {...pageProps} />
-    </ThemeProvider>
-  );
-}
-
-export default function Nextra({ Component, pageProps }) {
-  return (
     <>
       <Head>
         <link
@@ -38,7 +30,7 @@ export default function Nextra({ Component, pageProps }) {
       <Component {...pageProps} />
       </ThemeProvider>
     </>
-  )
+  );
 }
 
 export default MyApp;
