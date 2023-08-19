@@ -18,5 +18,3 @@ export default {
     </small>
   )
 }
-
-<ThemeProvider enableSystem={false}>
