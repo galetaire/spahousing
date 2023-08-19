@@ -48,9 +48,10 @@ h2 {
   }
 }
 
-@media (prefers-color-scheme: light) {
- }
-
+.light .tag {
+  background-color: #ffffff;
+  color: #2b2b2b;
+}
 details summary {
   cursor: pointer;
   display: block;
