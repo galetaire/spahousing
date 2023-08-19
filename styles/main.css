@@ -48,10 +48,10 @@ h2 {
   }
 }
 
-.light .tag {
-  background-color: #ffffff;
-  color: #2b2b2b;
+@media (prefers-color-scheme: light) {
+  .mySelector { backgroundColor: "white" }
 }
+
 details summary {
   cursor: pointer;
   display: block;
