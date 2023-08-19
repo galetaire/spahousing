@@ -48,6 +48,9 @@ h2 {
   }
 }
 
+@media (prefers-color-scheme: light) {
+ }
+
 details summary {
   cursor: pointer;
   display: block;

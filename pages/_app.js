@@ -1,6 +1,5 @@
 import 'nextra-theme-blog/style.css'
 import Head from 'next/head'
-import { ThemeProvider } from 'next-themes';
 import '../styles/main.css'
 
 export default function Nextra({ Component, pageProps }) {
@@ -26,9 +25,7 @@ export default function Nextra({ Component, pageProps }) {
         />
        <meta name="google-site-verification" content="qJPOBhuLxYG31aBQHGtqNlySOVTNp20pDOJhZVXJE9w" />
       </Head>
-      <ThemeProvider enableSystem={false}>
       <Component {...pageProps} />
-      </ThemeProvider>
     </>
   )
 }
