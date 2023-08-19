@@ -48,10 +48,6 @@ h2 {
   }
 }
 
-@media (prefers-color-scheme: light) {
-  .mySelector { backgroundColor: "white" }
-}
-
 details summary {
   cursor: pointer;
   display: block;
