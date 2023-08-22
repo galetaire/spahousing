@@ -20,7 +20,7 @@ import Image from 'next/image'
 All variables are represented as a percentage. Some clarifications to facilitate its reading:
 
 - **Unemployment, Inflation**: average rate for the given year.
-- **Real price**^1^: percentage of difference between the nominal and the inflation rate.
+- **Real price**[1]: percentage of difference between the nominal and the inflation rate.
 - **Mortgages, Home sales, Nominal price, Interest rate (_Mibor/Euribor_)**: percentage of annual change compared to the previous year.
 
 # Data sources
@@ -37,4 +37,4 @@ All variables are represented as a percentage. Some clarifications to facilitate
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
 
-^1^ For details about the methodology for real price, please see this [notes](realprice).
+[1] For details about the methodology for real price, please see this [notes](realprice).
