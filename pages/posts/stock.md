@@ -28,7 +28,7 @@ import Image from 'next/image'
 
 - **Cement consumption**, Spain.
   - **Left axis (bars)**: cement consumption per year, in metric tons.
-  - **Right axis (line)**: real housing price [^1] in euros per square meter.
+  - **Right axis (line)**: real housing price^1^ in euros per square meter.
 
 # Interpretation and observations
 
@@ -68,4 +68,4 @@ The evolution of the housing stock is a key factor in the supply balance. A coup
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
 
-[^1]: The real price represented is the _Real value overrated_. For details about the methodology, please see this [notes](realprice).
+^1^ The real price represented is the _Real value overrated_. For details about the methodology, please see this [notes](realprice).

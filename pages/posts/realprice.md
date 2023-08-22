@@ -45,7 +45,7 @@ Therefore, the real price rate increased by 17,67% in 1989.
 
 ## 2. Real value
 
-The _real value_ is a methodology to deflate any nominal data series into real values, using a concrete base year for a selected price index. The method is explained in more depth in this entry from the [Federal Reserve - Bank of Dallas](https://www.dallasfed.org/research/basics/nominal.aspx). The expression is the following [^1]:
+The _real value_ is a methodology to deflate any nominal data series into real values, using a concrete base year for a selected price index. The method is explained in more depth in this entry from the [Federal Reserve - Bank of Dallas](https://www.dallasfed.org/research/basics/nominal.aspx). The expression is the following^1^:
 
 ![Equation](https://math.vercel.app?from=Real\:value\:_{t}=\frac{Nominal\:value\:_{t}}{Price\:index\:_{t}}\times100)
 
@@ -92,4 +92,4 @@ As means of comparison, in the following charts we can see the behaviour of both
 
 For the mathematical notations, the [Latex Math Api](https://math.vercel.app/home) developed by [@uechz](https://twitter.com/uechz) has been used. A latex editor is accessible at [TutorialsPoint.com](https://www.tutorialspoint.com/latex_equation_editor.htm).
 
-[^1]: If the price index is in decimal form, the expression would simply be: _Nominal value / Price index_.
+^1^ If the price index is in decimal form, the expression would simply be: _Nominal value / Price index_.
