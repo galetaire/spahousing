@@ -18,11 +18,11 @@ import Image from 'next/image'
 
 - **Cost of production (in %)**: year over year evolution of construction costs.
 
-[![Trabajadores por vivienda construida](/images/typehouse.png)](/images/typehouse.png)
+[![Trabajadores por vivienda construida](/images/workersperunit.png)](/images/workersperunit.png)
 
 - **Ratio of workers per housing unit built**.
 
-[![Trabajadores por cada 100 habitantes](/images/typehouse.png)](/images/typehouse.png)
+[![Trabajadores por cada 100 habitantes](/images/employed100.png)](/images/employed100.png)
 
 - **Number of workers employed in construction per 100 inhabitants**.
 
