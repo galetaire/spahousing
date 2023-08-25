@@ -18,9 +18,13 @@ import Image from 'next/image'
 
 - **Cost of production (in %)**: year over year evolution of construction costs.
 
-[![Tipo de vivienda](/images/typehouse.png)](/images/typehouse.png)
+[![Trabajadores por vivienda construida](/images/typehouse.png)](/images/typehouse.png)
 
-- **Distribution of new houses build per type (in %)**: Single-Family or Condominiums.
+- **Ratio of workers per housing unit built**.
+
+[![Trabajadores por cada 100 habitantes](/images/typehouse.png)](/images/typehouse.png)
+
+- **Number of workers employed in construction per 100 inhabitants**.
 
 # Interpretation and observations
 

@@ -24,6 +24,10 @@ import Image from 'next/image'
 
 - **Housing surplus or deficit**: difference between housing growth and population growth. Blue color implies housing surplus; green color implies housing deficit.
 
+[![Tipo de vivienda](/images/typehouse.png)](/images/typehouse.png)
+
+- **Distribution of new houses build per type (in %)**: Single-Family or Condominiums.
+
 [![Consumo de cemento](/images/cement.png)](/images/cement.png)
 
 - **Cement consumption**, Spain.

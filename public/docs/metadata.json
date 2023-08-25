@@ -510,6 +510,12 @@
           "@type": "Column"
         },
         {
+          "title": "Workers_per_100_inhab",
+          "dc:description": "Number of workers per 100 inhabitants",
+          "source": "(Employed_constr/Total_population)",
+          "@type": "Column"
+        },
+        {
           "title": "Cement_mt",
           "dc:description": "Apparent cement consumption",
           "source": "https://tematicas.org/sintesis-economica/indicadores-de-produccion-y-demanda-nacional/consumo-aparente-de-cemento/",
