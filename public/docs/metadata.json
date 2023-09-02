@@ -264,6 +264,12 @@
           "@type": "Column"
         },
         {
+          "title": "GDP_eurozone",
+          "dc:description": "GDP annual growth from the Euro area, in percentage",
+          "source": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?end=2022&locations=XC&start=1971&view=chart",
+          "@type": "Column"
+        },
+        {
           "title": "Household_net_income",
           "dc:description": "Households net disposable income",
           "source": "https://www.ine.es/jaxiT3/Tabla.htm?t=30906",
@@ -282,13 +288,19 @@
           "@type": "Column"
         },
         {
+          "title": "Income_constant_mortgage",
+          "dc:description": "Disposable income if it grew at mortgage rate levels",
+          "source": "Disposable_income_over18(year n-1)+(12*PMT_excel_function(Average_mortgage_rate/100/12,Years_mortgage*12,(Disposable_income_over18(year n-1)*5)*-1))",
+          "@type": "Column"
+        },
+        {
           "title": "Income_constant_housing",
           "dc:description": "Disposable income if it grew at housing price levels",
           "source": "Disposable_income_over18(year n-1)*[1+(Nominal_price_yoy_per(year n)/100)]",
           "@type": "Column"
         },
         {
-          "title": "Income_vs_houseandinflation",
+          "title": "Income_vs_livingstandard",
           "dc:description": "Income growth against housing and inflation growth",
           "source": "((Income_constant_housing+(Income_constant_inflation-Disposable_income_over18))-Disposable_income_over18)+Disposable_income_over18(base year n)",
           "@type": "Column"
