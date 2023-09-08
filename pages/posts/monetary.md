@@ -1,5 +1,5 @@
 ---
-title: Mortgages
+title: Monetary policy
 date: 2023-07-01
 description:
 tag: All, Credit
@@ -8,34 +8,25 @@ author: Last update on
 
 import Image from 'next/image'
 
-# Evolution of mortgages
+# Monetary policy
 
-[![Hipotecas en España](/images/credityearly.png)](/images/credityearly.png)
+[![Euribor y interes hipotecas](/images/euribor.png)](/images/euribor.png)
 
-- **Annual evolution of mortgages**, total number of mortgages approved and released[1].
+- **Euribor 1-year average rate and average mortgage rate**, Spain.
 
-[![Crédito en España](/images/creditmovement.png)](/images/creditmovement.png)
+[![Politica monetaria y precio vivienda](/images/pricemoneypolicy.png)](/images/pricemoneypolicy.png)
 
-- **Real credit movement and mortgages amount**, Spain.
-  - **Left axis (bars)**: Real credit movement, in percentage.
-  - **Right axis (line)**: average annual mortgage amount, in euros.
+- **Nominal price and Interest rate**: percentage of annual change compared to the previous year.
+  - **Left axis (bars)**: interest rate (_Mibor/Euribor_).
+  - **Right axis (line)**: nominal price.
 
-[![Burbuja inmobiliaria](/images/creditratio.png)](/images/creditratio.png)
+[![Crecimiento de la vivienda y el dinero](/images/moneygrowth.png)](/images/moneygrowth.png)
 
-- **Ratio between mortgages and home sales**: if the ratio is (x), it means there a (x) mortgages per each (1) home sale.
-
-[![Tipo de hipotecas firmadas](/images/typemortgage.png)](/images/typemortgage.png)
-
-- **Mortgages constituted according to type of interest rate (%)**: fixed or variable.
+- **Money growth compared to housing growth (%)**: housing stock grows significantly below the money pace.
 
 # Interpretation and observations
 
-Credit correlates positively with the evolution of housing prices. Some observations:
-
-- **Observation A**: mortgage approvals were far above the upper limit in the 2000s.
-- **Observation B**: the average mortgage amount follows an uptrend.
-- **Observation C**: the real credit movement allow us to see the debt cycles.
-- **Observation D**: the ratio _Mortgages/Sales_ hints the formation of real estate bubbles.
+The _Euro Interbank Offered Rate_ (Euribor) plays a key role in housing, mostly through the mortgage market. An increase of the Euribor implies an increase in mortgage rates, which if sustained for longer periods, constraints the debt capacity for borrowers, resulting in general price stagnation due to the lack of new money flowing into the system, or even price regression if there is an excessive amount of credit accumulated (credit bubble).
 
 # Data sources
 
@@ -52,5 +43,3 @@ Credit correlates positively with the evolution of housing prices. Some observat
 - Mortgages constituted according to interest rate, Bank of Spain (_Tipo medio de los préstamos hipotecarios a más de 3 años para adquisición de vivienda libre > Del conjunto de entidades de crédito_): [Link](https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/relacionados/tiposinteres/guia-textual/tiposinteresrefe/tabla_tipos_referencia_oficiales_mercado_hipotecario.html)
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
-
-[1] Mortgage approvals are required by law to be registered at the Land Registry, however, releases are not required to be registered. We approximate that about 35% of mortgage releases are not registered._

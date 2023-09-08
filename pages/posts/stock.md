@@ -8,7 +8,7 @@ author: Last update on
 
 import Image from 'next/image'
 
-# Stock development
+# (a) Stock development
 
 [![Número de viviendas](/images/stockyearly.png)](/images/stockyearly.png)
 
@@ -44,7 +44,7 @@ The evolution of the housing stock is a key factor in the supply balance. A coup
 - **Observation D**: the stock has experienced a couple of deficit years since 2017.
 - **Observation E**: the cement consumption and the real price correlate positively.
 
-# Government-funded housing
+# (b) Government-funded housing
 
 [![Número de viviendas protegidas](/images/publichousing.png)](/images/publichousing.png)
 
