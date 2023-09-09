@@ -26,20 +26,19 @@ import Image from 'next/image'
 
 # Interpretation and observations
 
-The _Euro Interbank Offered Rate_ (Euribor) plays a key role in housing, mostly through the mortgage market. An increase of the Euribor implies an increase in mortgage rates, which if sustained for longer periods, constraints the debt capacity for borrowers, resulting in general price stagnation due to the lack of new money flowing into the system, or even price regression if there is an excessive amount of credit accumulated (credit bubble).
+The _Money stock_ plays a key role due to the fact that if the stock of the _Euro_ grows faster than the stock of houses, houses become scarcer relative to the money in circulation, pushing up the housing prices and vice versa.
+
+The _Euro Interbank Offered Rate_ (Euribor) plays a key role mostly through the mortgage market. An increase of the Euribor implies an increase in mortgage rates, which if sustained for longer periods, constraints the debt capacity for borrowers, resulting in general price stagnation due to the lack of new money flowing into the system, or even price regression if there is an excessive amount of credit accumulated (credit bubble).
 
 # Data sources
 
 - Housing prices, from 1985 to 2006, according to Sociedad de Tasación (_Access to data is under request, but can be seen in the linked publication_): [Publication](https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf), [Link](https://www.st-tasacion.es/informe-de-tendencias-digital/)
 - Housing prices, from 2007 onwards, according to the notaries (_Grupo 5 > Acto 501 - Compraventa inmuebles > Inmuebles en fincas urbanas, viviendas_): [Link](http://www.notariado.org/liferay/web/cien/estadisticas-al-completo)
-- Home sales, from 2003 to 2006, have been extrapolated using the approved mortgages: [Link](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736170236&menu=resultados&idp=1254735576757#!tabs-1254736169948)
-- Home sales, from 2007 onwards (_Results > Annual > Dwellings transferred by type of acquisition  > Sales_): [Link](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736171438&menu=resultados&idp=1254735576757)
-- Mortgages, from 1995 to 2002, according to "El mercado de la vivienda en España: una década prodigiosa (1995-2005)", by Isabel Nóvoa Arechaga and Pedro López Suárez, tabla 13 (_mortgage releases from this period have been extrapolated using the approved mortgages_): [Publication](https://dialnet.unirioja.es/descarga/articulo/2499407.pdf)
-- Mortgages, from 2003 onwards  (_Results > Annual > National results and by Autonomous Community > Mortgages constituted, over the total properties, by nature of the property > Dwellings_): [Link](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736170236&menu=resultados&idp=1254735576757#!tabs-1254736169948)
-- Inflation data (_Table: average inflation Spain (CPI) - by year_): [Link](https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx)
 - Euribor 1-year rate averaged, from 2002 onwards (_Euribor 1-year - Historical close, average of observations through period _): [Link](https://sdw.ecb.europa.eu/quickview.do?SERIES_KEY=143.FM.M.U2.EUR.RT.MM.EURIBOR1YD_.HSTA)
 - Mibor 1-year rate averaged, from 1979 to 2001 (_Cuadro 19.1 del BE - Tipo de interés. De referencia. Oficiales. Mercado hipotecario. Interbancario. Mibor a 1 año_): [Link](https://www.bde.es/webbde/es/estadis/infoest/temas/sb_tiintref.html)
-- Average mortgage rate (_Results > Annual > National indicators > Average interest rate of mortgages constituted > Viviendas + Total_): [Link](https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&cid=1254736170236&menu=resultados&idp=1254735576606#!tabs-1254736169948)
+- Euro Area, Monetary aggregate M3, ECB (_European Central Bank_): [Link](https://sdw.ecb.europa.eu/quickview.do?SERIES_KEY=117.BSI.M.U2.Y.V.M30.X.1.U2.2300.Z01.E)
 - Mortgages constituted according to interest rate, Bank of Spain (_Tipo medio de los préstamos hipotecarios a más de 3 años para adquisición de vivienda libre > Del conjunto de entidades de crédito_): [Link](https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/relacionados/tiposinteres/guia-textual/tiposinteresrefe/tabla_tipos_referencia_oficiales_mercado_hipotecario.html)
+- Housing stock, from 1971 to 2000, according to Atlas Digital de las Áreas Urbanas (_Parque de Viviendas > Viviendas según tipo > Viviendas familiares > Select from available years 1970, 1981, 1991, 2001, 2011 > Tabla and Sintesis_): [Link](https://atlasau.mitma.gob.es/#c=indicator&view=map1). Based on the data from 1970, 1981 and 1991, the remaining years gaps have been estimated, in a similar way as done by Banco de España (_Observatorio de Vivienda y Suelo > Boletines periódicos > Boletín Anual 2021 > Tabla 8.1_): [Link](https://www.mitma.gob.es/arquitectura-vivienda-y-suelo/urbanismo-y-politica-de-suelo/estudios-y-publicaciones/observatorio-de-vivienda-y-suelo)
+- Housing stock, from 2001 onwards (_Total de viviendas por comunidades autónomas y provincias_): [Link](https://apps.fomento.gob.es/BoletinOnline2/?nivel=2&orden=33000000)
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
