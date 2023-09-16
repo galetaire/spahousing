@@ -34,7 +34,7 @@ Equations chart:
 
 [![Reload chart](/images/rainbowsource.png)](/images/rainbowsource.png)
 
-Full dataset chart, from 1964 to 2070:
+Peaks and troughs chart, from 1964 to 2070:
 
 [![Reload chart](/images/rainbow.png)](/images/rainbow.png)
 

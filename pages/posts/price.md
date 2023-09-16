@@ -23,7 +23,7 @@ The prices are constantly rising due to inflation, a consequence of the current 
 - For an overview of housing prices in various currencies, please see this [entry](money).
 - For details about the methodology for real price, please see this [notes](realprice).
 
-# (b) Quarterly evolution of housing prices
+# (b) Quarterly evolution of prices
 
  [![Evolución precio de la vivienda](/images/pricequarterly.png)](/images/pricequarterly.png)
 
