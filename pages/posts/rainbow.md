@@ -8,9 +8,11 @@ author: Last update on
 
 import Image from 'next/image'
 
-# Rainbow model: housing cycles
+<div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
 
-[![Ciclos inmobiliarios](/images/rainbow.png)](/images/rainbow.png)
+# Demographic model: housing cycles
+
+[![Ciclos inmobiliarios](/images/rainbowmax.png)](/images/rainbowmax.png)
 
 - **Color range interpretation** ➞ **Red** = strong overprice; **Orange** = slightly overprice; **Yellow** = neutral; **Green** = slightly underprice; **Blue** = strong underprice.
 
@@ -21,12 +23,12 @@ This is an experimental indicator, open to improvements and corrections.
 Must be read as an informative indicator, not a scientific measure.
 ```
 
-The rainbow curve describes a demographic channel, which, overlapped with the real price, evaluates the stage of the price cycle. A few notes and considerations:
+The rainbow curve describes a demographic band, which, overlapped with the real price, evaluates the stage of the price cycle. A few notes and considerations:
 
 - The real price data is derived from an alternative formula, [real price notes](realprice).
-- The demographic curve has been price-adjusted, generating the rainbow curve.
-- The equation from the rainbow curve is derived from the demographic curve (quadratic function).
-- The yellow line is the reference line, adding two levels up and two levels down.
+- The rainbow curve is a trendline equation derived from the demographic curve (quadratic function).
+- The derived rainbow curve has been price-adjusted, in order to fit properly with the price pattern.
+- The central line (yellow) is the reference trendline, adding an equidistant band until it convers most peaks and troughs.
 
 Equations chart:
 
@@ -34,7 +36,7 @@ Equations chart:
 
 Full dataset chart, from 1964 to 2070:
 
-[![Reload chart](/images/rainbowmax.png)](/images/rainbowmax.png)
+[![Reload chart](/images/rainbow.png)](/images/rainbow.png)
 
 # Data sources
 

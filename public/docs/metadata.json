@@ -1,5 +1,5 @@
 {
-    "@context": "https://spainhousing.xyz/methodology",
+    "@context": "https://spainhousing.eu/methodology",
     "url": "spain_stats_csv.csv",
     "dc:title": "Spainhousing.eu data table",
     "dc:description": "All data refers to Spain if not otherwise specified. This table summarizes and describes each of the columns/indicators of the database",

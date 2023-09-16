@@ -8,6 +8,8 @@ author: Last update on
 
 import Image from 'next/image'
 
+<div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
+
 # Monetary policy
 
 [![Euribor y interes hipotecas](/images/euribor.png)](/images/euribor.png)

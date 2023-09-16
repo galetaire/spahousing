@@ -8,6 +8,8 @@ author: Last update on
 
 import Image from 'next/image'
 
+<div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
+
 # Multivariate model: housing overview
 
 <div align="center">_[**Dynamic chart**](/multivariate.html)_ / _[**Static chart**](/images/multivariate.png)_</div>

@@ -8,6 +8,8 @@ author: Explanatory notes about the index
 
 import Image from 'next/image'
 
+<div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
+
 # Purchasing-age population index
 
 The PAP is an index that draws two ceilings based on demographics. The idea is to model rational demand based on population[1].

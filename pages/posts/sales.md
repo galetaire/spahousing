@@ -8,6 +8,8 @@ author: Last update on
 
 import Image from 'next/image'
 
+<div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
+
 # (a) Annual evolution of home sales
 
 [![Compraventa de vivienda](/images/salesyearly1.png)](/images/salesyearly1.png)

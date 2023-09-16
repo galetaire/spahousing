@@ -8,6 +8,8 @@ author: Last update on
 
 import Image from 'next/image'
 
+<div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
+
 # (a) Home sales by type of buyer
 
 [![Nacionalidad de los compradores de vivienda](/images/buyer.png)](/images/buyer.png)

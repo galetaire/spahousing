@@ -8,6 +8,8 @@ author: Last update on
 
 import Image from 'next/image'
 
+<div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
+
 # (a) Production cost
 
 [![Coste de construcción](/images/costratio.png)](/images/costratio.png)

@@ -8,6 +8,8 @@ author: Last update on
 
 import Image from 'next/image'
 
+<div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
+
 # Price of land and building permits
 
 [![Precio del suelo](/images/permitsland.png)](/images/permitsland.png)

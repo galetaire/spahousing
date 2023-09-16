@@ -8,6 +8,8 @@ author: Explanatory notes about the index
 
 import Image from 'next/image'
 
+<div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
+
 # Measuring urban land scarcity
 
 [![Land scarcity](/images/landscarcity.png)](/images/landscarcity.png)

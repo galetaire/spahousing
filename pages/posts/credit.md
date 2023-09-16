@@ -8,6 +8,8 @@ author: Last update on
 
 import Image from 'next/image'
 
+<div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
+
 # Evolution of mortgages
 
 [![Hipotecas en España](/images/credityearly.png)](/images/credityearly.png)

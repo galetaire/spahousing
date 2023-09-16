@@ -8,6 +8,8 @@ author: Last update on
 
 import Image from 'next/image'
 
+<div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
+
 # Housing price in different currencies
 
 [![Precio de la vivienda en dolares](/images/housedollar.png)](/images/housedollar.png)
