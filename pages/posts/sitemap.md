@@ -1,6 +1,6 @@
 ---
 title: Charts sitemap
-date: 2023-07-01
+date: 2023-10-01
 description:
 tag: All
 author: Collection of all the 44 charts published in the site
@@ -29,7 +29,7 @@ author: Collection of all the 44 charts published in the site
   * (13) [Real credit movement (mortgages)](/images/creditmovement.png)
   * (14) [Ratio between mortgages and home sales](/images/creditratio.png)
   * (15) [Mortgage rates distribution (fixed or variable)](/images/typemortgage.png)
-  + _Monetary policy_
++ _Monetary policy_
   * (16) [Euribor and mortgage rates](/images/euribor.png)
   * (17) [Effects of money policy in price](/images/pricemoneypolicy.png)
   * (18) [Money growth versus housing growth](/images/moneygrowth.png)

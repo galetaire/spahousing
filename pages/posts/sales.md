@@ -1,6 +1,6 @@
 ---
 title: Home sales
-date: 2023-07-01
+date: 2023-10-01
 description:
 tag: All, Demography, Volume
 author: Last update on
