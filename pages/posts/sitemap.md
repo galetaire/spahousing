@@ -1,6 +1,6 @@
 ---
 title: Charts sitemap
-date: 2023-10-01
+date: 2023-12-01
 description:
 tag: All
 author: Collection of all the 44 charts published in the site
