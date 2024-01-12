@@ -28,10 +28,7 @@ You can reach me alternatively through twitter: [@HousingSpanish](https://twitte
 
 # Portfolio Kit and building sources
 
-This portfolio is built with **Next.js** and a library called [Nextra](https://nextra.vercel.app/). Powered by [Vercel](https://vercel.com).
-
-A mirror site is available on the [Handshake](https://handshake.org/) DNS root zone: "http://spain.galetaire/". Note that for resolving the handshake DNS you will need a resolver since most browsers today do not support it, consider using Fingertip:
-* https://github.com/imperviousinc/fingertip
+This portfolio is built with **Next.js** and a library called [Nextra](https://nextra.vercel.app/). Powered by [Vercel](https://vercel.com). A mirror site is available on the [Handshake](https://handshake.org/) DNS root zone: "http://spain.galetaire/".
 
 # License
 
