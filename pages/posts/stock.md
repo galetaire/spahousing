@@ -16,7 +16,7 @@ import Image from 'next/image'
 
 - **Number of dwellings**: new homes built annually since 1971.
   - **Left axis (bars)**: total number of new dwellings per year.
-  - **Right axis (line)**: number of dwellings per each 2 inhabitants.
+  - **Right axis (line)**: number of inhabitants per dwelling.
 
 [![Antiguedad de las viviendas](/images/stockperiods.png)](/images/stockperiods.png)
 
@@ -71,6 +71,7 @@ The evolution of the housing stock is a key factor in the supply balance. A coup
 - Inflation data (_Table: average inflation Spain (CPI) - by year_): [Link](https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx)
 - Public housing (_Vivienda protegida. Series anuales > 1.6. Número de calificaciones definitivas. Planes estatales y planes autonómicos_): [Link](https://apps.fomento.gob.es/BoletinOnline2/?nivel=2&orden=31000000)
 - Private housing (_Vivienda libre. Series anuales > 3.2. Número de viviendas libres terminadas_): [Link](https://apps.fomento.gob.es/BoletinOnline2/?nivel=2&orden=32000000)
+- Average number of persons per household (_Proyección del número medio de personas por hogar en España hasta 2037_): [Link](https://www.epdata.es/proyeccion-numero-medio-personas-hogar-espana-2035/de078c7c-473a-4ade-bc1e-668b2a9677ae)
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
 

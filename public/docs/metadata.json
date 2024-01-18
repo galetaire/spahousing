@@ -486,9 +486,21 @@
           "@type": "Column"
         },
         {
-          "title": "Homes_per_inhabitant",
-          "dc:description": "Total homes per inhabitants",
-          "source": "(Total_homes/Total_population)",
+          "title": "Inhabitants_per_home",
+          "dc:description": "Total inhabitants per home",
+          "source": "(Total_population/Total_homes)",
+          "@type": "Column"
+        },
+        {
+          "title": "Average_people_home",
+          "dc:description": "Average number of people per home",
+          "source": "https://www.epdata.es/proyeccion-numero-medio-personas-hogar-espana-2035/de078c7c-473a-4ade-bc1e-668b2a9677ae",
+          "@type": "Column"
+        },
+        {
+          "title": "Dif_IH_AH",
+          "dc:description": "Total inhabitants per home",
+          "source": "(Average_people_home-Inhabitants_per_home)",
           "@type": "Column"
         },
         {
