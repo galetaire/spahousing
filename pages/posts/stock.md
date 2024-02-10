@@ -10,17 +10,13 @@ import Image from 'next/image'
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
 
-# (a) Stock development
+# Stock development
 
 [![Número de viviendas](/images/stockyearly.png)](/images/stockyearly.png)
 
 - **Number of dwellings**: new homes built annually since 1971.
   - **Left axis (bars)**: total number of new dwellings per year.
   - **Right axis (line)**: number of inhabitants per dwelling.
-
-[![Antiguedad de las viviendas](/images/stockperiods.png)](/images/stockperiods.png)
-
-- **Construction period**: number of today existing dwellings per period of construction. The **red bar** is a final estimate based on the current pace of construction. If the pace remains as 2021 (95.000 per year), the number of houses built between 2021 and 2040 will be of ≈1.800.000.
 
 [![Estoc y balance de viviendas](/images/stockbalance.png)](/images/stockbalance.png)
 
@@ -29,6 +25,19 @@ import Image from 'next/image'
 [![Tipo de vivienda](/images/typehouse.png)](/images/typehouse.png)
 
 - **Distribution of new houses build per type (in %)**: Single-Family or Condominiums.
+
+[![Viviendas por persona](/images/houseperson.png)](/images/houseperson.png)
+
+| **Number of inhabitants per dwelling** | Label | Description |
+| --------- | ------- | ------|
+| 🟦 | No scarcity | There is one house for each 0.06 - 0.99 person |
+| 🟩 | Low scarcity | There is one house for each 1.00 - 1.99 people |
+| 🟨 | Medium scarcity | There is one house for each 2.00 - 2.49 people |
+| 🟥 | High scarcity | There is one house for each 2.50 - 3.48 people |
+
+[![Antiguedad de las viviendas](/images/stockperiods.png)](/images/stockperiods.png)
+
+- **Construction period**: number of today existing dwellings per period of construction. The **red bar** is a final estimate based on the current pace of construction. If the pace remains as 2021 (95.000 per year), the number of houses built between 2021 and 2040 will be of ≈1.800.000.
 
 [![Consumo de cemento](/images/cement.png)](/images/cement.png)
 
@@ -46,20 +55,6 @@ The evolution of the housing stock is a key factor in the supply balance. A coup
 - **Observation D**: the stock has experienced a couple of deficit years since 2017.
 - **Observation E**: the cement consumption and the real price correlate positively.
 
-# (b) Government-funded housing
-
-[![Número de viviendas protegidas](/images/publichousing.png)](/images/publichousing.png)
-
-- **Total units of Government-funded housing**, since 1991.
-
-[![Numéro de viviendas libres y protegidas](/images/publicprivate.png)](/images/publicprivate.png)
-
-- **Housing builds according to type of funding, total units**: public or private.
-
-[![Porcentaje de viviendas libres y protegidas](/images/publicprivateper.png)](/images/publicprivateper.png)
-
-- **Housing builds according to type of funding (%)**: public or private.
-
 # Data sources
 
 - Housing stock, from 1971 to 2000, according to Atlas Digital de las Áreas Urbanas (_Parque de Viviendas > Viviendas según tipo > Viviendas familiares > Select from available years 1970, 1981, 1991, 2001, 2011 > Tabla and Sintesis_): [Link](https://atlasau.mitma.gob.es/#c=indicator&view=map1). Based on the data from 1970, 1981 and 1991, the remaining years gaps have been estimated, in a similar way as done by Banco de España (_Observatorio de Vivienda y Suelo > Boletines periódicos > Boletín Anual 2021 > Tabla 8.1_): [Link](https://www.mitma.gob.es/arquitectura-vivienda-y-suelo/urbanismo-y-politica-de-suelo/estudios-y-publicaciones/observatorio-de-vivienda-y-suelo)
@@ -69,9 +64,8 @@ The evolution of the housing stock is a key factor in the supply balance. A coup
 - Housing prices, from 1985 to 2006, according to Sociedad de Tasación (_Access to data is under request, but can be seen in the linked publication_): [Publication](https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf), [Link](https://www.st-tasacion.es/informe-de-tendencias-digital/)
 - Housing prices, from 2007 onwards, according to the notaries (_Grupo 5 > Acto 501 - Compraventa inmuebles > Inmuebles en fincas urbanas, viviendas_): [Link](http://www.notariado.org/liferay/web/cien/estadisticas-al-completo)
 - Inflation data (_Table: average inflation Spain (CPI) - by year_): [Link](https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx)
-- Public housing (_Vivienda protegida. Series anuales > 1.6. Número de calificaciones definitivas. Planes estatales y planes autonómicos_): [Link](https://apps.fomento.gob.es/BoletinOnline2/?nivel=2&orden=31000000)
-- Private housing (_Vivienda libre. Series anuales > 3.2. Número de viviendas libres terminadas_): [Link](https://apps.fomento.gob.es/BoletinOnline2/?nivel=2&orden=32000000)
 - Average number of persons per household (_Proyección del número medio de personas por hogar en España hasta 2037_): [Link](https://www.epdata.es/proyeccion-numero-medio-personas-hogar-espana-2035/de078c7c-473a-4ade-bc1e-668b2a9677ae)
+- Censo de viviendas 2021 (_Crear tablas > Municipios > Todos los municipios > Viviendas familiares_):[Link](https://www.ine.es/Censo2021/Inicio.do)
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
 

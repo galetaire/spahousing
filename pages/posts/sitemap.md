@@ -3,7 +3,7 @@ title: Charts sitemap
 date: 2023-12-01
 description:
 tag: All
-author: Collection of all the 44 charts published in the site
+author: Collection of all the 46 charts published in the site
 ---
 
 <div class="meta-line"><a class="meta-back" href="/methodology#data-base-access">← Back to methodology</a></div>
@@ -43,26 +43,29 @@ author: Collection of all the 44 charts published in the site
 + _Land and building licenses_
   * (24) [Price of urban land and building licenses](/images/permitsland.png)
   * (25) [Building licenses according to type of permit](/images/permitstype.png)
+  * (26) [Building licenses by type of requester](/images/permitsdistribution.png)
+  * (27) [Land and house velocity ratio](/images/velocity.png)
 + _Stock development_
-  * (26) [Number of dwellings](/images/stockyearly.png)
-  * (27) [Dwellings per period of construction](/images/stockperiods.png)
-  * (28) [Housing stock balance](/images/stockbalance.png)
-  * (29) [Distribution of new houses per type](/images/typehouse.png)
-  * (30) [Cement consumption](/images/cement.png)
-  * (31) [Government-funded housing](/images/publichousing.png)
-  * (32) [Homes build according to type of funding](/images/publicprivate.png)
-  * (33) [Public or private funding (%)](/images/publicprivateper.png)
+  * (28) [Number of dwellings](/images/stockyearly.png)
+  * (29) [Dwellings per period of construction](/images/stockperiods.png)
+  * (30) [Housing stock balance](/images/stockbalance.png)
+  * (31) [Distribution of new houses per type](/images/typehouse.png)
+  * (32) [Cement consumption](/images/cement.png)
++ _Funding source_
+  * (33) [Government-funded housing](/images/publichousing.png)
+  * (34) [Homes build according to type of funding](/images/publicprivate.png)
+  * (35) [Public or private funding (%)](/images/publicprivateper.png)
 + _Production cost_
-  * (34) [Ratio between housing price and construction cost](/images/costratio.png)
-  * (35) [Cost of production](/images/costchange.png)
-  * (36) [Ratio of workers per housing unit built](/images/workersperunit.png)
-  * (37) [Number of workers per 100 inhabitants](/images/employed100.png)
-  * (38) [Gasoline price](/images/gasoline.png)
+  * (36) [Ratio between housing price and construction cost](/images/costratio.png)
+  * (37) [Cost of production](/images/costchange.png)
+  * (38) [Ratio of workers per housing unit built](/images/workersperunit.png)
+  * (39) [Number of workers per 100 inhabitants](/images/employed100.png)
+  * (40) [Gasoline price](/images/gasoline.png)
 + _Ownership structure_
-  * (39) [Home sales by type of buyer](/images/buyer.png)
-  * (40) [Housing by type of tenure](/images/tenure.png)
+  * (41) [Home sales by type of buyer](/images/buyer.png)
+  * (42) [Housing by type of tenure](/images/tenure.png)
 + _Return on investment_
-  * (41) [Housing return on investment](/images/roinet.png)
-  * (42) [Housing gross appreciation](/images/roigross.png)
-  * (43) [Price-to-rent ratio (%)](/images/rentratio.png)
-  * (44) [Price-to-rent ratio (time)](/images/renttime.png)
+  * (43) [Housing return on investment](/images/roinet.png)
+  * (44) [Housing gross appreciation](/images/roigross.png)
+  * (45) [Price-to-rent ratio (%)](/images/rentratio.png)
+  * (46) [Price-to-rent ratio (time)](/images/renttime.png)

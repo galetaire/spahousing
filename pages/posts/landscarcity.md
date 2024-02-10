@@ -12,7 +12,14 @@ import Image from 'next/image'
 
 # Measuring urban land scarcity
 
-[![Land scarcity](/images/landscarcity.png)](/images/landscarcity.png)
+[![Land scarcity](/images/landscarcity2.png)](/images/landscarcity2.png)
+
+| Color | Label | Range
+| --------- | ------- | ------|
+| 🟦 | No scarcity | One square meter costs up to 100 euros |
+| 🟩 | Low scarcity | One square meter costs from 100 to 200 euros |
+| 🟨 | Medium scarcity | One square meter costs from 200 to 300 euros |
+| 🟥 | High scarcity | One square meter costs more than 300 euros |
 
 **Note**: The data used is the official data from the MITMA, which groups urban land price by the size of municipalities. This causes some municipalities, such as Málaga (Andalusia), Barcelona (Catalonia) or Valldemossa (Mallorca), to have a lower value than expected.
 

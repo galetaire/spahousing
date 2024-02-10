@@ -348,27 +348,81 @@
           "@type": "Column"
         },
         {
+          "title": "tx_juridicas_m2",
+          "dc:description": "Number of square meters transacted by legal entities involving urban land",
+          "source": "https://apps.fomento.gob.es/BoletinOnline2/?nivel=2&orden=36000000",
+          "@type": "Column"
+        },
+        {
+          "title": "Tx_fisica_m2",
+          "dc:description": "Number of square meters transacted by physical people involving urban land",
+          "source": "https://apps.fomento.gob.es/BoletinOnline2/?nivel=2&orden=36000000",
+          "@type": "Column"
+        },
+        {
+          "title": "Free_urbanland_km2",
+          "dc:description": "Amount of free urban land in km2",
+          "source": "https://www.catastro.hacienda.gob.es/esp/estadistica_1.asp",
+          "@type": "Column"
+        },
+        {
+          "title": "Urbanland_km2",
+          "dc:description": "Amount of urban land in km2, free or not",
+          "source": "https://www.catastro.hacienda.gob.es/esp/estadistica_1.asp",
+          "@type": "Column"
+        },
+        {
+          "title": "Land_velocity_years",
+          "dc:description": "Number of transactions involving urban land",
+          "source": "=Spain total urban land in Km2/(((Tx_juridicas_m2+Tx_fisica_m2)*1000)/1000000)",
+          "@type": "Column"
+        },
+        {
+          "title": "House_velocity_years",
+          "dc:description": "Number of transactions involving urban land",
+          "source": "=Total_homes/Home_sales",
+          "@type": "Column"
+        },
+        {
           "title": "Building_permits",
           "dc:description": "Number of building permits",
-          "source": "https://www.fomento.gob.es/BE/?nivel=2&orden=09000000",
+          "source": "https://apps.fomento.gob.es/BoletinOnline/?nivel=2&orden=09000000",
           "@type": "Column"
         },
         {
           "title": "Build",
           "dc:description": "Number of permits requested for new buildings",
-          "source": "https://www.fomento.gob.es/BE/?nivel=2&orden=09000000",
+          "source": "https://apps.fomento.gob.es/BoletinOnline/?nivel=2&orden=09000000",
           "@type": "Column"
         },
         {
           "title": "Reform",
           "dc:description": "Number of permits requested for reforms",
-          "source": "https://www.fomento.gob.es/BE/?nivel=2&orden=09000000",
+          "source": "https://apps.fomento.gob.es/BoletinOnline/?nivel=2&orden=09000000",
           "@type": "Column"
         },
         {
           "title": "Demolish",
           "dc:description": "Number of permits requested for demolishing",
-          "source": "https://www.fomento.gob.es/BE/?nivel=2&orden=09000000",
+          "source": "https://apps.fomento.gob.es/BoletinOnline/?nivel=2&orden=09000000",
+          "@type": "Column"
+        },
+        {
+          "title": "Permits_legalentity",
+          "dc:description": "Number of permits requested by legal entities",
+          "source": "https://apps.fomento.gob.es/BoletinOnline/?nivel=2&orden=09000000",
+          "@type": "Column"
+        },
+        {
+          "title": "Permits_individuals",
+          "dc:description": "Number of permits requested by individuals",
+          "source": "https://apps.fomento.gob.es/BoletinOnline/?nivel=2&orden=09000000",
+          "@type": "Column"
+        },
+        {
+          "title": "Permits_publicadmin",
+          "dc:description": "Number of permits requested by public entities",
+          "source": "https://apps.fomento.gob.es/BoletinOnline/?nivel=2&orden=09000000",
           "@type": "Column"
         },
         {

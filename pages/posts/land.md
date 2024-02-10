@@ -22,6 +22,14 @@ import Image from 'next/image'
 
 - **Building licenses according to type of permit**: build (new), reform or demolition.
 
+[![Visados de obra](/images/permitsdistribution.png)](/images/permitsdistribution.png)
+
+- **Building licenses by type of requester**: legal (private) entities, individuals or public entities.
+
+[![Velocity](/images/velocity.png)](/images/velocity.png)
+
+- **House and land velocity ratio**: The velocity is a measurement of the rate at which the current stock (house or land) is exchanged. If the ratio is, for example, 90, it means that it would take 90 years to fully exchange the stock at current speed.
+
 [![Land scarcity](/images/landscarcity.png)](/images/landscarcity.png)
 
 - **Urban land scarcity index**: For an approach to land scarcity, please see this [entry](landscarcity).
@@ -36,7 +44,8 @@ The charts from above show the number of annual building licenses (and the type 
 
 # Data sources
 
-- Construction and Building Permits (_11.Visados de dirección de obra. Nº visados según tipo de obra_): [Link](https://apps.fomento.gob.es/BoletinOnline/?nivel=2&orden=09000000)
-- Price of land (_Series estadísticas > Precios del suelo > 4.Precio medio del metro cuadrado de suelo urbano por comunidades autónomas y provincias_): [Link](https://www.mitma.gob.es/el-ministerio/informacion-estadistica/vivienda-y-actuaciones-urbanas/estadisticas/suelo/estadisticas-de-precios-de-suelo-urbano)
+- Construction and Building Permits (_11.Visados de dirección de obra. Nº visados según tipo de obra; 8.Visados de dirección de obra: Obra nueva, ampliación y/o reforma de edificios. Nº de edificios según clase de promotor._): [Link](https://apps.fomento.gob.es/BoletinOnline/?nivel=2&orden=09000000)
+- Pricea and transactions of land (_Series estadísticas > Precios del suelo > 4.Precio medio del metro cuadrado de suelo urbano por comunidades autónomas y provincias_): [Link](https://www.mitma.gob.es/el-ministerio/informacion-estadistica/vivienda-y-actuaciones-urbanas/estadisticas/suelo/estadisticas-de-precios-de-suelo-urbano)
+- Total urban land area (_Resultados nacionales > Por intervalos población y superficies parcelas urbanas_) [Link](https://www.catastro.hacienda.gob.es/esp/estadistica_1.asp)
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
