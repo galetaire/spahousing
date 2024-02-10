@@ -10,7 +10,7 @@ import Image from 'next/image'
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
 
-# Funding origin
+# Funding source
 
 [![Numéro de viviendas libres y protegidas](/images/publicprivate.png)](/images/publicprivate.png)
 
