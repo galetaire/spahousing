@@ -28,8 +28,7 @@ import Image from 'next/image'
 
 [![Viviendas por persona](/images/houseperson.png)](/images/houseperson.png)
 
-- **Number of inhabitants per dwelling**:
-| Color | Label | Description |
+| Color | Label | Number of inhabitants per dwelling |
 | --------- | ------- | ------|
 | 🟦 | No scarcity | There is one house for each 0.06 - 0.99 person |
 | 🟩 | Low scarcity | There is one house for each 1.00 - 1.99 people |
