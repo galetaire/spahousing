@@ -16,7 +16,7 @@ import Image from 'next/image'
 
 - **Number of dwellings**: new homes built annually since 1971.
   - **Left axis (bars)**: total number of new dwellings per year.
-  - **Right axis (line)**: number of inhabitants per dwelling.
+  - **Right axis (line)**: number of inhabitants per dwelling. Detailed map **[here](housescarcity)**.
 
 [![Estoc y balance de viviendas](/images/stockbalance.png)](/images/stockbalance.png)
 
@@ -25,15 +25,6 @@ import Image from 'next/image'
 [![Tipo de vivienda](/images/typehouse.png)](/images/typehouse.png)
 
 - **Distribution of new houses build per type (in %)**: Single-Family or Condominiums.
-
-[![Viviendas por persona](/images/houseperson.png)](/images/houseperson.png)
-
-| Color | Label | Number of inhabitants per dwelling |
-| --------- | ------- | ------|
-| 🟦 | No scarcity | There is one house for each 0.06 - 0.99 person |
-| 🟩 | Low scarcity | There is one house for each 1.00 - 1.99 people |
-| 🟨 | Medium scarcity | There is one house for each 2.00 - 2.49 people |
-| 🟥 | High scarcity | There is one house for each 2.50 - 3.48 people |
 
 [![Antiguedad de las viviendas](/images/stockperiods.png)](/images/stockperiods.png)
 
