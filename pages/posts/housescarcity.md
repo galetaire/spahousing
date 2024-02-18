@@ -24,6 +24,7 @@ Measuring house scarcity is not a straightforward task, as multiple factors can 
 | 🟥 | High scarcity | There is one house for each 2.50 - 3.48 people |
 
 **Note**: The data used is the data from the INE, [Censo de viviendas 2021](https://www.ine.es/Censo2021/Inicio.do).
+
 **Download full dataset:**: [Coming soon](https://github.com/galetaire/spahousing)
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
