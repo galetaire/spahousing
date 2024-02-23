@@ -1,6 +1,6 @@
 ---
 title: House in various currencies
-date: 2023-12-01
+date: 2024-23-02
 description:
 tag: All, Price
 author: Last update on
@@ -11,6 +11,8 @@ import Image from 'next/image'
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
 
 # Housing price in different currencies
+
+Real estate is one of the world’s biggest store of wealth. Wealth is measured in units of account, commonly currencies or money. However, not all of them offer equal performance in terms of wealth preservation.
 
 [![Precio de la vivienda en dolares](/images/housedollar.png)](/images/housedollar.png)
 - **Price in dollars, 100m<sup>2</sup> house**: the rate EUR/USD used is the yearly average.
@@ -23,10 +25,6 @@ import Image from 'next/image'
 [![Precio de la vivienda en bitcoin](/images/housebitcoin.png)](/images/housebitcoin.png)
 - **Price in bitcoins, 100m<sup>2</sup> house**: the bitcoin price used is the yearly average.
 - **Price in euros, 100m<sup>2</sup> house**: average price, more information back in [Price](price).
-
-# Interpretation and observations
-
-Real estate is one of the world’s biggest store of wealth. Wealth is measured in units of account, commonly currencies or money. However, not all of them offer equal performance in terms of wealth preservation.
 
 # Data sources
 

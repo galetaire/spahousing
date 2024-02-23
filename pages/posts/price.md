@@ -1,6 +1,6 @@
 ---
 title: Price
-date: 2023-12-01
+date: 2024-23-02
 description:
 tag: All, Price
 author: Last update on
@@ -14,14 +14,11 @@ import Image from 'next/image'
 
 [![Evolución precio de la vivienda](/images/priceyearly.png)](/images/priceyearly.png)
 
-- **House price in Spain since 1985, in euros per square meter**: nominal price, real price (inflation-adjusted, CPI Base 100 = 1985), and accumulated inflation.
-
-# Interpretation and observations
+- **House price in Spain since 1985, in euros per square meter**: nominal price, [real price](realprice) (inflation-adjusted, CPI Base 100 = 1985), and accumulated inflation.
 
 The prices are constantly rising due to inflation, a consequence of the current monetary policy. The uptrend is however cyclical, with major expansions and minor regressions.
 
-- For an overview of housing prices in various currencies, please see this [entry](money).
-- For details about the methodology for real price, please see this [notes](realprice).
+For an overview of **housing prices in various currencies**, please see this [entry](money).
 
 # (b) Quarterly evolution of prices
 
@@ -29,8 +26,6 @@ The prices are constantly rising due to inflation, a consequence of the current 
 
 - **Left axis (line)**: house price in euros per square meter, according to Idealista and to the notaries.
 - **Right axis (area)**: percentage of difference (in absolute value) between the two compared price sources.
-
-# Interpretation and observations
 
 Both trends are similar, however, the price according to the notaries is always below the Idealista price. This discrepancy could be explained by the fact that the Idealista price shows the price proposed by the seller, while the notary price shows the price paid by the buyer.
 

@@ -1,6 +1,6 @@
 ---
 title: Production cost
-date: 2023-12-01
+date: 2024-23-02
 description:
 tag: All, Price, Volume
 author: Last update on
@@ -15,6 +15,7 @@ import Image from 'next/image'
 [![Coste de construcción](/images/costratio.png)](/images/costratio.png)
 
 - **Ratio between the average housing price and the average construction cost:** if the ratio is (x), it means houses are being sold (x) times the price of production.
+- **Observation**: a higher ratio means the construction sector has higher profit margins. Note that a big part of these profit margins are in fact tax payments.
 
 [![Coste de materiales](/images/costchange.png)](/images/costchange.png)
 
@@ -28,19 +29,12 @@ import Image from 'next/image'
 
 - **Number of workers employed in construction per 100 inhabitants**.
 
-# Interpretation and observations
-
-About the ratio between the housing price and the construction cost. A higher ratio means the construction sector has higher profit margins (note that a big part of these profit margins are in fact tax payments). In this regard, the year 2006 had the highest margins and 1997 the lowest ones.
-
 # (b) Oil price
 
 [![Precio gasolina](/images/gasoline.png)](/images/gasoline.png)
 
 - **Spain gasoline prices, in US dollars per litre**. As means of comparison, the price of US gasoline is represented also in the chart. Since oil is traded worldwide in dollars, representing the price in $US is more suitable than using local currencies.
-
-# Interpretation and observations
-
-Housing is directly related to energy, since its construction requires large amounts of it. Oil accounts for ≈29% of all the primary energy consumed worldwide ([1](https://www.iea.org/data-and-statistics/data-tools/energy-statistics-data-browser?country=WORLD&fuel=Energy%20supply&indicator=TESbySource), [2](https://ourworldindata.org/global-energy-200-years)). It is the current key resource for maintaining and improving the human standard of living, and its price also determines the future of the real-estate market.
+- **Observation**: housing is directly related to energy, since construction requires large amounts of it. Oil accounts for ≈29% of all the primary energy consumed worldwide ([1](https://www.iea.org/data-and-statistics/data-tools/energy-statistics-data-browser?country=WORLD&fuel=Energy%20supply&indicator=TESbySource), [2](https://ourworldindata.org/global-energy-200-years)). It is the current key resource for maintaining and improving the human standard of living, and its price also determines the future of the real-estate market.
 
 # Data sources
 

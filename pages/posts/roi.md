@@ -1,6 +1,6 @@
 ---
 title: Housing return on investment
-date: 2023-12-01
+date: 2024-23-02
 description:
 tag: All, Price
 author: Last update on
@@ -24,17 +24,6 @@ import Image from 'next/image'
   - **Bars**: green denotes positive appreciation; red denotes negative.
   - **Black dotted line**: annual inflation rate, represented in percentage.
 
-# Interpretation and observations
-
-By looking at the housing appreciation, i.e. whether if houses increase or decrease in value year over year. We can distinguish several outstanding periods:
-
-- 1986 - 1990: Strong revaluation.
-- 1991 - 1993: Stagnation.
-- 1994 - 2007: Steady revaluation.
-- 2008 - 2013: Strong devaluation.
-- 2014 - 2019: Moderate revaluation.
-- 2020 - 2022: Covid-19, impact and rebound.
-
 # (b) Average rental return
 
 _Rental source: [**Idealista**](https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/alquiler/)_
@@ -46,8 +35,6 @@ _Rental source: [**Idealista**](https://www.idealista.com/sala-de-prensa/informe
 [![Rentabilidad alquiler](/images/renttime.png)](/images/renttime.png)
 
 - **Price-to-rent ratio (time, net and gross)**: number of years to fully recover a home purchase in Spain.
-
-# Interpretation and observations
 
 The charts from above show the ratio between the purchase price and the rental price (both in %; and in time, years). In essence, it's an indicator similar to the price-to-earnings ratio (P/E) used in the stock market analysis. It can be interpreted as follows:
 

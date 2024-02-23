@@ -1,6 +1,6 @@
 ---
 title: Multivariate model
-date: 2023-12-01
+date: 2024-23-02
 description:
 tag: All, Price, Volume, Credit, Labor, Demography
 author: Last update on
@@ -15,11 +15,7 @@ import Image from 'next/image'
 <div align="center">_[**Dynamic chart**](/multivariate.html)_ / _[**Static chart**](/images/multivariate.png)_</div>
 <span>[![Datos del mercado inmobiliario](/images/multivariate.png)](/images/multivariate.png)</span>
 
-- The model groups together seven variables: nominal price, real price, sales, inflation, mortgages, interest rate and employment.
-
-# Interpretation and observations
-
-All variables are represented as a percentage. Some clarifications to facilitate its reading:
+The model groups together seven variables: nominal price, real price, sales, inflation, mortgages, interest rate and employment. All variables are represented as a percentage. Some clarifications to facilitate its reading:
 
 - **Unemployment, Inflation**: average rate for the given year.
 - **Real price**[1]: percentage of difference between the nominal and the inflation rate.

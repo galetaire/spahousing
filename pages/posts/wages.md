@@ -1,6 +1,6 @@
 ---
 title: Wages
-date: 2023-12-01
+date: 2024-23-02
 description:
 tag: All, Labor, Credit
 author: Last update on
@@ -17,6 +17,7 @@ import Image from 'next/image'
 - **Evolution of wages**: the _ideal wage_ is defined as "the wage that allows you to completely pay off your mortgage with 5 years of full wage".
   - **Left axis (bars)**: the standard wage represents the net disposable income averaged for those over 18 years of age, Spain, in euros.
   - **Right axis (line)**: average mortgage amount, Spain, in euros.
+- **Observation**: Convergence and divergence cycles are found. Divergence implies that housing prices grow faster than wages, and convergence the opposite (2003 to 2007 = divergence; 2008 to 2013 = convergence; 2014 to 2021 = divergence).
 
 [![Salario ideal](/images/wageratio.png)](/images/wageratio.png)
 
@@ -25,14 +26,6 @@ import Image from 'next/image'
 [![Acceso a la vivienda](/images/wageaffordability.png)](/images/wageaffordability.png)
 
 - **Housing affordability index (Base 100=1999), Spain**: it considers income growth against housing, inflation and mortgage rates growth.
-
-# Interpretation and observations
-
-By looking at wages, convergence and divergence cycles are found. Divergence implies that housing prices grow faster than wages, and convergence the opposite.
-
-- 2003 - 2007: Wage/price divergence.
-- 2008 - 2013: Wage/price convergence.
-- 2014 - 2021: Wage/price divergence.
 
 # Data sources
 

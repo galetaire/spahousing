@@ -1,6 +1,6 @@
 ---
 title: Mortgages
-date: 2023-12-01
+date: 2024-23-02
 description:
 tag: All, Credit
 author: Last update on
@@ -15,29 +15,22 @@ import Image from 'next/image'
 [![Hipotecas en España](/images/credityearly.png)](/images/credityearly.png)
 
 - **Annual evolution of mortgages**, total number of mortgages approved and released[1].
+- **Observation**: mortgage approvals were far above the upper limit in the 2000s.
 
 [![Crédito en España](/images/creditmovement.png)](/images/creditmovement.png)
 
-- **Real credit movement and mortgages amount**, Spain.
+- **Real credit movement and mortgages amount**.
   - **Left axis (bars)**: Real credit movement, in percentage.
   - **Right axis (line)**: average annual mortgage amount, in euros.
 
 [![Burbuja inmobiliaria](/images/creditratio.png)](/images/creditratio.png)
 
 - **Ratio between mortgages and home sales**: if the ratio is (x), it means there a (x) mortgages per each (1) home sale.
+- **Observation**: the ratio _Mortgages/Sales_ hints the formation of real estate bubbles.
 
 [![Tipo de hipotecas firmadas](/images/typemortgage.png)](/images/typemortgage.png)
 
 - **Mortgages constituted according to type of interest rate (%)**: fixed or variable.
-
-# Interpretation and observations
-
-Credit correlates positively with the evolution of housing prices. Some observations:
-
-- **Observation A**: mortgage approvals were far above the upper limit in the 2000s.
-- **Observation B**: the average mortgage amount follows an uptrend.
-- **Observation C**: the real credit movement allow us to see the debt cycles.
-- **Observation D**: the ratio _Mortgages/Sales_ hints the formation of real estate bubbles.
 
 # Data sources
 

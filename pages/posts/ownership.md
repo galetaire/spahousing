@@ -1,6 +1,6 @@
 ---
 title: Ownership structure
-date: 2023-12-01
+date: 2024-23-02
 description:
 tag: All, Volume, Demography
 author: Last update on
@@ -14,8 +14,6 @@ import Image from 'next/image'
 
 [![Nacionalidad de los compradores de vivienda](/images/buyer.png)](/images/buyer.png)
 
-# Interpretation and observations
-
 The chart from above shows the distribution (%) of home sales according to whether the buyer is national, foreigner or a legal entity (companies, investment funds ...). Thus, we can see who dominates and who departs the market. Some observations:
 
 - **Observation A**: between 2011 and 2013 the weight of legal entities expanded, which can be interpreted as (1) an interest by investment funds, and (2) an increase in foreclosures.
@@ -24,8 +22,6 @@ The chart from above shows the distribution (%) of home sales according to wheth
 # (b) Housing by type of tenure
 
 [![Régimen de tenencia de la vivienda](/images/tenure.png)](/images/tenure.png)
-
-# Interpretation and observations
 
 The chart from above shows the distribution (%) of homes according to whether the house is owned (fully paid), owned but mortgaged, rented or freely loaned. Thus, we can see the structure of ownership in Spain. Some observations:
 

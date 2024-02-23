@@ -1,6 +1,6 @@
 ---
 title: Unemployment
-date: 2023-12-01
+date: 2024-23-02
 description:
 tag: All, Labor, Price
 author: Last update on
@@ -17,22 +17,13 @@ import Image from 'next/image'
 - **Annual evolution of unemployment and housing prices**, Spain.
   - **Left axis**: average unemployment rate for each year.
   - **Right axis**: average price growth rate (inverted) for each year.
+- **Observation**: Unemployment and housing prices have an inverse relationship. When unemployment falls, housing prices rise. When unemployment rises, housing prices fall.
 
 [![Paro y precio de la viviendas](/images/labor2.png)](/images/labor2.png)
 
 - **Quarterly evolution of unemployment and housing prices**, Spain.
   - **Left axis**: HPI (Housing Price Index) not inflation adjusted (base 100 = 2015).
   - **Right axis**: average unemployment rate (inverted) for each quarter.
-
-# Interpretation and observations
-
-Unemployment and housing prices have an inverse relationship. We can distinguish several outstanding periods:
-
-- 1986 - 1990: Unemployment falls, housing prices rise.
-- 1991 - 1996: Unemployment rises, housing prices fall.
-- 1997 - 2006: Unemployment falls, housing prices rise.
-- 2007 - 2013: Unemployment rises, housing prices fall.
-- 2014 - 2020: Unemployment falls, housing prices rise.
 
 # Data sources
 

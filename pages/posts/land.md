@@ -1,6 +1,6 @@
 ---
 title: Land and building permits
-date: 2023-12-01
+date: 2024-23-02
 description:
 tag: All, Price, Volume
 author: Last update on
@@ -33,14 +33,6 @@ import Image from 'next/image'
 [![Land scarcity](/images/landscarcity.png)](/images/landscarcity.png)
 
 - **Urban land scarcity index**: For an approach to land scarcity, please see this [entry](landscarcity).
-
-# Interpretation and observations
-
-The charts from above show the number of annual building licenses (and the type of permit), as well as the price of land in Spain per square meter. Some observations:
-
-- **Observation A**: permits expanded greatly in the 1990s, for then crashing in the 2010s.
-- **Observation B**: since 2008 renovation permits have overcome new build permits.
-- **Observation C**: the price of land in Spain stagnated from 2013 to 2021.
 
 # Data sources
 

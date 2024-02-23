@@ -1,6 +1,6 @@
 ---
 title: Stock development
-date: 2023-12-01
+date: 2024-23-02
 description:
 tag: All, Volume
 author: Last update on
@@ -17,10 +17,12 @@ import Image from 'next/image'
 - **Number of dwellings**: new homes built annually since 1971.
   - **Left axis (bars)**: total number of new dwellings per year.
   - **Right axis (line)**: number of inhabitants per dwelling. Detailed map **[here](housescarcity)**.
+- **Observation**: the ratio of inhabitants per dwelling stopped decreasing in the middle 2010s, hinting disruption in the supply balance that could lead to price increases.
 
 [![Estoc y balance de viviendas](/images/stockbalance.png)](/images/stockbalance.png)
 
 - **Housing surplus or deficit**: difference between housing growth and population growth. Blue color implies housing surplus; green color implies housing deficit.
+- **Observation**: for the first time ever, the stock experienced several deficit years in the early 2020s.
 
 [![Tipo de vivienda](/images/typehouse.png)](/images/typehouse.png)
 
@@ -29,22 +31,14 @@ import Image from 'next/image'
 [![Antiguedad de las viviendas](/images/stockperiods.png)](/images/stockperiods.png)
 
 - **Construction period**: number of today existing dwellings per period of construction. The **red bar** is a final estimate based on the current pace of construction. If the pace remains as 2021 (95.000 per year), the number of houses built between 2021 and 2040 will be of ≈1.800.000.
+- **Observation**: most of the current Spain houses were built between 1961 and 1980.
 
 [![Consumo de cemento](/images/cement.png)](/images/cement.png)
 
 - **Cement consumption**, Spain.
   - **Left axis (bars)**: cement consumption per year, in metric tons.
   - **Right axis (line)**: real housing price[1] in euros per square meter.
-
-# Interpretation and observations
-
-The evolution of the housing stock is a key factor in the supply balance. A couple of observations from the previous charts:
-
-- **Observation A**: the number of houses built per year dropped drastically in 2009.
-- **Observation B**: houses per inhabitant increased from 1971 to 2000.
-- **Observation C**: most of the current Spain houses were built between 1961 and 1980.
-- **Observation D**: the stock has experienced a couple of deficit years since 2017.
-- **Observation E**: the cement consumption and the real price correlate positively.
+- **Observation**: the cement consumption and the real price correlate positively.
 
 # Data sources
 

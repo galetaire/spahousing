@@ -1,6 +1,6 @@
 ---
 title: Rainbow model
-date: 2023-12-01
+date: 2024-23-02
 description:
 tag: All, Price, Demography
 author: Last update on
@@ -15,8 +15,6 @@ import Image from 'next/image'
 [![Ciclos inmobiliarios](/images/rainbowmax.png)](/images/rainbowmax.png)
 
 - **Color range interpretation** ➞ **Red** = strong overprice; **Orange** = slightly overprice; **Yellow** = neutral; **Green** = slightly underprice; **Blue** = strong underprice.
-
-# Interpretation and observations
 
 ```
 This is an experimental indicator, open to improvements and corrections.
