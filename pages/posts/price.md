@@ -15,10 +15,9 @@ import Image from 'next/image'
 [![Evolución precio de la vivienda](/images/priceyearly.png)](/images/priceyearly.png)
 
 - **House price in Spain since 1985, in euros per square meter**: nominal price, [real price](realprice) (inflation-adjusted, CPI Base 100 = 1985), and accumulated inflation.
+- For an overview of **housing prices in various currencies**, see this [entry](money).
 
 The prices are constantly rising due to inflation, a consequence of the current monetary policy. The uptrend is however cyclical, with major expansions and minor regressions.
-
-For an overview of **housing prices in various currencies**, please see this [entry](money).
 
 # (b) Quarterly evolution of prices
 
@@ -27,13 +26,10 @@ For an overview of **housing prices in various currencies**, please see this [en
 - **Left axis (line)**: house price in euros per square meter, according to Idealista and to the notaries.
 - **Right axis (area)**: percentage of difference (in absolute value) between the two compared price sources.
 
-Both trends are similar, however, the price according to the notaries is always below the Idealista price. This discrepancy could be explained by the fact that the Idealista price shows the price proposed by the seller, while the notary price shows the price paid by the buyer.
+While both trends share similarities, the notary-reported prices consistently lag behind those listed on Idealista. This variance likely stems from the fact that Idealista represents the seller's asking price, while notaries reflect the actual transaction price paid by buyers. The _"Spread"_ and the _"Sharp change"_ are intended to serve as signals to capture trend changes:
 
-The _"Spread"_ and the _"Sharp change"_ are intended to serve as signals to capture trend changes.
-
-- **Differential or Spread**: the grey bars (right axis) simply show the difference between the two prices in %. The two lines should not be too far apart, as they represent the same information.
-
-- **Sharp change**: the green line shows the variation of the notarial price compared to the Idealista trend. The line can move away from the Idealista price both upwards and downwards. For example, in 2010-2012 there are a couple of visible moments when it moves clearly downwards, suggesting that the downward pressure is strong.
+- **Spread**: depicted by the grey bars (right axis), denotes the difference between the two prices in %. It could hint the level of discount price managed in the market.
+- **Sharp change**: represented by the green line, showcases fluctuations between both prices. For example, in 2010-2012, there are a couple of visible moments when it moves downwards, suggesting that the downward pressure is strong.
 
 # Data sources
 

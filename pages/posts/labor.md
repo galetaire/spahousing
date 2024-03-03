@@ -17,7 +17,7 @@ import Image from 'next/image'
 - **Annual evolution of unemployment and housing prices**, Spain.
   - **Left axis**: average unemployment rate for each year.
   - **Right axis**: average price growth rate (inverted) for each year.
-- **Observation**: Unemployment and housing prices have an inverse relationship. When unemployment falls, housing prices rise. When unemployment rises, housing prices fall.
+- **Observation**: Unemployment and housing prices have an inverse relationship. When unemployment falls, housing prices rise, and vice versa.
 
 [![Paro y precio de la viviendas](/images/labor2.png)](/images/labor2.png)
 

@@ -14,8 +14,7 @@ import Image from 'next/image'
 
 [![Euribor y interes hipotecas](/images/euribor.png)](/images/euribor.png)
 
-- **Euribor 1-year average rate and average mortgage rate**, Spain.
-- The _Euro Interbank Offered Rate_ (Euribor) plays a key role mostly through the mortgage market. An increase of the Euribor implies an increase in mortgage rates, which if sustained for longer periods, constraints the debt capacity for borrowers, resulting in general price stagnation due to the lack of new money flowing into the system, or even price regression if there is an excessive amount of credit accumulated (credit bubble).
+- **Euribor 1-year average rate and average mortgage rate**, Spain. The [Euribor](https://www.euribor-rates.eu/en/) plays a key role in the mortgage market. An increase (or decrease) of it implies increases (or decreases) in mortgage rates, which alters the direction and speed of money movement.
 
 [![Politica monetaria y precio vivienda](/images/pricemoneypolicy.png)](/images/pricemoneypolicy.png)
 
@@ -25,8 +24,7 @@ import Image from 'next/image'
 
 [![Crecimiento de la vivienda y el dinero](/images/moneygrowth.png)](/images/moneygrowth.png)
 
-- **Money growth compared to housing growth (%)**: housing stock grows significantly below the money pace.
-- The _Money stock_ plays a key role due to the fact that if the stock of the _Euro_ grows faster than the stock of houses, houses become scarcer relative to the money in circulation, pushing up the housing prices and vice versa.
+- **Money growth compared to housing growth (%)**. The money stock plays a key role due to the fact that if the stock of the Euro grows faster than the stock of houses, houses become scarcer relative to the money in circulation, pushing up the housing prices and vice versa.
 
 # Data sources
 

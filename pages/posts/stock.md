@@ -31,14 +31,12 @@ import Image from 'next/image'
 [![Antiguedad de las viviendas](/images/stockperiods.png)](/images/stockperiods.png)
 
 - **Construction period**: number of today existing dwellings per period of construction. The **red bar** is a final estimate based on the current pace of construction. If the pace remains as 2021 (95.000 per year), the number of houses built between 2021 and 2040 will be of ≈1.800.000.
-- **Observation**: most of the current Spain houses were built between 1961 and 1980.
 
 [![Consumo de cemento](/images/cement.png)](/images/cement.png)
 
-- **Cement consumption**, Spain.
+- **Cement consumption**, Spain. The cement consumption and the real price correlate positively.
   - **Left axis (bars)**: cement consumption per year, in metric tons.
   - **Right axis (line)**: real housing price[1] in euros per square meter.
-- **Observation**: the cement consumption and the real price correlate positively.
 
 # Data sources
 

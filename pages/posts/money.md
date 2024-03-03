@@ -12,7 +12,7 @@ import Image from 'next/image'
 
 # Housing price in different currencies
 
-Real estate is one of the world’s biggest store of wealth. Wealth is measured in units of account, commonly currencies or money. However, not all of them offer equal performance in terms of wealth preservation.
+Real estate is one of the world's largest stores of wealth. Wealth is measured in units of account, commonly currencies or money. However, not all of them offer equal performance in terms of wealth preservation.
 
 [![Precio de la vivienda en dolares](/images/housedollar.png)](/images/housedollar.png)
 - **Price in dollars, 100m<sup>2</sup> house**: the rate EUR/USD used is the yearly average.

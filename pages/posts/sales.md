@@ -33,11 +33,7 @@ The [PAP housing index](papindex) draws two ceilings based on demographics. The 
 - **Left axis (bars)**: total number of home sales in each quarter.
 - **Right axis (line)**: housing price index.
 
-The color indicates whether the number of sales is lower than the previous quarter (red) or higher (green). The black line represents the HPI price. Some observations:
-
-- **Observation A**: Between 2007 and 2013 the number of sales followed a downward trend, chaining 5 red bars in a row.
-- **Observation B**: In 2020 sales plummet as a result of the Covid-19 lockdowns.
-- **Observation C**: Between 2014 and 2021 the trend changes and the number of sales rises, chaining 3 consecutive green bars in 2018, and 5 in 2021.
+The color indicates whether the number of sales is lower than the previous quarter (red) or higher (green). The black line represents the HPI price.
 
 # Data sources
 

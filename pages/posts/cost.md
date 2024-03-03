@@ -34,7 +34,7 @@ import Image from 'next/image'
 [![Precio gasolina](/images/gasoline.png)](/images/gasoline.png)
 
 - **Spain gasoline prices, in US dollars per litre**. As means of comparison, the price of US gasoline is represented also in the chart. Since oil is traded worldwide in dollars, representing the price in $US is more suitable than using local currencies.
-- **Observation**: housing is directly related to energy, since construction requires large amounts of it. Oil accounts for ≈29% of all the primary energy consumed worldwide ([1](https://www.iea.org/data-and-statistics/data-tools/energy-statistics-data-browser?country=WORLD&fuel=Energy%20supply&indicator=TESbySource), [2](https://ourworldindata.org/global-energy-200-years)). It is the current key resource for maintaining and improving the human standard of living, and its price also determines the future of the real-estate market.
+- **Observation**: housing is directly related to energy, since construction requires large amounts of it. Oil accounts for ≈29% of all the primary energy consumed worldwide ([1](https://www.iea.org/data-and-statistics/data-tools/energy-statistics-data-browser?country=WORLD&fuel=Energy%20supply&indicator=TESbySource), [2](https://ourworldindata.org/global-energy-200-years)).
 
 # Data sources
 

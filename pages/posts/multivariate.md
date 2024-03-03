@@ -18,7 +18,7 @@ import Image from 'next/image'
 The model groups together seven variables: nominal price, real price, sales, inflation, mortgages, interest rate and employment. All variables are represented as a percentage. Some clarifications to facilitate its reading:
 
 - **Unemployment, Inflation**: average rate for the given year.
-- **Real price**[1]: percentage of difference between the nominal and the inflation rate.
+- **[Real price](realprice)**: percentage of difference between the nominal and the inflation rate.
 - **Mortgages, Home sales, Nominal price, Interest rate (_Mibor/Euribor_)**: percentage of annual change compared to the previous year.
 
 # Data sources
@@ -34,5 +34,3 @@ The model groups together seven variables: nominal price, real price, sales, inf
 - Mibor 1-year rate averaged, from 1979 to 2001 (_Cuadro 19.1 del BE - Tipo de interés. De referencia. Oficiales. Mercado hipotecario. Interbancario. Mibor a 1 año_): [Link](https://www.bde.es/webbde/es/estadis/infoest/temas/sb_tiintref.html)
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
-
-[1] For details about the methodology for real price, please see this [notes](realprice).
