@@ -30,13 +30,14 @@ import Image from 'next/image'
 
 [![Antiguedad de las viviendas](/images/stockperiods.png)](/images/stockperiods.png)
 
-- **Construction period**: number of today existing dwellings per period of construction. The **red bar** is a final estimate based on the current pace of construction. If the pace remains as 2021 (95.000 per year), the number of houses built between 2021 and 2040 will be of ≈1.800.000.
+- **Construction period**: number of today existing dwellings per period of construction.
+- The **red bar** is a final estimate based on the current pace of construction. If the pace remains as 2021 (95.000 per year), the number of houses built between 2021 and 2040 will be of ≈1.800.000.
 
 [![Consumo de cemento](/images/cement.png)](/images/cement.png)
 
-- **Cement consumption**, Spain. The cement consumption and the real price correlate positively.
+- **Cement consumption**, Spain. Consumption and real price correlate positively.
   - **Left axis (bars)**: cement consumption per year, in metric tons.
-  - **Right axis (line)**: real housing price[1] in euros per square meter.
+  - **Right axis (line)**: [real housing price](realprice). in euros per square meter.
 
 # Data sources
 
@@ -51,5 +52,3 @@ import Image from 'next/image'
 - Censo de viviendas 2021 (_Crear tablas > Municipios > Todos los municipios > Viviendas familiares_):[Link](https://www.ine.es/Censo2021/Inicio.do)
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
-
-[1] The real price represented is the _Real value overrated_. For details about the methodology, please see this [notes](realprice).

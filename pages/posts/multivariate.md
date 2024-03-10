@@ -15,7 +15,7 @@ import Image from 'next/image'
 <div align="center">_[**Dynamic chart**](/multivariate.html)_ / _[**Static chart**](/images/multivariate.png)_</div>
 <span>[![Datos del mercado inmobiliario](/images/multivariate.png)](/images/multivariate.png)</span>
 
-The model groups together seven variables: nominal price, real price, sales, inflation, mortgages, interest rate and employment. All variables are represented as a percentage. Some clarifications to facilitate its reading:
+The model groups together seven variables: nominal price, real price, sales, inflation, mortgages, interest rate and employment. All variables are represented as a percentage.
 
 - **Unemployment, Inflation**: average rate for the given year.
 - **[Real price](realprice)**: percentage of difference between the nominal and the inflation rate.

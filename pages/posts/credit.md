@@ -14,7 +14,7 @@ import Image from 'next/image'
 
 [![Hipotecas en España](/images/credityearly.png)](/images/credityearly.png)
 
-- **Annual evolution of mortgages**, total number of mortgages approved and released[1].
+- **Annual evolution of mortgages**, total number of mortgages approved and released.
 - **Observation**: releases are not required by law to be registered at the Land Registry. We approximate that about 35% of mortgage releases are not registered.
 
 [![Crédito en España](/images/creditmovement.png)](/images/creditmovement.png)

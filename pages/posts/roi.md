@@ -20,7 +20,7 @@ import Image from 'next/image'
 
 [![Housing ROI](/images/roinet.png)](/images/roinet.png)
 
-- **Housing return on investment (%)**: considers both gross asset appreciation and net rental return.
+- **Housing return on investment (%)**: considers both gross asset appreciation and net rental return (as calculated in section **b**).
   - **Bars**: green denotes positive appreciation; red denotes negative.
   - **Black dotted line**: annual inflation rate, represented in percentage.
 
@@ -34,7 +34,7 @@ _Rental source: [**Idealista**](https://www.idealista.com/sala-de-prensa/informe
 
 [![Rentabilidad alquiler](/images/renttime.png)](/images/renttime.png)
 
-- **Price-to-rent ratio (time, net and gross)**: number of years to fully recover a home purchase in Spain.
+- **Price-to-rent ratio (time, net and gross)**: number of years to fully recover the cost of a home purchase in Spain through rental income.
 
 The charts from above show the ratio between the purchase price and the rental price (both in %; and in time, years). In essence, it's an indicator similar to the price-to-earnings ratio (P/E) used in the stock market analysis. It can be interpreted as follows:
 
