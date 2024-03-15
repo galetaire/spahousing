@@ -1,6 +1,6 @@
 ---
 title: Production cost
-date: 2024-23-02
+date: 2024-03-01
 description:
 tag: All, Price, Volume
 author: Last update on

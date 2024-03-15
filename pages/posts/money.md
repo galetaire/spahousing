@@ -1,6 +1,6 @@
 ---
 title: House in various currencies
-date: 2024-23-02
+date: 2024-03-01
 description:
 tag: All, Price
 author: Last update on
@@ -12,7 +12,7 @@ import Image from 'next/image'
 
 # Housing price in different currencies
 
-Real estate is the world's largest store of wealth ([1](https://www.savills.com/impacts/market-trends/the-total-value-of-global-real-estate-property-remains-the-worlds-biggest-store-of-wealth.html)). Wealth is measured in units of account, commonly money, but not all moneys preserve wealth equally.
+Real estate is the world's largest store of wealth ([1](https://www.savills.com/impacts/market-trends/the-total-value-of-global-real-estate-property-remains-the-worlds-biggest-store-of-wealth.html), [2](https://www.savills.com/impacts/market-trends/the-total-value-of-global-real-estate.html)). Wealth is measured in units of account, commonly money, but not all moneys preserve wealth equally.
 
 [![Precio de la vivienda en dolares](/images/housedollar.png)](/images/housedollar.png)
 - **Price in dollars, 100m<sup>2</sup> house**: the rate EUR/USD used is the yearly average.
