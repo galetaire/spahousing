@@ -719,6 +719,12 @@
           "source": "https://www.notariado.org/liferay/web/cien/estadisticas-al-completo",
           "@type": "Column"
          },
+         {
+           "title": "Price_IPVVR",
+           "dc:description": "The index price based on the repeat-sales pricing technique, known as Case-Shiller Index",
+           "source": "https://www.registradores.org/ca/actualidad/portal-estadistico-registral",
+           "@type": "Column"
+          },
         {
           "title": "Inflation_CPI",
           "dc:description": "Average inflation (CPI) by year",
