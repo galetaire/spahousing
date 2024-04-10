@@ -14,10 +14,8 @@ import Image from 'next/image'
 
 [![Número de viviendas](/images/stockyearly.png)](/images/stockyearly.png)
 
-- **Number of dwellings**: new homes built annually since 1971.
-  - **Left axis (bars)**: total number of new dwellings per year.
-  - **Right axis (line)**: number of inhabitants per dwelling. Detailed map **[here](housescarcity)**.
-- **Observation**: the ratio of inhabitants per dwelling stopped decreasing in the middle 2010s, hinting disruption in the supply balance that could lead to price increases.
+- **Number of dwellings and population growth**: new homes built and population change year on year since 1971.
+- **Observation**: explore on this **[map](housescarcity)** the number of inhabitants per dwelling and municipality.
 
 [![Estoc y balance de viviendas](/images/stockbalance.png)](/images/stockbalance.png)
 

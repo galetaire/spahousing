@@ -12,8 +12,8 @@ author: Collection of all the 46 charts published in the site
 
 + _General models_
   * (1) [Multivariate model, housing overview](/images/multivariate.png)
-  * (2) [Rainbow model, short-term, housing cycles](/images/rainbow.png)
-  * (3) [Rainbow model, long-term, housing cycles](/images/rainbowmax.png)
+  * (2) [Housing cyles, peaks and troughs](/images/rainbow.png)
+  * (3) [Rainbow model, long-term](/images/rainbowmax.png)
 + _Price_
   * (4) [Annual evolution of housing prices](/images/priceyearly.png)
   * (5) [Case-Shiller housing index](/images/ipvvr.png)

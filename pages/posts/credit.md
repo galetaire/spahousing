@@ -26,7 +26,7 @@ import Image from 'next/image'
 [![Burbuja inmobiliaria](/images/creditratio.png)](/images/creditratio.png)
 
 - **Ratio between mortgages and home sales**: if the ratio is (x), it means there a (x) mortgages per each (1) home sale.
-- **Observation**: the ratio _Mortgages/Sales_ hints the formation of real estate bubbles.
+- **Observation**: the ratio _Mortgages/Sales_ hints the formation of credit bubbles.
 
 [![Tipo de hipotecas firmadas](/images/typemortgage.png)](/images/typemortgage.png)
 

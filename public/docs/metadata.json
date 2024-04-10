@@ -564,6 +564,12 @@
           "@type": "Column"
         },
         {
+          "title": "Pop_abs_yoy",
+          "dc:description": "Change of population year-on-year",
+          "source": "(Total_population(n)-Total_population(n-1)",
+          "@type": "Column"
+        },
+        {
           "title": "Population_yoy",
           "dc:description": "Percentage change of population year-on-year",
           "source": "(Total_population(n)*100/Total_population(n-1))-100",
