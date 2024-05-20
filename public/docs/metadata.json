@@ -330,12 +330,6 @@
           "@type": "Column"
         },
         {
-          "title": "Minimum_wage",
-          "dc:description": "Legal minimum wage",
-          "source": "https://www.mites.gob.es/es/guia/texto/guia_6/contenidos/guia_6_13_2.htm",
-          "@type": "Column"
-        },
-        {
           "title": "Price_urban_land",
           "dc:description": "Price of urban land",
           "source": "https://apps.fomento.gob.es/BoletinOnline2/?nivel=2&orden=36000000",

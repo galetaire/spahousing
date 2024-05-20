@@ -15,7 +15,7 @@ import Image from 'next/image'
 [![Evolución precio de la vivienda](/images/priceyearly.png)](/images/priceyearly.png)
 
 - **House price in Spain since 1985, in euros per square meter**: nominal price, [real price](realprice) (inflation-adjusted, CPI Base 100 = 1985), and accumulated inflation.
-- For an overview of **housing prices in various currencies**, see this [entry](money).
+- See this [entry](money) for an overview of housing prices in **dollars, gold and bitcoin**.
 
 [![Indice de Precio de Viviendas Repetidas](/images/ipvvr.png)](/images/ipvvr.png)
 

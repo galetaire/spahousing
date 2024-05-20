@@ -3,7 +3,7 @@ title: Charts sitemap
 date: 2024-03-01
 description:
 tag: All
-author: Collection of all the 46 charts published in the site
+author: Collection of all the 47 charts published in the site
 ---
 
 <div class="meta-line"><a class="meta-back" href="/methodology#data-base-access">← Back to methodology</a></div>
