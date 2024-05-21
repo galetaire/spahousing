@@ -5,12 +5,9 @@ description:
 tag: All, Volume
 author:
 ---
-
 import Image from 'next/image'
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
-
-Notes about the sources and estimations of the 20th century data referred to population and housing stock.
 
 # About the population
 
@@ -24,7 +21,7 @@ The data presented by _Roser Nicolau_ uses the mentioned historical data by the 
 
 - ["_Estadisticas Historicas de España, siglo XIX - XX_" (2005, second edition), chapter 2: _Población, salud y actividad_, by Roser Nicolau, Page 124, Cuadro 2.5. Book coordinated by Albert Carreras and Xavier Tafunell, Fundación BBVA, ISBN: 84‑96515‑00‑1](https://www.fbbva.es/wp-content/uploads/2017/05/dat/DE_2006_estadisticas_historicas.pdf).
 
-The current table shows a comparison of the data from the INE, Roser Nicolau estimations and our own estimations:
+The next table shows a comparison of the data from the INE, Roser Nicolau estimations and our own estimations:
 
 | Year | Estadistica Padrón Continuo (INE) | Roser Nicolau estimation| Our estimation |
 | ---- | --------------------------------- | ----------------------- | -------------- |
@@ -68,9 +65,9 @@ However, data for the years in between (1971, 1972...1980...1994...2000) are not
 
 From 1900 to 1970 we have made our own estimations based in data collected by _Xavier Tafunell (2005)_ in:
 
-- _Xavier Tafunell (2005)_, ["_Estadisticas Historicas de España, siglo XIX - XX_" (2005, second edition), chapter 6: _Urbanización y vivienda_, by Xavier Tafunell, Page 491, Cuadro 6.7 and Cuadro 6.6. Book coordinated by Albert Carreras and Xavier Tafunell, Fundación BBVA, ISBN: 84‑96515‑00‑1](https://www.fbbva.es/wp-content/uploads/2017/05/dat/DE_2006_estadisticas_historicas.pdf).
+- ["_Estadisticas Historicas de España, siglo XIX - XX_" (2005, second edition), chapter 6: _Urbanización y vivienda_, by Xavier Tafunell, Page 491, Cuadro 6.7 and Cuadro 6.6. Book coordinated by Albert Carreras and Xavier Tafunell, Fundación BBVA, ISBN: 84‑96515‑00‑1](https://www.fbbva.es/wp-content/uploads/2017/05/dat/DE_2006_estadisticas_historicas.pdf).
 
-From 1950 onward (page 491, table 6.7), we replicated the data from _Tafunell (2005)_, incorporating minor adjustments to ensure consistency across our comprehensive dataset, which integrates information from multiple sources. As means of comparison, here there is a sample from  _Xavier Tafunell (2005)_ and our own estimation:
+From 1950 onward, we replicated the data from _Tafunell (2005, page 491, table 6.7)_, incorporating minor adjustments to ensure consistency across our comprehensive dataset, which integrates information from multiple sources. As means of comparison, here there is a sample from  _Xavier Tafunell_ and our own estimation:
 
 | Year | Xavier Tafunell estimation| Our estimation |
 | ---- | ------------------------- | -------------- |
@@ -83,13 +80,13 @@ From 1950 onward (page 491, table 6.7), we replicated the data from _Tafunell (2
 | 1960 | 7.710.522 | 7.622.423 |
 | 1970 | 10.655.814 | 10.659.882 |
 
-A discrepancy in the sample can be observed between 1900 and 1940. This is because, prior to 1950, _Tafunell_ research only reports housing stock from urban areas, being unable to find reliable sources for rural areas (page 490, table 6.6, _"Parque estimado de viviendas en núcleos urbanos por provincias, 1860 - 1950"_).
+A discrepancy in the sample can be observed between 1900 and 1940. This is because, prior to 1950, _Tafunell_ research only reports housing stock from urban areas, not being able to find reliable sources for rural areas (page 490, table 6.6, _"Parque estimado de viviendas en núcleos urbanos por provincias, 1860 - 1950"_).
 
 The lack of reliable sources for rural areas is unfortunate, as we consider housing in rural areas to be quite relevant for obtaining a comprehensive historical overview. If we accept the figure of 1,879,400 houses in 1900 as accurate, the annual construction estimates from 1900 to 1950 would yield improbable values given the resources and means of production available during that period. To address this data gap, we had to walk on thin ice.
 
-According to research conducted by the [_Centre d'Estudis Demogràfics_](https://ced.cat/),[2](https://exploradorsocial.es/ojo-al-dato-asi-evoluciono-el-tamano-de-los-hogares-en-mas-de-100-anos/), the number of households in the year 1900 is estimated to be around 4.8 million.
+According to research conducted by the [_Centre d'Estudis Demogràfics_](https://ced.cat/) [(2)](https://exploradorsocial.es/ojo-al-dato-asi-evoluciono-el-tamano-de-los-hogares-en-mas-de-100-anos/), the number of households in the year 1900 is estimated to be around 4.8 million.
 
-For our estimations, we assumed that the actual housing stock in 1900 should have probably been somewhere in between those values, being the urban housing stock the minimum (_Tafunell, 2005)_ and the number of households the maximum (_Centre d'Estudis Demogràfics_). This implies the number of houses in 1900 ranged between 1.8 million and 4.8 million.
+For our estimations, we assumed that the actual housing stock in 1900 should have probably been somewhere in between 1.8 million, being the urban housing stock reported by _Tafunell_ the minimum, and 4.8 million, being the number of households reported by _Centre d'Estudis Demogràfics_ the maximum.
 
 Further accuracy is needed since the gap between those two values is significant. To enhance accuracy, we sought guidance from the buildings per period of construction dataset (_Viviendas principales por zona y tamaño del municipio, comunidades autónomas y provincias y periodo de construcción del edificio (antes de 1900 a 1950)_): [Link](https://www.ine.es/jaxi/Tabla.htm?path=/t20/e242/e04/a1991/l0/&file=01002.px&L=0)
 
@@ -99,7 +96,7 @@ Then, having 2.9 million houses in 1900 as our starting point, one of the last v
 
 -  _Spanish Economic Growth, 1850-2015, London: Palgrave Macmillan_, spreadsheets and extensive data available in [frdelpino.es](https://frdelpino.es/investigacion/category/01_ciencias-sociales/01_economia-espanola/02_economia-espanola-perspectiva-historica/).
 
-We utilized the number of people employed in the construction sector ( _Leandro Prados de la Escosura,2017_) as a proxy to estimate the number of houses that could have been built each year within the considered range, using the isolated data points collected from several sources as anchors (_Atlas Digital de las Áreas Urbanas_, _Banco de España_, _Xavier Tafunell_ and _Centre d'Estudis Demogràfics_, including our base estimation for the year 1900).
+We utilized the number of people employed in the construction sector (_Leandro Prados de la Escosura,2017_) as a proxy to estimate the number of houses that could have been built each year within the considered range, using the isolated data points collected from several sources as anchors (_Atlas Digital de las Áreas Urbanas_, _Banco de España_, _Xavier Tafunell_ and _Centre d'Estudis Demogràfics_, including our base estimation for the year 1900).
 
 The main question we faced was determining the labour input per unit of output. We have reliable governmental data from 1990 onwards, but the variance is substantial, ranging from 3.3 workers per house constructed in the year 2000 to 14 workers per house constructed in 2020, making accurate estimation challenging.
 
@@ -116,29 +113,29 @@ The best proxy we identified is linked to demography, particularly the number of
 
 In this sense, examining the household size should provide us with a clue. However, it is important to note that household size and inhabitants per home are different measures. Inhabitants per home is simply the population divided by the number of houses, whereas household size is more connected to interfamily relations, making it possible to have multiple households in the same house.
 
-According to the [_Centre d'Estudis Demogràfics_](https://ced.cat/),[2](https://exploradorsocial.es/ojo-al-dato-asi-evoluciono-el-tamano-de-los-hogares-en-mas-de-100-anos/) and [_Fernando Mikelarena Peña_](https://www.historiaagraria.com/FILE/articulos/HA3_mikelarena.pdf) the average household size was around 4.8 people per household in the 1900s.
+According to the [_Centre d'Estudis Demogràfics_](https://ced.cat/) [(2)](https://exploradorsocial.es/ojo-al-dato-asi-evoluciono-el-tamano-de-los-hogares-en-mas-de-100-anos/) and [_Fernando Mikelarena Peña_](https://www.historiaagraria.com/FILE/articulos/HA3_mikelarena.pdf) the average household size was around 4.8 people per household in the 1900s.
 
-Recent research by [_CaixaBank Research_](https://www.caixabankresearch.com/en/sector-analysis/real-estate/what-big-data-reveal-about-spains-supply-new-housing-and-demographic) indicated that between 2020 and 2022, around 420,000 new households were created in Spain, while the number of new homes started barely reached 300,000. Looking at different variables, the numbers suggest that the housing scarcity observed today was likely the norm in the 1900s until the economic boom of the 1960s. For this reason, we believe the number of inhabitants per home in the 1900s was likely higher than the average household size of 4.8 people.
+Recently, [_CaixaBank Research_](https://www.caixabankresearch.com/en/sector-analysis/real-estate/what-big-data-reveal-about-spains-supply-new-housing-and-demographic) indicated that between 2020 and 2022, around 420,000 new households were created in Spain, while the number of new homes started barely reached 300,000. Looking at different variables, the numbers suggest that the housing scarcity observed today was likely the norm in the 1900s until the economic boom of the 1960s. For this reason, we believe the number of inhabitants per home in the 1900s was likely higher than the average household size of 4.8 people.
 
-As a method for generating a reliable estimation, we examined the total fertility rate, which has exhibited a similar trend over the last century, as presented by _Roser Nicolau_ in:
+Finally, we analyzed the total fertility rate as a method for generating reliable estimates. This metric has shown a trend similar to that of the number of inhabitants per home over the past century.
+
+| Period     | Total Fertility Rate (TFR) | % change |
+|------------|----------|---------|
+| 1900  | 4.71     |  |
+| 1910  | 4.43     | -5.94 |
+| 1920  | 4.14     | -6.55 |
+| 1930  | 3.63     | -12.32 |
+| 1940  | 2.97     | -18.18 |
+| 1950  | 2.46     | -17.17 |
+| 1960  | 2.76     | 12.20 |
+| 1970  | 2.88     | 4.35 |
+| 1980  | 2.12     | -26.39 |
+| 1990  | 1.35     | -36.32 |
+| 2000  | 1.24     | -8.15 |
+| 2010  | 1.37     | 10.48 |
+| 2020  | 1.18     | -13.87 |
 
 - ["_Estadisticas Historicas de España, siglo XIX - XX_" (2005, second edition), chapter 2: _Población, salud y actividad_, by Roser Nicolau, Page 83, Cuadro 2.2. Book coordinated by Albert Carreras and Xavier Tafunell, Fundación BBVA, ISBN: 84‑96515‑00‑1](https://www.fbbva.es/wp-content/uploads/2017/05/dat/DE_2006_estadisticas_historicas.pdf).
-
-| Period     | Total Fertility Rate (TFR) |
-|------------|----------|
-| 1900  | 4.71     |
-| 1910  | 4.43     |
-| 1920  | 4.14     |
-| 1930  | 3.63     |
-| 1940  | 2.97     |
-| 1950  | 2.46     |
-| 1960  | 2.76     |
-| 1970  | 2.88     |
-| 1980  | 2.12     |
-| 1990  | 1.35     |
-| 2000  | 1.24     |
-| 2010  | 1.37     |
-| 2020  | 1.18     |
 
 The total fertility rate has steadily decreased from 1900 to the present day. Again, we can infer (albeit with some risk) that the number of inhabitants per home would have similarly declined. Applying a trend similar to that observed in the fertility rate to the number of inhabitants per home, we estimate there were approximately 5 to 7 inhabitants per home in 1900 (depending on the base year utilized).
 

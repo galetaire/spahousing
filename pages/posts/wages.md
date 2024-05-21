@@ -12,6 +12,10 @@ import Image from 'next/image'
 
 # Wages and housing affordability
 
+[![Acceso a la vivienda](/images/wageaffordability.png)](/images/wageaffordability.png)
+
+- **Housing affordability index (Base 100=1999), Spain**: it considers income growth against housing, inflation and mortgage rates growth.
+
 [![Salarios y precio de la vivienda](/images/wageyearly.png)](/images/wageyearly.png)
 
 - **Evolution of wages**: the _ideal wage_ is defined as "the wage that allows you to completely pay off your mortgage with 5 years of full wage".
@@ -22,10 +26,6 @@ import Image from 'next/image'
 [![Salario ideal](/images/wageratio.png)](/images/wageratio.png)
 
 - **Wage disconnection (in percentage)**: if the value equals 30, it means that wages must increase by 30% to match the ideal wage.
-
-[![Acceso a la vivienda](/images/wageaffordability.png)](/images/wageaffordability.png)
-
-- **Housing affordability index (Base 100=1999), Spain**: it considers income growth against housing, inflation and mortgage rates growth.
 
 # Data sources
 
