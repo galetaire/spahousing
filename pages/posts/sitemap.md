@@ -41,17 +41,17 @@ author: Collection of all the 47 charts published in the site
   * (22) [Evolution of wages](/images/wageyearly.png)
   * (23) [Disconnection between wages and mortgages](/images/wageratio.png)
   * (24) [Housing affordability](/images/wageaffordability.png)
-+ _Land and building licenses_
-  * (25) [Price of urban land and building licenses](/images/permitsland.png)
-  * (26) [Building licenses according to type of permit](/images/permitstype.png)
-  * (27) [Building licenses by type of requester](/images/permitsdistribution.png)
-  * (28) [Land and house velocity ratio](/images/velocity.png)
 + _Stock development_
-  * (29) [Number of dwellings](/images/stockyearly.png)
-  * (30) [Dwellings per period of construction](/images/stockperiods.png)
-  * (31) [Housing stock balance](/images/stockbalance.png)
-  * (32) [Distribution of new houses per type](/images/typehouse.png)
-  * (33) [Cement consumption](/images/cement.png)
+  * (25) [Number of dwellings](/images/stockyearly.png)
+  * (26) [Dwellings per period of construction](/images/stockperiods.png)
+  * (27) [Housing stock balance](/images/stockbalance.png)
+  * (28) [Distribution of new houses per type](/images/typehouse.png)
+  * (29) [Cement consumption](/images/cement.png)
++ _Land and building licenses_
+  * (30) [Price of urban land and building licenses](/images/permitsland.png)
+  * (31) [Building licenses according to type of permit](/images/permitstype.png)
+  * (32) [Building licenses by type of requester](/images/permitsdistribution.png)
+  * (33) [Land and house velocity ratio](/images/velocity.png)
 + _Funding source_
   * (34) [Government-funded housing](/images/publichousing.png)
   * (35) [Homes build according to type of funding](/images/publicprivate.png)
