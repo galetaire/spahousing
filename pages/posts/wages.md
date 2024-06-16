@@ -12,16 +12,14 @@ import Image from 'next/image'
 
 # Wages and housing affordability
 
+[![Salarios y precio de la vivienda](/images/wageyearly.png)](/images/wageyearly.png)
+
+- **Average Wage Index**: the average wage index represents the net disposable income averaged for those over 18 years of age in Spain. The values are normalized to the IPVVR of 1999, with an initial value of 51.
+- **Case-Shiller housing index (or IPVVR in Spain)**: the index is constructed using data from those homes that have been sold at least twice within the study period, using information from the same units at two points in time.
+
 [![Acceso a la vivienda](/images/wageaffordability.png)](/images/wageaffordability.png)
 
 - **Housing affordability index (Base 100=1999), Spain**: it considers income growth against housing, inflation and mortgage rates growth.
-
-[![Salarios y precio de la vivienda](/images/wageyearly.png)](/images/wageyearly.png)
-
-- **Evolution of wages**: the _ideal wage_ is defined as "the wage that allows you to completely pay off your mortgage with 5 years of full wage".
-  - **Left axis (bars)**: the standard wage represents the net disposable income averaged for those over 18 years of age, Spain, in euros.
-  - **Right axis (line)**: average mortgage amount, Spain, in euros.
-- **Observation**: Convergence and divergence cycles are found. Divergence implies that housing prices grow faster than wages, and convergence the opposite (2003 to 2007 = divergence; 2008 to 2013 = convergence; 2014 to 2021 = divergence).
 
 [![Salario ideal](/images/wageratio.png)](/images/wageratio.png)
 
@@ -35,6 +33,8 @@ import Image from 'next/image'
 - Population according to INE (_range of used population was that over 18 years old > Data used is from January 1st of the current year_): [Population consolidated](https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176951&menu=resultados&idp=1254735572981)
 - Housing prices, from 1985 to 2006, according to Sociedad de Tasación (_Access to data is under request, but can be seen in the linked publication_): [Publication](https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf), [Link](https://www.st-tasacion.es/informe-de-tendencias-digital/)
 - Housing prices, from 2007 onwards, according to the notaries (_Grupo 5 > Acto 501 - Compraventa inmuebles > Inmuebles en fincas urbanas, viviendas_): [Link](http://www.notariado.org/liferay/web/cien/estadisticas-al-completo)
+- Case-Shiller housing index, in Spain also known as IPVVR (_the index is calculated by the Registradores de España, we used the yearly average value of IPVVR aritmético suavizado_)[Link](https://www.registradores.org/actualidad/portal-estadistico-registral/estadisticas-de-propiedad)
+- Housing prices according to _Idealista_: [Link](https://www.idealista.com/sala-de-prensa/informes-precio-vivienda)
 - Inflation data (_Table: average inflation Spain (CPI) - by year_): [Link](https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx)
 - Mortgages constituted according to interest rate, Bank of Spain (_Tipo medio de los préstamos hipotecarios a más de 3 años para adquisición de vivienda libre > Del conjunto de entidades de crédito_): [Link](https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/relacionados/tiposinteres/guia-textual/tiposinteresrefe/tabla_tipos_referencia_oficiales_mercado_hipotecario.html)
 

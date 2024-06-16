@@ -312,9 +312,15 @@
           "@type": "Column"
         },
         {
-          "title": "Years_full_pay",
-          "dc:description": "Years of disposable income required to pay the mortgage",
-          "source": "Average_amount/Disposable_income_over18",
+          "title": "Wage_norm_IPVVR",
+          "dc:description": "Wage index, Base 51 = 1999, is Base 51 to match the Price_IPVVR of 1999",
+          "source": "(Disposable_income_over18*106)/Disposable_income_over18(Base year n)",
+          "@type": "Column"
+        },
+        {
+          "title": "Dif_Wage__IPVVR",
+          "dc:description": "Value difference between the Wage index and the IPVVR",
+          "source": "(Price_IPVVR)-(Wage__base_106_2005)",
           "@type": "Column"
         },
         {
