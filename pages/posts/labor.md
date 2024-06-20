@@ -1,6 +1,6 @@
 ---
 title: Unemployment
-date: 2024-03-01
+date: 2024-06-01
 description:
 tag: All, Labor, Price
 author: Last update on

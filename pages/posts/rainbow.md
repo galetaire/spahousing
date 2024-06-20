@@ -1,6 +1,6 @@
 ---
 title: Rainbow model
-date: 2024-03-01
+date: 2024-06-01
 description:
 tag: All, Price, Demography
 author: Last update on
