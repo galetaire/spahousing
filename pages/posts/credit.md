@@ -20,7 +20,7 @@ import Image from 'next/image'
 [![Crédito en España](/images/creditmovement.png)](/images/creditmovement.png)
 
 - **Real credit movement and mortgages amount**.
-  - **Left axis (bars)**: Real credit movement, in percentage.
+  - **Left axis (bars)**: Real credit movement, credit growth minus inflation, in percentage.
   - **Right axis (line)**: average annual mortgage amount, in euros.
 
 [![Burbuja inmobiliaria](/images/creditratio.png)](/images/creditratio.png)
