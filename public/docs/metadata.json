@@ -678,38 +678,50 @@
           "@type": "Column"
         },
         {
+          "title": "Rent_price_IPVA",
+          "dc:description": "Price of renting a house according to INE, base 100 2015",
+          "source": "https://www.ine.es/dynt3/inebase/index.htm?padre=8306&capsel=8306",
+          "@type": "Column"
+        },
+        {
+          "title": "Idealista_rent_100",
+          "dc:description": "Price of renting a house according to idealista, base 100 2015",
+          "source": "((Rent_price_eum2(n))*100)/Rent_price_eum2(2015)",
+          "@type": "Column"
+        },
+        {
           "title": "Rent_price_eum2",
-          "dc:description": "Price of renting a house per m2",
+          "dc:description": "Price of renting a house per m2 according to idealista",
           "source": "https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/alquiler/",
           "@type": "Column"
         },
         {
           "title": "Price_per",
-          "dc:description": "Percentage change of price rent year-on-year",
+          "dc:description": "Percentage change of price rent year-on-year, Idealista",
           "source": "((Rent_price_eum2*100(n))/Rent_price_eum2(n-1))-100",
           "@type": "Column"
         },
         {
           "title": "Rent_ROI_gross",
-          "dc:description": "Number of years to fully recover a home purchase, gross value",
+          "dc:description": "Number of years to fully recover a home purchase, gross value, Idealista",
           "source": "Idealista_price/(Rent_price_eum2*12)",
           "@type": "Column"
         },
         {
           "title": "Rent_ROI_gross_per",
-          "dc:description": "Housing gross rental return, in percentage",
+          "dc:description": "Housing gross rental return, in percentage, Idealista",
           "source": "100/Rent_ROI_gross",
           "@type": "Column"
         },
         {
           "title": "Rent_ROI_net",
-          "dc:description": "Number of years to fully recover a home purchase, net value",
+          "dc:description": "Number of years to fully recover a home purchase, net value, Idealista",
           "source": "Idealista_price/((Rent_price_eum2*12)*0.75)",
           "@type": "Column"
         },
         {
           "title": "Rent_ROI_net_per",
-          "dc:description": "Housing net rental return, in percentage",
+          "dc:description": "Housing net rental return, in percentage, Idealista",
           "source": "100/Rent_ROI_net",
           "@type": "Column"
         },
@@ -717,6 +729,12 @@
           "title": "Idealista_price",
           "dc:description": "Price of buying a house per m2, according to Idealista.com",
           "source": "https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/",
+          "@type": "Column"
+        },
+        {
+          "title": "Idealista_house_100",
+          "dc:description": "Price of a house according to idealista, base 100 2015",
+          "source": "((Idealista_price(n))*100)/Idealista_price(2015)",
           "@type": "Column"
         },
         {
@@ -730,7 +748,13 @@
            "dc:description": "The index price based on the repeat-sales pricing technique, known as Case-Shiller Index",
            "source": "https://www.registradores.org/ca/actualidad/portal-estadistico-registral",
            "@type": "Column"
-          },
+         },
+         {
+            "title": "Price_IPV",
+            "dc:description": "The index price by INE, base 100 2015",
+            "source": "https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&cid=1254736152838&menu=resultados&idp=1254735976607#_tabs-1254736195138",
+            "@type": "Column"
+        },
         {
           "title": "Inflation_CPI",
           "dc:description": "Average inflation (CPI) by year",
