@@ -14,13 +14,13 @@ import Image from 'next/image'
 
 [![Evolución precio alquiler de la vivienda](/images/rentprice1.png)](/images/rentprice1.png)
 
-- **Evolution of rental prices and housing prices according to Idealista, Spain**: Base 100 = 2015.
+- **Evolution of rental prices and housing prices according to Idealista, Spain**: base 100 = 2015.
 
 [![Indice precio alquiler y compra](/images/rentprice2.png)](/images/rentprice2.png)
 
-- **Evolution of rental prices and housing prices according to both Idealista and the INE, Spain**: Base 100 = 2015.
+- **Evolution of rental prices and housing prices according to both Idealista and the INE, Spain**: base 100 = 2015.
 
-# Geography of residential and vacation rental
+# Residential and vacation rental
 
 [![Land scarcity](/images/residentialmap.png)](/images/residentialmap.png)
 
