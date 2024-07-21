@@ -726,6 +726,12 @@
           "@type": "Column"
         },
         {
+          "title": "Ratio_idealista",
+          "dc:description": "Ratio, in percentage, between Idealista price rent and house price",
+          "source": "(Idealista_rent_100m/Idealista_price)*100",
+          "@type": "Column"
+        },
+        {
           "title": "Idealista_price",
           "dc:description": "Price of buying a house per m2, according to Idealista.com",
           "source": "https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/",
@@ -735,6 +741,12 @@
           "title": "Idealista_house_100",
           "dc:description": "Price of a house according to idealista, base 100 2015",
           "source": "((Idealista_price(n))*100)/Idealista_price(2015)",
+          "@type": "Column"
+        },
+        {
+          "title": "Idealista_rent_100m",
+          "dc:description": "Price of renting a house of 100 square meters, Idealista",
+          "source": "Rent_price_eum2*100",
           "@type": "Column"
         },
         {
