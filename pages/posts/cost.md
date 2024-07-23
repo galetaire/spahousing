@@ -20,6 +20,7 @@ import Image from 'next/image'
 [![Coste de materiales](/images/costchange.png)](/images/costchange.png)
 
 - **Cost of production (in %)**: year over year evolution of construction costs.
+- If you are an individual seeking to build in Spain, [here](posts/buildingcost) you have some numbers you can use to approximate your costs. 
 
 [![Trabajadores por vivienda construida](/images/workersperunit.png)](/images/workersperunit.png)
 
