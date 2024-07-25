@@ -10,6 +10,12 @@ import Image from 'next/image'
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
 
+```
+If you are an individual seeking to build a house in Spain,
+[here](buildingcost) you have some numbers to approximate your costs.
+```
+
+
 # (a) Production cost
 
 [![Coste de construcción](/images/costratio.png)](/images/costratio.png)
@@ -20,7 +26,6 @@ import Image from 'next/image'
 [![Coste de materiales](/images/costchange.png)](/images/costchange.png)
 
 - **Cost of production (in %)**: year over year evolution of construction costs.
-- If you are an individual seeking to build in Spain, [here](buildingcost) you have some numbers you can use to approximate your costs. 
 
 [![Trabajadores por vivienda construida](/images/workersperunit.png)](/images/workersperunit.png)
 
