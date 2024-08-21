@@ -16,10 +16,10 @@ import Image from 'next/image'
 - *Cost of mortgage + taxes = 88,000 €*
 - *Cost of land + taxes = 150,000 €*
 - *Average cost of building in Spain =*
-  - *370,000 €, without mortgage*
+  - *380,000 €, without mortgage*
   - *468,000 €, with mortgage*
 
-**The cost of building an average house in Spain is 370,000 euros**. However, this price is just a general approximation since Spain offers a great degree of variability in terms of prices. Building in Ibiza is not the same as building in Guadalajara, not only because the workforce and materials are priced differently, but also because taxes can differ.
+**The cost of building an average house in Spain is 380,000 euros**. However, this price is just a general approximation since Spain offers a great degree of variability in terms of prices. Building in Ibiza is not the same as building in Guadalajara, not only because the workforce and materials are priced differently, but also because taxes can differ.
 
 If you are an individual interested in building in Spain, below in the table you will find the aspects (sections and subsections) you must be aware of when building a house. A few notes:
 

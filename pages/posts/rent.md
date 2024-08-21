@@ -12,15 +12,15 @@ import Image from 'next/image'
 
 # Rental prices
 
-[![Evolución precio alquiler de la vivienda](/images/rentprice1.png)](/images/rentprice1.png)
-
-- **Evolution of rental prices and housing prices according to Idealista, Spain**.
-- The top numbers inside the grey squares represent the ratio between both values. For example, in 2020, the monthly rental price represented 64% of the price of buying a square meter.
-
 [![Indice precio alquiler y compra](/images/rentprice2.png)](/images/rentprice2.png)
 
 - **Evolution of rental prices and housing prices according to both Idealista and the INE, Spain**: base 100 = 2015.
 - The INE rental prices are an experimental indicator. For rental prices, Idealista data offers greater reliability since it is the reference marketplace in Spain for rental-seeking purposes.
+
+[![Evolución precio alquiler de la vivienda](/images/rentprice1.png)](/images/rentprice1.png)
+
+- **Evolution of rental prices and housing prices according to Idealista, Spain**.
+- The top numbers inside the grey squares represent the ratio between both values. For example, in 2020, the monthly rental price represented 64% of the price of buying a square meter.
 
 # Residential and vacation rental
 

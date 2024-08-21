@@ -10,7 +10,7 @@ import Image from 'next/image'
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
 
-*If you are an individual seeking to build a house in Spain, you have some numbers to approximate your costs*: **[here](buildingcost)**.
+*How much it costs to build a house in Spain? Here you have a* **[template budget](buildingcost)**.
 
 
 # (a) Production cost
