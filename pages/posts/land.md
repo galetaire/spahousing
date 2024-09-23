@@ -37,7 +37,7 @@ import Image from 'next/image'
 # Data sources
 
 - Construction and Building Permits (_11.Visados de dirección de obra. Nº visados según tipo de obra; 7.Visados de dirección de obra: Obra nueva, ampliación y/o reforma. Nº de viviendas según clase de promotor._): [Link](https://apps.fomento.gob.es/BoletinOnline/?nivel=2&orden=09000000)
-- Pricea and transactions of land (_Series estadísticas > Precios del suelo > 4.Precio medio del metro cuadrado de suelo urbano por comunidades autónomas y provincias_): [Link](https://www.mitma.gob.es/el-ministerio/informacion-estadistica/vivienda-y-actuaciones-urbanas/estadisticas/suelo/estadisticas-de-precios-de-suelo-urbano)
+- Prices and transactions of land (_Series estadísticas > Precios del suelo > 4.Precio medio del metro cuadrado de suelo urbano por comunidades autónomas y provincias_): [Link](https://www.mitma.gob.es/el-ministerio/informacion-estadistica/vivienda-y-actuaciones-urbanas/estadisticas/suelo/estadisticas-de-precios-de-suelo-urbano)
 - Total urban land area (_Resultados nacionales > Por intervalos población y superficies parcelas urbanas_) [Link](https://www.catastro.hacienda.gob.es/esp/estadistica_1.asp)
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
