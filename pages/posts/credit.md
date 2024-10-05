@@ -1,6 +1,6 @@
 ---
 title: Mortgages
-date: 2024-06-01
+date: 2024-10-01
 description:
 tag: All, Credit
 author: Last update on

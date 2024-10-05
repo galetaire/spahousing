@@ -1,6 +1,6 @@
 ---
 title: Rental prices
-date: 2024-06-01
+date: 2024-10-01
 description:
 tag: All, Price
 author: Last update on
@@ -22,11 +22,13 @@ import Image from 'next/image'
 - **Evolution of rental prices and housing prices according to Idealista, Spain**.
 - The top numbers inside the grey squares represent the ratio between both values. For example, in 2020, the monthly rental price represented 64% of the price of buying a square meter.
 
-# Residential and vacation rental
+# Residential rental
 
 [![Land scarcity](/images/residentialmap.png)](/images/residentialmap.png)
 
 - **Distribution of residential rental, Spain**: the values represent the percentage of residential rental homes in the municipality relative to the total number of existing homes in the municipality.
+
+# Vacation rental
 
 [![Land scarcity](/images/vacationalmap.png)](/images/vacationalmap.png)
 
