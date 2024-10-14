@@ -40,14 +40,14 @@ Data sample for better understanding:
 
 The data provided by the MITMA groups urban land price by the size of municipalities. This causes some municipalities, such as Málaga (Andalusia), Barcelona (Catalonia) or Valldemossa (Mallorca), to have a lower value than expected. In order to tame this issue, we have used the average net income per person as corrector.
 
-The corrector relies on the average income per person from each municipality, which is divided by the national average income per person (12.982 euros per year). The result is then used as a multiplier.
+The corrector relies on the average income per person from each municipality, which is divided by the national average income per person (12.982 euros per year).
 
 ![Equation](https://math.vercel.app/?bgcolor=auto&from=Income%5C%3Acorrector%3D%5Cfrac%7BAverage%5C%3Aincome%5C%3Aper%5C%3Aperson%5C%3A%28municipality%29%7D%7BAverage%5C%3Aincome%5C%3Aper%5C%3Aperson%5C%3A%28spain%29%7D.svg)
 
-Data sample for better understanding:
+The result is then used as a multiplier. Data sample for better understanding:
 
 | Municipality | Weighted price value | Income corrector | Land price value |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | Barcelona | 233 | 1.35 | 314.6  |
 | Sant Antoni de Portmany | 339 | 0.98 | 332.2 |
 
