@@ -12,7 +12,7 @@ import Image from 'next/image'
 
 # Measuring house scarcity using the number of inhabitants per dwelling
 
-Measuring house scarcity is not a straightforward task, as multiple factors can come into play. The most intuitive indicator, however, is the number of dwellings per person.
+Measuring housing scarcity is not a straightforward task, as multiple factors come into play. The most intuitive indicator, however, is the number of dwellings per person. Even if this primarily reflects the presence of families, those future children will soon need housing in the vicinity, putting additional pressure on the housing market.
 
 [![Land scarcity](/images/houseperson.png)](/images/houseperson.png)
 

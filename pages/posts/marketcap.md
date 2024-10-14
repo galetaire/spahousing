@@ -37,8 +37,8 @@ _The "Average house area (Ha)" used for all years is the one provided by Censo d
 
 # Data sources
 
-- "Average housing price", see the main [post](/price)
-- "Number of dwellings", see the main [post](/stock)
+- "Average housing price", see the main [post](/post/price)
+- "Number of dwellings", see the main [post](/post/stock)
 - "Average house area" (_Censo de Viviendas, INE_) [Censo de Viviendas, INE](https://www.ine.es/Censo2021/Informe.do)
 - "Average rustic land price", from Price of farm land, _MITMA_: [Link](https://www.mapa.gob.es/es/estadistica/temas/estadisticas-agrarias/economia/encuesta-precios-tierra/)
 - "Free urban land" and "Non urban land" from Urban Atlas of Spain, (_SIOSE, Estructura de las coberturas simples artificiales, MITMA_): [Link](http://atlasau.mitma.gob.es/#bbox=-1220276,5446287,1639151,1304442&c=indicator&i=siosim.siosim012&s=2014&view=map1)

@@ -30,9 +30,9 @@ import Image from 'next/image'
 
 - **House and land velocity ratio**: The velocity is a measurement of the rate at which the current stock (house or land) is exchanged. If the ratio is, for example, 90, it means that it would take 90 years to fully exchange the stock at current speed.
 
-[![Land scarcity](/images/landscarcity.png)](/images/landscarcity.png)
+[![Land price](/images/landprice.png)](/images/landprice.png)
 
-- **Urban land scarcity index**: For an approach to land scarcity, please see this [entry](landscarcity).
+- **Urban land price index**: For an approach to land price, please see this [entry](landscarcity).
 
 # Data sources
 
