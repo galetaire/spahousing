@@ -23,11 +23,11 @@ The demographic limits are created by considering the number of people between 2
 
 - The upper bound is the total number of people between 25 and 50 divided by 26 (the total number of age groups).
 
-![Equation](https://math.vercel.app/?bgcolor=auto&from=Upper\:limit=\frac{Population\:aged\:25\:to\:50}{Number\:of\:age\:groups})
+![Equation](https://math.vercel.app/?bgcolor=auto&from=Upper%5C%3Alimit%3D%5Cfrac%7BPopulation%5C%3Aaged%5C%3A25%5C%3Ato%5C%3A50%7D%7BNumber%5C%3Aof%5C%3Aage%5C%3Agroups%7D.svg)
 
 - The lower bound is the upper bound divided by 2 (simulates the potential number of couples).
 
-![Equation](https://math.vercel.app/?bgcolor=auto&from=Lower\:limit=\frac{Upper\:limit}{2})
+![Equation](https://math.vercel.app/?bgcolor=auto&from=Lower%5C%3Alimit%3D%5Cfrac%7BUpper%5C%3Alimit%7D%7B2%7D.svg)
 
 ## Why the range between 25 and 50 years of age?
 

@@ -25,7 +25,7 @@ import Image from 'next/image'
 
 For measuring urban land price, we have used a weighted value based on the urban land price of municipalities provided by the [MITMA](https://www.mitma.gob.es/el-ministerio/informacion-estadistica/vivienda-y-actuaciones-urbanas/estadisticas/suelo/estadisticas-de-precios-de-suelo-urbano).
 
-The final value is the outcome of using the _average price of the last 15 years_ and the _average price of the last 5 years_, in order to have a value that captures both its current price and its price tendency. Being the formula as follows:
+The weighted value is the outcome of using the _average price of the last 15 years_ and the _average price of the last 5 years_, in order to have a value that captures both its current price and its price tendency. Being the formula as follows:
 
 ![Equation](https://math.vercel.app/?bgcolor=auto&from=Land%5C%3Aweighted%5C%3Avalue%5C%3A%3D%5BAverage%5C%3A5%5C%3Ayears%5Ctimes2%5D%5C%3A-Average%5C%3A15%5C%3Ayears.svg)
 
@@ -38,7 +38,7 @@ Data sample for better understanding:
 
 **Commentary for the data sample**: Even if both prices are similar (around 116 euros per square meter). The weighted value for municipalities from 1000 to 5000 is higher because the price pressure went upward over the last 15 years. In contrast, municipalities from 5000 to 10000 is lower because the pressure went downward.
 
-The data provided by the MITMA groups urban land price by the size of municipalities. This causes some municipalities, such as Málaga (Andalusia), Barcelona (Catalonia) or Valldemossa (Mallorca), to have a lower value than expected. In order to tame this issue, we have used the average net income per person as corrector.
+Because the data provided by the MITMA is grouped by the size of municipalities, it causes some municipalities, such as Málaga (Andalusia), Barcelona (Catalonia) or Valldemossa (Mallorca), to have a lower value than expected. In order to tame this issue, we have used the average net income per person as corrector.
 
 The corrector relies on the average income per person from each municipality, which is divided by the national average income per person (12.982 euros per year).
 

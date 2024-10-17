@@ -33,13 +33,13 @@ Data base sample, for following examples:
 
 The _real change rate_ is the difference between the change in nominal price year-on-year minus the inflation rate (CPI) year-on-year. The expression is the following:
 
-![Equation](https://math.vercel.app/?bgcolor=auto&from=Real\:change\:rate\:_{t}=Nominal\:rate\:_{t}-Inflation\:rate\:_{t})
+![Equation](https://math.vercel.app/?bgcolor=auto&from=Real%5C%3Achange%5C%3Arate%5C%3A_%7Bt%7D%3DNominal%5C%3Arate%5C%3A_%7Bt%7D-Inflation%5C%3Arate%5C%3A_%7Bt%7D.svg)
 
 Where _t_ means the reference year.
 
 Let's see a basic example for the year(_t_) 1989:
 
-![Equation](https://math.vercel.app/?bgcolor=auto&from=Real\:change\:rate\:_{1989}=24,46\:-6,79\:=17,67)
+![Equation](https://math.vercel.app/?bgcolor=auto&from=Real%5C%3Achange%5C%3Arate%5C%3A_%7B1989%7D%3D24%2C46%5C%3A-6%2C79%5C%3A%3D17%2C67.svg)
 
 Therefore, the real price rate increased by 17,67% in 1989.
 
@@ -47,13 +47,13 @@ Therefore, the real price rate increased by 17,67% in 1989.
 
 The _real value_ is a methodology to deflate any nominal data series into real values, using a concrete base year for a selected price index. The method is explained in more depth in this entry from the [Federal Reserve - Bank of Dallas](https://www.dallasfed.org/research/basics/nominal.aspx). The expression is the following[1]:
 
-![Equation](https://math.vercel.app?from=Real\:value\:_{t}=\frac{Nominal\:value\:_{t}}{Price\:index\:_{t}}\times100)
+![Equation](https://math.vercel.app/?bgcolor=auto&from=Real%5C%3Avalue%5C%3A_%7Bt%7D%3D%5Cfrac%7BNominal%5C%3Avalue%5C%3A_%7Bt%7D%7D%7BPrice%5C%3Aindex%5C%3A_%7Bt%7D%7D%5Ctimes100.svg)
 
 Where _t_ means the reference year.
 
 Let's see an example for the year(_t_) 1987, using the year 1985 as the base year (100) for the price index (CPI):
 
-![Equation](https://math.vercel.app/?bgcolor=auto&from=Real\:value\:_{1987}=\frac{308}{114,10}\times100=269,93)
+![Equation](https://math.vercel.app/?bgcolor=auto&from=Real%5C%3Avalue%5C%3A_%7B1987%7D%3D%5Cfrac%7B308%7D%7B114%2C10%7D%5Ctimes100%3D269%2C93.svg)
 
 Therefore, the real house value (at 1985 euros) for the year 1987 equals to 269,93€.
 
@@ -61,11 +61,11 @@ Therefore, the real house value (at 1985 euros) for the year 1987 equals to 269,
 
 The _real value overrated_ is a formula that discounts the amount of inflation rate on a yearly basis, generating a compound that overrates inflation. It is inaccurate for analyzing the real value (the previous _real value_ should be used instead), but convenient for maximizing trends. The expression is the following:
 
-![Equation](https://math.vercel.app?from=Real\:value\:overrated\:_{t}=Nominal\:value\:_{t}-Overrated\:Inflation\:_{t})
+![Equation](https://math.vercel.app/?bgcolor=auto&from=Real%5C%3Avalue%5C%3Aoverrated%5C%3A_%7Bt%7D%3DNominal%5C%3Avalue%5C%3A_%7Bt%7D-Overrated%5C%3AInflation%5C%3A_%7Bt%7D.svg)
 
 Where _t_ means the reference year, and the _Overrated inflation_ is expressed as follows:
 
-![Equation](https://math.vercel.app/?bgcolor=auto&from=Overrated\:Inflation\:_{t}=\displaystyle\sum\limits_{t=1985}^n\:\frac{Nominal\:value\:_{t}\:\times\:Inflation\:rate\:_{t}}{100})
+![Equation](https://math.vercel.app/?bgcolor=auto&from=Overrated%5C%3AInflation%5C%3A_%7Bt%7D%3D%5Cdisplaystyle%5Csum%5Climits_%7Bt%3D1985%7D%5En%5C%3A%5Cfrac%7BNominal%5C%3Avalue%5C%3A_%7Bt%7D%5C%3A%5Ctimes%5C%3AInflation%5C%3Arate%5C%3A_%7Bt%7D%7D%7B100%7D.svg)
 
 Where the sum expression starts at the year 1985(_t_), and ends at the year _(n)_.
 
@@ -73,11 +73,11 @@ Let's see a basic example for the year 1987(_n_).
 
 As for the _Overrated inflation_, it is the sum of the years 1985, 1986 and 1987:
 
-![Equation](https://math.vercel.app?from=Overrated\:Inflation\:_{1987}=\frac{204\:\times\:8,83\:}{100}\:+\:\frac{244\:\:\times\:8,80\:}{100}+\frac{308\:\:\times\:5,26\:}{100}=55,70)
+![Equation](https://math.vercel.app/?bgcolor=auto&from=Overrated%5C%3AInflation%5C%3A_%7B1987%7D%3D%5Cfrac%7B204%5C%3A%5Ctimes%5C%3A8%2C83%5C%3A%7D%7B100%7D%5C%3A%2B%5C%3A%5Cfrac%7B244%5C%3A%5C%3A%5Ctimes%5C%3A8%2C80%5C%3A%7D%7B100%7D%2B%5Cfrac%7B308%5C%3A%5C%3A%5Ctimes%5C%3A5%2C26%5C%3A%7D%7B100%7D%3D55%2C70.svg)
 
 Then:
 
-![Equation](https://math.vercel.app?from=Real\:value\:overrated\:_{1987}=308\:-55,70=252,30)
+![Equation](https://math.vercel.app/?bgcolor=auto&from=Real%5C%3Avalue%5C%3Aoverrated%5C%3A_%7B1987%7D%3D308%5C%3A-55%2C70%3D252%2C30.svg)
 
 Therefore, the real _overrated_ house value (at 1985 euros) for the year 1987 equals to 252,30€.
 

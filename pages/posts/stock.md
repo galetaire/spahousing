@@ -47,6 +47,6 @@ import Image from 'next/image'
 - Housing prices, from 2007 onwards, according to the notaries (_Grupo 5 > Acto 501 - Compraventa inmuebles > Inmuebles en fincas urbanas, viviendas_): [Link](http://www.notariado.org/liferay/web/cien/estadisticas-al-completo)
 - Inflation data (_Table: average inflation Spain (CPI) - by year_): [Link](https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx)
 - Average number of persons per household (_Proyección del número medio de personas por hogar en España hasta 2037_): [Link](https://www.epdata.es/proyeccion-numero-medio-personas-hogar-espana-2035/de078c7c-473a-4ade-bc1e-668b2a9677ae)
-- Censo de viviendas 2021 (_Crear tablas > Municipios > Todos los municipios > Viviendas familiares_):[Link](https://www.ine.es/Censo2021/Inicio.do)
+- Censo de viviendas 2021 (_Crear tablas > Municipios > Todos los municipios > Viviendas familiares_): [Link](https://www.ine.es/Censo2021/Inicio.do)
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
