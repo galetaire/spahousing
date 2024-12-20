@@ -14,14 +14,14 @@ import Image from 'next/image'
 
 [![Paro y precio de la vivienda](/images/labor1.png)](/images/labor1.png)
 
-- **Annual evolution of unemployment and housing prices**, Spain.
+- ↑ **Annual evolution of unemployment and housing prices**, Spain.
   - **Left axis**: average unemployment rate for each year.
   - **Right axis**: average price growth rate (inverted) for each year.
 - **Observation**: Unemployment and housing prices have an inverse relationship. When unemployment falls, housing prices rise, and vice versa.
 
 [![Paro y precio de la viviendas](/images/labor2.png)](/images/labor2.png)
 
-- **Quarterly evolution of unemployment and housing prices**, Spain.
+- ↑ **Quarterly evolution of unemployment and housing prices**, Spain.
   - **Left axis**: HPI (Housing Price Index) not inflation adjusted (base 100 = 2015).
   - **Right axis**: average unemployment rate (inverted) for each quarter.
 

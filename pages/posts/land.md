@@ -14,25 +14,25 @@ import Image from 'next/image'
 
 [![Precio del suelo](/images/permitsland.png)](/images/permitsland.png)
 
-- **Price of urban land and building licenses**, Spain.
+- ↑ **Price of urban land and building licenses**, Spain.
   - **Left axis**: total number of building licenses.
   - **Right axis**: price of land in euros per square meter.
 
 [![Visados de obra](/images/permitstype.png)](/images/permitstype.png)
 
-- **Building licenses according to type of permit**: build (new), reform or demolition.
+- ↑ **Building licenses according to type of permit**: build (new), reform or demolition.
 
 [![Visados de obra](/images/permitsdistribution.png)](/images/permitsdistribution.png)
 
-- **Building licenses by type of requester**: legal (private) entities, individuals or public entities.
+- ↑ **Building licenses by type of requester**: legal (private) entities, individuals or public entities.
 
 [![Velocity](/images/velocity.png)](/images/velocity.png)
 
-- **House and land velocity ratio**: The velocity is a measurement of the rate at which the current stock (house or land) is exchanged. If the ratio is, for example, 90, it means that it would take 90 years to fully exchange the stock at current speed.
+- ↑ **House and land velocity ratio**: The velocity is a measurement of the rate at which the current stock (house or land) is exchanged. If the ratio is, for example, 90, it means that it would take 90 years to fully exchange the stock at current speed.
 
 [![Land price](/images/landprice.png)](/images/landprice.png)
 
-- **Urban land price index**: For an approach to land price, please see this [entry](landprice).
+- ↑ **Urban land price index**: For an approach to land price, please see this [entry](landprice).
 
 # Data sources
 

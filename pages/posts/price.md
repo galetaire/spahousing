@@ -14,12 +14,12 @@ import Image from 'next/image'
 
 [![Evolución precio de la vivienda](/images/priceyearly.png)](/images/priceyearly.png)
 
-- **House price since 1985, in euros per square meter, according to notaries**: nominal price, [real price](realprice) (inflation-adjusted, CPI Base 100 = 1985), and accumulated inflation.
+- ↑ **House price since 1985, in euros per square meter, according to notaries**: nominal price, [real price](realprice) (inflation-adjusted, CPI Base 100 = 1985), and accumulated inflation.
 - See this [entry](money) for an overview of housing prices in **dollars, gold and bitcoin**.
 
 [![Indice de Precio de Viviendas Repetidas](/images/ipvvr.png)](/images/ipvvr.png)
 
-- **Case-Shiller housing index (or IPVVR in Spain)**: the index is constructed using data from those homes that have been sold at least twice within the study period, using information from the same units at two points in time.
+- ↑ **Case-Shiller housing index (or IPVVR in Spain)**: the index is constructed using data from those homes that have been sold at least twice within the study period, using information from the same units at two points in time.
 
 # (b) Quarterly evolution of prices
 

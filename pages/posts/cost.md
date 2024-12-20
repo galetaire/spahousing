@@ -17,26 +17,26 @@ import Image from 'next/image'
 
 [![Coste de construcción](/images/costratio.png)](/images/costratio.png)
 
-- **Ratio between the average housing price and the average construction cost:** if the ratio is (x), it means houses are being sold (x) times the price of production.
+- ↑ **Ratio between the average housing price and the average construction cost:** if the ratio is (x), it means houses are being sold (x) times the price of production.
 - **Observation**: a higher ratio means the construction sector has higher profit margins. Note that a significant part of these profit margins are in fact tax payments.
 
 [![Coste de materiales](/images/costchange.png)](/images/costchange.png)
 
-- **Cost of production (in %)**: year over year evolution of construction costs.
+- ↑ **Cost of production (in %)**: year over year evolution of construction costs.
 
 [![Trabajadores por vivienda construida](/images/workersperunit.png)](/images/workersperunit.png)
 
-- **Ratio of workers per housing unit built**. The great shift is due to a change in the core business. New builds are no longer the core business, restorations are.
+- ↑ **Ratio of workers per housing unit built**. The great shift is due to a change in the core business. New builds are no longer the core business, restorations are.
 
 [![Trabajadores por cada 100 habitantes](/images/employed100.png)](/images/employed100.png)
 
-- **Number of workers employed in construction per 100 inhabitants**, Spain.
+- ↑ **Number of workers employed in construction per 100 inhabitants**, Spain.
 
 # (b) Oil price
 
 [![Precio gasolina](/images/gasoline.png)](/images/gasoline.png)
 
-- **Spain gasoline prices, in US dollars per litre**. As means of comparison, the price of US gasoline is represented also in the chart. Since oil is traded worldwide in dollars, representing the price in $US is more suitable than using local currencies.
+- ↑ **Spain gasoline prices, in US dollars per litre**. As means of comparison, the price of US gasoline is represented also in the chart. Since oil is traded worldwide in dollars, representing the price in $US is more suitable than using local currencies.
 - **Observation**: housing is directly related to energy, with oil accounting for around ≈29% of global primary energy consumption ([1](https://www.iea.org/data-and-statistics/data-tools/energy-statistics-data-browser?country=WORLD&fuel=Energy%20supply&indicator=TESbySource), [2](https://ourworldindata.org/global-energy-200-years)).
 
 # Data sources

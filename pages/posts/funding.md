@@ -14,15 +14,15 @@ import Image from 'next/image'
 
 [![Numéro de viviendas libres y protegidas](/images/publicprivate.png)](/images/publicprivate.png)
 
-- **Housing builds according to type of funding, total units**: public or private.
+- ↑ **Housing builds according to type of funding, total units**: public or private.
 
 [![Número de viviendas protegidas](/images/publichousing.png)](/images/publichousing.png)
 
-- **Total units of Government-funded housing**, since 1991.
+- ↑ **Total units of Government-funded housing**, since 1991.
 
 [![Porcentaje de viviendas libres y protegidas](/images/publicprivateper.png)](/images/publicprivateper.png)
 
-- **Housing builds according to type of funding (%)**: public or private.
+- ↑ **Housing builds according to type of funding (%)**: public or private.
 
 # Data sources
 

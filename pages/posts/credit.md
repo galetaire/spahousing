@@ -14,23 +14,23 @@ import Image from 'next/image'
 
 [![Hipotecas en España](/images/credityearly.png)](/images/credityearly.png)
 
-- **Annual evolution of mortgages**, total number of mortgages approved and released.
+- ↑ **Annual evolution of mortgages**, total number of mortgages approved and released.
 - **Observation**: releases are not required by law to be registered at the Land Registry. We approximate that about 35% of mortgage releases are not registered.
 
 [![Crédito en España](/images/creditmovement.png)](/images/creditmovement.png)
 
-- **Real credit movement and mortgages amount**.
+- ↑ **Real credit movement and mortgages amount**.
   - **Left axis (bars)**: Real credit movement, credit growth minus inflation, in percentage.
   - **Right axis (line)**: average annual mortgage amount, in euros.
 
 [![Burbuja inmobiliaria](/images/creditratio.png)](/images/creditratio.png)
 
-- **Ratio between mortgages and home sales**: if the ratio is (x), it means there a (x) mortgages per each (1) home sale.
+- ↑ **Ratio between mortgages and home sales**: if the ratio is (x), it means there a (x) mortgages per each (1) home sale.
 - **Observation**: the ratio _Mortgages/Sales_ hints the formation of credit bubbles.
 
 [![Tipo de hipotecas firmadas](/images/typemortgage.png)](/images/typemortgage.png)
 
-- **Mortgages constituted according to type of interest rate (%)**: fixed or variable.
+- ↑ **Mortgages constituted according to type of interest rate (%)**: fixed or variable.
 
 # Data sources
 

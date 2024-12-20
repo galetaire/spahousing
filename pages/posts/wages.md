@@ -14,16 +14,16 @@ import Image from 'next/image'
 
 [![Salarios y precio de la vivienda](/images/wageyearly.png)](/images/wageyearly.png)
 
-- **Average Wage Index**: the average wage index represents the net disposable income averaged for those over 18 years of age in Spain. The values are normalized to the IPVVR of 1999, with an initial value of 51.
+- ↑ **Average Wage Index**: the average wage index represents the net disposable income averaged for those over 18 years of age in Spain. The values are normalized to the IPVVR of 1999, with an initial value of 51.
 - **Case-Shiller housing index (or IPVVR in Spain)**: the index is constructed using data from those homes that have been sold at least twice within the study period, using information from the same units at two points in time.
 
 [![Acceso a la vivienda](/images/wageaffordability.png)](/images/wageaffordability.png)
 
-- **Housing affordability index (Base 100=1999), Spain**: it considers income growth against housing, inflation and mortgage rates growth.
+- ↑ **Housing affordability index (Base 100=1999), Spain**: it considers income growth against housing, inflation and mortgage rates growth.
 
 [![Salario ideal](/images/wageratio.png)](/images/wageratio.png)
 
-- **Wage disconnection (in percentage)**: if the value equals 30, it means that wages must increase by 30% to match the ideal wage.
+- ↑ **Wage disconnection (in percentage)**: if the value equals 30, it means that wages must increase by 30% to match the ideal wage.
 
 # Data sources
 

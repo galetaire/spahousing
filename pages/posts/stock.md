@@ -14,25 +14,25 @@ import Image from 'next/image'
 
 [![Número de viviendas](/images/stockyearly.png)](/images/stockyearly.png)
 
-- **Number of dwellings and population growth**: new homes built and population change year on year. See the approach to estimate the historical data **[here](stocknotes)**.
+- ↑ **Number of dwellings and population growth**: new homes built and population change year on year. See the approach to estimate the historical data **[here](stocknotes)**.
 - Explore on this **[map](housescarcity)** the number of inhabitants per dwelling and municipality.
 
 [![Estoc y balance de viviendas](/images/stockbalance.png)](/images/stockbalance.png)
 
-- **Housing surplus or deficit**: difference between housing growth (the total number of houses built in a year) and population growth divided by 2 (the total number of potential couples gained or lost in a year). Blue color indicates a housing surplus, while green color indicates a housing deficit.
+- ↑ **Housing surplus or deficit**: difference between housing growth (the total number of houses built in a year) and population growth divided by 2 (the total number of potential couples gained or lost in a year). Blue color indicates a housing surplus, while green color indicates a housing deficit.
 
 [![Tipo de vivienda](/images/typehouse.png)](/images/typehouse.png)
 
-- **Distribution of new houses build per type (in %)**: Single-Family or Condominiums.
+- ↑ **Distribution of new houses build per type (in %)**: Single-Family or Condominiums.
 
 [![Antiguedad de las viviendas](/images/stockperiods.png)](/images/stockperiods.png)
 
-- **Construction period**: number of today existing dwellings per period of construction.
+- ↑ **Construction period**: number of today existing dwellings per period of construction.
 - The **red bar** is a final estimate based on the current pace of construction. If the pace remains as 2021 (95.000 per year), the number of houses built between 2021 and 2040 will be of ≈1.800.000.
 
 [![Consumo de cemento](/images/cement.png)](/images/cement.png)
 
-- **Cement consumption**, Spain. Consumption and real price correlate positively.
+- ↑ **Cement consumption**, Spain. Consumption and real price correlate positively.
   - **Left axis (bars)**: cement consumption per year, in metric tons.
   - **Right axis (line)**: [real housing price](realprice). in euros per square meter.
 

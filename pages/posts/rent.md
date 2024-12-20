@@ -14,25 +14,25 @@ import Image from 'next/image'
 
 [![Indice precio alquiler y compra](/images/rentprice2.png)](/images/rentprice2.png)
 
-- **Evolution of rental prices and housing prices according to both Idealista and the INE, Spain**: base 100 = 2015.
+- ↑ **Evolution of rental prices and housing prices according to both Idealista and the INE, Spain**: base 100 = 2015.
 - The INE rental prices are an experimental indicator. For rental prices, Idealista data offers greater reliability since it is the reference marketplace in Spain for rental-seeking purposes.
 
 [![Evolución precio alquiler de la vivienda](/images/rentprice1.png)](/images/rentprice1.png)
 
-- **Evolution of rental prices and housing prices according to Idealista, Spain**.
+- ↑ **Evolution of rental prices and housing prices according to Idealista, Spain**.
 - The top numbers inside the grey squares represent the ratio between both values. For example, in 2020, the monthly rental price represented 64% of the price of buying a square meter.
 
 # Residential rental
 
 [![Land scarcity](/images/residentialmap.png)](/images/residentialmap.png)
 
-- **Distribution of residential rental, Spain**: the values represent the percentage of residential rental homes in the municipality relative to the total number of existing homes in the municipality.
+- ↑ **Distribution of residential rental, Spain**: the values represent the percentage of residential rental homes in the municipality relative to the total number of existing homes in the municipality.
 
 # Vacation rental
 
 [![Land scarcity](/images/vacationalmap.png)](/images/vacationalmap.png)
 
-- **Distribution of vacation rental, Spain**: the values represent the percentage of vacation rental homes in the municipality relative to the total number of existing homes in the municipality.
+- ↑ **Distribution of vacation rental, Spain**: the values represent the percentage of vacation rental homes in the municipality relative to the total number of existing homes in the municipality.
 
 # Data sources
 

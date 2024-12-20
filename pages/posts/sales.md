@@ -22,10 +22,6 @@ The [PAP housing index](papindex) draws two ceilings based on demographics. The 
 - If sales are below the lower limit, could be interpreted as a **depression**.
 - If sales are in between the two ceilings, the market is in an **optimal zone**.
 
-[![Compraventa y edad de compra](/images/salesyearly2.png)](/images/salesyearly2.png)
-
-- **PAP disaggregated**: population of 30, 40 and 50 years old (colored lines).
-
 # (b) Quarterly evolution of home sales
 
 [![Compraventas de vivienda](/images/salesquarterly.png)](/images/salesquarterly.png)

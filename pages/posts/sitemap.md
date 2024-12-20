@@ -25,7 +25,7 @@ author: Collection of all the 49 charts published in the site
   * (11) [Rental price by INE](/images/rentprice2.png)
 + _Sales_
   * (12) [Annual evolution of home sales](/images/salesyearly1.png)
-  * (13) [Annual evolution of home sales (disaggregated)](/images/salesyearly2.png)
+  * (13) [Annual evolution of home sales (PAP age disaggregated)](/images/salesyearly2.png)
   * (14) [Quarterly evolution of home sales](/images/salesquarterly.png)
 + _Mortgages_
   * (15) [Annual evolution of mortgages](/images/credityearly.png)
