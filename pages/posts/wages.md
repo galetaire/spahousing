@@ -23,7 +23,7 @@ import Image from 'next/image'
 
 [![Salario ideal](/images/wageratio.png)](/images/wageratio.png)
 
-- ↑ **Wage disconnection (in percentage)**: if the value equals 30, it means that wages must increase by 30% to match the ideal wage.
+- ↑ **Wage disconnection against mortgage amounts (in percentage)**: if the value equals 30, it means that wages should need to increase by 30% to match the ideal wage required to comfortably pay the current average mortgage amounts.
 
 # Data sources
 

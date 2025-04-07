@@ -49,6 +49,6 @@ import Image from 'next/image'
 - Structure of the construction industry (_Publicaciones anuales_): [Link](https://www.mitma.gob.es/informacion-para-el-ciudadano/informacion-estadistica/construccion/estructura-de-la-industria-de-la-construccion/estructura-de-la-industria-de-laconstruccion)
 - Housing prices, from 2007 onwards, according to the notaries (_Grupo 5 > Acto 501 - Compraventa inmuebles > Inmuebles en fincas urbanas, viviendas_): [Link](http://www.notariado.org/liferay/web/cien/estadisticas-al-completo)
 - U.S. regular gasoline prices, Energy Information Administration (_Weekly U.S. Regular Conventional Retail Gasoline Prices, Dollars per Gallon_): [Link](https://www.eia.gov/petroleum/gasdiesel/)
-- Spain gasoline prices, International Energy Agency (_Transport > Motor gasoline, USD_): [Link 1](https://www.iea.org/data-and-statistics/data-tools/end-use-prices-data-explorer?tab=Yearly+prices), [Link 2](https://www.dieselogasolina.com/)
+- Spain gasoline prices, International Energy Agency (_Sin Plomo 95_): [Link 1](https://www.dieselogasolina.com/Estadisticas/Historico)
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>

@@ -38,7 +38,7 @@ While both trends share similarities, the notary-reported prices consistently la
 - Housing prices, from 1985 to 2006, according to Sociedad de Tasación (_Access to data is under request, but can be seen in the linked publication_): [Publication](https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf), [Link](https://www.st-tasacion.es/informe-de-tendencias-digital/)
 - Housing prices, from 2007 onwards, according to the notaries (_Grupo 5 > Acto 501 - Compraventa inmuebles > Inmuebles en fincas urbanas, viviendas_): [Link](http://www.notariado.org/liferay/web/cien/estadisticas-al-completo)
 - Inflation data (_Table: average inflation Spain (CPI) - by year_): [Link](https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx)
-- Case-Shiller housing index, in Spain also known as IPVVR (_the index is calculated by the Registradores de España, we used the yearly average value of IPVVR aritmético suavizado_)[Link](https://www.registradores.org/actualidad/portal-estadistico-registral/estadisticas-de-propiedad)
+- Case-Shiller housing index, in Spain also known as IPVVR (_the index is calculated by the Registradores de España, we used the yearly average value of IPVVR aritmético suavizado_): [Link](https://www.registradores.org/actualidad/portal-estadistico-registral/estadisticas-de-propiedad)
 - Housing prices according to _Idealista_: [Link](https://www.idealista.com/sala-de-prensa/informes-precio-vivienda)
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>

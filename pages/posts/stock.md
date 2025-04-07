@@ -48,5 +48,7 @@ import Image from 'next/image'
 - Inflation data (_Table: average inflation Spain (CPI) - by year_): [Link](https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx)
 - Average number of persons per household (_Proyección del número medio de personas por hogar en España hasta 2037_): [Link](https://www.epdata.es/proyeccion-numero-medio-personas-hogar-espana-2035/de078c7c-473a-4ade-bc1e-668b2a9677ae)
 - Censo de viviendas 2021 (_Crear tablas > Municipios > Todos los municipios > Viviendas familiares_): [Link](https://www.ine.es/Censo2021/Inicio.do)
+- Number of units per type and m², Single Family (_unifamiliar_) and Condominiums (_en bloque_) (_6.Visados de dirección de obra: Obra nueva, ampliación y/o reforma. Nº de viviendas y superficie media según tipo de obra y destino principal_): [Link](https://apps.fomento.gob.es/BoletinOnline/?nivel=2&orden=09000000)
+- Material execution budget (_3. Visados de dirección de obra: Obra nueva. Presupuesto de ejecución material según destino principal_): [Link](https://apps.fomento.gob.es/BoletinOnline/?nivel=2&orden=09000000)
 
 <div class="meta-line"><a class="meta-back" href="/">← Back to home page</a></div>
