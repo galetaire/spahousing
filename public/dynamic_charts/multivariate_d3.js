@@ -18,8 +18,8 @@ function getGradient(ctx, chartArea, scales){
 
 //makeChart, calling the data and variables from the .csv file
 function makeChart(multivariate) {
-  var rangeStart = 1986 - 1964
-  var rangeEnd = new Date().getFullYear() - 1964 + 1
+  var rangeStart = 88-2
+  var rangeEnd = new Date().getFullYear() - 1899
   var rangeLabels = multivariate.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
   var rangeEuribor = multivariate.map(function(d) {return d.IR_yoy_per}).slice(rangeStart, rangeEnd);
   var rangeInflation = multivariate.map(function(d) {return +d.Inflation_CPI}).slice(rangeStart, rangeEnd);
