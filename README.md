@@ -1,5 +1,3 @@
-**Parent repo: [/spahousing](https://github.com/galetaire/spahousing)**
-
 # Description
 
 The market monitored on this website is the Spanish real estate market.
