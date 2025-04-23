@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Real price - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <link href="../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Notes on the real value calculations</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../index.html'">Statistical indicators 📉</button>
+  <button onclick="window.location.href='../methodology.html'">Methodology 📓</button>
+</div>
+<br>
+<p>
+  The real value is the measure that takes into account the time period's inflation rate, being the purpose to remove the price effect from a data series. It is important to clarify how the real value has been calculated, since 3 different methods have been used for 3 different visualizations:
+</p>
+
+<ol>
+  <li><em>Real change rate</em>, used in the <a href="multivariate.html">Multivariate model</a>.</li>
+  <li><em>Real value</em>, used in <a href="price.html">Price</a>.</li>
+  <li><em>Real value overrated</em>, used in the <a href="rainbow.html">Rainbow model</a>.</li>
+</ol>
+
+<p>Data base sample, for following examples:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Nominal value</th>
+      <th>Nominal rate (%)</th>
+      <th>CPI (%)</th>
+      <th>CPI, 100=1985</th>
+      <th>Overrated inflation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1985</td><td>204</td><td>-</td><td>8.83</td><td>100</td><td>18.0</td></tr>
+    <tr><td>1986</td><td>244</td><td>19.61</td><td>8.80</td><td>108.8</td><td>39.5</td></tr>
+    <tr><td>1987</td><td>308</td><td>26.23</td><td>5.26</td><td>114.1</td><td>55.7</td></tr>
+    <tr><td>1988</td><td>404</td><td>31.09</td><td>4.83</td><td>118.9</td><td>75.2</td></tr>
+    <tr><td>1989</td><td>503</td><td>24.46</td><td>6.79</td><td>125.7</td><td>109.3</td></tr>
+    <tr><td>1990</td><td>573</td><td>13.93</td><td>6.72</td><td>132.4</td><td>147.8</td></tr>
+  </tbody>
+</table>
+
+<h2>1. Real change rate</h2>
+<p>
+  The <em>real change rate</em> is the difference between the change in nominal price year-on-year minus the inflation rate (CPI) year-on-year. The expression is the following:
+</p>
+
+<p>
+  <img src="https://math.vercel.app/?bgcolor=auto&from=Real%5C%3Achange%5C%3Arate%5C%3A_%7Bt%7D%3DNominal%5C%3Arate%5C%3A_%7Bt%7D-Inflation%5C%3Arate%5C%3A_%7Bt%7D.svg" alt="Real change rate formula">
+</p>
+
+<p>Where <em>t</em> means the reference year.</p>
+
+<p>Example for the year <em>t</em> = 1989:</p>
+
+<p>
+  <img src="https://math.vercel.app/?bgcolor=auto&from=Real%5C%3Achange%5C%3Arate%5C%3A_%7B1989%7D%3D24%2C46%5C%3A-6%2C79%5C%3A%3D17%2C67.svg" alt="1989 example">
+</p>
+
+<p>Therefore, the real price rate increased by 17.67% in 1989.</p>
+
+<h2>2. Real value</h2>
+<p>
+  The <em>real value</em> is a methodology to deflate any nominal data series into real values, using a concrete base year for a selected price index. The method is explained in more depth in this entry from the <a href="https://www.dallasfed.org/research/basics/nominal.aspx" target="_blank">Federal Reserve - Bank of Dallas</a>. The expression is the following<sup>1</sup>:
+</p>
+
+<p>
+  <img src="https://math.vercel.app/?bgcolor=auto&from=Real%5C%3Avalue%5C%3A_%7Bt%7D%3D%5Cfrac%7BNominal%5C%3Avalue%5C%3A_%7Bt%7D%7D%7BPrice%5C%3Aindex%5C%3A_%7Bt%7D%7D%5Ctimes100.svg" alt="Real value formula">
+</p>
+
+<p>Where <em>t</em> means the reference year.</p>
+
+<p>Let's see an example for the year<em>(t)</em> 1987, using the year 1985 as the base year (100) for the price index (CPI):</p>
+
+<p>
+  <img src="https://math.vercel.app/?bgcolor=auto&from=Real%5C%3Avalue%5C%3A_%7B1987%7D%3D%5Cfrac%7B308%7D%7B114%2C10%7D%5Ctimes100%3D269%2C93.svg" alt="1987 real value">
+</p>
+
+<p>Therefore, the real house value (at 1985 euros) for the year 1987 equals to 269.93€.</p>
+
+<h2>3. Real value overrated</h2>
+<p>
+  The <em>real value overrated</em> is a formula that discounts the amount of inflation rate on a yearly basis, generating a compound that overrates inflation. It is inaccurate for analyzing the real value (the previous <em>real value</em> should be used instead), but convenient for maximizing trends. The expression is the following:
+</p>
+
+<p>
+  <img src="https://math.vercel.app/?bgcolor=auto&from=Real%5C%3Avalue%5C%3Aoverrated%5C%3A_%7Bt%7D%3DNominal%5C%3Avalue%5C%3A_%7Bt%7D-Overrated%5C%3AInflation%5C%3A_%7Bt%7D.svg" alt="Real value overrated formula">
+</p>
+
+<p>Where <em>t</em> means the reference year, and the <em>Overrated inflation</em> is expressed as follows:</p>
+
+<p>
+  <img src="https://math.vercel.app/?bgcolor=auto&from=Overrated%5C%3AInflation%5C%3A_%7Bt%7D%3D%5Cdisplaystyle%5Csum%5Climits_%7Bt%3D1985%7D%5En%5C%3A%5Cfrac%7BNominal%5C%3Avalue%5C%3A_%7Bt%7D%5C%3A%5Ctimes%5C%3AInflation%5C%3Arate%5C%3A_%7Bt%7D%7D%7B100%7D.svg" alt="Overrated inflation formula">
+</p>
+
+<p>Where the sum expression starts at the year 1985<em>(t)</em>, and ends at the year <em>(n)</em>.</p>
+<p>Let's see a basic example for the year 1987<em>(n)</em>.</p>
+<p>As for the <em>Overrated inflation</em>, it is the sum of the years 1985, 1986 and 1987:</p>
+
+<p>
+  <img src="https://math.vercel.app/?bgcolor=auto&from=Overrated%5C%3AInflation%5C%3A_%7B1987%7D%3D%5Cfrac%7B204%5C%3A%5Ctimes%5C%3A8%2C83%5C%3A%7D%7B100%7D%5C%3A%2B%5C%3A%5Cfrac%7B244%5C%3A%5C%3A%5Ctimes%5C%3A8%2C80%5C%3A%7D%7B100%7D%2B%5Cfrac%7B308%5C%3A%5C%3A%5Ctimes%5C%3A5%2C26%5C%3A%7D%7B100%7D%3D55%2C70.svg" alt="Overrated inflation example">
+</p>
+
+<p>Then:</p>
+
+<p>
+  <img src="https://math.vercel.app/?bgcolor=auto&from=Real%5C%3Avalue%5C%3Aoverrated%5C%3A_%7B1987%7D%3D308%5C%3A-55%2C70%3D252%2C30.svg" alt="Overrated real value 1987">
+</p>
+
+<p>Therefore, the real <em>overrated</em> house value (at 1985 euros) for the year 1987 equals to 252.30€.</p>
+
+<h3>Real value vs. Real value overrated</h3>
+
+<p>As means of comparison, in the following charts we can see the behaviour of both the <em>Real value</em> and the <em>Real value overrated</em>.</p>
+
+<p>
+
+<div id="chart-wrapper"><canvas id="overratedone"></canvas></div>
+<script src="../data/overratedone.js"></script>
+
+<div id="chart-wrapper"><canvas id="overratedtwo"></canvas></div>
+<script src="../data/overratedtwo.js"></script>
+
+</p>
+
+<h2>Notes</h2>
+<p>
+  For the mathematical notations, the <a href="https://math.vercel.app/home" target="_blank">Latex Math API</a> developed by
+  <a href="https://twitter.com/uechz" target="_blank">@uechz</a> has been used. A LaTeX editor is accessible at
+  <a href="https://www.tutorialspoint.com/latex_equation_editor.htm" target="_blank">TutorialsPoint.com</a>.
+</p>
+
+<p><small>[1] If the price index is in decimal form, the expression would simply be: <em>Nominal value / Price index</em>.</small></p>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <script>document.write(new Date().getFullYear())</script> ©HousingSpanish 🔭. Creative Commons Attribution-ShareAlike 4.0 International License.
+</div>
+<br>
+</body>
+</html>

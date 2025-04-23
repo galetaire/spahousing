@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Monetary policy - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <link href="../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Monetary policy</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../index.html'">Statistical indicators 📉</button>
+  <button onclick="window.location.href='../methodology.html'">Methodology 📓</button>
+</div>
+<br>
+<div id="chart-wrapper"><canvas id="euribor"></canvas></div>
+<script src="../data/euribor.js"></script>
+  <ul>
+    <li>↑ <strong>Euribor 1-year average rate and average mortgage rate</strong>, Spain. An increase (or decrease) of it implies increases (or decreases) in mortgage rates, which alters the direction and speed of money movement.</li>
+  </ul>
+
+  <div id="chart-wrapper"><canvas id="pricemoneypolicy"></canvas></div>
+  <script src="../data/pricemoneypolicy.js"></script>
+  <ul>
+    <li>
+      ↑ <strong>Nominal price and Interest rate</strong>: percentage of annual change compared to the previous year. <strong style="color: rgba(9, 87, 134);">Blue</strong> = tight monetary policy, <strong style="color: rgba(224, 120, 16);">Orange</strong> = loose monetary policy.
+      <ul>
+        <li><strong>Left axis (bars)</strong>: interest rate (<em>Mibor/Euribor</em>).</li>
+        <li><strong>Right axis (line)</strong>: nominal price.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div id="chart-wrapper"><canvas id="moneygrowth"></canvas></div>
+  <script src="../data/moneygrowth.js"></script>
+  <ul>
+    <li>↑ <strong>Money growth compared to housing growth (%)</strong>. If the stock of the Euro or the population grows faster than the stock of houses, houses become scarcer, pushing up the housing prices and vice versa.</li>
+  </ul>
+
+  <h2>Data sources</h2>
+  <ul>
+    <li>Housing prices, from 1985 to 2006, according to Sociedad de Tasación (<em>Access to data is under request, but can be seen in the linked publication</em>):
+      <a href="https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf" target="_blank">Publication</a>,
+      <a href="https://www.st-tasacion.es/informe-de-tendencias-digital/" target="_blank">Link</a>
+    </li>
+    <li>Housing prices, from 2007 onwards, according to the notaries (<em>Grupo 5 > Acto 501 - Compraventa inmuebles > Inmuebles en fincas urbanas, viviendas</em>):
+      <a href="http://www.notariado.org/liferay/web/cien/estadisticas-al-completo" target="_blank">Link</a>
+    </li>
+    <li>Euribor 1-year rate averaged, from 2002 onwards (<em>Euribor 1-year - Historical close, average of observations through period</em>):
+      <a href="https://sdw.ecb.europa.eu/quickview.do?SERIES_KEY=143.FM.M.U2.EUR.RT.MM.EURIBOR1YD_.HSTA" target="_blank">Link</a>
+    </li>
+    <li>Mibor 1-year rate averaged, from 1979 to 2001 (<em>Cuadro 19.1 del BE - Tipo de interés. De referencia. Oficiales. Mercado hipotecario. Interbancario. Mibor a 1 año</em>):
+      <a href="https://www.bde.es/webbde/es/estadis/infoest/temas/sb_tiintref.html" target="_blank">Link</a>
+    </li>
+    <li>Euro Area, Monetary aggregate M3, ECB (<em>European Central Bank</em>):
+      <a href="https://sdw.ecb.europa.eu/quickview.do?SERIES_KEY=117.BSI.M.U2.Y.V.M30.X.1.U2.2300.Z01.E" target="_blank">Link</a>
+    </li>
+    <li>Mortgages constituted according to interest rate, Bank of Spain (<em>Tipo medio de los préstamos hipotecarios a más de 3 años para adquisición de vivienda libre > Del conjunto de entidades de crédito</em>):
+      <a href="https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/relacionados/tiposinteres/guia-textual/tiposinteresrefe/tabla_tipos_referencia_oficiales_mercado_hipotecario.html" target="_blank">Link</a>
+    </li>
+    <li>Housing stock, from 1971 to 2000, according to Atlas Digital de las Áreas Urbanas (<em>Parque de Viviendas > Viviendas según tipo > Viviendas familiares > Select from available years 1970, 1981, 1991, 2001, 2011 > Tabla and Síntesis</em>):
+      <a href="https://atlasau.mitma.gob.es/#c=indicator&view=map1" target="_blank">Link</a>. Based on the data from 1970, 1981 and 1991, the remaining years gaps have been estimated, in a similar way as done by Banco de España (<em>Observatorio de Vivienda y Suelo > Boletines periódicos > Boletín Anual 2021 > Tabla 8.1</em>):
+      <a href="https://www.mitma.gob.es/arquitectura-vivienda-y-suelo/urbanismo-y-politica-de-suelo/estudios-y-publicaciones/observatorio-de-vivienda-y-suelo" target="_blank">Link</a>
+    </li>
+    <li>Housing stock, from 2001 onwards (<em>Total de viviendas por comunidades autónomas y provincias</em>):
+      <a href="https://apps.fomento.gob.es/BoletinOnline2/?nivel=2&orden=33000000" target="_blank">Link</a>
+    </li>
+  </ul>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <script>document.write(new Date().getFullYear())</script> ©HousingSpanish 🔭. Creative Commons Attribution-ShareAlike 4.0 International License.
+</div>
+<br>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Credit - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <link href="../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Mortgages</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../index.html'">Statistical indicators 📉</button>
+  <button onclick="window.location.href='../methodology.html'">Methodology 📓</button>
+</div>
+<br>
+
+<div id="chart-wrapper"><canvas id="credityearly"></canvas></div>
+<script src="../data/credityearly.js"></script>
+<ul>
+  <li>↑ <strong>Annual evolution of mortgages</strong>, total number of mortgages approved and released.</li>
+  <li>Note that releases are not required by law to be registered at the Land Registry. We approximate that about 35% of mortgage releases are not registered.</li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="creditmovement"></canvas></div>
+<script src="../data/creditmovement.js"></script>
+<ul>
+  <li>↑ <strong>Real credit movement and mortgages amount</strong>.
+    <ul>
+      <li><strong>Left axis (bars)</strong>: Real credit movement, credit growth minus inflation, in percentage.</li>
+      <li><strong>Right axis (line)</strong>: average annual mortgage amount, in euros.</li>
+    </ul>
+  </li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="creditratio"></canvas></div>
+<script src="../data/creditratio.js"></script>
+<ul>
+  <li>↑ <strong>Ratio between mortgages and home sales</strong>: if the ratio is (x), it means there are (x) mortgages per each (1) home sales. This ratio hints the formation of credit bubbles.</li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="typemortgage"></canvas></div>
+<script src="../data/typemortgage.js"></script>
+<ul>
+  <li>↑ <strong>Mortgages constituted according to type of interest rate (%)</strong>: fixed or variable.</li>
+</ul>
+
+<h2>Data sources</h2>
+<ul>
+  <li>Housing prices, from 1985 to 2006, according to Sociedad de Tasación (<em>Access to data is under request, but can be seen in the linked publication</em>):
+    <a href="https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf">Publication</a>,
+    <a href="https://www.st-tasacion.es/informe-de-tendencias-digital/">Link</a>
+  </li>
+  <li>Housing prices, from 2007 onwards, according to the notaries (<em>Grupo 5 &gt; Acto 501 - Compraventa inmuebles &gt; Inmuebles en fincas urbanas, viviendas</em>):
+    <a href="http://www.notariado.org/liferay/web/cien/estadisticas-al-completo">Link</a>
+  </li>
+  <li>Home sales, from 2003 to 2006, have been extrapolated using the approved mortgages:
+    <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736170236&menu=resultados&idp=1254735576757#!tabs-1254736169948">Link</a>
+  </li>
+  <li>Home sales, from 2007 onwards (<em>Results &gt; Annual &gt; Dwellings transferred by type of acquisition &gt; Sales</em>):
+    <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736171438&menu=resultados&idp=1254735576757">Link</a>
+  </li>
+  <li>Mortgages, from 1995 to 2002, according to "El mercado de la vivienda en España: una década prodigiosa (1995-2005)", by Isabel Nóvoa Arechaga and Pedro López Suárez, tabla 13 (<em>mortgage releases from this period have been extrapolated using the approved mortgages</em>):
+    <a href="https://dialnet.unirioja.es/descarga/articulo/2499407.pdf">Publication</a>
+  </li>
+  <li>Mortgages, from 2003 onwards (<em>Results &gt; Annual &gt; National results and by Autonomous Community &gt; Mortgages constituted, over the total properties, by nature of the property &gt; Dwellings</em>):
+    <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736170236&menu=resultados&idp=1254735576757#!tabs-1254736169948">Link</a>
+  </li>
+  <li>Inflation data (<em>Table: average inflation Spain (CPI) - by year</em>):
+    <a href="https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx">Link</a>
+  </li>
+  <li>Average mortgage rate (<em>Results &gt; Annual &gt; National indicators &gt; Average interest rate of mortgages constituted &gt; Viviendas + Total</em>):
+    <a href="https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&cid=1254736170236&menu=resultados&idp=1254735576606#!tabs-1254736169948">Link</a>
+  </li>
+  <li>Mortgages constituted according to interest rate, Bank of Spain (<em>Tipo medio de los préstamos hipotecarios a más de 3 años para adquisición de vivienda libre &gt; Del conjunto de entidades de crédito</em>):
+    <a href="https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/relacionados/tiposinteres/guia-textual/tiposinteresrefe/tabla_tipos_referencia_oficiales_mercado_hipotecario.html">Link</a>
+  </li>
+</ul>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <script>document.write(new Date().getFullYear())</script> ©HousingSpanish 🔭. Creative Commons Attribution-ShareAlike 4.0 International License.
+</div>
+<br>
+</body>
+</html>

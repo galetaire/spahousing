@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 17px;
+  line-height: 27px;
+}
+
+body {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+h1 {
+  font-size: 38px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+a:link,
+a:visited {
+  color: #007bff;
+}
+
+#title {
+  text-align: left;
+  padding: 30px 0;
+  font-size: 28px;
+  letter-spacing: -0.01em;
+  color: #333;
+}
+
+#legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 0 10px 10px;
+  font-size: 12px;
+}
+
+#legend .item {
+  line-height: 12px;
+  padding: 0 10px 0 4px;
+}
+
+#legend .item.male {
+  border-left: 12px solid #19A0AA;
+}
+
+#legend .item.female {
+  border-left: 12px solid #F15F36;
+}
+
+#chart-wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+#footer {
+  text-align: center;
+  font-size: 14px;
+}
+
+#footer a {
+  color: #aaa;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  word-wrap: break-word;
+  margin: 20px 0;
+  font-size: 15px;
+  overflow-x: auto;
+}
+
+th,
+td {
+  padding: 5px 20px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  background-color: #f9f9f9;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+td a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+  padding: 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar button {
+  background-color: #ffffff;
+  color: black;
+  border: none;
+  padding: 10px 5px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar button:hover {
+  background-color: #e6e6e6;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+  body {
+    width: 100%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 34px;
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;       /* allows wrapping if needed on smaller screens */
+    justify-content: flex-start;
+  }
+
+  .navbar button {
+    font-size: 14.5px;        /* a little larger for readability */
+    padding: 0px 8px;
+    width: auto;            /* don’t force full width */
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  #title {
+    font-size: 24px;
+  }
+}

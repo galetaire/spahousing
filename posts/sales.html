@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sales - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <link href="../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Home sales</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../index.html'">Statistical indicators 📉</button>
+  <button onclick="window.location.href='../methodology.html'">Methodology 📓</button>
+</div>
+<br>
+<div id="chart-wrapper"><canvas id="sales"></canvas></div>
+<script src="../data/sales.js"></script>
+<ul>
+  <li><strong>Purchasing-age population (PAP)</strong>: home sales (bars); population between 25 and 50 years old (black lines); and housing inheritances (purple bars).</li>
+</ul>
+
+<p>The <a href="papindex.html">PAP housing index</a> draws two ceilings based on demographics. The higher one assumes that everyone at some point will buy a house individually, and the lower one assumes that everyone at some point will buy a house as a couple.</p>
+
+<ul>
+  <li>If sales exceed the upper limit, it could be interpreted as a <strong>bubble</strong>.</li>
+  <li>If sales are below the lower limit, it could be interpreted as a <strong>depression</strong>.</li>
+  <li>If sales are in between the two ceilings, the market is in an <strong>optimal zone</strong>.</li>
+</ul>
+
+<h2>Quarterly evolution of sales</h2>
+<div id="chart-wrapper"><canvas id="salesquarterly"></canvas></div>
+<script src="../data/salesquarterly.js"></script>
+<ul>
+  <li><strong>Left axis (line)</strong>: housing price index.</li>
+  <li><strong>Right axis (bars)</strong>: total number of home sales in each quarter.</li>
+</ul>
+
+<p>The color indicates whether the number of sales is lower than the previous quarter (red) or higher (green). The black line represents the HPI price.</p>
+
+<h2>Data sources</h2>
+<ul>
+  <li>Population and projections according to INE (<em>range of used population was that between 25 and 50 years old &gt; Data used is from January 1st of the current year</em>):
+    <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176951&menu=resultados&idp=1254735572981">Population consolidated</a>,
+    <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176953&menu=resultados&idp=1254735572981">Population projection</a>
+  </li>
+  <li>Home sales (<em>Results &gt; Annual &gt; Dwellings transferred by type of acquisition &gt; Sales</em>):
+    <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736171438&menu=resultados&idp=1254735576757">Link</a>
+  </li>
+  <li>Housing Price Index:
+    <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736152838&menu=resultados&idp=1254735976607">Link</a>
+  </li>
+</ul>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <script>document.write(new Date().getFullYear())</script> ©HousingSpanish 🔭. Creative Commons Attribution-ShareAlike 4.0 International License.
+</div>
+<br>
+</body>
+</html>

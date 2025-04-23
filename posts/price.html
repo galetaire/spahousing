@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Price - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
+  <link href="../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Housing prices</h1>
+
+<div class="navbar">
+  <button onclick="window.location.href='../index.html'">Statistical indicators 📉</button>
+  <button onclick="window.location.href='../methodology.html'">Methodology 📓</button>
+</div>
+<br>
+<div id="chart-wrapper"><canvas id="priceyearly"></canvas></div>
+<script src="../data/priceyearly.js"></script>
+
+<ul>
+  <li><b>↑ House price since 1985, in euros per square meter, according to notaries:</b> nominal price, <a href="realprice.html">real price</a> (inflation-adjusted, CPI Base 100 = 1985), and accumulated inflation.</li>
+  <li>For an overview of housing prices in <b>dollars, gold and bitcoin</b>, see this <a href="money.html">entry</a>.</li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="ipvvr"></canvas></div>
+<script src="../data/ipvvr.js"></script>
+
+<ul>
+  <li><b>↑ Case-Shiller housing index (or IPVVR in Spain):</b> the index is constructed using data from those homes that have been sold at least twice within the study period, using information from the same units at two points in time.</li>
+</ul>
+
+<h2>Quarterly evolution of prices</h2>
+<div id="chart-wrapper"><canvas id="pricequarterly"></canvas></div>
+<script src="../data/pricequarterly.js"></script>
+
+<ul>
+  <li><strong>Left axis (line)</strong>: house price in euros per square meter, according to Idealista and to the notaries.</li>
+  <li><strong>Right axis (area)</strong>: percentage of difference (in absolute value) between the two compared price sources.</li>
+</ul>
+
+<p>While both trends share similarities, the notary-reported prices consistently lag behind those listed on Idealista. This variance likely stems from the fact that Idealista represents the seller's asking price, while notaries reflect the actual transaction price paid by buyers.</p>
+
+<p>The Spread and the Sharp change serve as signals to capture trend changes:</p>
+<ul>
+  <li><strong>Spread</strong>: depicted by the grey area (right axis), denotes the difference between the two prices in %. It could hint the level of discount price managed in the market.</li>
+  <li><strong>Sharp change</strong>: represented by the green line, showcases fluctuations between both prices. For example, in 2010-2012, there are a couple of moments when it moves downwards, suggesting that the downward pressure is strong.</li>
+</ul>
+
+<h2>Data sources</h2>
+<ul>
+  <li>Housing prices, from 1985 to 2006, according to Sociedad de Tasación (<em>Access to data is under request, but can be seen in the linked publication</em>):
+    <a href="https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf">Publication</a>,
+    <a href="https://www.st-tasacion.es/informe-de-tendencias-digital/">Link</a>
+  </li>
+  <li>Housing prices, from 2007 onwards, according to the notaries (<em>Grupo 5 &gt; Acto 501 - Compraventa inmuebles &gt; Inmuebles en fincas urbanas, viviendas</em>):
+    <a href="http://www.notariado.org/liferay/web/cien/estadisticas-al-completo">Link</a>
+  </li>
+  <li>Inflation data (<em>Table: average inflation Spain (CPI) - by year</em>):
+    <a href="https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx">Link</a>
+  </li>
+  <li>Case-Shiller housing index, in Spain also known as IPVVR (<em>the index is calculated by the Registradores de España, we used the yearly average value of IPVVR aritmético suavizado</em>):
+    <a href="https://www.registradores.org/actualidad/portal-estadistico-registral/estadisticas-de-propiedad">Link</a>
+  </li>
+  <li>Housing prices according to <em>Idealista</em>:
+    <a href="https://www.idealista.com/sala-de-prensa/informes-precio-vivienda">Link</a>
+  </li>
+</ul>
+
+
+<br>
+<!-- Footer-->
+<div id="footer">
+  <script>document.write(new Date().getFullYear())</script> ©HousingSpanish 🔭. Creative Commons Attribution-ShareAlike 4.0 International License.
+</div>
+<br>
+</body>
+</html>

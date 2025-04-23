@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Land scarcity - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <link href="../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Measuring urban land price</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../index.html'">Statistical indicators 📉</button>
+  <button onclick="window.location.href='../methodology.html'">Methodology 📓</button>
+</div>
+<br>
+<img src="../images/landprice2.png" alt="Precio del suelo urbana en España" style="width: 700px">
+
+<table>
+  <thead>
+    <tr>
+      <th>Color</th>
+      <th>Label</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>🟥</td>
+      <td>No scarcity</td>
+      <td>One square meter costs up to 69 euros</td>
+    </tr>
+    <tr>
+      <td>🟨</td>
+      <td>Low scarcity</td>
+      <td>One square meter costs from 70 to 108 euros</td>
+    </tr>
+    <tr>
+      <td>🟩</td>
+      <td>Medium scarcity</td>
+      <td>One square meter costs from 109 to 177 euros</td>
+    </tr>
+    <tr>
+      <td>🟦</td>
+      <td>High scarcity</td>
+      <td>One square meter costs from 178 euros up to 770 euros</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Methodology</h2>
+<p>
+  For measuring urban land price, we have used a weighted value based on the urban land price of municipalities
+  provided by the
+  <a href="https://www.mitma.gob.es/el-ministerio/informacion-estadistica/vivienda-y-actuaciones-urbanas/estadisticas/suelo/estadisticas-de-precios-de-suelo-urbano" target="_blank">MITMA</a>.
+</p>
+<p>
+  The weighted value is the outcome of using the <em>average price of the last 15 years</em> and the
+  <em>average price of the last 5 years</em>, in order to have a value that captures both its current price
+  and its price tendency. Being the formula as follows:
+</p>
+<img src="https://math.vercel.app/?bgcolor=auto&from=Land%5C%3Aweighted%5C%3Avalue%5C%3A%3D%5BAverage%5C%3A5%5C%3Ayears%5Ctimes2%5D%5C%3A-Average%5C%3A15%5C%3Ayears.svg" alt="Equation">
+
+<p>Data sample for better understanding:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Spanish region</th>
+      <th>Municipalities by inhabitants</th>
+      <th>Average price last 15 years</th>
+      <th>Average price last 5 years</th>
+      <th>Weighted price value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Andalusia</td>
+      <td>From 1000 to 5000</td>
+      <td>110.3</td>
+      <td>116.4</td>
+      <td>122.1</td>
+    </tr>
+    <tr>
+      <td>Andalusia</td>
+      <td>From 5000 to 10000</td>
+      <td>128.3</td>
+      <td>116.5</td>
+      <td>104.8</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Commentary for the data sample</strong>: Even if both prices are similar (around 116 euros per square meter), the weighted value for municipalities from 1000 to 5000 is higher because the price pressure went upward over the last 15 years. In contrast, municipalities from 5000 to 10000 have a lower value because the pressure went downward.</p>
+
+<p>
+  Because the data provided by the MITMA is grouped by the size of municipalities, it causes some municipalities,
+  such as Málaga (Andalusia), Barcelona (Catalonia) or Valldemossa (Mallorca), to have a lower value than expected.
+  In order to tame this issue, we have used the average net income per person as a corrector.
+</p>
+
+<p>
+  The corrector relies on the average income per person from each municipality, which is divided by the national
+  average income per person (12,982 euros per year).
+</p>
+
+<img src="https://math.vercel.app/?bgcolor=auto&from=Income%5C%3Acorrector%3D%5Cfrac%7BAverage%5C%3Aincome%5C%3Aper%5C%3Aperson%5C%3A%28municipality%29%7D%7BAverage%5C%3Aincome%5C%3Aper%5C%3Aperson%5C%3A%28spain%29%7D.svg" alt="Equation">
+
+<p>The result is then used as a multiplier. Data sample for better understanding:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Municipality</th>
+      <th>Weighted price value</th>
+      <th>Income corrector</th>
+      <th>Land price value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Barcelona</td>
+      <td>233</td>
+      <td>1.35</td>
+      <td>314.6</td>
+    </tr>
+    <tr>
+      <td>Sant Antoni de Portmany</td>
+      <td>339</td>
+      <td>0.98</td>
+      <td>332.2</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The Land price value is the one represented on the map.</p>
+
+<ul>
+  <li><em>Download full dataset</em>:
+    <a href="https://github.com/galetaire/spahousing/raw/main/public/docs/landvalue.XLS" target="_blank">Land value</a>
+  </li>
+</ul>
+
+<h2>Notes on the use of urban land price as an scarcity index</h2>
+<p>
+  In a market where supply and demand interact freely, <strong>prices tend to reflect the relative scarcity of goods</strong>.
+  When a good is scarce and in high demand, its price is likely to increase. Conversely, if a good is abundant
+  or there is low demand for it, the price may decrease. Based on this principle, we could use
+  <strong>the price as a measure to approximate urban land scarcity</strong>.
+</p>
+
+<p>
+  It is important to note that <strong>price should not be seen as perfect information, since we do not live
+  in a perfect free market</strong>, and other factors also affect prices, such as government regulations,
+  government subsidies, price controls, money creation, public or private monopolies, market speculation,
+  branding, advertising, and other market interventions.
+</p>
+
+<h2>Other notes</h2>
+<p>
+  For the mathematical notations, the
+  <a href="https://math.vercel.app/home" target="_blank">Latex Math API</a> developed by
+  <a href="https://twitter.com/uechz" target="_blank">@uechz</a> has been used. A LaTeX editor is accessible at
+  <a href="https://www.tutorialspoint.com/latex_equation_editor.htm" target="_blank">TutorialsPoint.com</a>.
+</p>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <script>document.write(new Date().getFullYear())</script> ©HousingSpanish 🔭. Creative Commons Attribution-ShareAlike 4.0 International License.
+</div>
+<br>
+</body>
+</html>

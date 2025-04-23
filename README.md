@@ -1,3 +1,5 @@
+**Parent repo: [/spahousing](https://github.com/galetaire/spahousing)**
+
 # Description
 
 The market monitored on this website is the Spanish real estate market.
@@ -20,15 +22,10 @@ If you are creating data visualizations with ``D3js`` or ``chartjs`` you can imp
 d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
   .then(makeChart);
 ```
-Check out and example here: [spahousing/main/public/dynamic_charts/multivariate_d3.js](https://github.com/galetaire/spahousing/blob/main/public/dynamic_charts/multivariate_d3.js)
 
 # Contact
 
-You can reach me alternatively through twitter: [@HousingSpanish](https://twitter.com/HousingSpanish).
-
-# Portfolio Kit and building sources
-
-This portfolio is built with **Next.js** and a library called [Nextra](https://nextra.vercel.app/). Powered by [Vercel](https://vercel.com). A mirror site is available on the [Handshake](https://handshake.org/) DNS root zone: "http://spain.galetaire/".
+You can reach me alternatively through X: [@HousingSpanish](https://x.com/HousingSpanish).
 
 # License
 
