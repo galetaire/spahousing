@@ -78,7 +78,7 @@ function makeChart(sales) {
             data: rangeFive,
             backgroundColor: 'rgba(91, 155, 213, 1)',
             borderColor: 'rgba(91, 155, 213, 1)',
-            borderWidth: 3,
+            borderWidth: 0,
         },
       ]
     }

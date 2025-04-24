@@ -23,7 +23,7 @@ d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/
 
 # Contact
 
-You can reach me alternatively through X: [@HousingSpanish](https://x.com/HousingSpanish).
+You can reach me through X: [@HousingSpanish](https://x.com/HousingSpanish), or alternatively through my personal [Nostr](https://primal.net/Galetaire) account.
 
 # License
 

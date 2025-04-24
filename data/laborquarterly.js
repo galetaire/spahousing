@@ -79,5 +79,5 @@ function makeChart(laborquarterly) {
 }
 
 // Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/chartdynamic/refs/heads/main/public/docs/spain_stats_quarterly.csv')
+d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/refs/heads/main/public/docs/spain_stats_quarterly.csv')
   .then(makeChart);
