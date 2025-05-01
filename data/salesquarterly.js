@@ -1,7 +1,7 @@
 //makeChart, calling the data and variables from the .csv file
 function makeChart(salesquarterly) {
   var rangeStart = 0;
-  var rangeEnd = new Date().getFullYear() - 1953;
+  var rangeEnd = new Date().getFullYear() - 1952;
   var rangeLabels = salesquarterly.map(function(d) { return d.Quarter}).slice(rangeStart, rangeEnd);
   var rangeOne = salesquarterly.map(function(d) { return d.Sales}).slice(rangeStart, rangeEnd);
   var rangeTwo = salesquarterly.map(function(d) { return d.HPI}).slice(rangeStart, rangeEnd);
