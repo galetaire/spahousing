@@ -1,6 +1,6 @@
 # Description
 
-The market monitored on this website is the Spanish real estate market.
+The market monitored on this website is the Spanish real estate market 🏠.
 
 # About the database
 
@@ -13,6 +13,12 @@ The database can be found in [spahousing/public/docs/](https://github.com/galeta
 Full review and modification is better to be done in ``.ods``, since some indicators are originated from other internal indicators, and the formulas can only be seen and edited in the mentioned format. Alternatively, formulas and variable names can be consulted at the ``metadata.json`` file.
 
 - [Metadata.json](https://github.com/galetaire/spahousing/raw/main/public/docs/metadata.json)
+
+# About the charts
+
+All charts are done with the JavaScript library chart.js, but there might be content in d3.js eventually. All scripts are available at:
+
+- [spahousing/data/](https://github.com/galetaire/spahousing/tree/main/data)
 
 If you are creating data visualizations with ``D3js`` or ``chartjs`` you can import the ``.csv`` file from the repository using the import option from the ``D3js`` library, like this:
 

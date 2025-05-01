@@ -59,12 +59,25 @@ function makeChart(housegold) {
       plugins: {
         tooltip: {
           callbacks: {
-            label: function(context) {
-              const label = context.dataset.label || '';
-              const value = Math.round(context.parsed.y);
-              return `${label}: ${value}`;
+            label(ctx) {
+                  const label = ctx.dataset.label || '';
+                  let value = ctx.parsed.y;
+
+                  // Only format this one dataset’s value
+                  if (label === 'Price in Euros (€)' ||
+                    label === 'Price in ounces of gold (Au)') {
+                    // toLocaleString adds thousand separators; force 0 decimals
+                    value = Number(value).toLocaleString(undefined, {
+                      maximumFractionDigits: 0,
+                    });
+                  } else if (label === '...') {
+                    // two decimals
+                    value = value.toFixed(2);
+                  }
+                  // For all others, leave as-is (or format differently)
+                  return `${label}: ${value}`;
+                },
             }
-          }
         }
       }
     }

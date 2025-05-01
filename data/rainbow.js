@@ -130,7 +130,7 @@ function makeChart(rainbow) {
           data: rangeTwo,
           backgroundColor: 'rgba(230, 198, 126, 0.5)',
           borderColor: 'rgba(230, 198, 126, 0.5)',
-          borderWidth: 14,
+          borderWidth: 15.5,
           pointStyle: 'dash',
           pointRadius: 0,
           fill: false
@@ -141,7 +141,7 @@ function makeChart(rainbow) {
           data: rangeTres,
           backgroundColor: 'rgba(255, 102, 0, 0.5)',
           borderColor: 'rgba(255, 102, 0, 0.5)',
-          borderWidth: 14,
+          borderWidth: 15.5,
           pointStyle: 'dash',
           pointRadius: 0,
           fill: false
@@ -152,7 +152,7 @@ function makeChart(rainbow) {
           data: rangeFour,
           backgroundColor: 'rgba(12, 160, 111, 0.5)',
           borderColor: 'rgba(12, 160, 111, 0.5)',
-          borderWidth: 14,
+          borderWidth: 15.5,
           pointStyle: 'dash',
           pointRadius: 0,
           fill: false
@@ -163,7 +163,7 @@ function makeChart(rainbow) {
           data: rangeFive,
           backgroundColor: 'rgba(255, 0, 0, 0.5)',
           borderColor: 'rgba(255, 0, 0, 0.5)',
-          borderWidth: 14,
+          borderWidth: 15.5,
           pointStyle: 'dash',
           pointRadius: 0,
           fill: false
@@ -174,7 +174,7 @@ function makeChart(rainbow) {
           data: rangeSix,
           backgroundColor: 'rgba(9, 87, 134, 0.5)',
           borderColor: 'rgba(9, 87, 134, 0.5)',
-          borderWidth: 14,
+          borderWidth: 15.5,
           pointStyle: 'dash',
           pointRadius: 0,
           fill: false

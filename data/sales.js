@@ -29,6 +29,30 @@ function makeChart(sales) {
           }
         }
       },
+      plugins: {
+        tooltip: {
+          callbacks: {
+            label(ctx) {
+                  const label = ctx.dataset.label || '';
+                  let value = ctx.parsed.y;
+
+                  // Only format this one dataset’s value
+                  if (label === 'Home sales' ||
+                      label ==='Inheritances') {
+                    // toLocaleString adds thousand separators; force 0 decimals
+                    value = Number(value).toLocaleString(undefined, {
+                      maximumFractionDigits: 0,
+                    });
+                  } else if (label === '...') {
+                    // two decimals
+                    value = value.toFixed(2);
+                  }
+                  // For all others, leave as-is (or format differently)
+                  return `${label}: ${value}`;
+                },
+            }
+          }
+        },
     },
     data: {
       labels: rangeLabels,
@@ -73,7 +97,7 @@ function makeChart(sales) {
             borderWidth: 0,
         },
         {
-            label: 'Homes sales',
+            label: 'Home sales',
             type: 'bar',
             data: rangeFive,
             backgroundColor: 'rgba(91, 155, 213, 1)',
