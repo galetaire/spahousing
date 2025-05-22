@@ -65,7 +65,7 @@ function makeChart(stockbalance) {
               ? 'rgba(91, 155, 213, 1)'  // special color for exactly 1 885 000
               : 'rgba(0, 204, 153, 1)',   // default color
             borderWidth: 0.5,
-            barThickness: 4.5,
+            barThickness: 5,
         },
       ]
     }

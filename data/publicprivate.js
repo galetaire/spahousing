@@ -21,7 +21,7 @@ function makeChart(publicprivate) {
           categoryPercentage: 1,
           borderWidth: 1,
           stack: 'combined',
-          barThickness: 19,
+          barThickness: 20,
         },
         {
           label: 'Private housing',
@@ -32,7 +32,7 @@ function makeChart(publicprivate) {
           categoryPercentage: 1,
           borderWidth: 1,
           stack: 'combined',
-          barThickness: 19,
+          barThickness: 20,
         },
       ]
     },

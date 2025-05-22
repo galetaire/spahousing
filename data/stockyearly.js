@@ -61,7 +61,7 @@ function makeChart(stockyearly) {
             backgroundColor: 'rgba(91, 155, 213, 0.5)',
             borderColor: 'rgba(91, 155, 213, 1)',
             borderWidth: 0.5,
-            barThickness: 4.5,
+            barThickness: 5,
         },
         {
             label: 'Population growth per year',
@@ -70,7 +70,7 @@ function makeChart(stockyearly) {
             backgroundColor: 'rgba(0, 204, 153, 0.7)',
             borderColor: 'rgba(0, 204, 153, 1)',
             borderWidth: 0.5,
-            barThickness: 4.5,
+            barThickness: 5,
         },
       ]
     }

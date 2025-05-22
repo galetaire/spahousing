@@ -22,7 +22,7 @@ function makeChart(publicprivateper) {
           pointStyle: 'circle',
           pointRadius: 6,
           fill: false,
-          barThickness: 19,
+          barThickness: 20.5,
         },
         {
           label: 'Private housing',
@@ -34,7 +34,7 @@ function makeChart(publicprivateper) {
           pointStyle: 'circle',
           pointRadius: 6,
           fill: false,
-          barThickness: 19,
+          barThickness: 20.5,
         },
       ]
     },

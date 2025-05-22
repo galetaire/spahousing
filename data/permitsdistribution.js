@@ -23,7 +23,7 @@ function makeChart(permitsdistribution) {
           pointStyle: 'circle',
           pointRadius: 6,
           fill: false,
-          barThickness: 19,
+          barThickness: 20,
         },
         {
           label: 'By individuals',
@@ -35,7 +35,7 @@ function makeChart(permitsdistribution) {
           pointStyle: 'circle',
           pointRadius: 6,
           fill: false,
-          barThickness: 19,
+          barThickness: 20,
         },
         {
           label: 'By public administration',
@@ -47,7 +47,7 @@ function makeChart(permitsdistribution) {
           pointStyle: 'circle',
           pointRadius: 6,
           fill: false,
-          barThickness: 19,
+          barThickness: 20,
         },
       ]
     },
