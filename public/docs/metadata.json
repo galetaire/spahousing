@@ -738,6 +738,12 @@
           "@type": "Column"
         },
         {
+          "title": "Idealista_mortgage",
+          "dc:description": "Average mortgage monthly payment, house price according to Idealista.com",
+          "source": "=PAYMENT((Average_mortgage_rate/100)/12,Years_mortgage*12,(Idealista_price*100))*-1",
+          "@type": "Column"
+        },
+        {
           "title": "Idealista_house_100",
           "dc:description": "Price of a house according to idealista, base 100 2015",
           "source": "((Idealista_price(n))*100)/Idealista_price(2015)",
