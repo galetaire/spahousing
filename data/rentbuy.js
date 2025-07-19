@@ -17,11 +17,11 @@ function makeChart(rentbuy) {
         {
           label: "Average mortgage price, monthly, for 100m2",
           data: rangeOne,
-          backgroundColor: 'rgba(165, 255, 233, 1)',
-          borderColor: 'rgb(0, 204, 153, 1)',
+          backgroundColor: 'rgb(255, 197, 197, 1)',
+          borderColor: 'rgb(255, 113, 113, 1)',
           borderWidth: 2,
           pointStyle: 'rectRounded',
-          pointBorderColor: 'rgb(0, 204, 153, 1',
+          pointBorderColor: 'rgb(255, 113, 113, 1',
           pointRadius: 13,
           fill: false,
           tension: 0.4
@@ -29,11 +29,11 @@ function makeChart(rentbuy) {
         {
           label: "Average rental price, monthly, for 100m2",
           data: rangeTwo,
-          backgroundColor: 'rgb(255, 197, 197, 1)',
-          borderColor: 'rgb(255, 113, 113, 1)',
+          backgroundColor: 'rgba(165, 255, 233, 1)',
+          borderColor: 'rgb(0, 204, 153, 1)',
           borderWidth: 2,
           pointStyle: 'rectRounded',
-          pointBorderColor: 'rgb(255, 113, 113, 1',
+          pointBorderColor: 'rgb(0, 204, 153, 1',
           pointRadius: 13,
           fill: false,
           tension: 0.4
