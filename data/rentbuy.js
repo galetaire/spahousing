@@ -5,8 +5,8 @@ function makeChart(rentbuy) {
   var rangeStart = 107;
   var rangeEnd = new Date().getFullYear() - 1899;
   var rangeLabels = rentbuy.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = rentbuy.map(function(d) {return d.Idealista_mortgage}).slice(rangeStart, rangeEnd);
-  var rangeTwo = rentbuy.map(function(d) {return d.Idealista_rent_100m}).slice(rangeStart, rangeEnd);
+  var rangeOne = rentbuy.map(function(d) {return d.Idealista_mortgage_86m}).slice(rangeStart, rangeEnd);
+  var rangeTwo = rentbuy.map(function(d) {return d.Idealista_rent_86m}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
   var chart = new Chart('rentbuy', {
@@ -15,7 +15,7 @@ function makeChart(rentbuy) {
       labels: rangeLabels,
       datasets: [
         {
-          label: "Average mortgage price, monthly, for 100m2",
+          label: "Average mortgage price, monthly",
           data: rangeOne,
           backgroundColor: 'rgb(255, 197, 197, 1)',
           borderColor: 'rgb(255, 113, 113, 1)',
@@ -27,7 +27,7 @@ function makeChart(rentbuy) {
           tension: 0.4
         },
         {
-          label: "Average rental price, monthly, for 100m2",
+          label: "Average rental price, monthly",
           data: rangeTwo,
           backgroundColor: 'rgba(165, 255, 233, 1)',
           borderColor: 'rgb(0, 204, 153, 1)',
