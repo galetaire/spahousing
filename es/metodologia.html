@@ -22,13 +22,20 @@
   <link href="../styles/style.css" rel="stylesheet" type="text/css">
   <script>
     function setLanguage(lang) {
+      const currentPath = window.location.pathname;
       if (lang === 'es') {
-        window.location.href = "es/metodologia.html"; // Spanish version
+        // Only redirect if not already in Spanish version
+        if (!currentPath.includes('/es/')) {
+          window.location.href = "/es/metodologia.html";
+        }
       } else {
-        window.location.href = "../methodology.html"; // English version
+        // Only redirect if not already in English version
+        if (currentPath.includes('es')) {
+          window.location.href = "/methodology.html";
+        }
       }
     }
-</script>
+  </script>
 </head>
 <body>
 <br>
