@@ -30,13 +30,20 @@
   <link href="../styles/style.css" rel="stylesheet" type="text/css">
   <script>
     function setLanguage(lang) {
+      const currentPath = window.location.pathname;
       if (lang === 'es') {
-        window.location.href = "es/indice.html"; // Spanish version
+        // Only redirect if not already in Spanish version
+        if (!currentPath.includes('/es/')) {
+          window.location.href = "/es/indice.html";
+        }
       } else {
-        window.location.href = "../index.html"; // English version
+        // Only redirect if not already in English version
+        if (currentPath.includes('')) {
+          window.location.href = "/index.html";
+        }
       }
     }
-</script>
+  </script>
 </head>
 <body>
 <br>
