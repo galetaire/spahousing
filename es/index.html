@@ -34,11 +34,11 @@
       if (lang === 'es') {
         // Only redirect if not already in Spanish version
         if (!currentPath.includes('/es/')) {
-          window.location.href = "/es/indice.html";
+          window.location.href = "/es/index.html";
         }
       } else {
         // Only redirect if not already in English version
-        if (currentPath.includes('es')) {
+        if (currentPath.includes('/es/')) {
           window.location.href = "/index.html";
         }
       }
