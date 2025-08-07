@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metodología - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="../styles/style.css" rel="stylesheet" type="text/css">
+  <script>
+    function setLanguage(lang) {
+      if (lang === 'es') {
+        window.location.href = "es/metodologia.html"; // Spanish version
+      } else {
+        window.location.href = "../methodology.html"; // English version
+      }
+    }
+</script>
+</head>
+<body>
+<br>
+<br>
+
+<div class="lang-switcher">
+  <button onclick="setLanguage('en')">EN</button>
+  <button onclick="setLanguage('es')">ES</button>
+</div>
+
+<h1>Methodology 📓</h1>
+<div class="navbar">
+  <button onclick="window.location.href='indice.html'">Indicadores estadísticos 📉</button>
+  <button onclick="window.location.href='metodologia.html'">Metodología 📓</button>
+</div>
+
+<p>La información estadística de esta página se refiere a España. La <a href="posts/marketcap.html">capitalización de mercado</a> del sector inmobiliario español, para el año 2024, fue de ~5.1 billones €.</p>
+
+<h2>Base de datos</h2>
+<ul>
+  <li><a href="https://github.com/galetaire/spahousing/blob/main/public/docs/spain_stats_csv.csv"><b>Explorador de Github</b></a> ➞ Visualiza los datos antes de descargarlos.</li>
+</ul>
+<table>
+  <thead>
+    <tr>
+      <th>Archivos (disponibles en 2 formatos + metadata)</th>
+      <th>Acceso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Comma Separated Values (.csv)</td><td><a href="https://github.com/galetaire/spahousing/raw/main/public/docs/spain_stats_csv.csv">Descargar</a></td></tr>
+    <tr><td>OpenDocument Spreadsheet (.ods)</td><td><a href="https://github.com/galetaire/spahousing/raw/main/public/docs/spain_stats_ods.ods">Descargar</a></td></tr>
+    <tr><td>Metadata descriptors (.json)</td><td><a href="https://github.com/galetaire/spahousing/raw/main/public/docs/metadata.json">Descargar</a></td></tr>
+  </tbody>
+</table>
+
+<h2>Fuentes y actualización</h2>
+<p>El contenido se basa en datos de múltiples instituciones estadísticas. Todos son reproducibles y pueden ser verificados.</p>
+
+<p>Por norma general, los datos se actualizan trimestralmente. Cuando se trata de datos anuales en curso, los valores mostrados son proyecciones usando los datos disponibles del año en curso (sean meses, semanas...). En los casos de variables afectadas por fenómenos estacionales, las proyecciones han sido ajustadas.</p>
+
+<h2>Notas y contacto</h2>
+<p>Este sitio web es abierto, público y gratuito, y puede ser duplicado por completo a través de github. Todo el contenido es original y puede reproducirse siempre que se referencíe adecuadamente. Puedes contactar conmigo via <a href="https://x.com/HousingSpanish">X</a> o <a href="https://www.reddit.com/r/spainhousing/">Reddit</a>.</p>
+
+<br>
+<!-- Footer-->
+<div id="footer">
+  <script>document.write(new Date().getFullYear())</script> ©HousingSpanish 🔭. Creative Commons Attribution-ShareAlike 4.0 International License.
+</div>
+<br>
+</body>
+</html>

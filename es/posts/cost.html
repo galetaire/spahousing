@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Building cost - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
+  <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Coste de producción</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../indice.html'">Indicadores estadísticos 📉</button>
+  <button onclick="window.location.href='../metodologia.html'">Metodología 📓</button>
+</div>
+<br>
+<p><em>How much it costs to build a house in Spain? Here you have a</em> <strong><a href="../posts/buildingcost.html">template budget</a></strong>.</p>
+
+<div id="chart-wrapper"><canvas id="costratio"></canvas></div>
+<script src="../../data/costratio.js"></script>
+  <ul>
+    <li><strong>↑ Ratio between the average housing price and the average construction cost:</strong> if the ratio is (x), it means houses are being sold (x) times the price of production.</li>
+    <li>A higher ratio means the construction sector has higher profit margins. Note that a significant part of these profit margins are in fact tax payments.</li>
+  </ul>
+
+  <div id="chart-wrapper"><canvas id="costchange"></canvas></div>
+  <script src="../../data/costchange.js"></script>
+  <ul>
+    <li><strong>↑ Cost of production (in %):</strong> year over year evolution of construction costs.</li>
+  </ul>
+
+  <div id="chart-wrapper"><canvas id="workersperunit"></canvas></div>
+  <script src="../../data/workersperunit.js"></script>
+  <ul>
+    <li><strong>↑ Ratio of workers per housing unit built:</strong> The great shift is due to a change in the core business. New builds are no longer the core business, restorations are.</li>
+  </ul>
+
+  <div id="chart-wrapper"><canvas id="employed100"></canvas></div>
+  <script src="../../data/employed100.js"></script>
+  <ul>
+    <li><strong>↑ Number of workers employed in construction per 100 inhabitants</strong>, Spain.</li>
+  </ul>
+
+  <div id="chart-wrapper"><canvas id="gasoline"></canvas></div>
+  <script src="../../data/gasoline.js"></script>
+  <ul>
+    <li><strong>↑ Spain gasoline prices, in US dollars per litre:</strong> As means of comparison, the price of US gasoline is represented also in the chart. Since oil is traded worldwide in dollars, representing the price in USD is more suitable than using local currencies.</li>
+    <li>Housing is directly related to energy, with oil accounting for around ≈29% of global primary energy consumption
+      (<a href="https://www.iea.org/data-and-statistics/data-tools/energy-statistics-data-browser?country=WORLD&fuel=Energy%20supply&indicator=TESbySource">1</a>,
+      <a href="https://ourworldindata.org/global-energy-200-years">2</a>).
+    </li>
+  </ul>
+
+  <h2>Data sources</h2>
+  <ul>
+    <li>Number of units per type and m², Single Family (<em>unifamiliar</em>) and Condominiums (<em>en bloque</em>) (<em>6.Visados de dirección de obra: Obra nueva, ampliación y/o reforma. Nº de viviendas y superficie media según tipo de obra y destino principal</em>):
+      <a href="https://apps.fomento.gob.es/BoletinOnline/?nivel=2&orden=09000000">Link</a>
+    </li>
+    <li>Material execution budget, where construction cost = PEM (<em>3. Visados de dirección de obra: Obra nueva. Presupuesto de ejecución material según destino principal</em>):
+      <a href="https://apps.fomento.gob.es/BoletinOnline/?nivel=2&orden=09000000">Link</a>
+    </li>
+    <li>Cost of materials, from 1992 to 2005, calculated using the change in the <em>Material execution budget</em>:
+      <a href="https://apps.fomento.gob.es/BoletinOnline/?nivel=2&orden=08000000">Link</a>
+    </li>
+    <li>Cost of materials, from 2006 onwards (<em>Indice de costes del sector de la construcción, Base Enero 2015=100, Total Edificación, ponderado mano de obra y consumo materiales</em>):
+      <a href="https://apps.fomento.gob.es/BoletinOnline/?nivel=2&orden=08000000">Link</a>
+    </li>
+    <li>Housing prices, from 1985 to 2006, according to Sociedad de Tasación (<em>Access to data is under request, but can be seen in the linked publication</em>):
+      <a href="https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf">Publication</a>,
+      <a href="https://www.st-tasacion.es/informe-de-tendencias-digital/">Link</a>
+    </li>
+    <li>Structure of the construction industry (<em>Publicaciones anuales</em>):
+      <a href="https://www.mitma.gob.es/informacion-para-el-ciudadano/informacion-estadistica/construccion/estructura-de-la-industria-de-la-construccion/estructura-de-la-industria-de-laconstruccion">Link</a>
+    </li>
+    <li>Housing prices, from 2007 onwards, according to the notaries (<em>Grupo 5 &gt; Acto 501 - Compraventa inmuebles &gt; Inmuebles en fincas urbanas, viviendas</em>):
+      <a href="http://www.notariado.org/liferay/web/cien/estadisticas-al-completo">Link</a>
+    </li>
+    <li>U.S. regular gasoline prices, Energy Information Administration (<em>Weekly U.S. Regular Conventional Retail Gasoline Prices, Dollars per Gallon</em>):
+      <a href="https://www.eia.gov/petroleum/gasdiesel/">Link</a>
+    </li>
+    <li>Spain gasoline prices, International Energy Agency (<em>Sin Plomo 95</em>):
+      <a href="https://www.dieselogasolina.com/Estadisticas/Historico">Link</a>
+    </li>
+  </ul>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <script>document.write(new Date().getFullYear())</script> ©HousingSpanish 🔭. Creative Commons Attribution-ShareAlike 4.0 International License.
+</div>
+<br>
+</body>
+</html>

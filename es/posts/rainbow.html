@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Housing cycles - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Demographic model: housing cycles</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../indice.html'">Indicadores estadísticos 📉</button>
+  <button onclick="window.location.href='../metodologia.html'">Metodología 📓</button>
+</div>
+<br>
+<p style="font-size: 14px; font-style: italic;">This is an experimental indicator. Must be read as an informative indicator, not a scientific measure.</p>
+<div id="chart-wrapper" style="border-radius:12px; overflow:hidden; display:inline-block;">
+<canvas id="rainbow" width="700" height="375"></canvas></div>
+<script src="../../data/rainbow.js"></script>
+
+<ul>
+  <li><strong>Color range interpretation</strong> ➞
+    <strong style="color: rgba(209, 53, 53);">Red</strong> = strong overprice;
+    <strong style="color: rgba(224, 120, 16);">Orange</strong> = slightly overprice;
+    <strong style="color: rgba(201, 161, 0);">Yellow</strong> = neutral;
+    <strong style="color: rgba(12, 160, 111);">Green</strong> = slightly underprice;
+    <strong style="color: rgba(9, 87, 134);">Blue</strong> = strong underprice.
+  </li>
+</ul>
+
+<p>
+  The rainbow curve describes a demographic band, which, overlapped with the real price, evaluates the stage of the price cycle. A few notes and considerations:
+</p>
+
+<ul>
+  <li>The real price data is derived from an alternative formula, <a href="realprice.html">real price notes</a>.</li>
+  <li>The rainbow curve is a trendline equation derived from the demographic curve (quadratic function).</li>
+  <li>The derived rainbow curve has been price-adjusted, in order to fit properly with the price pattern.</li>
+  <li>The central line (yellow) is the reference trendline, adding an equidistant band until it convers most peaks and troughs.</li>
+</ul>
+
+<h2>Equations chart:</h2>
+<p>
+  <img src="https://math.vercel.app/?bgcolor=auto&from=Rainbow%5C%3Acurve%20%3D-0%2C06%5E2%2B8%2C5x%2B145%0A%0A%0A.svg" alt="Rainbow curve formula"/> _____ <img src="https://math.vercel.app/?bgcolor=auto&from=Demographic%5C%3Acurve%20%3D-1583%2C7x%5E2%2B195013x%2B1e07%0A.svg" alt="Demographic curve formula"/>
+</p>
+<div id="chart-wrapper"><canvas id="rainbowsource"></canvas></div>
+<script src="../../data/rainbowsource.js"></script>
+
+<h2>Peaks and troughs chart:</h2>
+<p><strong style="color: rgba(250, 0, 0);">Red</strong> = peak years in the cicle; <strong style="color: rgba(19, 162, 173);">Blue</strong> = trough years in the cicle.</p>
+<div id="chart-wrapper" style="border-radius:12px; overflow:hidden; display:inline-block;">
+<canvas id="rainbowpeaks" width="700" height="375"></canvas></div>
+<script src="../../data/rainbowpeaks.js"></script>
+
+<h2>Data sources</h2>
+<ul>
+  <li>Housing prices, from 1964 to 1984, have been extrapolated using the apparent cement consumption:
+    <a href="https://tematicas.org/sintesis-economica/indicadores-de-produccion-y-demanda-nacional/consumo-aparente-de-cemento/" target="_blank">Link</a>
+  </li>
+  <li>Housing prices, from 1985 to 2006, according to Sociedad de Tasación
+    (<em>Access to data is under request, but can be seen in the linked publication</em>):
+    <a href="https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf" target="_blank">Publication</a>,
+    <a href="https://www.st-tasacion.es/informe-de-tendencias-digital/" target="_blank">Link</a>
+  </li>
+  <li>Housing prices, from 2007 onwards, according to the notaries
+    (<em>Grupo 5 > Acto 501 - Compraventa inmuebles > Inmuebles en fincas urbanas, viviendas</em>):
+    <a href="http://www.notariado.org/liferay/web/cien/estadisticas-al-completo" target="_blank">Link</a>
+  </li>
+  <li>Inflation data (<em>Table: average inflation Spain (CPI) - by year</em>):
+    <a href="https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx" target="_blank">Link</a>
+  </li>
+  <li>Population and projections according to INE
+    (<em>range of used population was that between 25 and 50 years old > Data used is from January 1st of the current year</em>):
+    <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176951&menu=resultados&idp=1254735572981" target="_blank">Population consolidated</a>,
+    <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176953&menu=resultados&idp=1254735572981" target="_blank">Population projection</a>
+  </li>
+</ul>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <script>document.write(new Date().getFullYear())</script> ©HousingSpanish 🔭. Creative Commons Attribution-ShareAlike 4.0 International License.
+</div>
+<br>
+</body>
+</html>

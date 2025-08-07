@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Alquiler - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
+  <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Precio del alquiler</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../indice.html'">Indicadores estadísticos 📉</button>
+  <button onclick="window.location.href='../metodologia.html'">Metodología 📓</button>
+</div>
+<br>
+<div id="chart-wrapper"><canvas id="rentprice"></canvas></div>
+<script src="../../data/rentprice.js"></script>
+
+<ul>
+  <li><strong>↑ Evolución de los precios de alquiler y de compra según Idealista y el INE</strong>, base 100 = 2015.</li>
+  <li>Los precios de alquiler recogidos por el INE se consideran experimentales. En relación al alquiler, los datos de Idealista ofrecen mayor fiabilidad en tanto que son el marketplace de referencia en España para la búsqueda de alquiler de vivienda.</li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="rentbuy"></canvas></div>
+<script src="../../data/rentbuy.js"></script>
+
+<ul>
+  <li><strong>↑ Evolución del pago medio mensual de alquiler y de hipoteca.</strong> Ambos escenarios son para una vivienda de 86m2 (media nacional), y ambos precios se han generado partiendo de la misma fuente, Idealista.
+
+  <p>Para el pago de la hipoteca se ha considerado una financiación del 100%, sin pago de entrada. Sin embargo, no se tienen en cuenta otros posibles gastos asociados a las hipotecas (seguros, tasaciones...), ni los costes de adquisición (impuesto de transmisiones, IVA, etc.), ni los costes recurrentes de propiedad (impuesto sobre bienes inmuebles, tasa de recogida de basuras, cuotas comunitarias...).</p></li>
+</ul>
+
+<h2>Alquiler residencial</h2>
+
+  <img src="../../images/residentialmap.png" alt="Viviendas residenciales en alquiler en España" style="width: 700px">
+
+<ul>
+  <li><strong>↑ Distribución del alquiler residencial</strong>: los valores representan el porcentaje de viviendas en alquiler residencial en relación al total de viviendas existentes en el municipio.</li>
+</ul>
+
+<h2>Alquiler vacacional</h2>
+
+<img src="../../images/vacationalmap.png" alt="Viviendas vacacionales en alquiler en España" style="width: 700px">
+
+<ul>
+  <li><strong>↑ Distribución del alquiler vacacional</strong>: los valores representan el porcentaje de viviendas en alquiler vacacional en relación al total de viviendas existentes en el municipio.</li>
+</ul>
+
+<h2>Fuente de los datos</h2>
+<ul>
+  <li>Índice del precio de la vivienda según el INE (<em>IPV</em>): <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736152838&menu=resultados&idp=1254735976607">Enlace</a></li>
+  <li>Índice del precio del alquiler según el INE (<em>IPVA</em>): <a href="https://www.ine.es/experimental/ipva/experimental_precios_vivienda_alquiler.htm">Enlace</a></li>
+  <li>Precios del alquiler según Idealista: <a href="https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/alquiler/">Enlace</a></li>
+  <li>Precios de compra según Idealista: <a href="https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/">Enlace</a></li>
+  <li>Hipotecas constituídas según la tasa de interés, Banco de España (<em>Tipo medio de los préstamos hipotecarios a más de 3 años para adquisición de vivienda libre &gt; Del conjunto de entidades de crédito</em>): <a href="https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/relacionados/tiposinteres/guia-textual/tiposinteresrefe/tabla_tipos_referencia_oficiales_mercado_hipotecario.html">Enlace</a></li>
+  <li>Plazo medio de las hipotecas (<em>Indicadores nacionales; Plazo medio de las hipotecas constituidas</em>): <a href="https://www.ine.es/dynt3/inebase/index.htm?padre=1043&capsel=3704">Enlace</a></li>
+  <li>Alquiler vacacional, INE: <a href="https://www.ine.es/experimental/viv_turistica/exp_viv_turistica_tablas.htm">Enlace</a></li>
+  <li>Alquiler residencial, INE: <a href="https://www.ine.es/censos2011/tablas/Inicio.do">Enlace</a></li>
+</ul>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <script>document.write(new Date().getFullYear())</script> ©HousingSpanish 🔭. Creative Commons Attribution-ShareAlike 4.0 International License.
+</div>
+<br>
+</body>
+</html>

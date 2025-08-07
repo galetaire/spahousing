@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Currencies - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Housing price in different currencies</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../indice.html'">Indicadores estadísticos 📉</button>
+  <button onclick="window.location.href='../metodologia.html'">Metodología 📓</button>
+</div>
+<br>
+<p>
+  Real estate is the world's largest store of wealth
+  (<a href="https://www.savills.com/impacts/market-trends/the-total-value-of-global-real-estate-property-remains-the-worlds-biggest-store-of-wealth.html" target="_blank">1</a>,
+  <a href="https://www.savills.com/impacts/market-trends/the-total-value-of-global-real-estate.html" target="_blank">2</a>).
+  Wealth is measured in units of account, commonly money, but not all moneys preserve wealth equally.
+</p>
+
+<div id="chart-wrapper"><canvas id="housedollar"></canvas></div>
+<script src="../../data/housedollar.js"></script>
+<ul>
+  <li><strong>Price in dollars, 100m<sup>2</sup> house</strong>: the rate EUR/USD used is the yearly average.</li>
+  <li><strong>Price in euros, 100m<sup>2</sup> house</strong>: average price, more information back in <a href="price.html">Price</a>.</li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="housegold"></canvas></div>
+<script src="../../data/housegold.js"></script>
+<ul>
+  <li><strong>Price in ounces of gold, 100m<sup>2</sup> house</strong>: the gold price used is the yearly average.</li>
+  <li><strong>Price in euros, 100m<sup>2</sup> house</strong>: average price, more information back in <a href="price.html">Price</a>.</li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="housebitcoin"></canvas></div>
+<script src="../../data/housebitcoin.js"></script>
+<ul>
+  <li><strong>Price in bitcoins, 100m<sup>2</sup> house</strong>: the bitcoin price used is the yearly average.</li>
+  <li><strong>Price in euros, 100m<sup>2</sup> house</strong>: average price, more information back in <a href="price.html">Price</a>.</li>
+</ul>
+
+<h2>Data sources</h2>
+<ul>
+  <li>Housing prices, from 1985 to 2006, according to Sociedad de Tasación (<em>Access to data is under request, but can be seen in the linked publication</em>):
+    <a href="https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf" target="_blank">Publication</a>,
+    <a href="https://www.st-tasacion.es/informe-de-tendencias-digital/" target="_blank">Link</a>
+  </li>
+  <li>Housing prices, from 2007 onwards, according to the notaries (<em>Grupo 5 > Acto 501 - Compraventa inmuebles > Inmuebles en fincas urbanas, viviendas</em>):
+    <a href="http://www.notariado.org/liferay/web/cien/estadisticas-al-completo" target="_blank">Link</a>
+  </li>
+  <li>Yearly average exchange rate EUR/USD, Investing.com (<em>the euro was launched by 11 EU countries as their new common currency on 1 January 1999, prior exchange rates is the ECU exchange rate</em>):
+    <a href="https://www.investing.com/currencies/eur-usd-historical-data" target="_blank">Link</a>
+  </li>
+  <li>Gold price in Euros (<em>Downloads, Gold price in a range of currencies since 1978 - XLSX</em>):
+    <a href="https://www.gold.org/goldhub/data/gold-prices#registration-type=facebook&just-verified=1" target="_blank">Link</a>
+  </li>
+  <li>Gold above-ground stocks (<em>Gold inflation rate has been around 1.7% since 2010</em>):
+    <a href="https://www.gold.org/goldhub/data/how-much-gold" target="_blank">Link</a>
+  </li>
+  <li>Willy Woo site, Bitcoin inflation rate (<em>The rate gets lower overtime, every 4 years following the "halving" events, current rate is around 1.6%</em>):
+    <a href="https://charts.woobull.com/bitcoin-inflation/" target="_blank">Link</a>
+  </li>
+  <li>Bitcoin price in Euros, 2015 onward (<em>Yahoo Finance, Bitcoin monthly close price EUR (BTC-EUR) - CoinMarketCap</em>):
+    <a href="https://finance.yahoo.com/quote/BTC-EUR/history?period1=1410912000&period2=1671753600&interval=1mo&filter=history&frequency=1mo&includeAdjustedClose=true" target="_blank">Link</a>
+  </li>
+  <li>Bitcoin price in Euros prior to 2015 → 2010 (BTC price = 0.11$, exchange rate = 0.70$/€), 2011 (BTC price = 5.28$, exchange rate = 0.68$/€), 2012 (BTC price = 7.76$, exchange rate = 0.71$/€), 2013 (BTC price = 167.32$, exchange rate = 0.70$/€) and 2014 (BTC price = 542.28$, exchange rate = 0.69$/€) (<em>Bitcoin Price Table, US dollars, 2010–2022 (Monthly)</em>):
+    <a href="https://www.in2013dollars.com/bitcoin-price" target="_blank">Link</a>
+  </li>
+</ul>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <script>document.write(new Date().getFullYear())</script> ©HousingSpanish 🔭. Creative Commons Attribution-ShareAlike 4.0 International License.
+</div>
+<br>
+</body>
+</html>

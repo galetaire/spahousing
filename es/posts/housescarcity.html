@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>House scarcity - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Measuring house scarcity</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../indice.html'">Indicadores estadísticos 📉</button>
+  <button onclick="window.location.href='../metodologia.html'">Metodología 📓</button>
+</div>
+<p>Measuring housing scarcity is not a straightforward task, as multiple factors come into play. The most intuitive indicator, however, is the number of dwellings per person. Even if this primarily reflects the presence of families, those future children will soon need housing in the vicinity, putting additional pressure on the housing market.</p>
+
+<img src="../../images/houseperson.png" alt="Número de habitantes por vivienda" style="width: 700px">
+<table>
+  <thead>
+    <tr>
+      <th>Color</th>
+      <th>Label</th>
+      <th>Number of inhabitants per dwelling</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>🟦</td>
+      <td>No scarcity</td>
+      <td>There is one house for each 0.06 - 0.99 person</td>
+    </tr>
+    <tr>
+      <td>🟩</td>
+      <td>Low scarcity</td>
+      <td>There is one house for each 1.00 - 1.99 people</td>
+    </tr>
+    <tr>
+      <td>🟨</td>
+      <td>Medium scarcity</td>
+      <td>There is one house for each 2.00 - 2.49 people</td>
+    </tr>
+    <tr>
+      <td>🟥</td>
+      <td>High scarcity</td>
+      <td>There is one house for each 2.50 - 3.48 people</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li><strong>Note</strong>: The data used is the data from the INE,
+    <a href="https://www.ine.es/Censo2021/Inicio.do">Censo de viviendas 2021</a>.
+  </li>
+  <li><strong>Download full dataset</strong>:
+    <a href="https://github.com/galetaire/spahousing">Coming soon</a>
+  </li>
+</ul>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <script>document.write(new Date().getFullYear())</script> ©HousingSpanish 🔭. Creative Commons Attribution-ShareAlike 4.0 International License.
+</div>
+<br>
+</body>
+</html>

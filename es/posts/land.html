@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Land - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
+  <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Price of land and building permits</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../indice.html'">Indicadores estadísticos 📉</button>
+  <button onclick="window.location.href='../metodologia.html'">Metodología 📓</button>
+</div>
+<br>
+<div id="chart-wrapper"><canvas id="permitsland"></canvas></div>
+<script src="../../data/permitsland.js"></script>
+<ul>
+  <li>↑ <strong>Price of urban land and building licenses</strong>, Spain.
+    <ul>
+      <li><strong>Left axis</strong>: total number of building licenses.</li>
+      <li><strong>Right axis</strong>: price of land in euros per square meter.</li>
+    </ul>
+  </li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="permitstype"></canvas></div>
+<script src="../../data/permitstype.js"></script>
+<ul>
+  <li>↑ <strong>Building licenses according to type of permit</strong>: build (new), reform or demolition.</li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="permitsdistribution"></canvas></div>
+<script src="../../data/permitsdistribution.js"></script>
+<ul>
+  <li>↑ <strong>Building licenses by type of requester</strong>: legal (private) entities, individuals or public entities.</li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="velocity"></canvas></div>
+<script src="../../data/velocity.js"></script>
+<ul>
+  <li>↑ <strong>House and land velocity ratio</strong>: The velocity is a measurement of the rate at which the current stock (house or land) is exchanged. The lower the value, the higher the velocity. A ratio of (x) means that it would take (x) years to exchange the stock at current speed.</li>
+</ul>
+
+<img src="../../images/landprice.png" alt="Precio del suelo urbano" style="width: 700px">
+
+<ul>
+  <li>↑ <strong>Urban land price index</strong>: For an approach to land price, please see this
+    <a href="landprice.html">entry</a>.
+  </li>
+</ul>
+
+<h2>Data sources</h2>
+<ul>
+  <li>Construction and Building Permits (<em>11.Visados de dirección de obra. Nº visados según tipo de obra; 7.Visados de dirección de obra: Obra nueva, ampliación y/o reforma. Nº de viviendas según clase de promotor</em>):
+    <a href="https://apps.fomento.gob.es/BoletinOnline/?nivel=2&orden=09000000" target="_blank">Link</a>
+  </li>
+  <li>Prices and transactions of land (<em>Series estadísticas &gt; Precios del suelo &gt; 4.Precio medio del metro cuadrado de suelo urbano por comunidades autónomas y provincias</em>):
+    <a href="https://www.mitma.gob.es/el-ministerio/informacion-estadistica/vivienda-y-actuaciones-urbanas/estadisticas/suelo/estadisticas-de-precios-de-suelo-urbano" target="_blank">Link</a>
+  </li>
+  <li>Total urban land area (<em>Resultados nacionales &gt; Por intervalos población y superficies parcelas urbanas</em>):
+    <a href="https://www.catastro.hacienda.gob.es/esp/estadistica_1.asp" target="_blank">Link</a>
+  </li>
+</ul>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <script>document.write(new Date().getFullYear())</script> ©HousingSpanish 🔭. Creative Commons Attribution-ShareAlike 4.0 International License.
+</div>
+<br>
+</body>
+</html>

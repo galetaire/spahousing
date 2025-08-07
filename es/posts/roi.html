@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Return on inverstment - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Housing return on investment</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../indice.html'">Indicadores estadísticos 📉</button>
+  <button onclick="window.location.href='../metodologia.html'">Metodología 📓</button>
+</div>
+<br>
+<div id="chart-wrapper"><canvas id="roigross"></canvas></div>
+<script src="../../data/roigross.js"></script>
+ <ul>
+   <li><strong>↑ Housing gross appreciation (%)</strong>, Spain.
+     <ul>
+       <li><strong>Bars</strong>: green denotes positive appreciation; red denotes negative.</li>
+       <li><strong>Black dotted line</strong>: annual inflation rate, represented in percentage.</li>
+     </ul>
+   </li>
+ </ul>
+
+ <div id="chart-wrapper"><canvas id="roinet"></canvas></div>
+ <script src="../../data/roinet.js"></script>
+ <ul>
+   <li><strong>↑ Housing return on investment (%)</strong>: considers both gross asset appreciation and net rental return (as calculated in section <em>Average rental return</em>).
+     <ul>
+       <li><strong>Bars</strong>: green denotes positive appreciation; red denotes negative.</li>
+       <li><strong>Black dotted line</strong>: annual inflation rate, represented in percentage.</li>
+     </ul>
+   </li>
+ </ul>
+
+ <h2>Average rental return</h2>
+ <p><em>Rental source: <a href="https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/alquiler/"><strong>Idealista</strong></a></em></p>
+
+ <div id="chart-wrapper"><canvas id="rentratio"></canvas></div>
+ <script src="../../data/rentratio.js"></script>
+ <ul>
+   <li><strong>↑ Price-to-rent ratio (%, net and gross)</strong>: annual percentage of housing rental return in Spain.</li>
+ </ul>
+
+ <div id="chart-wrapper"><canvas id="renttime"></canvas></div>
+ <script src="../../data/renttime.js"></script>
+ <ul>
+   <li><strong>↑ Price-to-rent ratio (time, net and gross)</strong>: number of years to fully recover the cost of a home purchase in Spain through rental income.</li>
+ </ul>
+
+ <p>The charts from above show the ratio between the purchase price and the rental price (both in %; and in time, years). In essence, it's an indicator similar to the price-to-earnings ratio (P/E) used in the stock market analysis. It can be interpreted as follows:</p>
+ <ul>
+   <li>At 2010 prices, it took 27.8 years to fully recover a house purchase through rental returns, at a 3.6% annual rental return.</li>
+   <li>At 2020 prices, it took 17.5 years to fully recover a house purchase through rental returns, at a 5.7% annual rental return.</li>
+ </ul>
+
+<h2>Data sources</h2>
+ <ul>
+   <li>Housing prices, from 1985 to 2006, according to Sociedad de Tasación (<em>Access to data is under request, but can be seen in the linked publication</em>):
+     <a href="https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf">Publication</a>,
+     <a href="https://www.st-tasacion.es/informe-de-tendencias-digital/">Link</a>
+   </li>
+   <li>Housing prices, from 2007 onwards, according to the notaries (<em>Grupo 5 &gt; Acto 501 - Compraventa inmuebles &gt; Inmuebles en fincas urbanas, viviendas</em>):
+     <a href="http://www.notariado.org/liferay/web/cien/estadisticas-al-completo">Link</a>
+   </li>
+   <li>Inflation data (<em>Table: average inflation Spain (CPI) - by year</em>):
+     <a href="https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx">Link</a>
+   </li>
+   <li>Rental prices according to Idealista (<em>for modelling net returns, a 25% has been subtracted from the gross return</em>):
+     <a href="https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/alquiler/">Link</a>
+   </li>
+   <li>Housing prices according to Idealista (<em>for coherence purposes, rental returns have been calculated using Idealista housing prices</em>):
+     <a href="https://www.idealista.com/sala">Link</a>
+   </li>
+ </ul>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <script>document.write(new Date().getFullYear())</script> ©HousingSpanish 🔭. Creative Commons Attribution-ShareAlike 4.0 International License.
+</div>
+<br>
+</body>
+</html>

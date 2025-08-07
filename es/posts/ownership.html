@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ownership structure - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Home sales by type of buyer</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../indice.html'">Indicadores estadísticos 📉</button>
+  <button onclick="window.location.href='../metodologia.html'">Metodología 📓</button>
+</div>
+<br>
+<div id="chart-wrapper"><canvas id="buyer"></canvas></div>
+<script src="../../data/buyer.js"></script>
+
+<p>
+  The chart from above shows the distribution (%) of home sales according to whether the buyer is national, foreigner or a legal entity (companies, investment funds ...). Thus, we can see who dominates and who departs the market. Some observations:
+</p>
+
+<ul>
+  <li><strong>Observation A</strong>: between 2011 and 2013 the weight of legal entities expanded, which can be interpreted as (1) an interest by investment funds, and (2) an increase in foreclosures.</li>
+  <li><strong>Observation B</strong>: between 2014 and 2020, the weight of foreign population has consolidated at around 10%. This includes both resident and non-resident foreigners.</li>
+</ul>
+
+<h1>Housing by type of tenure</h1>
+
+<div id="chart-wrapper"><canvas id="tenure"></canvas></div>
+<script src="../../data/tenure.js"></script>
+
+<p>
+  The chart from above shows the distribution (%) of homes according to whether the house is owned (and used as primary house for living), rented or freely loaned. Thus, we can see the structure of ownership in Spain. Some observations:
+</p>
+
+<ul>
+  <li><strong>Observation A</strong>: fully owned houses is the prime tenure in Spain.</li>
+  <li><strong>Observation B</strong>: since 2004 the number of rented houses has been increasing.</li>
+  <li><strong>Observation C</strong>: freely loaned houses have remained stable. These loans are made normally between family members.</li>
+</ul>
+
+<h2>Data sources</h2>
+
+<ul>
+  <li>Property Registrars' Reports (<em>Anuarios Disponibles > Year desired > section "Distribución de compraventas de vivienda por tipo de adquirente" and "Nacionalidad en las compras de vivienda"</em>):
+    <a href="https://www.registradores.org/actualidad/portal-estadistico-registral/estadisticas-de-propiedad" target="_blank">Link</a>
+  </li>
+  <li>Continuous Household Survey (<em>Nacional > Viviendas > Número de viviendas principales según tipo de edificación y régimen de tenencia</em>):
+    <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176952&menu=resultados&idp=1254735572981" target="_blank">Link</a>
+  </li>
+  <li>Living Conditions Survey (<em>Viviendas > Hogares por régimen de tenencia de la vivienda y tipo de hogar</em>):
+    <a href="https://www.ine.es/dynt3/inebase/index.htm?padre=792&capsel=792" target="_blank">Link</a>
+  </li>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <script>document.write(new Date().getFullYear())</script> ©HousingSpanish 🔭. Creative Commons Attribution-ShareAlike 4.0 International License.
+</div>
+<br>
+</body>
+</html>

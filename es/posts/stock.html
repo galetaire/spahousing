@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stock - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Stock development</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../indice.html'">Indicadores estadísticos 📉</button>
+  <button onclick="window.location.href='../metodologia.html'">Metodología 📓</button>
+</div>
+<br>
+<div id="chart-wrapper"><canvas id="stockyearly"></canvas></div>
+<script src="../../data/stockyearly.js"></script>
+<ul>
+  <li><strong>↑ Number of dwellings and population growth</strong>: new homes built and population change year on year. See the approach to estimate the historical data <a href="stocknotes.html">here</a>.</li>
+  <li>Explore on this <a href="housescarcity.html">map</a> the number of inhabitants per dwelling and municipality.</li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="stockbalance"></canvas></div>
+<script src="../../data/stockbalance.js"></script>
+<ul>
+  <li><strong>↑ Housing surplus or deficit</strong>: difference between housing growth (the total number of houses built in a year) and population growth divided by 2 (the total number of potential couples gained or lost in a year). Blue color indicates a housing surplus, while green color indicates a housing deficit.</li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="typehouse"></canvas></div>
+<script src="../../data/typehouse.js"></script>
+<ul>
+  <li><strong>↑ Distribution of new houses built per type</strong>: Single-Family or Condominiums.</li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="stockperiods"></canvas></div>
+<script src="../../data/stockperiods.js"></script>
+<ul>
+  <li><strong>↑ Construction period</strong>: number of today existing dwellings per period of construction.</li>
+  <li>The <strong>green bar</strong> is a final estimate based on the current pace of construction. If the pace remains as in 2021 (95,000 per year), the number of houses built between 2021 and 2040 will be ≈1,800,000.</li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="cement"></canvas></div>
+<script src="../../data/cement.js"></script>
+
+<ul>
+  <li>
+    <strong>↑ Cement consumption</strong>, Spain. Consumption and real price correlate positively.
+    <ul>
+      <li><strong>Left axis (line)</strong>: <a href="realprice.html">real price</a> in euros per square meter.</li>
+      <li><strong>Right axis (bars)</strong>: cement consumption per year, in metric tons.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Data sources</h2>
+<ul>
+  <li>
+    Housing stock, from 1900 to 1970, see the approach to estimate the historical data
+    <a href="stocknotes.html">here</a>
+  </li>
+  <li>
+    Housing stock, from 1971 to 2000, according to Atlas Digital de las Áreas Urbanas
+    (<em>Parque de Viviendas &gt; Viviendas según tipo &gt; Viviendas familiares &gt; Select from available years 1970, 1981, 1991, 2001, 2011 &gt; Tabla and Sintesis</em>):
+    <a href="https://atlasau.mitma.gob.es/#c=indicator&view=map1">Link</a>.
+    Based on the data from 1970, 1981 and 1991, the remaining years gaps have been estimated,
+    in a similar way as done by Banco de España
+    (<em>Observatorio de Vivienda y Suelo &gt; Boletines periódicos &gt; Boletín Anual 2021 &gt; Tabla 8.1</em>):
+    <a href="https://www.mivau.gob.es/urbanismo-y-suelo/suelo/observatorio-de-vivienda-y-suelo">Link</a>
+  </li>
+  <li>
+    Housing stock, from 2001 onwards
+    (<em>Total de viviendas por comunidades autónomas y provincias</em>):
+    <a href="https://apps.fomento.gob.es/BoletinOnline2/?nivel=2&orden=33000000">Link</a>
+  </li>
+  <li>
+    Buildings per period of construction
+    (<em>Nacional &gt; Viviendas &gt; Número de viviendas principales según tipo de edificación y año de construcción</em>):
+    <a href="https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&amp;cid=1254736176952&amp;menu=resultados&amp;idp=1254735572981">Link</a>
+  </li>
+  <li>
+    Apparent cement consumption, Ministerio de Industria y Turismo
+    (<em>Principales resultados</em>):
+    <a href="https://industria.gob.es/es-es/estadisticas/paginas/estadistica-cemento.aspx">Link</a>.
+    Apparent cement consumption (<em>Housing prices from 1964 to 1984 have been extrapolated based in this variable</em>):
+    <a href="https://tematicas.org/sintesis-economica/indicadores-de-produccion-y-demanda-nacional/consumo-aparente-de-cemento/">Link</a>
+  </li>
+  <li>
+    Housing prices, from 1985 to 2006, according to Sociedad de Tasación
+    (<em>Access to data is under request, but can be seen in the linked publication</em>):
+    <a href="https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf">Publication</a>,
+    <a href="https://www.st-tasacion.es/informe-de-tendencias-digital/">Link</a>
+  </li>
+  <li>
+    Housing prices, from 2007 onwards, according to the notaries
+    (<em>Grupo 5 &gt; Acto 501 - Compraventa inmuebles &gt; Inmuebles en fincas urbanas, viviendas</em>):
+    <a href="http://www.notariado.org/liferay/web/cien/estadisticas-al-completo">Link</a>
+  </li>
+  <li>
+    Inflation data (<em>Table: average inflation Spain (CPI) - by year</em>):
+    <a href="https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx">Link</a>
+  </li>
+  <li>
+    Average number of persons per household
+    (<em>Proyección del número medio de personas por hogar en España hasta 2037</em>):
+    <a href="https://www.epdata.es/proyeccion-numero-medio-personas-hogar-espana-2035/de078c7c-473a-4ade-bc1e-668b2a9677ae">Link</a>
+  </li>
+  <li>
+    Censo de viviendas 2021
+    (<em>Crear tablas &gt; Municipios &gt; Todos los municipios &gt; Viviendas familiares</em>):
+    <a href="https://www.ine.es/Censo2021/Inicio.do">Link</a>
+  </li>
+  <li>
+    Number of units per type and m², Single Family (<em>unifamiliar</em>) and Condominiums (<em>en bloque</em>)
+    (<em>6.Visados de dirección de obra: Obra nueva, ampliación y/o reforma. Nº de viviendas y superficie media según tipo de obra y destino principal</em>):
+    <a href="https://apps.fomento.gob.es/BoletinOnline/?nivel=2&orden=09000000">Link</a>
+  </li>
+  <li>
+    Material execution budget
+    (<em>3. Visados de dirección de obra: Obra nueva. Presupuesto de ejecución material según destino principal</em>):
+    <a href="https://apps.fomento.gob.es/BoletinOnline/?nivel=2&orden=09000000">Link</a>
+  </li>
+</ul>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <script>document.write(new Date().getFullYear())</script> ©HousingSpanish 🔭. Creative Commons Attribution-ShareAlike 4.0 International License.
+</div>
+<br>
+</body>
+</html>

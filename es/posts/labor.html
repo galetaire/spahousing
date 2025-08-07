@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Empleo - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Desempleo y precios de la vivienda</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../indice.html'">Indicadores estadísticos 📉</button>
+  <button onclick="window.location.href='../metodologia.html'">Metodología 📓</button>
+</div>
+<br>
+<div id="chart-wrapper"><canvas id="laboryearly"></canvas></div>
+<script src="../../data/laboryearly.js"></script>
+
+<ul>
+  <li>↑ <strong>Evolución anual del desempleo y los precios de la vivienda</strong>. La <strong style="color: rgba(178, 10, 142);">zona sombreada lila</strong> destaca la zona dónde los precios de la vivienda descienden.
+    <ul>
+      <li><strong>Eje izquierdo</strong>: desempleo medio anual.</li>
+      <li><strong>Eje derecho</strong>: crecimiento anual medio del precio (invertido).</li>
+    </ul>
+  </li>
+  <li>El desempleo y los precios de la vivienda tienen una relación inversa, con una correlación de -0,35. Cuando desciende el desempleo, los precios de la vivienda aumentan, y viceversa.</li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="laborquarterly"></canvas></div>
+<script src="../../data/laborquarterly.js"></script>
+
+<ul>
+  <li>↑ <strong>Evolución trimestral del desempleo y los precios de la vivienda</strong>.
+    <ul>
+      <li><strong>Eje izquierdo</strong>: IPV, no ajustado a inflación (base 100 = 2015).</li>
+      <li><strong>Eje derecho</strong>: tasa de desempleo media (invertido).</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Fuente de los datos</h2>
+<ul>
+  <li>Desempleo (<em>Resultados > Anuales o Trimestrales > Parados > Parados por sexo y grupo de edad</em>):
+    <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176918&menu=resultados&idp=1254735976595#!tabs-1254736195128">Enlace</a>
+  </li>
+  <li>Precios de la vivienda, de 1985 a 2006, según Sociedad de Tasación (<em>Acceso bajo petición, pero se pueden visualizar en la siguiente publicación</em>):
+    <a href="https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf">Publicación</a>,
+    <a href="https://www.st-tasacion.es/informe-de-tendencias-digital/">Enlace</a>
+  </li>
+  <li>Precios de la vivienda, de 2007 en adelante, según datos de notarios (<em>Grupo 5 &gt; Acto 501 - Compraventa inmuebles &gt; Inmuebles en fincas urbanas, viviendas</em>):
+    <a href="http://www.notariado.org/liferay/web/cien/estadisticas-al-completo">Enlace</a>
+  </li>
+  <li>Índice del precio de la vivienda:
+    <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736152838&menu=resultados&idp=1254735976607">Enlace</a>
+  </li>
+  <li>Datos de inflación (<em>Table: average inflation Spain (CPI) - by year</em>):
+    <a href="https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx">Enlace</a>
+  </li>
+</ul>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <script>document.write(new Date().getFullYear())</script> ©HousingSpanish 🔭. Creative Commons Attribution-ShareAlike 4.0 International License.
+</div>
+<br>
+</body>
+</html>

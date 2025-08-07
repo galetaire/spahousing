@@ -135,6 +135,26 @@ td a:hover {
   background-color: #e6e6e6;
 }
 
+.lang-switcher {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.lang-switcher button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.lang-switcher button:hover {
+  background-color: #0056b3;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   html {
