@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Wages - Spain Housing</title>
+  <title>Salarios - Spain Housing</title>
   <meta name="robots" content="follow, index" />
   <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
   <!-- Schema.org Structured Data -->
@@ -28,7 +28,7 @@
 <br>
 <h1>Salarios y accesibilidad de la vivienda</h1>
 <div class="navbar">
-  <button onclick="window.location.href='../indice.html'">Indicadores estadísticos 📉</button>
+  <button onclick="window.location.href='../index.html'">Indicadores estadísticos 📉</button>
   <button onclick="window.location.href='../metodologia.html'">Metodología 📓</button>
 </div>
 <br>
@@ -36,52 +36,46 @@
 <script src="../../data/wageyearly.js"></script>
 
 <ul>
-  <li>↑ <strong>Average Wage Index</strong>: the average wage index represents the net disposable income averaged for those over 18 years of age in Spain. The values are normalized to the IPVVR of 1999, with an initial value of 51.</li>
-  <li><strong>Case-Shiller housing index (or IPVVR in Spain)</strong>: the index is constructed using data from those homes that have been sold at least twice within the study period, using information from the same units at two points in time.</li>
+  <li>↑ <strong>Índice salarial medio</strong>: el índice representa el ingreso neto disponible promedio para las personas mayores de 18 años en España. Los valores están normalizados al IPVVR de 1999, con un valor inicial de 51.</li>
+  <li><strong>Índice Case-Shiller de vivienda (o IPVVR):</strong>: el índice se construye usando datos de viviendas que se han vendido al menos dos veces durante el periodo de estudio, usando así información de la misma muestra en dos momentos de tiempo distintos.</li>
 </ul>
 
 <div id="chart-wrapper"><canvas id="wageaffordability"></canvas></div>
 <script src="../../data/wageaffordability.js"></script>
 
 <ul>
-  <li>↑ <strong>Housing affordability index (Base 100=1999)</strong>: it considers income growth against housing, inflation and mortgage rates growth.</li>
+  <li>↑ <strong>Índice de accesibilidad a la vivienda (Base 100=1999)</strong>: considera el crecimiento salarial contra el crecimiento de los precios de la vivienda, la inflación general y los tipos hipotecarios</li>
 </ul>
 
 <div id="chart-wrapper"><canvas id="wageratio"></canvas></div>
 <script src="../../data/wageratio.js"></script>
 
 <ul>
-  <li>↑ <strong>Wage disconnection against mortgage amounts (in percentage)</strong>: if the value equals 30, it means that wages need to increase by 30% to match the ideal wage required to comfortably pay the current average mortgage amount.</li>
+  <li>↑ <strong>Desconexión salarial frente al importe de las hipotecas (%)</strong>: si el valor es igual a 30, significa que los salarios deben incrementarse en un 30% para igualar el salario ideal necesario para poder pagar cómodamente el importe medio actual de las hipotecas.</li>
 </ul>
 
-<h2>Data sources</h2>
+<h2>Fuente de los datos</h2>
 <ul>
-  <li>Household disposable income (<em>Saldos contables > Hogares e Instituciones > Renta disponible neta</em>):
-    <a href="https://www.ine.es/jaxiT3/Tabla.htm?t=30906" target="_blank">Link</a>
+  <li>Renta neta disponible (<em>Saldos contables > Hogares e Instituciones > Renta disponible neta</em>):
+    <a href="https://www.ine.es/jaxiT3/Tabla.htm?t=30906" target="_blank">Enlace</a>
   </li>
-  <li>Household savings (<em>Saldos contables > Hogares e Instituciones > Ahorro neto</em>):
-    <a href="https://www.ine.es/jaxiT3/Tabla.htm?t=30906" target="_blank">Link</a>
+  <li>Ahorro neto (<em>Saldos contables > Hogares e Instituciones > Ahorro neto</em>):
+    <a href="https://www.ine.es/jaxiT3/Tabla.htm?t=30906" target="_blank">Enlace</a>
   </li>
-  <li>Mortgages (<em>Results > Annual > National results and by Autonomous Community > Mortgages constituted, over the total properties, by nature of the property > Dwellings</em>):
-    <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736170236&menu=resultados&idp=1254735576757#!tabs-1254736169948" target="_blank">Link</a>
+  <li>Tasa de interés medio de las hipotecas (<em>Resultados &gt; Anuales &gt; Indicadores nacionales &gt; Tipo de interés medio al inicio de las hipotecas constituidas &gt; Viviendas + Total</em>):
+    <a href="https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&cid=1254736170236&menu=resultados&idp=1254735576606#!tabs-1254736169948">Enlace</a>
   </li>
-  <li>Population according to INE (<em>range of used population was that over 18 years old > Data used is from January 1st of the current year</em>):
-    <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176951&menu=resultados&idp=1254735572981" target="_blank">Population consolidated</a>
+  <li>Población según el INE (<em>el rango de población es aquel igual o superior a los 18 años de edad > Los datos son los ofrecidos para enero del año en curso</em>):
+    <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176951&menu=resultados&idp=1254735572981" target="_blank">Población consolidada</a>
   </li>
-  <li>Housing prices based on the Case-Shiller housing index, in Spain also known as IPVVR
-    (<em>the index is calculated by the Registradores de España, we used the yearly average value of IPVVR aritmético suavizado</em>):
-    <a href="https://www.registradores.org/actualidad/portal-estadistico-registral/estadisticas-de-propiedad" target="_blank">Link</a>
+  <li>Índice de precio Case-Shiller, en España también IPVVR (<em>calculado por los Registradores de España, se ha usado el valor medio anual aritmético suavizado</em>):
+    <a href="https://www.registradores.org/actualidad/portal-estadistico-registral/estadisticas-de-propiedad">Enlace</a>
   </li>
-  <li>Housing prices according to <em>Idealista</em>:
-    <a href="https://www.idealista.com/sala-de-prensa/informes-precio-vivienda" target="_blank">Link</a>
+  <li>Precios de compra según Idealista: <a href="https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/">Enlace</a></li>
+  <li>Datos de inflación (<em>Table: average inflation Spain (CPI) - by year</em>):
+    <a href="https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx">Enlace</a>
   </li>
-  <li>Inflation data (<em>Table: average inflation Spain (CPI) - by year</em>):
-    <a href="https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx" target="_blank">Link</a>
-  </li>
-  <li>Mortgages constituted according to interest rate, Bank of Spain
-    (<em>Tipo medio de los préstamos hipotecarios a más de 3 años para adquisición de vivienda libre > Del conjunto de entidades de crédito</em>):
-    <a href="https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/relacionados/tiposinteres/guia-textual/tiposinteresrefe/tabla_tipos_referencia_oficiales_mercado_hipotecario.html" target="_blank">Link</a>
-  </li>
+  <li>Hipotecas constituídas según la tasa de interés, Banco de España (<em>Tipo medio de los préstamos hipotecarios a más de 3 años para adquisición de vivienda libre &gt; Del conjunto de entidades de crédito</em>): <a href="https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/relacionados/tiposinteres/guia-textual/tiposinteresrefe/tabla_tipos_referencia_oficiales_mercado_hipotecario.html">Enlace</a></li>
 </ul>
 <br>
 <!-- Footer-->

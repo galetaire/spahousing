@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Ownership structure - Spain Housing</title>
+  <title>Tenencia - Spain Housing</title>
   <meta name="robots" content="follow, index" />
   <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
   <!-- Schema.org Structured Data -->
@@ -25,50 +25,43 @@
 <body>
 <br>
 <br>
-<h1>Home sales by type of buyer</h1>
+<h1>Compraventas por tipo de comprador</h1>
 <div class="navbar">
-  <button onclick="window.location.href='../indice.html'">Indicadores estadísticos 📉</button>
+  <button onclick="window.location.href='../index.html'">Indicadores estadísticos 📉</button>
   <button onclick="window.location.href='../metodologia.html'">Metodología 📓</button>
 </div>
 <br>
 <div id="chart-wrapper"><canvas id="buyer"></canvas></div>
 <script src="../../data/buyer.js"></script>
 
-<p>
-  The chart from above shows the distribution (%) of home sales according to whether the buyer is national, foreigner or a legal entity (companies, investment funds ...). Thus, we can see who dominates and who departs the market. Some observations:
-</p>
+<p>El gráfico superior muestra la distribución (%) de las compraventas de viviendas según si el comprador es nacional, extranjero o una persona jurídica (empresas, fondos de inversión...). De este modo, podemos ver quién domina y quién se retira del mercado. Algunas observaciones:</p>
 
 <ul>
-  <li><strong>Observation A</strong>: between 2011 and 2013 the weight of legal entities expanded, which can be interpreted as (1) an interest by investment funds, and (2) an increase in foreclosures.</li>
-  <li><strong>Observation B</strong>: between 2014 and 2020, the weight of foreign population has consolidated at around 10%. This includes both resident and non-resident foreigners.</li>
+  <li><strong>Observación A</strong>: entre 2011 y 2013 el peso de las personas jurídicas incremento, que podría interpretarse como (1) un interés creciente de los fondos de inversión, y (2) un incremento de las ejecuciones hipotecarias.</li>
+  <li><strong>Observación B</strong>: entre 2014 y 2020, el peso de la población extranjera se ha ido consolidando. Esta categoria incluye tanto compradores residentes como no residentes.</li>
 </ul>
 
-<h1>Housing by type of tenure</h1>
+<h1>Viviendas según tipo de tenencia</h1>
 
 <div id="chart-wrapper"><canvas id="tenure"></canvas></div>
 <script src="../../data/tenure.js"></script>
 
-<p>
-  The chart from above shows the distribution (%) of homes according to whether the house is owned (and used as primary house for living), rented or freely loaned. Thus, we can see the structure of ownership in Spain. Some observations:
-</p>
+<p>El gráfico superior muestra la distribución (%) de las viviendas según si la vivienda está en propiedad (y usada como residencia principal), alquilada o cedida. De este modo, podemos observar la estructura de la tenencia de la vivienda en España. Algunas observaciones:</p>
 
 <ul>
-  <li><strong>Observation A</strong>: fully owned houses is the prime tenure in Spain.</li>
-  <li><strong>Observation B</strong>: since 2004 the number of rented houses has been increasing.</li>
-  <li><strong>Observation C</strong>: freely loaned houses have remained stable. These loans are made normally between family members.</li>
+  <li><strong>Observación A</strong>: la propiedad de la vivienda es la principal forma de tenencia en España.</li>
+  <li><strong>Observación B</strong>: desde 2004 el número de viviendas en alquiler ha ido en aumento.</li>
+  <li><strong>Observación C</strong>: la cesión de viviendas se ha mantenido estable, comunes entre familiares.</li>
 </ul>
 
-<h2>Data sources</h2>
+<h2>Fuente de los datos</h2>
 
 <ul>
-  <li>Property Registrars' Reports (<em>Anuarios Disponibles > Year desired > section "Distribución de compraventas de vivienda por tipo de adquirente" and "Nacionalidad en las compras de vivienda"</em>):
-    <a href="https://www.registradores.org/actualidad/portal-estadistico-registral/estadisticas-de-propiedad" target="_blank">Link</a>
+  <li>Anuario de los Registradores de la Propiedad (<em>Anuarios Disponibles > Año > sección "Distribución de compraventas de vivienda por tipo de adquirente" y "Nacionalidad en las compras de vivienda"</em>): <a href="https://www.registradores.org/actualidad/portal-estadistico-registral/estadisticas-de-propiedad" target="_blank">Enlace</a>
   </li>
-  <li>Continuous Household Survey (<em>Nacional > Viviendas > Número de viviendas principales según tipo de edificación y régimen de tenencia</em>):
-    <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176952&menu=resultados&idp=1254735572981" target="_blank">Link</a>
+  <li>Encuesta continua de hogares (<em>Nacional > Viviendas > Número de viviendas principales según tipo de edificación y régimen de tenencia</em>): <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176952&menu=resultados&idp=1254735572981" target="_blank">Enlace</a>
   </li>
-  <li>Living Conditions Survey (<em>Viviendas > Hogares por régimen de tenencia de la vivienda y tipo de hogar</em>):
-    <a href="https://www.ine.es/dynt3/inebase/index.htm?padre=792&capsel=792" target="_blank">Link</a>
+  <li>Encuesta de condiciones de vida (<em>Viviendas > Hogares por régimen de tenencia de la vivienda y tipo de hogar</em>): <a href="https://www.ine.es/dynt3/inebase/index.htm?padre=792&capsel=792" target="_blank">Enlace</a>
   </li>
 <br>
 <!-- Footer-->

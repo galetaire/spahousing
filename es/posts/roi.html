@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Return on inverstment - Spain Housing</title>
+  <title>Inversión - Spain Housing</title>
   <meta name="robots" content="follow, index" />
   <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
   <!-- Schema.org Structured Data -->
@@ -25,19 +25,19 @@
 <body>
 <br>
 <br>
-<h1>Housing return on investment</h1>
+<h1>Retornos económicos de la vivienda</h1>
 <div class="navbar">
-  <button onclick="window.location.href='../indice.html'">Indicadores estadísticos 📉</button>
+  <button onclick="window.location.href='../index.html'">Indicadores estadísticos 📉</button>
   <button onclick="window.location.href='../metodologia.html'">Metodología 📓</button>
 </div>
 <br>
 <div id="chart-wrapper"><canvas id="roigross"></canvas></div>
 <script src="../../data/roigross.js"></script>
  <ul>
-   <li><strong>↑ Housing gross appreciation (%)</strong>, Spain.
+   <li><strong>↑ Apreciación bruta de la vivienda (%)</strong>.
      <ul>
-       <li><strong>Bars</strong>: green denotes positive appreciation; red denotes negative.</li>
-       <li><strong>Black dotted line</strong>: annual inflation rate, represented in percentage.</li>
+       <li><strong>Barras</strong>: el verde denota apreciación; el rojo depreciación.</li>
+       <li><strong>Línea discontínua negra</strong>: inflación anual, en porcentaje.</li>
      </ul>
    </li>
  </ul>
@@ -45,52 +45,51 @@
  <div id="chart-wrapper"><canvas id="roinet"></canvas></div>
  <script src="../../data/roinet.js"></script>
  <ul>
-   <li><strong>↑ Housing return on investment (%)</strong>: considers both gross asset appreciation and net rental return (as calculated in section <em>Average rental return</em>).
+   <li><strong>↑ Retorno de la inversión en vivienda (%)</strong>: se considera la apreciación bruta y los retornos netos por alquiler.
      <ul>
-       <li><strong>Bars</strong>: green denotes positive appreciation; red denotes negative.</li>
-       <li><strong>Black dotted line</strong>: annual inflation rate, represented in percentage.</li>
+       <li><strong>Barras</strong>: el verde denota apreciación; el rojo depreciación.</li>
+       <li><strong>Línea discontínua negra</strong>: inflación anual, en porcentaje.</li>
      </ul>
    </li>
  </ul>
 
- <h2>Average rental return</h2>
- <p><em>Rental source: <a href="https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/alquiler/"><strong>Idealista</strong></a></em></p>
+ <h2>Retorno medio del alquiler</h2>
+ <p><em>Fuente: <a href="https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/alquiler/"><strong>Idealista</strong></a></em></p>
+
+ <p>Los siguientes gráficos muestran la ratio entre el precio de compra y el precio del alquiler (tanto en %, como en tiempo, en años). En esencia, es un indicador similar al ratio precio-beneficio (P/E) utilizado en el análisis bursátil. Puede interpretarse de la siguiente manera:</p>
+ <ul>
+   <li>A precios de 2010, se necesitaban 27,8 años para recuperar por completo la compra de la vivienda a través de retornos por alquiler, a un ritmo anual del 3,6%.</li>
+   <li>A precios de 2020, se necesitaban 17,5 años para recuperar por completo la compra de la vivienda a través de retornos por alquiler, a un ritmo anual del 5,7%.</li>
+ </ul>
 
  <div id="chart-wrapper"><canvas id="rentratio"></canvas></div>
  <script src="../../data/rentratio.js"></script>
  <ul>
-   <li><strong>↑ Price-to-rent ratio (%, net and gross)</strong>: annual percentage of housing rental return in Spain.</li>
+   <li><strong>↑ Price-to-rent ratio (en %, neto y bruto)</strong>: porcentaje anual del retorno del alquiler.</li>
  </ul>
 
  <div id="chart-wrapper"><canvas id="renttime"></canvas></div>
  <script src="../../data/renttime.js"></script>
  <ul>
-   <li><strong>↑ Price-to-rent ratio (time, net and gross)</strong>: number of years to fully recover the cost of a home purchase in Spain through rental income.</li>
+   <li><strong>↑ Price-to-rent ratio (en tiempo, neto y bruto)</strong>: número de años para recuperar el coste de la compra de una vivienda a través de su puesta en alquiler. No se consideran imprevistos, ni tampoco la apreciación de la vivienda.</li>
  </ul>
 
- <p>The charts from above show the ratio between the purchase price and the rental price (both in %; and in time, years). In essence, it's an indicator similar to the price-to-earnings ratio (P/E) used in the stock market analysis. It can be interpreted as follows:</p>
+<h2>Fuente de los datos</h2>
  <ul>
-   <li>At 2010 prices, it took 27.8 years to fully recover a house purchase through rental returns, at a 3.6% annual rental return.</li>
-   <li>At 2020 prices, it took 17.5 years to fully recover a house purchase through rental returns, at a 5.7% annual rental return.</li>
- </ul>
-
-<h2>Data sources</h2>
- <ul>
-   <li>Housing prices, from 1985 to 2006, according to Sociedad de Tasación (<em>Access to data is under request, but can be seen in the linked publication</em>):
-     <a href="https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf">Publication</a>,
-     <a href="https://www.st-tasacion.es/informe-de-tendencias-digital/">Link</a>
+   <li>Precios de la vivienda, de 1985 a 2006, según Sociedad de Tasación (<em>Acceso bajo petición, pero se pueden visualizar en la siguiente publicación</em>):
+     <a href="https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf">Publicación</a>,
+     <a href="https://www.st-tasacion.es/informe-de-tendencias-digital/">Enlace</a>
    </li>
-   <li>Housing prices, from 2007 onwards, according to the notaries (<em>Grupo 5 &gt; Acto 501 - Compraventa inmuebles &gt; Inmuebles en fincas urbanas, viviendas</em>):
-     <a href="http://www.notariado.org/liferay/web/cien/estadisticas-al-completo">Link</a>
+   <li>Precios de la vivienda, de 2007 en adelante, según datos de notarios (<em>Grupo 5 &gt; Acto 501 - Compraventa inmuebles &gt; Inmuebles en fincas urbanas, viviendas</em>):
+     <a href="http://www.notariado.org/liferay/web/cien/estadisticas-al-completo">Enlace</a>
    </li>
-   <li>Inflation data (<em>Table: average inflation Spain (CPI) - by year</em>):
-     <a href="https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx">Link</a>
+   <li>Datos de inflación (<em>Table: average inflation Spain (CPI) - by year</em>):
+     <a href="https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx">Enlace</a>
    </li>
-   <li>Rental prices according to Idealista (<em>for modelling net returns, a 25% has been subtracted from the gross return</em>):
-     <a href="https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/alquiler/">Link</a>
+   <li>Precios del alquiler según Idealista (<em>para modelar los beneficios netos, un 25% ha sido sustraído de los beneficios brutos</em>): <a href="https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/alquiler/">Enlace</a>
    </li>
-   <li>Housing prices according to Idealista (<em>for coherence purposes, rental returns have been calculated using Idealista housing prices</em>):
-     <a href="https://www.idealista.com/sala">Link</a>
+   <li>Precios de la compra de vivienda según Idealista (<em>para mantener una coherencia de fuentes, los retornos por alquiler se han calculado partiendo de los precios de compra de Idealista</em>):
+     <a href="https://www.idealista.com/sala">Enlace</a>
    </li>
  </ul>
 <br>

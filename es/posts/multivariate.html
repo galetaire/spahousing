@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Housing overview - Spain Housing</title>
+  <title>Visión general - Spain Housing</title>
   <meta name="robots" content="follow, index" />
   <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
   <!-- Schema.org Structured Data -->
@@ -25,54 +25,49 @@
 <body>
 <br>
 <br>
-<h1>Multivariate model: housing overview</h1>
+<h1>Modelo multivariable: una visión general</h1>
 <div class="navbar">
-  <button onclick="window.location.href='../indice.html'">Indicadores estadísticos 📉</button>
+  <button onclick="window.location.href='../index.html'">Indicadores estadísticos 📉</button>
   <button onclick="window.location.href='../metodologia.html'">Metodología 📓</button>
 </div>
 <br>
 <div id="chart-wrapper"><canvas id="multivariate"></canvas></div>
 <script src="../../data/multivariate.js"></script>
 
-<p>
-  The model groups together seven variables: nominal price, real price, sales, inflation, mortgages, interest rate and employment. All variables are represented as a percentage.
-</p>
+<p>El modelo agrupa siete variables: precio nominal, precio real, compraventas, inflación, hipotecas, tipos de interés y desempleo. Todas las variables se representan en porcentajes.</p>
 
 <ul>
-  <li><strong>Unemployment, Inflation</strong>: average rate for the given year.</li>
-  <li><strong><a href="realprice.html">Real price</a></strong>: percentage of difference between the nominal and the inflation rate.</li>
-  <li><strong>Mortgages, Home sales, Nominal price, Interest rate (Mibor/Euribor)</strong>: percentage of annual change compared to the previous year.</li>
+  <li><strong>Desempleo, inflación</strong>: media anual para el año en curso.</li>
+  <li><strong><a href="realprice.html">Precio real</a></strong>: diferencia entre el precio nominal (en %) y la tasa de inflación (en %).</li>
+  <li><strong>Hipotecas, compraventas, precio nominal, tipo de interés (Mibor/Euribor)</strong>: porcentaje de cambio anual comparado con el año anterior.</li>
 </ul>
 
-<h2>Data sources</h2>
+<h2>Fuente de datos</h2>
 <ul>
-  <li>Housing prices, from 1985 to 2006, according to Sociedad de Tasación (<em>Access to data is under request, but can be seen in the linked publication</em>):
-    <a href="https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf" target="_blank">Publication</a>,
-    <a href="https://www.st-tasacion.es/informe-de-tendencias-digital/" target="_blank">Link</a>
+  <li>Precios de la vivienda, de 1985 a 2006, según Sociedad de Tasación (<em>Acceso bajo petición, pero se pueden visualizar en la siguiente publicación</em>):
+    <a href="https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf">Publicación</a>,
+    <a href="https://www.st-tasacion.es/informe-de-tendencias-digital/">Enlace</a>
   </li>
-  <li>Housing prices, from 2007 onwards, according to the notaries (<em>Grupo 5 > Acto 501 - Compraventa inmuebles > Inmuebles en fincas urbanas, viviendas</em>):
-    <a href="http://www.notariado.org/liferay/web/cien/estadisticas-al-completo" target="_blank">Link</a>
+  <li>Precios de la vivienda, de 2007 en adelante, según datos de notarios (<em>Grupo 5 &gt; Acto 501 - Compraventa inmuebles &gt; Inmuebles en fincas urbanas, viviendas</em>):
+    <a href="http://www.notariado.org/liferay/web/cien/estadisticas-al-completo">Enlace</a>
   </li>
-  <li>Home sales (<em>Results > Annual > Dwellings transferred by type of acquisition > Sales</em>):
-    <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736171438&menu=resultados&idp=1254735576757" target="_blank">Link</a>
+  <li>Datos de inflación (<em>Table: average inflation Spain (CPI) - by year</em>):
+    <a href="https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx">Enlace</a>
   </li>
-  <li>Mortgages (<em>Results > Annual > National results and by Autonomous Community > Mortgages constituted, over the total properties, by nature of the property > Dwellings</em>):
-    <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736170236&menu=resultados&idp=1254735576757#!tabs-1254736169948" target="_blank">Link</a>
+  <li>Compraventas (<em>Resultados &gt; Anuales &gt; Viviendas transmitidas según título de adquisición &gt; Compraventas</em>): <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736171438&menu=resultados&idp=1254735576757">Enlace</a>
   </li>
-  <li>Unemployment (<em>Results > Annual > Unemployed persons > Unemployment rates by sex and age group</em>):
-    <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176918&menu=resultados&idp=1254735976595#!tabs-1254736195128" target="_blank">Link</a>
+  <li>Hipotecas, de 1995 a 2002, según "El mercado de la vivienda en España: una década prodigiosa (1995-2005)", de Isabel Nóvoa Arechaga and Pedro López Suárez, tabla 13 (<em>el número de hipotecas canceladas en ese periodo han sido estimadas a partir del número de hipotecas aprovadas</em>): <a href="https://dialnet.unirioja.es/descarga/articulo/2499407.pdf">Publicación</a>
   </li>
-  <li>Inflation data (<em>Table: average inflation Spain (CPI) - by year</em>):
-    <a href="https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx" target="_blank">Link</a>
+  <li>Hipotecas, de 2003 en adelante (<em>Resultados &gt; Anual &gt; Resultados nacionales y por Comunidades Autónomas &gt; Hipotecas constituídas, sobre el total de fincas, por naturaleza de la finca &gt; Viviendas</em>): <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736170236&menu=resultados&idp=1254735576757#!tabs-1254736169948">Enlace</a>
   </li>
-  <li>Population according to INE (<em>Results > Main series since 1971 > National results, Resident population by date, sex and age > Data used is from January 1st of the current year</em>):
-    <a href="https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736177095&menu=resultados&idp=1254735572981" target="_blank">Link</a>
+  <li>Desempleo (<em>Resultados > Anuales o Trimestrales > Parados > Parados por sexo y grupo de edad</em>):
+    <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176918&menu=resultados&idp=1254735976595#!tabs-1254736195128">Enlace</a>
   </li>
-  <li>Euribor 1-year rate averaged, from 2002 onwards (<em>Euribor 1-year - Historical close, average of observations through period</em>):
-    <a href="https://sdw.ecb.europa.eu/quickview.do?SERIES_KEY=143.FM.M.U2.EUR.RT.MM.EURIBOR1YD_.HSTA" target="_blank">Link</a>
+  <li>Mibor a 1 año, de 1979 a 2001 (<em>Cuadro 19.1 del BE - Tipo de interés. De referencia. Oficiales. Mercado hipotecario. Interbancario. Mibor a 1 año</em>):
+    <a href="https://www.bde.es/webbde/es/estadis/infoest/temas/sb_tiintref.html" target="_blank">Enlace</a>
   </li>
-  <li>Mibor 1-year rate averaged, from 1979 to 2001 (<em>Cuadro 19.1 del BE - Tipo de interés. De referencia. Oficiales. Mercado hipotecario. Interbancario. Mibor a 1 año</em>):
-    <a href="https://www.bde.es/webbde/es/estadis/infoest/temas/sb_tiintref.html" target="_blank">Link</a>
+  <li>Euribor a 1 año, de 2002 en adelante (<em>Euribor 1-year - Historical close, average of observations through period</em>):
+    <a href="https://sdw.ecb.europa.eu/quickview.do?SERIES_KEY=143.FM.M.U2.EUR.RT.MM.EURIBOR1YD_.HSTA" target="_blank">Enlace</a>
   </li>
 <br>
 <!-- Footer-->
