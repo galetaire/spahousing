@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Land scarcity - Spain Housing</title>
+  <title>Escasez de suelo - Spain Housing</title>
   <meta name="robots" content="follow, index" />
   <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
   <!-- Schema.org Structured Data -->
@@ -25,7 +25,7 @@
 <body>
 <br>
 <br>
-<h1>Measuring urban land price</h1>
+<h1>Medición del precio del suelo</h1>
 <div class="navbar">
   <button onclick="window.location.href='../index.html'">Indicadores estadísticos 📉</button>
   <button onclick="window.location.href='../metodologia.html'">Metodología 📓</button>
@@ -37,148 +37,126 @@
   <thead>
     <tr>
       <th>Color</th>
-      <th>Label</th>
-      <th>Range</th>
+      <th>Título</th>
+      <th>Rango</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>🟥</td>
-      <td>No scarcity</td>
-      <td>One square meter costs up to 69 euros</td>
+      <td>Sin escasez</td>
+      <td>El precio de un metro cuadrado es de hasta 69 euros</td>
     </tr>
     <tr>
       <td>🟨</td>
-      <td>Low scarcity</td>
-      <td>One square meter costs from 70 to 108 euros</td>
+      <td>Baja escasez</td>
+      <td>El precio de un metro cuadrado es de entre 70 y 108 euros</td>
     </tr>
     <tr>
       <td>🟩</td>
-      <td>Medium scarcity</td>
-      <td>One square meter costs from 109 to 177 euros</td>
+      <td>Moderada escasez</td>
+      <td>El precio de un metro cuadrado es de entre 109 y 177 euros</td>
     </tr>
     <tr>
       <td>🟦</td>
-      <td>High scarcity</td>
-      <td>One square meter costs from 178 euros up to 770 euros</td>
+      <td>Alta escasez</td>
+      <td>El precio de un metro cuadrado es de 178 euros hasta 770 euros</td>
     </tr>
   </tbody>
 </table>
 
-<h2>Methodology</h2>
+<h2>Metodología</h2>
 <p>
-  For measuring urban land price, we have used a weighted value based on the urban land price of municipalities
-  provided by the
-  <a href="https://www.mitma.gob.es/el-ministerio/informacion-estadistica/vivienda-y-actuaciones-urbanas/estadisticas/suelo/estadisticas-de-precios-de-suelo-urbano" target="_blank">MITMA</a>.
+  Para medir el precio del suelo urbano, hemos usado un valor ponderado basado en el precio del suelo urbano por tamaño de los municipios publicado por el <a href="https://www.mitma.gob.es/el-ministerio/informacion-estadistica/vivienda-y-actuaciones-urbanas/estadisticas/suelo/estadisticas-de-precios-de-suelo-urbano" target="_blank">MITMA</a>.
 </p>
 <p>
-  The weighted value is the outcome of using the <em>average price of the last 15 years</em> and the
-  <em>average price of the last 5 years</em>, in order to have a value that captures both its current price
-  and its price tendency. Being the formula as follows:
+  El valor ponderado es el resultado de usar <em>el precio medio de los últimos 15 años</em> y el
+  <em>precio medio de los últimos 5 años</em>, a fin de tener un precio que capture tanto su precio medio actual como la tendencia del precio. Siendo la fórmula la siguiente:
 </p>
 <img src="https://math.vercel.app/?bgcolor=auto&from=Land%5C%3Aweighted%5C%3Avalue%5C%3A%3D%5BAverage%5C%3A5%5C%3Ayears%5Ctimes2%5D%5C%3A-Average%5C%3A15%5C%3Ayears.svg" alt="Equation">
 
-<p>Data sample for better understanding:</p>
+<p>Fragmento de los datos a modo de ejemplo:</p>
 
 <table>
   <thead>
     <tr>
-      <th>Spanish region</th>
-      <th>Municipalities by inhabitants</th>
-      <th>Average price last 15 years</th>
-      <th>Average price last 5 years</th>
-      <th>Weighted price value</th>
+      <th>Región española</th>
+      <th>Municipio por habitantes</th>
+      <th>Precio medio de los últimos 15 años</th>
+      <th>Precio medio de los últimos 5 años</th>
+      <th>Precio ponderado</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Andalusia</td>
-      <td>From 1000 to 5000</td>
-      <td>110.3</td>
-      <td>116.4</td>
-      <td>122.1</td>
+      <td>Andalucía</td>
+      <td>De 1000 a 5000</td>
+      <td>110,3</td>
+      <td>116,4</td>
+      <td>122,1</td>
     </tr>
     <tr>
-      <td>Andalusia</td>
-      <td>From 5000 to 10000</td>
-      <td>128.3</td>
-      <td>116.5</td>
-      <td>104.8</td>
+      <td>Andalucía</td>
+      <td>De 5000 a 10000</td>
+      <td>128,3</td>
+      <td>116,5</td>
+      <td>104,8</td>
     </tr>
   </tbody>
 </table>
 
-<p><strong>Commentary for the data sample</strong>: Even if both prices are similar (around 116 euros per square meter), the weighted value for municipalities from 1000 to 5000 is higher because the price pressure went upward over the last 15 years. In contrast, municipalities from 5000 to 10000 have a lower value because the pressure went downward.</p>
+<p><strong>Comentario sobre el ejemplo</strong>: Aunque ambos precios son similares (alrededor de 116 euros por metro cuadrado), el valor ponderado para los municipios de 1.000 a 5.000 habitantes es mayor porque la presión sobre los precios aumentó en los últimos 15 años. En cambio, los municipios de 5.000 a 10.000 habitantes tienen un valor menor porque la presión disminuyó.</p>
 
-<p>
-  Because the data provided by the MITMA is grouped by the size of municipalities, it causes some municipalities,
-  such as Málaga (Andalusia), Barcelona (Catalonia) or Valldemossa (Mallorca), to have a lower value than expected.
-  In order to tame this issue, we have used the average net income per person as a corrector.
-</p>
+<p>Debido a que los datos proporcionados por el MITMA están agrupados según el tamaño de los municipios, esto provoca que algunos municipios, como Málaga (Andalucía), Barcelona (Cataluña) o Valldemossa (Mallorca), tengan un valor inferior al esperado. Para mitigar este problema, hemos utilizado la renta neta media por persona como corrector.</p>
 
-<p>
-  The corrector relies on the average income per person from each municipality, which is divided by the national
-  average income per person (12,982 euros per year).
-</p>
+<p>El corrector se basa en la renta media por persona de cada municipio, la cual se divide entre la renta media nacional por persona (12.982 euros anuales).</p>
 
 <img src="https://math.vercel.app/?bgcolor=auto&from=Income%5C%3Acorrector%3D%5Cfrac%7BAverage%5C%3Aincome%5C%3Aper%5C%3Aperson%5C%3A%28municipality%29%7D%7BAverage%5C%3Aincome%5C%3Aper%5C%3Aperson%5C%3A%28spain%29%7D.svg" alt="Equation">
 
-<p>The result is then used as a multiplier. Data sample for better understanding:</p>
+<p>El resultado se usa como multiplicador. Fragmento de los datos a modo de ejemplo:</p>
 
 <table>
   <thead>
     <tr>
-      <th>Municipality</th>
-      <th>Weighted price value</th>
-      <th>Income corrector</th>
-      <th>Land price value</th>
+      <th>Municipio</th>
+      <th>Precio ponderado</th>
+      <th>Corrector basado en renta</th>
+      <th>Precio del suelo</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Barcelona</td>
       <td>233</td>
-      <td>1.35</td>
-      <td>314.6</td>
+      <td>1,35</td>
+      <td>314,6</td>
     </tr>
     <tr>
       <td>Sant Antoni de Portmany</td>
       <td>339</td>
-      <td>0.98</td>
-      <td>332.2</td>
+      <td>0,98</td>
+      <td>332,2</td>
     </tr>
   </tbody>
 </table>
 
-<p>The Land price value is the one represented on the map.</p>
+<p>Este valor final del precio del suelo es el representado en el mapa.</p>
 
 <ul>
-  <li><em>Download full dataset</em>:
-    <a href="https://github.com/galetaire/spahousing/raw/main/public/docs/landvalue.XLS" target="_blank">Land value</a>
+  <li><em>Descarga los datos</em>:
+    <a href="https://github.com/galetaire/spahousing/raw/main/public/docs/landvalue.XLS" target="_blank"> Valor del suelo urbano</a>
   </li>
 </ul>
 
-<h2>Notes on the use of urban land price as an scarcity index</h2>
-<p>
-  In a market where supply and demand interact freely, <strong>prices tend to reflect the relative scarcity of goods</strong>.
-  When a good is scarce and in high demand, its price is likely to increase. Conversely, if a good is abundant
-  or there is low demand for it, the price may decrease. Based on this principle, we could use
-  <strong>the price as a measure to approximate urban land scarcity</strong>.
+<h2>Sobre el uso del precio del suelo como indicador de escasez</h2>
+<p>En un mercado donde la oferta y la demanda interactúan libremente, <strong>los precios tienden a reflejar la escasez relativa de los bienes</strong>. Cuando un bien es escaso y tiene una alta demanda, su precio tiende a aumentar. Por el contrario, si un bien es abundante o existe poca demanda, su precio tiende a disminuir. Con base a este principio, podríamos utilizar <strong>el precio como una medida para aproximar la escasez de suelo urbano.</strong></p>
+
+<p>Es importante señalar que <strong>el precio no debe considerarse como información perfecta, ya que no vivimos en un mercado libre perfecto</strong>, y otros factores también influyen en los precios, como las regulaciones gubernamentales, las subvenciones estatales, los controles de precios, la creación de dinero, los monopolios públicos o privados, la especulación en el mercado, el posicionamiento de marca, la publicidad y otras intervenciones en el mercado.
 </p>
 
+<h2>Otras notas</h2>
 <p>
-  It is important to note that <strong>price should not be seen as perfect information, since we do not live
-  in a perfect free market</strong>, and other factors also affect prices, such as government regulations,
-  government subsidies, price controls, money creation, public or private monopolies, market speculation,
-  branding, advertising, and other market interventions.
-</p>
-
-<h2>Other notes</h2>
-<p>
-  For the mathematical notations, the
-  <a href="https://math.vercel.app/home" target="_blank">Latex Math API</a> developed by
-  <a href="https://twitter.com/uechz" target="_blank">@uechz</a> has been used. A LaTeX editor is accessible at
-  <a href="https://www.tutorialspoint.com/latex_equation_editor.htm" target="_blank">TutorialsPoint.com</a>.
+  Para las anotaciones matemáticas, se ha usado la <a href="https://math.vercel.app/home" target="_blank">Latex Math API</a> desarrollada por <a href="https://twitter.com/uechz" target="_blank">@uechz</a>. Editor de LaTeX disponible en <a href="https://www.tutorialspoint.com/latex_equation_editor.htm" target="_blank">TutorialsPoint.com</a>.
 </p>
 <br>
 <!-- Footer-->

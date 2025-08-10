@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PAP index - Spain Housing</title>
+  <title>Índice PEC - Spain Housing</title>
   <meta name="robots" content="follow, index" />
   <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
   <!-- Schema.org Structured Data -->
@@ -26,72 +26,55 @@
 <body>
 <br>
 <br>
-<h1>Purchasing-age population index</h1>
+<h1>Población en edad de compra (PEC)</h1>
 <div class="navbar">
   <button onclick="window.location.href='../index.html'">Indicadores estadísticos 📉</button>
   <button onclick="window.location.href='../metodologia.html'">Metodología 📓</button>
 </div>
 <br>
-<p>
-  The PAP is an index that draws two ceilings based on demographics. The idea is to model rational demand based on population<sup>[1]</sup>.
+<p>El índice PEC establece dos techos basados en la demografía. La idea es modelar la demanda racional en función de la población.<sup>[1]</sup>.
 </p>
 
 <ul>
-  <li>Assuming that every 1 person needs 1 house, that would be the demographic upper limit of purchases.</li>
-  <li>Assuming that humans mate, then each couple (2 people) would need 1 house, that would be the lower limit.</li>
+  <li>Suponiendo que cada persona necesita una vivienda, ese sería el límite demográfico superior.</li>
+  <li>Suponiendo que los seres humanos se emparejan, entonces cada pareja (2 personas) necesitaría una vivienda, lo que constituiría el límite inferior.</li>
 </ul>
 
-<h2>How are the limits created?</h2>
+<h2>¿Cómo se han generado los límites?</h2>
 
-<p>
-  The demographic limits are created by considering the number of people between 25 and 50 years of age on a given year, and then this limits can be crossed with the number of sales or mortgages for the same year.
-</p>
+<p>Los límites demográficos se establecen considerando el número de personas de entre 25 y 50 años en un año determinado, y luego estos límites pueden cruzarse con el número de compraventas o hipotecas del mismo año.</p>
 
 <ul>
-  <li>
-    The upper bound is the total number of people between 25 and 50 divided by 26 (the total number of age groups).
+  <li>El límite superior es el número total de personas entre 25 y 50 años, dividido entre 26 (número total de grupos de edad).
   </li>
   <br>
   <img src="https://math.vercel.app/?bgcolor=auto&from=Upper%5C%3Alimit%3D%5Cfrac%7BPopulation%5C%3Aaged%5C%3A25%5C%3Ato%5C%3A50%7D%7BNumber%5C%3Aof%5C%3Aage%5C%3Agroups%7D.svg" alt="Upper limit equation">
-  <li>
-    The lower bound is the upper bound divided by 2 (simulates the potential number of couples).
+  <li>El límite inferior es el limite superior dividido entre 2 (simulando el potencial de parejas).
   </li>
   <br>
   <img src="https://math.vercel.app/?bgcolor=auto&from=Lower%5C%3Alimit%3D%5Cfrac%7BUpper%5C%3Alimit%7D%7B2%7D.svg" alt="Lower limit equation">
 </ul>
 
-<h2>Why the range between 25 and 50 years of age?</h2>
+<h2>¿Por qué el rango de entre 25 y 50 años de edad?</h2>
 
-<p>
-  The logic comes from a decision to avoid "noise" in the data. Around 70% of purchases are concentrated in this age group
-  (<em>example source</em>:
-  <a href="https://es.statista.com/estadisticas/937303/porcentaje-de-compradores-de-viviendas-por-grupo-de-edad-espana/" target="_blank">Statista</a>).
-  The approximate landscape is the following:
+<p>La lógica proviene de la decisión de evitar “ruido” en los datos. Alrededor del 70 % de las compras se concentran en este grupo de edad (<a href="https://es.statista.com/estadisticas/937303/porcentaje-de-compradores-de-viviendas-por-grupo-de-edad-espana/" target="_blank">Statista</a>). La imagen aproximada de la situación es la siguiente:
 </p>
 
 <ul>
-  <li>Age group between 0 - 24, represents 24% of the population and 5% of purchases.</li>
-  <li>Age group between 25 - 50, represents 35% of the population and 70% of purchases.</li>
-  <li>Age group between 51 - 1xx, represents 41% of the population and 25% of purchases.</li>
+  <li>Grupo de edad entre 0 - 24, representa el 24% de la población y el 5% de las compras.</li>
+  <li>Grupo de edad entre 25 - 50, representa el 35% de la población y el 70% de las compras.</li>
+  <li>Grupo de edad entre 51 - 1xx, representa el 41% de la población y el 25% de las compras.</li>
 </ul>
 
-<p>
-  The bands could move especially upwards, towards 60 years of age. Actually, the values for the limits using the age group between 25 - 60 has been reviewed and is available in the public database. But the values do not vary significantly from those shown by the 25 - 50 group, and only serve to flatten the curve, which we interpret as noise.
+<p>Las bandas podrían desplazarse, especialmente hacia arriba, hasta los 60 años de edad. De hecho, los valores de los límites utilizando el grupo de edad entre 25 y 60 años han sido revisados y están disponibles en la base de datos pública. Sin embargo, los valores no varían significativamente de los mostrados por el grupo de 25 a 50 años y solo sirven para aplanar la curva, lo que interpretamos como ruido.</p>
+
+<p>En conclusión, el grupo de edad comprendido entre los 25 y 50 años representa la mayoría de las compraventas.
 </p>
 
-<p>
-  Overall, the 25 - 50 age bracket occupies the majority of purchases providing the least noise.
-</p>
+<h2>Otras notas</h2>
+<p>Para las anotaciones matemáticas, se ha usado la <a href="https://math.vercel.app/home" target="_blank">Latex Math API</a> desarrollada por <a href="https://twitter.com/uechz" target="_blank">@uechz</a>. Editor de LaTeX disponible en <a href="https://www.tutorialspoint.com/latex_equation_editor.htm" target="_blank">TutorialsPoint.com</a>.</p>
 
-<h2>Other notes</h2>
-
-<p>
-  For the mathematical notations, the
-  <a href="https://math.vercel.app/home" target="_blank">Latex Math API</a> developed by
-  <a href="https://twitter.com/uechz" target="_blank">@uechz</a> has been used. A latex editor is accessible at
-  <a href="https://www.tutorialspoint.com/latex_equation_editor.htm" target="_blank">TutorialsPoint.com</a>.
-</p>
-<p><small>  <sup>[1]</sup> However, this index is far from achieving a perfect demand side. We must consider that 85% of purchases come from individuals, but 15% are from legal entities (not considered in the demographic curve). Also, purchases made by foreign non-residents are not considered either in the demographic limits.</small></p>
+<p><small>  <sup>[1]</sup> Sin embargo, este índice está lejos de lograr una demanda perfecta. Debemos tener en cuenta que el 85 % de las compras provienen de particulares, pero el 15 % corresponde a personas jurídicas (no consideradas en la curva demográfica). Además, las compras realizadas por extranjeros no residentes tampoco se consideran dentro de los límites demográficos.</small></p>
 <br>
 <!-- Footer-->
 <div id="footer">

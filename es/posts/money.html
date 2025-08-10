@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Currencies - Spain Housing</title>
+  <title>Monedas - Spain Housing</title>
   <meta name="robots" content="follow, index" />
   <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
   <!-- Schema.org Structured Data -->
@@ -25,66 +25,63 @@
 <body>
 <br>
 <br>
-<h1>Housing price in different currencies</h1>
+<h1>La vivienda en diferentes monedas</h1>
 <div class="navbar">
   <button onclick="window.location.href='../index.html'">Indicadores estadísticos 📉</button>
   <button onclick="window.location.href='../metodologia.html'">Metodología 📓</button>
 </div>
 <br>
 <p>
-  Real estate is the world's largest store of wealth
-  (<a href="https://www.savills.com/impacts/market-trends/the-total-value-of-global-real-estate-property-remains-the-worlds-biggest-store-of-wealth.html" target="_blank">1</a>,
-  <a href="https://www.savills.com/impacts/market-trends/the-total-value-of-global-real-estate.html" target="_blank">2</a>).
-  Wealth is measured in units of account, commonly money, but not all moneys preserve wealth equally.
+  El mercado inmobiliario es la reserva de valor más grande del mundo (<a href="https://www.savills.com/impacts/market-trends/the-total-value-of-global-real-estate-property-remains-the-worlds-biggest-store-of-wealth.html" target="_blank">1</a>, <a href="https://www.savills.com/impacts/market-trends/the-total-value-of-global-real-estate.html" target="_blank">2</a>). El valor se mide en unidades de cuenta, comunmente monedas o divisas, pero no todas las monedas preservan el valor de las cosas de igual manera.
 </p>
 
 <div id="chart-wrapper"><canvas id="housedollar"></canvas></div>
 <script src="../../data/housedollar.js"></script>
 <ul>
-  <li><strong>Price in dollars, 100m<sup>2</sup> house</strong>: the rate EUR/USD used is the yearly average.</li>
-  <li><strong>Price in euros, 100m<sup>2</sup> house</strong>: average price, more information back in <a href="price.html">Price</a>.</li>
+  <li><strong>Precio en dólares, 100m<sup>2</sup> de vivienda</strong>: el tipo de cambio utilizado es la media anual.</li>
+  <li><strong>Precio en euros, 100m<sup>2</sup> de vivienda</strong>: precio medio, más información en <a href="price.html">Precio</a>.</li>
 </ul>
 
 <div id="chart-wrapper"><canvas id="housegold"></canvas></div>
 <script src="../../data/housegold.js"></script>
 <ul>
-  <li><strong>Price in ounces of gold, 100m<sup>2</sup> house</strong>: the gold price used is the yearly average.</li>
-  <li><strong>Price in euros, 100m<sup>2</sup> house</strong>: average price, more information back in <a href="price.html">Price</a>.</li>
+  <li><strong>Precio en onzas de oro, 100m<sup>2</sup> de vivienda</strong>: el precio del oro es la media anual.</li>
+  <li><strong>Precio en euros, 100m<sup>2</sup> de vivienda</strong>: precio medio, más información en <a href="price.html">Precio</a>.</li>
 </ul>
 
 <div id="chart-wrapper"><canvas id="housebitcoin"></canvas></div>
 <script src="../../data/housebitcoin.js"></script>
 <ul>
-  <li><strong>Price in bitcoins, 100m<sup>2</sup> house</strong>: the bitcoin price used is the yearly average.</li>
-  <li><strong>Price in euros, 100m<sup>2</sup> house</strong>: average price, more information back in <a href="price.html">Price</a>.</li>
+  <li><strong>Precio en bitcoins, 100m<sup>2</sup> de vivienda</strong>: el precio medio de bitcoin es la media anual.</li>
+  <li><strong>Precio en euros, 100m<sup>2</sup> de vivienda</strong>: precio medio, más información en <a href="price.html">Precio</a>.</li>
 </ul>
 
-<h2>Data sources</h2>
+<h2>Fuente de datos</h2>
 <ul>
-  <li>Housing prices, from 1985 to 2006, according to Sociedad de Tasación (<em>Access to data is under request, but can be seen in the linked publication</em>):
-    <a href="https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf" target="_blank">Publication</a>,
-    <a href="https://www.st-tasacion.es/informe-de-tendencias-digital/" target="_blank">Link</a>
+  <li>Precios de la vivienda, de 1985 a 2006, según Sociedad de Tasación (<em>Acceso bajo petición, pero se pueden visualizar en la siguiente publicación</em>):
+    <a href="https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf">Publicación</a>,
+    <a href="https://www.st-tasacion.es/informe-de-tendencias-digital/">Enlace</a>
   </li>
-  <li>Housing prices, from 2007 onwards, according to the notaries (<em>Grupo 5 > Acto 501 - Compraventa inmuebles > Inmuebles en fincas urbanas, viviendas</em>):
-    <a href="http://www.notariado.org/liferay/web/cien/estadisticas-al-completo" target="_blank">Link</a>
+  <li>Precios de la vivienda, de 2007 en adelante, según datos de notarios (<em>Grupo 5 &gt; Acto 501 - Compraventa inmuebles &gt; Inmuebles en fincas urbanas, viviendas</em>):
+    <a href="http://www.notariado.org/liferay/web/cien/estadisticas-al-completo">Enlace</a>
   </li>
-  <li>Yearly average exchange rate EUR/USD, Investing.com (<em>the euro was launched by 11 EU countries as their new common currency on 1 January 1999, prior exchange rates is the ECU exchange rate</em>):
-    <a href="https://www.investing.com/currencies/eur-usd-historical-data" target="_blank">Link</a>
+  <li>Media anual del tipo de cambio EUR/USD, Investing.com (<em>el euro se lanzó el 1 de enero de 1999 como moneda de 11 países de la Unión Europea, el tipo de cambio usado anterior a esta fecha es el ECU</em>):
+    <a href="https://www.investing.com/currencies/eur-usd-historical-data" target="_blank">Enlace</a>
   </li>
-  <li>Gold price in Euros (<em>Downloads, Gold price in a range of currencies since 1978 - XLSX</em>):
-    <a href="https://www.gold.org/goldhub/data/gold-prices#registration-type=facebook&just-verified=1" target="_blank">Link</a>
+  <li>Precio del oro en euros (<em>Downloads, Gold price in a range of currencies since 1978 - XLSX</em>):
+    <a href="https://www.gold.org/goldhub/data/gold-prices#registration-type=facebook&just-verified=1" target="_blank">Enlace</a>
   </li>
-  <li>Gold above-ground stocks (<em>Gold inflation rate has been around 1.7% since 2010</em>):
-    <a href="https://www.gold.org/goldhub/data/how-much-gold" target="_blank">Link</a>
+  <li>Existencias de oro en circulación (<em>la tasa de inflación, es decir nuevas existencias añadidas a circulación, del oro ha sido del 1.7% desde 2010</em>):
+    <a href="https://www.gold.org/goldhub/data/how-much-gold" target="_blank">Enlace</a>
   </li>
-  <li>Willy Woo site, Bitcoin inflation rate (<em>The rate gets lower overtime, every 4 years following the "halving" events, current rate is around 1.6%</em>):
-    <a href="https://charts.woobull.com/bitcoin-inflation/" target="_blank">Link</a>
+  <li>Web de Willy Woo, tasa de inflación de bitcoin (<em>la tasa se reduce con el tiempo, cada 4 años a consecuencia de los "halvings"</em>):
+    <a href="https://charts.woobull.com/bitcoin-inflation/" target="_blank">Enlace</a>
   </li>
-  <li>Bitcoin price in Euros, 2015 onward (<em>Yahoo Finance, Bitcoin monthly close price EUR (BTC-EUR) - CoinMarketCap</em>):
-    <a href="https://finance.yahoo.com/quote/BTC-EUR/history?period1=1410912000&period2=1671753600&interval=1mo&filter=history&frequency=1mo&includeAdjustedClose=true" target="_blank">Link</a>
+  <li>Precio de bitcoin en euros, de 2015 en adelante (<em>Yahoo Finance, Bitcoin monthly close price EUR (BTC-EUR) - CoinMarketCap</em>):
+    <a href="https://finance.yahoo.com/quote/BTC-EUR/history?period1=1410912000&period2=1671753600&interval=1mo&filter=history&frequency=1mo&includeAdjustedClose=true" target="_blank">Enlace</a>
   </li>
-  <li>Bitcoin price in Euros prior to 2015 → 2010 (BTC price = 0.11$, exchange rate = 0.70$/€), 2011 (BTC price = 5.28$, exchange rate = 0.68$/€), 2012 (BTC price = 7.76$, exchange rate = 0.71$/€), 2013 (BTC price = 167.32$, exchange rate = 0.70$/€) and 2014 (BTC price = 542.28$, exchange rate = 0.69$/€) (<em>Bitcoin Price Table, US dollars, 2010–2022 (Monthly)</em>):
-    <a href="https://www.in2013dollars.com/bitcoin-price" target="_blank">Link</a>
+  <li>Precio de bitcoin en euros antes de 2015. En 2010 (BTC = 0,11$, tipo de cambio = 0,70$/€), 2011 (BTC = 5,28$, tipo de cambio = 0,68$/€), 2012 (BTC = 7,76$, tipo de cambio = 0,71$/€), 2013 (BTC = 167,32$, tipo de cambio = 0,70$/€) y 2014 (BTC = 542,28$, tipo de cambio = 0,69$/€) (<em>Bitcoin Price Table, US dollars, 2010–2022 (Monthly)</em>):
+    <a href="https://www.in2013dollars.com/bitcoin-price" target="_blank">Enlace</a>
   </li>
 </ul>
 <br>

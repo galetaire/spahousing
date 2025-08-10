@@ -20,10 +20,32 @@
   <!-- Calls -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="styles/style.css" rel="stylesheet" type="text/css">
+  <script>
+    function setLanguage(lang) {
+      const currentPath = window.location.pathname;
+      if (lang === 'es') {
+        // Only redirect if not already in Spanish version
+        if (!currentPath.includes('/es/')) {
+          window.location.href = "/es/index.html";
+        }
+      } else {
+        // Only redirect if not already in English version
+        if (currentPath.includes('/es/')) {
+          window.location.href = "/index.html";
+        }
+      }
+    }
+  </script>
 </head>
 <body>
 <br>
 <br>
+
+<div class="lang-switcher">
+  <button onclick="setLanguage('en')">EN</button>
+  <button onclick="setLanguage('es')">ES</button>
+</div>
+
 <h1>Methodology 📓</h1>
 <div class="navbar">
   <button onclick="window.location.href='index.html'">Statistical indicators 📉</button>
