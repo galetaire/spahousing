@@ -31,7 +31,7 @@
         },
         {
           "title": "Population_over18",
-          "dc:description": "Total number of inhabitants over 18 years old",
+          "dc:description": "Total number of inhabitants 18 old or older",
           "source": "https://www.ine.es/jaxiT3/Tabla.htm?t=10256",
           "@type": "Column"
         },
@@ -53,42 +53,6 @@
           "source": "Lower_limit*1,5",
           "@type": "Column"
         },
-        {
-          "title": "Age_30",
-          "dc:description": "Total number of inhabitants aged 30 years old",
-          "source": "https://www.ine.es/jaxiT3/Tabla.htm?t=10256",
-          "@type": "Column"
-        },
-        {
-          "title": "Age_30halved",
-          "dc:description": "Total number of inhabitants aged 30 years old, divided by 2",
-          "source": "Age_30/2",
-          "@type": "Column"
-        },
-        {
-          "title": "Age_40",
-          "dc:description": "Total number of inhabitants aged 40 years old",
-          "source": "https://www.ine.es/jaxiT3/Tabla.htm?t=10256",
-          "@type": "Column"
-        },
-        {
-          "title": "Age_40halved",
-          "dc:description": "Total number of inhabitants aged 40 years old, divided by 2",
-          "source": "Age_40/2",
-          "@type": "Column"
-        },
-        {
-          "title": "Age_50",
-          "dc:description": "Total number of inhabitants aged 50 years old",
-          "source": "https://www.ine.es/jaxiT3/Tabla.htm?t=10256",
-          "@type": "Column"
-         },
-        {
-          "title": "Age_50halved",
-          "dc:description": "Total number of inhabitants aged 50 years old, divided by 2",
-          "source": "Age_50/2",
-          "@type": "Column"
-         },
         {
           "title": "Home_sales",
           "dc:description": "Total number of house sales",
@@ -630,51 +594,27 @@
           "@type": "Column"
         },
         {
-          "title": "Owned",
-          "dc:description": "Number of houses fully owned, without active mortgage",
-          "source": "https://www.ine.es/jaxi/Tabla.htm?path=/t20/p274/serie/prov/p07/l0/&file=01002.px&L=0",
-          "@type": "Column"
-        },
-        {
-          "title": "Mortgaged",
-          "dc:description": "Number of houses with active mortgage",
-          "source": "https://www.ine.es/jaxi/Tabla.htm?path=/t20/p274/serie/prov/p07/l0/&file=01002.px&L=0",
-          "@type": "Column"
-        },
-        {
-          "title": "Rented",
-          "dc:description": "Number of houses rented",
-          "source": "https://www.ine.es/jaxi/Tabla.htm?path=/t20/p274/serie/prov/p07/l0/&file=01002.px&L=0",
-          "@type": "Column"
-         },
-        {
-          "title": "Freely_loaned",
-          "dc:description": "Number of houses freely loaned",
-          "source": "https://www.ine.es/jaxi/Tabla.htm?path=/t20/p274/serie/prov/p07/l0/&file=01002.px&L=0",
-          "@type": "Column"
-        },
-        {
           "title": "Owned_per",
           "dc:description": "Percentage of owned houses",
-          "source": "((Owned*100)/SUM(Owned+Mortgaged+Rented+Freely_loaned))",
-          "@type": "Column"
-        },
-        {
-          "title": "Mortgaged_per",
-          "dc:description": "Percentage of mortgaged houses",
-          "source": "((Mortgaged*100)/SUM(Owned+Mortgaged+Rented+Freely_loaned))",
+          "source": "https://www.ine.es/dynt3/inebase/index.htm?padre=792&capsel=792",
           "@type": "Column"
         },
         {
           "title": "Rented_per",
           "dc:description": "Percentage of rented houses",
-          "source": "((Rented*100)/SUM(Owned+Mortgaged+Rented+Freely_loaned))",
+          "source": "https://www.ine.es/dynt3/inebase/index.htm?padre=792&capsel=792",
           "@type": "Column"
-        },
+         },
+         {
+           "title": "Rented_low",
+           "dc:description": "Percentage of rented houses with rent price under the market price",
+           "source": "https://www.ine.es/dynt3/inebase/index.htm?padre=792&capsel=792",
+           "@type": "Column"
+          },
         {
           "title": "Freely_loaned_per",
           "dc:description": "Percentage of freely loaned houses",
-          "source": "((Freely_loaned*100)/SUM(Owned+Mortgaged+Rented+Freely_loaned))",
+          "source": "https://www.ine.es/dynt3/inebase/index.htm?padre=792&capsel=792",
           "@type": "Column"
         },
         {
