@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barometer - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+  <script>
+    function setLanguage(lang) {
+      const currentPath = window.location.pathname;
+      if (lang === 'es') {
+        // Only redirect if not already in Spanish version
+        if (!currentPath.includes('/es/')) {
+          window.location.href = "/es/barometer.html";
+        }
+      } else {
+        // Only redirect if not already in English version
+        if (currentPath.includes('/es/')) {
+          window.location.href = "/barometer.html";
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+<br>
+<br>
+
+<div class="lang-switcher">
+  <button onclick="setLanguage('en')">EN</button>
+  <button onclick="setLanguage('es')">ES</button>
+</div>
+
+<h1>Housing barometer 🌇</h1>
+
+<div class="navbar">
+  <button onclick="window.location.href='index.html'">Statistical indicators 📉</button>
+  <button onclick="window.location.href='barometer.html'">Housing barometer 🌇</button>
+  <button onclick="window.location.href='methodology.html'">Methodology 📓</button>
+</div>
+
+<p>A quick overview of the general state of the housing market, with all values ranging between 0 and 100 points. It should be interpreted as informative, not as a scientific measure.</p>
+
+<h2>All-components index</h2>
+
+<div class="gauge-container">
+  <div class="gauge-wrapper">
+    <h3>Housing barometer index</h3>
+    <svg id="gauge1"></svg>
+  </div>
+  </div>
+
+  <p>If the value is 100, all components are at their all-time highs; if the value is 0, all components are at their all-time lows, with a spectrum in between.</p>
+
+  <p>To generate the index, the following variables have been considered as components: price, mortgages, sales, wages, housing stock, builders profit margins, and unemployment.</p>
+
+  <p><b>🧮 Historical annual close:</b></p>
+
+  <div id="chart-wrapper"><canvas id="averagebarometer"></canvas></div>
+  <script src="data/averagebarometer.js"></script>
+  <p style="font-size: 14px; font-style: italic;">Learn more about the index: FAQS and notes.</p>
+
+  <h2>Individual components</h2>
+
+  <p>This section presents each component individually. The simple average of these components forms the value of the <i>All-Components Index</i>. All components have been harmonized using a Min–Max normalization technique, with some adaptations for specific variables. Clarifications are provided for each component, while more detailed explanations can be found in the provided links.</p>
+
+<div class="gauge-container">
+  <div class="gauge-wrapper">
+    <h3>Mortgage approvals</h3>
+    <svg id="gauge2"></svg>
+  </div>
+
+  <div class="gauge-wrapper">
+    <h3>Sales flow</h3>
+    <svg id="gauge3"></svg>
+  </div>
+
+  <div class="column-container" style="font-size: 16px;">
+    <p>The <b>mortgage approvals</b> show the number of approvals in relation to demographic limits. <a href="posts/marketcap.html">Learn more here</a>.</p>
+    <p>The <b>sales flow</b> show the number of house sales in relation to demographic limits. <a href="posts/marketcap.html">Learn more here</a>.</p>
+  </div>
+
+  <div class="gauge-wrapper">
+    <h3>Wage effort</h3>
+    <svg id="gauge4"></svg>
+  </div>
+
+  <div class="gauge-wrapper">
+    <h3>House scarcity</h3>
+    <svg id="gauge5"></svg>
+  </div>
+
+  <div class="column-container" style="font-size: 16px;">
+    <p>The <b>wage effort</b> shows whether wages are rising faster than housing prices, or vice versa. <a href="posts/marketcap.html">Learn more here</a>.</p>
+    <p>The <b>house scarcity</b> shows whether we are closer to a historical deficit (scarcity) or a surplus (plentiful supply). <a href="posts/marketcap.html">Learn more here</a>.</p>
+  </div>
+
+  <div class="gauge-wrapper">
+    <h3>Building profits</h3>
+    <svg id="gauge6"></svg>
+  </div>
+
+  <div class="gauge-wrapper">
+    <h3>Unemployment risk</h3>
+    <svg id="gauge7"></svg>
+  </div>
+
+  <div class="column-container" style="font-size: 16px;">
+    <p>The <b>building profits</b> show whether the construction sector is operating in a high-margin or low-margin profit environment. <a href="posts/marketcap.html">Learn more here</a>.</p>
+    <p>The <b>unemployment risk</b> shows the number of approvals in relation to demographic limits. <a href="posts/marketcap.html">Learn more here</a>.</p>
+  </div>
+
+  <div class="gauge-wrapper">
+    <h3>Price in €</h3>
+    <svg id="gauge8"></svg>
+  </div>
+
+  <div class="gauge-wrapper">
+    <h3>Price in Gold</h3>
+    <svg id="gauge9"></svg>
+  </div>
+</div>
+
+<div class="column-container" style="font-size: 16px;">
+    <p>The <b>price in €</b> represents a large part of the credit generated in the housing sector; the more there are, the more money circulates. The indicator shows the number of approvals in relation to demographic limits. <a href="posts/marketcap.html">Learn more here</a>.</p>
+    <p>The <b>price in gold</b> represents a large part of the credit generated in the housing sector; the more there are, the more money circulates. The indicator shows the number of approvals in relation to demographic limits. <a href="posts/marketcap.html">Learn more here</a>.</p>
+</div>
+
+<p><b>🧮 Historical annual close:</b></p>
+
+<div id="chart-wrapper"><canvas id="barcomponents"></canvas></div>
+<script src="data/barcomponents.js"></script>
+
+
+<script src="data/barometer.js"></script>
+<script>
+  // 1. Define the STATIC configurations for each gauge.
+  // We've added a "dataColumn" property to map each gauge to a CSV column.
+  const gaugeConfigurations = [
+    {
+      id: 'gauge1', title: 'Average Risk', dataColumn: 'Average_risk',
+      segments: [ { value: 15, color: '#1492FF', label: 'Very Low' },{ value: 15, color: '#69B7FF', label: 'Moderately Low' }, { value: 15, color: '#B8DAFF', label: 'Low' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'High' }, { value: 15, color: '#FC6642', label: 'Moderately high'}, { value: 15, color: '#FF3300', label: 'Very high'}, ]
+    },
+    {
+      id: 'gauge2', title: 'Mortgage Risk', dataColumn: 'Mortgage_risk',
+      segments: [ { value: 15, color: '#1492FF', label: 'Very Low' },{ value: 15, color: '#69B7FF', label: 'Moderately Low' }, { value: 15, color: '#B8DAFF', label: 'Low' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'High' }, { value: 15, color: '#FC6642', label: 'Moderately high'}, { value: 15, color: '#FF3300', label: 'Very high'}, ]
+    },
+    {
+      id: 'gauge3', title: 'Sales Risk', dataColumn: 'Sales_risk',
+      segments: [ { value: 15, color: '#1492FF', label: 'Very Low' },{ value: 15, color: '#69B7FF', label: 'Moderately Low' }, { value: 15, color: '#B8DAFF', label: 'Low' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'High' }, { value: 15, color: '#FC6642', label: 'Moderately high'}, { value: 15, color: '#FF3300', label: 'Very high'}, ]
+    },
+    {
+      id: 'gauge4', title: 'Wage Risk', dataColumn: 'Wage_risk',
+      segments: [ { value: 15, color: '#1492FF', label: 'Very Low' },{ value: 15, color: '#69B7FF', label: 'Moderately Low' }, { value: 15, color: '#B8DAFF', label: 'Low' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'High' }, { value: 15, color: '#FC6642', label: 'Moderately high'}, { value: 15, color: '#FF3300', label: 'Very high'}, ]
+    },
+    {
+      id: 'gauge5', title: 'Scarcity Risk', dataColumn: 'Scarcity_risk',
+      segments: [ { value: 15, color: '#1492FF', label: 'Very Low' },{ value: 15, color: '#69B7FF', label: 'Moderately Low' }, { value: 15, color: '#B8DAFF', label: 'Low' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'High' }, { value: 15, color: '#FC6642', label: 'Moderately high'}, { value: 15, color: '#FF3300', label: 'Very high'}, ]
+    },
+    {
+      id: 'gauge6', title: 'Production Risk', dataColumn: 'Production_risk',
+      segments: [ { value: 15, color: '#1492FF', label: 'Very Low' },{ value: 15, color: '#69B7FF', label: 'Moderately Low' }, { value: 15, color: '#B8DAFF', label: 'Low' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'High' }, { value: 15, color: '#FC6642', label: 'Moderately high'}, { value: 15, color: '#FF3300', label: 'Very high'}, ]
+    },
+    {
+      id: 'gauge7', title: 'Labor Risk', dataColumn: 'Labor_risk',
+      segments: [ { value: 15, color: '#1492FF', label: 'Very Low' },{ value: 15, color: '#69B7FF', label: 'Moderately Low' }, { value: 15, color: '#B8DAFF', label: 'Low' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'High' }, { value: 15, color: '#FC6642', label: 'Moderately high'}, { value: 15, color: '#FF3300', label: 'Very high'}, ]
+    },
+    {
+      id: 'gauge8', title: 'Price Risk', dataColumn: 'Price_risk',
+      segments: [ { value: 15, color: '#1492FF', label: 'Very Low' },{ value: 15, color: '#69B7FF', label: 'Moderately Low' }, { value: 15, color: '#B8DAFF', label: 'Low' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'High' }, { value: 15, color: '#FC6642', label: 'Moderately high'}, { value: 15, color: '#FF3300', label: 'Very high'}, ]
+    },
+    {
+      id: 'gauge9', title: 'Price to gold', dataColumn: 'Price_risk',
+      segments: [ { value: 15, color: '#1492FF', label: 'Very Low' },{ value: 15, color: '#69B7FF', label: 'Moderately Low' }, { value: 15, color: '#B8DAFF', label: 'Low' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'High' }, { value: 15, color: '#FC6642', label: 'Moderately high'}, { value: 15, color: '#FF3300', label: 'Very high'}, ]
+    }
+  ];
+
+  // 2. Load the time-series data from your new CSV file
+  d3.csv("https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv").then(function(data) {
+
+    // --- MODIFIED LOGIC ---
+        // 1. Get the current year.
+        const targetYear = new Date().getFullYear(); // This will be 2025
+
+        // 2. Find the row in your data that matches the target year.
+        // We use `==` because the year from the CSV is a string, and `getFullYear()` is a number.
+        let yearData = data.find(row => row.Year == targetYear);
+
+        // 3. Fallback: If the current year is not found, use the latest available data.
+        if (!yearData) {
+          console.warn(`Data for year ${targetYear} not found. Using latest available year.`);
+          yearData = data[data.length - 1];
+        }
+        // --- END OF MODIFIED LOGIC ---
+
+        // Loop through your STATIC configurations to build the gauges
+        gaugeConfigurations.forEach(config => {
+          const column = config.dataColumn;
+
+          // Get the value from the found year's data using the column name.
+          const dynamicValue = yearData[column] ? +yearData[column] : 0;
+
+          // Create the gauge with the correct value
+          createGauge('#' + config.id, dynamicValue, config.segments);
+        });
+
+      }).catch(function(error) {
+        console.error("Error loading the CSV file:", error);
+      });
+</script>
+</body>
+</html>
+
+<br>
+<!-- Footer-->
+<div id="footer">
+  <script>document.write(new Date().getFullYear())</script> ©HousingSpanish 🔭. Creative Commons Attribution-ShareAlike 4.0 International License.
+</div>
+<br>
+</body>
+</html>

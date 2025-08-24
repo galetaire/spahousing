@@ -87,6 +87,7 @@ function makeChart(rainbow) {
         title: {
                 display: true,
                 text: 'Real house value - Spain',
+                color: "white",
                 font: {
                   size: 12
                 },

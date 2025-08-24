@@ -155,6 +155,30 @@ td a:hover {
   background-color: #0056b3;
 }
 
+.gauge-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align to the top */
+  flex-wrap: wrap;
+  gap: 30px; /* Add space between gauges */
+}
+
+.gauge-wrapper {
+  text-align: center; /* Center the title and gauge */
+}
+
+.gauge-wrapper h3 {
+  margin-bottom: 5px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.column-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Defines two columns of equal fraction (width) */
+  gap: 20px;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   html {
