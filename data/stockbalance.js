@@ -4,6 +4,7 @@ function makeChart(stockbalance) {
   var rangeEnd = new Date().getFullYear() - 1899;
   var rangeLabels = stockbalance.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
   var rangeOne = stockbalance.map(function(d) {return d.Balance}).slice(rangeStart, rangeEnd);
+  var rangeTwo = stockbalance.map(function(d) {return d.Balance_hogares}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 11;
   var chart = new Chart('stockbalance', {
@@ -53,9 +54,25 @@ function makeChart(stockbalance) {
       labels: rangeLabels,
       datasets: [
         {
-            label: 'Housing year-on-year balance',
+            label: 'Housing yoy balance (by potential couples)',
             type: 'bar',
             data: rangeOne,
+            backgroundColor: ctx =>
+              ctx.parsed.y >= 0
+                ? 'rgba(91, 155, 213, 0.5)'  // special color for exactly 1 885 000
+                : 'rgba(0, 204, 153, 0.7)',   // default color
+            borderColor: ctx =>
+              ctx.parsed.y >=0
+              ? 'rgba(91, 155, 213, 1)'  // special color for exactly 1 885 000
+              : 'rgba(0, 204, 153, 1)',   // default color
+            borderWidth: 0.5,
+            barThickness: 5,
+        },
+        {
+            label: 'Housing yoy balance (by average household size)',
+            type: 'bar',
+            data: rangeTwo,
+            hidden: true,
             backgroundColor: ctx =>
               ctx.parsed.y >= 0
                 ? 'rgba(91, 155, 213, 0.5)'  // special color for exactly 1 885 000

@@ -42,7 +42,12 @@
 <div id="chart-wrapper"><canvas id="stockbalance"></canvas></div>
 <script src="../data/stockbalance.js"></script>
 <ul>
-  <li><strong>↑ Balance de viviendas</strong>: diferencia entre el crecimiento de viviendas y el de población dividido entre dos (que simula el nombre total de parejas ganadas o pérdidas en un año). El color azul indica superávit, y el color verde indica déficit.</li>
+  <li><strong>↑ Balance de viviendas, <strong style="color: #2E7AC7;">Superávit</strong> o <strong style="color: #20AB88;">déficit</strong></strong>: diferencia entre el crecimiento de viviendas y el de población. Dos visualizaciones dependiendo de la variable crecimiento poblacional:
+    <ul>
+      <li><strong>Según potenciales parejas</strong>: Viviendas ÷ [Saldo población ÷ 2].</li>
+      <li><strong>Según tamaño medio del hogar</strong>: Viviendas ÷ [Saldo población ÷ Tamaño hogar].</li>
+    </ul>
+  </li>
 </ul>
 
 <div id="chart-wrapper"><canvas id="typehouse"></canvas></div>

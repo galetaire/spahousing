@@ -42,7 +42,12 @@
 <div id="chart-wrapper"><canvas id="stockbalance"></canvas></div>
 <script src="../data/stockbalance.js"></script>
 <ul>
-  <li><strong>↑ Housing surplus or deficit</strong>: difference between housing growth (the total number of houses built in a year) and population growth divided by 2 (the total number of potential couples gained or lost in a year). Blue color indicates a housing surplus, while green color indicates a housing deficit.</li>
+  <li><strong>↑ <strong style="color: #2E7AC7;">Housing surplus</strong>, or <strong style="color: #20AB88;">Housing deficit</strong></strong>: difference between housing growth and population growth. There are two visualizations depending on the population growth:
+    <ul>
+      <li><strong>By potential couples</strong>: Houses built ÷ [Population gain or loss ÷ 2].</li>
+      <li><strong>By average household size</strong>: Houses built ÷ [Population gain or loss ÷ Household size].</li>
+    </ul>
+  </li>
 </ul>
 
 <div id="chart-wrapper"><canvas id="typehouse"></canvas></div>
