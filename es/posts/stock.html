@@ -28,37 +28,38 @@
 <h1>Parque de viviendas</h1>
 <div class="navbar">
   <button onclick="window.location.href='../index.html'">Indicadores estadísticos 📉</button>
+  <button onclick="window.location.href='../barometer.html'">Barómetro de la vivienda 🌇</button>
   <button onclick="window.location.href='../metodologia.html'">Metodología 📓</button>
 </div>
 <br>
 <div id="chart-wrapper"><canvas id="stockyearly"></canvas></div>
-<script src="../../data/stockyearly.js"></script>
+<script src="../data/stockyearly.js"></script>
 <ul>
   <li><strong>↑ Crecimiento anual de la vivienda y de la población</strong>: nuevas viviendas construidas y aumento o disminución de la población total. Consulta la metodología para estimar datos históricos <a href="stocknotes.html">aquí</a>.</li>
   <li>Explora en el <a href="housescarcity.html">mapa</a> el número de habitantes por vivienda y municipio.</li>
 </ul>
 
 <div id="chart-wrapper"><canvas id="stockbalance"></canvas></div>
-<script src="../../data/stockbalance.js"></script>
+<script src="../data/stockbalance.js"></script>
 <ul>
   <li><strong>↑ Balance de viviendas</strong>: diferencia entre el crecimiento de viviendas y el de población dividido entre dos (que simula el nombre total de parejas ganadas o pérdidas en un año). El color azul indica superávit, y el color verde indica déficit.</li>
 </ul>
 
 <div id="chart-wrapper"><canvas id="typehouse"></canvas></div>
-<script src="../../data/typehouse.js"></script>
+<script src="../data/typehouse.js"></script>
 <ul>
   <li><strong>↑ Distribución de viviendas construidas por tipo</strong>: unifamiliares o en bloque.</li>
 </ul>
 
 <div id="chart-wrapper"><canvas id="stockperiods"></canvas></div>
-<script src="../../data/stockperiods.js"></script>
+<script src="../data/stockperiods.js"></script>
 <ul>
   <li><strong>↑ Periodos de construcción</strong>: número de viviendas construidas por periodo.</li>
   <li>La <strong>barra verde</strong> es una estimación basada en el actual ritmo de construcción. Si el ritmo es similar al de 2021 (95.000 por año), el número de viviendas construídas entre 2021 y 2040 será de ≈1,800,000.</li>
 </ul>
 
 <div id="chart-wrapper"><canvas id="cement"></canvas></div>
-<script src="../../data/cement.js"></script>
+<script src="../data/cement.js"></script>
 
 <ul>
   <li>

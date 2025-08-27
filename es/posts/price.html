@@ -30,11 +30,12 @@
 
 <div class="navbar">
   <button onclick="window.location.href='../index.html'">Indicadores estadísticos 📉</button>
+  <button onclick="window.location.href='../barometer.html'">Barómetro de la vivienda 🌇</button>
   <button onclick="window.location.href='../metodologia.html'">Metodología 📓</button>
 </div>
 <br>
 <div id="chart-wrapper"><canvas id="priceyearly"></canvas></div>
-<script src="../../data/priceyearly.js"></script>
+<script src="../data/priceyearly.js"></script>
 
 <ul>
   <li><b>↑ Precio de compra desde 1985, en euros por metro cuadrado, según datos de notarios:</b> precio nominal, <a href="realprice.html">precio real</a> (ajustado a inflación, IPC Base 100 = 1985), e inflación acumulada.</li>
@@ -42,7 +43,7 @@
 </ul>
 
 <div id="chart-wrapper"><canvas id="ipvvr"></canvas></div>
-<script src="../../data/ipvvr.js"></script>
+<script src="../data/ipvvr.js"></script>
 
 <ul>
   <li><b>↑ Índice Case-Shiller de vivienda (o IPVVR):</b> el índice se construye usando datos de viviendas que se han vendido al menos dos veces durante el periodo de estudio, usando así información de la misma muestra en dos momentos de tiempo distintos.</li>
@@ -50,7 +51,7 @@
 
 <h2>Evolución trimestral de los precios</h2>
 <div id="chart-wrapper"><canvas id="pricequarterly"></canvas></div>
-<script src="../../data/pricequarterly.js"></script>
+<script src="../data/pricequarterly.js"></script>
 
 <ul>
   <li><strong>Eje izquierdo (línea)</strong>: precio de la vivienda en euros por metro cuadrado, según Idealista y los notarios.</li>

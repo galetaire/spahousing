@@ -28,19 +28,20 @@
 <h1>Hipotecas</h1>
 <div class="navbar">
   <button onclick="window.location.href='../index.html'">Indicadores estadísticos 📉</button>
+  <button onclick="window.location.href='../barometer.html'">Barómetro de la vivienda 🌇</button>
   <button onclick="window.location.href='../metodologia.html'">Metodología 📓</button>
 </div>
 <br>
 
 <div id="chart-wrapper"><canvas id="credityearly"></canvas></div>
-<script src="../../data/credityearly.js"></script>
+<script src="../data/credityearly.js"></script>
 <ul>
   <li>↑ <strong>Evolución anual de las hipotecas</strong>, número total de hipotecas aprobadas y canceladas.</li>
   <li>Destacar que por ley, las cancelaciones no están obligadas a registrarse en el registro de la propiedad en el momento de cancelación. Estimamos que un 35% de las cancelaciones de hipoteca no se llegan a registrar.</li>
 </ul>
 
 <div id="chart-wrapper"><canvas id="creditmovement"></canvas></div>
-<script src="../../data/creditmovement.js"></script>
+<script src="../data/creditmovement.js"></script>
 <ul>
   <li>↑ <strong>Movimiento del crédito e importe de las hipotecas</strong>.
     <ul>
@@ -51,13 +52,13 @@
 </ul>
 
 <div id="chart-wrapper"><canvas id="creditratio"></canvas></div>
-<script src="../../data/creditratio.js"></script>
+<script src="../data/creditratio.js"></script>
 <ul>
   <li>↑ <strong>Ratio entre hipotecas y compraventas</strong>: si la ratio es (x), significa que hay (x) hipotecas por cada (1) compraventa. Esta ratio ayuda a intuir la formación de burbujas crediticias.</li>
 </ul>
 
 <div id="chart-wrapper"><canvas id="typemortgage"></canvas></div>
-<script src="../../data/typemortgage.js"></script>
+<script src="../data/typemortgage.js"></script>
 <ul>
   <li>↑ <strong>Hipotecas constituidas según el tipo de interés (%)</strong>: fijo o variable.</li>
 </ul>

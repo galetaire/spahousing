@@ -29,38 +29,39 @@
 <h1>Costes de producción</h1>
 <div class="navbar">
   <button onclick="window.location.href='../index.html'">Indicadores estadísticos 📉</button>
+  <button onclick="window.location.href='../barometer.html'">Barómetro de la vivienda 🌇</button>
   <button onclick="window.location.href='../metodologia.html'">Metodología 📓</button>
 </div>
 <br>
 <p><em>¿Cuánto cuesta construir una vivienda unifamiliar en España?➞ </em> <strong><a href="../posts/buildingcost.html">Plantilla de presupuesto</a></strong>.</p>
 
 <div id="chart-wrapper"><canvas id="costratio"></canvas></div>
-<script src="../../data/costratio.js"></script>
+<script src="../data/costratio.js"></script>
   <ul>
     <li><strong>↑ Ratio entre el precio medio de la vivienda y costes medios de construcción:</strong> si la ratio es (x), significa que las viviendas se venden a (x) veces el precio de producción.</li>
     <li>Una ratio más alta indica que el sector de la construcción tiene márgenes de beneficio más elevados. Cabe señalar que una parte significativa de estos márgenes de beneficio corresponden en realidad a pago de impuestos.</li>
   </ul>
 
   <div id="chart-wrapper"><canvas id="costchange"></canvas></div>
-  <script src="../../data/costchange.js"></script>
+  <script src="../data/costchange.js"></script>
   <ul>
     <li><strong>↑ Costes de producción (%):</strong> evolución año a año de los costes de construcción.</li>
   </ul>
 
   <div id="chart-wrapper"><canvas id="workersperunit"></canvas></div>
-  <script src="../../data/workersperunit.js"></script>
+  <script src="../data/workersperunit.js"></script>
   <ul>
     <li><strong>↑ Ratio de trabajadores por vivienda construida:</strong> el gran cambio de tendencia se debe a un cambio del negocio. La reforma es el negocio principal del sector, superando a la nueva construcción.</li>
   </ul>
 
   <div id="chart-wrapper"><canvas id="employed100"></canvas></div>
-  <script src="../../data/employed100.js"></script>
+  <script src="../data/employed100.js"></script>
   <ul>
     <li><strong>↑ Número de trabajadores ocupados en el sector de la construcción por cada 100 habitantes</strong>.</li>
   </ul>
 
   <div id="chart-wrapper"><canvas id="gasoline"></canvas></div>
-  <script src="../../data/gasoline.js"></script>
+  <script src="../data/gasoline.js"></script>
   <ul>
     <li><strong>↑ Precio de la gasolina en España, en dólares estadounidenses por litro:</strong> a modo de comparación, el precio de la gasolina en Estados Unidos también se dibuja en la gráfica. Al intercambiarse el petróleo internacionalmente en dólares, se considera más adecuado representar los precios en USD.</li>
     <li>La vivienda está muy relacionada con la energía, siendo el petróleo la fuente del ≈29% del consumo de energía global primaria (<a href="https://www.iea.org/data-and-statistics/data-tools/energy-statistics-data-browser?country=WORLD&fuel=Energy%20supply&indicator=TESbySource">1</a>, <a href="https://ourworldindata.org/global-energy-200-years">2</a>).

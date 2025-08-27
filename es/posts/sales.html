@@ -28,11 +28,12 @@
 <h1>Compraventa de viviendas</h1>
 <div class="navbar">
   <button onclick="window.location.href='../index.html'">Indicadores estadísticos 📉</button>
+  <button onclick="window.location.href='../barometer.html'">Barómetro de la vivienda 🌇</button>
   <button onclick="window.location.href='../metodologia.html'">Metodología 📓</button>
 </div>
 <br>
 <div id="chart-wrapper"><canvas id="sales"></canvas></div>
-<script src="../../data/sales.js"></script>
+<script src="../data/sales.js"></script>
 <ul>
   <li><strong>Población en edad de compra (PEC)</strong>: compraventas (barras azules); población entre 25 y 50 años (líneas negras); y herencias de vivienda (barras lilas).</li>
 </ul>
@@ -47,7 +48,7 @@
 
 <h2>Evolución trimestral de las compraventas</h2>
 <div id="chart-wrapper"><canvas id="salesquarterly"></canvas></div>
-<script src="../../data/salesquarterly.js"></script>
+<script src="../data/salesquarterly.js"></script>
 <ul>
   <li><strong>Eje izquierdo (línea)</strong>: índice del precio de la vivienda (IPV).</li>
   <li><strong>Eje derecho (barras)</strong>: compraventas totales de cada trimestre.</li>

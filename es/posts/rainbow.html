@@ -28,13 +28,14 @@
 <h1>Ciclos inmobiliarios</h1>
 <div class="navbar">
   <button onclick="window.location.href='../index.html'">Indicadores estadísticos 📉</button>
+  <button onclick="window.location.href='../barometer.html'">Barómetro de la vivienda 🌇</button>
   <button onclick="window.location.href='../metodologia.html'">Metodología 📓</button>
 </div>
 <br>
 <p style="font-size: 14px; font-style: italic;">El indicador debe entenderse como algo experimental, pudiendo tener errores o no ser representativo.</p>
 <div id="chart-wrapper" style="border-radius:12px; overflow:hidden; display:inline-block;">
 <canvas id="rainbow" width="700" height="375"></canvas></div>
-<script src="../../data/rainbow.js"></script>
+<script src="../data/rainbow.js"></script>
 
 <ul>
   <li><strong>Interpretación de colores</strong> ➞
@@ -50,7 +51,7 @@
 <p><strong style="color: rgba(250, 0, 0);">Rojo</strong> = años pico del ciclo; <strong style="color: rgba(19, 162, 173);">Azul</strong> = años valle del ciclo.</p>
 <div id="chart-wrapper" style="border-radius:12px; overflow:hidden; display:inline-block;">
 <canvas id="rainbowpeaks" width="700" height="375"></canvas></div>
-<script src="../../data/rainbowpeaks.js"></script>
+<script src="../data/rainbowpeaks.js"></script>
 
 <p>La curva en arcoíris describe una banda demográfica, que solapada con el precio real, evalúa el estadio del ciclo de valoración de la vivienda. Un par de notas y consideraciones:</p>
 
@@ -66,7 +67,7 @@
   <img src="https://math.vercel.app/?bgcolor=auto&from=Curva%5C%3Aarcoiris%20%3D-0%2C06%5E2%2B8%2C5x%2B145%0A%0A%0A.svg" alt="Fórmula de curva en arcoiris"/> _____ <img src="https://math.vercel.app/?bgcolor=auto&from=Curva%5C%3Ademografica%20%3D-1583%2C7x%5E2%2B195013x%2B1e07%0A.svg" alt="Fórmula de la curva demográfica"/>
 </p>
 <div id="chart-wrapper"><canvas id="rainbowsource"></canvas></div>
-<script src="../../data/rainbowsource.js"></script>
+<script src="../data/rainbowsource.js"></script>
 
 <h2>Fuente de los datos</h2>
 <ul>

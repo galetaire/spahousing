@@ -68,7 +68,7 @@
   </div>
   </div>
 
-  <p>If the value is 100, all components are at their all-time highs; if the value is 0, all components are at their all-time lows, with a spectrum in between.</p>
+  <p>If the value is 100, all components are under very high pressure; if the value is 0, all components are under very low pressure, with a spectrum in between.</p>
 
   <p>To generate the index, the following variables have been considered as components: price, mortgages, sales, wages, housing stock, builders profit margins, and unemployment.</p>
 
@@ -76,11 +76,11 @@
 
   <div id="chart-wrapper"><canvas id="averagebarometer"></canvas></div>
   <script src="data/averagebarometer.js"></script>
-  <p style="font-size: 14px; font-style: italic;">Learn more about the index: FAQS and notes.</p>
+  <p style="font-size: 14px; font-style: italic;">Learn more about the index: <a href="posts/baronotes.html">FAQS and notes</a>.</p>
 
   <h2>Individual components</h2>
 
-  <p>This section presents each component individually. The simple average of these components forms the value of the <i>All-Components Index</i>. All components have been harmonized using a Min–Max normalization technique, with some adaptations for specific variables. Clarifications are provided for each component, while more detailed explanations can be found in the provided links.</p>
+  <p>This section presents each component individually. The simple average of these components forms the value of the <i>All-Components Index</i>. All components have been harmonized using a Min–Max normalization technique, with some adaptations for specific variables. Clarifications are provided for each component, while more detailed explanations can be found <a href="posts/baronotes.html">here</a>.</p>
 
 <div class="gauge-container">
   <div class="gauge-wrapper">
@@ -94,8 +94,8 @@
   </div>
 
   <div class="column-container" style="font-size: 16px;">
-    <p>The <b>mortgage approvals</b> show the number of approvals in relation to demographic limits. <a href="posts/marketcap.html">Learn more here</a>.</p>
-    <p>The <b>sales flow</b> show the number of house sales in relation to demographic limits. <a href="posts/marketcap.html">Learn more here</a>.</p>
+    <p>The <b>mortgages</b> show the number of approvals in relation to demographic limits, where 100 indicates excess and 0 indicates minimal.</p>
+    <p>The <b>sales flow</b> show the number of house sales in relation to demographic limits, where 100 indicates excess and 0 indicates minimal.</p>
   </div>
 
   <div class="gauge-wrapper">
@@ -109,8 +109,8 @@
   </div>
 
   <div class="column-container" style="font-size: 16px;">
-    <p>The <b>wage effort</b> shows whether wages are rising faster than housing prices, or vice versa. <a href="posts/marketcap.html">Learn more here</a>.</p>
-    <p>The <b>house scarcity</b> shows whether we are closer to a historical deficit (scarcity) or a surplus (plentiful supply). <a href="posts/marketcap.html">Learn more here</a>.</p>
+    <p>The <b>wage effort</b> shows whether wages are furthest from housing prices (100) or closest (0), based on historical data between the two.</p>
+    <p>The <b>house scarcity</b> shows whether we are closer to a historical deficit (100) or a surplus (0), based on data from the past 30 years.</p>
   </div>
 
   <div class="gauge-wrapper">
@@ -124,24 +124,24 @@
   </div>
 
   <div class="column-container" style="font-size: 16px;">
-    <p>The <b>building profits</b> show whether the construction sector is operating in a high-margin or low-margin profit environment. <a href="posts/marketcap.html">Learn more here</a>.</p>
-    <p>The <b>unemployment risk</b> shows the number of approvals in relation to demographic limits. <a href="posts/marketcap.html">Learn more here</a>.</p>
+    <p>The <b>building profits</b> show whether the construction sector is operating in a high-margin (100) or low-margin (0) profit environment.</p>
+    <p>The <b>unemployment risk</b> indicates whether the unemployment rate is threatening to rise (100) or consistently declining (0).</p>
   </div>
 
   <div class="gauge-wrapper">
-    <h3>Price in €</h3>
+    <h3>Price pressure</h3>
     <svg id="gauge8"></svg>
   </div>
 
   <div class="gauge-wrapper">
-    <h3>Price in Gold</h3>
+    <h3>Rent pressure</h3>
     <svg id="gauge9"></svg>
   </div>
 </div>
 
 <div class="column-container" style="font-size: 16px;">
-    <p>The <b>price in €</b> represents a large part of the credit generated in the housing sector; the more there are, the more money circulates. The indicator shows the number of approvals in relation to demographic limits. <a href="posts/marketcap.html">Learn more here</a>.</p>
-    <p>The <b>price in gold</b> represents a large part of the credit generated in the housing sector; the more there are, the more money circulates. The indicator shows the number of approvals in relation to demographic limits. <a href="posts/marketcap.html">Learn more here</a>.</p>
+    <p>The <b>price</b> shows whether it is closer to an all-time high (100) or an all-time low (0), based on data from the past 15 years.</p>
+    <p><strong style="color: rgba(178, 10, 142);">[Not part of our index]</strong> The <b>rent</b> measures the imbalances between supply and demand of rental prices. Curated by <a href="https://observatoriodelalquiler.org/barometro-del-alquiler/">Observatorio del Alquiler</a>.</p>
 </div>
 
 <p><b>🧮 Historical annual close:</b></p>
@@ -157,39 +157,39 @@
   const gaugeConfigurations = [
     {
       id: 'gauge1', title: 'Average Risk', dataColumn: 'Average_risk',
-      segments: [ { value: 15, color: '#1492FF', label: 'Very Low' },{ value: 15, color: '#69B7FF', label: 'Moderately Low' }, { value: 15, color: '#B8DAFF', label: 'Low' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'High' }, { value: 15, color: '#FC6642', label: 'Moderately high'}, { value: 15, color: '#FF3300', label: 'Very high'}, ]
+      segments: [ { value: 15, color: '#1492FF', label: 'Very Low' },{ value: 15, color: '#69B7FF', label: 'Low' }, { value: 15, color: '#B8DAFF', label: 'Moderately low' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'Moderately high' }, { value: 15, color: '#FC6642', label: 'High'}, { value: 15, color: '#FF3300', label: 'Very high'}, ]
     },
     {
       id: 'gauge2', title: 'Mortgage Risk', dataColumn: 'Mortgage_risk',
-      segments: [ { value: 15, color: '#1492FF', label: 'Very Low' },{ value: 15, color: '#69B7FF', label: 'Moderately Low' }, { value: 15, color: '#B8DAFF', label: 'Low' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'High' }, { value: 15, color: '#FC6642', label: 'Moderately high'}, { value: 15, color: '#FF3300', label: 'Very high'}, ]
+      segments: [  { value: 15, color: '#1492FF', label: 'Very Low' },{ value: 15, color: '#69B7FF', label: 'Low' }, { value: 15, color: '#B8DAFF', label: 'Moderately low' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'Moderately high' }, { value: 15, color: '#FC6642', label: 'High'}, { value: 15, color: '#FF3300', label: 'Very high'}, ]
     },
     {
       id: 'gauge3', title: 'Sales Risk', dataColumn: 'Sales_risk',
-      segments: [ { value: 15, color: '#1492FF', label: 'Very Low' },{ value: 15, color: '#69B7FF', label: 'Moderately Low' }, { value: 15, color: '#B8DAFF', label: 'Low' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'High' }, { value: 15, color: '#FC6642', label: 'Moderately high'}, { value: 15, color: '#FF3300', label: 'Very high'}, ]
+      segments: [  { value: 15, color: '#1492FF', label: 'Very Low' },{ value: 15, color: '#69B7FF', label: 'Low' }, { value: 15, color: '#B8DAFF', label: 'Moderately low' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'Moderately high' }, { value: 15, color: '#FC6642', label: 'High'}, { value: 15, color: '#FF3300', label: 'Very high'}, ]
     },
     {
       id: 'gauge4', title: 'Wage Risk', dataColumn: 'Wage_risk',
-      segments: [ { value: 15, color: '#1492FF', label: 'Very Low' },{ value: 15, color: '#69B7FF', label: 'Moderately Low' }, { value: 15, color: '#B8DAFF', label: 'Low' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'High' }, { value: 15, color: '#FC6642', label: 'Moderately high'}, { value: 15, color: '#FF3300', label: 'Very high'}, ]
+      segments: [  { value: 15, color: '#1492FF', label: 'Very Low' },{ value: 15, color: '#69B7FF', label: 'Low' }, { value: 15, color: '#B8DAFF', label: 'Moderately low' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'Moderately high' }, { value: 15, color: '#FC6642', label: 'High'}, { value: 15, color: '#FF3300', label: 'Very high'}, ]
     },
     {
       id: 'gauge5', title: 'Scarcity Risk', dataColumn: 'Scarcity_risk',
-      segments: [ { value: 15, color: '#1492FF', label: 'Very Low' },{ value: 15, color: '#69B7FF', label: 'Moderately Low' }, { value: 15, color: '#B8DAFF', label: 'Low' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'High' }, { value: 15, color: '#FC6642', label: 'Moderately high'}, { value: 15, color: '#FF3300', label: 'Very high'}, ]
+      segments: [ { value: 15, color: '#1492FF', label: 'Very Low' },{ value: 15, color: '#69B7FF', label: 'Low' }, { value: 15, color: '#B8DAFF', label: 'Moderately low' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'Moderately high' }, { value: 15, color: '#FC6642', label: 'High'}, { value: 15, color: '#FF3300', label: 'Very high'}, ]
     },
     {
       id: 'gauge6', title: 'Production Risk', dataColumn: 'Production_risk',
-      segments: [ { value: 15, color: '#1492FF', label: 'Very Low' },{ value: 15, color: '#69B7FF', label: 'Moderately Low' }, { value: 15, color: '#B8DAFF', label: 'Low' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'High' }, { value: 15, color: '#FC6642', label: 'Moderately high'}, { value: 15, color: '#FF3300', label: 'Very high'}, ]
+      segments: [  { value: 15, color: '#1492FF', label: 'Very Low' },{ value: 15, color: '#69B7FF', label: 'Low' }, { value: 15, color: '#B8DAFF', label: 'Moderately low' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'Moderately high' }, { value: 15, color: '#FC6642', label: 'High'}, { value: 15, color: '#FF3300', label: 'Very high'}, ]
     },
     {
       id: 'gauge7', title: 'Labor Risk', dataColumn: 'Labor_risk',
-      segments: [ { value: 15, color: '#1492FF', label: 'Very Low' },{ value: 15, color: '#69B7FF', label: 'Moderately Low' }, { value: 15, color: '#B8DAFF', label: 'Low' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'High' }, { value: 15, color: '#FC6642', label: 'Moderately high'}, { value: 15, color: '#FF3300', label: 'Very high'}, ]
+      segments: [  { value: 15, color: '#1492FF', label: 'Very Low' },{ value: 15, color: '#69B7FF', label: 'Low' }, { value: 15, color: '#B8DAFF', label: 'Moderately low' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'Moderately high' }, { value: 15, color: '#FC6642', label: 'High'}, { value: 15, color: '#FF3300', label: 'Very high'}, ]
     },
     {
-      id: 'gauge8', title: 'Price Risk', dataColumn: 'Price_risk',
-      segments: [ { value: 15, color: '#1492FF', label: 'Very Low' },{ value: 15, color: '#69B7FF', label: 'Moderately Low' }, { value: 15, color: '#B8DAFF', label: 'Low' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'High' }, { value: 15, color: '#FC6642', label: 'Moderately high'}, { value: 15, color: '#FF3300', label: 'Very high'}, ]
+      id: 'gauge8', title: 'Price risk', dataColumn: 'Price_risk',
+      segments: [  { value: 15, color: '#1492FF', label: 'Very Low' },{ value: 15, color: '#69B7FF', label: 'Low' }, { value: 15, color: '#B8DAFF', label: 'Moderately low' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'Moderately high' }, { value: 15, color: '#FC6642', label: 'High'}, { value: 15, color: '#FF3300', label: 'Very high'}, ]
     },
     {
-      id: 'gauge9', title: 'Price to gold', dataColumn: 'Price_risk',
-      segments: [ { value: 15, color: '#1492FF', label: 'Very Low' },{ value: 15, color: '#69B7FF', label: 'Moderately Low' }, { value: 15, color: '#B8DAFF', label: 'Low' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'High' }, { value: 15, color: '#FC6642', label: 'Moderately high'}, { value: 15, color: '#FF3300', label: 'Very high'}, ]
+      id: 'gauge9', title: 'Rent risk', dataColumn: 'Rent_risk',
+      segments: [  { value: 15, color: '#1492FF', label: 'Very Low' },{ value: 15, color: '#69B7FF', label: 'Low' }, { value: 15, color: '#B8DAFF', label: 'Moderately low' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'Moderately high' }, { value: 15, color: '#FC6642', label: 'High'}, { value: 15, color: '#FF3300', label: 'Very high'}, ]
     }
   ];
 

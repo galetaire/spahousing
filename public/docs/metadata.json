@@ -542,7 +542,13 @@
         {
           "title": "Balance",
           "dc:description": "Housing balance",
-          "source": "Per_new_homes-Population_yoy",
+          "source": "Per_new_homes-(Population_yoy/2)",
+          "@type": "Column"
+        },
+        {
+          "title": "Balance_hogares",
+          "dc:description": "Housing balance",
+          "source": "Per_new_homes-(Population_yoy/Average_people_home)",
           "@type": "Column"
         },
         {

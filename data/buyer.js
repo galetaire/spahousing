@@ -64,7 +64,7 @@ function makeChart(buyer) {
                     });
                   } else if (label === 'Foreigners' ||
                               label === 'Nationals' ||
-                            label === 'Lebal entity') {
+                            label === 'Legal entity') {
                     // two decimals
                     value = value.toFixed(2);
                   }

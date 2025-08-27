@@ -20,7 +20,7 @@ function makeChart(barcomponents) {
       labels: rangeLabels,
       datasets: [
         {
-          label: "Price in €",
+          label: "Price",
           data: rangeOne,
           backgroundColor: 'rgba(255, 113, 113, 1)',
           borderColor: 'rgba(255, 113, 113, 1)',

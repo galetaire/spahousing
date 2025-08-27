@@ -1,6 +1,6 @@
 //makeChart, calling the data and variables from the .csv file
 function makeChart(housebitcoin) {
-  var rangeStart = 85;
+  var rangeStart = 110;
   var rangeEnd = new Date().getFullYear() - 1899;
   var rangeLabels = housebitcoin.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
   var rangeOne = housebitcoin.map(function(d) {return d.BTC_house}).slice(rangeStart, rangeEnd);
