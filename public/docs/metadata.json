@@ -844,6 +844,60 @@
           "dc:description": "Average annual priceper MWh, in euros",
           "source": "https://www.epdata.es/datos/precio-factura-luz-datos-estadisticas/594",
           "@type": "Column"
+        },
+        {
+          "title": "Price_risk",
+          "dc:description": "Index to measure the risk of price",
+          "source": "https://spainhousing.eu/posts/baronotes.html",
+          "@type": "Column"
+        },
+        {
+          "title": "Mortgage_risk",
+          "dc:description": "Index to measure the risk of mortgages",
+          "source": "https://spainhousing.eu/posts/baronotes.html",
+          "@type": "Column"
+        },
+        {
+          "title": "Sales_risk",
+          "dc:description": "Index to measure the risk of home sales",
+          "source": "https://spainhousing.eu/posts/baronotes.html",
+          "@type": "Column"
+        },
+        {
+          "title": "Wage_risk",
+          "dc:description": "Index to measure the risk of wages",
+          "source": "https://spainhousing.eu/posts/baronotes.html",
+          "@type": "Column"
+        },
+        {
+          "title": "Production_risk",
+          "dc:description": "Index to measure the risk of builders profit margins",
+          "source": "https://spainhousing.eu/posts/baronotes.html",
+          "@type": "Column"
+        },
+        {
+          "title": "Scarcity_risk",
+          "dc:description": "Index to measure the risk of house scarcity",
+          "source": "https://spainhousing.eu/posts/baronotes.html",
+          "@type": "Column"
+        },
+        {
+          "title": "Labor_risk",
+          "dc:description": "Index to measure the risk of unemployment",
+          "source": "https://spainhousing.eu/posts/baronotes.html",
+          "@type": "Column"
+        },
+        {
+          "title": "Rent_risk",
+          "dc:description": "Index to measure the risk of rental prices",
+          "source": "https://observatoriodelalquiler.org/barometro-del-alquiler/",
+          "@type": "Column"
+        },
+        {
+          "title": "Average_risk",
+          "dc:description": "Aerages index to measure the risk of the housing market",
+          "source": "(Price_risk+Mortgage_risk+Sales_risk+Wage_risk+Production_risk+Scarcity_risk+Labor_risk)/7",
+          "@type": "Column"
         }],
       "@type": "Schema"
     },

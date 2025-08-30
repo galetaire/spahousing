@@ -33,7 +33,137 @@
   <button onclick="window.location.href='../methodology.html'">Methodology 📓</button>
 </div>
 <br>
-<p>Coming soon</p>
+<p>The development of the housing barometer has been carried out on the basis of seven components, which are summarized in the following table:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Name component (*)</th>
+      <th>Source variable (*)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Price pressure</td><td><i>Price_risk</i></td><td><i>Real_price</i></td>
+    <tr><td>Sales flow</td><td><i>Sales_risk</i></td><td><i>Home_sales</i></td>
+    <tr><td>Mortgage approvals</td><td><i>Mortgage_risk</i></td><td><i>Approved</i></td>
+    <tr><td>Wage effort</td><td><i>Wage_risk</i></td><td><i>Dif_Wage_IPVVR</i></td>
+    <tr><td>House scarcity</td><td><i>Scarcity_risk</i></td><td><i>Balance_hogares</i></td>
+    <tr><td>Building profits</td><td><i>Production_risk</i></td><td><i>Ratio_price_cost</i></td>
+    <tr><td>Unemployment risk</td><td><i>Labor_risk</i></td><td><i>Unemployment_yoy_per</i></td>
+  </tbody>
+</table>
+<p style="font-size: 14px; font-style: italic;">(*) The names refer to the title they have in the <a href="https://github.com/galetaire/spahousing/blob/main/public/docs/spain_stats_csv.csv"><b>database</b></a>.</p>
+
+<h3>Price pressure</h3>
+<p>The <strong>price pressure</strong> is obtained by applying the following formula:</p>
+
+<p><img src="https://math.vercel.app/?bgcolor=auto&from=Price\:Risk=\frac{x_{n}-\min(x_{range})}{\max(x_{range})-\min(x_{range})}\times100" alt="Price risk"></p>
+
+<p>Where:</p>
+<ul>
+<li><i>x<sub>n</sub></i>, is the reference value for the desired year from <i>Real_price</i></li>
+<li><i>x<sub>range</sub></i>, represents the values that are part of the range of the last 15 years (including the reference year)</li>
+<li><i>min</i>, is the minimum value among the existing values in the range <i>x<sub>range</sub></i></li>
+<li><i>max</i>, is the maximum value among the existing values in the range <i>x<sub>range</sub></i></li>
+</ul>
+
+<h3>Sales flow</h3>
+<p>The <strong>sales flow</strong> is obtained by applying the following formula:</p>
+
+<p><img src="https://math.vercel.app/?bgcolor=auto&from=Sales\:Risk\left(\begin{array}{c}min=0\\ max=100\end{array}\right)=\frac{x_{n}-LI_{n}}{LS_{n}-LI_{n}}\times100" alt="Sales risk"></p>
+
+<p>Where:</p>
+<ul>
+<li><i>x<sub>n</sub></i>, is the reference value for the desired year from <i>Home_sales</i></li>
+<li><i>LI<sub>n</sub></i>, is the reference value for the desired year from <i>Lower_limit</i></li>
+<li><i>LS<sub>n</sub></i>, is the reference value for the desired year from <i>Upper_limit</i></li>
+<li><i>min=0</i>, means that if the returned value is less than 0, it is represented as 0</li>
+<li><i>max=100</i>, means that if the returned value is greater than 100, it is represented as 100</li>
+</ul>
+
+<h3>Mortgage approvals</h3>
+<p>The <strong>mortgage approvals</strong> is obtained by applying the following formula:</p>
+
+<p><img src="https://math.vercel.app/?bgcolor=auto&from=Mortgage\:Risk\left(\begin{array}{c}min=0\\ max=100\end{array}\right)=\frac{x_{n}-LI_{n}}{LS_{n}-LI_{n}}\times100" alt="Mortgage risk"></p>
+
+<p>Where:</p>
+<ul>
+<li><i>x<sub>n</sub></i>, is the reference value for the desired year from <i>Approved</i></li>
+<li><i>LI<sub>n</sub></i>, is the reference value for the desired year from <i>Lower_limit</i></li>
+<li><i>LS<sub>n</sub></i>, is the reference value for the desired year from <i>Upper_limit</i></li>
+<li><i>min=0</i>, means that if the returned value is less than 0, it is represented as 0</li>
+<li><i>max=100</i>, means that if the returned value is greater than 100, it is represented as 100</li>
+</ul>
+
+<h3>Wage effort</h3>
+<p>The <strong>wage effort</strong> is obtained by applying the following formula:</p>
+
+<p><img src="https://math.vercel.app/?bgcolor=auto&from=Wage\:Risk=\frac{x_{n}-\min(x_{range})}{\max(x_{range})-\min(x_{range})}\times100" alt="Wage risk"></p>
+
+<p>Where:</p>
+<ul>
+<li><i>x<sub>n</sub></i>, is the reference value for the desired year from <i>Dif_Wage_IPVVR</i></li>
+<li><i>x<sub>range</sub></i>, represents the values that are part of the reference range (all available)</li>
+<li><i>min</i>, is the minimum value among the existing values in the range <i>x<sub>range</sub></i></li>
+<li><i>max</i>, is the maximum value among the existing values in the range <i>x<sub>range</sub></i></li>
+</ul>
+
+<h3>House scarcity</h3>
+<p>The <strong>house scarcity</strong> is obtained by applying the following formula:</p>
+
+<p><img src="https://math.vercel.app/?bgcolor=auto&from=Scarcity\:Risk=100-(\frac{x_{n}-\min(x_{range})}{\max(x_{range})-\min(x_{range})}\times100)" alt="Scarcity risk"></p>
+
+<p>Where:</p>
+<ul>
+<li><i>x<sub>n</sub></i>, is the reference value for the desired year from <i>Balance_hogares</i></li>
+<li><i>x<sub>range</sub></i>, represents the values that are part of the range of the last 30 years (including the reference year)</li>
+<li><i>min</i>,  is the minimum value among the existing values in the range <i>x<sub>range</sub></i></li>
+<li><i>max</i>,  is the minimum value among the existing values in the range <i>x<sub>range</sub></i></li>
+</ul>
+
+<h3>Building profits</h3>
+<p>The <strong>building profits</strong> is obtained by applying the following formula:</p>
+
+<p><img src="https://math.vercel.app/?bgcolor=auto&from=Production\:Risk\left(\begin{array}{c}min=0\\ max=100\end{array}\right)=\frac{x_{n}-1.8}{2.2-1.8}\times100" alt="Production risk"></p>
+
+<p>Where:</p>
+<ul>
+<li><i>x<sub>n</sub></i>, is the reference value for the desired year from <i>Ratio_price_cost</i></li>
+<li><i>1.8</i>, represents the minimum value defined as a constant</li>
+<li><i>2.2</i>, represents the maximum value defined as a constant</li>
+<li><i>min=0</i>, means that if the returned value is less than 0, it is represented as 0</li>
+<li><i>max=100</i>, means that if the returned value is greater than 100, it is represented as 100</li>
+</ul>
+
+<h3>Unemployment risk</h3>
+<p>The <strong>unemployment risk</strong> is obtained by applying the following formula:</p>
+
+<p><img src="https://math.vercel.app/?bgcolor=auto&from=Labor%5C%3Arisk\left(\begin{array}{c}min=0\\ max=100\end{array}\right)%20%3D%20%28A%20-%20X_%7Bn%7D%29%2BB.svg" alt="Labor risk"></p>
+
+<p>Where:</p>
+<ul>
+<li><i>x<sub>n</sub></i>, is the reference value for the desired year from <i>Unemployment_yoy_per</i></li>
+<li><i>min=0</i>, means that if the returned value is less than 0, it is represented as 0</li>
+<li><i>max=100</i>, means that if the returned value is greater than 100, it is represented as 100</li>
+<li><i>A</i> and <i>B</i> they represent values that correspond to conditionals</li>
+</ul>
+
+<p><img src="https://math.vercel.app/?bgcolor=auto&from=A%3D%5Cbegin%7Bcases%7D100%20%26%20%5Ctext%7Bif%20%7D%20-0.3%20%5Cle%20X_%7Bn%7D%20-%20X_%7Bn-1%7D%20%5Cle0.3%20%5C%5C50%20%26%20%5Ctext%7Bif%20%7D%20-1%20%3C%20X_%7Bn%7D%20-%20X_%7Bn-1%7D%20%3C%20-0.3%20%5C%5C25%20%26%20%5Ctext%7Bif%20%7D%20X_%7Bn%7D%20-%20X_%7Bn-1%7D%20%5Cle%20-1%20%5C%5C75%20%26%20%5Ctext%7Bif%20%7D%20X_%7Bn%7D%20-%20X_%7Bn-1%7D%20%3E%200.3%5Cend%7Bcases%7D.svg" alt="Labor risk"></p>
+<p><img src="https://math.vercel.app/?bgcolor=auto&from=B%3D%5Cbegin%7Bcases%7D%0AC%20%26%20%5Ctext%7Bif%20%7D%20%28X_%7Bn%7D%20-%20X_%7Bn-1%7D%29%28X_%7Bn-1%7D%20-%20X_%7Bn-2%7D%29%20%3C%200%20%5C%5C%0A0%20%26%20%5Ctext%7Botherwise%7D%0A%5Cend%7Bcases%7D.svg" alt="Labor risk"></p>
+<p><img src="https://math.vercel.app/?bgcolor=auto&from=C%3D%5Cfrac%7B1%7D%7B5%7D%5Csum_%7Bi%3D1%7D%5E%7Bn-5%7DX_%7Bi%7D.svg" alt="Labor risk"></p>
+
+<p>Where:</p>
+<ul>
+<li><i>A</i> captures the speed of unemployment, whether the rate is stagnant, rising, or falling</li>
+<li><i>B</i> captures the change in trend, whether unemployment shifts from rising to falling, or vice versa</li>
+<li><i>C</i> is the average unemployment rate over the last 5 years</li>
+<li><i>x<sub>n-1</sub></i> represents the value of the year prior to the reference year of the variable <i>Unemployment_yoy_per</i></li>
+<li><i>x<sub>n-2</sub></i> represents the value two years prior to the reference year of the variable <i>Unemployment_yoy_per</i></li>
+</ul>
+
+<h2>Notes</h2>
+<p>For the mathematical notations, the <a href="https://math.vercel.app/home" target="_blank">Latex Math API</a> developed by <a href="https://github.com/uetchy" target="_blank">@uechz</a> has been used.</p>
 
 <br>
 <!-- Footer-->

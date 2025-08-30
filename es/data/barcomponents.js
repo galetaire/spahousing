@@ -60,7 +60,7 @@ function makeChart(barcomponents) {
           tension: 0.4
         },
         {
-          label: "Beneficios industriales",
+          label: "Márgenes de beneficio",
           data: rangeFive,
           backgroundColor: 'rgba(175, 97, 199, 1)',
           borderColor: 'rgba(175, 97, 199, 1)',

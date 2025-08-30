@@ -29,7 +29,7 @@ d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/
 
 # Contact
 
-You can reach me through X: [@HousingSpanish](https://x.com/HousingSpanish), Reddit: [u/HousingSpanish](https://www.reddit.com/user/HousingSpanish/), or alternatively through my personal [Nostr](https://primal.net/Galetaire) account.
+You can reach me through X: [@HousingSpanish](https://x.com/HousingSpanish), or Reddit: [u/HousingSpanish](https://www.reddit.com/user/HousingSpanish/). To talk about the Spanish housing market join our reddit community: [r/SpainHousing](https://www.reddit.com/r/spainhousing/).
 
 # License
 
