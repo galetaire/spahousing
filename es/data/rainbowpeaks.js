@@ -83,7 +83,7 @@ function makeChart(rainbowpeaks) {
       plugins: {
         title: {
                 display: true,
-                text: 'Ciclos de la vivienda - España',
+                text: 'Ciclos del precio de la vivienda - España',
                 font: {
                   size: 12
                 },
