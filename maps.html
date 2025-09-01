@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barometer - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+  <script>
+    function setLanguage(lang) {
+      const currentPath = window.location.pathname;
+      if (lang === 'es') {
+        // Only redirect if not already in Spanish version
+        if (!currentPath.includes('/es/')) {
+          window.location.href = "/es/barometer.html";
+        }
+      } else {
+        // Only redirect if not already in English version
+        if (currentPath.includes('/es/')) {
+          window.location.href = "/barometer.html";
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+<br>
+<br>
+
+<div class="lang-switcher">
+  <button onclick="setLanguage('en')">EN</button>
+  <button onclick="setLanguage('es')">ES</button>
+</div>
+
+<h1>Housing barometer 🌇</h1>
+
+<div class="navbar">
+  <button onclick="window.location.href='index.html'">Statistical indicators 📉</button>
+  <button onclick="window.location.href='barometer.html'">Housing barometer 🌇</button>
+  <button onclick="window.location.href='barometer.html'">Maps 🧭</button>
+  <button onclick="window.location.href='methodology.html'">Methodology 📓</button>
+</div>
+
+<p>In process.</p>
+
+<br>
+<!-- Footer-->
+<div id="footer">
+  <script>document.write(new Date().getFullYear())</script> ©HousingSpanish 🔭. Creative Commons Attribution-ShareAlike 4.0 International License.
+</div>
+<br>
+</body>
+</html>

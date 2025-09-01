@@ -1,10 +1,10 @@
 # Description
 
-The market monitored on this website is the Spanish real estate market 🏠.
+The market monitored on this website is the Spanish real estate market 🏠. The whole project can be forked.
 
 # About the database
 
-Even so I try to be cautious and avoid mistakes, errors can occur, so I encourage the review and verification of the database. If encountered any, the creation of ``Issues`` and ``Pull requests`` for the database are welcome, you can also reach me through various channels.
+The database is hardcoded, since it relies on many dispersed sources, some have APIs, but most not. And even so I try to be cautious and avoid mistakes, errors can occur, so I encourage the review and verification of the database. If encountered any, the creation of ``Issues`` and ``Pull requests`` for the database are welcome, you can also reach me through various channels.
 
 The database can be found in [spahousing/public/docs/](https://github.com/galetaire/spahousing/tree/main/public/docs), presented in two different file formats.
   - [spain_stats_ods.ods](https://github.com/galetaire/spahousing/blob/main/public/docs/spain_stats_ods.ods)
@@ -14,13 +14,13 @@ Full review and modification is better to be done in ``.ods``, since some indica
 
 - [Metadata.json](https://github.com/galetaire/spahousing/raw/main/public/docs/metadata.json)
 
-# About the charts
+# About the data visualizations
 
-All charts are done with the JavaScript library chart.js, but there might be content in d3.js eventually. All scripts are available at:
+All charts are done with the JavaScript library chart.js, and the barometer gauge has been built with d3.js. All scripts are available at:
 
 - [spahousing/data/](https://github.com/galetaire/spahousing/tree/main/data)
 
-If you are creating data visualizations with ``D3js`` or ``chartjs`` you can import the ``.csv`` file from the repository using the import option from the ``D3js`` library, like this:
+If you are creating data visualizations with ``D3js`` or ``chartjs`` you can import the database ``.csv`` file from the repository using the import option from the ``D3js`` library, like this:
 
 ```
 d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
