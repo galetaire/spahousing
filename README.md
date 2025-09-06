@@ -1,6 +1,6 @@
 # Description
 
-The market monitored on this website is the Spanish real estate market 🏠. The whole project can be forked.
+The market monitored on this website is the Spanish real estate market 🏠. The whole project can be forked and is under the CC BY 4.0. The author supports open knowledge and only requires attribution.
 
 # About the database
 

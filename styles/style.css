@@ -28,7 +28,7 @@ h2 {
 
 a:link,
 a:visited {
-  color: #007bff;
+  color: #045DBF;
 }
 
 #title {
@@ -72,7 +72,8 @@ a:visited {
 }
 
 #footer a {
-  color: #aaa;
+  text-decoration: none;
+  color: #383838;
 }
 
 table {
@@ -142,7 +143,7 @@ td a:hover {
 }
 
 .lang-switcher button {
-  background-color: #007bff;
+  background-color: #045DBF;
   color: white;
   border: none;
   padding: 5px 10px;
