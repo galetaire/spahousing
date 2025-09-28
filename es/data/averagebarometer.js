@@ -33,7 +33,7 @@ function makeChart(averagebarometer) {
       labels: rangeLabels,
       datasets: [
         {
-          label: "Riesgo medio",
+          label: "Nivel de presión",
           data: rangeOne,
           backgroundColor: 'rgba(0, 0, 0, 0.7)',
           borderColor: function(context){
