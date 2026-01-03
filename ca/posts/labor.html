@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Ocupació - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Atur i preu de l'habitatge</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../index.html'">Indicadors estadístics 📉</button>
+  <button onclick="window.location.href='../barometer.html'">Baròmetre de l'habitatge 🌇</button>
+  <button onclick="window.location.href='../metodologia.html'">Metodologia 📓</button>
+</div>
+<br>
+<div id="chart-wrapper"><canvas id="laboryearly"></canvas></div>
+<script src="../data/laboryearly.js"></script>
+
+<ul>
+  <li>↑ <strong>Evolució anual de l'atur i els preus de l'habitatge</strong>. La <strong style="color: rgba(178, 10, 142);">zona ombrejada porpra</strong> destaca la zona on els preus de l'habitatge descendeixen.
+    <ul>
+      <li><strong>Eix esquerre</strong>: atur mitjà anual.</li>
+      <li><strong>Eix dret</strong>: creixement anual mitjà del preu (invertit).</li>
+    </ul>
+  </li>
+  <li>La desocupació i els preus de l'habitatge tenen una relació inversa, amb una correlació de -0,35. Quan descendeix l'atur, els preus de l'habitatge augmenten, i viceversa.</li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="laborquarterly"></canvas></div>
+<script src="../data/laborquarterly.js"></script>
+
+<ul>
+  <li>↑ <strong>Evolució trimestral de l'atur i els preus de l'habitatge</strong>.
+    <ul>
+      <li><strong>Eix esquerre</strong>: IPV, no ajustat a inflació (base 100 = 2015).</li>
+      <li><strong>Eix dret</strong>: taxa d'atur mitjana (invertit).</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Font de les dades</h2>
+<ul>
+  <li>Desempleo (<em>Resultados > Anuales o Trimestrales > Parados > Parados por sexo y grupo de edad</em>):
+    <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176918&menu=resultados&idp=1254735976595#!tabs-1254736195128">Enlace</a>
+  </li>
+  <li>Precios de la vivienda, de 1985 a 2006, según Sociedad de Tasación (<em>Acceso bajo petición, pero se pueden visualizar en la siguiente publicación</em>):
+    <a href="https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf">Publicación</a>,
+    <a href="https://www.st-tasacion.es/informe-de-tendencias-digital/">Enlace</a>
+  </li>
+  <li>Precios de la vivienda, de 2007 en adelante, según datos de notarios (<em>Grupo 5 &gt; Acto 501 - Compraventa inmuebles &gt; Inmuebles en fincas urbanas, viviendas</em>):
+    <a href="http://www.notariado.org/liferay/web/cien/estadisticas-al-completo">Enlace</a>
+  </li>
+  <li>Índice del precio de la vivienda:
+    <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736152838&menu=resultados&idp=1254735976607">Enlace</a>
+  </li>
+  <li>Datos de inflación (<em>Table: average inflation Spain (CPI) - by year</em>):
+    <a href="https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx">Enlace</a>
+  </li>
+</ul>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+</div>
+<br>
+</body>
+</html>

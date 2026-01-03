@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Inversió - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Retorns econòmics de l'habitatge</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../index.html'">Indicadors estadístics 📉</button>
+  <button onclick="window.location.href='../barometer.html'">Baròmetre de l'habitatge 🌇</button>
+  <button onclick="window.location.href='../metodologia.html'">Metodologia 📓</button>
+</div>
+<br>
+<div id="chart-wrapper"><canvas id="roigross"></canvas></div>
+<script src="../data/roigross.js"></script>
+ <ul>
+   <li><strong>↑ Apreciació bruta de l'habitatge (%)</strong>.
+     <ul>
+       <li><strong>Barres</strong>: el verd denota apreciació; el vermell depreciació.</li>
+       <li><strong>Línia discontínua negra</strong>: inflació anual, en percentatge.</li>
+     </ul>
+   </li>
+ </ul>
+
+ <div id="chart-wrapper"><canvas id="roinet"></canvas></div>
+ <script src="../data/roinet.js"></script>
+ <ul>
+   <li><strong>↑ Rendibilitat de la inversió en habitatge (%)</strong>: es considera l'apreciació bruta i els retorns nets per lloguer.
+     <ul>
+       <li><strong>Barres</strong>: el verd denota apreciació; el vermell depreciació.</li>
+       <li><strong>Línia discontínua negra</strong>: inflació anual, en percentatge.</li>
+     </ul>
+   </li>
+ </ul>
+
+ <h2>Retorn mitjà del lloguer</h2>
+ <p><em>Fuente: <a href="https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/alquiler/"><strong>Idealista</strong></a></em></p>
+
+ <p>Els següents gràfics mostren la ràtio entre el preu de compra i el preu del lloguer (tant en %, com en temps, en anys). En essència, és un indicador similar a la ràtio preu-benefici (P/E) utilitzada en l'anàlisi borsària. Pot interpretar-se de la manera següent:</p>
+ <ul>
+   <li>A preus de 2010, es necessitaven 27,8 anys per a recuperar per complet la compra de l'habitatge a través de retorns per lloguer, a un ritme anual del 3,6%.</li>
+   <li>A preus de 2020, es necessitaven 17,5 anys per a recuperar per complet la compra de l'habitatge a través de retorns per lloguer, a un ritme anual del 5,7%.</li>
+ </ul>
+
+ <div id="chart-wrapper"><canvas id="rentratio"></canvas></div>
+ <script src="../data/rentratio.js"></script>
+ <ul>
+   <li><strong>↑ Price-to-rent ràtio (en %, net i brut)</strong>: percentatge anual de rendibilitat del lloguer.</li>
+ </ul>
+
+ <div id="chart-wrapper"><canvas id="renttime"></canvas></div>
+ <script src="../data/renttime.js"></script>
+ <ul>
+   <li><strong>↑ Price-to-rent ràtio (en temps, net i brut)</strong>: nombre d'anys per a recuperar el cost de la compra d'un habitatge a través de la seva posada per llogar. No es considera cap cost imprevist, ni tampoc l'apreciació de l'habitatge.</li>
+ </ul>
+
+<h2>Font de les dades</h2>
+ <ul>
+   <li>Precios de la vivienda, de 1985 a 2006, según Sociedad de Tasación (<em>Acceso bajo petición, pero se pueden visualizar en la siguiente publicación</em>):
+     <a href="https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf">Publicación</a>,
+     <a href="https://www.st-tasacion.es/informe-de-tendencias-digital/">Enlace</a>
+   </li>
+   <li>Precios de la vivienda, de 2007 en adelante, según datos de notarios (<em>Grupo 5 &gt; Acto 501 - Compraventa inmuebles &gt; Inmuebles en fincas urbanas, viviendas</em>):
+     <a href="http://www.notariado.org/liferay/web/cien/estadisticas-al-completo">Enlace</a>
+   </li>
+   <li>Datos de inflación (<em>Table: average inflation Spain (CPI) - by year</em>):
+     <a href="https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx">Enlace</a>
+   </li>
+   <li>Precios del alquiler según Idealista (<em>para modelar los beneficios netos, un 25% ha sido sustraído de los beneficios brutos</em>): <a href="https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/alquiler/">Enlace</a>
+   </li>
+   <li>Precios de la compra de vivienda según Idealista (<em>para mantener una coherencia de fuentes, los retornos por alquiler se han calculado partiendo de los precios de compra de Idealista</em>):
+     <a href="https://www.idealista.com/sala">Enlace</a>
+   </li>
+ </ul>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+</div>
+<br>
+</body>
+</html>

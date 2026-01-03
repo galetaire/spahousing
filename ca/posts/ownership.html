@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Tinença - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Compravendes per tipus de comprador</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../index.html'">Indicadors estadístics 📉</button>
+  <button onclick="window.location.href='../barometer.html'">Baròmetre de l'habitatge 🌇</button>
+  <button onclick="window.location.href='../metodologia.html'">Metodologia 📓</button>
+</div>
+<br>
+<div id="chart-wrapper"><canvas id="buyer"></canvas></div>
+<script src="../data/buyer.js"></script>
+
+<p>El gràfic superior mostra la distribució (%) de les compravendes d'habitatges segons si el comprador és nacional, estranger o una persona jurídica (empreses, fons d'inversió...). D'aquesta manera, podem veure qui domina i qui es retira del mercat. Algunes observacions:</p>
+
+<ul>
+  <li><strong>Observació A</strong>: entre 2011 i 2013 el pes de les persones jurídiques incrementà, que podria interpretar-se com (1) un interès creixent dels fons d'inversió, i (2) un increment de les execucions hipotecàries.</li>
+  <li><strong>Observació B</strong>: entre 2014 i 2020, el pes de la població estrangera s'ha anat consolidant. Aquesta categoria inclou tant compradors residents com no residents.</li>
+</ul>
+
+<h1>Habitatges segons tipus de tinença</h1>
+
+<div id="chart-wrapper"><canvas id="tenure"></canvas></div>
+<script src="../data/tenure.js"></script>
+
+<p>El gràfic superior mostra la distribució (%) dels habitatges segons si l'habitatge està en propietat (i usada com a residència principal), llogada o cedida. D'aquesta manera, podem observar l'estructura de la tinença de l'habitatge a Espanya. Algunes observacions:</p>
+
+<ul>
+  <li><strong>Observació A</strong>: la propietat de l'habitatge és la principal forma de tinença a Espanya.</li>
+  <li><strong>Observació B</strong>: des de 2004 el nombre d'habitatges en lloguer ha anat en augment.</li>
+  <li><strong>Observació C</strong>: la cessió d'habitatges s'ha mantingut estable.</li>
+</ul>
+
+<h2>Font de les dades</h2>
+
+<ul>
+  <li>Anuario de los Registradores de la Propiedad (<em>Anuarios Disponibles > Año > sección "Distribución de compraventas de vivienda por tipo de adquirente" y "Nacionalidad en las compras de vivienda"</em>): <a href="https://www.registradores.org/actualidad/portal-estadistico-registral/estadisticas-de-propiedad" target="_blank">Enlace</a>
+  </li>
+  <li>Encuesta continua de hogares (<em>Nacional > Viviendas > Número de viviendas principales según tipo de edificación y régimen de tenencia</em>): <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176952&menu=resultados&idp=1254735572981" target="_blank">Enlace</a>
+  </li>
+  <li>Encuesta de condiciones de vida (<em>Viviendas > Hogares por régimen de tenencia de la vivienda y tipo de hogar</em>): <a href="https://www.ine.es/dynt3/inebase/index.htm?padre=792&capsel=792" target="_blank">Enlace</a>
+  </li>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+</div>
+<br>
+</body>
+</html>

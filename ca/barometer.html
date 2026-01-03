@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baròmetre de l'habitatge - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link href="../styles/style.css" rel="stylesheet" type="text/css">
+  <script>
+  function setLanguage(lang) {
+    const currentPath = window.location.pathname;
+
+    if (lang === 'es') {
+      // Redirect to Spanish if not already there
+      if (!currentPath.includes('/es/')) {
+        window.location.href = "/es/index.html";
+      }
+    }
+    else if (lang === 'ca') {
+      // Redirect to Catalan if not already there
+      if (!currentPath.includes('/ca/')) {
+        window.location.href = "/ca/index.html";
+      }
+    }
+    else {
+      // Default to English (root) if not already there
+      // This checks that we aren't already at the root by making sure /es/ or /ca/ aren't present
+      if (currentPath.includes('/es/') || currentPath.includes('/ca/')) {
+        window.location.href = "/index.html";
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+<br>
+<br>
+
+<div class="lang-switcher">
+  <button onclick="setLanguage('en')">EN</button>
+  <button onclick="setLanguage('es')">ES</button>
+  <button onclick="setLanguage('ca')">CA</button>
+</div>
+
+<h1>Baròmetre de l'habitatge 🌇</h1>
+
+<div class="navbar">
+  <button onclick="window.location.href='index.html'">Indicadors estadístics 📉</button>
+  <button onclick="window.location.href='barometer.html'">Baròmetre de l'habitatge 🌇</button>
+  <button onclick="window.location.href='metodologia.html'">Metodologia 📓</button>
+</div>
+
+<p>Una visió general del mercat de l'habitatge, amb tots els valors entre 0 i 100 punts. El baròmetre no prediu esdeveniments, simplement contextualitza la situació actual.</p>
+
+<h2>Índex compost:</h2>
+
+<div class="gauge-container">
+  <div class="gauge-wrapper">
+    <h3>Índex de pressió de l'habitatge</h3>
+    <svg id="gauge1"></svg>
+  </div>
+  </div>
+
+  <p>Si el valor és 100, tots els components estan sota una pressió molt alta; si el valor és 0, tots els components estan sota una pressió molt baixa, amb tot un espectre intermedi.</p>
+
+  <p>Per a generar l'índex s'han considerat com a components les següents variables: preu, hipoteques, compravendes, salaris, parc d'habitatges, marges de benefici i atur.</p>
+
+  <p><b>🧮 Tancament històric per any:</b></p>
+
+  <div id="chart-wrapper"><canvas id="averagebarometer"></canvas></div>
+  <script src="data/averagebarometer.js"></script>
+  <p style="font-size: 14px; font-style: italic;">Més sobre l'índex: <a href="posts/baronotes.html">Metodologia i notes</a>.</p>
+
+  <h2>Components individuals:</h2>
+
+  <p>Aquesta secció presenta cada component de forma individual. La mitjana dels components conforma el valor de l'<i>Índex compost</i>. Tots els components han estat normalitzats (Mín–Màx), amb algunes adaptacions per a certes variables, es pot consultar una explicació més detallada a <a href="posts/baronotes.html">notes metodològiques</a>.</p>
+
+<div class="gauge-container">
+  <div class="gauge-wrapper">
+    <h3>Firma d'hipoteques</h3>
+    <svg id="gauge2"></svg>
+  </div>
+
+  <div class="gauge-wrapper">
+    <h3>Ritme de compravendes</h3>
+    <svg id="gauge3"></svg>
+  </div>
+
+  <div class="column-container" style="font-size: 16px;">
+    <p>Les <b>hipoteques</b> mostren el nombre de signatures en relació amb els límits demogràfics, on 100 indica excés i 0 indica mínim.</p>
+    <p>Les <b>compravendes</b> mostren el nombre de compravendes en relació amb els límits demogràfics, on 100 indica excés i 0 indica mínim.</p>
+  </div>
+
+  <div class="gauge-wrapper">
+    <h3>Esforç salarial</h3>
+    <svg id="gauge4"></svg>
+  </div>
+
+  <div class="gauge-wrapper">
+    <h3>Risc d'atur</h3>
+    <svg id="gauge7"></svg>
+  </div>
+
+  <div class="column-container" style="font-size: 16px;">
+    <p>L'<b>esforç</b> mostra si els salaris estan més enfora dels preus de l'habitatge (100) o més a prop (0), d'acord amb dades històriques entre ambdós.</p>
+    <p>El <b>risc d'atur</b> indica si la taxa d'atur amenaça de pujar (100) o si es mou consistentment a la baixa (0).</p>
+  </div>
+
+  <div class="gauge-wrapper">
+    <h3>Marges de benefici</h3>
+    <svg id="gauge6"></svg>
+  </div>
+
+  <div class="gauge-wrapper">
+    <h3>Escassetat d'habitatge</h3>
+    <svg id="gauge5"></svg>
+  </div>
+
+  <div class="column-container" style="font-size: 16px;">
+    <p>Els <b>marges de benefici</b> mostren si el sector de la construcció està operant en un entorn de guanys amb un alt marge (100) o baix (0).</p>
+    <p>L'<b>escassetat d'habitatge</b> mostra si som més a prop d'un dèficit històric (100) o d'un superàvit (0), d'acord amb dades dels darrers 30 anys.</p>
+  </div>
+
+  <div class="gauge-wrapper">
+    <h3>Pressió en els preus</h3>
+    <svg id="gauge8"></svg>
+  </div>
+
+  <div class="gauge-wrapper">
+    <h3>Pressió en el lloguer</h3>
+    <svg id="gauge9"></svg>
+  </div>
+</div>
+
+<div class="column-container" style="font-size: 16px;">
+    <p>El <b>preu</b> mostra si està més a prop d'un màxim històric (100) o d'un mínim històric (0), d'acord amb dades dels darrers 15 anys.</p>
+    <p><strong style="color: rgba(0, 0, 0);">[No és part de l'índex]</strong> El <b>lloguer</b> mesura els desequilibris entre oferta i demanda en els preus. Elaborat per <a href="https://observatoriodelalquiler.org/barometro-del-alquiler/">Observatorio del Alquiler</a>.</p>
+</div>
+
+<p><b>🧮 Tancament històric per any:</b></p>
+
+<div id="chart-wrapper"><canvas id="barcomponents"></canvas></div>
+<script src="data/barcomponents.js"></script>
+
+
+<script src="data/barometer.js"></script>
+<script>
+  // 1. Define the STATIC configurations for each gauge.
+  // We've added a "dataColumn" property to map each gauge to a CSV column.
+  const gaugeConfigurations = [
+    {
+      id: 'gauge1', title: 'Average Risk', dataColumn: 'Average_risk',
+      segments: [ { value: 15, color: '#1492FF', label: 'Molt baixa' },{ value: 15, color: '#69B7FF', label: 'Baixa' }, { value: 15, color: '#B8DAFF', label: 'Moderadament baixa' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'Moderadament alta' }, { value: 15, color: '#FC6642', label: 'Alta'}, { value: 15, color: '#FF3300', label: 'Molt alta'}, ]
+    },
+    {
+      id: 'gauge2', title: 'Mortgage Risk', dataColumn: 'Mortgage_risk',
+      segments: [ { value: 15, color: '#1492FF', label: 'Molt baixa' },{ value: 15, color: '#69B7FF', label: 'Baixa' }, { value: 15, color: '#B8DAFF', label: 'Moderadament baixa' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'Moderadament alta' }, { value: 15, color: '#FC6642', label: 'Alta'}, { value: 15, color: '#FF3300', label: 'Molt alta'}, ]
+    },
+    {
+      id: 'gauge3', title: 'Sales Risk', dataColumn: 'Sales_risk',
+      segments: [ { value: 15, color: '#1492FF', label: 'Molt baixa' },{ value: 15, color: '#69B7FF', label: 'Baixa' }, { value: 15, color: '#B8DAFF', label: 'Moderadament baixa' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'Moderadament alta' }, { value: 15, color: '#FC6642', label: 'Alta'}, { value: 15, color: '#FF3300', label: 'Molt alta'}, ]
+    },
+    {
+      id: 'gauge4', title: 'Wage Risk', dataColumn: 'Wage_risk',
+      segments: [ { value: 15, color: '#1492FF', label: 'Molt baixa' },{ value: 15, color: '#69B7FF', label: 'Baixa' }, { value: 15, color: '#B8DAFF', label: 'Moderadament baixa' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'Moderadament alta' }, { value: 15, color: '#FC6642', label: 'Alta'}, { value: 15, color: '#FF3300', label: 'Molt alta'}, ]
+    },
+    {
+      id: 'gauge5', title: 'Scarcity Risk', dataColumn: 'Scarcity_risk',
+      segments: [ { value: 15, color: '#1492FF', label: 'Molt baixa' },{ value: 15, color: '#69B7FF', label: 'Baixa' }, { value: 15, color: '#B8DAFF', label: 'Moderadament baixa' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'Moderadament alta' }, { value: 15, color: '#FC6642', label: 'Alta'}, { value: 15, color: '#FF3300', label: 'Molt alta'}, ]
+    },
+    {
+      id: 'gauge6', title: 'Production Risk', dataColumn: 'Production_risk',
+      segments: [ { value: 15, color: '#1492FF', label: 'Molt baixa' },{ value: 15, color: '#69B7FF', label: 'Baixa' }, { value: 15, color: '#B8DAFF', label: 'Moderadament baixa' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'Moderadament alta' }, { value: 15, color: '#FC6642', label: 'Alta'}, { value: 15, color: '#FF3300', label: 'Molt alta'}, ]
+    },
+    {
+      id: 'gauge7', title: 'Labor Risk', dataColumn: 'Labor_risk',
+      segments: [ { value: 15, color: '#1492FF', label: 'Molt baixa' },{ value: 15, color: '#69B7FF', label: 'Baixa' }, { value: 15, color: '#B8DAFF', label: 'Moderadament baixa' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'Moderadament alta' }, { value: 15, color: '#FC6642', label: 'Alta'}, { value: 15, color: '#FF3300', label: 'Molt alta'}, ]
+    },
+    {
+      id: 'gauge8', title: 'Price Risk', dataColumn: 'Price_risk',
+      segments: [ { value: 15, color: '#1492FF', label: 'Molt baixa' },{ value: 15, color: '#69B7FF', label: 'Baixa' }, { value: 15, color: '#B8DAFF', label: 'Moderadament baixa' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'Moderadament alta' }, { value: 15, color: '#FC6642', label: 'Alta'}, { value: 15, color: '#FF3300', label: 'Molt alta'}, ]
+    },
+    {
+      id: 'gauge9', title: 'Rent risk', dataColumn: 'Rent_risk',
+      segments: [ { value: 15, color: '#1492FF', label: 'Molt baixa' },{ value: 15, color: '#69B7FF', label: 'Baixa' }, { value: 15, color: '#B8DAFF', label: 'Moderadament baixa' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'Moderadament alta' }, { value: 15, color: '#FC6642', label: 'Alta'}, { value: 15, color: '#FF3300', label: 'Molt alta'}, ]
+    }
+  ];
+
+  // 2. Load the time-series data from your new CSV file
+  d3.csv("https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv").then(function(data) {
+
+    // --- MODIFIED LOGIC ---
+        // 1. Get the current year.
+        const targetYear = new Date().getFullYear(); // This will be current year
+
+        // 2. Find the row in your data that matches the target year.
+        // We use `==` because the year from the CSV is a string, and `getFullYear()` is a number.
+        let yearData = data.find(row => row.Year == targetYear);
+
+        // 3. Fallback: If the current year is not found, use the latest available data.
+        if (!yearData) {
+          console.warn(`Data for year ${targetYear} not found. Using latest available year.`);
+          yearData = data[data.length - 1];
+        }
+        // --- END OF MODIFIED LOGIC ---
+
+        // Loop through your STATIC configurations to build the gauges
+        gaugeConfigurations.forEach(config => {
+          const column = config.dataColumn;
+
+          // Get the value from the found year's data using the column name.
+          const dynamicValue = yearData[column] ? +yearData[column] : 0;
+
+          // Create the gauge with the correct value
+          createGauge('#' + config.id, dynamicValue, config.segments);
+        });
+
+      }).catch(function(error) {
+        console.error("Error loading the CSV file:", error);
+      });
+</script>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+</div>
+<br>
+</body>
+</html>

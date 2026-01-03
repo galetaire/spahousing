@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Finançament - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Tipus de finançament</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../index.html'">Indicadors estadístics 📉</button>
+  <button onclick="window.location.href='../barometer.html'">Baròmetre de l'habitatge 🌇</button>
+  <button onclick="window.location.href='../metodologia.html'">Metodologia 📓</button>
+</div>
+<br>
+<div id="chart-wrapper"><canvas id="publicprivate"></canvas></div>
+<script src="../data/publicprivate.js"></script>
+<ul>
+  <li>↑ <strong>Habitatges construïts segons tipus de finançament, unitats totals</strong>: públic o privat.</li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="publicprivateper"></canvas></div>
+<script src="../data/publicprivateper.js"></script>
+<ul>
+  <li>↑ <strong>Habitatges construïts segons tipus de finançament (%)</strong>: públic o privat.</li>
+</ul>
+
+<h2>Font de les dades</h2>
+<ul>
+  <li>Parque de viviendas, de 1971 a 2000, según el Atlas Digital de las Áreas Urbanas (<em>Parque de Viviendas > Viviendas según tipo > Viviendas familiares > selección de años disponibles 1970, 1981, 1991, 2001, 2011 > Tabla y Síntesis</em>):
+    <a href="https://atlasau.mitma.gob.es/#c=indicator&view=map1" target="_blank">Enlace</a>. Basados en datos de 1970, 1981 y 1991, los años entre periodo han sido estimados, con resultados similares a los del Banco de España (<em>Observatorio de Vivienda y Suelo > Boletines periódicos > Boletín Anual 2021 > Tabla 8.1</em>):
+    <a href="https://www.mitma.gob.es/arquitectura-vivienda-y-suelo/urbanismo-y-politica-de-suelo/estudios-y-publicaciones/observatorio-de-vivienda-y-suelo" target="_blank">Enlace</a>
+  </li>
+  <li>Parque de viviendas, de 2001 en adelante (<em>Total de viviendas por comunidades autónomas y provincias</em>):
+    <a href="https://apps.fomento.gob.es/BoletinOnline2/?nivel=2&orden=33000000" target="_blank">Enlace</a>
+  </li>
+  <li>Vivienda pública (<em>Vivienda protegida. Series anuales &gt; 1.6. Número de calificaciones definitivas. Planes estatales y planes autonómicos</em>):
+    <a href="https://apps.fomento.gob.es/BoletinOnline2/?nivel=2&orden=31000000">Enlace</a>
+  </li>
+  <li>Vivienda privada (<em>Vivienda libre. Series anuales &gt; 3.2. Número de viviendas libres terminadas</em>):
+    <a href="https://apps.fomento.gob.es/BoletinOnline2/?nivel=2&orden=32000000">Enlace</a>
+  </li>
+</ul>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+</div>
+<br>
+</body>
+</html>

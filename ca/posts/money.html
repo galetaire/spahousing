@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Monedes - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>L'habitatge en diferents monedes</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../index.html'">Indicadors estadístics 📉</button>
+  <button onclick="window.location.href='../barometer.html'">Baròmetre de l'habitatge 🌇</button>
+  <button onclick="window.location.href='../metodologia.html'">Metodologia 📓</button>
+</div>
+<br>
+<p>
+  El mercat immobiliari és la reserva de valor més grossa del món (<a href="https://www.savills.com/impacts/market-trends/the-total-value-of-global-real-estate-property-remains-the-worlds-biggest-store-of-wealth.html" target="_blank">1</a>, <a href="https://www.savills.com/impacts/market-trends/the-total-value-of-global-real-estate.html" target="_blank">2</a>). El valor es mesura en unitats de compte, usualment monedes o divises, però no totes les monedes preserven el valor de les coses d'igual manera.</p>
+
+<div id="chart-wrapper"><canvas id="housedollar"></canvas></div>
+<script src="../data/housedollar.js"></script>
+<ul>
+  <li><strong>Preu en dòlars, 100 m<sup>2</sup> d'habitatge</strong>: el tipus de canvi emprat és la mitjana anual.</li>
+  <li><strong>Preu en euros, 100 m<sup>2</sup> d'habitatge</strong>: preu mitjà, més informació en <a href="price.html">Preu</a>.</li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="housegold"></canvas></div>
+<script src="../data/housegold.js"></script>
+<ul>
+  <li><strong>Preu en unces d'or, 100 m<sup>2</sup> d'habitatge</strong>: el preu de l'or és la mitjana anual.</li>
+  <li><strong>Preu en euros, 100 m<sup>2</sup> d'habitatge</strong>: preu mitjà, més informació en <a href="price.html">Preu</a>.</li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="housebitcoin"></canvas></div>
+<script src="../data/housebitcoin.js"></script>
+<ul>
+  <li><strong>Preu en bitcoins, 100 m<sup>2</sup> d'habitatge</strong>: el preu mitjà de bitcoin és la mitjana anual.</li>
+  <li><strong>Preu en euros, 100 m<sup>2</sup> d'habitatge</strong>: preu mitjà, més informació en <a href="price.html">Preu</a>.</li>
+</ul>
+
+<h2>Font de les dades</h2>
+<ul>
+  <li>Precios de la vivienda, de 1985 a 2006, según Sociedad de Tasación (<em>Acceso bajo petición, pero se pueden visualizar en la siguiente publicación</em>):
+    <a href="https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf">Publicación</a>,
+    <a href="https://www.st-tasacion.es/informe-de-tendencias-digital/">Enlace</a>
+  </li>
+  <li>Precios de la vivienda, de 2007 en adelante, según datos de notarios (<em>Grupo 5 &gt; Acto 501 - Compraventa inmuebles &gt; Inmuebles en fincas urbanas, viviendas</em>):
+    <a href="http://www.notariado.org/liferay/web/cien/estadisticas-al-completo">Enlace</a>
+  </li>
+  <li>Media anual del tipo de cambio EUR/USD, Investing.com (<em>el euro se lanzó el 1 de enero de 1999 como moneda de 11 países de la Unión Europea, el tipo de cambio usado anterior a esta fecha es el ECU</em>):
+    <a href="https://www.investing.com/currencies/eur-usd-historical-data" target="_blank">Enlace</a>
+  </li>
+  <li>Precio del oro en euros (<em>Downloads, Gold price in a range of currencies since 1978 - XLSX</em>):
+    <a href="https://www.gold.org/goldhub/data/gold-prices#registration-type=facebook&just-verified=1" target="_blank">Enlace</a>
+  </li>
+  <li>Existencias de oro en circulación (<em>la tasa de inflación, es decir nuevas existencias añadidas a circulación, del oro ha sido del 1.7% desde 2010</em>):
+    <a href="https://www.gold.org/goldhub/data/how-much-gold" target="_blank">Enlace</a>
+  </li>
+  <li>Web de Willy Woo, tasa de inflación de bitcoin (<em>la tasa se reduce con el tiempo, cada 4 años a consecuencia de los "halvings"</em>):
+    <a href="https://charts.woobull.com/bitcoin-inflation/" target="_blank">Enlace</a>
+  </li>
+  <li>Precio de bitcoin en euros, de 2015 en adelante (<em>Yahoo Finance, Bitcoin monthly close price EUR (BTC-EUR) - CoinMarketCap</em>):
+    <a href="https://finance.yahoo.com/quote/BTC-EUR/history?period1=1410912000&period2=1671753600&interval=1mo&filter=history&frequency=1mo&includeAdjustedClose=true" target="_blank">Enlace</a>
+  </li>
+  <li>Precio de bitcoin en euros antes de 2015. En 2010 (BTC = 0,11$, tipo de cambio = 0,70$/€), 2011 (BTC = 5,28$, tipo de cambio = 0,68$/€), 2012 (BTC = 7,76$, tipo de cambio = 0,71$/€), 2013 (BTC = 167,32$, tipo de cambio = 0,70$/€) y 2014 (BTC = 542,28$, tipo de cambio = 0,69$/€) (<em>Bitcoin Price Table, US dollars, 2010–2022 (Monthly)</em>):
+    <a href="https://www.in2013dollars.com/bitcoin-price" target="_blank">Enlace</a>
+  </li>
+</ul>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+</div>
+<br>
+</body>
+</html>

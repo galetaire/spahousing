@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Parc d'habitatges - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Parc d'habitatges</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../index.html'">Indicadors estadístics 📉</button>
+  <button onclick="window.location.href='../barometer.html'">Baròmetre de l'habitatge 🌇</button>
+  <button onclick="window.location.href='../metodologia.html'">Metodologia 📓</button>
+</div>
+<br>
+<div id="chart-wrapper"><canvas id="stockyearly"></canvas></div>
+<script src="../data/stockyearly.js"></script>
+<ul>
+  <li><strong>↑ Creixement anual de l'habitatge i de la població</strong>: nous habitatges construïts i augment o disminució de la població total. Consulta la metodologia per a estimar les dades històriques <a href="../../posts/stocknotes.html">aquí</a>.</li>
+  <li>Explora en el <a href="../../posts/housescarcity.html">mapa</a> el nombre d'habitants per habitatge i municipi.</li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="stockbalance"></canvas></div>
+<script src="../data/stockbalance.js"></script>
+<ul>
+  <li><strong>↑ Balanç d'habitatges, <strong style="color: #2E7AC7;">Superàvit</strong> o <strong style="color: #20AB88;">dèficit</strong></strong>: diferència entre el creixement d'habitatges i el de població. Dues visualitzacions depenent de la variable creixement poblacional:
+    <ul>
+      <li><strong>Segons potencials parelles</strong>: Habitatges ÷ [Saldo població ÷ 2].</li>
+      <li><strong>Segons grandària mitjana de la llar</strong>: Habitatges ÷ [Saldo població ÷ Grandària llar].</li>
+    </ul>
+  </li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="typehouse"></canvas></div>
+<script src="../data/typehouse.js"></script>
+<ul>
+  <li><strong>↑ Distribució d'habitatges construïts per tipus</strong>: unifamiliars o en bloc.</li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="stockperiods"></canvas></div>
+<script src="../data/stockperiods.js"></script>
+<ul>
+  <li><strong>↑ Períodes de construcció</strong>: nombre d'habitatges construïts per període.</li>
+  <li>La <strong>barra verda</strong> és una estimació basada en l'actual ritme de construcció. Si el ritme és similar al de 2021 (95.000 per any), el nombre d'habitatges construïts entre 2021 i 2040 serà de ≈1,800,000.</li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="cement"></canvas></div>
+<script src="../data/cement.js"></script>
+
+<ul>
+  <li>
+    <strong>↑ Consum de ciment</strong>. El consum aparent de ciment i el preu de l'habitatge, histèricament, ha correlacionat de manera positiva.
+    <ul>
+      <li><strong>Eix esquerre (línia)</strong>: <a href="realprice.html">preu real</a> en euros per metre quadrat.</li>
+      <li><strong>Eix dret (barres)</strong>: consum aparent de ciment, en tones mètriques.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Font de les dades</h2>
+<ul>
+  <li>Parque de viviendas, de 1900 a 1970, consulta la metodología para estimar datos los históricos <a href="stocknotes.html">aquí</a>
+  </li>
+  <li>Parque de viviendas, de 1971 a 2000, según el Atlas Digital de las Áreas Urbanas (<em>Parque de Viviendas > Viviendas según tipo > Viviendas familiares > selección de años disponibles 1970, 1981, 1991, 2001, 2011 > Tabla y Síntesis</em>):
+    <a href="https://atlasau.mitma.gob.es/#c=indicator&view=map1" target="_blank">Enlace</a>. Basados en datos de 1970, 1981 y 1991, los años entre periodo han sido estimados, con resultados similares a los del Banco de España (<em>Observatorio de Vivienda y Suelo > Boletines periódicos > Boletín Anual 2021 > Tabla 8.1</em>):
+    <a href="https://www.mitma.gob.es/arquitectura-vivienda-y-suelo/urbanismo-y-politica-de-suelo/estudios-y-publicaciones/observatorio-de-vivienda-y-suelo" target="_blank">Enlace</a>
+  </li>
+  <li>Parque de viviendas, de 2001 en adelante (<em>Total de viviendas por comunidades autónomas y provincias</em>):
+    <a href="https://apps.fomento.gob.es/BoletinOnline2/?nivel=2&orden=33000000" target="_blank">Enlace</a>
+  </li>
+  <li>Viviendas por periodo de construcción (<em>Nacional &gt; Viviendas &gt; Número de viviendas principales según tipo de edificación y año de construcción</em>): <a href="https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&amp;cid=1254736176952&amp;menu=resultados&amp;idp=1254735572981">Enlace</a>
+  </li>
+  <li>Consumo aparente de cemento, Ministerio de Industria y Turismo (<em>Principales resultados</em>):
+    <a href="https://industria.gob.es/es-es/estadisticas/paginas/estadistica-cemento.aspx">Enlace</a>, <a href="https://tematicas.org/sintesis-economica/indicadores-de-produccion-y-demanda-nacional/consumo-aparente-de-cemento/">Enlace 2</a>. Los precios de la vivienda para el periodo 1964-1984 se han estimado a partir del consumo aparente de cemento.
+  </li>
+  <li>Precios de la vivienda, de 1985 a 2006, según Sociedad de Tasación (<em>Acceso bajo petición, pero se pueden visualizar en la siguiente publicación</em>):
+    <a href="https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf">Publicación</a>,
+    <a href="https://www.st-tasacion.es/informe-de-tendencias-digital/">Enlace</a>
+  </li>
+  <li>Precios de la vivienda, de 2007 en adelante, según datos de notarios (<em>Grupo 5 &gt; Acto 501 - Compraventa inmuebles &gt; Inmuebles en fincas urbanas, viviendas</em>):
+    <a href="http://www.notariado.org/liferay/web/cien/estadisticas-al-completo">Enlace</a>
+  </li>
+  <li>Datos de inflación (<em>Table: average inflation Spain (CPI) - by year</em>):
+    <a href="https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx">Enlace</a>
+  </li>
+  <li>Número medio de personas por hogar (<em>Proyección del número medio de personas por hogar en España hasta 2037</em>): <a href="https://www.epdata.es/proyeccion-numero-medio-personas-hogar-espana-2035/de078c7c-473a-4ade-bc1e-668b2a9677ae">Enlace</a>
+  </li>
+  <li>Censo de viviendas 2021 (<em>Crear tablas &gt; Municipios &gt; Todos los municipios &gt; Viviendas familiares</em>):
+    <a href="https://www.ine.es/Censo2021/Inicio.do">Enlace</a>
+  </li>
+  <li>Número de unidades por tipo y m², unifamiliar y en bloque (<em>6.Visados de dirección de obra: Obra nueva, ampliación y/o reforma. Número de viviendas y superficie media según tipo de obra y destino principal</em>): <a href="https://apps.fomento.gob.es/BoletinOnline/?nivel=2&orden=09000000">Enlace</a>
+  </li>
+  <li>Presupuesto de ejecución material (<em>3. Visados de dirección de obra: Obra nueva. Presupuesto de ejecución material según destino principal</em>): <a href="https://apps.fomento.gob.es/BoletinOnline/?nivel=2&orden=09000000">Enlace</a>
+  </li>
+</ul>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+</div>
+<br>
+</body>
+</html>

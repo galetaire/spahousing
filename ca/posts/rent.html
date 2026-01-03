@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Lloguer - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
+  <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Preu del lloguer</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../index.html'">Indicadors estadístics 📉</button>
+  <button onclick="window.location.href='../barometer.html'">Baròmetre de l'habitatge 🌇</button>
+  <button onclick="window.location.href='../metodologia.html'">Metodologia 📓</button>
+</div>
+<br>
+<div id="chart-wrapper"><canvas id="rentprice"></canvas></div>
+<script src="../data/rentprice.js"></script>
+
+<ul>
+  <li><strong>↑ Evolució dels preus de lloguer i de compra segons Idealista i l'INE</strong>, base 100 = 2015.</li>
+  <li>Els preus de lloguer recollits per l'INE es consideren experimentals. En relació amb el lloguer, les dades d'Idealista ofereixen major fiabilitat en tant que són el marketplace de referència a Espanya per a la cerca de lloguer d'habitatge.</li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="rentbuy"></canvas></div>
+<script src="../data/rentbuy.js"></script>
+
+<ul>
+  <li><strong>↑ Evolució de la quota mitjana mensual de lloguer i de hipoteca.</strong> Tots dos escenaris són per a un habitatge de 86 m² (mitjana nacional), i tots dos preus s'han generat partint de la mateixa font, Idealista.
+
+  <p>Per al pagament de la hipoteca s'ha considerat un finançament del 100%, sense pagament d'entrada. No obstant això, no es tenen en compte altres possibles despeses associades a les hipoteques (assegurances, taxacions...), ni els costos d'adquisició (impost de transmissions, IVA, etc.), ni els costos recurrents de propietat (impost sobre béns immobles, taxa de recollida d'escombraries, quotes comunitàries...).</p></li>
+</ul>
+
+<h2>Lloguer residencial</h2>
+
+  <img src="../../images/residentialmap.png" alt="Viviendas residenciales en alquiler en España" style="width: 700px">
+
+<ul>
+  <li><strong>↑ Distribució del lloguer residencial</strong>: els valors representen el percentatge d'habitatges en lloguer residencial en relació amb el total d'habitatges existents en el municipi.</li>
+</ul>
+
+<h2>Lloguer vacacional</h2>
+
+<img src="../../images/vacationalmap.png" alt="Viviendas vacacionales en alquiler en España" style="width: 700px">
+
+<ul>
+  <li><strong>↑ Distribució del lloguer vacacional</strong>: els valors representen el percentatge d'habitatges en lloguer residencial en relació amb el total d'habitatges existents en el municipi.</li>
+</ul>
+
+<h2>Font de les dades</h2>
+<ul>
+  <li>Índice del precio de la vivienda según el INE (<em>IPV</em>): <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736152838&menu=resultados&idp=1254735976607">Enlace</a></li>
+  <li>Índice del precio del alquiler según el INE (<em>IPVA</em>): <a href="https://www.ine.es/experimental/ipva/experimental_precios_vivienda_alquiler.htm">Enlace</a></li>
+  <li>Precios del alquiler según Idealista: <a href="https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/alquiler/">Enlace</a></li>
+  <li>Precios de compra según Idealista: <a href="https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/">Enlace</a></li>
+  <li>Hipotecas constituidas según la tasa de interés, Banco de España (<em>Tipo medio de los préstamos hipotecarios a más de 3 años para adquisición de vivienda libre &gt; Del conjunto de entidades de crédito</em>): <a href="https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/relacionados/tiposinteres/guia-textual/tiposinteresrefe/tabla_tipos_referencia_oficiales_mercado_hipotecario.html">Enlace</a></li>
+  <li>Plazo medio de las hipotecas (<em>Indicadores nacionales; Plazo medio de las hipotecas constituidas</em>): <a href="https://www.ine.es/dynt3/inebase/index.htm?padre=1043&capsel=3704">Enlace</a></li>
+  <li>Alquiler vacacional, INE: <a href="https://www.ine.es/experimental/viv_turistica/exp_viv_turistica_tablas.htm">Enlace</a></li>
+  <li>Alquiler residencial, INE: <a href="https://www.ine.es/censos2011/tablas/Inicio.do">Enlace</a></li>
+</ul>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+</div>
+<br>
+</body>
+</html>

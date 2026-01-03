@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Preu - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
+  <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Preus de l'habitatge</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../index.html'">Indicadors estadístics 📉</button>
+  <button onclick="window.location.href='../barometer.html'">Baròmetre de l'habitatge 🌇</button>
+  <button onclick="window.location.href='../metodologia.html'">Metodologia 📓</button>
+</div>
+<br>
+<div id="chart-wrapper"><canvas id="priceyearly"></canvas></div>
+<script src="../data/priceyearly.js"></script>
+
+<ul>
+  <li><b>↑ Preu de compra des de 1985, en euros per metre quadrat, segons dades dels notaris:</b> preu nominal, <a href="../../posts/realprice.html">preu real</a> (ajustat a inflació, IPC Base 100 = 1985), e inflació acumulada.</li>
+  <li>Per a visualitzar els preus de l'habitatge en <b>dòlars, or i bitcoin</b>, visitar aquesta <a href="money.html">entrada</a>.</li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="ipvvr"></canvas></div>
+<script src="../data/ipvvr.js"></script>
+
+<ul>
+  <li><b>↑ Índex Case-Shiller d'habitatge (o IPVVR):</b> l'índex es construeix usant dades d'habitatges que s'han venut almenys dues vegades durant el període d'estudi, usant així informació de la mateixa mostra en dos moments de temps distints.</li>
+</ul>
+
+<h2>Evolució trimestral dels preus</h2>
+<div id="chart-wrapper"><canvas id="pricequarterly"></canvas></div>
+<script src="../data/pricequarterly.js"></script>
+
+<ul>
+  <li><strong>Eix esquerre (línia)</strong>: preu de l'habitatge en euros per metre quadrat, segons Idealista i els notaris.</li>
+  <li><strong>Eix dret (àrea)</strong>: percentatge de diferència (en valor absolut) entre les dues fonts.</li>
+</ul>
+
+<p>Encara que totes dues tendències comparteixen similituds, els preus informats pels notaris se situen sistemàticament per darrere dels que figuren en Idealista. Aquesta discrepància es pot deure al fet que Idealista mostra el preu de venda que demana el venedor, mentre que els notaris reflecteixen el preu de transacció real que paguen els compradors.</p>
+
+<p>El diferencial (<em>spread</em>) i el canvi brusc (<em>Sharp</em>) serveixen per a capturar canvis de tendència:</p>
+<ul>
+  <li><strong>Diferencial</strong>: representat per l'àrea grisa (eix dret), mostra la variació percentual entre els dos preus. Aquesta diferència podria indicar el nivell de descompte existent en el mercat.</li>
+  <li><strong>Canvi brusc</strong>: representat per la línia verda, mostra fluctuacions entre els dos preus. Com a exemple, entre 2010 i 2012, se succeeixen diversos moviments baixistes, indicant pressió a la baixa.</li>
+</ul>
+
+<h2>Font de les dades</h2>
+<ul>
+  <li>Precios de la vivienda, de 1985 a 2006, según Sociedad de Tasación (<em>Acceso bajo petición, pero se pueden visualizar en la siguiente publicación</em>):
+    <a href="https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf">Publicación</a>,
+    <a href="https://www.st-tasacion.es/informe-de-tendencias-digital/">Enlace</a>
+  </li>
+  <li>Precios de la vivienda, de 2007 en adelante, según datos de notarios (<em>Grupo 5 &gt; Acto 501 - Compraventa inmuebles &gt; Inmuebles en fincas urbanas, viviendas</em>):
+    <a href="http://www.notariado.org/liferay/web/cien/estadisticas-al-completo">Enlace</a>
+  </li>
+  <li>Datos de inflación (<em>Table: average inflation Spain (CPI) - by year</em>):
+    <a href="https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx">Enlace</a>
+  </li>
+  <li>Índice Case-Shiller, en España también IPVVR (<em>calculado por los Registradores de España, se ha usado el valor medio anual aritmético suavizado</em>):
+    <a href="https://www.registradores.org/actualidad/portal-estadistico-registral/estadisticas-de-propiedad">Enlace</a>
+  </li>
+  <li>Precios de la vivienda según <em>Idealista</em>:
+    <a href="https://www.idealista.com/sala-de-prensa/informes-precio-vivienda">Enlace</a>
+  </li>
+</ul>
+
+
+<br>
+<!-- Footer-->
+<div id="footer">
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+</div>
+<br>
+</body>
+</html>

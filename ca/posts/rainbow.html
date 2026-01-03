@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Cicles immobiliaris - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Cicles del preu de l'habitatge</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../index.html'">Indicadors estadístics 📉</button>
+  <button onclick="window.location.href='../barometer.html'">Baròmetre de l'habitatge 🌇</button>
+  <button onclick="window.location.href='../metodologia.html'">Metodologia 📓</button>
+</div>
+<br>
+<p style="font-size: 14px; font-style: italic;">L'indicador ha d'entendre's com una cosa experimental, podent tenir errors o no ser representatiu.</p>
+<div id="chart-wrapper" style="border-radius:12px; overflow:hidden; display:inline-block;">
+<canvas id="rainbow" width="700" height="375"></canvas></div>
+<script src="../data/rainbow.js"></script>
+
+<ul>
+  <li><strong>Interpretació dels colors</strong> ➞
+    <strong style="color: rgba(209, 53, 53);">Vermell</strong> = acusada sobrevaloració;
+    <strong style="color: rgba(224, 120, 16);">Taronja</strong> = lleugera sobrevaloració;
+    <strong style="color: rgba(201, 161, 0);">Groc</strong> = neutral;
+    <strong style="color: rgba(12, 160, 111);">Verd</strong> = lleugera infravaloració;
+    <strong style="color: rgba(9, 87, 134);">Blau</strong> = acusada infravaloració.
+  </li>
+</ul>
+
+<h2>Gràfica de pics i valls:</h2>
+<p><strong style="color: rgba(250, 0, 0);">Vermell</strong> = anys pic del cicle; <strong style="color: rgba(19, 162, 173);">Blau</strong> = anys vall del cicle.</p>
+<div id="chart-wrapper" style="border-radius:12px; overflow:hidden; display:inline-block;">
+<canvas id="rainbowpeaks" width="700" height="375"></canvas></div>
+<script src="../data/rainbowpeaks.js"></script>
+
+<p>La corba en arc de Sant Martí descriu una banda demogràfica, que superposada amb el preu real, avalua l'estadi del cicle de valoració de l'habitatge. Un parell de notes i consideracions:</p>
+
+<ul>
+  <li>Les dades de preu real deriven d'una fórmula alternativa, <a href="../../posts/realprice.html">notes sobre el preu real</a>.</li>
+  <li>La corba en arc de Sant Martí és una equació de línia de tendència derivada de la corba demogràfica espanyola (funció quadràtica).</li>
+  <li>La corba en arc de Sant Martí s'ha ajustat a les dades del preu real, a fi de poder-la superposar amb l'evolució del preu.</li>
+  <li>La línia central (groga) és la corba calculada, afegint bandes equidistants fins a cobrir màxims i mínims.</li>
+</ul>
+
+<h2>Línies gràfiques de les equacions:</h2>
+<p>
+  <img src="https://math.vercel.app/?bgcolor=auto&from=Corba%5C%3Aarc%20%3D-0%2C06%5E2%2B8%2C5x%2B145%0A%0A%0A.svg" alt="Fórmula de curva en arcoiris"/> _____ <img src="https://math.vercel.app/?bgcolor=auto&from=Corba%5C%3Ademografica%20%3D-1583%2C7x%5E2%2B195013x%2B1e07%0A.svg" alt="Fórmula de la curva demográfica"/>
+</p>
+<div id="chart-wrapper"><canvas id="rainbowsource"></canvas></div>
+<script src="../data/rainbowsource.js"></script>
+
+<h2>Font de les dades</h2>
+<ul>
+  <li>Precios de la vivienda, de 1964 a 1984, han sido estimados sobre la base del consumo aparente de cemento: <a href="https://tematicas.org/sintesis-economica/indicadores-de-produccion-y-demanda-nacional/consumo-aparente-de-cemento/" target="_blank">Enlace</a>
+  </li>
+  <li>Precios de la vivienda, de 1985 a 2006, según Sociedad de Tasación (<em>Acceso bajo petición, pero se pueden visualizar en la siguiente publicación</em>):
+    <a href="https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf">Publicación</a>,
+    <a href="https://www.st-tasacion.es/informe-de-tendencias-digital/">Enlace</a>
+  </li>
+  <li>Precios de la vivienda, de 2007 en adelante, según datos de notarios (<em>Grupo 5 &gt; Acto 501 - Compraventa inmuebles &gt; Inmuebles en fincas urbanas, viviendas</em>):
+    <a href="http://www.notariado.org/liferay/web/cien/estadisticas-al-completo">Enlace</a>
+  </li>
+  <li>Datos de inflación (<em>Table: average inflation Spain (CPI) - by year</em>):
+    <a href="https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx">Enlace</a>
+  </li>
+  <li>Población y proyecciones según el INE (<em>el rango de población utilizado es aquel entre 25 y 50 años de edad &gt; Los datos del año (n) son los registrados para enero del año siguiente </em>):
+    <a href="https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&cid=1254736177095&menu=resultados&idp=1254735572981#_tabs-1254736195796">Población consolidada</a>,
+    <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176953&menu=resultados&idp=1254735572981">Población proyectada</a>
+  </li>
+</ul>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+</div>
+<br>
+</body>
+</html>

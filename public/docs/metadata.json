@@ -144,6 +144,12 @@
           "@type": "Column"
         },
         {
+          "title": "Saldo_vivo",
+          "dc:description": "Outstanding mortgage balance, in euros",
+          "source": "https://www.bde.es/wbe/es/publicaciones/informacion-estadistica/boletin-estadistico/",
+          "@type": "Column"
+        },
+        {
           "title": "Average_mortgage_rate",
           "dc:description": "Average interest rate for the approved mortgages on houses. Considers both fixed and variable mortgages",
           "source": "https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/relacionados/tiposinteres/guia-textual/tiposinteresrefe/tabla_tipos_referencia_oficiales_mercado_hipotecario.html?anyo=d293dd0fb7626810VgnVCM10000083f614acRCRD#comboAnios",
@@ -825,24 +831,6 @@
           "title": "Alt_rainbow",
           "dc:description": "Alternative formula for the Rainbow Curve, not used",
           "source": "-0.025*((Year-1963)^2)+5.5*(Year-1963)+175",
-          "@type": "Column"
-        },
-        {
-          "title": "US_gasoline_litre_usd",
-          "dc:description": "U.S. gasoline prices, in US dollars per litre",
-          "source": "https://www.eia.gov/petroleum/gasdiesel/",
-          "@type": "Column"
-        },
-        {
-          "title": "Spain_gasoline_litre_usd",
-          "dc:description": "Spain gasoline prices, in US dollars per litre",
-          "source": "https://www.iea.org/data-and-statistics/data-tools/end-use-prices-data-explorer?tab=Yearly+prices",
-          "@type": "Column"
-        },
-        {
-          "title": "Spain_electricity_mwh_eur",
-          "dc:description": "Average annual priceper MWh, in euros",
-          "source": "https://www.epdata.es/datos/precio-factura-luz-datos-estadisticas/594",
           "@type": "Column"
         },
         {

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Sòl - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
+  <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Preu del sòl i permisos d'obra</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../index.html'">Indicadors estadístics 📉</button>
+  <button onclick="window.location.href='../barometer.html'">Baròmetre de l'habitatge 🌇</button>
+  <button onclick="window.location.href='../metodologia.html'">Metodologia 📓</button>
+</div>
+<br>
+<div id="chart-wrapper"><canvas id="permitsland"></canvas></div>
+<script src="../data/permitsland.js"></script>
+<ul>
+  <li>↑ <strong>Preu del sòl i permisos d'obra</strong>.
+    <ul>
+      <li><strong>Eix esquerre</strong>: nombre de permisos d'obra.</li>
+      <li><strong>Eix dret</strong>: preu del sòl en euros per metre quadrat.</li>
+    </ul>
+  </li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="permitstype"></canvas></div>
+<script src="../data/permitstype.js"></script>
+<ul>
+  <li>↑ <strong>Permisos d'obra segons tipus</strong>: nova construcció, reforma o demolició.</li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="permitsdistribution"></canvas></div>
+<script src="../data/permitsdistribution.js"></script>
+<ul>
+  <li>↑ <strong>Permisos d'obra segons promotor</strong>: persones jurídiques, persones físiques o administracions públiques.</li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="velocity"></canvas></div>
+<script src="../data/velocity.js"></script>
+<ul>
+  <li>↑ <strong>Ràtio de velocitat de l'habitatge i el sòl</strong>: La velocitat és una mesura del ritme al qual s'intercanvia l'estoc actual (habitatge o sòl). Quan menys és el valor, major és la velocitat. Una ràtio de (x) significa que es tardarien (x) anys en intercanviar l'estoc al ritme actual.</li>
+</ul>
+
+<img src="../../images/landprice.png" alt="Precio del suelo urbano" style="width: 700px">
+
+<ul>
+  <li>↑ <strong>Índex del preu del sòl</strong>: consultar metodologia <a href="../../posts/landprice.html">aquí</a>.
+  </li>
+</ul>
+
+<h2>Font de les dades</h2>
+<ul>
+  <li>Permisos de obra (<em>11.Visados de dirección de obra. Nº visados según tipo de obra; 7.Visados de dirección de obra: Obra nueva, ampliación y/o reforma. Nº de viviendas según clase de promotor</em>): <a href="https://apps.fomento.gob.es/BoletinOnline/?nivel=2&orden=09000000" target="_blank">Enlace</a>
+  </li>
+  <li>Precio del suelo y número de transacciones (<em>Series estadísticas &gt; Precios del suelo &gt; 4.Precio medio del metro cuadrado de suelo urbano por comunidades autónomas y provincias</em>): <a href="https://www.mitma.gob.es/el-ministerio/informacion-estadistica/vivienda-y-actuaciones-urbanas/estadisticas/suelo/estadisticas-de-precios-de-suelo-urbano" target="_blank">Enlace</a>
+  </li>
+  <li>Área urbana total (<em>Resultados nacionales &gt; Por intervalos población y superficies parcelas urbanas</em>):
+    <a href="https://www.catastro.hacienda.gob.es/esp/estadistica_1.asp" target="_blank">Enlace</a>
+  </li>
+</ul>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+</div>
+<br>
+</body>
+</html>

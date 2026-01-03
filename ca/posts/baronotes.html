@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baròmetre de l'habitatge - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Sobre el baròmetre ⏲</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../index.html'">Indicadors estadístics 📉</button>
+  <button onclick="window.location.href='../barometer.html'">Baròmetre de l'habitatge 🌇</button>
+  <button onclick="window.location.href='../metodologia.html'">Metodologia 📓</button>
+</div>
+<br>
+<p>L'elaboració del baròmetre de l'habitatge s'ha realitzat sobre la base de set components, els quals es resumeixen en la següent taula:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Nom component (*)</th>
+      <th>Variable origen (*)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Pressió en el preu</td><td><i>Price_risk</i></td><td><i>Real_price</i></td>
+    <tr><td>Ritme de compravendes</td><td><i>Sales_risk</i></td><td><i>Home_sales</i></td>
+    <tr><td>Firma d'hipoteques</td><td><i>Mortgage_risk</i></td><td><i>Approved</i></td>
+    <tr><td>Esforç salarial</td><td><i>Wage_risk</i></td><td><i>Dif_Wage_IPVVR</i></td>
+    <tr><td>Escassetat d'habitatge</td><td><i>Scarcity_risk</i></td><td><i>Balance_hogares</i></td>
+    <tr><td>Marges de benefici</td><td><i>Production_risk</i></td><td><i>Ratio_price_cost</i></td>
+    <tr><td>Risc d'atur</td><td><i>Labor_risk</i></td><td><i>Unemployment_yoy_per</i></td>
+  </tbody>
+</table>
+<p style="font-size: 14px; font-style: italic;">(*) Els noms fan referència al títol que tenen a la <a href="https://github.com/galetaire/spahousing/blob/main/public/docs/spain_stats_csv.csv"><b>base de dades</b></a>.</p>
+
+<h3>Pressió en el preu</h3>
+<p>La <strong>pressió en el preu</strong> s'obté aplicant la següent fórmula:</p>
+
+<p><img src="https://math.vercel.app/?bgcolor=auto&from=Price\:Risk=\frac{x_{n}-\min(x_{range})}{\max(x_{range})-\min(x_{range})}\times100" alt="Price risk"></p>
+
+<p>On:</p>
+<ul>
+<li><i>x<sub>n</sub></i>, representa el valor de l'any de referència de la variable <i>Real_price</i></li>
+<li><i>x<sub>range</sub></i>, representa els valors part del rang dels darrers 15 (incloent l'any de referència)</li>
+<li><i>min</i>, és el valor mínim dels valors existents en el rang <i>x<sub>range</sub></i></li>
+<li><i>max</i>, és el valor màxim dels valors existents en el rang <i>x<sub>range</sub></i></li>
+</ul>
+
+<h3>Ritme de compravendes</h3>
+<p>El <strong>ritme de compravendes</strong> s'obté aplicant la següent fórmula:</p>
+
+<p><img src="https://math.vercel.app/?bgcolor=auto&from=Sales\:Risk\left(\begin{array}{c}min=0\\ max=100\end{array}\right)=\frac{x_{n}-LI_{n}}{LS_{n}-LI_{n}}\times100" alt="Sales risk"></p>
+
+<p>On:</p>
+<ul>
+<li><i>x<sub>n</sub></i>, representa el valor de l'any de referència de la variable <i>Home_sales</i></li>
+<li><i>LI<sub>n</sub></i>, representa el valor de l'any de referència de la variable <i>Lower_limit</i></li>
+<li><i>LS<sub>n</sub></i>, representa el valor de l'any de referència de la variable <i>Upper_limit</i></li>
+<li><i>min=0</i>, implica que si el valor retornat és inferior a 0, es representa com un 0</li>
+<li><i>max=100</i>, implica que si el valor retornat és superior a 100, es representa com un 100</li>
+</ul>
+
+<h3>Firma d'hipoteques</h3>
+<p>La <strong>firma d'hipoteques</strong> s'obté aplicant la següent fórmula:</p>
+
+<p><img src="https://math.vercel.app/?bgcolor=auto&from=Mortgage\:Risk\left(\begin{array}{c}min=0\\ max=100\end{array}\right)=\frac{x_{n}-LI_{n}}{LS_{n}-LI_{n}}\times100" alt="Mortgage risk"></p>
+
+<p>On:</p>
+<ul>
+<li><i>x<sub>n</sub></i>, representa el valor de l'any de referència de la variable <i>Approved</i></li>
+<li><i>LI<sub>n</sub></i>, representa el valor de l'any de referència de la variable <i>Lower_limit</i></li>
+<li><i>LS<sub>n</sub></i>, representa el valor de l'any de referència de la variable <i>Upper_limit</i></li>
+<li><i>min=0</i>, implica que si el valor retornat és inferior a 0, es representa com un 0</li>
+<li><i>max=100</i>, implica que si el valor retornat és superior a 100, es representa com un 100</li>
+</ul>
+
+<h3>Esforç salarial</h3>
+<p>L'<strong>esforç salarial</strong> s'obté aplicant la següent fórmula:</p>
+
+<p><img src="https://math.vercel.app/?bgcolor=auto&from=Wage\:Risk=\frac{x_{n}-\min(x_{range})}{\max(x_{range})-\min(x_{range})}\times100" alt="Wage risk"></p>
+
+<p>On:</p>
+<ul>
+<li><i>x<sub>n</sub></i>, representa el valor de l'any de referència de la variable <i>Dif_Wage_IPVVR</i></li>
+<li><i>x<sub>range</sub></i>, representa els valors part del rang de referència (tots els disponibles)</li>
+<li><i>min</i>, és el valor mínim dels valors existents en el rang <i>x<sub>range</sub></i></li>
+<li><i>max</i>, és el valor màxim dels valors existents en el rang <i>x<sub>range</sub></i></li>
+</ul>
+
+<h3>Escassetat d'habitatge</h3>
+<p>L'<strong>escassetat d'habitatge</strong> s'obté aplicant la següent fórmula:</p>
+
+<p><img src="https://math.vercel.app/?bgcolor=auto&from=Scarcity\:Risk=100-(\frac{x_{n}-\min(x_{range})}{\max(x_{range})-\min(x_{range})}\times100)" alt="Scarcity risk"></p>
+
+<p>On:</p>
+<ul>
+<li><i>x<sub>n</sub></i>, representa el valor de l'any de referència de la variable <i>Balance_hogares</i></li>
+<li><i>x<sub>range</sub></i>, representa els valors part del rang dels darrers 30 (incloent l'any de referència)</li>
+<li><i>min</i>, és el valor mínim dels valors existents en el rang <i>x<sub>range</sub></i></li>
+<li><i>max</i>, és el valor màxim dels valors existents en el rang <i>x<sub>range</sub></i></li>
+</ul>
+
+<h3>Marges de benefici</h3>
+<p>Els <strong>marges de benefici</strong> s'obtenen aplicant la següent fórmula:</p>
+
+<p><img src="https://math.vercel.app/?bgcolor=auto&from=Production\:Risk\left(\begin{array}{c}min=0\\ max=100\end{array}\right)=\frac{x_{n}-1.8}{2.2-1.8}\times100" alt="Production risk"></p>
+
+<p>On:</p>
+<ul>
+<li><i>x<sub>n</sub></i>, representa el valor de l'any de referència de la variable <i>Ratio_price_cost</i></li>
+<li><i>1.8</i>, representa el valor mínim definit com una constant</li>
+<li><i>2.2</i>, representa el valor màxim definit com una constant</li>
+<li><i>min=0</i>, implica que si el valor retornat és inferior a 0, es representa com un 0</li>
+<li><i>max=100</i>, implica que si el valor retornat és superior a 100, es representa com un 100</li>
+</ul>
+
+<h3>Risc d'atur</h3>
+<p>El <strong>risc d'atur</strong> s'obté aplicant la següent fórmula:</p>
+
+<p><img src="https://math.vercel.app/?bgcolor=auto&from=Labor%5C%3Arisk\left(\begin{array}{c}min=0\\ max=100\end{array}\right)%20%3D%20%28A%20-%20X_%7Bn%7D%29%2BB.svg" alt="Labor risk"></p>
+
+<p>On:</p>
+<ul>
+<li><i>x<sub>n</sub></i>, representa el valor de l'any de referència de la variable <i>Unemployment_yoy_per</i></li>
+<li><i>min=0</i>, implica que si el valor retornat és inferior a 0, es representa com un 0</li>
+<li><i>max=100</i>, implica que si el valor retornat és superior a 100, es representa com un 100</li>
+<li><i>A</i> i <i>B</i> representen valors que responen a condicionals</li>
+</ul>
+
+<p><img src="https://math.vercel.app/?bgcolor=auto&from=A%3D%5Cbegin%7Bcases%7D100%20%26%20%5Ctext%7Bsi%20%7D%20-0.3%20%5Cle%20X_%7Bn%7D%20-%20X_%7Bn-1%7D%20%5Cle0.3%20%5C%5C50%20%26%20%5Ctext%7Bsi%20%7D%20-1%20%3C%20X_%7Bn%7D%20-%20X_%7Bn-1%7D%20%3C%20-0.3%20%5C%5C25%20%26%20%5Ctext%7Bsi%20%7D%20X_%7Bn%7D%20-%20X_%7Bn-1%7D%20%5Cle%20-1%20%5C%5C75%20%26%20%5Ctext%7Bsi%20%7D%20X_%7Bn%7D%20-%20X_%7Bn-1%7D%20%3E%200.3%5Cend%7Bcases%7D.svg" alt="Labor risk"></p>
+<p><img src="https://math.vercel.app/?bgcolor=auto&from=B%3D%5Cbegin%7Bcases%7D%0AC%20%26%20%5Ctext%7Bsi%20%7D%20%28X_%7Bn%7D%20-%20X_%7Bn-1%7D%29%28X_%7Bn-1%7D%20-%20X_%7Bn-2%7D%29%20%3C%200%20%5C%5C%0A0%20%26%20%5Ctext%7Bllavors%7D%0A%5Cend%7Bcases%7D.svg" alt="Labor risk"></p>
+<p><img src="https://math.vercel.app/?bgcolor=auto&from=C%3D%5Cfrac%7B1%7D%7B5%7D%5Csum_%7Bi%3D1%7D%5E%7Bn-5%7DX_%7Bi%7D.svg" alt="Labor risk"></p>
+<p>On:</p>
+<ul>
+<li><i>A</i> recull la velocitat de l'atur, si està en estancament, puja o baixa la taxa</li>
+<li><i>B</i> recull el canvi de tendència, si l'atur passa de pujada a davallada, o viceversa</li>
+<li><i>C</i> és la mitjana de taxa d'atur dels darrers 5 anys</li>
+<li><i>x<sub>n-1</sub></i> representa el valor de l'any anterior al de referència de la variable <i>Unemployment_yoy_per</i></li>
+<li><i>x<sub>n-2</sub></i> representa el valor dos anys anteriors al de referència de la variable <i>Unemployment_yoy_per</i></li>
+
+</ul>
+
+<h2>Notes</h2>
+<p>Per a les anotacions matemàtiques, s'ha emprat la <a href="https://math.vercel.app/home" target="_blank">Latex Math API</a> desenvolupada per <a href="https://github.com/uetchy" target="_blank">@uechz</a>.</p>
+
+<br>
+<!-- Footer-->
+<div id="footer">
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+</div>
+<br>
+</body>
+</html>

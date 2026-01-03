@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Compravendes - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Compravenda d'habitatges</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../index.html'">Indicadors estadístics 📉</button>
+  <button onclick="window.location.href='../barometer.html'">Baròmetre de l'habitatge 🌇</button>
+  <button onclick="window.location.href='../metodologia.html'">Metodologia 📓</button>
+</div>
+<br>
+<div id="chart-wrapper"><canvas id="sales"></canvas></div>
+<script src="../data/sales.js"></script>
+<ul>
+  <li><strong>Població en edat de compra (PEC)</strong>: compravendes (barres blaus); població entre 25 i 50 anys (línies negres); i herències d'habitatges (barres propres).</li>
+</ul>
+
+<p>L'<a href="../../posts/papindex.html">índex PEC</a> dibuixa dos límits basant-se en la demografia. El límit superior assumeix que tota la població en algun moment comprarà un habitatge de manera individual, i el límit inferior assumeix que tota la població en algun moment comprarà un habitatge en parella.</p>
+
+<ul>
+  <li>Si les compravendes superen el límit superior, pot interpretar-se com un <strong>excés</strong>.</li>
+  <li>Si les compravendes subjeuen el límit inferior, pot interpretar-se com un <strong>dèficit</strong>.</li>
+  <li>Si les compravendes se situen entre els dos límits, el mercat estaria en una <strong>zona saludable</strong>.</li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="housetransfer"></canvas></div>
+<script src="../data/housetransfer.js"></script>
+<ul>
+  <li><strong>Habitatges transmesos segons títol d'adquisició</strong>: donació, herència, compravenda, permuta o altres (com ara concentracions parcel·làries, divisions horitzontals, operacions conjuntes...).</li>
+</ul>
+
+<h2>Evolució trimestral de les compravendes</h2>
+<div id="chart-wrapper"><canvas id="salesquarterly"></canvas></div>
+<script src="../data/salesquarterly.js"></script>
+<ul>
+  <li><strong>Eix esquerre (línia)</strong>: índex del preu de l'habitatge (IPV).</li>
+  <li><strong>Eix dret (barres)</strong>: compravendes totals de cada trimestre.</li>
+</ul>
+
+<p>El color indica si el nom de compravendes és inferior (vermell) o superior (verd) al trimestre anterior. La línia negra representa el preu IPV de l'INE.</p>
+
+<h2>Font de les dades</h2>
+<ul>
+  <li>Población y proyecciones según el INE (<em>el rango de población utilizado es aquel entre 25 y 50 años de edad &gt; Los datos del año (n) son los registrados para enero del año siguiente </em>):
+    <a href="https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&cid=1254736177095&menu=resultados&idp=1254735572981#_tabs-1254736195796">Población consolidada</a>,
+    <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176953&menu=resultados&idp=1254735572981">Población proyectada</a>
+  </li>
+  <li>Compraventas (<em>Resultados &gt; Anuales &gt; Viviendas transmitidas según título de adquisición &gt; Compraventas</em>):
+    <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736171438&menu=resultados&idp=1254735576757">Enlace</a>
+  </li>
+  <li>Índice del precio de la vivienda:
+    <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736152838&menu=resultados&idp=1254735976607">Enlace</a>
+  </li>
+</ul>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+</div>
+<br>
+</body>
+</html>

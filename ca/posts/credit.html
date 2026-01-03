@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Hipoteques - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Hipoteques</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../index.html'">Indicadors estadístics 📉</button>
+  <button onclick="window.location.href='../barometer.html'">Baròmetre de l'habitatge 🌇</button>
+  <button onclick="window.location.href='../metodologia.html'">Metodologia 📓</button>
+</div>
+<br>
+
+<div id="chart-wrapper"><canvas id="credityearly"></canvas></div>
+<script src="../data/credityearly.js"></script>
+<ul>
+  <li>↑ <strong>Evolució anual de les hipoteques</strong>, nombre total d'hipoteques aprovades i cancel·lades.</li>
+  <li>Per llei, les cancel·lacions no estan obligades a enregistrar-se en el registre de la propietat en el moment de cancel·lació. Estimem que un 35% de les cancel·lacions no s'arriben a enregistrar.</li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="creditmovement"></canvas></div>
+<script src="../data/creditmovement.js"></script>
+<ul>
+  <li>↑ <strong>Moviment del crèdit i import de les hipoteques</strong>.
+    <ul>
+      <li><strong>Eix esquerre (barres)</strong>: moviment real del crèdit, crèdit menys inflació, en percentatge.</li>
+      <li><strong>Eix dret (línies)</strong>: mitjana anual de l'import de les hipoteques, en euros.</li>
+    </ul>
+  </li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="creditratio"></canvas></div>
+<script src="../data/creditratio.js"></script>
+<ul>
+  <li>↑ <strong>Ràtio entre hipoteques i compravendes</strong>: si la ràtio és (x), significa que hi ha (x) hipoteques per cada (1) compravenda. Aquesta ràtio ajuda a intuir la formació de bombolles creditícies.</li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="typemortgage"></canvas></div>
+<script src="../data/typemortgage.js"></script>
+<ul>
+  <li>↑ <strong>Hipoteques constituïdes segons el tipus d'interès (%)</strong>: fix o variable.</li>
+</ul>
+
+<h2>Font de les dades</h2>
+<ul>
+  <li>Precios de la vivienda, de 1985 a 2006, según Sociedad de Tasación (<em>Acceso bajo petición, pero se pueden visualizar en la siguiente publicación</em>):
+    <a href="https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf">Publicación</a>,
+    <a href="https://www.st-tasacion.es/informe-de-tendencias-digital/">Enlace</a>
+  </li>
+  <li>Precios de la vivienda, de 2007 en adelante, según datos de notarios (<em>Grupo 5 &gt; Acto 501 - Compraventa inmuebles &gt; Inmuebles en fincas urbanas, viviendas</em>):
+    <a href="http://www.notariado.org/liferay/web/cien/estadisticas-al-completo">Enlace</a>
+  </li>
+  <li>Compraventas, de 2003 a 2006, han sido estimadas usando el número de hipotecas aprobadas:
+    <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736170236&menu=resultados&idp=1254735576757#!tabs-1254736169948">Enlace</a>
+  </li>
+  <li>Compraventas, de 2007 en adelante (<em>Resultados &gt; Anual &gt; Viviendas transmitidas según título de adquisición &gt; Compraventas</em>):
+    <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736171438&menu=resultados&idp=1254735576757">Enlace</a>
+  </li>
+  <li>Hipotecas, de 1995 a 2002, según "El mercado de la vivienda en España: una década prodigiosa (1995-2005)", de Isabel Nóvoa Arechaga and Pedro López Suárez, tabla 13 (<em>el número de hipotecas canceladas en ese periodo han sido estimadas a partir del número de hipotecas aprobadas</em>):
+    <a href="https://dialnet.unirioja.es/descarga/articulo/2499407.pdf">Publicación</a>
+  </li>
+  <li>Hipotecas, de 2003 en adelante (<em>Resultados &gt; Anual &gt; Resultados nacionales y por Comunidades Autónomas &gt; Hipotecas constituidas, sobre el total de fincas, por naturaleza de la finca &gt; Viviendas</em>):
+    <a href="https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736170236&menu=resultados&idp=1254735576757#!tabs-1254736169948">Enlace</a>
+  </li>
+  <li>Datos de inflación (<em>Table: average inflation Spain (CPI) - by year</em>):
+    <a href="https://www.inflation.eu/en/inflation-rates/spain/historic-inflation/cpi-inflation-spain.aspx">Enlace</a>
+  </li>
+  <li>Tasa de interés medio de las hipotecas (<em>Resultados &gt; Anuales &gt; Indicadores nacionales &gt; Tipo de interés medio al inicio de las hipotecas constituidas &gt; Viviendas + Total</em>):
+    <a href="https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&cid=1254736170236&menu=resultados&idp=1254735576606#!tabs-1254736169948">Enlace</a>
+  </li>
+  <li>Hipotecas constituidas según la tasa de interés, Banco de España (<em>Tipo medio de los préstamos hipotecarios a más de 3 años para adquisición de vivienda libre &gt; Del conjunto de entidades de crédito</em>): <a href="https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/relacionados/tiposinteres/guia-textual/tiposinteresrefe/tabla_tipos_referencia_oficiales_mercado_hipotecario.html">Enlace</a></li>
+</ul>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+</div>
+<br>
+</body>
+</html>

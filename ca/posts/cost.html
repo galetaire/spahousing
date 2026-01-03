@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Costs productius - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
+  <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Costs de producció</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../index.html'">Indicadors estadístics 📉</button>
+  <button onclick="window.location.href='../barometer.html'">Baròmetre de l'habitatge 🌇</button>
+  <button onclick="window.location.href='../metodologia.html'">Metodologia 📓</button>
+</div>
+<br>
+<div id="chart-wrapper"><canvas id="costratio"></canvas></div>
+<script src="../data/costratio.js"></script>
+  <ul>
+    <li><strong>↑ Ràtio entre el preu mitjà de l'habitatge i costs mitjans de construcció:</strong> si la ràtio és (x), significa que els habitatges es venen a (x) vegades el preu de producció.</li>
+    <li>Una ràtio més alta indica que el sector de la construcció té uns marges de benefici més elevats. Cal assenyalar que una part significativa d'aquests marges de benefici corresponen en realitat a pagament d'imposts.</li>
+  </ul>
+
+  <div id="chart-wrapper"><canvas id="costchange"></canvas></div>
+  <script src="../data/costchange.js"></script>
+  <ul>
+    <li><strong>↑ Costs de producció (%):</strong> evolució any rere any dels costs de construcció.</li>
+  </ul>
+
+  <div id="chart-wrapper"><canvas id="workersperunit"></canvas></div>
+  <script src="../data/workersperunit.js"></script>
+  <ul>
+    <li><strong>↑ Ràtio de treballadors per habitatge construït:</strong> el gran canvi de tendència es deu a un canvi del negoci. La reforma és el negoci principal del sector, superant a la nova construcció.</li>
+  </ul>
+
+  <div id="chart-wrapper"><canvas id="employed100"></canvas></div>
+  <script src="../data/employed100.js"></script>
+  <ul>
+    <li><strong>↑ Nombre de treballadors ocupats en el sector de la construcció per cada 100 habitants</strong>.</li>
+  </ul>
+
+  <h2>Font de les dades</h2>
+  <ul>
+    <li>Número de unidades por tipo y m², unifamiliar y en bloque (<em>6.Visados de dirección de obra: Obra nueva, ampliación y/o reforma. Nº de viviendas y superficie media según tipo de obra y destino principal</em>): <a href="https://apps.fomento.gob.es/BoletinOnline/?nivel=2&orden=09000000">Enlace</a>
+    </li>
+    <li>Presupuesto de ejecución material (<em>3. Visados de dirección de obra: Obra nueva. Presupuesto de ejecución material según destino principal</em>): <a href="https://apps.fomento.gob.es/BoletinOnline/?nivel=2&orden=09000000">Enlace</a>
+    </li>
+    <li>Coste de materiales, de 1992 a 2005, calculado usando la evolución del <em>Presupuesto de ejecución material (PEM)</em>: <a href="https://apps.fomento.gob.es/BoletinOnline/?nivel=2&orden=08000000">Enlace</a>
+    </li>
+    <li>Coste de materiales, de 2006 en adelante (<em>Indice de costes del sector de la construcción, Base Enero 2015=100, Total Edificación, ponderado mano de obra y consumo materiales</em>): <a href="https://apps.fomento.gob.es/BoletinOnline/?nivel=2&orden=08000000">Enlace</a>
+    </li>
+    <li>Precios de la vivienda, de 1985 a 2006, según Sociedad de Tasación (<em>Acceso bajo petición, pero se pueden visualizar en la siguiente publicación</em>):
+      <a href="https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf">Publicación</a>,
+      <a href="https://www.st-tasacion.es/informe-de-tendencias-digital/">Enlace</a>
+    </li>
+    <li>Precios de la vivienda, de 2007 en adelante, según datos de notarios (<em>Grupo 5 &gt; Acto 501 - Compraventa inmuebles &gt; Inmuebles en fincas urbanas, viviendas</em>):
+      <a href="http://www.notariado.org/liferay/web/cien/estadisticas-al-completo">Enlace</a>
+    </li>
+    <li>Estructura del sector de la construcción (<em>Publicaciones anuales</em>): <a href="https://www.mitma.gob.es/informacion-para-el-ciudadano/informacion-estadistica/construccion/estructura-de-la-industria-de-la-construccion/estructura-de-la-industria-de-laconstruccion">Enlace</a>
+    </li>
+  </ul>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+</div>
+<br>
+</body>
+</html>

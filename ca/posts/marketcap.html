@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capitalització immobiliària - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Capitalització del mercat immobiliari</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../index.html'">Indicadors estadístics 📉</button>
+  <button onclick="window.location.href='../barometer.html'">Baròmetre de l'habitatge 🌇</button>
+  <button onclick="window.location.href='../metodologia.html'">Metodologia 📓</button>
+</div>
+<br>
+<table>
+  <thead>
+    <tr>
+      <th><strong>Capitalització (f) 2024</strong></th>
+      <th><strong>(Nul × Rp) + (Ful × Up) + (Hp × Ha × D)</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Capitalització total de mercat</strong></td>
+      <td><strong>5.107.826.088.504 euros</strong></td>
+    </tr>
+    <tr>
+      <td>Extensió d'Espanya</td>
+      <td>506.006.730.000 m²</td>
+    </tr>
+    <tr>
+      <td>Sòl no urbà (Nul)</td>
+      <td>485.443.830.000 m²</td>
+    </tr>
+    <tr>
+      <td>Preu mitjà sòl rural (Rp)</td>
+      <td>1,03 eu/m²</td>
+    </tr>
+    <tr>
+      <td>Sòl urbà lliure (Ful)</td>
+      <td>4.506.630.000 m²</td>
+    </tr>
+    <tr>
+      <td>Preu mitjà del sòl urbà (Up)</td>
+      <td>167 eu/m²</td>
+    </tr>
+    <tr>
+      <td>Preu mitjà de l'habitatge (Hp)</td>
+      <td>1714 eu/m²</td>
+    </tr>
+    <tr>
+      <td>Grandària mitjana de l'habitatge (Ha)</td>
+      <td>86 m²</td>
+    </tr>
+    <tr>
+      <td>Nombre d'habitatges (D)</td>
+      <td>26.154.051</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>L'últim any disponible per al sòl no urbà (Nul) és 2014. L'últim any disponible per al sòl urbà lliure (Ful) és 2014. La grandària mitjana de l'habitatge (Ha) usat és el recollit pel Cens d'Habitatges de 2021. L'última dada de preu mitjà del sòl rural (Rp) és de 2022.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Any</strong></th>
+      <th><strong>Capitalització</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>2014</strong></td>
+      <td><strong>3.899.775.913.230 euros</strong></td>
+    </tr>
+    <tr>
+      <td><strong>2011</strong></td>
+      <td><strong>4.704.159.132.204 euros</strong></td>
+    </tr>
+    <tr>
+      <td><strong>2009</strong></td>
+      <td><strong>5.072.742.844.012 euros</strong></td>
+    </tr>
+    <tr>
+      <td><strong>2005</strong></td>
+      <td><strong>4.517.483.030.916 euros</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>La grandària mitjana de l'habitatge (Ha) usat en tots els anys és el recollit pel Cens d'Habitatges de 2021.</p>
+
+<h1>Font de les dades</h1>
+<ul>
+  <li>"Precio medio de la vivienda", consulta la siguiente <a href="../posts/price.html">entrada</a></li>
+  <li>"Número de viviendas", consulta la siguiente <a href="../posts/stock.html">entrada</a></li>
+  <li>"Tamaño medio de la vivienda" (<em>Censo de Viviendas, INE</em>): <a href="https://www.ine.es/Censo2021/Informe.do">Censo de Viviendas, INE</a></li>
+  <li>"Precio medio del suelo rural", de precio del suelo agrario, <em>MITMA</em>: <a href="https://www.mapa.gob.es/es/estadistica/temas/estadisticas-agrarias/economia/encuesta-precios-tierra/">Enlace</a></li>
+  <li>"Suelo urbano libre" y "Suelo no urbano" del Atlas urbano de España (<em>SIOSE, Estructura de las coberturas simples artificiales, MITMA</em>): <a href="http://atlasau.mitma.gob.es/#bbox=-1220276,5446287,1639151,1304442&c=indicator&i=siosim.siosim012&s=2014&view=map1">Enlace</a></li>
+  <li>"Precio medio suelo urbano" (<em>Series estadísticas &gt; Precios del suelo &gt; 4.Precio medio del metro cuadrado de suelo urbano por comunidades autónomas y provincias</em>): <a href="https://www.mitma.gob.es/el-ministerio/informacion-estadistica/vivienda-y-actuaciones-urbanas/estadisticas/suelo/estadisticas-de-precios-de-suelo-urbano">Enlace</a></li>
+</ul>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+</div>
+<br>
+</body>
+</html>

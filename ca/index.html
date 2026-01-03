@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spain Housing Observatory</title>
+  <meta name="description" content="Dades sobre el mercat immobiliari d'Espanya, des del preu de l'habitatge fins el cost de producció.">
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <meta name="google-site-verification" content="qJPOBhuLxYG31aBQHGtqNlySOVTNp20pDOJhZVXJE9w" />
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Spain Housing Observatory">
+  <meta property="og:site_name" content="Spain Housing Observatory"/>
+  <meta property="og:description" content="Dades sobre el mercat immobiliari espanyol.">
+  <meta property="og:url" content="https://spainhousing.eu/">
+  <meta property="og:image" content="https://spainhousing.eu/public/favicon.ico">
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="../styles/style.css" rel="stylesheet" type="text/css">
+  <script>
+  function setLanguage(lang) {
+    const currentPath = window.location.pathname;
+
+    if (lang === 'es') {
+      // Redirect to Spanish if not already there
+      if (!currentPath.includes('/es/')) {
+        window.location.href = "/es/index.html";
+      }
+    }
+    else if (lang === 'ca') {
+      // Redirect to Catalan if not already there
+      if (!currentPath.includes('/ca/')) {
+        window.location.href = "/ca/index.html";
+      }
+    }
+    else {
+      // Default to English (root) if not already there
+      // This checks that we aren't already at the root by making sure /es/ or /ca/ aren't present
+      if (currentPath.includes('/es/') || currentPath.includes('/ca/')) {
+        window.location.href = "/index.html";
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+<br>
+<br>
+
+<div class="lang-switcher">
+  <button onclick="setLanguage('en')">EN</button>
+  <button onclick="setLanguage('es')">ES</button>
+  <button onclick="setLanguage('ca')">CA</button>
+</div>
+
+<h1>Spain Housing Observatory 🔭</h1>
+
+<div class="navbar">
+  <button onclick="window.location.href='index.html'">Indicadors estadístics 📉</button>
+  <button onclick="window.location.href='barometer.html'">Baròmetre de l'habitatge 🌇</button>
+  <button onclick="window.location.href='metodologia.html'">Metodologia 📓</button>
+</div>
+
+<p>Una visió integral del mercat immobiliari espanyol, format per 15 temes i 48 gràfics. Tot el contingut està documentat amb notes i fonts.</p>
+
+<h2>Indicadors</h2>
+  <table>
+    <thead>
+    </thead>
+    <tbody>
+      <tr><td>1. Preu</td><td>➞ <a href="posts/price.html">Accedeix</a></td></tr>
+      <tr><td>2. Lloguer</td><td>➞ <a href="posts/rent.html">Accedeix</a></td></tr>
+      <tr><td>3. Compravendes</td><td>➞ <a href="posts/sales.html">Accedeix</a></td></tr>
+      <tr><td>4. Hipoteques</td><td>➞ <a href="posts/credit.html">Accedeix</a></td></tr>
+      <tr><td>5. Política monetària</td><td>➞ <a href="posts/monetary.html">Accedeix</a></td></tr>
+      <tr><td>6. Ocupació</td><td>➞ <a href="posts/labor.html">Accedeix</a></td></tr>
+      <tr><td>7. Salaris</td><td>➞ <a href="posts/wages.html">Accedeix</a></td></tr>
+      <tr><td>8. Parc d'habitatges</td><td>➞ <a href="posts/stock.html">Accedeix</a></td></tr>
+      <tr><td>9. Sòl i permisos</td><td>➞ <a href="posts/land.html">Accedeix</a></td></tr>
+      <tr><td>10. Tipus de finançament</td><td>➞ <a href="posts/funding.html">Accedeix</a></td></tr>
+      <tr><td>11. Costs de producció</td><td>➞ <a href="posts/cost.html">Accedeix</a></td></tr>
+      <tr><td>12. Tinença</td><td>➞ <a href="posts/ownership.html">Accedeix</a></td></tr>
+      <tr><td>13. Retorns d'inversió</td><td>➞ <a href="posts/roi.html">Accedeix</a></td></tr>
+    </tbody>
+  </table>
+
+  <h2>Models</h2>
+  <table>
+    <thead>
+    </thead>
+    <tbody>
+      <tr><td>14. Multivariable</td><td>➞ <a href="posts/multivariate.html">Accedeix</a></td></tr>
+      <tr><td>15. Cicles del preu</td><td>➞ <a href="posts/rainbow.html">Accedeix</a></td></tr>
+    </tbody>
+  </table>
+
+<p>Repositori disponible a <a href="https://github.com/galetaire/spahousing">GitHub</a>. Preguntes, errors?, contactau amb mi a <a href="https://x.com/HousingSpanish">X</a> o <a href="https://www.reddit.com/user/HousingSpanish/">Reddit</a>.</p>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+</div>
+<br>
+</body>
+</html>

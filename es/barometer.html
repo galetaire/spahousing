@@ -24,20 +24,29 @@
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <link href="../styles/style.css" rel="stylesheet" type="text/css">
   <script>
-    function setLanguage(lang) {
-      const currentPath = window.location.pathname;
-      if (lang === 'es') {
-        // Only redirect if not already in Spanish version
-        if (!currentPath.includes('/es/')) {
-          window.location.href = "/es/barometer.html";
-        }
-      } else {
-        // Only redirect if not already in English version
-        if (currentPath.includes('/es/')) {
-          window.location.href = "/barometer.html";
-        }
+  function setLanguage(lang) {
+    const currentPath = window.location.pathname;
+
+    if (lang === 'es') {
+      // Redirect to Spanish if not already there
+      if (!currentPath.includes('/es/')) {
+        window.location.href = "/es/index.html";
       }
     }
+    else if (lang === 'ca') {
+      // Redirect to Catalan if not already there
+      if (!currentPath.includes('/ca/')) {
+        window.location.href = "/ca/index.html";
+      }
+    }
+    else {
+      // Default to English (root) if not already there
+      // This checks that we aren't already at the root by making sure /es/ or /ca/ aren't present
+      if (currentPath.includes('/es/') || currentPath.includes('/ca/')) {
+        window.location.href = "/index.html";
+      }
+    }
+  }
   </script>
 </head>
 <body>
@@ -198,7 +207,7 @@
 
     // --- MODIFIED LOGIC ---
         // 1. Get the current year.
-        const targetYear = new Date().getFullYear(); // This will be 2025
+        const targetYear = new Date().getFullYear(); // This will be current year
 
         // 2. Find the row in your data that matches the target year.
         // We use `==` because the year from the CSV is a string, and `getFullYear()` is a number.

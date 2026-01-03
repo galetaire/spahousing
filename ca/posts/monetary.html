@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Política monetària - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Política monetària</h1>
+<div class="navbar">
+  <button onclick="window.location.href='../index.html'">Indicadors estadístics 📉</button>
+  <button onclick="window.location.href='../barometer.html'">Baròmetre de l'habitatge 🌇</button>
+  <button onclick="window.location.href='../metodologia.html'">Metodologia 📓</button>
+</div>
+<br>
+<div id="chart-wrapper"><canvas id="euribor"></canvas></div>
+<script src="../data/euribor.js"></script>
+  <ul>
+    <li>↑ <strong>Euríbor a 1 any i tipus d'interès mitjà de les hipoteques</strong>. Un increment (o decrement) de l'euríbor implica increment (o decrement) dels tipus d'interès, que alteren la direcció i velocitat del diners.</li>
+  </ul>
+
+  <div id="chart-wrapper"><canvas id="pricemoneypolicy"></canvas></div>
+  <script src="../data/pricemoneypolicy.js"></script>
+  <ul>
+    <li>
+      ↑ <strong>Preu nominal i tipus d'interès</strong>: percentatge anual de canvi comparat amb l'any anterior. <strong style="color: rgba(9, 87, 134);">Blau</strong> = política monetària restrictiva, <strong style="color: rgba(224, 120, 16);">Taronja</strong> = política monetària expansiva.
+      <ul>
+        <li><strong>Eix esquerre (barres)</strong>: tipus d'interès (<em>Míbor/Euríbor</em>).</li>
+        <li><strong>Eix dret (línies)</strong>: preu nominal.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div id="chart-wrapper"><canvas id="moneygrowth"></canvas></div>
+  <script src="../data/moneygrowth.js"></script>
+  <ul>
+    <li>↑ <strong>Creixement de l'estoc monetari en comparació amb el d'habitatges (%)</strong>. Si la massa monetària de l'euro o la població creix més de pressa que el parc d'habitatges, els habitatges es converteixen en un bé més escàs, podent empènyer a l'alça els preus de l'habitatge.</li>
+  </ul>
+
+  <h2>Font de les dades</h2>
+  <ul>
+    <li>Precios de la vivienda, de 1985 a 2006, según Sociedad de Tasación (<em>Acceso bajo petición, pero se pueden visualizar en la siguiente publicación</em>):
+      <a href="https://www.st-tasacion.es/ext/pdf/estudios/sep19/2-Evolucion_de_Precios_de_Vivienda.pdf">Publicación</a>,
+      <a href="https://www.st-tasacion.es/informe-de-tendencias-digital/">Enlace</a>
+    </li>
+    <li>Precios de la vivienda, de 2007 en adelante, según datos de notarios (<em>Grupo 5 &gt; Acto 501 - Compraventa inmuebles &gt; Inmuebles en fincas urbanas, viviendas</em>):
+      <a href="http://www.notariado.org/liferay/web/cien/estadisticas-al-completo">Enlace</a>
+    </li>
+    <li>Mibor a 1 año, de 1979 a 2001 (<em>Cuadro 19.1 del BE - Tipo de interés. De referencia. Oficiales. Mercado hipotecario. Interbancario. Mibor a 1 año</em>):
+      <a href="https://www.bde.es/webbde/es/estadis/infoest/temas/sb_tiintref.html" target="_blank">Enlace</a>
+    </li>
+    <li>Euribor a 1 año, de 2002 en adelante (<em>Euribor 1-year - Historical close, average of observations through period</em>):
+      <a href="https://data.ecb.europa.eu/data/datasets/FM/FM.M.U2.EUR.RT.MM.EURIBOR1YD_.HSTA" target="_blank">Enlace</a>
+    </li>
+    <li>Euro Area, Agregado monetario M3, ECB (<em>European Central Bank</em>):
+      <a href="https://data.ecb.europa.eu/data/datasets/BSI/BSI.M.U2.Y.V.M30.X.1.U2.2300.Z01.E" target="_blank">Enlace</a>
+    </li>
+    <li>Hipotecas constituidas según la tasa de interés, Banco de España (<em>Tipo medio de los préstamos hipotecarios a más de 3 años para adquisición de vivienda libre &gt; Del conjunto de entidades de crédito</em>): <a href="https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/relacionados/tiposinteres/guia-textual/tiposinteresrefe/tabla_tipos_referencia_oficiales_mercado_hipotecario.html">Enlace</a></li>
+    <li>Parque de viviendas, de 1971 a 2000, según el Atlas Digital de las Áreas Urbanas (<em>Parque de Viviendas > Viviendas según tipo > Viviendas familiares > selección de años disponibles 1970, 1981, 1991, 2001, 2011 > Tabla y Síntesis</em>):
+      <a href="https://atlasau.mitma.gob.es/#c=indicator&view=map1" target="_blank">Enlace</a>. Basados en datos de 1970, 1981 y 1991, los años entre periodo han sido estimados, con resultados similares a los del Banco de España (<em>Observatorio de Vivienda y Suelo > Boletines periódicos > Boletín Anual 2021 > Tabla 8.1</em>):
+      <a href="https://www.mitma.gob.es/arquitectura-vivienda-y-suelo/urbanismo-y-politica-de-suelo/estudios-y-publicaciones/observatorio-de-vivienda-y-suelo" target="_blank">Enlace</a>
+    </li>
+    <li>Parque de viviendas, de 2001 en adelante (<em>Total de viviendas por comunidades autónomas y provincias</em>):
+      <a href="https://apps.fomento.gob.es/BoletinOnline2/?nivel=2&orden=33000000" target="_blank">Enlace</a>
+    </li>
+  </ul>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+</div>
+<br>
+</body>
+</html>

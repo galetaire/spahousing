@@ -34,7 +34,7 @@ function makeChart(permitsdistribution) {
           fill: false,
         },
         {
-          label: 'Adminitración pública',
+          label: 'Administración pública',
           type: 'bar',
           data: rangeTres,
           backgroundColor: 'rgba(0, 204, 153, 0.8)',

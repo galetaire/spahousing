@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metodologia - Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="../styles/style.css" rel="stylesheet" type="text/css">
+  <script>
+  function setLanguage(lang) {
+    const currentPath = window.location.pathname;
+
+    if (lang === 'es') {
+      // Redirect to Spanish if not already there
+      if (!currentPath.includes('/es/')) {
+        window.location.href = "/es/index.html";
+      }
+    }
+    else if (lang === 'ca') {
+      // Redirect to Catalan if not already there
+      if (!currentPath.includes('/ca/')) {
+        window.location.href = "/ca/index.html";
+      }
+    }
+    else {
+      // Default to English (root) if not already there
+      // This checks that we aren't already at the root by making sure /es/ or /ca/ aren't present
+      if (currentPath.includes('/es/') || currentPath.includes('/ca/')) {
+        window.location.href = "/index.html";
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+<br>
+<br>
+
+<div class="lang-switcher">
+  <button onclick="setLanguage('en')">EN</button>
+  <button onclick="setLanguage('es')">ES</button>
+  <button onclick="setLanguage('ca')">CA</button>
+</div>
+
+<h1>Metodología 📓</h1>
+<div class="navbar">
+  <button onclick="window.location.href='index.html'">Indicadors estadístics 📉</button>
+  <button onclick="window.location.href='barometer.html'">Baròmetre de l'habitatge 🌇</button>
+  <button onclick="window.location.href='metodologia.html'">Metodologia 📓</button>
+</div>
+
+<p>La informació estadística d'aquesta pàgina es refereix a Espanya. La <a href="posts/marketcap.html">capitalització de mercat</a> del sector immobiliari espanyol, per a l'any 2024, fou de ~5.1 bilions €.</p>
+
+<h2>Base de dades</h2>
+<ul>
+  <li><a href="https://github.com/galetaire/spahousing/blob/main/public/docs/spain_stats_csv.csv"><b>Explorador de Github</b></a> ➞ Visualitza les dades abans de descarregar-les.</li>
+</ul>
+<table>
+  <thead>
+    <tr>
+      <th>Arxius (disponibles en 2 formats + metadades)</th>
+      <th>Accés</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Comma Separated Values (.csv)</td><td><a href="https://github.com/galetaire/spahousing/raw/main/public/docs/spain_stats_csv.csv">Descarregar</a></td></tr>
+    <tr><td>OpenDocument Spreadsheet (.ods)</td><td><a href="https://github.com/galetaire/spahousing/raw/main/public/docs/spain_stats_ods.ods">Descarregar</a></td></tr>
+    <tr><td>Metadata descriptors (.json)</td><td><a href="https://github.com/galetaire/spahousing/raw/main/public/docs/metadata.json">Descarregar</a></td></tr>
+  </tbody>
+</table>
+
+<h2>Fonts i actualització</h2>
+<p>El contingut està basat en dades de múltiples institucions estadístiques. Totes són reproduïbles i poden ser verificades.</p>
+
+<p>Com a norma general, les dades s'actualitzen trimestralment. Quan es tracta de dades anuals en curs, els valors mostrats són projeccions emprant les dades disponibles de l'any en curs (siguin mesos, setmanes...). En els casos de variables afectades per fenòmens estacionals, les projeccions han estat ajustades.</p>
+
+<h2>Notes i contacte</h2>
+<p>Aquest lloc web és obert, públic i gratuït, i pot ser duplicat per complet a través de github. Tot el contingut és original i pot reproduir-se sempre que es referenciï adequadament. Pots contactar amb mi via <a href="https://x.com/HousingSpanish">X</a> o <a href="https://www.reddit.com/user/HousingSpanish/">Reddit</a>, també pots unir-te a la nostra comunitat de reddit: <a href="https://www.reddit.com/r/spainhousing/">r/SpainHousing</a>.</p>
+
+<br>
+<!-- Footer-->
+<div id="footer">
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+</div>
+<br>
+</body>
+</html>
