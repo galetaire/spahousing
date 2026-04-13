@@ -50,11 +50,11 @@ function makeChart(laborquarterly) {
         },
         yLeft: {
           min: 80,
-          max: 180,
+          max: 200,
           type: 'linear',
           position: 'left',
           ticks: {
-            stepSize: 20,
+            stepSize: 24,
           },
         },
         yRight: {

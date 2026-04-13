@@ -704,7 +704,7 @@
         {
           "title": "Price_eum2",
           "dc:description": "Price (nominal) of buying a house per m2, according to spanish notaries",
-          "source": "https://www.notariado.org/liferay/web/cien/estadisticas-al-completo",
+          "source": "https://penotariado.com/inmobiliario/ca/cercador-preu-habitatge",
           "@type": "Column"
          },
          {
