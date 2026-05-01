@@ -4,7 +4,7 @@ function makeChart(housedollar) {
   var rangeEnd = new Date().getFullYear() - 1899;
   var rangeLabels = housedollar.map(function(d) { return d.Year; }).slice(rangeStart, rangeEnd);
   var rangeOne = housedollar.map(function(d) { return Number((d.Price_eum2*100)*d.EURUSD_year_ave)}).slice(rangeStart, rangeEnd);
-  var rangeTwo = housegold.map(function(d) { return Number(d.Price_eum2*100)}).slice(rangeStart, rangeEnd);
+  var rangeTwo = housedollar.map(function(d) { return Number(d.Price_eum2*100)}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
 
