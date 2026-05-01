@@ -5,7 +5,7 @@ function makeChart(wageratio) {
   var rangeStart = 99;
   var rangeEnd = new Date().getFullYear() - 1899;
   var rangeLabels = wageratio.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = wageratio.map(function(d) {return d.W_M_disconnect}).slice(rangeStart, rangeEnd);
+  var rangeOne = wageratio.map(function(d) {return Number(100-((d.Disposable_income_over18*100)/d.Ideal_wage))}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
   var chart = new Chart('wageratio', {

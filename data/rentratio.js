@@ -2,8 +2,8 @@ function makeChart(rentratio) {
   var rangeStart = 107;
   var rangeEnd = new Date().getFullYear() - 1899;
   var rangeLabels = rentratio.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = rentratio.map(function(d) {return d.Rent_ROI_net_per}).slice(rangeStart, rangeEnd);
-  var rangeTwo = rentratio.map(function(d) {return d.Rent_ROI_gross_per}).slice(rangeStart, rangeEnd);
+  var rangeOne = rentratio.map(function(d) {return Number (100 / d.Rent_ROI_net)}).slice(rangeStart, rangeEnd);
+  var rangeTwo = rentratio.map(function(d) {return Number (100 / d.Rent_ROI_gross)}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
   var chart = new Chart('rentratio', {

@@ -3,8 +3,8 @@ function makeChart(housebitcoin) {
   var rangeStart = 110;
   var rangeEnd = new Date().getFullYear() - 1899;
   var rangeLabels = housebitcoin.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = housebitcoin.map(function(d) {return d.BTC_house}).slice(rangeStart, rangeEnd);
-  var rangeTwo = housebitcoin.map(function(d) { return d.EUR_house; }).slice(rangeStart, rangeEnd);
+  var rangeOne = housebitcoin.map(function(d) {return Number(d.Price_eum2*100/d.BTCEUR_year_ave)}).slice(rangeStart, rangeEnd);
+  var rangeTwo = housegold.map(function(d) { return Number(d.Price_eum2*100)}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
 

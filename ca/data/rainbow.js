@@ -5,10 +5,10 @@ function makeChart(rainbow) {
   var rangeLabels = rainbow.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
   var rangeOne = rainbow.map(function(d) {return d.Real_price_over}).slice(rangeStart, rangeEnd);
   var rangeTwo = rainbow.map(function(d) {return d.Rainbow_curve}).slice(rangeStart, rangeEnd);
-  var rangeTres = rainbow.map(function(d) {return d.RC_plus50}).slice(rangeStart, rangeEnd);
-  var rangeFour = rainbow.map(function(d) {return d.RC_minus50}).slice(rangeStart, rangeEnd);
-  var rangeFive = rainbow.map(function(d) {return d.RC_plus100}).slice(rangeStart, rangeEnd);
-  var rangeSix = rainbow.map(function(d) {return d.RC_minus100}).slice(rangeStart, rangeEnd);
+  var rangeTres = rainbow.map(function(d) {return Number(d.Rainbow_curve) + 50}).slice(rangeStart, rangeEnd);
+  var rangeFour = rainbow.map(function(d) {return Number(d.Rainbow_curve) - 50}).slice(rangeStart, rangeEnd);
+  var rangeFive = rainbow.map(function(d) {return Number(d.Rainbow_curve) + 100}).slice(rangeStart, rangeEnd);
+  var rangeSix = rainbow.map(function(d) {return Number(d.Rainbow_curve) - 100}).slice(rangeStart, rangeEnd);
 
   const plugin = {
     id: 'customCanvasBackgroundColor',

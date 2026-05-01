@@ -5,8 +5,8 @@ function makeChart(velocity) {
   var rangeStart = 104;
   var rangeEnd = new Date().getFullYear() - 1899;
   var rangeLabels = velocity.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = velocity.map(function(d) {return d.Land_velocity_years}).slice(rangeStart, rangeEnd);
-  var rangeTwo = velocity.map(function(d) {return d.House_velocity_years}).slice(rangeStart, rangeEnd);
+  var rangeOne = velocity.map(function(d) {return (Number(d.Free_urbanland_km2) / (Number(d.Tx_juridicas_m2) + Number(d.Tx_fisica_m2)) * 1000)}).slice(rangeStart, rangeEnd);
+  var rangeTwo = velocity.map(function(d) {return Number(d.Total_homes / d.Home_sales)}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
   var chart = new Chart('velocity', {

@@ -3,7 +3,7 @@ function makeChart(stockbalance) {
   var rangeStart = 0;
   var rangeEnd = new Date().getFullYear() - 1899;
   var rangeLabels = stockbalance.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = stockbalance.map(function(d) {return d.Balance}).slice(rangeStart, rangeEnd);
+  var rangeOne = stockbalance.map(function(d) {return Number(d.New_homes - (d.Pop_abs_yoy / 2))}).slice(rangeStart, rangeEnd);
   var rangeTwo = stockbalance.map(function(d) {return d.Balance_hogares}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 11;

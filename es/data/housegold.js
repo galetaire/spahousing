@@ -3,8 +3,8 @@ function makeChart(housegold) {
   var rangeStart = 85;
   var rangeEnd = new Date().getFullYear() - 1899;
   var rangeLabels = housegold.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = housegold.map(function(d) {return d.Gold_house}).slice(rangeStart, rangeEnd);
-  var rangeTwo = housegold.map(function(d) { return d.EUR_house; }).slice(rangeStart, rangeEnd);
+  var rangeOne = housegold.map(function(d) {return Number(d.Price_eum2*100/d.AUEUR_year_ave)}).slice(rangeStart, rangeEnd);
+  var rangeTwo = housegold.map(function(d) { return Number(d.Price_eum2*100)}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
 

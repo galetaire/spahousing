@@ -4,7 +4,7 @@ function makeChart(roinet) {
   var rangeEnd = new Date().getFullYear() - 1899;
   var rangeLabels = roinet.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
   var rangeOne = roinet.map(function(d) {return d.Inflation_CPI}).slice(rangeStart, rangeEnd);
-  var rangeTwo = roinet.map(function(d) {return d.Net_ROI_yoy_per}).slice(rangeStart, rangeEnd);
+  var rangeTwo = roinet.map(function(d) {return Number((100 / d.Rent_ROI_net)) + Number(d.Nominal_price_yoy_per)}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 11;
   new Chart('roinet', {

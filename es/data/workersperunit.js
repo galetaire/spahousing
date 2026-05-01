@@ -23,7 +23,7 @@ function makeChart(workersperunit) {
   var rangeStart = 90;
   var rangeEnd = new Date().getFullYear() - 1899;
   var rangeLabels = workersperunit.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = workersperunit.map(function(d) {return d.Workers_per_home}).slice(rangeStart, rangeEnd);
+  var rangeOne = workersperunit.map(function(d) {return Number (d.Employed_constr) / Number (d.New_homes)}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
   var chart = new Chart('workersperunit', {

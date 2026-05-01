@@ -3,7 +3,7 @@ function makeChart(employed100) {
   var rangeStart = 90;
   var rangeEnd = new Date().getFullYear() - 1899;
   var rangeLabels = employed100.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = employed100.map(function(d) {return d.Workers_per_100_inhab}).slice(rangeStart, rangeEnd);
+  var rangeOne = employed100.map(function(d) {return d.Employed_constr / d.Total_population * 100}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 11;
   new Chart('employed100', {

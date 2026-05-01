@@ -5,7 +5,7 @@ function makeChart(priceyearly) {
   var rangeLabels = priceyearly.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
   var rangeOne = priceyearly.map(function(d) {return d.Price_eum2}).slice(rangeStart, rangeEnd);
   var rangeTwo = priceyearly.map(function(d) {return d.Real_price}).slice(rangeStart, rangeEnd);
-  var rangeTres = priceyearly.map(function(d) {return d.Accum_Inflation}).slice(rangeStart, rangeEnd);
+  var rangeTres = priceyearly.map(function(d) {return d.Price_eum2 - d.Real_price}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
   var chart = new Chart('priceyearly', {

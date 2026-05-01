@@ -36,24 +36,6 @@
           "@type": "Column"
         },
         {
-          "title": "Upper_limit",
-          "dc:description": "Maximum number of unpaired inhabitants per year. The Population_25_50 column divided by 26",
-          "source": "Population_25_50/26",
-          "@type": "Column"
-        },
-        {
-          "title": "Lower_limit",
-          "dc:description": "Maximum number of couples per year. The Upper_limit column divided by 2",
-          "source": "Upper_limit/2",
-          "@type": "Column"
-        },
-        {
-          "title": "Optimal",
-          "dc:description": "The midpoint between the Upper and Lower limit. The Lower_limit column times 1,5",
-          "source": "Lower_limit*1,5",
-          "@type": "Column"
-        },
-        {
           "title": "Home_sales",
           "dc:description": "Total number of house sales",
           "source": "https://www.ine.es/jaxiT3/Tabla.htm?t=6149",
@@ -126,12 +108,6 @@
           "@type": "Column"
         },
         {
-          "title": "Ratio_mortgages_sales",
-          "dc:description": "Ratio between approved mortgages on houses and total house sales",
-          "source": "Approved/Home_sales",
-          "@type": "Column"
-        },
-        {
           "title": "Loan_to_value",
           "dc:description": "Ratio between the average mortgage amount and the average value of an average size house",
           "source": "(Average_amount*100)/(Price_eum2*((Condos_m2*(Condominiums/(Single_family+Condominiums)))+(Single_family_m2*(Single_family/(Single_family+Condominiums)))))",
@@ -186,18 +162,6 @@
           "@type": "Column"
         },
         {
-          "title": "EUR_house",
-          "dc:description": "Cost of a 100m2 house in euros",
-          "source": "Price_eum2*100",
-          "@type": "Column"
-        },
-        {
-          "title": "USD_house",
-          "dc:description": "Cost of a 100m2 house in US dollars",
-          "source": "(Price_eum2*100)*EURUSD_year_ave",
-          "@type": "Column"
-        },
-        {
           "title": "Euro_M3",
           "dc:description": "European Central Bank, Monetary aggregate M3, Annual Frequency, in euros",
           "source": "https://sdw.ecb.europa.eu/quickview.do;jsessionid=94B1161032223AF5B81C7B492EA5100F?SERIES_KEY=117.BSI.M.U2.Y.V.M30.X.1.U2.2300.Z01.E&start=&end=&submitOptions.x=0&submitOptions.y=0&trans=AF",
@@ -216,27 +180,27 @@
           "@type": "Column"
          },
         {
-          "title": "BTC_house",
-          "dc:description": "Cost of a 100m2 house in bitcoins",
-          "source": "(Price_eum2*100)*BTCEUR_year_ave",
-          "@type": "Column"
-        },
-        {
           "title": "AUEUR_year_ave",
           "dc:description": "Yearly average exchange rate Gold(ounce)/Euro",
           "source": "https://www.gold.org/goldhub/data/gold-prices#registration-type=facebook&just-verified=1",
           "@type": "Column"
         },
         {
-          "title": "Gold_house",
-          "dc:description": "Cost of a 100m2 house in ounces of gold",
-          "source": "(Price_eum2*100)*AUEUR_year_ave",
+          "title": "GDP_spain",
+          "dc:description": "Annual GDP of Spain",
+          "source": "https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&cid=1254736164439&menu=resultados&idp=1254735576581",
           "@type": "Column"
         },
         {
-          "title": "GDP_eurozone",
-          "dc:description": "GDP annual growth from the Euro area, in percentage",
-          "source": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?end=2022&locations=XC&start=1971&view=chart",
+          "title": "Market_cap",
+          "dc:description": "Approximation of the total market capitalization of Spain's Real Estate sector",
+          "source": "(Free_urbanland_km2*Price_urban_land*1000000)+(Price_eum2*Total_homes*86)+(Price_nonurban_land*(506006-Urbanland_km2*1000000)",
+          "@type": "Column"
+        },
+        {
+          "title": "Market_cap_basic",
+          "dc:description": "Approximation of the simplified market capitalization of Spain's Real Estate sector",
+          "source": "Price_eum2*Total_homes*86",
           "@type": "Column"
         },
         {
@@ -288,11 +252,11 @@
           "@type": "Column"
         },
         {
-          "title": "Dif_Wage__IPVVR",
-          "dc:description": "Value difference between the Wage index and the IPVVR",
-          "source": "(Price_IPVVR)-(Wage__base_106_2005)",
-          "@type": "Column"
-        },
+           "title": "Dif_Wage__IPVVR",
+           "dc:description": "Value difference between the Wage index and the IPVVR",
+           "source": "(Price_IPVVR)-(Wage__base_106_2005)",
+           "@type": "Column"
+         },
         {
           "title": "Ideal_wage",
           "dc:description": "Wage required to completely pay off the mortgage with 5 years of full wage",
@@ -300,15 +264,15 @@
           "@type": "Column"
         },
         {
-          "title": "W_M_disconnect",
-          "dc:description": "Wage disconnection, in percentage",
-          "source": "=100-((Disposable_income_over18*100)/Ideal_wage)",
-          "@type": "Column"
-        },
-        {
           "title": "Price_urban_land",
           "dc:description": "Price of urban land",
           "source": "https://apps.fomento.gob.es/BoletinOnline2/?nivel=2&orden=36000000",
+          "@type": "Column"
+        },
+        {
+          "title": "Price_nonurban_land",
+          "dc:description": "Price of agrarian land",
+          "source": "https://www.mapa.gob.es/es/estadistica/temas/estadisticas-agrarias/economia/tierra-precios",
           "@type": "Column"
         },
         {
@@ -332,25 +296,13 @@
         {
           "title": "Free_urbanland_km2",
           "dc:description": "Amount of free urban land in km2",
-          "source": "https://www.catastro.hacienda.gob.es/esp/estadistica_1.asp",
+          "source": "https://www.catastro.hacienda.gob.es/es-ES/estadisticas_7.html",
           "@type": "Column"
         },
         {
           "title": "Urbanland_km2",
           "dc:description": "Amount of urban land in km2, free or not",
-          "source": "https://www.catastro.hacienda.gob.es/esp/estadistica_1.asp",
-          "@type": "Column"
-        },
-        {
-          "title": "Land_velocity_years",
-          "dc:description": "Number of transactions involving urban land",
-          "source": "=Spain total urban land in Km2/(((Tx_juridicas_m2+Tx_fisica_m2)*1000)/1000000)",
-          "@type": "Column"
-        },
-        {
-          "title": "House_velocity_years",
-          "dc:description": "Number of transactions involving urban land",
-          "source": "=Total_homes/Home_sales",
+          "source": "https://www.catastro.hacienda.gob.es/es-ES/estadisticas_7.html",
           "@type": "Column"
         },
         {
@@ -498,18 +450,6 @@
           "@type": "Column"
         },
         {
-          "title": "Private_housing_per",
-          "dc:description": "Percentage of private housing build per year",
-          "source": "=(Private_housing*100)/(Private_housing+Public_housing)",
-          "@type": "Column"
-        },
-        {
-          "title": "Public_housing_per",
-          "dc:description": "Percentage of public housing build per year",
-          "source": "=(Public_housing*100)/(Private_housing+Public_housing)",
-          "@type": "Column"
-        },
-        {
           "title": "Inhabitants_per_home",
           "dc:description": "Total inhabitants per home",
           "source": "(Total_population/Total_homes)",
@@ -546,12 +486,6 @@
           "@type": "Column"
         },
         {
-          "title": "Balance",
-          "dc:description": "Housing balance",
-          "source": "Per_new_homes-(Population_yoy/2)",
-          "@type": "Column"
-        },
-        {
           "title": "Balance_hogares",
           "dc:description": "Housing balance",
           "source": "Per_new_homes-(Population_yoy/Average_people_home)",
@@ -561,18 +495,6 @@
           "title": "Employed_constr",
           "dc:description": "Total employees in the construction sector",
           "source": "https://www.ine.es/jaxiT3/Tabla.htm?t=65986",
-          "@type": "Column"
-        },
-        {
-          "title": "Workers_per_home",
-          "dc:description": "Number of workers per housing unit built",
-          "source": "(Employed_constr/New_homes)",
-          "@type": "Column"
-        },
-        {
-          "title": "Workers_per_100_inhab",
-          "dc:description": "Number of workers per 100 inhabitants",
-          "source": "(Employed_constr/Total_population)",
           "@type": "Column"
         },
         {
@@ -596,13 +518,7 @@
         {
           "title": "Foreigners",
           "dc:description": "Home sales and purchases by foreign population, adjusted",
-          "source": "(Foreigner_raw*(100-Legal_entity))/100",
-          "@type": "Column"
-        },
-        {
-          "title": "Foreigner_raw",
-          "dc:description": "Home sales and purchases by foreign population",
-          "source": "https://www.registradores.org/actualidad/portal-estadistico-registral/estadisticas-de-propiedad",
+          "source": "(Foreigner percentage *(100-Legal_entity))/100, foreigner percentage available at https://www.registradores.org/actualidad/portal-estadistico-registral/estadisticas-de-propiedad",
           "@type": "Column"
         },
         {
@@ -617,12 +533,6 @@
           "source": "https://www.ine.es/dynt3/inebase/index.htm?padre=792&capsel=792",
           "@type": "Column"
          },
-         {
-           "title": "Rented_low",
-           "dc:description": "Percentage of rented houses with rent price under the market price",
-           "source": "https://www.ine.es/dynt3/inebase/index.htm?padre=792&capsel=792",
-           "@type": "Column"
-          },
         {
           "title": "Freely_loaned_per",
           "dc:description": "Percentage of freely loaned houses",
@@ -660,21 +570,9 @@
           "@type": "Column"
         },
         {
-          "title": "Rent_ROI_gross_per",
-          "dc:description": "Housing gross rental return, in percentage, Idealista",
-          "source": "100/Rent_ROI_gross",
-          "@type": "Column"
-        },
-        {
           "title": "Rent_ROI_net",
           "dc:description": "Number of years to fully recover a home purchase, net value, Idealista",
           "source": "Idealista_price/((Rent_price_eum2*12)*0.75)",
-          "@type": "Column"
-        },
-        {
-          "title": "Rent_ROI_net_per",
-          "dc:description": "Housing net rental return, in percentage, Idealista",
-          "source": "100/Rent_ROI_net",
           "@type": "Column"
         },
         {
@@ -686,7 +584,7 @@
         {
           "title": "Idealista_mortgage_86m",
           "dc:description": "Average mortgage monthly payment, house price according to Idealista.com",
-          "source": "=PAYMENT((Average_mortgage_rate/100)/12,Years_mortgage*12,(Idealista_price*100))*-1",
+          "source": "PAYMENT((Average_mortgage_rate/100)/12,Years_mortgage*12,(Idealista_price*100))*-1",
           "@type": "Column"
         },
         {
@@ -750,12 +648,6 @@
           "@type": "Column"
         },
         {
-          "title": "Accum_Inflation",
-          "dc:description": "Accumulated inflation",
-          "source": "Price_eum2-Real_price",
-          "@type": "Column"
-        },
-        {
           "title": "IR_yoy_per",
           "dc:description": "Difference of the euribor year-on-year",
           "source": "Euribor_1year(n)-Euribor_1year(n-1)",
@@ -789,48 +681,6 @@
           "title": "Unemployment_yoy_per",
           "dc:description": "Percentage of unemployment",
           "source": "https://www.ine.es/jaxiT3/Tabla.htm?t=4887&L=0",
-          "@type": "Column"
-        },
-        {
-          "title": "Net_ROI_yoy_per",
-          "dc:description": "Housing return on investment, in percentage, considers both gross asset appreciation and net rental return",
-          "source": "Rent_ROI_net_per+Nominal_price_yoy_per",
-          "@type": "Column"
-        },
-        {
-          "title": "Rainbow_curve",
-          "dc:description": "Rainbow curve, derived from the demographic curve. Visit blog post for more info",
-          "source": "0.06*((Year-1963)^2)+8.5*(Year-1963)+140",
-          "@type": "Column"
-        },
-        {
-          "title": "RC_plus50",
-          "dc:description": "Rainbow curve plus 50 units",
-          "source": "Rainbow_curve+50",
-          "@type": "Column"
-        },
-        {
-          "title": "RC_minus50",
-          "dc:description": "Rainbow curve minus 50 units",
-          "source": "Rainbow_curve-50",
-          "@type": "Column"
-        },
-        {
-          "title": "RC_plus100",
-          "dc:description": "Rainbow curve plus 100 units",
-          "source": "Rainbow_curve+100",
-          "@type": "Column"
-        },
-        {
-          "title": "RC_minus100",
-          "dc:description": "Rainbow curve minus 100 units",
-          "source": "Rainbow_curve-100",
-          "@type": "Column"
-        },
-        {
-          "title": "Alt_rainbow",
-          "dc:description": "Alternative formula for the Rainbow Curve, not used",
-          "source": "-0.025*((Year-1963)^2)+5.5*(Year-1963)+175",
           "@type": "Column"
         },
         {
@@ -885,6 +735,12 @@
           "title": "Average_risk",
           "dc:description": "Aerages index to measure the risk of the housing market",
           "source": "(Price_risk+Mortgage_risk+Sales_risk+Wage_risk+Production_risk+Scarcity_risk+Labor_risk)/7",
+          "@type": "Column"
+        },
+        {
+          "title": "Rainbow_curve",
+          "dc:description": "Rainbow curve, derived from the demographic curve. Visit blog post for more info",
+          "source": "0.06*((Year-1963)^2)+8.5*(Year-1963)+140, and alt formula -0.025*((Year-1963)^2)+5.5*(Year-1963)+175",
           "@type": "Column"
         }],
       "@type": "Schema"

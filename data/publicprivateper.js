@@ -2,9 +2,11 @@
 function makeChart(publicprivateper) {
   var rangeStart = 91;
   var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = publicprivateper.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = publicprivateper.map(function(d) {return d.Public_housing_per}).slice(rangeStart, rangeEnd);
-  var rangeTwo = publicprivateper.map(function(d) {return d.Private_housing_per}).slice(rangeStart, rangeEnd);
+  const filteredData = publicprivateper.slice(rangeStart, rangeEnd);
+  var rangeLabels = filteredData.map(function(d) { return d.Year; });
+  const totals = filteredData.map(d => Number(d.Public_housing) + Number(d.Private_housing));
+  var rangeOne = filteredData.map((d, i) => totals[i] ? (Number(d.Public_housing) / totals[i]) * 100 : 0);
+  var rangeTwo = filteredData.map((d, i) => totals[i] ? (Number(d.Private_housing) / totals[i]) * 100 : 0);
 
   Chart.defaults.font.size = 12;
   new Chart('publicprivateper', {
@@ -70,7 +72,6 @@ function makeChart(publicprivateper) {
           ticks: {
             maxRotation: 90,
             minRotation: 90,
-            beginAtZero: true,
           }
         },
         y: {

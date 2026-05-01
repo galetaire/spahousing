@@ -3,9 +3,9 @@ function makeChart(credityearly) {
   var rangeStart = 95;
   var rangeEnd = new Date().getFullYear() - 1899;
   var rangeLabels = credityearly.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = credityearly.map(function(d) {return d.Upper_limit}).slice(rangeStart, rangeEnd);
-  var rangeTwo = credityearly.map(function(d) {return d.Lower_limit}).slice(rangeStart, rangeEnd);
-  var rangeTres = credityearly.map(function(d) {return d.Optimal}).slice(rangeStart, rangeEnd);
+  var rangeOne = credityearly.map(function(d) {return d.Population_25_50 / 26}).slice(rangeStart, rangeEnd);
+  var rangeTwo = credityearly.map(function(d) {return d.Population_25_50 / 26 / 2}).slice(rangeStart, rangeEnd);
+  var rangeTres = credityearly.map(function(d) {return d.Population_25_50 / 26 / 1.33333}).slice(rangeStart, rangeEnd);
   var rangeThree = credityearly.map(function(d) {return d.Approved}).slice(rangeStart, rangeEnd);
   var rangeFour = credityearly.map(function(d) {return d.Releases}).slice(rangeStart, rangeEnd);
 

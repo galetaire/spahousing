@@ -3,9 +3,9 @@ function makeChart(sales) {
   var rangeStart = 103;
   var rangeEnd = new Date().getFullYear() - 1899;
   var rangeLabels = sales.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = sales.map(function(d) {return d.Upper_limit}).slice(rangeStart, rangeEnd);
-  var rangeTwo = sales.map(function(d) {return d.Lower_limit}).slice(rangeStart, rangeEnd);
-  var rangeTres = sales.map(function(d) {return d.Optimal}).slice(rangeStart, rangeEnd);
+  var rangeOne = sales.map(function(d) {return d.Population_25_50 / 26}).slice(rangeStart, rangeEnd);
+  var rangeTwo = sales.map(function(d) {return d.Population_25_50 / 26 / 2}).slice(rangeStart, rangeEnd);
+  var rangeTres = sales.map(function(d) {return d.Population_25_50 / 26 / 1.33333}).slice(rangeStart, rangeEnd);
   var rangeFour = sales.map(function(d) {return d.Inheritances}).slice(rangeStart, rangeEnd);
   var rangeFive = sales.map(function(d) {return d.Home_sales}).slice(rangeStart, rangeEnd);
 

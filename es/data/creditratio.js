@@ -3,7 +3,7 @@ function makeChart(creditratio) {
   var rangeStart = 103;
   var rangeEnd = new Date().getFullYear() - 1899;
   var rangeLabels = creditratio.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = creditratio.map(function(d) {return d.Ratio_mortgages_sales}).slice(rangeStart, rangeEnd);
+  var rangeOne = creditratio.map(function(d) {return d.Approved / d.Home_sales}).slice(rangeStart, rangeEnd);
   var rangeThree = creditratio.map(function(d) {return d.Approved}).slice(rangeStart, rangeEnd);
   var rangeFour = creditratio.map(function(d) {return d.Home_sales}).slice(rangeStart, rangeEnd);
 
