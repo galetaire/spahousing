@@ -12,7 +12,7 @@ function makeChart(rentratio) {
       labels: rangeLabels,
       datasets: [
         {
-          label: "Retorna neto del alquiler (%)",
+          label: "Retorno neto del alquiler (%)",
           data: rangeOne,
           backgroundColor: 'rgba(0, 204, 153, 1)',
           borderColor: 'rgb(0, 204, 153, 1)',
