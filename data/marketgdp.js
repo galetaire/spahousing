@@ -3,7 +3,7 @@ function makeChart(marketgdp) {
   var rangeStart = 80;
   var rangeEnd = new Date().getFullYear() - 1899;
   var rangeLabels = marketgdp.map(function(d) { return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = marketgdp.map(function(d) { return d.Market_cap_basic/d.GDP_spain}).slice(rangeStart, rangeEnd);
+  var rangeOne = marketgdp.map(function(d) { return d.Market_cap/d.GDP_spain}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
   var chart = new Chart('marketgdp', {

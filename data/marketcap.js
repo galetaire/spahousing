@@ -1,6 +1,6 @@
 //makeChart, calling the data and variables from the .csv file
 function makeChart(marketcap) {
-  var rangeStart = 106;
+  var rangeStart = 80;
   var rangeEnd = new Date().getFullYear() - 1899;
   var rangeLabels = marketcap.map(function(d) { return d.Year}).slice(rangeStart, rangeEnd);
   var rangeOne = marketcap.map(function(d) { return d.Market_cap}).slice(rangeStart, rangeEnd);
