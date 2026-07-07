@@ -25,7 +25,7 @@ const annotationLinePlugin = {
         ctx.lineTo(x.right, yPixel);
         ctx.stroke();
 
-        const xPixel = x.getPixelForValue(2.25);
+        const xPixel = x.getPixelForValue(3.50);
         ctx.beginPath();
         ctx.moveTo(xPixel, y.top);
         ctx.lineTo(xPixel, y.bottom);
@@ -48,7 +48,7 @@ function makeChart(marketgdp) {
 
     var allData = marketgdp.slice(rangeStart, rangeEnd).map(function(d) {
         return {
-            x: parseFloat(d.Market_cap_basic/d.GDP_spain),
+            x: parseFloat(d.Market_cap/d.GDP_spain),
             y: parseFloat(d.Average_risk),
             r: BUBBLE_SIZE,
             year: parseInt(d.Year)
