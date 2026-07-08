@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Capitalización mercado- Spain Housing</title>
+  <meta name="robots" content="follow, index" />
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spain Housing Observatory",
+    "url": "https://spainhousing.eu/"
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <!-- Calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
+  <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<br>
+<h1>Capitalización de mercado</h1>
+
+<div class="navbar">
+  <button onclick="window.location.href='../index.html'">Indicadores estadísticos 📉</button>
+  <button onclick="window.location.href='../barometer.html'">Barómetro de la vivienda 🌇</button>
+  <button onclick="window.location.href='../metodologia.html'">Metodología 📓</button>
+</div>
+<br>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
+<div id="chart-wrapper"><canvas id="bubbleChart"></canvas></div>
+<script src="../data/marketcapbubble.js"></script>
+
+<ul>
+<li>↑ <strong>Presión sobre la vivienda y magnitud</strong>, por año. Cuanto más arriba y a la derecha, más inestable y sobredimensionado está el inmobiliario; cuanto más abajo y a la izquierda, menos.
+    <ul>
+      <li><strong>Eje Y (arriba-abajo)</strong>: presión sobre la vivienda, valores del <a href="../barometer.html">Barómetro de la vivienda</a>.</li>
+      <li><strong>Eje X (izquierda-derecha)</strong>: ratio de bienes inmuebles/PIB.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Cálculo del valor de mercado:</h2>
+
+<div id="chart-wrapper"><canvas id="marketcap"></canvas></div>
+<script src="../data/marketcap.js"></script>
+
+<ul>
+<li>↑ <strong>Capitalización de los bienes inmuebles</strong> (<i>Market cap</i>), en euros, calculado de la siguiente manera:</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Market cap = (Nul × Rp) + (Ful × Up) + (Hp × Ha × D)</strong></th>
+      <th><strong>Market cap simplificado = (Hp × Ha × D)</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Suelo no urbano (Nul)</td>
+      <td>Precio medio de la vivienda (Hp)</td>
+    </tr>
+    <tr>
+      <td>Precio medio del suelo rústico (Rp)</td>
+      <td>Tamaño medio de la vivienda (Ha)</td>
+    </tr>
+    <tr>
+      <td>Suelo urbano libre (Ful)</td>
+      <td>Número de viviendas (D)</td>
+    </tr>
+    <tr>
+      <td>Precio medio del suelo urbano (Up)</td>
+    </tr>
+  </tbody>
+</table>
+
+<div id="chart-wrapper"><canvas id="marketgdp"></canvas></div>
+<script src="../data/marketgdp.js"></script>
+
+<ul>
+<li>↑ <strong>Ratio bienes inmuebles/PIB</strong>, la capitalización de mercado dividida entre el Producto Interior Bruto (PIB).</li>
+</ul>
+
+<h2>Fuente de los datos</h2>
+<ul>
+  <li>"Precio medio de la vivienda (Hp)", ver <a href="../posts/price.html">entrada</a></li>
+  <li>"Número de viviendas (D)", ver <a href="../posts/stock.html">entrada</a></li>
+  <li>El "Tamaño medio de la vivienda (Ha)" usado para todos los años es el publicado por el Censo de Viviendas de 2021, de 86 m² (<em>Censo de Viviendas, INE</em>): <a href="https://www.ine.es/Censo2021/Informe.do" target="_blank">Censo de Viviendas, INE</a></li>
+  <li>"Precio medio del suelo rústico (Rp)", <em>MITMA</em>: <a href="https://www.mapa.gob.es/es/estadistica/temas/estadisticas-agrarias/economia/tierra-precios" target="_blank">Enlace</a></li>
+  <li>"Suelo urbano libre (Ful)" y "Suelo no urbano (Nul)" del Atlas Urbano (<em>SIOSE, Estructura de las coberturas simples artificiales, MITMA</em>): <a href="http://atlasau.mitma.gob.es/#bbox=-1220276,5446287,1639151,1304442&c=indicator&i=siosim.siosim012&s=2014&view=map1" target="_blank">Enlace</a></li>
+  <li>"Precio medio del suelo urbano (Up)" (<em>Series estadísticas &gt; Precios del suelo &gt; 4.Precio medio del metro cuadrado de suelo urbano por comunidades autónomas y provincias</em>): <a href="https://www.mitma.gob.es/el-ministerio/informacion-estadistica/vivienda-y-actuaciones-urbanas/estadisticas/suelo/estadisticas-de-precios-de-suelo-urbano" target="_blank">Enlace</a></li>
+  <li>PIB de España (<em>Contabilidad nacional trimestral de España: principales agregados, INE): <a href="https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&cid=1254736164439&menu=resultados&idp=1254735576581" target="_blank">Enlace</a></li>
+</ul>
+<br>
+<!-- Footer-->
+<div id="footer">
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+</div>
+<br>
+</body>
+</html>
