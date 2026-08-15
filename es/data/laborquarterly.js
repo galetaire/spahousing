@@ -1,7 +1,7 @@
 //makeChart, calling the data and variables from the .csv file
 function makeChart(laborquarterly) {
   var rangeStart = 0;
-  var rangeEnd = new Date().getFullYear() - 1950;
+  var rangeEnd = new Date().getFullYear() - 1948;
   var rangeLabels = laborquarterly.map(function(d) { return d.Quarter}).slice(rangeStart, rangeEnd);
   var rangeOne = laborquarterly.map(function(d) { return d.Unemployment}).slice(rangeStart, rangeEnd);
   var rangeTwo = laborquarterly.map(function(d) { return d.HPI}).slice(rangeStart, rangeEnd);
@@ -49,8 +49,6 @@ function makeChart(laborquarterly) {
           }
         },
         yLeft: {
-          min: 80,
-          max: 200,
           type: 'linear',
           position: 'left',
           ticks: {
