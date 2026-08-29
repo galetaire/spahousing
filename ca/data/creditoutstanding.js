@@ -59,7 +59,7 @@ function makeChart(creditoutstanding) {
           grid: { drawOnChartArea: false },
           ticks: {
             callback: function(value) {
-              return Math.round(value / 1e9) + 'B';
+              return Math.round(value / 1e11) + 'e11';
             }
           }
         }
