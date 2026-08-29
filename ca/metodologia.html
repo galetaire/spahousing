@@ -27,20 +27,20 @@
     if (lang === 'es') {
       // Redirect to Spanish if not already there
       if (!currentPath.includes('/es/')) {
-        window.location.href = "/es/index.html";
+        window.location.href = "/es/metodologia.html";
       }
     }
     else if (lang === 'ca') {
       // Redirect to Catalan if not already there
       if (!currentPath.includes('/ca/')) {
-        window.location.href = "/ca/index.html";
+        window.location.href = "/ca/metodologia.html";
       }
     }
     else {
       // Default to English (root) if not already there
       // This checks that we aren't already at the root by making sure /es/ or /ca/ aren't present
       if (currentPath.includes('/es/') || currentPath.includes('/ca/')) {
-        window.location.href = "/index.html";
+        window.location.href = "/metodologia.html";
       }
     }
   }
