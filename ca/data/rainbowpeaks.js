@@ -122,7 +122,7 @@ function makeChart(rainbowpeaks) {
             const y = ctx.chart.data.labels[ctx.dataIndex];
             return (y === '1984' || y === '1996' || y === '2013')
               ? 3
-              : (y === '1975' || y === '1990' || y === '2007' || y === '2021')
+              : (y === '1975' || y === '1990' || y === '2007' || y === '2026')
                 ? 3
                 : 2;
           },
@@ -131,7 +131,7 @@ function makeChart(rainbowpeaks) {
             const y = ctx.chart.data.labels[ctx.dataIndex];
             return (y === '1984' || y === '1996' || y === '2013')
               ? 'rgba(19, 162, 173, 1)'
-              : (y === '1975' || y === '1990' || y === '2007' || y === '2021')
+              : (y === '1975' || y === '1990' || y === '2007' || y === '2026')
                 ? 'rgba(255, 0, 0, 1)'
                 : 'black';
           },
@@ -139,7 +139,7 @@ function makeChart(rainbowpeaks) {
             const y = ctx.chart.data.labels[ctx.dataIndex];
             return (y === '1984' || y === '1996' || y === '2013')
               ? 'rgba(19, 162, 173, 1)'
-              : (y === '1975' || y === '1990' || y === '2007' || y === '2021')
+              : (y === '1975' || y === '1990' || y === '2007' || y === '2026')
                 ? 'rgba(255, 0, 0, 1)'
                 : 'black';
           },

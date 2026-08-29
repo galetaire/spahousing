@@ -20,6 +20,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
   <link href="../styles/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -55,6 +56,24 @@
 <script src="../data/creditratio.js"></script>
 <ul>
   <li>↑ <strong>Ratio between mortgages and home sales</strong>: if the ratio is (x), it means there are (x) mortgages per each (1) home sales. This ratio hints the formation of credit bubbles.</li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="credittovalue"></canvas></div>
+<script src="../data/credittovalue.js"></script>
+<ul>
+  <li>↑ <strong>Loan to value, in percentage</strong>: the ratio between the average amount borrowed in a mortgage and the average purchase price of the property. If you buy a home valued at 200,000€ and borrow 140,000€, the LTV is 70. The higher it climbs, the more leveraged buyers become.</li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="creditoutstanding"></canvas></div>
+<script src="../data/creditoutstanding.js"></script>
+<ul>
+  <li>
+    ↑ <strong>Outstanding mortgage balance</strong>: amount of mortgage loans that remains unpaid.
+    <ul>
+      <li><strong>Left axis (line)</strong>: ratio between outstanding mortgage balance and GDP.</li>
+      <li><strong>Right axis (bars)</strong>: total outstanding mortgage balance in euros.</li>
+    </ul>
+  </li>
 </ul>
 
 <div id="chart-wrapper"><canvas id="typemortgage"></canvas></div>
@@ -93,6 +112,9 @@
   </li>
   <li>Mortgages constituted according to interest rate, Bank of Spain (<em>Tipo medio de los préstamos hipotecarios a más de 3 años para adquisición de vivienda libre &gt; Del conjunto de entidades de crédito</em>):
     <a href="https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/relacionados/tiposinteres/guia-textual/tiposinteresrefe/tabla_tipos_referencia_oficiales_mercado_hipotecario.html" target="_blank">Link</a>
+  </li>
+  <li>Outstanding mortgage balance, Bank of Spain (<em>Importe de los saldos vivos. Préstamos y créditos a hogares e ISFLSH y sociedades no financieras > Crédito a la vivienda > Total </em>):
+    <a href="https://www.bde.es/wbe/es/publicaciones/informacion-estadistica/boletin-estadistico/" target="_blank">Link</a>
   </li>
 </ul>
 <br>

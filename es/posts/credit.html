@@ -20,6 +20,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
   <link href="../../styles/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -57,6 +58,24 @@
   <li>↑ <strong>Ratio entre hipotecas y compraventas</strong>: si la ratio es (x), significa que hay (x) hipotecas por cada (1) compraventa. Esta ratio ayuda a intuir la formación de burbujas crediticias.</li>
 </ul>
 
+<div id="chart-wrapper"><canvas id="credittovalue"></canvas></div>
+<script src="../data/credittovalue.js"></script>
+<ul>
+<li>↑ <strong>Ratio préstamo-valor, en porcentaje</strong>: La relación entre el importe medio financiado en una hipoteca y el precio medio de compra del inmueble. Cuanto más alto es, más endeudados están los compradores.</li>
+</ul>
+
+<div id="chart-wrapper"><canvas id="creditoutstanding"></canvas></div>
+<script src="../data/creditoutstanding.js"></script>
+<ul>
+  <li>
+    ↑ <strong>Saldo vivo hipotecario</strong>: importe de los préstamos hipotecarios que queda pendiente de pago.
+        <ul>
+          <li><strong>Eje izquierdo (línea)</strong>: relación entre el saldo vivo hipotecario y el PIB.</li>
+          <li><strong>Eje derecho (barras)</strong>: saldo vivo hipotecario total, en euros.</li>
+    </ul>
+  </li>
+</ul>
+
 <div id="chart-wrapper"><canvas id="typemortgage"></canvas></div>
 <script src="../data/typemortgage.js"></script>
 <ul>
@@ -92,6 +111,9 @@
     <a href="https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&cid=1254736170236&menu=resultados&idp=1254735576606#!tabs-1254736169948" target="_blank">Enlace</a>
   </li>
   <li>Hipotecas constituidas según la tasa de interés, Banco de España (<em>Tipo medio de los préstamos hipotecarios a más de 3 años para adquisición de vivienda libre &gt; Del conjunto de entidades de crédito</em>): <a href="https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/relacionados/tiposinteres/guia-textual/tiposinteresrefe/tabla_tipos_referencia_oficiales_mercado_hipotecario.html" target="_blank">Enlace</a></li>
+  <li>Saldo vivo hipotecario, Banco de España (<em>Importe de los saldos vivos. Préstamos y créditos a hogares e ISFLSH y sociedades no financieras > Crédito a la vivienda > Total </em>):
+    <a href="https://www.bde.es/wbe/es/publicaciones/informacion-estadistica/boletin-estadistico/" target="_blank">Enlace</a>
+  </li>
 </ul>
 <br>
 <!-- Footer-->
