@@ -39,7 +39,6 @@
 
 <ul>
   <li><b>↑ Precio de compra desde 1985, en euros por metro cuadrado, según datos de notarios:</b> precio nominal, <a href="realprice.html">precio real</a> (ajustado a inflación, IPC Base 100 = 1985), e inflación acumulada.</li>
-  <li>Para visualizar los precios de una vivienda en <b>dólares, oro y bitcoin</b>, visitar esta <a href="money.html">entrada</a>.</li>
 </ul>
 
 <div id="chart-wrapper"><canvas id="ipvvr"></canvas></div>
@@ -47,6 +46,19 @@
 
 <ul>
   <li><b>↑ Índice Case-Shiller de vivienda (o IPVVR):</b> el índice se construye usando datos de viviendas que se han vendido al menos dos veces durante el periodo de estudio, usando así información de la misma muestra en dos momentos de tiempo distintos.</li>
+</ul>
+
+<canvas id="housecombined"></canvas>
+<script src="../data/housecombined.js"></script>
+
+<ul>
+  <li>
+    ↑ <strong>Precio en varias monedas (de una vivienda de 100m<sup>2</sup>)</strong>: el tipo de cambio usado en todos los casos es la media anual.
+    <ul>
+      <li><strong>Eje izquierdo:</strong> Precio en <strong style="color: rgba(68, 114, 196);">euros</strong>.</li>
+      <li><strong>Eje derecho:</strong> Precio en <strong style="color: rgb(84, 130, 52);">dólares</strong>; <strong style="color: rgb(146, 114, 6);">onzas de oro</strong>; o <strong style="color: rgb(209, 125, 0);">bitcoins</strong>.</li>
+    </ul>
+  </li>
 </ul>
 
 <h2>Evolución trimestral de los precios</h2>
@@ -84,6 +96,21 @@
   </li>
   <li>Precios de la vivienda según Idealista:
     <a href="https://www.idealista.com/sala-de-prensa/informes-precio-vivienda" target="_blank">Enlace</a>
+  </li>
+  <li>Media anual del tipo de cambio EUR/USD, Investing.com (<em>el euro se lanzó el 1 de enero de 1999 como moneda de 11 países de la Unión Europea, el tipo de cambio usado anterior a esta fecha es el ECU</em>):
+    <a href="https://www.investing.com/currencies/eur-usd-historical-data" target="_blank">Enlace</a>
+  </li>
+  <li>Precio del oro en euros (<em>Downloads, Gold price in a range of currencies since 1978 - XLSX</em>):
+    <a href="https://www.gold.org/goldhub/data/gold-prices#registration-type=facebook&just-verified=1" target="_blank">Enlace</a>
+  </li>
+  <li>Existencias de oro en circulación (<em>la tasa de inflación, es decir nuevas existencias añadidas a circulación, del oro ha sido del 1.7% desde 2010</em>):
+    <a href="https://www.gold.org/goldhub/data/how-much-gold" target="_blank">Enlace</a>
+  </li>
+  <li>Precio de bitcoin en euros, de 2015 en adelante (<em>Yahoo Finance, Bitcoin monthly close price EUR (BTC-EUR) - CoinMarketCap</em>):
+    <a href="https://finance.yahoo.com/quote/BTC-EUR/history?period1=1410912000&period2=1671753600&interval=1mo&filter=history&frequency=1mo&includeAdjustedClose=true" target="_blank">Enlace</a>
+  </li>
+  <li>Precio de bitcoin en euros antes de 2015. En 2010 (BTC = 0,11$, tipo de cambio = 0,70$/€), 2011 (BTC = 5,28$, tipo de cambio = 0,68$/€), 2012 (BTC = 7,76$, tipo de cambio = 0,71$/€), 2013 (BTC = 167,32$, tipo de cambio = 0,70$/€) y 2014 (BTC = 542,28$, tipo de cambio = 0,69$/€) (<em>Bitcoin Price Table, US dollars, 2010–2022 (Monthly)</em>):
+    <a href="https://www.in2013dollars.com/bitcoin-price" target="_blank">Enlace</a>
   </li>
 </ul>
 

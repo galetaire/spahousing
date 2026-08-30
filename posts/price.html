@@ -39,7 +39,6 @@
 
 <ul>
   <li><b>↑ House price since 1985, in euros per square meter, according to notaries:</b> nominal price, <a href="realprice.html">real price</a> (inflation-adjusted, CPI Base 100 = 1985), and accumulated inflation.</li>
-  <li>For an overview of housing prices in <b>dollars, gold and bitcoin</b>, see this <a href="money.html">entry</a>.</li>
 </ul>
 
 <div id="chart-wrapper"><canvas id="ipvvr"></canvas></div>
@@ -47,6 +46,19 @@
 
 <ul>
   <li><b>↑ Case-Shiller housing index (or IPVVR in Spain):</b> the index is constructed using data from those homes that have been sold at least twice within the study period, using information from the same units at two points in time.</li>
+</ul>
+
+<canvas id="housecombined"></canvas>
+<script src="../data/housecombined.js"></script>
+
+<ul>
+  <li>
+    ↑ <strong>Price in various currencies (for a 100m<sup>2</sup> house)</strong>: the rate used all times is the yearly average.
+    <ul>
+      <li><strong>Left axis:</strong> Price in <strong style="color: rgba(68, 114, 196);">euros</strong>.</li>
+      <li><strong>Right axis:</strong> Price in <strong style="color: rgb(84, 130, 52);">dollars</strong>; or <strong style="color: rgb(146, 114, 6);">ounces of gold</strong>; or <strong style="color: rgb(209, 125, 0);">bitcoins</strong>.</li>
+    </ul>
+  </li>
 </ul>
 
 <h2>Quarterly evolution of prices</h2>
@@ -85,9 +97,22 @@
   <li>Housing prices according to Idealista:
     <a href="https://www.idealista.com/sala-de-prensa/informes-precio-vivienda" target="_blank">Link</a>
   </li>
+  <li>Yearly average exchange rate EUR/USD, Investing.com (<em>the euro was launched by 11 EU countries as their new common currency on 1 January 1999, prior exchange rates is the ECU exchange rate</em>):
+    <a href="https://www.investing.com/currencies/eur-usd-historical-data" target="_blank">Link</a>
+  </li>
+  <li>Gold price in Euros (<em>Downloads, Gold price in a range of currencies since 1978 - XLSX</em>):
+    <a href="https://www.gold.org/goldhub/data/gold-prices#registration-type=facebook&just-verified=1" target="_blank">Link</a>
+  </li>
+  <li>Gold above-ground stocks (<em>Gold inflation rate has been around 1.7% since 2010</em>):
+    <a href="https://www.gold.org/goldhub/data/how-much-gold" target="_blank">Link</a>
+  </li>
+  <li>Bitcoin price in Euros, 2015 onward (<em>Yahoo Finance, Bitcoin monthly close price EUR (BTC-EUR) - CoinMarketCap</em>):
+    <a href="https://finance.yahoo.com/quote/BTC-EUR/history?period1=1410912000&period2=1671753600&interval=1mo&filter=history&frequency=1mo&includeAdjustedClose=true" target="_blank">Link</a>
+  </li>
+  <li>Bitcoin price in Euros prior to 2015 → 2010 (BTC price = 0.11$, exchange rate = 0.70$/€), 2011 (BTC price = 5.28$, exchange rate = 0.68$/€), 2012 (BTC price = 7.76$, exchange rate = 0.71$/€), 2013 (BTC price = 167.32$, exchange rate = 0.70$/€) and 2014 (BTC price = 542.28$, exchange rate = 0.69$/€) (<em>Bitcoin Price Table, US dollars, 2010–2022 (Monthly)</em>):
+    <a href="https://www.in2013dollars.com/bitcoin-price" target="_blank">Link</a>
+  </li>
 </ul>
-
-
 <br>
 <!-- Footer-->
 <div id="footer">

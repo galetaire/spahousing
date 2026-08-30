@@ -38,7 +38,6 @@
 
 <ul>
   <li><b>↑ Preu de compra des de 1985, en euros per metre quadrat, segons dades dels notaris:</b> preu nominal, <a href="../../posts/realprice.html">preu real</a> (ajustat a inflació, IPC Base 100 = 1985), e inflació acumulada.</li>
-  <li>Per a visualitzar els preus de l'habitatge en <b>dòlars, or i bitcoin</b>, visitar aquesta <a href="money.html">entrada</a>.</li>
 </ul>
 
 <div id="chart-wrapper"><canvas id="ipvvr"></canvas></div>
@@ -46,6 +45,19 @@
 
 <ul>
   <li><b>↑ Índex Case-Shiller d'habitatge (o IPVVR):</b> l'índex es construeix usant dades d'habitatges que s'han venut almenys dues vegades durant el període d'estudi, usant així informació de la mateixa mostra en dos moments de temps distints.</li>
+</ul>
+
+<canvas id="housecombined"></canvas>
+<script src="../data/housecombined.js"></script>
+
+<ul>
+  <li>
+    ↑ <strong>Preu en vàries monedes (d'un habitatge de 100m<sup>2</sup>)</strong>: el tipus de canvi emprat en tots els casos és la mitjana anual.
+    <ul>
+      <li><strong>Eix esquerra:</strong> Preu en <strong style="color: rgba(68, 114, 196);">euros</strong>.</li>
+      <li><strong>Eix dret:</strong> Preu en <strong style="color: rgb(84, 130, 52);">dòlars</strong>; <strong style="color: rgb(146, 114, 6);">unçes d'or</strong>; o <strong style="color: rgb(209, 125, 0);">bitcoins</strong>.</li>
+    </ul>
+  </li>
 </ul>
 
 <h2>Evolució trimestral dels preus</h2>
@@ -83,6 +95,21 @@
   </li>
   <li>Preus de l'habitatge segons Idealista:
     <a href="https://www.idealista.com/sala-de-prensa/informes-precio-vivienda" target="_blank">Enllaç</a>
+  </li>
+  <li>Mitjana anual del tipus de canvi EUR/USD, Investing.com (<em>l'euro es va llançar l'1 de gener de 1999 com a moneda d'11 països de la Unió Europea, el tipus de canvi usat anterior a aquesta data és l'ECU</em>):
+    <a href="https://www.investing.com/currencies/eur-usd-historical-data" target="_blank">Enllaç</a>
+  </li>
+  <li>Preu de l'or en euros (<em>Downloads, Gold price in a range of currencies since 1978 - XLSX</em>):
+    <a href="https://www.gold.org/goldhub/data/gold-prices#registration-type=facebook&just-verified=1" target="_blank">Enllaç</a>
+  </li>
+  <li>Existències d'or en circulació (<em>la taxa d'inflació, és a dir noves existències afegides a circulació, de l'or ha estat del 1.7% des de 2010</em>):
+    <a href="https://www.gold.org/goldhub/data/how-much-gold" target="_blank">Enllaç</a>
+  </li>
+  <li>Preu de bitcoin en euros, de 2015 en endavant (<em>Yahoo Finance, Bitcoin monthly close price EUR (BTC-EUR) - CoinMarketCap</em>):
+    <a href="https://finance.yahoo.com/quote/BTC-EUR/history?period1=1410912000&period2=1671753600&interval=1mo&filter=history&frequency=1mo&includeAdjustedClose=true" target="_blank">Enllaç</a>
+  </li>
+  <li>Preu de bitcoin en euros abans de 2015. En 2010 (BTC = 0,11$, tipus de canvi = 0,70$/€), 2011 (BTC = 5,28$, tipus de canvi = 0,68$/€), 2012 (BTC = 7,76$, tipus de canvi = 0,71$/€), 2013 (BTC = 167,32$, tipus de canvi = 0,70$/€) i 2014 (BTC = 542,28$, tipus de canvi = 0,69$/€) (<em>Bitcoin Price Table, US dollars, 2010–2022 (Monthly)</em>):
+    <a href="https://www.in2013dollars.com/bitcoin-price" target="_blank">Enllaç</a>
   </li>
 </ul>
 
