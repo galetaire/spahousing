@@ -10,7 +10,13 @@ The database can be found in [spahousing/public/docs/](https://github.com/galeta
   - [spain_stats_ods.ods](https://github.com/galetaire/spahousing/blob/main/public/docs/spain_stats_ods.ods)
   - [spain_stats_csv.csv](https://github.com/galetaire/spahousing/blob/main/public/docs/spain_stats_csv.csv)
 
-Full review and modification is better to be done in ``.ods``, since some indicators are originated from other internal indicators, and the formulas can only be seen and edited in the mentioned format. Alternatively, formulas and variable names can be consulted at the ``metadata.json`` file.
+Full review and modification is better to be done in ``.ods``, since some indicators are originated from other internal indicators, and the formulas can only be seen and edited in the mentioned format. Also, some simple formulas might be calculate on the fly at the chart code level, example:
+
+```
+var rangeOne = employed100.map(function(d) {return d.Employed_constr / d.Total_population * 100}).slice(rangeStart, rangeEnd);
+```
+
+Sources, formulas and variable names can be consulted at the ``metadata.json`` file.
 
 - [Metadata.json](https://github.com/galetaire/spahousing/raw/main/public/docs/metadata.json)
 
@@ -29,7 +35,7 @@ d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/
 
 # Contact
 
-You can reach me through X: [@HousingSpanish](https://x.com/HousingSpanish), or Reddit: [u/HousingSpanish](https://www.reddit.com/user/HousingSpanish/). To talk about the Spanish housing market join our reddit community: [r/SpainHousing](https://www.reddit.com/r/spainhousing/).
+You can reach me through X: [@HousingSpanish](https://x.com/HousingSpanish), Reddit: [u/HousingSpanish](https://www.reddit.com/user/HousingSpanish/), or email at spainhousing@yeilmail.com.
 
 # License
 
