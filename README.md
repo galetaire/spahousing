@@ -35,7 +35,7 @@ d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/
 
 # Contact
 
-You can reach me through X: [@HousingSpanish](https://x.com/HousingSpanish), Reddit: [u/HousingSpanish](https://www.reddit.com/user/HousingSpanish/), or email at spainhousing@yeilmail.com.
+You can reach me through email at <spainhousing@yeilmail.com>.
 
 # License
 
