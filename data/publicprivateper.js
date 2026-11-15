@@ -1,12 +1,12 @@
-//makeChart, calling the data and variables from the .csv file
+// Builds the chart from the rows of the dataset
 function makeChart(publicprivateper) {
-  var rangeStart = 91;
-  var rangeEnd = new Date().getFullYear() - 1899;
+  const rangeStart = 91;
+  const rangeEnd = new Date().getFullYear() - 1899;
   const filteredData = publicprivateper.slice(rangeStart, rangeEnd);
-  var rangeLabels = filteredData.map(function(d) { return d.Year; });
+  const rangeLabels = filteredData.map(function(d) { return d.Year; });
   const totals = filteredData.map(d => Number(d.Public_housing) + Number(d.Private_housing));
-  var rangeOne = filteredData.map((d, i) => totals[i] ? (Number(d.Public_housing) / totals[i]) * 100 : 0);
-  var rangeTwo = filteredData.map((d, i) => totals[i] ? (Number(d.Private_housing) / totals[i]) * 100 : 0);
+  const rangeOne = filteredData.map((d, i) => totals[i] ? (Number(d.Public_housing) / totals[i]) * 100 : 0);
+  const rangeTwo = filteredData.map((d, i) => totals[i] ? (Number(d.Private_housing) / totals[i]) * 100 : 0);
 
   Chart.defaults.font.size = 12;
   new Chart('publicprivateper', {
@@ -90,6 +90,6 @@ function makeChart(publicprivateper) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

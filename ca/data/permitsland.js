@@ -1,14 +1,14 @@
-//makeChart, calling the data and variables from the .csv file
+// Builds the chart from the rows of the dataset
 function makeChart(permitsland) {
-  var rangeStart = 91;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = permitsland.map(function(d) { return d.Year; }).slice(rangeStart, rangeEnd);
-  var rangeOne = permitsland.map(function(d) { return d.Building_permits}).slice(rangeStart, rangeEnd);
-  var rangeTwo = permitsland.map(function(d) { return d.Price_urban_land}).slice(rangeStart, rangeEnd);
+  const rangeStart = 91;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = permitsland.map(function(d) { return d.Year; }).slice(rangeStart, rangeEnd);
+  const rangeOne = permitsland.map(function(d) { return d.Building_permits}).slice(rangeStart, rangeEnd);
+  const rangeTwo = permitsland.map(function(d) { return d.Price_urban_land}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
 
-  var chart = new Chart('permitsland', {
+  const chart = new Chart('permitsland', {
     type: 'line',
     data: {
       labels: rangeLabels,
@@ -92,6 +92,6 @@ function makeChart(permitsland) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

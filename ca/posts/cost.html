@@ -22,6 +22,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
   <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+  <script src="../../scripts/site.js"></script>
 </head>
 <body>
 <br>
@@ -33,26 +34,26 @@
   <button onclick="window.location.href='../metodologia.html'">Metodologia 📓</button>
 </div>
 <br>
-<div id="chart-wrapper"><canvas id="costratio"></canvas></div>
+<div class="chart-wrapper"><canvas id="costratio"></canvas></div>
 <script src="../data/costratio.js"></script>
   <ul>
     <li><strong>↑ Ràtio entre el preu mitjà de l'habitatge i costs mitjans de construcció:</strong> si la ràtio és (x), significa que els habitatges es venen a (x) vegades el preu de producció.</li>
     <li>Una ràtio més alta indica que el sector de la construcció té uns marges de benefici més elevats. Cal assenyalar que una part significativa d'aquests marges de benefici corresponen en realitat a pagament d'imposts.</li>
   </ul>
 
-  <div id="chart-wrapper"><canvas id="costchange"></canvas></div>
+  <div class="chart-wrapper"><canvas id="costchange"></canvas></div>
   <script src="../data/costchange.js"></script>
   <ul>
     <li><strong>↑ Costs de producció (%):</strong> evolució any rere any dels costs de construcció.</li>
   </ul>
 
-  <div id="chart-wrapper"><canvas id="workersperunit"></canvas></div>
+  <div class="chart-wrapper"><canvas id="workersperunit"></canvas></div>
   <script src="../data/workersperunit.js"></script>
   <ul>
     <li><strong>↑ Ràtio de treballadors per habitatge construït:</strong> el gran canvi de tendència es deu a un canvi del negoci. La reforma és el negoci principal del sector, superant a la nova construcció.</li>
   </ul>
 
-  <div id="chart-wrapper"><canvas id="employed100"></canvas></div>
+  <div class="chart-wrapper"><canvas id="employed100"></canvas></div>
   <script src="../data/employed100.js"></script>
   <ul>
     <li><strong>↑ Nombre de treballadors ocupats en el sector de la construcció per cada 100 habitants</strong>.</li>
@@ -83,7 +84,7 @@
 <br>
 <!-- Footer-->
 <div id="footer">
-  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <span class="current-year"></span>. <img src="../../public/cc.svg" alt="Creative Commons" style="vertical-align: middle;" width="18"/> <img src="../../public/by.svg" alt="Attribution" style="vertical-align: middle;" width="18"/> <img src="../../public/sa.svg" alt="ShareAlike" style="vertical-align: middle;" width="18"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 </div>
 <br>
 </body>

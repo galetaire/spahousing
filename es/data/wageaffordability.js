@@ -1,11 +1,11 @@
 function makeChart(wageaffordability) {
-  var rangeStart = 99;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = wageaffordability.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = wageaffordability.map(function(d) {return d.Housing_affordability}).slice(rangeStart, rangeEnd);
+  const rangeStart = 99;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = wageaffordability.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = wageaffordability.map(function(d) {return d.Housing_affordability}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
-  var chart = new Chart('wageaffordability', {
+  const chart = new Chart('wageaffordability', {
     type: 'line',
     data: {
       labels: rangeLabels,
@@ -74,6 +74,6 @@ function makeChart(wageaffordability) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

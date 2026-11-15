@@ -2,13 +2,13 @@ function makeChart(ipvvr) {
   // Register the plugin
   Chart.register(ChartDataLabels);
 
-  var rangeStart = 94;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = ipvvr.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = ipvvr.map(function(d) {return d.Price_IPVVR}).slice(rangeStart, rangeEnd);
+  const rangeStart = 94;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = ipvvr.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = ipvvr.map(function(d) {return d.Price_IPVVR}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
-  var chart = new Chart('ipvvr', {
+  const chart = new Chart('ipvvr', {
     type: 'line',
     data: {
       labels: rangeLabels,
@@ -64,6 +64,6 @@ function makeChart(ipvvr) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

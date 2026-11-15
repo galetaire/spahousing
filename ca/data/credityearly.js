@@ -1,16 +1,16 @@
-//makeChart, calling the data and variables from the .csv file
+// Builds the chart from the rows of the dataset
 function makeChart(credityearly) {
-  var rangeStart = 95;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = credityearly.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = credityearly.map(function(d) {return d.Population_25_50 / 26}).slice(rangeStart, rangeEnd);
-  var rangeTwo = credityearly.map(function(d) {return d.Population_25_50 / 26 / 2}).slice(rangeStart, rangeEnd);
-  var rangeTres = credityearly.map(function(d) {return d.Population_25_50 / 26 / 1.33333}).slice(rangeStart, rangeEnd);
-  var rangeThree = credityearly.map(function(d) {return d.Approved}).slice(rangeStart, rangeEnd);
-  var rangeFour = credityearly.map(function(d) {return d.Releases}).slice(rangeStart, rangeEnd);
+  const rangeStart = 95;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = credityearly.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = credityearly.map(function(d) {return d.Population_25_50 / 26}).slice(rangeStart, rangeEnd);
+  const rangeTwo = credityearly.map(function(d) {return d.Population_25_50 / 26 / 2}).slice(rangeStart, rangeEnd);
+  const rangeTres = credityearly.map(function(d) {return d.Population_25_50 / 26 / 1.33333}).slice(rangeStart, rangeEnd);
+  const rangeThree = credityearly.map(function(d) {return d.Approved}).slice(rangeStart, rangeEnd);
+  const rangeFour = credityearly.map(function(d) {return d.Releases}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
-  var chart = new Chart('credityearly', {
+  const chart = new Chart('credityearly', {
     options: {
       responsive: true,
       scales: {
@@ -113,6 +113,6 @@ function makeChart(credityearly) {
   })
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

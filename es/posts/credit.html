@@ -22,6 +22,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
   <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+  <script src="../../scripts/site.js"></script>
 </head>
 <body>
 <br>
@@ -34,14 +35,14 @@
 </div>
 <br>
 
-<div id="chart-wrapper"><canvas id="credityearly"></canvas></div>
+<div class="chart-wrapper"><canvas id="credityearly"></canvas></div>
 <script src="../data/credityearly.js"></script>
 <ul>
   <li>↑ <strong>Evolución anual de las hipotecas</strong>, número total de hipotecas aprobadas y canceladas.</li>
   <li>Destacar que por ley, las cancelaciones no están obligadas a registrarse en el registro de la propiedad en el momento de cancelación. Estimamos que un 35% de las cancelaciones de hipoteca no se llegan a registrar.</li>
 </ul>
 
-<div id="chart-wrapper"><canvas id="creditmovement"></canvas></div>
+<div class="chart-wrapper"><canvas id="creditmovement"></canvas></div>
 <script src="../data/creditmovement.js"></script>
 <ul>
   <li>↑ <strong>Movimiento del crédito e importe de las hipotecas</strong>.
@@ -52,19 +53,19 @@
   </li>
 </ul>
 
-<div id="chart-wrapper"><canvas id="creditratio"></canvas></div>
+<div class="chart-wrapper"><canvas id="creditratio"></canvas></div>
 <script src="../data/creditratio.js"></script>
 <ul>
   <li>↑ <strong>Ratio entre hipotecas y compraventas</strong>: si la ratio es (x), significa que hay (x) hipotecas por cada (1) compraventa. Esta ratio ayuda a intuir la formación de burbujas crediticias.</li>
 </ul>
 
-<div id="chart-wrapper"><canvas id="credittovalue"></canvas></div>
+<div class="chart-wrapper"><canvas id="credittovalue"></canvas></div>
 <script src="../data/credittovalue.js"></script>
 <ul>
 <li>↑ <strong>Ratio préstamo-valor, en porcentaje</strong>: La relación entre el importe medio financiado en una hipoteca y el precio medio de compra del inmueble. Cuanto más alto es, más endeudados están los compradores.</li>
 </ul>
 
-<div id="chart-wrapper"><canvas id="creditoutstanding"></canvas></div>
+<div class="chart-wrapper"><canvas id="creditoutstanding"></canvas></div>
 <script src="../data/creditoutstanding.js"></script>
 <ul>
   <li>
@@ -76,7 +77,7 @@
   </li>
 </ul>
 
-<div id="chart-wrapper"><canvas id="typemortgage"></canvas></div>
+<div class="chart-wrapper"><canvas id="typemortgage"></canvas></div>
 <script src="../data/typemortgage.js"></script>
 <ul>
   <li>↑ <strong>Hipotecas constituidas según el tipo de interés (%)</strong>: fijo o variable.</li>
@@ -118,7 +119,7 @@
 <br>
 <!-- Footer-->
 <div id="footer">
-  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <span class="current-year"></span>. <img src="../../public/cc.svg" alt="Creative Commons" style="vertical-align: middle;" width="18"/> <img src="../../public/by.svg" alt="Attribution" style="vertical-align: middle;" width="18"/> <img src="../../public/sa.svg" alt="ShareAlike" style="vertical-align: middle;" width="18"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 </div>
 <br>
 </body>

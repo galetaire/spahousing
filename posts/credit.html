@@ -22,6 +22,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
   <link href="../styles/style.css" rel="stylesheet" type="text/css">
+  <script src="../scripts/site.js"></script>
 </head>
 <body>
 <br>
@@ -34,14 +35,14 @@
 </div>
 <br>
 
-<div id="chart-wrapper"><canvas id="credityearly"></canvas></div>
+<div class="chart-wrapper"><canvas id="credityearly"></canvas></div>
 <script src="../data/credityearly.js"></script>
 <ul>
   <li>↑ <strong>Annual evolution of mortgages</strong>, total number of mortgages approved and released.</li>
   <li>Note that releases are not required by law to be registered at the Land Registry. We approximate that about 35% of mortgage releases are not registered.</li>
 </ul>
 
-<div id="chart-wrapper"><canvas id="creditmovement"></canvas></div>
+<div class="chart-wrapper"><canvas id="creditmovement"></canvas></div>
 <script src="../data/creditmovement.js"></script>
 <ul>
   <li>↑ <strong>Real credit movement and mortgages amount</strong>.
@@ -52,19 +53,19 @@
   </li>
 </ul>
 
-<div id="chart-wrapper"><canvas id="creditratio"></canvas></div>
+<div class="chart-wrapper"><canvas id="creditratio"></canvas></div>
 <script src="../data/creditratio.js"></script>
 <ul>
   <li>↑ <strong>Ratio between mortgages and home sales</strong>: if the ratio is (x), it means there are (x) mortgages per each (1) home sales. This ratio hints the formation of credit bubbles.</li>
 </ul>
 
-<div id="chart-wrapper"><canvas id="credittovalue"></canvas></div>
+<div class="chart-wrapper"><canvas id="credittovalue"></canvas></div>
 <script src="../data/credittovalue.js"></script>
 <ul>
   <li>↑ <strong>Loan to value, in percentage</strong>: the ratio between the average amount borrowed in a mortgage and the average purchase price of the property. If you buy a home valued at 200,000€ and borrow 140,000€, the LTV is 70. The higher it climbs, the more leveraged buyers become.</li>
 </ul>
 
-<div id="chart-wrapper"><canvas id="creditoutstanding"></canvas></div>
+<div class="chart-wrapper"><canvas id="creditoutstanding"></canvas></div>
 <script src="../data/creditoutstanding.js"></script>
 <ul>
   <li>
@@ -76,7 +77,7 @@
   </li>
 </ul>
 
-<div id="chart-wrapper"><canvas id="typemortgage"></canvas></div>
+<div class="chart-wrapper"><canvas id="typemortgage"></canvas></div>
 <script src="../data/typemortgage.js"></script>
 <ul>
   <li>↑ <strong>Mortgages constituted according to type of interest rate (%)</strong>: fixed or variable.</li>
@@ -120,7 +121,7 @@
 <br>
 <!-- Footer-->
 <div id="footer">
-  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <span class="current-year"></span>. <img src="../public/cc.svg" alt="Creative Commons" style="vertical-align: middle;" width="18"/> <img src="../public/by.svg" alt="Attribution" style="vertical-align: middle;" width="18"/> <img src="../public/sa.svg" alt="ShareAlike" style="vertical-align: middle;" width="18"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 </div>
 <br>
 </body>

@@ -22,6 +22,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
   <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+  <script src="../../scripts/site.js"></script>
 </head>
 <body>
 <br>
@@ -35,7 +36,7 @@
 </div>
 <br>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
-<div id="chart-wrapper"><canvas id="bubbleChart"></canvas></div>
+<div class="chart-wrapper"><canvas id="bubbleChart"></canvas></div>
 <script src="../data/marketcapbubble.js"></script>
 
 <ul>
@@ -49,7 +50,7 @@
 
 <h2>Cálculo del valor de mercado:</h2>
 
-<div id="chart-wrapper"><canvas id="marketcap"></canvas></div>
+<div class="chart-wrapper"><canvas id="marketcap"></canvas></div>
 <script src="../data/marketcap.js"></script>
 
 <ul>
@@ -82,7 +83,7 @@
   </tbody>
 </table>
 
-<div id="chart-wrapper"><canvas id="marketgdp"></canvas></div>
+<div class="chart-wrapper"><canvas id="marketgdp"></canvas></div>
 <script src="../data/marketgdp.js"></script>
 
 <ul>
@@ -102,7 +103,7 @@
 <br>
 <!-- Footer-->
 <div id="footer">
-  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <span class="current-year"></span>. <img src="../../public/cc.svg" alt="Creative Commons" style="vertical-align: middle;" width="18"/> <img src="../../public/by.svg" alt="Attribution" style="vertical-align: middle;" width="18"/> <img src="../../public/sa.svg" alt="ShareAlike" style="vertical-align: middle;" width="18"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 </div>
 <br>
 </body>

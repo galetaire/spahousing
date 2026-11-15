@@ -21,6 +21,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
   <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+  <script src="../../scripts/site.js"></script>
 </head>
 <body>
 <br>
@@ -33,7 +34,7 @@
 </div>
 <br>
 <p style="font-size: 14px; font-style: italic;">L'indicador ha d'entendre's com una cosa experimental, podent tenir errors o no ser representatiu.</p>
-<div id="chart-wrapper" style="border-radius:12px; overflow:hidden; display:inline-block;">
+<div class="chart-wrapper" style="border-radius:12px; overflow:hidden; display:inline-block;">
 <canvas id="rainbow" width="700" height="375"></canvas></div>
 <script src="../data/rainbow.js"></script>
 
@@ -49,7 +50,7 @@
 
 <h2>Gràfica de pics i valls:</h2>
 <p><strong style="color: rgba(250, 0, 0);">Vermell</strong> = anys pic del cicle; <strong style="color: rgba(19, 162, 173);">Blau</strong> = anys vall del cicle.</p>
-<div id="chart-wrapper" style="border-radius:12px; overflow:hidden; display:inline-block;">
+<div class="chart-wrapper" style="border-radius:12px; overflow:hidden; display:inline-block;">
 <canvas id="rainbowpeaks" width="700" height="375"></canvas></div>
 <script src="../data/rainbowpeaks.js"></script>
 
@@ -66,7 +67,7 @@
 <p>
   <img src="https://math.vercel.app/?bgcolor=auto&from=Corba%5C%3Aarc%20%3D-0%2C06%5E2%2B8%2C5x%2B145%0A%0A%0A.svg" alt="Fórmula de curva en arcoiris"/> _____ <img src="https://math.vercel.app/?bgcolor=auto&from=Corba%5C%3Ademografica%20%3D-1583%2C7x%5E2%2B195013x%2B1e07%0A.svg" alt="Fórmula de la curva demográfica"/>
 </p>
-<div id="chart-wrapper"><canvas id="rainbowsource"></canvas></div>
+<div class="chart-wrapper"><canvas id="rainbowsource"></canvas></div>
 <script src="../data/rainbowsource.js"></script>
 
 <h2>Font de les dades</h2>
@@ -92,7 +93,7 @@
 <br>
 <!-- Footer-->
 <div id="footer">
-  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <span class="current-year"></span>. <img src="../../public/cc.svg" alt="Creative Commons" style="vertical-align: middle;" width="18"/> <img src="../../public/by.svg" alt="Attribution" style="vertical-align: middle;" width="18"/> <img src="../../public/sa.svg" alt="ShareAlike" style="vertical-align: middle;" width="18"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 </div>
 <br>
 </body>

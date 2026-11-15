@@ -1,4 +1,4 @@
-// Create the tooltip only ONCE and make it available to all gauges.
+// A single tooltip shared by all gauges.
 const tooltip = d3.select("body").append("div")
     .attr("id", "tooltip")
     .style("position", "absolute")
@@ -22,18 +22,18 @@ function createGauge(containerId, value, data) {
     const height = 170;
     const radius = Math.min(width, height * 2) / 2;
 
-    const svg = d3.select(containerId) // Use the containerId parameter
+    const svg = d3.select(containerId)
         .attr("width", width)
         .attr("height", height);
 
-    // Clear previous gauge content if any
+    // Clear any previous gauge drawn in this SVG
     svg.selectAll("*").remove();
 
     const g = svg.append("g")
         .attr("transform", `translate(${width / 2}, ${height - 15})`);
 
     const arcGenerator = d3.arc()
-        .innerRadius(radius - 40) // Adjusted for better proportions
+        .innerRadius(radius - 40)
         .outerRadius(radius)
         .padAngle(0.01);
 
@@ -43,7 +43,7 @@ function createGauge(containerId, value, data) {
 
     let startAngle = -90;
     g.selectAll("path")
-        .data(data) // Use the data parameter
+        .data(data)
         .enter().append("path")
         .attr("fill", d => d.color)
         .attr("d", d => {
@@ -74,12 +74,12 @@ function createGauge(containerId, value, data) {
         .transition()
         .duration(1000)
         .ease(d3.easeCubicOut)
-        .attr("transform", `rotate(${angleScale(value)})`); // Use the value parameter
+        .attr("transform", `rotate(${angleScale(value)})`);
 
     g.append("circle")
         .attr("cx", 0)
         .attr("cy", 0)
-        .attr("r", 35) // Adjusted for better proportions
+        .attr("r", 35)
         .attr("fill", "white")
         .attr("stroke", "black")
         .attr("stroke-width", 0);
@@ -90,10 +90,10 @@ function createGauge(containerId, value, data) {
         .attr("y", -8)
         .style("font-size", "22px")
         .style("font-weight", "bold")
-        .text(value); // Use the value parameter
+        .text(value);
 
     let currentRange = 0;
-    const category = data.find(d => { // Use the data parameter
+    const category = data.find(d => {
         currentRange += d.value;
         return value <= currentRange;
     });

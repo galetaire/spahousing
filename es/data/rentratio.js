@@ -1,12 +1,12 @@
 function makeChart(rentratio) {
-  var rangeStart = 107;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = rentratio.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = rentratio.map(function(d) {return Number (100 / d.Rent_ROI_net)}).slice(rangeStart, rangeEnd);
-  var rangeTwo = rentratio.map(function(d) {return Number (100 / d.Rent_ROI_gross)}).slice(rangeStart, rangeEnd);
+  const rangeStart = 107;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = rentratio.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = rentratio.map(function(d) {return Number (100 / d.Rent_ROI_net)}).slice(rangeStart, rangeEnd);
+  const rangeTwo = rentratio.map(function(d) {return Number (100 / d.Rent_ROI_gross)}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
-  var chart = new Chart('rentratio', {
+  const chart = new Chart('rentratio', {
     type: 'line',
     data: {
       labels: rangeLabels,
@@ -88,6 +88,6 @@ function makeChart(rentratio) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

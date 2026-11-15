@@ -2,14 +2,14 @@ function makeChart(rentbuy) {
   // Register the plugin
   Chart.register(ChartDataLabels);
 
-  var rangeStart = 107;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = rentbuy.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = rentbuy.map(function(d) {return d.Idealista_mortgage_86m}).slice(rangeStart, rangeEnd);
-  var rangeTwo = rentbuy.map(function(d) {return d.Idealista_rent_86m}).slice(rangeStart, rangeEnd);
+  const rangeStart = 107;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = rentbuy.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = rentbuy.map(function(d) {return d.Idealista_mortgage_86m}).slice(rangeStart, rangeEnd);
+  const rangeTwo = rentbuy.map(function(d) {return d.Idealista_rent_86m}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
-  var chart = new Chart('rentbuy', {
+  const chart = new Chart('rentbuy', {
     type: 'line',
     data: {
       labels: rangeLabels,
@@ -77,6 +77,6 @@ function makeChart(rentbuy) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

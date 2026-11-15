@@ -2,14 +2,14 @@ function makeChart(wageyearly) {
   // Register the plugin
   Chart.register(ChartDataLabels);
 
-  var rangeStart = 99;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = wageyearly.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = wageyearly.map(function(d) {return d.Price_IPVVR}).slice(rangeStart, rangeEnd);
-  var rangeTwo = wageyearly.map(function(d) {return d.Wage_norm_IPVVR}).slice(rangeStart, rangeEnd);
+  const rangeStart = 99;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = wageyearly.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = wageyearly.map(function(d) {return d.Price_IPVVR}).slice(rangeStart, rangeEnd);
+  const rangeTwo = wageyearly.map(function(d) {return d.Wage_norm_IPVVR}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
-  var chart = new Chart('wageyearly', {
+  const chart = new Chart('wageyearly', {
     type: 'line',
     data: {
       labels: rangeLabels,
@@ -77,6 +77,6 @@ function makeChart(wageyearly) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

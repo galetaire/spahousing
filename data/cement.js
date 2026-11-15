@@ -1,10 +1,10 @@
-//makeChart, calling the data and variables from the .csv file
+// Builds the chart from the rows of the dataset
 function makeChart(cement) {
-  var rangeStart = 64;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = cement.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = cement.map(function(d) {return d.Real_price_over}).slice(rangeStart, rangeEnd);
-  var rangeTwo = cement.map(function(d) {return d.Cement_mt}).slice(rangeStart, rangeEnd);
+  const rangeStart = 64;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = cement.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = cement.map(function(d) {return d.Real_price_over}).slice(rangeStart, rangeEnd);
+  const rangeTwo = cement.map(function(d) {return d.Cement_mt}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
   new Chart('cement', {
@@ -94,6 +94,6 @@ function makeChart(cement) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

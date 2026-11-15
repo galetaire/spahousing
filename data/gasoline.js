@@ -2,14 +2,14 @@ function makeChart(gasoline) {
   // Register the plugin
   Chart.register(ChartDataLabels);
 
-  var rangeStart = 90;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = gasoline.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = gasoline.map(function(d) {return d.Spain_gasoline_litre_usd}).slice(rangeStart, rangeEnd);
-  var rangeTwo = gasoline.map(function(d) {return d.US_gasoline_litre_usd}).slice(rangeStart, rangeEnd);
+  const rangeStart = 90;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = gasoline.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = gasoline.map(function(d) {return d.Spain_gasoline_litre_usd}).slice(rangeStart, rangeEnd);
+  const rangeTwo = gasoline.map(function(d) {return d.US_gasoline_litre_usd}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
-  var chart = new Chart('gasoline', {
+  const chart = new Chart('gasoline', {
     type: 'line',
     data: {
       labels: rangeLabels,
@@ -97,6 +97,6 @@ function makeChart(gasoline) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

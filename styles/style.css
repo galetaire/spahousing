@@ -31,41 +31,14 @@ a:visited {
   color: #045DBF;
 }
 
-#title {
-  text-align: left;
-  padding: 30px 0;
-  font-size: 28px;
-  letter-spacing: -0.01em;
-  color: #333;
-}
-
-#legend {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  padding: 0 10px 10px;
-  font-size: 12px;
-}
-
-#legend .item {
-  line-height: 12px;
-  padding: 0 10px 0 4px;
-}
-
-#legend .item.male {
-  border-left: 12px solid #19A0AA;
-}
-
-#legend .item.female {
-  border-left: 12px solid #F15F36;
-}
-
-#chart-wrapper {
+/* Charts */
+.chart-wrapper {
   width: 100%;
   max-width: 100%;
   overflow-x: auto;
 }
 
+/* Footer */
 #footer {
   text-align: center;
   font-size: 14px;
@@ -76,6 +49,7 @@ a:visited {
   color: #383838;
 }
 
+/* Tables */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -136,6 +110,7 @@ td a:hover {
   background-color: #e6e6e6;
 }
 
+/* Language switcher */
 .lang-switcher {
   position: absolute;
   top: 10px;
@@ -156,16 +131,17 @@ td a:hover {
   background-color: #0056b3;
 }
 
+/* Barometer gauges */
 .gauge-container {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Align to the top */
+  align-items: flex-start;
   flex-wrap: wrap;
-  gap: 30px; /* Add space between gauges */
+  gap: 30px;
 }
 
 .gauge-wrapper {
-  text-align: center; /* Center the title and gauge */
+  text-align: center;
 }
 
 .gauge-wrapper h3 {
@@ -174,20 +150,20 @@ td a:hover {
   font-weight: bold;
 }
 
+/* Two equal columns of text */
 .column-container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Defines two columns of equal fraction (width) */
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
-/* Mobile Responsiveness */
+/* Mobile */
 @media (max-width: 768px) {
   html {
     font-size: 15px;
   }
 
   body {
-    width: 100%;
     padding: 10px;
   }
 
@@ -200,23 +176,12 @@ td a:hover {
     font-size: 20px;
   }
 
-  .navbar {
-    display: flex;
-    flex-wrap: wrap;       /* allows wrapping if needed on smaller screens */
-    justify-content: flex-start;
-  }
-
   .navbar button {
-    font-size: 14.5px;        /* a little larger for readability */
+    font-size: 14.5px;
     padding: 0px 8px;
-    width: auto;            /* don’t force full width */
   }
 
   table {
     font-size: 14px;
-  }
-
-  #title {
-    font-size: 24px;
   }
 }

@@ -1,7 +1,5 @@
 function makeChart(laboryearly) {
-  // Register the plugin
-
-  //getGradient, used in the Euribor label
+  // Line colour: green at the bottom, orange in the middle, red at the top
   let width, height, gradient;
   function getGradient(ctx, chartArea) {
     const { top: chartTop, bottom: chartBottom, width: chartWidth } = chartArea;
@@ -12,7 +10,7 @@ function makeChart(laboryearly) {
       width  = chartWidth;
       height = chartHeight;
       gradient = ctx.createLinearGradient(0, chartBottom, 0, chartTop);
-      // your 4 (or more!) colors:
+      // Colours from bottom to top
       const colors = ['rgba(0, 204, 153)', 'rgba(255,153,0)', 'rgb(196, 30, 58)'];
       // evenly space them from bottom (0) to top (1)
       colors.forEach((color, i) => {
@@ -23,7 +21,7 @@ function makeChart(laboryearly) {
     return gradient;
   }
 
-  // --- NEW: plugin that shades the zone between Y=0 and Y=–15 on the RIGHT axis ---
+  // Plugin that shades the zone between Y=0 and Y=–15 on the RIGHT axis ---
   const shadeZonePlugin = {
     id: 'shadeZone',
     beforeDraw(chart, args, options) {
@@ -41,14 +39,14 @@ function makeChart(laboryearly) {
     }
   };
 
-  var rangeStart = 86;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = laboryearly.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = laboryearly.map(function(d) {return d.Unemployment_yoy_per}).slice(rangeStart, rangeEnd);
-  var rangeTwo = laboryearly.map(function(d) {return d.Nominal_price_yoy_per}).slice(rangeStart, rangeEnd);
+  const rangeStart = 86;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = laboryearly.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = laboryearly.map(function(d) {return d.Unemployment_yoy_per}).slice(rangeStart, rangeEnd);
+  const rangeTwo = laboryearly.map(function(d) {return d.Nominal_price_yoy_per}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 11;
-  var chart = new Chart('laboryearly', {
+  let chart = new Chart('laboryearly', {
     type: 'line',
     data: {
       labels: rangeLabels,
@@ -177,6 +175,6 @@ function makeChart(laboryearly) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

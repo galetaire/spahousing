@@ -28,31 +28,7 @@
   <!-- Calls -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="../styles/style.css" rel="stylesheet" type="text/css">
-  <script>
-  function setLanguage(lang) {
-    const currentPath = window.location.pathname;
-
-    if (lang === 'es') {
-      // Redirect to Spanish if not already there
-      if (!currentPath.includes('/es/')) {
-        window.location.href = "/es/index.html";
-      }
-    }
-    else if (lang === 'ca') {
-      // Redirect to Catalan if not already there
-      if (!currentPath.includes('/ca/')) {
-        window.location.href = "/ca/index.html";
-      }
-    }
-    else {
-      // Default to English (root) if not already there
-      // This checks that we aren't already at the root by making sure /es/ or /ca/ aren't present
-      if (currentPath.includes('/es/') || currentPath.includes('/ca/')) {
-        window.location.href = "/index.html";
-      }
-    }
-  }
-  </script>
+  <script src="../scripts/site.js"></script>
 </head>
 <body>
 <br>
@@ -76,8 +52,6 @@
 
 <h2>Indicadors</h2>
   <table>
-    <thead>
-    </thead>
     <tbody>
       <tr><td>1. Preu</td><td>➞ <a href="posts/price.html">Accedeix</a></td></tr>
       <tr><td>2. Lloguer</td><td>➞ <a href="posts/rent.html">Accedeix</a></td></tr>
@@ -97,8 +71,6 @@
 
   <h2>Models</h2>
   <table>
-    <thead>
-    </thead>
     <tbody>
       <tr><td>14. Multivariable</td><td>➞ <a href="posts/multivariate.html">Accedeix</a></td></tr>
       <tr><td>15. Cicles del preu</td><td>➞ <a href="posts/rainbow.html">Accedeix</a></td></tr>
@@ -107,12 +79,12 @@
   </table>
 
 <p>Repositori disponible a <a href="https://github.com/galetaire/spahousing" target="_blank" rel="noopener noreferrer">
-  GitHub <img src="../images/github-mark.svg" alt="GitHub" style="vertical-align: middle;" width="16px"/>
+  GitHub <img src="../images/github-mark.svg" alt="GitHub" style="vertical-align: middle;" width="16"/>
 </a>. Correu de contacte <a href="mailto:spainhousing@yeilmail.com">spainhousing@yeilmail.com</a> 📬.</p>
 <br>
 <!-- Footer-->
 <div id="footer">
-  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <span class="current-year"></span>. <img src="../public/cc.svg" alt="Creative Commons" style="vertical-align: middle;" width="18"/> <img src="../public/by.svg" alt="Attribution" style="vertical-align: middle;" width="18"/> <img src="../public/sa.svg" alt="ShareAlike" style="vertical-align: middle;" width="18"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 </div>
 <br>
 </body>

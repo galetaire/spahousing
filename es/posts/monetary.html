@@ -21,6 +21,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
   <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+  <script src="../../scripts/site.js"></script>
 </head>
 <body>
 <br>
@@ -32,13 +33,13 @@
   <button onclick="window.location.href='../metodologia.html'">Metodología 📓</button>
 </div>
 <br>
-<div id="chart-wrapper"><canvas id="euribor"></canvas></div>
+<div class="chart-wrapper"><canvas id="euribor"></canvas></div>
 <script src="../data/euribor.js"></script>
   <ul>
     <li>↑ <strong>Euríbor a 1 año y tipo de interés medio de las hipotecas</strong>. Un incremento (o decremento) del euríbor implica incremento (o decremento) de los tipos de interés, que alteran la dirección y velocidad del dinero.</li>
   </ul>
 
-  <div id="chart-wrapper"><canvas id="pricemoneypolicy"></canvas></div>
+  <div class="chart-wrapper"><canvas id="pricemoneypolicy"></canvas></div>
   <script src="../data/pricemoneypolicy.js"></script>
   <ul>
     <li>
@@ -50,7 +51,7 @@
     </li>
   </ul>
 
-  <div id="chart-wrapper"><canvas id="moneygrowth"></canvas></div>
+  <div class="chart-wrapper"><canvas id="moneygrowth"></canvas></div>
   <script src="../data/moneygrowth.js"></script>
   <ul>
     <li>↑ <strong>Crecimiento del stock monetario en comparación con el de viviendas (%)</strong>. Si la masa monetaria del euro o la población crece más rápido que el parque de viviendas, las viviendas se convierten en un bien más escaso, pudiendo empujar al alza los precios de la vivienda.</li>
@@ -87,7 +88,7 @@
 <br>
 <!-- Footer-->
 <div id="footer">
-  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <span class="current-year"></span>. <img src="../../public/cc.svg" alt="Creative Commons" style="vertical-align: middle;" width="18"/> <img src="../../public/by.svg" alt="Attribution" style="vertical-align: middle;" width="18"/> <img src="../../public/sa.svg" alt="ShareAlike" style="vertical-align: middle;" width="18"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 </div>
 <br>
 </body>

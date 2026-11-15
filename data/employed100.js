@@ -1,9 +1,9 @@
-//makeChart, calling the data and variables from the .csv file
+// Builds the chart from the rows of the dataset
 function makeChart(employed100) {
-  var rangeStart = 90;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = employed100.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = employed100.map(function(d) {return d.Employed_constr / d.Total_population * 100}).slice(rangeStart, rangeEnd);
+  const rangeStart = 90;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = employed100.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = employed100.map(function(d) {return d.Employed_constr / d.Total_population * 100}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 11;
   new Chart('employed100', {
@@ -75,6 +75,6 @@ function makeChart(employed100) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

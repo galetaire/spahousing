@@ -1,10 +1,10 @@
-//makeChart, calling the data and variables from the .csv file
+// Builds the chart from the rows of the dataset
 function makeChart(roinet) {
-  var rangeStart = 86;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = roinet.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = roinet.map(function(d) {return d.Inflation_CPI}).slice(rangeStart, rangeEnd);
-  var rangeTwo = roinet.map(function(d) {return Number((100 / d.Rent_ROI_net)) + Number(d.Nominal_price_yoy_per)}).slice(rangeStart, rangeEnd);
+  const rangeStart = 86;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = roinet.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = roinet.map(function(d) {return d.Inflation_CPI}).slice(rangeStart, rangeEnd);
+  const rangeTwo = roinet.map(function(d) {return Number((100 / d.Rent_ROI_net)) + Number(d.Nominal_price_yoy_per)}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 11;
   new Chart('roinet', {
@@ -80,6 +80,6 @@ function makeChart(roinet) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

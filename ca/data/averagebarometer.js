@@ -2,7 +2,7 @@ function makeChart(averagebarometer) {
   // Register the plugin
   Chart.register(ChartDataLabels);
 
-  //getGradient, used in the Euribor label
+  // Line colour: blue for low values, grey in the middle, red for high values
   let width, height, gradient;
   function getGradient(ctx, chartArea) {
     const chartTop    = chartArea.top;
@@ -12,7 +12,7 @@ function makeChart(averagebarometer) {
     if (!gradient || width !== chartArea.width || height !== chartHeight) {
       width  = chartArea.width;
       height = chartHeight;
-      // y0 = bottom, y1 = top  (so 0→orange, 1→purple as values grow)
+      // The gradient runs from the bottom of the chart (0) to the top (1)
       gradient = ctx.createLinearGradient(0, chartBottom, 0, chartTop);
       gradient.addColorStop(0, '#1492FF');
       gradient.addColorStop(0.5, '#DBDBDB');
@@ -21,13 +21,13 @@ function makeChart(averagebarometer) {
     return gradient;
   }
 
-  var rangeStart = 91;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = averagebarometer.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = averagebarometer.map(function(d) {return d.Average_risk}).slice(rangeStart, rangeEnd);
+  const rangeStart = 91;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = averagebarometer.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = averagebarometer.map(function(d) {return d.Average_risk}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
-  var chart = new Chart('averagebarometer', {
+  let chart = new Chart('averagebarometer', {
     type: 'line',
     data: {
       labels: rangeLabels,
@@ -108,6 +108,6 @@ function makeChart(averagebarometer) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

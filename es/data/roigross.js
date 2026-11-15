@@ -1,10 +1,10 @@
-//makeChart, calling the data and variables from the .csv file
+// Builds the chart from the rows of the dataset
 function makeChart(roigross) {
-  var rangeStart = 86;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = roigross.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = roigross.map(function(d) {return d.Inflation_CPI}).slice(rangeStart, rangeEnd);
-  var rangeTwo = roigross.map(function(d) {return d.Nominal_price_yoy_per}).slice(rangeStart, rangeEnd);
+  const rangeStart = 86;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = roigross.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = roigross.map(function(d) {return d.Inflation_CPI}).slice(rangeStart, rangeEnd);
+  const rangeTwo = roigross.map(function(d) {return d.Nominal_price_yoy_per}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 11;
   new Chart('roigross', {
@@ -80,6 +80,6 @@ function makeChart(roigross) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

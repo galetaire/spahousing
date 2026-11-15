@@ -21,6 +21,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
   <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+  <script src="../../scripts/site.js"></script>
 </head>
 <body>
 <br>
@@ -32,7 +33,7 @@
   <button onclick="window.location.href='../metodologia.html'">Metodologia 📓</button>
 </div>
 <br>
-<div id="chart-wrapper"><canvas id="roigross"></canvas></div>
+<div class="chart-wrapper"><canvas id="roigross"></canvas></div>
 <script src="../data/roigross.js"></script>
  <ul>
    <li><strong>↑ Apreciació bruta de l'habitatge (%)</strong>.
@@ -43,7 +44,7 @@
    </li>
  </ul>
 
- <div id="chart-wrapper"><canvas id="roinet"></canvas></div>
+ <div class="chart-wrapper"><canvas id="roinet"></canvas></div>
  <script src="../data/roinet.js"></script>
  <ul>
    <li><strong>↑ Rendibilitat de la inversió en habitatge (%)</strong>: es considera l'apreciació bruta i els retorns nets per lloguer.
@@ -63,13 +64,13 @@
    <li>A preus de 2020, es necessitaven 17,5 anys per a recuperar per complet la compra de l'habitatge a través de retorns per lloguer, a un ritme anual del 5,7%.</li>
  </ul>
 
- <div id="chart-wrapper"><canvas id="rentratio"></canvas></div>
+ <div class="chart-wrapper"><canvas id="rentratio"></canvas></div>
  <script src="../data/rentratio.js"></script>
  <ul>
    <li><strong>↑ Price-to-rent ràtio (en %, net i brut)</strong>: percentatge anual de rendibilitat del lloguer.</li>
  </ul>
 
- <div id="chart-wrapper"><canvas id="renttime"></canvas></div>
+ <div class="chart-wrapper"><canvas id="renttime"></canvas></div>
  <script src="../data/renttime.js"></script>
  <ul>
    <li><strong>↑ Price-to-rent ràtio (en temps, net i brut)</strong>: nombre d'anys per a recuperar el cost de la compra d'un habitatge a través de la seva posada per llogar. No es considera cap cost imprevist, ni tampoc l'apreciació de l'habitatge.</li>
@@ -97,7 +98,7 @@
 <br>
 <!-- Footer-->
 <div id="footer">
-  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <span class="current-year"></span>. <img src="../../public/cc.svg" alt="Creative Commons" style="vertical-align: middle;" width="18"/> <img src="../../public/by.svg" alt="Attribution" style="vertical-align: middle;" width="18"/> <img src="../../public/sa.svg" alt="ShareAlike" style="vertical-align: middle;" width="18"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 </div>
 <br>
 </body>

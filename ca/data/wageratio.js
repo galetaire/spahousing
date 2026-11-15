@@ -2,13 +2,13 @@ function makeChart(wageratio) {
   // Register the plugin
   Chart.register(ChartDataLabels);
 
-  var rangeStart = 99;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = wageratio.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = wageratio.map(function(d) {return Number(100-((d.Disposable_income_over18*100)/d.Ideal_wage))}).slice(rangeStart, rangeEnd);
+  const rangeStart = 99;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = wageratio.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = wageratio.map(function(d) {return Number(100-((d.Disposable_income_over18*100)/d.Ideal_wage))}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
-  var chart = new Chart('wageratio', {
+  const chart = new Chart('wageratio', {
     type: 'line',
     data: {
       labels: rangeLabels,
@@ -68,6 +68,6 @@ function makeChart(wageratio) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

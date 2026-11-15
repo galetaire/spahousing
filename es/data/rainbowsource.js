@@ -1,16 +1,16 @@
-//makeChart, calling the data and variables from the .csv file
+// Builds the chart from the rows of the dataset
 function makeChart(rainbowsource) {
-  var rangeStart = 64;
-  var rangeEnd = 171;
-  var rangeLabels = rainbowsource.map(function(d) { return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = rainbowsource.map(function(d) { return d.Rainbow_curve}).slice(rangeStart, rangeEnd);
-  var rangeTwo = rainbowsource.map(function(d) { return d.Population_25_50}).slice(rangeStart, rangeEnd);
+  const rangeStart = 64;
+  const rangeEnd = 171;
+  const rangeLabels = rainbowsource.map(function(d) { return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = rainbowsource.map(function(d) { return d.Rainbow_curve}).slice(rangeStart, rangeEnd);
+  const rangeTwo = rainbowsource.map(function(d) { return d.Population_25_50}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.family = "Courier New, Courier, monospace";
   Chart.defaults.font.size = 12;
   Chart.defaults.color = 'black';
 
-  var chart = new Chart('rainbowsource', {
+  const chart = new Chart('rainbowsource', {
     type: 'line',
     data: {
       labels: rangeLabels,
@@ -69,6 +69,6 @@ function makeChart(rainbowsource) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

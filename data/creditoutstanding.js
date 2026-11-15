@@ -1,11 +1,11 @@
 function makeChart(creditoutstanding) {
-  var rangeStart = 99;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = creditoutstanding.map(function(d) { return d.Year }).slice(rangeStart, rangeEnd);
-  var rangeOne = creditoutstanding.map(function(d) { return d.Saldo_vivo / d.GDP_spain }).slice(rangeStart, rangeEnd);
-  var rangeTwo = creditoutstanding.map(function(d) { return d.Saldo_vivo }).slice(rangeStart, rangeEnd);
+  const rangeStart = 99;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = creditoutstanding.map(function(d) { return d.Year }).slice(rangeStart, rangeEnd);
+  const rangeOne = creditoutstanding.map(function(d) { return d.Saldo_vivo / d.GDP_spain }).slice(rangeStart, rangeEnd);
+  const rangeTwo = creditoutstanding.map(function(d) { return d.Saldo_vivo }).slice(rangeStart, rangeEnd);
   Chart.defaults.font.size = 12;
-  var chart = new Chart('creditoutstanding', {
+  new Chart('creditoutstanding', {
     type: 'line',
     plugins: [ChartDataLabels],
     data: {
@@ -88,5 +88,5 @@ function makeChart(creditoutstanding) {
     }
   });
 }
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

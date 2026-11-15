@@ -1,11 +1,11 @@
-//makeChart, calling the data and variables from the .csv file
+// Builds the chart from the rows of the dataset
 function makeChart(tenure) {
-  var rangeStart = 104;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = tenure.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = tenure.map(function(d) {return d.Owned_per}).slice(rangeStart, rangeEnd);
-  var rangeTwo = tenure.map(function(d) {return d.Rented_per}).slice(rangeStart, rangeEnd);
-  var rangeTres = tenure.map(function(d) {return d.Freely_loaned_per}).slice(rangeStart, rangeEnd);
+  const rangeStart = 104;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = tenure.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = tenure.map(function(d) {return d.Owned_per}).slice(rangeStart, rangeEnd);
+  const rangeTwo = tenure.map(function(d) {return d.Rented_per}).slice(rangeStart, rangeEnd);
+  const rangeTres = tenure.map(function(d) {return d.Freely_loaned_per}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 14;
   new Chart('tenure', {
@@ -100,6 +100,6 @@ function makeChart(tenure) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

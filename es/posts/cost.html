@@ -22,6 +22,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
   <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+  <script src="../../scripts/site.js"></script>
 </head>
 <body>
 <br>
@@ -35,26 +36,26 @@
 <br>
 <p><em>¿Cuánto cuesta construir una vivienda unifamiliar en España?➞ </em> <strong><a href="../posts/buildingcost.html">Plantilla de presupuesto</a></strong>.</p>
 
-<div id="chart-wrapper"><canvas id="costratio"></canvas></div>
+<div class="chart-wrapper"><canvas id="costratio"></canvas></div>
 <script src="../data/costratio.js"></script>
   <ul>
     <li><strong>↑ Ratio entre el precio medio de la vivienda y costes medios de construcción:</strong> si la ratio es (x), significa que las viviendas se venden a (x) veces el precio de producción.</li>
     <li>Una ratio más alta indica que el sector de la construcción tiene márgenes de beneficio más elevados. Cabe señalar que una parte significativa de estos márgenes de beneficio corresponden en realidad a pago de impuestos.</li>
   </ul>
 
-  <div id="chart-wrapper"><canvas id="costchange"></canvas></div>
+  <div class="chart-wrapper"><canvas id="costchange"></canvas></div>
   <script src="../data/costchange.js"></script>
   <ul>
     <li><strong>↑ Costes de producción (%):</strong> evolución año a año de los costes de construcción.</li>
   </ul>
 
-  <div id="chart-wrapper"><canvas id="workersperunit"></canvas></div>
+  <div class="chart-wrapper"><canvas id="workersperunit"></canvas></div>
   <script src="../data/workersperunit.js"></script>
   <ul>
     <li><strong>↑ Ratio de trabajadores por vivienda construida:</strong> el gran cambio de tendencia se debe a un cambio del negocio. La reforma es el negocio principal del sector, superando a la nueva construcción.</li>
   </ul>
 
-  <div id="chart-wrapper"><canvas id="employed100"></canvas></div>
+  <div class="chart-wrapper"><canvas id="employed100"></canvas></div>
   <script src="../data/employed100.js"></script>
   <ul>
     <li><strong>↑ Número de trabajadores ocupados en el sector de la construcción por cada 100 habitantes</strong>.</li>
@@ -85,7 +86,7 @@
 <br>
 <!-- Footer-->
 <div id="footer">
-  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <span class="current-year"></span>. <img src="../../public/cc.svg" alt="Creative Commons" style="vertical-align: middle;" width="18"/> <img src="../../public/by.svg" alt="Attribution" style="vertical-align: middle;" width="18"/> <img src="../../public/sa.svg" alt="ShareAlike" style="vertical-align: middle;" width="18"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 </div>
 <br>
 </body>

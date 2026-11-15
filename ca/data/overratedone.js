@@ -1,14 +1,14 @@
 function makeChart(overratedone) {
   // Register the plugin
 
-  var rangeStart = 85;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = overratedone.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = overratedone.map(function(d) {return d.Real_price_over}).slice(rangeStart, rangeEnd);
-  var rangeTwo = overratedone.map(function(d) {return d.Real_price}).slice(rangeStart, rangeEnd);
+  const rangeStart = 85;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = overratedone.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = overratedone.map(function(d) {return d.Real_price_over}).slice(rangeStart, rangeEnd);
+  const rangeTwo = overratedone.map(function(d) {return d.Real_price}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
-  var chart = new Chart('overratedone', {
+  const chart = new Chart('overratedone', {
     type: 'line',
     data: {
       labels: rangeLabels,
@@ -69,6 +69,6 @@ function makeChart(overratedone) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);
