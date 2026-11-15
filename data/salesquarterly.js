@@ -1,15 +1,15 @@
-//makeChart, calling the data and variables from the .csv file
+// Builds the chart from the rows of the dataset
 function makeChart(salesquarterly) {
-  var rangeStart = 0;
-  var rangeEnd = new Date().getFullYear() - 1948;
-  var rangeLabels = salesquarterly.map(function(d) { return d.Quarter}).slice(rangeStart, rangeEnd);
-  var rangeOne = salesquarterly.map(function(d) { return d.Sales}).slice(rangeStart, rangeEnd);
-  var rangeTwo = salesquarterly.map(function(d) { return d.HPI}).slice(rangeStart, rangeEnd);
+  const rangeStart = 0;
+  const rangeEnd = new Date().getFullYear() - 1948;
+  const rangeLabels = salesquarterly.map(function(d) { return d.Quarter}).slice(rangeStart, rangeEnd);
+  const rangeOne = salesquarterly.map(function(d) { return d.Sales}).slice(rangeStart, rangeEnd);
+  const rangeTwo = salesquarterly.map(function(d) { return d.HPI}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
   const salesData = rangeOne.slice(); // copy of your sales array
 
-  var chart = new Chart('salesquarterly', {
+  const chart = new Chart('salesquarterly', {
     type: 'line',
     data: {
       labels: rangeLabels,
@@ -105,6 +105,6 @@ function makeChart(salesquarterly) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/refs/heads/main/public/docs/spain_stats_quarterly.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_QUARTERLY_CSV)
   .then(makeChart);

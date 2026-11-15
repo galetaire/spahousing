@@ -1,10 +1,10 @@
-//makeChart, calling the data and variables from the .csv file
+// Builds the chart from the rows of the dataset
 function makeChart(creditmovement) {
-  var rangeStart = 95;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = creditmovement.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = creditmovement.map(function(d) {return d.Average_amount}).slice(rangeStart, rangeEnd);
-  var rangeTwo = creditmovement.map(function(d) {return d.Real_credit_movement}).slice(rangeStart, rangeEnd);
+  const rangeStart = 95;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = creditmovement.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = creditmovement.map(function(d) {return d.Average_amount}).slice(rangeStart, rangeEnd);
+  const rangeTwo = creditmovement.map(function(d) {return d.Real_credit_movement}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
   new Chart('creditmovement', {
@@ -95,6 +95,6 @@ function makeChart(creditmovement) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

@@ -23,31 +23,7 @@
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <link href="../styles/style.css" rel="stylesheet" type="text/css">
-  <script>
-  function setLanguage(lang) {
-    const currentPath = window.location.pathname;
-
-    if (lang === 'es') {
-      // Redirect to Spanish if not already there
-      if (!currentPath.includes('/es/')) {
-        window.location.href = "/es/barometer.html";
-      }
-    }
-    else if (lang === 'ca') {
-      // Redirect to Catalan if not already there
-      if (!currentPath.includes('/ca/')) {
-        window.location.href = "/ca/barometer.html";
-      }
-    }
-    else {
-      // Default to English (root) if not already there
-      // This checks that we aren't already at the root by making sure /es/ or /ca/ aren't present
-      if (currentPath.includes('/es/') || currentPath.includes('/ca/')) {
-        window.location.href = "/barometer.html";
-      }
-    }
-  }
-  </script>
+  <script src="../scripts/site.js"></script>
 </head>
 <body>
 <br>
@@ -84,7 +60,7 @@
 
   <p><b>🧮 Tancament històric per any:</b></p>
 
-  <div id="chart-wrapper"><canvas id="averagebarometer"></canvas></div>
+  <div class="chart-wrapper"><canvas id="averagebarometer"></canvas></div>
   <script src="data/averagebarometer.js"></script>
   <p style="font-size: 14px; font-style: italic;">Més sobre l'índex: <a href="posts/baronotes.html">Metodologia i notes</a>.</p>
 
@@ -156,90 +132,57 @@
 
 <p><b>🧮 Tancament històric per any:</b></p>
 
-<div id="chart-wrapper"><canvas id="barcomponents"></canvas></div>
+<div class="chart-wrapper"><canvas id="barcomponents"></canvas></div>
 <script src="data/barcomponents.js"></script>
 
 
 <script src="data/barometer.js"></script>
 <script>
-  // 1. Define the STATIC configurations for each gauge.
-  // We've added a "dataColumn" property to map each gauge to a CSV column.
-  const gaugeConfigurations = [
-    {
-      id: 'gauge1', title: 'Average Risk', dataColumn: 'Average_risk',
-      segments: [ { value: 15, color: '#1492FF', label: 'Molt baixa' },{ value: 15, color: '#69B7FF', label: 'Baixa' }, { value: 15, color: '#B8DAFF', label: 'Moderadament baixa' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'Moderadament alta' }, { value: 15, color: '#FC6642', label: 'Alta'}, { value: 15, color: '#FF3300', label: 'Molt alta'}, ]
-    },
-    {
-      id: 'gauge2', title: 'Mortgage Risk', dataColumn: 'Mortgage_risk',
-      segments: [ { value: 15, color: '#1492FF', label: 'Molt baixa' },{ value: 15, color: '#69B7FF', label: 'Baixa' }, { value: 15, color: '#B8DAFF', label: 'Moderadament baixa' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'Moderadament alta' }, { value: 15, color: '#FC6642', label: 'Alta'}, { value: 15, color: '#FF3300', label: 'Molt alta'}, ]
-    },
-    {
-      id: 'gauge3', title: 'Sales Risk', dataColumn: 'Sales_risk',
-      segments: [ { value: 15, color: '#1492FF', label: 'Molt baixa' },{ value: 15, color: '#69B7FF', label: 'Baixa' }, { value: 15, color: '#B8DAFF', label: 'Moderadament baixa' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'Moderadament alta' }, { value: 15, color: '#FC6642', label: 'Alta'}, { value: 15, color: '#FF3300', label: 'Molt alta'}, ]
-    },
-    {
-      id: 'gauge4', title: 'Wage Risk', dataColumn: 'Wage_risk',
-      segments: [ { value: 15, color: '#1492FF', label: 'Molt baixa' },{ value: 15, color: '#69B7FF', label: 'Baixa' }, { value: 15, color: '#B8DAFF', label: 'Moderadament baixa' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'Moderadament alta' }, { value: 15, color: '#FC6642', label: 'Alta'}, { value: 15, color: '#FF3300', label: 'Molt alta'}, ]
-    },
-    {
-      id: 'gauge5', title: 'Scarcity Risk', dataColumn: 'Scarcity_risk',
-      segments: [ { value: 15, color: '#1492FF', label: 'Molt baixa' },{ value: 15, color: '#69B7FF', label: 'Baixa' }, { value: 15, color: '#B8DAFF', label: 'Moderadament baixa' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'Moderadament alta' }, { value: 15, color: '#FC6642', label: 'Alta'}, { value: 15, color: '#FF3300', label: 'Molt alta'}, ]
-    },
-    {
-      id: 'gauge6', title: 'Production Risk', dataColumn: 'Production_risk',
-      segments: [ { value: 15, color: '#1492FF', label: 'Molt baixa' },{ value: 15, color: '#69B7FF', label: 'Baixa' }, { value: 15, color: '#B8DAFF', label: 'Moderadament baixa' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'Moderadament alta' }, { value: 15, color: '#FC6642', label: 'Alta'}, { value: 15, color: '#FF3300', label: 'Molt alta'}, ]
-    },
-    {
-      id: 'gauge7', title: 'Labor Risk', dataColumn: 'Labor_risk',
-      segments: [ { value: 15, color: '#1492FF', label: 'Molt baixa' },{ value: 15, color: '#69B7FF', label: 'Baixa' }, { value: 15, color: '#B8DAFF', label: 'Moderadament baixa' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'Moderadament alta' }, { value: 15, color: '#FC6642', label: 'Alta'}, { value: 15, color: '#FF3300', label: 'Molt alta'}, ]
-    },
-    {
-      id: 'gauge8', title: 'Price Risk', dataColumn: 'Price_risk',
-      segments: [ { value: 15, color: '#1492FF', label: 'Molt baixa' },{ value: 15, color: '#69B7FF', label: 'Baixa' }, { value: 15, color: '#B8DAFF', label: 'Moderadament baixa' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'Moderadament alta' }, { value: 15, color: '#FC6642', label: 'Alta'}, { value: 15, color: '#FF3300', label: 'Molt alta'}, ]
-    },
-    {
-      id: 'gauge9', title: 'Rent risk', dataColumn: 'Rent_risk',
-      segments: [ { value: 15, color: '#1492FF', label: 'Molt baixa' },{ value: 15, color: '#69B7FF', label: 'Baixa' }, { value: 15, color: '#B8DAFF', label: 'Moderadament baixa' }, { value: 10, color: '#DBDBDB', label: 'Neutral' },{ value: 15, color: '#FFD1C7', label: 'Moderadament alta' }, { value: 15, color: '#FC6642', label: 'Alta'}, { value: 15, color: '#FF3300', label: 'Molt alta'}, ]
-    }
+  // Colour bands shared by every gauge: each value is the band's width on the 0-100 scale.
+  const GAUGE_SEGMENTS = [
+    { value: 15, color: '#1492FF', label: 'Molt baixa' },
+    { value: 15, color: '#69B7FF', label: 'Baixa' },
+    { value: 15, color: '#B8DAFF', label: 'Moderadament baixa' },
+    { value: 10, color: '#DBDBDB', label: 'Neutral' },
+    { value: 15, color: '#FFD1C7', label: 'Moderadament alta' },
+    { value: 15, color: '#FC6642', label: 'Alta' },
+    { value: 15, color: '#FF3300', label: 'Molt alta' },
   ];
 
-  // 2. Load the time-series data from your new CSV file
-  d3.csv("https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv").then(function(data) {
+  // Each gauge's <svg> id and the CSV column that holds its value.
+  const GAUGE_COLUMNS = {
+    gauge1: 'Average_risk',
+    gauge2: 'Mortgage_risk',
+    gauge3: 'Sales_risk',
+    gauge4: 'Wage_risk',
+    gauge5: 'Scarcity_risk',
+    gauge6: 'Production_risk',
+    gauge7: 'Labor_risk',
+    gauge8: 'Price_risk',
+    gauge9: 'Rent_risk',
+  };
 
-    // --- MODIFIED LOGIC ---
-        // 1. Get the current year.
-        const targetYear = new Date().getFullYear(); // This will be current year
+  // Show the current year's values, or the latest year available if it is not in the data yet.
+  loadCsv(SPAIN_STATS_CSV).then(rows => {
+    const currentYear = new Date().getFullYear();
+    let yearRow = rows.find(row => row.Year == currentYear); // CSV years are strings
+    if (!yearRow) {
+      console.warn(`Data for year ${currentYear} not found. Using latest available year.`);
+      yearRow = rows[rows.length - 1];
+    }
 
-        // 2. Find the row in your data that matches the target year.
-        // We use `==` because the year from the CSV is a string, and `getFullYear()` is a number.
-        let yearData = data.find(row => row.Year == targetYear);
-
-        // 3. Fallback: If the current year is not found, use the latest available data.
-        if (!yearData) {
-          console.warn(`Data for year ${targetYear} not found. Using latest available year.`);
-          yearData = data[data.length - 1];
-        }
-        // --- END OF MODIFIED LOGIC ---
-
-        // Loop through your STATIC configurations to build the gauges
-        gaugeConfigurations.forEach(config => {
-          const column = config.dataColumn;
-
-          // Get the value from the found year's data using the column name.
-          const dynamicValue = yearData[column] ? +yearData[column] : 0;
-
-          // Create the gauge with the correct value
-          createGauge('#' + config.id, dynamicValue, config.segments);
-        });
-
-      }).catch(function(error) {
-        console.error("Error loading the CSV file:", error);
-      });
+    for (const [gaugeId, column] of Object.entries(GAUGE_COLUMNS)) {
+      const value = yearRow[column] ? +yearRow[column] : 0;
+      createGauge('#' + gaugeId, value, GAUGE_SEGMENTS);
+    }
+  }).catch(error => {
+    console.error('Error loading the CSV file:', error);
+  });
 </script>
 <br>
 <!-- Footer-->
 <div id="footer">
-  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <span class="current-year"></span>. <img src="../public/cc.svg" alt="Creative Commons" style="vertical-align: middle;" width="18"/> <img src="../public/by.svg" alt="Attribution" style="vertical-align: middle;" width="18"/> <img src="../public/sa.svg" alt="ShareAlike" style="vertical-align: middle;" width="18"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 </div>
 <br>
 </body>

@@ -1,16 +1,16 @@
-//makeChart, calling the data and variables from the .csv file
+// Builds the chart from the rows of the dataset
 function makeChart(sales) {
-  var rangeStart = 103;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = sales.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = sales.map(function(d) {return d.Population_25_50 / 26}).slice(rangeStart, rangeEnd);
-  var rangeTwo = sales.map(function(d) {return d.Population_25_50 / 26 / 2}).slice(rangeStart, rangeEnd);
-  var rangeTres = sales.map(function(d) {return d.Population_25_50 / 26 / 1.33333}).slice(rangeStart, rangeEnd);
-  var rangeFour = sales.map(function(d) {return d.Inheritances}).slice(rangeStart, rangeEnd);
-  var rangeFive = sales.map(function(d) {return d.Home_sales}).slice(rangeStart, rangeEnd);
+  const rangeStart = 103;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = sales.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = sales.map(function(d) {return d.Population_25_50 / 26}).slice(rangeStart, rangeEnd);
+  const rangeTwo = sales.map(function(d) {return d.Population_25_50 / 26 / 2}).slice(rangeStart, rangeEnd);
+  const rangeTres = sales.map(function(d) {return d.Population_25_50 / 26 / 1.33333}).slice(rangeStart, rangeEnd);
+  const rangeFour = sales.map(function(d) {return d.Inheritances}).slice(rangeStart, rangeEnd);
+  const rangeFive = sales.map(function(d) {return d.Home_sales}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
-  var chart = new Chart('sales', {
+  const chart = new Chart('sales', {
     options: {
       responsive: true,
       scales: {
@@ -109,6 +109,6 @@ function makeChart(sales) {
   })
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

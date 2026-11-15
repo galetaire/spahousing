@@ -1,14 +1,14 @@
-//makeChart, calling the data and variables from the .csv file
+// Builds the chart from the rows of the dataset
 function makeChart(laborquarterly) {
-  var rangeStart = 0;
-  var rangeEnd = new Date().getFullYear() - 1948;
-  var rangeLabels = laborquarterly.map(function(d) { return d.Quarter}).slice(rangeStart, rangeEnd);
-  var rangeOne = laborquarterly.map(function(d) { return d.Unemployment}).slice(rangeStart, rangeEnd);
-  var rangeTwo = laborquarterly.map(function(d) { return d.HPI}).slice(rangeStart, rangeEnd);
+  const rangeStart = 0;
+  const rangeEnd = new Date().getFullYear() - 1948;
+  const rangeLabels = laborquarterly.map(function(d) { return d.Quarter}).slice(rangeStart, rangeEnd);
+  const rangeOne = laborquarterly.map(function(d) { return d.Unemployment}).slice(rangeStart, rangeEnd);
+  const rangeTwo = laborquarterly.map(function(d) { return d.HPI}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
 
-  var chart = new Chart('laborquarterly', {
+  const chart = new Chart('laborquarterly', {
     type: 'line',
     data: {
       labels: rangeLabels,
@@ -76,6 +76,6 @@ function makeChart(laborquarterly) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/refs/heads/main/public/docs/spain_stats_quarterly.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_QUARTERLY_CSV)
   .then(makeChart);

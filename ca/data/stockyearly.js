@@ -1,13 +1,13 @@
-//makeChart, calling the data and variables from the .csv file
+// Builds the chart from the rows of the dataset
 function makeChart(stockyearly) {
-  var rangeStart = 0;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = stockyearly.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = stockyearly.map(function(d) {return d.New_homes}).slice(rangeStart, rangeEnd);
-  var rangeTwo = stockyearly.map(function(d) {return d.Pop_abs_yoy}).slice(rangeStart, rangeEnd);
+  const rangeStart = 0;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = stockyearly.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = stockyearly.map(function(d) {return d.New_homes}).slice(rangeStart, rangeEnd);
+  const rangeTwo = stockyearly.map(function(d) {return d.Pop_abs_yoy}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 11;
-  var chart = new Chart('stockyearly', {
+  const chart = new Chart('stockyearly', {
     options: {
       responsive: true,
       scales: {
@@ -77,6 +77,6 @@ function makeChart(stockyearly) {
   })
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

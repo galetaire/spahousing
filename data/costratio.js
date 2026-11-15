@@ -2,13 +2,13 @@ function makeChart(costratio) {
   // Register the plugin
   Chart.register(ChartDataLabels);
 
-  var rangeStart = 94;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = costratio.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = costratio.map(function(d) {return d.Ratio_price_cost}).slice(rangeStart, rangeEnd);
+  const rangeStart = 94;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = costratio.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = costratio.map(function(d) {return d.Ratio_price_cost}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
-  var chart = new Chart('costratio', {
+  const chart = new Chart('costratio', {
     type: 'line',
     data: {
       labels: rangeLabels,
@@ -79,6 +79,6 @@ function makeChart(costratio) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

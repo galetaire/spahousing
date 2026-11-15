@@ -1,10 +1,10 @@
-//makeChart, calling the data and variables from the .csv file
+// Builds the chart from the rows of the dataset
 function makeChart(costchange) {
-  var rangeStart = 92;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = costchange.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = costchange.map(function(d) {return d.Inflation_CPI}).slice(rangeStart, rangeEnd);
-  var rangeTwo = costchange.map(function(d) {return d.Cost_production_ave}).slice(rangeStart, rangeEnd);
+  const rangeStart = 92;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = costchange.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = costchange.map(function(d) {return d.Inflation_CPI}).slice(rangeStart, rangeEnd);
+  const rangeTwo = costchange.map(function(d) {return d.Cost_production_ave}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 11;
   new Chart('costchange', {
@@ -81,6 +81,6 @@ function makeChart(costchange) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

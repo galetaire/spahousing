@@ -1,14 +1,14 @@
-//makeChart, calling the data and variables from the .csv file
+// Builds the chart from the rows of the dataset
 function makeChart(priceyearly) {
-  var rangeStart = 85;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = priceyearly.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = priceyearly.map(function(d) {return d.Price_eum2}).slice(rangeStart, rangeEnd);
-  var rangeTwo = priceyearly.map(function(d) {return d.Real_price}).slice(rangeStart, rangeEnd);
-  var rangeTres = priceyearly.map(function(d) {return d.Price_eum2 - d.Real_price}).slice(rangeStart, rangeEnd);
+  const rangeStart = 85;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = priceyearly.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = priceyearly.map(function(d) {return d.Price_eum2}).slice(rangeStart, rangeEnd);
+  const rangeTwo = priceyearly.map(function(d) {return d.Real_price}).slice(rangeStart, rangeEnd);
+  const rangeTres = priceyearly.map(function(d) {return d.Price_eum2 - d.Real_price}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
-  var chart = new Chart('priceyearly', {
+  const chart = new Chart('priceyearly', {
     options: {
       scales: {
         x: {
@@ -82,6 +82,6 @@ function makeChart(priceyearly) {
   })
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

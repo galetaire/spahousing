@@ -1,12 +1,12 @@
 function makeChart(euribor) {
-  var rangeStart = 103;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = euribor.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = euribor.map(function(d) {return d.Euribor_1year}).slice(rangeStart, rangeEnd);
-  var rangeTwo = euribor.map(function(d) {return d.Average_mortgage_rate}).slice(rangeStart, rangeEnd);
+  const rangeStart = 103;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = euribor.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = euribor.map(function(d) {return d.Euribor_1year}).slice(rangeStart, rangeEnd);
+  const rangeTwo = euribor.map(function(d) {return d.Average_mortgage_rate}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
-  var chart = new Chart('euribor', {
+  const chart = new Chart('euribor', {
     type: 'line',
     data: {
       labels: rangeLabels,
@@ -86,6 +86,6 @@ function makeChart(euribor) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

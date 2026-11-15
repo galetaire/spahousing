@@ -43,10 +43,10 @@ const annotationLinePlugin = {
 };
 
 function makeChart(marketgdp) {
-    var rangeStart = 66; // index for year 1980 (adjust if needed)
-    var rangeEnd = new Date().getFullYear() - 1899;
+    const rangeStart = 66; // index for year 1980 (adjust if needed)
+    const rangeEnd = new Date().getFullYear() - 1899;
 
-    var allData = marketgdp.slice(rangeStart, rangeEnd).map(function(d) {
+    const allData = marketgdp.slice(rangeStart, rangeEnd).map(function(d) {
         return {
             x: parseFloat(d.Market_cap/d.GDP_spain),
             y: parseFloat(d.Average_risk),
@@ -102,6 +102,6 @@ function makeChart(marketgdp) {
     });
 }
 
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+loadCsv(SPAIN_STATS_CSV)
     .then(makeChart)
     .catch(err => console.error('Failed to load CSV:', err));

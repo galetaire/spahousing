@@ -1,13 +1,13 @@
 function makeChart(moneygrowth) {
-  var rangeStart = 71;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = moneygrowth.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = moneygrowth.map(function(d) {return d.Euro_M3_stock_per}).slice(rangeStart, rangeEnd);
-  var rangeTwo = moneygrowth.map(function(d) {return d.Per_new_homes}).slice(rangeStart, rangeEnd);
-  var rangeTres = moneygrowth.map(function(d) {return d.Population_yoy}).slice(rangeStart, rangeEnd);
+  const rangeStart = 71;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = moneygrowth.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = moneygrowth.map(function(d) {return d.Euro_M3_stock_per}).slice(rangeStart, rangeEnd);
+  const rangeTwo = moneygrowth.map(function(d) {return d.Per_new_homes}).slice(rangeStart, rangeEnd);
+  const rangeTres = moneygrowth.map(function(d) {return d.Population_yoy}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
-  var chart = new Chart('moneygrowth', {
+  const chart = new Chart('moneygrowth', {
     type: 'line',
     data: {
       labels: rangeLabels,
@@ -115,6 +115,6 @@ function makeChart(moneygrowth) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

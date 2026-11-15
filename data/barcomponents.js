@@ -2,19 +2,19 @@ function makeChart(barcomponents) {
   // Register the plugin
   Chart.register(ChartDataLabels);
 
-  var rangeStart = 91;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = barcomponents.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = barcomponents.map(function(d) {return d.Price_risk}).slice(rangeStart, rangeEnd);
-  var rangeTwo = barcomponents.map(function(d) {return d.Mortgage_risk}).slice(rangeStart, rangeEnd);
-  var rangeTres = barcomponents.map(function(d) {return d.Sales_risk}).slice(rangeStart, rangeEnd);
-  var rangeFour = barcomponents.map(function(d) {return d.Wage_risk}).slice(rangeStart, rangeEnd);
-  var rangeFive = barcomponents.map(function(d) {return d.Production_risk}).slice(rangeStart, rangeEnd);
-  var rangeSix = barcomponents.map(function(d) {return d.Scarcity_risk}).slice(rangeStart, rangeEnd);
-  var rangeSeven = barcomponents.map(function(d) {return d.Labor_risk}).slice(rangeStart, rangeEnd);
+  const rangeStart = 91;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = barcomponents.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = barcomponents.map(function(d) {return d.Price_risk}).slice(rangeStart, rangeEnd);
+  const rangeTwo = barcomponents.map(function(d) {return d.Mortgage_risk}).slice(rangeStart, rangeEnd);
+  const rangeTres = barcomponents.map(function(d) {return d.Sales_risk}).slice(rangeStart, rangeEnd);
+  const rangeFour = barcomponents.map(function(d) {return d.Wage_risk}).slice(rangeStart, rangeEnd);
+  const rangeFive = barcomponents.map(function(d) {return d.Production_risk}).slice(rangeStart, rangeEnd);
+  const rangeSix = barcomponents.map(function(d) {return d.Scarcity_risk}).slice(rangeStart, rangeEnd);
+  const rangeSeven = barcomponents.map(function(d) {return d.Labor_risk}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
-  var chart = new Chart('barcomponents', {
+  const chart = new Chart('barcomponents', {
     type: 'line',
     data: {
       labels: rangeLabels,
@@ -128,6 +128,6 @@ function makeChart(barcomponents) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

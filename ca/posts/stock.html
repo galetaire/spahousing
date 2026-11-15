@@ -21,6 +21,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
   <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+  <script src="../../scripts/site.js"></script>
 </head>
 <body>
 <br>
@@ -32,14 +33,14 @@
   <button onclick="window.location.href='../metodologia.html'">Metodologia 📓</button>
 </div>
 <br>
-<div id="chart-wrapper"><canvas id="stockyearly"></canvas></div>
+<div class="chart-wrapper"><canvas id="stockyearly"></canvas></div>
 <script src="../data/stockyearly.js"></script>
 <ul>
   <li><strong>↑ Creixement anual de l'habitatge i de la població</strong>: nous habitatges construïts i augment o disminució de la població total. Consulta la metodologia per a estimar les dades històriques <a href="../../posts/stocknotes.html">aquí</a>.</li>
   <li>Explora en el <a href="../../posts/housescarcity.html">mapa</a> el nombre d'habitants per habitatge i municipi.</li>
 </ul>
 
-<div id="chart-wrapper"><canvas id="stockbalance"></canvas></div>
+<div class="chart-wrapper"><canvas id="stockbalance"></canvas></div>
 <script src="../data/stockbalance.js"></script>
 <ul>
   <li><strong>↑ Balanç d'habitatges, <strong style="color: #2E7AC7;">Superàvit</strong> o <strong style="color: #20AB88;">dèficit</strong></strong>: diferència entre el creixement d'habitatges i el de població. Dues visualitzacions depenent de la variable creixement poblacional:
@@ -50,20 +51,20 @@
   </li>
 </ul>
 
-<div id="chart-wrapper"><canvas id="typehouse"></canvas></div>
+<div class="chart-wrapper"><canvas id="typehouse"></canvas></div>
 <script src="../data/typehouse.js"></script>
 <ul>
   <li><strong>↑ Distribució d'habitatges construïts per tipus</strong>: unifamiliars o en bloc.</li>
 </ul>
 
-<div id="chart-wrapper"><canvas id="stockperiods"></canvas></div>
+<div class="chart-wrapper"><canvas id="stockperiods"></canvas></div>
 <script src="../data/stockperiods.js"></script>
 <ul>
   <li><strong>↑ Períodes de construcció</strong>: nombre d'habitatges construïts per període.</li>
   <li>La <strong>barra verda</strong> és una estimació basada en l'actual ritme de construcció. Si el ritme és similar al de 2021 (95.000 per any), el nombre d'habitatges construïts entre 2021 i 2040 serà de ≈1,800,000.</li>
 </ul>
 
-<div id="chart-wrapper"><canvas id="cement"></canvas></div>
+<div class="chart-wrapper"><canvas id="cement"></canvas></div>
 <script src="../data/cement.js"></script>
 
 <ul>
@@ -116,7 +117,7 @@
 <br>
 <!-- Footer-->
 <div id="footer">
-  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <span class="current-year"></span>. <img src="../../public/cc.svg" alt="Creative Commons" style="vertical-align: middle;" width="18"/> <img src="../../public/by.svg" alt="Attribution" style="vertical-align: middle;" width="18"/> <img src="../../public/sa.svg" alt="ShareAlike" style="vertical-align: middle;" width="18"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 </div>
 <br>
 </body>

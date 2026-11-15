@@ -2,7 +2,7 @@ function makeChart(workersperunit) {
   // Register the plugin
   Chart.register(ChartDataLabels);
 
-  //getGradient, used in the Euribor label
+  // Line colour: orange at the bottom, purple at the top
   let width, height, gradient;
   function getGradient(ctx, chartArea) {
     const chartTop    = chartArea.top;
@@ -20,13 +20,13 @@ function makeChart(workersperunit) {
     return gradient;
   }
 
-  var rangeStart = 90;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = workersperunit.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = workersperunit.map(function(d) {return Number (d.Employed_constr) / Number (d.New_homes)}).slice(rangeStart, rangeEnd);
+  const rangeStart = 90;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = workersperunit.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = workersperunit.map(function(d) {return Number (d.Employed_constr) / Number (d.New_homes)}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
-  var chart = new Chart('workersperunit', {
+  let chart = new Chart('workersperunit', {
     type: 'line',
     data: {
       labels: rangeLabels,
@@ -104,6 +104,6 @@ function makeChart(workersperunit) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

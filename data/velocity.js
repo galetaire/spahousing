@@ -2,14 +2,14 @@ function makeChart(velocity) {
   // Register the plugin
   Chart.register(ChartDataLabels);
 
-  var rangeStart = 104;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = velocity.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = velocity.map(function(d) {return (Number(d.Free_urbanland_km2) / (Number(d.Tx_juridicas_m2) + Number(d.Tx_fisica_m2)) * 1000)}).slice(rangeStart, rangeEnd);
-  var rangeTwo = velocity.map(function(d) {return Number(d.Total_homes / d.Home_sales)}).slice(rangeStart, rangeEnd);
+  const rangeStart = 104;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = velocity.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = velocity.map(function(d) {return (Number(d.Free_urbanland_km2) / (Number(d.Tx_juridicas_m2) + Number(d.Tx_fisica_m2)) * 1000)}).slice(rangeStart, rangeEnd);
+  const rangeTwo = velocity.map(function(d) {return Number(d.Total_homes / d.Home_sales)}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
-  var chart = new Chart('velocity', {
+  const chart = new Chart('velocity', {
     type: 'line',
     data: {
       labels: rangeLabels,
@@ -77,6 +77,6 @@ function makeChart(velocity) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

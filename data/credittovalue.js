@@ -1,12 +1,12 @@
 
-//makeChart, calling the data and variables from the .csv file
+// Builds the chart from the rows of the dataset
   function makeChart(credittovalue) {
-    var rangeStart = 95;
-    var rangeEnd = new Date().getFullYear() - 1899;
-    var rangeLabels = credittovalue.map(function(d) { return d.Year }).slice(rangeStart, rangeEnd);
-    var rangeOne = credittovalue.map(function(d) { return d.Loan_to_value}).slice(rangeStart, rangeEnd);
+    const rangeStart = 95;
+    const rangeEnd = new Date().getFullYear() - 1899;
+    const rangeLabels = credittovalue.map(function(d) { return d.Year }).slice(rangeStart, rangeEnd);
+    const rangeOne = credittovalue.map(function(d) { return d.Loan_to_value}).slice(rangeStart, rangeEnd);
     Chart.defaults.font.size = 12;
-    var chart = new Chart('credittovalue', {
+    const chart = new Chart('credittovalue', {
       type: 'line',
       plugins: [ChartDataLabels],   // <-- local registration, this chart only
       data: {
@@ -61,6 +61,6 @@
     });
   }
 
-  // Request data from .csv file using D3js library
-  d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+  // Load the dataset (shared by all charts on the page) and draw the chart
+  loadCsv(SPAIN_STATS_CSV)
     .then(makeChart);

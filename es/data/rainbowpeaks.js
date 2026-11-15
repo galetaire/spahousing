@@ -1,10 +1,10 @@
-//makeChart, calling the data and variables from the .csv file
+// Builds the chart from the rows of the dataset
 function makeChart(rainbowpeaks) {
-  var rangeStart = 64;
-  var rangeEnd = 171;
-  var rangeLabels = rainbowpeaks.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = rainbowpeaks.map(function(d) {return d.Real_price_over}).slice(rangeStart, rangeEnd);
-  var rangeTwo = rainbowpeaks.map(function(d) {return d.Rainbow_curve}).slice(rangeStart, rangeEnd);
+  const rangeStart = 64;
+  const rangeEnd = 171;
+  const rangeLabels = rainbowpeaks.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = rainbowpeaks.map(function(d) {return d.Real_price_over}).slice(rangeStart, rangeEnd);
+  const rangeTwo = rainbowpeaks.map(function(d) {return d.Rainbow_curve}).slice(rangeStart, rangeEnd);
 
   const plugin = {
     id: 'customCanvasBackgroundColor',
@@ -22,7 +22,7 @@ function makeChart(rainbowpeaks) {
   Chart.defaults.font.size = 12;
   Chart.defaults.color = 'black';
 
-  var chart = new Chart('rainbowpeaks', {
+  const chart = new Chart('rainbowpeaks', {
     plugins: [plugin],
     options: {
       scales: {
@@ -160,6 +160,6 @@ function makeChart(rainbowpeaks) {
   })
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

@@ -1,16 +1,16 @@
-//makeChart, calling the data and variables from the .csv file
+// Builds the chart from the rows of the dataset
 function makeChart(pricequarterly) {
-  var rangeStart = 0;
-  var rangeEnd = new Date().getFullYear() - 1947;
-  var rangeLabels = pricequarterly.map(function(d) { return d.Quarter}).slice(rangeStart, rangeEnd);
-  var rangeOne = pricequarterly.map(function(d) { return d.Price_idealista}).slice(rangeStart, rangeEnd);
-  var rangeTwo = pricequarterly.map(function(d) { return d.Price_notaries}).slice(rangeStart, rangeEnd);
-  var rangeTres = pricequarterly.map(function(d) { return d.Sharp_change}).slice(rangeStart, rangeEnd);
-  var rangeFour = pricequarterly.map(function(d) { return d.Spread}).slice(rangeStart, rangeEnd);
+  const rangeStart = 0;
+  const rangeEnd = new Date().getFullYear() - 1947;
+  const rangeLabels = pricequarterly.map(function(d) { return d.Quarter}).slice(rangeStart, rangeEnd);
+  const rangeOne = pricequarterly.map(function(d) { return d.Price_idealista}).slice(rangeStart, rangeEnd);
+  const rangeTwo = pricequarterly.map(function(d) { return d.Price_notaries}).slice(rangeStart, rangeEnd);
+  const rangeTres = pricequarterly.map(function(d) { return d.Sharp_change}).slice(rangeStart, rangeEnd);
+  const rangeFour = pricequarterly.map(function(d) { return d.Spread}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 11;
 
-  var chart = new Chart('pricequarterly', {
+  const chart = new Chart('pricequarterly', {
     type: 'line',
     data: {
       labels: rangeLabels,
@@ -106,6 +106,6 @@ function makeChart(pricequarterly) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/refs/heads/main/public/docs/spain_stats_quarterly.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_QUARTERLY_CSV)
   .then(makeChart);

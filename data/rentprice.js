@@ -2,16 +2,16 @@ function makeChart(rentprice) {
   // Register the plugin
   Chart.register(ChartDataLabels);
 
-  var rangeStart = 107;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = rentprice.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = rentprice.map(function(d) {return d.Idealista_rent_100}).slice(rangeStart, rangeEnd);
-  var rangeTwo = rentprice.map(function(d) {return d.Idealista_house_100}).slice(rangeStart, rangeEnd);
-  var rangeTres = rentprice.map(function(d) {return d.Price_IPV}).slice(rangeStart, rangeEnd);
-  var rangeFour = rentprice.map(function(d) {return d.Rent_price_IPVA}).slice(rangeStart, rangeEnd);
+  const rangeStart = 107;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = rentprice.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = rentprice.map(function(d) {return d.Idealista_rent_100}).slice(rangeStart, rangeEnd);
+  const rangeTwo = rentprice.map(function(d) {return d.Idealista_house_100}).slice(rangeStart, rangeEnd);
+  const rangeTres = rentprice.map(function(d) {return d.Price_IPV}).slice(rangeStart, rangeEnd);
+  const rangeFour = rentprice.map(function(d) {return d.Rent_price_IPVA}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
-  var chart = new Chart('rentprice', {
+  const chart = new Chart('rentprice', {
     type: 'line',
     data: {
       labels: rangeLabels,
@@ -103,6 +103,6 @@ function makeChart(rentprice) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

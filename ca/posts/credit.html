@@ -22,6 +22,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
   <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+  <script src="../../scripts/site.js"></script>
 </head>
 <body>
 <br>
@@ -34,14 +35,14 @@
 </div>
 <br>
 
-<div id="chart-wrapper"><canvas id="credityearly"></canvas></div>
+<div class="chart-wrapper"><canvas id="credityearly"></canvas></div>
 <script src="../data/credityearly.js"></script>
 <ul>
   <li>↑ <strong>Evolució anual de les hipoteques</strong>, nombre total d'hipoteques aprovades i cancel·lades.</li>
   <li>Per llei, les cancel·lacions no estan obligades a enregistrar-se en el registre de la propietat en el moment de cancel·lació. Estimem que un 35% de les cancel·lacions no s'arriben a enregistrar.</li>
 </ul>
 
-<div id="chart-wrapper"><canvas id="creditmovement"></canvas></div>
+<div class="chart-wrapper"><canvas id="creditmovement"></canvas></div>
 <script src="../data/creditmovement.js"></script>
 <ul>
   <li>↑ <strong>Moviment del crèdit i import de les hipoteques</strong>.
@@ -52,19 +53,19 @@
   </li>
 </ul>
 
-<div id="chart-wrapper"><canvas id="creditratio"></canvas></div>
+<div class="chart-wrapper"><canvas id="creditratio"></canvas></div>
 <script src="../data/creditratio.js"></script>
 <ul>
   <li>↑ <strong>Ràtio entre hipoteques i compravendes</strong>: si la ràtio és (x), significa que hi ha (x) hipoteques per cada (1) compravenda. Aquesta ràtio ajuda a intuir la formació de bombolles creditícies.</li>
 </ul>
 
-<div id="chart-wrapper"><canvas id="credittovalue"></canvas></div>
+<div class="chart-wrapper"><canvas id="credittovalue"></canvas></div>
 <script src="../data/credittovalue.js"></script>
 <ul>
   <li>↑ <strong>Ràtio préstec-valor, en percentatge</strong>: La relació entre l'import mitjà finançat en una hipoteca i el preu mitjà de compra de l'immoble. Com més alt és, més endeutats estan els compradors.</li>
 </ul>
 
-<div id="chart-wrapper"><canvas id="creditoutstanding"></canvas></div>
+<div class="chart-wrapper"><canvas id="creditoutstanding"></canvas></div>
 <script src="../data/creditoutstanding.js"></script>
 <ul>
   <li>
@@ -76,7 +77,7 @@
   </li>
 </ul>
 
-<div id="chart-wrapper"><canvas id="typemortgage"></canvas></div>
+<div class="chart-wrapper"><canvas id="typemortgage"></canvas></div>
 <script src="../data/typemortgage.js"></script>
 <ul>
   <li>↑ <strong>Hipoteques constituïdes segons el tipus d'interès (%)</strong>: fix o variable.</li>
@@ -118,7 +119,7 @@
 <br>
 <!-- Footer-->
 <div id="footer">
-  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <span class="current-year"></span>. <img src="../../public/cc.svg" alt="Creative Commons" style="vertical-align: middle;" width="18"/> <img src="../../public/by.svg" alt="Attribution" style="vertical-align: middle;" width="18"/> <img src="../../public/sa.svg" alt="ShareAlike" style="vertical-align: middle;" width="18"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 </div>
 <br>
 </body>

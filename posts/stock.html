@@ -21,6 +21,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
   <link href="../styles/style.css" rel="stylesheet" type="text/css">
+  <script src="../scripts/site.js"></script>
 </head>
 <body>
 <br>
@@ -32,14 +33,14 @@
   <button onclick="window.location.href='../methodology.html'">Methodology 📓</button>
 </div>
 <br>
-<div id="chart-wrapper"><canvas id="stockyearly"></canvas></div>
+<div class="chart-wrapper"><canvas id="stockyearly"></canvas></div>
 <script src="../data/stockyearly.js"></script>
 <ul>
   <li><strong>↑ Number of dwellings and population growth</strong>: new homes built and population change year on year. See the approach to estimate the historical data <a href="stocknotes.html">here</a>.</li>
   <li>Explore on this <a href="housescarcity.html">map</a> the number of inhabitants per dwelling and municipality.</li>
 </ul>
 
-<div id="chart-wrapper"><canvas id="stockbalance"></canvas></div>
+<div class="chart-wrapper"><canvas id="stockbalance"></canvas></div>
 <script src="../data/stockbalance.js"></script>
 <ul>
   <li><strong>↑ <strong style="color: #2E7AC7;">Housing surplus</strong>, or <strong style="color: #20AB88;">Housing deficit</strong></strong>: difference between housing growth and population growth. There are two visualizations depending on the population growth:
@@ -50,20 +51,20 @@
   </li>
 </ul>
 
-<div id="chart-wrapper"><canvas id="typehouse"></canvas></div>
+<div class="chart-wrapper"><canvas id="typehouse"></canvas></div>
 <script src="../data/typehouse.js"></script>
 <ul>
   <li><strong>↑ Distribution of new houses built per type</strong>: Single-Family or Condominiums.</li>
 </ul>
 
-<div id="chart-wrapper"><canvas id="stockperiods"></canvas></div>
+<div class="chart-wrapper"><canvas id="stockperiods"></canvas></div>
 <script src="../data/stockperiods.js"></script>
 <ul>
   <li><strong>↑ Construction period</strong>: number of today existing dwellings per period of construction.</li>
   <li>The <strong>green bar</strong> is a final estimate based on the current pace of construction. If the pace remains as in 2021 (95,000 per year), the number of houses built between 2021 and 2040 will be ≈1,800,000.</li>
 </ul>
 
-<div id="chart-wrapper"><canvas id="cement"></canvas></div>
+<div class="chart-wrapper"><canvas id="cement"></canvas></div>
 <script src="../data/cement.js"></script>
 
 <ul>
@@ -144,7 +145,7 @@
 <br>
 <!-- Footer-->
 <div id="footer">
-  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <script>document.write(new Date().getFullYear())</script>. <img src="..\public\cc.svg" style="vertical-align: middle;" width="18px"/> <img src="..\public\by.svg" style="vertical-align: middle;" width="18px"/> <img src="..\public\sa.svg" style="vertical-align: middle;" width="18px"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+  <a href="https://github.com/galetaire/spahousing#description">Spain Housing dot eu</a>, <span class="current-year"></span>. <img src="../public/cc.svg" alt="Creative Commons" style="vertical-align: middle;" width="18"/> <img src="../public/by.svg" alt="Attribution" style="vertical-align: middle;" width="18"/> <img src="../public/sa.svg" alt="ShareAlike" style="vertical-align: middle;" width="18"/> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 </div>
 <br>
 </body>

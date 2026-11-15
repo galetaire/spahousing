@@ -1,36 +1,40 @@
-//getGradient, used in the Euribor label
-let width, height, gradient;
-function getGradient(ctx, chartArea, scales){
+// Line colour for the Euribor series: green above zero, red below
+let width, height, gradient = null;
+function getGradient(ctx, chartArea, scales) {
   const chartWidth = chartArea.right - chartArea.left;
   const chartHeight = chartArea.bottom - chartArea.top;
-  if (gradient === null || width !== chartWidth || height !== chartHeight){
-    const pointzero = scales.y.getPixelForValue(0);
-    const pointzeroheight = pointzero - chartArea.top;
-    const pointzeroPercentage = pointzeroheight / chartHeight;
+  if (chartHeight <= 0) return null; // chart not laid out yet
+
+  // Re-create the gradient only when the chart size changes.
+  if (gradient === null || width !== chartWidth || height !== chartHeight) {
+    // Where the zero line sits, as a fraction of the chart height (0 = top, 1 = bottom).
+    // Colour stops must be between 0 and 1, so clamp it when zero is off the axis.
+    const zeroPixel = scales.y.getPixelForValue(0);
+    const zeroFraction = Math.min(1, Math.max(0, (zeroPixel - chartArea.top) / chartHeight));
     width = chartWidth;
     height = chartHeight;
-    gradient = ctx.createLinearGradient(0, chartArea.top, 0, chartHeight + chartArea.top);
-    gradient.addColorStop(pointzeroPercentage, 'rgba(0, 176, 80, 0.8)');
-    gradient.addColorStop(pointzeroPercentage, 'rgba(225, 83, 83, 0.8)');
+    gradient = ctx.createLinearGradient(0, chartArea.top, 0, chartArea.bottom);
+    gradient.addColorStop(zeroFraction, 'rgba(0, 176, 80, 0.8)');
+    gradient.addColorStop(zeroFraction, 'rgba(225, 83, 83, 0.8)');
   }
   return gradient;
-};
+}
 
-//makeChart, calling the data and variables from the .csv file
+// Builds the chart from the rows of the dataset
 function makeChart(multivariate) {
-  var rangeStart = 86;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = multivariate.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeEuribor = multivariate.map(function(d) {return d.IR_yoy_per}).slice(rangeStart, rangeEnd);
-  var rangeInflation = multivariate.map(function(d) {return +d.Inflation_CPI}).slice(rangeStart, rangeEnd);
-  var rangeUnemployment = multivariate.map(function(d) {return +d.Unemployment_yoy_per}).slice(rangeStart, rangeEnd);
-  var rangeSales = multivariate.map(function(d) {return +d.Sales_yoy_per}).slice(rangeStart, rangeEnd);
-  var rangeMortgages = multivariate.map(function(d) {return +d.Credit_yoy_per}).slice(rangeStart, rangeEnd);
-  var rangeNominal = multivariate.map(function(d) {return +d.Nominal_price_yoy_per}).slice(rangeStart, rangeEnd);
-  var rangeReal = multivariate.map(function(d) {return +d.Real_price_yoy_per}).slice(rangeStart, rangeEnd);
+  const rangeStart = 86;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = multivariate.map(function(d) {return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeEuribor = multivariate.map(function(d) {return d.IR_yoy_per}).slice(rangeStart, rangeEnd);
+  const rangeInflation = multivariate.map(function(d) {return +d.Inflation_CPI}).slice(rangeStart, rangeEnd);
+  const rangeUnemployment = multivariate.map(function(d) {return +d.Unemployment_yoy_per}).slice(rangeStart, rangeEnd);
+  const rangeSales = multivariate.map(function(d) {return +d.Sales_yoy_per}).slice(rangeStart, rangeEnd);
+  const rangeMortgages = multivariate.map(function(d) {return +d.Credit_yoy_per}).slice(rangeStart, rangeEnd);
+  const rangeNominal = multivariate.map(function(d) {return +d.Nominal_price_yoy_per}).slice(rangeStart, rangeEnd);
+  const rangeReal = multivariate.map(function(d) {return +d.Real_price_yoy_per}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
-  var chart = new Chart('multivariate', {
+  let chart = new Chart('multivariate', {
     type: 'bar',
     options: {
         scales: {
@@ -169,6 +173,6 @@ function makeChart(multivariate) {
   })
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);

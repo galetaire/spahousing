@@ -1,12 +1,12 @@
-//makeChart, calling the data and variables from the .csv file
+// Builds the chart from the rows of the dataset
 function makeChart(marketgdp) {
-  var rangeStart = 80;
-  var rangeEnd = new Date().getFullYear() - 1899;
-  var rangeLabels = marketgdp.map(function(d) { return d.Year}).slice(rangeStart, rangeEnd);
-  var rangeOne = marketgdp.map(function(d) { return d.Market_cap/d.GDP_spain}).slice(rangeStart, rangeEnd);
+  const rangeStart = 80;
+  const rangeEnd = new Date().getFullYear() - 1899;
+  const rangeLabels = marketgdp.map(function(d) { return d.Year}).slice(rangeStart, rangeEnd);
+  const rangeOne = marketgdp.map(function(d) { return d.Market_cap/d.GDP_spain}).slice(rangeStart, rangeEnd);
 
   Chart.defaults.font.size = 12;
-  var chart = new Chart('marketgdp', {
+  const chart = new Chart('marketgdp', {
     type: 'line',
     data: {
       labels: rangeLabels,
@@ -60,6 +60,6 @@ function makeChart(marketgdp) {
   });
 }
 
-// Request data from .csv file using D3js library
-d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+// Load the dataset (shared by all charts on the page) and draw the chart
+loadCsv(SPAIN_STATS_CSV)
   .then(makeChart);
